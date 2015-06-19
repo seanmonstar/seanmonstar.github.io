@@ -1,0 +1,12 @@
+<header class="site-header">
+    <h1><a href="/" title="om nom nom">seanmonstar</a></h1>
+    <nav>
+        <ul id="meta">
+        {% for page in site.pages %}
+          {% if page.title %}
+          <li><a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
+          {% endif %}
+        {% endfor %}
+        </ul>   
+    </nav>
+</header>
