@@ -1,0 +1,49 @@
+<div ide="sidebar">
+    <p class="description">{{ site.description }}</p>
+
+
+    <div id="rss">
+        <p><a href="{{ site.rss }}" title="Join 300+ Subscribers">Subscribe via RSS</a> or <a href="http://feedburner.google.com/fb/a/mailverify?uri=seanmonstar&amp;loc=en_US">E-mail</a></p>
+    </div>
+    <div id="spon">
+        <a href="http://seanmonstar.com/donate" title="Donate">
+            <img src="http://www.gravatar.com/avatar/dfb248d98bc7c238fccd5aad53624eab.png" alt="" />
+            <span id="spon-desc">Donate</span>
+        </a>
+    </div>
+    <script type="text/javascript">
+        //serve random sponsor
+        (function(){
+            var sponsors = [
+                {
+                    'link': 'http://www.amazon.com/gp/product/0596517742?tag=seanmonstar-20',
+                    'img': 'http://ecx.images-amazon.com/images/I/51lwS14VQTL._SL110_.jpg',
+                    'text': 'JavaScript: The Good Parts'
+                },
+                {
+                    'link': 'http://www.amazon.com/gp/product/0735619670?tag=seanmonstar-20',
+                    'img': 'http://ecx.images-amazon.com/images/I/51PPS4C6i8L._SL110_.jpg',
+                    'text': 'Code Complete: A Practical Handbook of Software Construction'
+                },
+                {
+                    'link': 'https://developer.mozilla.org/en/javascript',
+                    'img': 'http://static.jsconf.us/promotejsv.gif',
+                    'text': 'The only decent JavaScript docs'
+                },
+                {
+                    'link': 'http://seanmonstar.com/donate',
+                    'img': 'http://www.gravatar.com/avatar/dfb248d98bc7c238fccd5aad53624eab.png',
+                    'text': 'Donate'
+                }
+            ];
+            var randIndex = Math.floor(Math.random() * sponsors.length);
+            var sponsorDiv = document.getElementById('spon'),
+                sponLink = sponsorDiv.getElementsByTagName('a')[0],
+                sponImg = sponsorDiv.getElementsByTagName('img')[0],
+                sponSpan = sponsorDiv.getElementsByTagName('span')[0];
+            sponLink.href = sponsors[randIndex].link;
+            sponSpan.innerHTML = sponImg.alt = sponLink.title = sponsors[randIndex].text;
+            sponImg.src = sponsors[randIndex].img;
+        })();
+    </script>
+</div>
