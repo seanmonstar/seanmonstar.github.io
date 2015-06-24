@@ -1,15 +1,21 @@
 ---
 layout: default
 ---
-<div class="post">
-
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
-    <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+<article class="post article">
+  <header>
+    <div class="date">
+        <span class="month">{{ page.date | date: "%b" }}</span>
+        <span class="day">{{ page.date | date: "%d" }}</span>
+        <span class="year">{{ page.date | date: "%Y" }}</span>
+    </div>
+    <a href="" title="Permalink" class="permalink">#</a>
   </header>
 
-  <article class="post-content">
+  <div class="regular">
+    <h2 class="post-title">{{ page.title }}</h2>
     {{ content }}
-  </article>
+  </div>
+  <footer class="post-footer">
+  </footer>
 
-</div>
+</article>
