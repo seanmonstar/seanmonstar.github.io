@@ -1,0 +1,40 @@
+---
+layout: post
+title: Hacking To Meet Deadlines
+date: '2009-12-21T07:06:00-08:00'
+tags:
+- opinion
+- php
+- bestof
+tumblr_url: http://seanmonstar.com/post/708885956/hacking-to-meet-deadlines
+---
+<p>As a deadline approaches far faster than you can type, you&rsquo;re required to write some quick-and-dirty code to fulfill those feature requests.</p>
+<p>In case you don&rsquo;t know what I&rsquo;m talking about, this is when there happens to be a flaw in your program&rsquo;s structure. It&rsquo;s an architectural problem: you did properly build the system to elegantly behave in an expected manner. Sometimes, it&rsquo;s a problem from bad planning at the start. In other cases, it comes from scope creep, where features get slipped into a system that previously was not going to have such features. <a target="_blank" href="http://www.gamasutra.com/view/feature/4111/dirty_coding_tricks.php">Gamasutra had a nice write-up</a> about cases like this happening in the games industry. To put it as they did:</p>
+<blockquote>
+<p>Programmers are often methodical and precise beasts who do their utmost to keep their code clean and pretty. But when the chips are down, the perfectly-planned schedule is shot, and the game needs to ship, &ldquo;getting it done&rdquo; can win out over elegance.</p>
+<p>In a case like this, a frazzled and overworked programmer is far more likely to ignore best practices, and hack in a less desirable solution to get the [code] out the door.</p>
+</blockquote>
+<p>My favorite example in that article is about a game where in a certain level, some game object needed to be hidden. Instead of doing things the proper way, code was written along the lines of:</p>
+<pre><code>if( level == 10 &amp;&amp; object == 56 ){    
+	HideObject();
+}</code></pre>
+<h4>I&rsquo;m guilty of that</h4>
+<p>We know that happens far too often in our industry. Just the other night, I was guilty of doing exactly that.</p>
+<p>As a developer for a <a target="_blank" href="http://www.blazonco.com">commercial CMS</a>, we provide basic e-commerce functionality. Recently, a client specifically needed coupon codes added to our getup. With a rather short deadline, and being busy as the year gets close to ending, I didn&rsquo;t have much time to flesh out the design of this new functionality. Besides everything else we needed to do, this feature ended up with a 2 day implementation, with very little planning. Things ended up looking like this:</p>
+
+<pre class="php"><code>foreach($items as $item) {    if($item instanceof CouponItem) {    //get discount    }    //do stuff with CartItems}</code></pre>
+<p>I just tied in where we were calculating the totals of all CartItems, and if one of the items was a CouponItem, do discount stuff instead. Another situation was in the view, when showing the cart. I had another loop through the cart items, in order to show them all. With CouponItems now apart of the Cart, I had to handle the different properties of a CouponItem there.</p>
+<pre class="php"><code>&lt;? foreach($items as $item) { ?&gt;
+&lt;td&gt;
+	&lt;? if($item instanceof CouponItem) { ?&gt;
+	&lt;!-- Coupon stuff --&gt;
+	&lt;? } else { ?&gt;
+	&lt;!-- normal stuff --&gt;
+	&lt;? } ?&gt;
+&lt;/td&gt;
+&lt;? } ?&gt;</code></pre>
+<p>One can&rsquo;t help but feel dirty doing this. Just hodge-podging rules into place, that magically make everything all better.</p>
+<h4>Is it really that bad?</h4>
+<p>Some may be wondering, what&rsquo;s the big deal? It works, doesn&rsquo;t it? Why, yes! It works! And depending on your situation, that may be all that&rsquo;s really necessary. After all, the point of software is to ship it. And it&rsquo;s got to work. In the end, <em>how</em>it works on the inside has little value to the end user. That&rsquo;s the same in my case. In the end, what really matters is that users can add products to a shopping cart and then checkout.</p>
+<p>However, at the same time, since our product is something that I have to work on every day, writing software like this makes things more confusing, and hard to maintain. Come a few months from now, when we find a bug in the Cart Items somewhere, or when I need to add a new feature in there, that hacked in behavior is <strong>unexpected behavior</strong>. Unexpected behavior means its easy to break something when I modify code elsewhere. It also means that it will take more time to learn what the heck I was doing when I read it again in the future.<em> And I at least wrote that code</em>. The other developers have it worse.</p>
+<p>Now that the deadline has passed, and it just works, I can spend the next couple days planning out a better, more elegant way of handling these coupon codes. My users won&rsquo;t see the difference. But I will certainly notice it in a month or more.</p>

@@ -1,0 +1,31 @@
+---
+layout: post
+title: Tooltip Image with Mootools
+date: '2008-12-12T09:29:00-08:00'
+tags:
+- javascript
+- mootools
+tumblr_url: http://seanmonstar.com/post/708849612/tooltip-image-with-mootools
+---
+<p><img src="http://media.tumblr.com/tumblr_l46b7rsjMl1qzek7l.jpg"/></p>
+<p>Alright, taking a look at the Mootools docs, and playing around, I&rsquo;ve quickly learnt how to throw an image into a Tooltip with Mootools. It&rsquo;s far easier, and far cleaner than what I was doing with version 1.1. The first way still works, and the validator tells me its valid, but it feels dirty.</p>
+<p><strong>A little background:</strong> the tooltip is built from the title and rel (or href if rel is empty) attributes of the element.</p>
+<h4>Putting &lt;img&gt; in the rel property</h4>
+<pre>window.addEvent('domready',function() {
+	var t = new Tips('.tip');
+});</pre>
+<pre>&lt;a class="tip" href="http://mootools.net/" rel="&amp;lt;img src=mootools_white.jpg /&amp;gt;" title="Mootools.net"&gt;Mootools&lt;/a&gt;</pre>
+<p>This was my original, dirty way. It should still work. Make sure to escape the left and right brackets inside the rel property, or you&rsquo;ve got invalid XHTML. So if that looks like your bag of goodies, take it. For those who like feeling good inside, here&rsquo;s a newer, cleaner way of doing things.</p>
+<h4>Using Element.store to store an image</h4>
+<p>The Mootools Tips class use <a target="_blank" href="http://mootools.net/docs/Element/Element/#Element:store">Element.store</a> and <a target="_blank" href="http://mootools.net/docs/Element/Element/#Element:retrieve">Element.retrieve</a> for the tool-tips title and text, so that means we can override the defaults. It just requires a little more scripting, but I think that&rsquo;s perfectly fine.</p>
+<p>The benefit here is that you can make a new DOM Element of an image, and store the image into the tip:text field of the Element. Take a peek:</p>
+<pre>window.addEvent('domready',function() {
+	var t = new Tips('.tip');
+	$$('.tip').each(function(tip){
+		var imgSrc = tip.retrieve('tip:text');
+		var imgAlt = tip.retrieve('tip:title');
+		tip.store('tip:text', new Element('img',{'src':imgSrc,'alt':imgAlt}));
+	});
+});</pre>
+<p>This way, we can store the filename of the image in the rel property, and then construct the image with Javascript. Feels a whole lot cleaner than keeping an escaped img tag inside a property.</p>
+<pre>&lt;a class="tip" href="#" rel="mootools_white.jpg" title="Mootools.net"&gt;Mootools&lt;/a&gt;</pre>

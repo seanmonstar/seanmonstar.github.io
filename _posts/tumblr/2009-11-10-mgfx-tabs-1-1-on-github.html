@@ -1,0 +1,36 @@
+---
+layout: post
+title: MGFX.Tabs 1.1 on Github
+date: '2009-11-10T08:13:00-08:00'
+tags:
+- javascript
+- mootools
+tumblr_url: http://seanmonstar.com/post/709042849/mgfx-tabs-1-1-on-github
+---
+<p>Quite a while ago, I released a simple-to-use <a href="http://seanmonstar.com/2008/08/12/pluggable-mootools-tabs.html">MooTools tabs class</a>, and it continues to be one of the most frequented posts on the site. With so many people obviously desiring a MooTools tabs plugin, I&rsquo;ve added a few new features to the plugin, as well as moved it to Github for inclusion in the future MooTools Forge.</p>
+<p><a target="_blank" href="http://github.com/seanmonstar/MGFX.Tabs"><img alt="Pluggable MooTools Tabs" src="http://media.tumblr.com/tumblr_l458wgOoAD1qzek7l.jpg"/></a></p>
+<h4>On Github</h4>
+<p>First of all, <a target="_blank" href="http://github.com/seanmonstar/MGFX.Tabs">all development on this class will be found in Github</a> from now on. That means you can always find the most recent work on it there, and can even fork or provide improvements if you ever so desire. When I add new features, I&rsquo;ll add a new tag grouping them together and allowing an easy way to download.</p>
+<p>With putting it on Github, I&rsquo;ve also organized the project into various folders, provided some basic documentation, and done the rest that I need to in order to eventually include this in the <a target="_blank" href="http://mootools.net/blog/2009/09/22/mootools-124-released/">MooTools Forge</a>. Seeing as this class is one of the popular MooTools tabs plugins, I imagine it will be a good fit on the Forge.</p>
+<h5>Demo and Docs</h5>
+<p>There&rsquo;s <a target="_blank" href="http://github.com/seanmonstar/MGFX.Tabs/blob/master/Docs/mgfxtabs.md">documentation</a> that I wrote up explaining inner workings of the class. Plugins for the Forge are requested to have documentation. Also, a <a target="_blank" href="http://seanmonstar.github.com/MGFX.Tabs/">demo</a> showing off the newest options is on Github as well.</p>
+<h4>Version 1.1</h4>
+<p>On Github, the <a target="_blank" href="http://github.com/seanmonstar/MGFX.Tabs/tree/1.1.1">newest version as of this writing is <del>1.1</del> <ins>1.1.1</ins></a>. <a target="_blank" href="http://seanmonstar.com/2008/08/12/pluggable-mootools-tabs.html">1.0</a> was the initial release, and since then people left in the comments some good suggestions to improve the class. I had first simply included the suggestions haphazardly, but soon realized I should do it properly.</p>
+<h5>New Options</h5>
+<p>Specifically, new in version 1.1 is 2 new options when instantiating the class. There&rsquo;s <code>hover</code> and <code>hash</code>.</p>
+<p><code>hover</code>, which I plugged with a hack originally, determines if hovering over the Tabs area should pause the autoplay animation. Before it simply called <code>stop</code> and <code>autoplay</code>, but it was suggested that it looked weird if the timer went 4 seconds, then you hovered over the tabs, and then after leaving the area it took its allotted 5 seconds over again. So now, I do some timer magic to make sure that each slide is only shown for as long as you set in <code>slideInterval</code> (not counting while the mouse is over the area).</p>
+<p><code>hash</code> is another option that was requested, that makes the plugin take a look at <code>window.location.hash</code> to determine if there is a Tab to show. If you go to <code>#some-id</code>, and one of the tabs has the id &ldquo;some-id&rdquo;, then that will be the first tab to be shown.</p>
+<h5>Doing Things Differently</h5>
+<p>I also broke it slightly. I mean it&rsquo;s not very backwards compatible. The constructor takes arguments <em>every so slightly differently</em>. I used to require that the buttons be in an unordered list. I felt that requirement was silly of me. So I&rsquo;ve removed that need. Now, you simply provide a collection of elements that should be the buttons. To still use an unordered list, it&rsquo;s as simple as:</p>
+<pre><code>new MGFX.Tabs($$('ul.tabs li a'), panels);</code></pre>
+<p>But you can also make it more complicated, if you need to:</p>
+<pre><code>new MGFX.Tabs($$('li.one a, li.two a, #extra .button'), panels);</code></pre>
+<p>The same can be done to the panels as well. I saw some people trying to make a different element that came from a completely different part in the HTML, still be used in the Tabs. I figured this would make it easier on people.</p>
+<h4>Tabs in the Future</h4>
+<p>When the MooTools Forge comes out, I&rsquo;ll be adding the most recent tag to the Forge. Hopefully, when I get the time to do some more, I&rsquo;ll add in more transition effects, as well as the ability to load some content via Ajax into the tab panels.</p>
+<p>Here&rsquo;s a courtesy link to the zip on Github.</p>
+<p><a href="http://github.com/seanmonstar/MGFX.Tabs/zipball/1.2.0.zip">MGFX.Tabs 1.2.0</a></p>
+<h4>Update (11/18/09)</h4>
+<p>Couple bug fixes were made, one with the new hover functionality wrongly restarting the animation, and another that broke the tabs when you clicked the tabs too quickly. I&rsquo;ve updated the links to version 1.1.1.</p>
+<h4>Update (2/18/10)</h4>
+<p>MGFX.Tabs is now at <a href="http://seanmonstar.com/2010/02/18/mgfx-tabs-1-2-0-show-a-random-tab.html">version 1.2.0</a>. There is now a <code>MGFX.Tabs#random</code> function that can be used to display a random tab. Ta-da!</p>

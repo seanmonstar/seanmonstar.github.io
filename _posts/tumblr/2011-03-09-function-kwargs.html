@@ -1,0 +1,37 @@
+---
+layout: post
+title: Function.kwargs
+date: '2011-03-09T11:00:00-08:00'
+tags:
+- javascript
+- mootools
+- python
+- planet
+tumblr_url: http://seanmonstar.com/post/3746460491/function-kwargs
+---
+<a href="http://jsfiddle.net/seanmonstar/WfWhN/">Function.kwargs</a><br/><p>I get to write a lot of Python now on a daily basis, and some Python bits bleed back into my JavaScript writing. One aspect that I love is keyword arguments.</p>
+
+<pre><code>def example(name, description, url, help, error):
+    pass
+
+example(name='A', url=myURL, description='An example')
+</code></pre>
+
+<p>Having something similar in JavaScript is possible, but requires a bit of work for a function to support it. Inspired by Python and MooTools overloadSetter, I cooked up <a href="http://jsfiddle.net/seanmonstar/WfWhN/">a decorator</a> to easily convert a function to allow keyword arguments<sup id="fnref:p3746460491-1"><a href="#fn:p3746460491-1" rel="footnote">1</a></sup>.</p>
+
+<pre><code>var example = function(name, description, url, help, error) {
+
+}.kwargs();
+
+example({ name: 'B', error: true, description: 'kwargs in javascript' });
+example('C', 'args plus kwargs', { help: true, error: false });
+</code></pre>
+
+<p>Just like in Python, you can provide arguments the regular way, or pass in keyword arguments. You can also mix them; the last argument will be checked to see if it&rsquo;s a kwargs-like object.</p>
+
+<div class="footnotes">
+<hr><ol><li id="fn:p3746460491-1">
+<p>MooTools required, of course. <a href="#fnref:p3746460491-1" rev="footnote">↩</a></p>
+</li>
+
+</ol></div>

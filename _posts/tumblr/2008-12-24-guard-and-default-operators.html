@@ -1,0 +1,46 @@
+---
+layout: post
+title: Guard and Default Operators of JavaScript
+date: '2008-12-24T11:48:00-08:00'
+tags:
+- javascript
+- bestof
+tumblr_url: http://seanmonstar.com/post/707078771/guard-and-default-operators
+---
+<p>Programming languages with C-style syntax all have logical operators for AND, OR, and NOT. They are &amp;&amp;, ||, and !, respectively. In Javascript, the way the languages determines logical operations and the values Javascript treats as true or false lead to people using the AND and OR operators for <em>guard and default situations</em> . Let me explain.</p>
+<h4>Guard and Default? How so?</h4>
+<p>Here&rsquo;s a quick look at how you can guard a value:</p>
+<pre>var getUsername = function() {    return loggedIn &amp;&amp; username;}</pre>
+<p>If the user hasn&rsquo;t logged in yet, <code>loggedIn</code> will be false, and irregardless of what <code>username</code> might have been set to, our function will return false.  If <code>loggedIn</code> is true, then it will proceed to the next variable, and return <code>username</code> .</p>
+<p>In short, A &amp;&amp; B will return B if A is true (what Javascript considers true), otherwise it will return A.</p>
+<p>And here&rsquo;s quickly what defaulting looks like:</p>
+<pre>var MGFX = MGFX || {};</pre>
+<p>I do this at the top of some of my Javascript classes. I use MGFX as the namespace to hold all my classes, and to make sure it always exists, I declare this at the top. If I&rsquo;ve declared the var MGFX before, then the new MGFX will be the old one. If not, it will be an empty object.</p>
+<p>In short, A || B will return A if A is true, otherwise it defaults to B.</p>
+<h4>Wait, those are logical operators, though&hellip;</h4>
+<p>Indeed, when I first started using these behaviors, I found it pecular how this was possible. Don&rsquo;t get me wrong, it&rsquo;s nice being able to declare a default in 1 line instead of 4. But reading it makes me want to think <em>it should be returning a boolean</em> .</p>
+<p>So to quench my curiosity, I opened up Firebug this morning and played with all sorts of possibilities, finally understanding why this actually makes sense.</p>
+<h5>Javascript True and False</h5>
+<p>It&rsquo;s worth knowing first what is considered true and false in Javascript.</p>
+<p>All these will evaluate to true (ie if you put them in an <code>if</code> statement):</p>
+<ul><li>true</li>
+<li>All numbers besides 0</li>
+<li>All non-empty strings (includes &ldquo;false&rdquo; and &ldquo;0&rdquo;)</li>
+<li>An array (including empty: [])</li>
+<li>An object (including empty: {})</li>
+</ul><p>And these are the false values:</p>
+<ul><li>false</li>
+<li>0</li>
+<li>&ldquo;&rdquo;</li>
+<li>null</li>
+<li>NaN</li>
+<li>undefined</li>
+</ul><h5>Why This Makes Sense</h5>
+<p>To understand what is happening, you need only to realize what an AND or OR operator does. Let&rsquo;s take AND. In order for an AND operation to return true, both parts of the AND must individually be true. So, in Javascript, the first value is evaluated, and only if it is true, does it bother to evaluate the next value. Makes sense, since the second value doesn&rsquo;t matter if the first is false.</p>
+<p>Well, then, really, you could get away with returning the evaluation of the first variable if it was false for the whole AND statement. And if it were true, the AND statement now depends on the evaluation of the second statement and cares nothing about the first (since its true). Now returning the second evaluation would be the correct answer.</p>
+<p>The same can be applied to OR. If the first statement is false, then the result of the OR hangs entirely on the second statement. And if the first statement is true, it doesn&rsquo;t need the second statement for the OR to be true.</p>
+<p>The only confusing part after realizing this, is the values Javascript determines is true. Or rather, that <em>it basically doesn&rsquo;t coerce the evaluations into booleans. It leaves them as is.</em></p>
+<p>So: 0 || &ldquo;apple&rdquo; returns &ldquo;apple&rdquo;, because it evaluates to true, and thats enough for Javascript.</p>
+<h5>Achieving the Original Results</h5>
+<p>I like the way this works. But I did want to see if I could get the original results in cases where I want a boolean of the result. The only way I could see doing this is using a double NOT. The NOT (!) operator in Javascript will <strong>always </strong> return a boolean. So using !! will give me the boolean of the opposite, and then the boolean again of the true result. One last example:</p>
+<pre>var iAreABoolean = !!(14 &amp;&amp; "sean"); //returns !!("sean") which returns !(false) in turn gives me true.</pre>

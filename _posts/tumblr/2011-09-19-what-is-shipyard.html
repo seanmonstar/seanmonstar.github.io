@@ -1,0 +1,31 @@
+---
+layout: post
+title: What is Shipyard?
+date: '2011-09-19T10:33:06-07:00'
+tags:
+- javascript
+- programming
+- shipyard
+- mvc
+- mozilla
+- planet
+tumblr_url: http://seanmonstar.com/post/10407228296/what-is-shipyard
+---
+<a href="https://github.com/seanmonstar/Shipyard">What is Shipyard?</a><br/><p>This week, at our Mozilla All Hands, I shared <a href="https://docs.google.com/present/edit?id=0AbkIbW9hDUKXZGRwMnpuaHNfNmNyenNyNmhx&amp;hl=en_US">some slides about Shipyard</a>, a JavaScript MVC framework that is making it&rsquo;s way into <a href="https://builder.addons.mozilla.org">Add-on Builder</a>. It&rsquo;s not finished, but since I shared it there, it felt appropriate to share what there currently is here.</p>
+
+<h3>Summary</h3>
+
+<p>An application framework that covers all the common things any JavaScript application would need to deal with: interacting with a server, storing data, rendering said data in the browser, and responding to user actions. An application built on Shipyard should only have to write the parts to pull all those things together.</p>
+
+<p>If you&rsquo;re application is going to have 1000 lines of JavaScript, would you rather write all those yourself, or have 900 of them be in a framework that is tested and used by others?</p>
+
+<p>When starting a web application, you would reach for Django, or CakePHP, or Rails; never would you decide to use just the language itself. Why shouldn&rsquo;t you do the same when the target language is JavaScript?</p>
+
+<h3>Framework-wide Goals</h3>
+
+<ol><li>Be able to declare dependencies inside the code, and not be bothered with managing them during development or deployment.</li>
+<li>Be easily testable, using a node test runner.</li>
+<li>Not reliant on any other language. Build scripts will use JavaScript. The End.</li>
+</ol><h3>More</h3>
+
+<p>It&rsquo;s heavily influenced by MooTools, since they have an excellent modular design, but turned into modules while Moo 2.0 figures itself out. There&rsquo;s <a href="https://docs.google.com/present/edit?id=0AbkIbW9hDUKXZGRwMnpuaHNfNmNyenNyNmhx&amp;hl=en_US">slides</a>, and the <a href="https://github.com/seanmonstar/Shipyard">repository</a>, again.</p>

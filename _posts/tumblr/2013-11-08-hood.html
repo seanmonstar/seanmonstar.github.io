@@ -1,0 +1,35 @@
+---
+layout: post
+title: hood
+date: '2013-11-08T09:52:44-08:00'
+tags:
+- javascript
+- programming
+- nodejs
+- hood
+- middleware
+- security
+- planet
+tumblr_url: http://seanmonstar.com/post/66383442331/hood
+---
+<p>It&rsquo;s dangerous on the internet, use some security headers. No, really. If you&rsquo;re making a webapp, you need some of them lovely headers. Headers such as CSP, HSTS, X-Frame-Options. I previously implemented these in our <a href="http://seanmonstar.com/2013/08/08/gmail-bridge-for-persona.html">Gmail Bridge</a>, and then needed them again in another app. Copy over the headers code? Nonsense! That&rsquo;s what libraries are for.</p>
+
+<h3>hood</h3>
+
+<p><a href="https://npmjs.org/package/hood"><img src="http://media.tumblr.com/d64fa6deffc201b0b621774fc4668877/tumblr_inline_mvygl1Mpb31qzek7l.png" alt="hood"/></a></p>
+
+<p>You can use <a href="https://npmjs.org/package/hood">hood</a> without any configuration, and it will use sane defaults that most apps will want to enforce security-wise. You can also pass options to <code>hood(options)</code> to configure parts to be different than default, or you can use each header individually, such as <code>hood.csp()</code>.</p>
+
+<p>Included middlewares:</p>
+
+<ul><li>csp</li>
+<li>hsts</li>
+<li>xframe</li>
+<li>nosniff</li>
+</ul><h3>Why didn&rsquo;t I just use Helmet?</h3>
+
+<ul><li>helmet doesn&rsquo;t by default use the <code>Content-Security-Policy</code> header for it&rsquo;s <code>csp</code> middleware, which is now the standard.</li>
+<li>I only expected to setup the middleware once, so needing to do pre-setup for <code>helmet.csp</code> by adding and configuring policies felt wrong. <code>hood.csp</code> just accepts policy options, so you can use it once and be done.</li>
+</ul><h3>v0.1.1</h3>
+
+<p>Cover your head, <a href="https://npmjs.org/package/hood">v0.1.1</a>.</p>

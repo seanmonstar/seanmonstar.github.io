@@ -1,0 +1,23 @@
+---
+layout: post
+title: Why Object.prototype is not the place for Hash methods
+date: '2010-11-12T09:00:00-08:00'
+tags:
+- javascript
+- mootools
+- planet
+tumblr_url: http://seanmonstar.com/post/1554012583/object-prototype
+---
+<p>You might have heard that extending the Object.protoype is <a href="http://erik.eae.net/archives/2005/06/06/22.13.54/">verboten</a>. But you might realize that one of the most famous issues with extending Object can be solved with the handy <code>obj.hasOwnProperty(key)</code> line. Besides, developers who like picking MooTools likely do so (at least partly) because it&rsquo;s much more elegant to call methods on objects than pass objects into functions. I&rsquo;ve been asked why MooTools choses to keep a separate Hash class instead of putting those methods directly on the Object prototype. Here&rsquo;s my reasoning for why.</p>
+
+<h3>Object is an Easy Hash</h3>
+
+<p>In JavaScript, the object literal notation makes it very easy to create hash-like structures. However, it does not provide that hash with methods to access keys, or do a forEach loop over, do a map function, and the like. Some developers might reach for the Object&rsquo;s prototype to add in these useful methods. However, you might remember that <strong>all</strong> objects inherit from Object. Which essentially means everything (Array, Function, user-defined class).</p>
+
+<h3>Dog isn&rsquo;t a Hash</h3>
+
+<p>Now imagine, defining a class like Dog. Or how about User, since that&rsquo;s much more real-world. Does it make sense for User to inherit Hash methods? Would you in any other language write <code>class User extends Hash</code>? Can you imagine being able to call <code>someUser.map(fn)</code> or <code>someUser.keys()</code>? It&rsquo;s silly!</p>
+
+<p>You might be thinking that it doesn&rsquo;t matter, you would never need to make those method calls, so they&rsquo;re practically invisible. But they&rsquo;re not. The point of decent code is modularize information and logic, not mix in pieces we never need.</p>
+
+<p>It&rsquo;s especially easy to just include the Hash class from MooTools More if you need hash capabilities. It&rsquo;s 6 extra characters around your object literal, and then you don&rsquo;t pollute any other class. Hurray!</p>

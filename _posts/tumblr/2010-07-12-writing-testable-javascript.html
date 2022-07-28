@@ -1,0 +1,11 @@
+---
+layout: post
+title: Writing Testable JavaScript
+date: '2010-07-12T12:57:46-07:00'
+tags:
+- javascript
+tumblr_url: http://seanmonstar.com/post/803200989/writing-testable-javascript
+---
+<a href="http://www.adequatelygood.com/2010/7/Writing-Testable-JavaScript">Writing Testable JavaScript</a><br/><p>Some good advice about singletons, since their popular with the Module Pattern. Also true about &ldquo;tight&rdquo; functions, but this is true in any language.</p>
+
+<p>However, I&rsquo;d ignore the tip to not use private functions just so their testable. That argument doesn&rsquo;t fly in any other language, and the only thing the rest of your program cares about is that the public interface does what it says it does. That&rsquo;s the point of unit testing: <strong>guaranteeing the public API contract.</strong></p>

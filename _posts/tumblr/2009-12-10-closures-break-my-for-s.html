@@ -1,0 +1,117 @@
+---
+layout: post
+title: Closures Break my For's
+date: '2009-12-10T09:30:00-08:00'
+tags:
+- javascript
+tumblr_url: http://seanmonstar.com/post/708874716/closures-break-my-for-s
+---
+<p><strong>I love closures</strong>. They are an excellent tool any Javascript programmer should have in his tool set. They let you do fantastic things, and are the way things like the <a target="_blank" href="http://yuiblog.com/blog/2007/06/12/module-pattern/">Module Pattern</a> are possible. But they can also be tricky. I&rsquo;ll show you a couple ways they&rsquo;ve managed to fool me, so that you can be aware of them when you use them in your programs.</p>
+
+
+
+<h3>When Doing a Simple <code>for</code> Loop</h3>
+
+<p></p>
+
+<p><code>for</code> loops are nothing special to programmers. And they&rsquo;re nothing special in Javascript. So why would you need a closure in a simple <code>for</code> loop? Whenever you&rsquo;re binding functions to things inside that <code>for</code> loop, you likely need a closure.</p>
+
+
+
+<pre><code>function Highlighter(ul) {
+    var that = this;
+    var subjects = ul.getElementsByTagName('li');
+    for(var i = 0; i &lt; subjects.length; i++) {
+        addEvent(subjects[i], 'click', function() {
+            that.highlight(i);
+        });
+    }
+}</code></pre>
+
+<p></p>
+
+<p>A seemingly harmless <code>for</code> loop. We&rsquo;re just looping through all the list items in a list, and <a href="http://seanmonstar.com/2008/10/01/cross-browser-addevent-without-frameworks.html">binding click events</a> to them, so they will highlight when clicked. If you were to create a new <code>Highlighter</code> like this, and then click on a list item, you&rsquo;d get an error. Inspecting the error you would see that, hey! <code>i</code> is equal to the <code>length</code>. <em>What the heck!</em></p>
+
+
+
+<p>Well, when you created all those new functions in the <code>for</code> loop, to bind them, you gave them the variable <code>i</code>. But <code>i</code> wasn&rsquo;t part of the functions local scope, so it creates a closure. <code>i</code> can change. And it does! The <code>for</code> loop eventually makes it be equal to the length, which fails the expression check in the <code>for</code> loop. In most programming languages, we&rsquo;d think that&rsquo;s it for <code>i</code>. But no, <code>i</code> lives on as long as those functions exist and care about i. (<a target="_blank" href="https://developer.mozilla.org/en/Core_JavaScript_1.5_Guide/Working_with_Closures">Read up on closures</a>)</p>
+
+
+
+<p>So we can use a closure to make sure every function we create gets it&rsquo;s own, paused variable to use, so it won&rsquo;t get changed with the <code>for</code> loop.</p>
+
+
+
+<pre><code>function Highlighter(ul) {
+    var that = this;
+    var subjects = this.subjects = ul.getElementsByTagName('li');
+    for(var i = 0; i &lt; subjects.length; i++) {
+        (function(index) {
+            addEvent(subjects[index], 'click', function() {
+                that.highlight(index);
+            });
+        })(i);
+    }
+}</code></pre>
+
+<p></p>
+
+<p>Now, every pass of <code>i</code>, we create and execute a function that accepts an argument that we call index. Since it executes immediately, it passed the value of <code>i</code> at that moment.</p>
+
+
+
+<h3>Let&rsquo;s take it one step further</h3>
+
+<p></p>
+
+<p>In my <code>for</code> loop, I&rsquo;m also relying on another variable outside my bound event function: <code>subjects</code>. Theoretically, I could write something later that would affect <code>subjects</code>. Or someone else could. Perhaps if I wrote some more in my constructor function, and altered the array. More likely, since that is a <code>NodeList</code>, it can change if the DOM ever changes, such as adding more list items, or removing them. If that happens, then we&rsquo;ll have issues besides just our variable being different.</p>
+
+
+
+<p>Nonetheless, we could make our closure less reliant on that and other variables, by passing them as arguments.</p>
+
+
+
+<pre><code>function Highlighter(ul) {
+    var that = this;
+    var subjects = this.subjects = ul.getElementsByTagName('li');
+    for(var i = 0; i &lt; subjects.length; i++) {
+        (function(list_item, index) {
+            addEvent(list_item, 'click', function() {
+                that.highlight(index);
+            });
+        })(subjects[i], i);
+    }
+}</code></pre>
+
+<p></p>
+
+<p>We no longer access the variable from outside the function. We&rsquo;re passing a value at the function executing. Again, if later that array changes, our function is still safe (disregarding <code>that.highlight(index)</code> will likely have the wrong index).</p>
+
+
+
+<h3>Frameworks Help Remove This Problem</h3>
+
+<p></p>
+
+<p>This issue comes up commonly in <code>for</code> loops. That is why in frameworks, using a <code>forEach</code> method tends to protect us from all of these. <code>forEach</code> lets us create a function that will already have the value from the array passed as an argument, so we don&rsquo;t have to worry about the index value changing.</p>
+
+
+
+<h4>In MooTools</h4>
+
+<p></p>
+
+<pre><code>function Highlighter(ul) {
+    var that = this;
+    var subjects = this.subjects = ul.getElements('li')
+    subjects.each(function(el, index) {
+        el.addEvent('click', function() {
+            that.highlight(index);
+        });
+    });
+}</code></pre>
+
+
+
+<p>Most other frameworks have a <code>forEach</code> method, as well as <a target="_blank" href="https://developer.mozilla.org/En/Core_JavaScript_1.5_Reference/Objects/Array/ForEach">modern Javascript itself</a>. However, if you&rsquo;re not working with a framework, it&rsquo;s good to know why your closures are breaking.</p>

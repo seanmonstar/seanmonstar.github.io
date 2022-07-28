@@ -1,0 +1,66 @@
+---
+layout: post
+title: ! 'MVC in MooTools: Controllers'
+date: '2010-10-18T23:33:00-07:00'
+tags:
+- javascript
+- mootools
+- mvc
+- monstars.js
+tumblr_url: http://seanmonstar.com/post/1349631987/mvc-in-mootools-controllers
+---
+<p><small>This is another installment about how to use my <a href="http://github.com/seanmonstar/monstars.js">MooTools MVC framework</a>. If you&rsquo;re interested in the previous parts, check out my write-up on using <a href="http://seanmonstar.com/2010/08/25/mvc-in-mootools-models.html">Models</a> and <a href="http://seanmonstar.com/2010/09/02/mvc-in-mootools-views.html">Views</a>.</small></p>
+
+<p>It&rsquo;s often explained that Controllers are how you tie Models and Views together. I don&rsquo;t want to get into <em>that</em> argument. For me and my framework, Controllers handle DOM events. They listen to the views for events, update models, and then render new views. Let&rsquo;s take a look.</p>
+
+<h3>Event.Delegation</h3>
+
+<p><a href="http://mootools.net/docs/more/Element/Element.Delegation">Event delegation</a> is used throughout the controllers, since it greatly eases the pain of changing the DOM around all the time. When you name a controller, the first part of the name will be used to find or create an element to look over, unless another element is specified. Example time:</p>
+
+<pre><code>var RecipesController = new Class({
+    Extends: Controller
+});
+
+//attaches itself to &lt;div id="Recipes"&gt;&lt;/div&gt;
+//if that doesn't exist, it gets created
+</code></pre>
+
+<p>The rest of the controller contains event handlers for everything that goes on inside that element, and methods that various event handlers can call.</p>
+
+<pre><code>var RecipesController = new Class({
+    Extends: Controller,
+    events: {
+        load: function() {
+            Recipe.findAll(this.list.bind(this));
+        },
+        'click:relay(.recipe .delete)': function(e) {
+            e.preventDefault();
+            var recipeView = $(e.target).getParent('.recipe');
+            recipeView.get('model').destroy(function() {
+                recipeView.destroy();
+            });
+        }
+    }
+});
+</code></pre>
+
+<p>The load event will fire on domready, and eveything else is in the MooTools event delegation way. Currently, all event handlers are bound to the controller instead of the element, since it&rsquo;s easy enough to get the element from the event object, and you&rsquo;re most likely going to want to call a method of the controller. For instance, you might notice that the <code>load</code> event has a call to <code>list</code> on the controller.</p>
+
+<h3>this.view</h3>
+
+<p>First-class methods on a controller get access to the <code>view</code> method. This is a convenience method that will instantiate <a href="http://seanmonstar.com/2010/09/02/mvc-in-mootools-views.html">views</a> for you, with a little auto-magic thrown in.</p>
+
+<pre><code>var RecipesController = new Class({
+    Extends: Controller,
+    // events: {},
+    list: function(recipes) {
+        $(this).set('html', this.view({ recipes: recipes }));
+    }
+});
+</code></pre>
+
+<p><code>view</code> can accept 2 parameters: the view name, and a data object. However, you can exclude the view name, and it will try to use the controller and method names. In the <code>list</code> method above, since no view name is passed to <code>view</code>, it will try to load <code>recipes/list</code>.</p>
+
+<h3>That&rsquo;s About It</h3>
+
+<p>That&rsquo;s all there is to Controllers, actually. They just handled events fired by Views, let appropriate Models know, and change the View if necessary. Although, while the role seems small, it tends to contain the majority of logic anyways. Models just hold on to their data, and Views just show it, but Controllers are how you manipulate it.</p>

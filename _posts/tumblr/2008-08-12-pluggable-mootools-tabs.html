@@ -1,0 +1,33 @@
+---
+layout: post
+title: Pluggable Mootools Tabs
+date: '2008-08-12T13:54:00-07:00'
+tags:
+- javascript
+- mootools
+tumblr_url: http://seanmonstar.com/post/707019146/pluggable-mootools-tabs
+---
+<h4>Update (2/18/10)</h4>
+<p>Theres a <a href="http://seanmonstar.com/2010/02/18/mgfx-tabs-1-2-0-show-a-random-tab.html">new version of MGFX.Tabs</a>, that includes the ability to easily show a random tab.</p>
+<hr><h4>Update (11/10/09)</h4>
+<p>I&rsquo;ve released a <a href="http://seanmonstar.com/2009/11/10/mgfx-tabs-1-1-on-github.html">new version of MGFX.Tabs</a>, and wrote a new article explaining the new features, its new location, and so forth.</p>
+<hr><p><img src="http://media.tumblr.com/tumblr_l458wgOoAD1qzek7l.jpg"/></p>
+<p>Last week, I released a pluggable Slideshow type Mootools class.  I had written that class a while back, and since then had extended its functionality to allow me easily make tabs on any page.  I wanted my tabs to have the ability to auto-switch if I wanted, so extending my Rotater class made perfect sense.</p>
+<h4>MGFX.Tabs</h4>
+<p>I also wanted this to be a solution that <em>didn&rsquo;t require going into the source</em> and tweeking it to make it work.  That&rsquo;s the point of every class, really.</p>
+<p>Also, people (even myself, on varying projects) use different mark-up to make tabs.  The placement in the mark-up doesn&rsquo;t matter—just know that <em>it associates controller links with content based on order</em> in the DOM.  I often use a <code>ul</code> of controlling links, and then <code>div</code>s to hold the content; but sometimes I make the content an unordered list also. So this class tries not to restrict the xHTML, barring one: it does assume your controls are links inside list items (<code>&lt;li&gt;&lt;a&gt;&lt;/a&gt; &lt;/li&gt;</code> ).</p>
+<p>This does require the Fx.Elements add-on on top of the regular Mootools framework, so be sure to grab the extra class from <a href="http://mootools.net/more">Mootools More</a> .</p>
+<h5>The Constructor</h5>
+<p>The <em>constructor</em> is pretty simple, and since it extends Rotater, it includes the same transitionDuration and slideInterval options.</p>
+<pre>window.addEvent('domready',function(){
+	var tabs = new MGFX.Tabs('.tabs','.content',{
+		autoplay: true,
+		transitionDuration:500,
+		slideInterval:6000
+	});
+});</pre>
+<p>The <em>first parameter</em> taken is the class name of <code>ul</code> that contains your controlling buttons/links.  The <em>second parameter</em> is the class name of all the tabbed cotent.  For both of these, simply make the proper elements have the same class name.</p>
+<p>The <em>third parameter</em> is optional, as it is the class options. Every option can be ommited if you want, and it will just use the defaults I felt would be common.</p>
+<p><strong>Namespace:</strong> I&rsquo;ve started prepending all of my classes with <em>MGFX</em> to prevent conflicts with any other code that might be in use.</p>
+<p><a href="http://github.com/seanmonstar/MGFX.Tabs/zipball/1.2.0.zip">MGFX.Tabs 1.2.0</a></p>
+<p>There ya have it!  Should be fairly straight foward. <em>The demo is now in the download</em>, so it will forever work, and won&rsquo;t break when I alter my own Javascript.</p>

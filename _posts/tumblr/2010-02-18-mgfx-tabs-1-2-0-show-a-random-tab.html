@@ -1,0 +1,13 @@
+---
+layout: post
+title: MGFX.Tabs 1.2.0 - Show a Random Tab
+date: '2010-02-18T10:52:00-08:00'
+tags:
+- javascript
+- mootools
+tumblr_url: http://seanmonstar.com/post/709053684/mgfx-tabs-1-2-0-show-a-random-tab
+---
+<p><a target="_blank" href="http://mootools.net/forge/p/mgfx_tabs"><img src="http://media.tumblr.com/tumblr_l458wgOoAD1qzek7l.jpg" alt="MGFX.Tabs"/></a></p>
+<p>I&rsquo;ve updated MGFX.Tabs to have a random slide function. It just uses <code>Math.random</code>, and a slight modifier to insure the random number isn&rsquo;t already the current index. Since I believe in <a target="_blank" href="http://semver.org/">semantic versioning</a>, and this is a feature update (not a bug fix), but not breaking, its should be a new minor version.</p>
+<pre><code>var tabs = new MGFX.Tabs($$('.tabs li a'), $$('.tabs .content'));tabs.random();</code></pre>
+<p><strong>So <a href="http://mootools.net/forge/p/mgfx_tabs">MGFX.Tabs 1.2.0</a> is available on the Forge.</strong></p>

@@ -1,0 +1,113 @@
+---
+layout: post
+title: Making an Ajax Single-page Site with MooTools
+date: '2010-05-13T15:27:00-07:00'
+tags:
+- javascript
+- mootools
+tumblr_url: http://seanmonstar.com/post/709072388/making-an-ajax-single-page-site-with-mootools
+---
+<p>The past couple weeks I’ve been working on a website that, with JavaScript enabled, will never refresh the page<sup id="fnref:p709072388-1"><a href="#fn:p709072388-1" rel="footnote">1</a></sup>. With MooTools, I just needed to manipulate the URL hash and use <code>Request</code>, making it fairly easy to get an Ajax site that works like Facebook. Granted, this has nothing about handling CSS or JavaScript assets for each page. I’m currently handling that myself, and perhaps I’ll share my findings for that another time.</p>
+
+<h4>Use Event Delegation</h4>
+
+
+
+<p>First of all, I started with making every link in the site need to trigger the Ajax loading. MooTools More has an excellent <a target="_blank" href="http://mootools.net/docs/more/Element/Element.Delegation">Event Delegation package</a>. Using that, I’ll list for every click on a link on the page, check if it’s to the same domain, and load those pages asynchronously, otherwise just let the browser travel to the external page.</p>
+
+
+
+<pre><code>$(document.body).addEvent('click:relay(a)', function(e) {
+    var href = this.get('href');
+    if(isSameDomain(href)) {
+        e.preventDefault();
+        window.location.hash = href;
+    } else {
+        //let the browser do its thing...
+    }
+});</code></pre>
+
+<p></p>
+
+<h4>Change the Hash to provide History</h4>
+
+
+
+<p>We change the hash around because in most browsers, this will register another history location, allowing the forward and back buttons to work. It also allows someone to copy and paste a link. <a target="_blank" href="http://seanmonstar.com/2009/01/19/it-s-all-your-fault.html">IE6</a> and 7, of course, don’t. For them, we manipulate an <code>iframe</code>, which <em>will</em> register history locations.</p>
+
+
+
+<p>Most browsers provide a <a target="_blank" href="https://developer.mozilla.org/en/dom/window.onhashchange">hashchange event</a>, but again, IE6 and 7 fail to deliver. Thankfully, <a target="_blank" href="http://github.com/matsko/Mootools-window.onhashchange">Matias Niemelä has added support for the hashchange event into MooTools’ Event system</a>, browser compatibility and all. If you’re curious, you can <a target="_blank" href="http://www.yearofmoo.com/onhashchange/">read up on the different browser issues his effort solves</a>.</p>
+
+
+
+<p>Once I got that added to the page, and setup a listener, the listening function will run everytime a user clicks a relative link, since we change the hash in our click handler above.</p>
+
+
+
+<pre><code>window.addEvent('hashchange', function(hash) {
+new Page(hash).load();});</code></pre>
+
+<p></p>
+
+<h4>Make the Request and insert the Page</h4>
+
+
+
+<p>I actually use a <code>PageManager</code> arbiter to handle <code>Page</code> loading, inserting, removing, and caching, but that isn’t necessary (though I recommend it).</p>
+
+
+
+<p>To get you started, the <code>load</code> and <code>insert</code> methods of the <code>Page</code> class are shown below:</p>
+
+
+
+<pre><code>var Page = new Class({
+    Implements: [Options, Events],
+    options: {
+        container: 'Content'
+    },
+    initialize: function(url, options) {
+        this.setOptions(options);
+        this.url = url;
+    },
+    load: function() {
+        var that = this;
+        this.request = new Request({
+            url: url,
+            onSuccess: function(text) {
+                that.content = text;
+                that.insert();
+            },
+            onFailure: function() {
+                that.content = ERROR_404_MSG;
+                that.insert();
+            }
+        }).send();
+        return this;
+    },
+    insert: function() {
+        //no request means we've never called load()
+        if(!this.request) {
+            return this.load();
+        } 
+        //dont insert until we're done loading
+        if(this.request.running) {
+            return this;
+        }
+        $(this.options.container).set('html', this.content);
+        this.fireEvent('insert');
+        return this;
+    }
+});</code></pre>
+
+<p></p>
+
+<p>I’ve also declared methods like <code>remove</code> and <code>unload</code>, which my <code>PageManager</code> calls. I’ll be experimenting with what kind of optimizations I get by removing the content into a <code>documentFragment</code> instead of disposing of the content rebuilding if the user clicks back. But that should help give a start to trying to do this yourself.</p>
+
+<div class="footnotes">
+<hr><ol><li id="fn:p709072388-1">
+<p>As a precursor, its very simple to make a website like this work without the Ajax, so that its still accessible and searchable. In your server side code, most JavaScript frameworks will send an extra header, <code>X-Requested-With</code>, with the value of <code>XMLHttpRequest</code>. You can check if that header has been sent, and if so, send only the content html, and if not, send the entire page instead. <a href="#fnref:p709072388-1" rev="footnote">↩</a></p>
+</li>
+
+</ol></div>

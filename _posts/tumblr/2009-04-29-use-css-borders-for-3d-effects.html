@@ -1,0 +1,111 @@
+---
+layout: post
+title: Use CSS Borders for 3D Effects
+date: '2009-04-29T08:55:00-07:00'
+tags:
+- css
+- design
+- bestof
+tumblr_url: http://seanmonstar.com/post/707101490/use-css-borders-for-3d-effects
+---
+<p>Recently, I&rsquo;ve been more in favor of using the browsers rendering instead of background images to achieve looks, since that <strong>reduces bandwidth and loading times</strong> , and also <strong>increases maintainability</strong> . I used to slice images that would give something a shadow or button type of a look, but have moved more towards just making the browser do it. I wanted to share some examples of effects and how easy it is to do so.</p>
+
+
+
+<h4>3D Buttons</h4>
+
+<p></p>
+
+<p>As a smaller example, I&rsquo;ll show the buttons I put together for the Blazonco admin post index page. Rather simple, but I wanted to achieve that effect you&rsquo;ve seen in older buttons. You know, where the top part is light than the bottom, so it looks slightly raised out of the application. And then on hover, I swap the border colors, giving the look of being pushed in.</p>
+
+
+
+<p><img src="http://media.tumblr.com/tumblr_l45ae9drGO1qzek7l.png"/></p>
+
+
+
+<p>I threw a darker color on the bottom and right sides. The above picture shows normal (left) and hover (right). Of course, Print Screen hides the cursor (which I found weird). And here&rsquo;s the relevant CSS:</p>
+
+
+
+<pre><code> a.button {
+    background-color:#fff;
+    border-width:1px;
+    border-style:solid;
+    border-bottom-color:#aaa;
+    border-right-color:#aaa;
+    border-top-color:#ddd;
+    border-left-color:#ddd;
+    border-radius:3px;
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+}</code>  </pre>
+
+<p></p>
+
+<p><em>Having it in CSS allowed me to easily test out the results</em> , and tweak the color slightly as I decided one side was too dark or too light. And I also was able to easily experiment with how round I wanted the button. When using images for all this, you&rsquo;d have to make the changes in Photoshop, and save it and upload it again. So a major gain is in <strong>how easy it is to maintain</strong> .</p>
+
+
+
+<h4>Shadows</h4>
+
+<p></p>
+
+<p>I had the joy of turning a comp with mutliple rounded corner boxes and shadows and the like into a working web-site not long ago. I originally thought that these boxes would also need to be expandable, and I wondered how to achieve this in a feasible way. I settled on using various CSS3 techniques instead of image slices with <a target="_blank" href="http://www.alistapart.com/articles/slidingdoors/">sliding door</a> techniques.</p>
+
+
+
+<p>The end result was as such:</p>
+
+
+
+<p><img src="http://media.tumblr.com/tumblr_l45aejj8m01qzek7l.png"/></p>
+
+
+
+<p>In the boxes, I used a gradiant slice for the background, and then used only border and border-radius to obtain a kind of 3D look. Here&rsquo;s the CSS:</p>
+
+
+
+<pre><code> .module {
+    background:#fcfcfc url('images/module.png') repeat-x left bottom;
+    border:1px solid #ccc;
+    border-bottom:2px solid #bbb;
+    border-top:1px solid #ddd;
+    border-radius:10px;
+    -webkit-border-radius:10px;
+    -moz-border-radius:10px;
+}</code>  </pre>
+
+<p></p>
+
+<p>By making the border bigger and darker on the bottom, and lighter and thinner on the sides and top, I gave it a pseudo-shadow. The benefits of this over an image is that it only took 1 element to style (the div), and it could easily expand in any direction without running out of image.</p>
+
+
+
+<p>Since it was using CSS3 techniques, it was squared in Internet Explorer, but continued to look good. This is an important factor of <a target="_blank" href="http://www.alistapart.com/articles/progressiveenhancementwithcss">progressive enchancement</a> , since I made sure to use CSS that looked nice in older browsers.</p>
+
+
+
+<h5>CSS Feature Detection?</h5>
+
+<p></p>
+
+<p>One last rule I would have liked to add but never did was using Safari&rsquo;s drop shadow property. That would have achieved an even nicer looking shadow in Safari. The reason holding me back, was that I&rsquo;d already used border&rsquo;s to accomplish this effect, and didn&rsquo;t want to try to remove them for Safari. This would have required some Safari CSS hacks, since I currently don&rsquo;t know of a way to do CSS feature detection.</p>
+
+
+
+<p>It&rsquo;d be cool if you could do something as such (I&rsquo;m going to steal some Javascript syntax):</p>
+
+
+
+<pre><code> if(-webkit-box-shadow) {
+    .module {
+        border:none;
+        -webkit-box-shadow:5px 2px 2px #bbb;
+    }
+}</code>  </pre>
+
+<p></p>
+
+<p>Do any of you have any suggestions on how to properly achieve that with current technologies? And I&rsquo;m not interested in server-side sniffing. That&rsquo;s obvious, and sub-optimal.</p>

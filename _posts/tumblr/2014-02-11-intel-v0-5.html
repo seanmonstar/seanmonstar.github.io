@@ -1,0 +1,46 @@
+---
+layout: post
+title: intel v0.5
+date: '2014-02-11T15:50:01-08:00'
+tags:
+- progamming
+- javascript
+- nodejs
+- logging
+- intel
+- dbug
+- planet
+tumblr_url: http://seanmonstar.com/post/76370146228/intel-v0-5
+---
+<p><a href="http://seanmonstar.github.io/intel">intel</a> is turning into an even more awesome logging framework than before, as if that was possible! Today, I released version <a href="https://github.com/seanmonstar/intel/releases/tag/v0.5.0">0.5.0</a>, and am now here to hawk it&rsquo;s newness. You can check out the <a href="https://github.com/seanmonstar/intel/releases/tag/v0.5.0">full changelog</a> yourself, but I want to highlight a couple bits.</p>
+
+<h3>JSON function strings</h3>
+
+<p><a href="http://seanmonstar.github.io/intel/#full-configuration">intel.config</a> is really powerful when coupled with some JSON config files, but Formatters and Filters were never 100% in <code>config</code>, because you could pass a custom function to either to customize to your little kidney&rsquo;s content. It&rsquo;s not possible to include typical functions in JSON. Much sad face. So, the <code>formatFn</code> and <code>filterFn</code> options allow you to write a function in a string, and intel will try to parse it into a function. Such JSON.</p>
+
+<h3>Logger.trace</h3>
+
+<p>A new lowest level was introduced, lower than even VERBOSE, and that&rsquo;s TRACE. Likewise, <code>Logger.trace</code> behaves like <code>console.trace</code>, providing a stack trace with your message. If you don&rsquo;t enable loggers with TRACE level logging, then no stacks will be traced, and everything will choo-choo along snappy-like.</p>
+
+<h3>Full dbug integration</h3>
+
+<p>This is the goods. intel is an awesome <em>application</em> logging library, since it lets you powerfully and easily be a logging switchboard: everything you want to know goes everywhere you want. However, stand-alone libraries have no business deciding where logs go. Libraries should simply provide logging when asked to, and shut up otherwise. That&rsquo;s why libraries should use something like dbug. Since <a href="http://seanmonstar.com/2014/01/02/intel-0-4.html">v0.4</a>, intel has been able to integrate somewhat with <a href="http://seanmonstar.com/2013/10/25/dbug-v0-1.html">dbug</a>, but with 0.5, it can hook directly into it, meaning less bugs, and better performance. Examples!</p>
+
+<pre><code>// hood/lib/csp.js
+var dbug = require('dbug')('hood:csp');
+
+exports.csp = function csp(options) {
+    dbug('csp options:', options);
+    if (!options.policy) {
+        dbug.warn('no policy provided. are you sure?');
+    }
+    // ...
+};
+
+// myapp/server.js
+var intel = require('intel');
+intel.console({ debug: 'hood' });
+// will see: 'myapp.node_modules.hood.csp:DEBUG csp options: {}'
+</code></pre>
+
+<p>Dare I say, using <a href="http://seanmonstar.github.io/intel">intel</a> and <a href="http://seanmonstar.com/2013/10/25/dbug-v0-1.html">dbug</a> together gives the best logging solution for libraries and apps.</p>
