@@ -2,37 +2,39 @@
     <p class="description">{{ site.description }}</p>
 
     <div id="rss">
-        <p><a href="{{ site.rss }}" title="Join 300+ Subscribers">Subscribe via RSS</a> or <a href="http://feedburner.google.com/fb/a/mailverify?uri=seanmonstar&amp;loc=en_US">E-mail</a></p>
+        <p><a href="{{ site.rss }}" title="Join 300+ Subscribers">Subscribe via RSS</a></p>
     </div>
     <div id="spon">
-        <a href="http://seanmonstar.com/donate" title="Donate">
+        <a href="http://seanmonstar.com/donate" title="Sponsor">
             <img src="http://www.gravatar.com/avatar/dfb248d98bc7c238fccd5aad53624eab.png" alt="" />
-            <span id="spon-desc">Donate</span>
+            <span id="spon-desc">Sponsor</span>
         </a>
     </div>
     <script type="text/javascript">
         //serve random sponsor
         (function(){
             var sponsors = [
+                /*
                 {
-                    'link': 'http://www.amazon.com/gp/product/0596517742?tag=seanmonstar-20',
-                    'img': 'http://ecx.images-amazon.com/images/I/51lwS14VQTL._SL110_.jpg',
+                    'link': 'https://www.amazon.com/gp/product/0596517742?tag=seanmonstar-20',
+                    'img': 'https://ecx.images-amazon.com/images/I/51lwS14VQTL._SL110_.jpg',
                     'text': 'JavaScript: The Good Parts'
                 },
+                */
                 {
-                    'link': 'http://www.amazon.com/gp/product/0735619670?tag=seanmonstar-20',
-                    'img': 'http://ecx.images-amazon.com/images/I/51PPS4C6i8L._SL110_.jpg',
+                    'link': 'https://www.amazon.com/gp/product/0735619670?tag=seanmonstar-20',
+                    'img': 'https://images-na.ssl-images-amazon.com/images/I/51FUYfErOXL._SL110_.jpg',
                     'text': 'Code Complete: A Practical Handbook of Software Construction'
                 },
                 {
-                    'link': 'https://developer.mozilla.org/en/javascript',
-                    'img': 'http://static.jsconf.us/promotejsv.gif',
-                    'text': 'The only decent JavaScript docs'
+                    'link': 'https://www.amazon.com/Rust-Rustaceans-Programming-Experienced-Developers-ebook/dp/B0957SWKBS?tag=seanmonstar-20',
+                    'img': 'https://images-na.ssl-images-amazon.com/images/I/51s3gbiU20S._SX376_BO1,204,203,200_.jpg',
+                    'text': 'Rust for Rustaceans: Idiomatic Programming for Experienced Developers'
                 },
                 {
-                    'link': 'http://seanmonstar.com/donate',
-                    'img': 'http://www.gravatar.com/avatar/dfb248d98bc7c238fccd5aad53624eab.png',
-                    'text': 'Donate'
+                    'link': '/donate',
+                    'img': 'https://www.gravatar.com/avatar/dfb248d98bc7c238fccd5aad53624eab.png',
+                    'text': 'Sponsor'
                 }
             ];
             var randIndex = Math.floor(Math.random() * sponsors.length);

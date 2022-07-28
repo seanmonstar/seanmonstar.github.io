@@ -1,5 +1,5 @@
-body {
-      background: #fff url('http://static.tumblr.com/ngnm44u/QkFllq9ow/sketch.gif') no-repeat 1300px 10px fixed;
+   body {
+      background: #fff url('https://static.tumblr.com/ngnm44u/QkFllq9ow/sketch.gif') no-repeat 1300px 10px fixed;
       color: #404040;
       font: normal 1em/1.5em Roboto, Trebuchet MS, Arial, sans-serif;
       font-weight:300;
@@ -86,7 +86,16 @@ a:visited {
       margin:3.5em 0 1em; 
       letter-spacing:0.2em;
     }
-.post h3 {  }
+
+    h4 {
+      color: #777;
+      font-size: 0.9em;
+      font-family:Roboto, Verdana, sans-serif; 
+      font-weight:400; 
+      text-transform:uppercase; 
+      margin:2.5em 0 1em; 
+      letter-spacing:0.2em;
+    }
     
     .description {
         color: #999;
@@ -142,7 +151,12 @@ a:visited {
     
     #spon { clear:both; background:#ffecec; border:1px solid #ffcece; border-radius:5px; -webkit-border-radius:5px; -moz-border-radius:5px; margin:2em 0; padding:15px; }
         #spon-desc { font-size:10pt; line-height:1.2; text-align:center; display:block; margin-top:7px; }
-        #spon img { display:block; margin:0 auto; }
+        #spon img {
+            display:block;
+            margin:0 auto;
+            max-height: 10em;
+            max-width: 100%;
+        }
     
     #search input { display:block; width:100%; }
 
@@ -343,14 +357,24 @@ a:visited {
             list-style-type: none;
         }
         
+    /* mobile! */
     @media (max-width: 900px) {
+      body {
+        font-size: 1.25em;
+      }
+      #meta {
+        text-align: left;
+      }
       #posts { float:none; width: 100%;}
       #sidebar { float:none; width: 100%; }
-    }
-    
-    @media (max-width: 500px) {
+      .post {
+        clear:both;
+        padding: 1em 0 2em;
+      }
       .post .date {
         float: none;
+        padding: 0.25em 0 1em;
+        margin
       }
       .post .date .month,
       .post .date .day,
@@ -361,9 +385,18 @@ a:visited {
         float: left;
         border: 0;
         border-right: 1px solid #aaa;
+        margin-right: 0.25em;
+        padding-right: 0.25em;
         width: auto;
       }
-      .post .link {
+      .post .post-body {
         margin:0;
+      }
+      
+      .post .post-footer {
+        margin:0;
+      }
+      .post .post-footer .tags {
+          width: 80%;
       }
     }
