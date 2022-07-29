@@ -10,6 +10,7 @@ rss: "/feed.xml"
 twitter_username: seanmonstar
 github_username:  seanmonstar
 permalink: pretty
+paginate: 5
 
 # Build settings
 markdown: kramdown

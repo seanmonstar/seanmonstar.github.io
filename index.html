@@ -3,23 +3,25 @@ layout: default
 ---
 
 <div class="home">
+{% for post in site.posts %}
+  <article class="post article">
 
-    <ul class="post-list">
-    {% for post in site.posts %}
-        {% assign currentdate = post.date | date: "%b %Y" %}
-        <li>
-        {% if currentdate != date %}
-            {% assign date = currentdate %}
-            <span class="date new">{{ currentdate }}</span>
-        {% else %}
-            <span class="date">+</span>
-        {% endif %}
+  <header>
+    <div class="date">
+        <span class="month">{{ page.date | date: "%b" }}</span>
+        <span class="day">{{ page.date | date: "%d" }}</span>
+        <span class="year">{{ page.date | date: "%Y" }}</span>
+    </div>
+    <a href="{{ post.url | prepend: site.baseurl }}" title="Permalink" class="permalink">#</a>
+  </header>
 
-            <h2>
-                <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-            </h2>
-        </li>
-    {% endfor %}
-    </ul>
+  <div class="regular">
+    <h2 class="post-title">{{ page.title }}</h2>
+    {{ post.excerpt }}
+  </div>
 
+  <footer class="post-footer">
+  </footer>
+  </article>
+{% endfor %}
 </div>
