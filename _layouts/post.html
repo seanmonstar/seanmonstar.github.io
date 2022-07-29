@@ -17,6 +17,12 @@ layout: default
   </div>
 
   <footer class="post-footer">
+    <time pubdate="pubdate" datetime="{{ page.date }}" class="when">{{ page.date }}</time>
+    <ul class="tags">
+    {% for tag in page.tags %}
+        <li>#{{ tag }}</li>
+    {% endfor %}
+    </ul>
   </footer>
 
 </article>
