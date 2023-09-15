@@ -1,0 +1,36 @@
+---
+layout: post
+title: Import * Considered Harmful
+date: '2010-01-27T11:02:00-05:00'
+tags:
+- opinion
+- java
+- python
+tumblr_url: https://seanmonstar.com/post/708954358/import-star-considered-harmful
+---
+<p>Something a Java programmer learns first is that there is this big, amazing library already built-in to Java, and you can easily use plenty of useful classes by using an <code>import</code> statement. Possibly the first thing you want to do is pop open a box to prompt your name, or say hello, and thus starts this terrible habit:</p>
+<pre class="java"><code>import javax.swing.*;</code></pre>
+<p>I&rsquo;m guilty of it too. You don&rsquo;t really know what you&rsquo;re doing is all that bad. You know what you want from Swing. You only need the <code>JOptionPane</code>. And sure, the compiler shouldn&rsquo;t be stupid enough to pack the rest of the Swing package into your jar file. In Java, at least, it won&rsquo;t. There&rsquo;s talk about whether certain bulk imports in Python will cause things to be included multiple times.</p>
+<h4>Collisions, or which List did you want?</h4>
+<p>However, in Java, you <em>can</em>get namespace collisions. <a target="_blank" href="http://stackoverflow.com/questions/1983435/eclipse-java-is-it-harmful-to-import-java-namespace/1983539#1983539">coobird on Stack Overflow gives an excellent example</a>:</p>
+<blockquote>
+<p>Now, if we were to use a wildcard in the package import, we&rsquo;d have the following.</p>
+<pre class="java">import java.awt.*;
+import java.util.*;</pre>
+<p>However, now we will have a problem!</p>
+<p>There is a <code>java.awt.List</code> class and a <code>java.util.List</code>, so referring to the List class would be ambiguous. One would have to refer to the List with a fully-qualified class name if we want to remove the ambiguity:</p>
+<pre class="java">import java.awt.*;
+import java.util.*;// 'List' from java.awt -- need to use a fully-qualified class name.
+java.awt.List listComponent = new java.awt.List()</pre>
+</blockquote>
+<p>This problem is exactly what I was trying to avoid when doing working with some Java, and prompted my need to let people know <strong>never to do this</strong> again. I was trying to call a class from the <a target="_blank" href="http://developer.yahoo.com/yui/compressor/">YUI Compressor</a> jar, and the constructor required several classes. Unfamiliar with a couple of the names, I didn&rsquo;t simply want to copy their import statements, since I already had written my own File class that was far more basic than Java&rsquo;s. <em>No need for conflicts, please</em>.</p>
+<p>Your code doesn&rsquo;t have this problem? You&rsquo;re only importing from one package, you say? What about the future of your code? Your class is still auto-importing the rest of your class&rsquo; residing package. What happens when someone creates a class called List? Or something else? <em>Conflicted</em>.</p>
+<p>This leads to another frustrating reason not to use import star.</p>
+<h4>It screws Discoverability</h4>
+<p>Specifically, I was unsure which <code>ErrorReporter</code> was needed for the <code>JavaScriptCompressor</code>. The import statements at the top list 3 packages it could come from, and the only way for me to find out it to search each package.</p>
+<pre class="java"><code>package com.yahoo.platform.yui.compressor; 
+import org.mozilla.javascript.*;
+import java.util.*;</code></pre>
+<p>ErrorReporter could be a class defined in this package (<code>com.yahoo.platform.yui.compressor</code>), or it could be <code>java.util</code>, or <code>org.mozilla.javascript</code>. It turns out it&rsquo;s in the latter, but discovering that took longer than it ever should have. Even the few minutes I had to spend to lookup which package contained the class so I could import it into my class file was minutes wasted. It&rsquo;s effortless to have to used a more specific import statement instead. Especially if you&rsquo;re using an IDE like Eclipse (which you are if you&rsquo;re doing Java development, just press Ctrl + Shift + O).</p>
+<p>Flex Builder is an extension of Eclipse, so no excuses there either. I imagine Flash has a similar shortcut, though even if it didn&rsquo;t, just like in Python, it&rsquo;s really not that hard. Honestly, it takes <strong>no extra effort</strong>to write the name of a specific class instead of importing the whole dang package or module.</p>
+<p>This reason is what I feel is the more important reason why <strong>you shouldn&rsquo;t use import * ever again</strong>. The more time it takes another programmer (or even yourself) to understand what in the world was going on inside your head at the time of writing, that&rsquo;s time (and thus money) you&rsquo;re costing your company.</p>

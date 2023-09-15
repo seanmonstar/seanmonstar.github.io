@@ -1,0 +1,18 @@
+---
+layout: post
+title: Lazy Function Definition Pattern
+date: '2010-07-19T10:01:43-04:00'
+tags:
+- javascript
+tumblr_url: https://seanmonstar.com/post/832086490/lazy-function-definition-pattern
+---
+<a href="http://peter.michaux.ca/articles/lazy-function-definition-pattern">Lazy Function Definition Pattern</a><br/><p>Sometimes there&rsquo;s setup involved with a function that we would prefer to only have to execute if the function is needed. It&rsquo;s also preferable to not have to do an <code>if</code> statement every function call, since less logic is more efficient.</p>
+
+<pre><code>var foo = function() {
+    var t = new Date();
+    foo = function() {
+        return t; 
+    }; 
+    return foo();
+};
+</code></pre>

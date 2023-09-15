@@ -1,0 +1,112 @@
+---
+layout: post
+title: Shipyard 0.2
+date: '2012-06-01T14:19:03-04:00'
+tags:
+- shipyard
+- javascript
+- programming
+- planet
+- mvc
+tumblr_url: https://seanmonstar.com/post/24204902630/shipyard-02
+---
+<p>The 0.2 version of <a href="https://github.com/seanmonstar/Shipyard">Shipyard</a> is out and about. Besides the usual minor bug clean-up, I wanted to share all the brand new toys it&rsquo;s got.</p>
+
+<ol>
+<li>ObservableArrays</li>
+<li>CollectionView and SelectView</li>
+<li>Model Relationships</li>
+<li>Logging</li>
+</ol>
+
+<p>If you&rsquo;re like, &ldquo;Show me naow!&rdquo;, you can play over on <a href="http://jsfiddle.net/seanmonstar/gXECg/">jsFiddle</a>. Or maybe you like <a href="https://github.com/seanmonstar/Shipyard/compare/v0.1.0...v0.2.0">changelogs</a>.</p>
+
+<h3>ObservableArrays</h3>
+
+<p>The major players in Shipyard (Models, Views, and Controllers) are all <a href="http://seanmonstar.github.com/Shipyard/api/observable.html#Observable">Observables</a>, which is what makes <a href="http://seanmonstar.github.com/Shipyard/topics/views-and-binding.html">live-data-binding to Views</a> available. However, binding to data wouldn&rsquo;t work well if that piece of data was an array (like an array of Models). The <a href="http://seanmonstar.github.com/Shipyard/api/observable-array.html#ObservableArray">ObservableArray</a> mimics an Array, but extends from Observable. So, you can observe any index on the array, or the length.</p>
+
+<p>The most useful part is that you can observe the <code>array</code> property of the ObservableArray. This property event will always emit the index of the change, an array of the removed elements, and an array of the added elements.</p>
+
+<pre><code>var arr = new ObservableArray('Foo', 'Bar');
+arr.observe('array', function(index, removed, added) {
+    console.log(index, removed, added);
+});
+
+arr.shift(); // log: 0, ['Foo'], []
+arr.push('Baz', 'Quux'); // log: 1, [], ['Baz', 'Quux']
+</code></pre>
+
+<h3>CollectionView and SelectView</h3>
+
+<p>With the use of the ObservableArray, CollectionViews are a whole lot better. You no longer need to manually manage them by with <code>addItem</code>. If you create an ObservableArray, and pass it as <code>content</code> to the CollectionView, it will update it&rsquo;s childViews whenever you modify the ObservableArray instance. You can also pass a regular array, and later on <code>.get('content').push(myModel)</code>, and the CollectionView will update automatically.</p>
+
+<pre><code>var arr = new ObservableArray('Foo', 'Quux');
+var list = new ListView({ content: arr });
+
+arr.splice(1, 0, 'Bar', 'Baz');
+// list view now has child views in order of
+// 'Foo', 'Bar', 'Baz', 'Quux'
+</code></pre>
+
+<p>SelectView is a new CollectionView available, with an additional computed property, <code>selected</code>, to observe which value on the content array is selected.</p>
+
+<h3>Model Relationships</h3>
+
+<p>Two new Fields are available, <a href="http://seanmonstar.github.com/Shipyard/api/fields.html#ForeignKey">ForeignKey</a> and <a href="http://seanmonstar.github.com/Shipyard/api/fields.html#ManyToManyField">ManyToManyField</a>, that allow you define relationships between models. ManyToManyFields also take advantage of ObservableArrays, letting you know when a Model&rsquo;s list of related models change.</p>
+
+<pre><code>var tags = task.get('tags');
+var tagsView = new TagList({ 
+    content: tags,
+    // TagList is fictional, so is onTagSelect
+    onTagSelect: function(tag) {
+        var index = tags.indexOf(tag);
+        if (index &gt;= 0) {
+            tags.splice(index, 1);
+            // Task.tags has this tag removed
+            // and also automatically updates this ListView
+        }
+    }
+});
+</code></pre>
+
+<h3>Logging</h3>
+
+<p>The tiny logging utility has morphed into a serious <a href="http://seanmonstar.github.com/Shipyard/api/logging.html">logging</a> module very similar to <a href="http://docs.python.org/library/logging.html">Python&rsquo;s own logging module</a>. It&rsquo;s still very easy to use quickly:</p>
+
+<pre><code>require('shipyard/logging').info('an info message');
+</code></pre>
+
+<p>However, it also  comes ready to customize completely. You can specify different formats, different log levels, and different handlers for various loggers. Specifically, you might only care about <code>shipyard</code> internal logging that is of level <code>WARN</code> and above, but want <code>DEBUG</code> and above from your own app. In addition, you might want to pass any and all <code>ERROR</code> logs to your server, so you can see whenever your JavaScript is causing errors on other computers.</p>
+
+<p>It would all be something like this:</p>
+
+<pre><code>var config = require('shipyard/logging/config');
+config({
+    handlers: {
+        'console': {
+            'class': ConsoleHandler
+        },
+        'xhr': {
+            'class': XHRHandler,
+            'level': 'ERROR',
+            'url': '/api/log'
+        }
+    },
+    loggers: {
+        'shipyard': {
+            'handlers': ['console', 'xhr'],
+            'level': 'WARN',
+            'propagate': false
+        },
+        'myapp': {
+            'handlers': ['console', 'xhr'],
+            'level': 'DEBUG',
+            'propagate': false
+        }
+    }
+});
+</code></pre>
+
+<h3>Get it</h3>
+
+<p>It&rsquo;s on <a href="https://github.com/seanmonstar/Shipyard/tree/v0.2.0">GitHub</a>, as always. It&rsquo;s also available from <a href="http://search.npmjs.org/#/shipyard">npm</a>. And it&rsquo;s in the dropdown on <a href="http://jsfiddle.net/seanmonstar/gXECg/">jsFiddle</a>. So yea.</p>

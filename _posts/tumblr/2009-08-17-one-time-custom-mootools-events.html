@@ -1,0 +1,48 @@
+---
+layout: post
+title: One-Time Custom MooTools Events
+date: '2009-08-17T11:19:00-04:00'
+tags:
+- javascript
+- mootools
+tumblr_url: https://seanmonstar.com/post/707187636/one-time-custom-mootools-events
+---
+<p>MooTools lets you listen to events from 2 mediums: Elements and Classes. From classes, you can fire any event you want, and listen for it elsewhere. But with Elements, events are usually tied towards native DOM events. MooTools gives you the ability to define custom events for elements, by adding an entry to <code>Element.Events</code> .</p>
+<p>Some practical uses can be found, such as the domready event that the document fires, or extending the <a target="_blank" href="http://davidwalsh.name/mootools-add-event">click event to always change your cursor</a>. I want to touch on this interface though, to show how you might solve my problem I mentioned 2 weeks ago: looking for <a target="_blank" href="http://mcarthurgfx.com/blog/article/one-time-events-already-fired">events that would only fire once</a>.</p>
+<p>This is only useful for Element Events. I haven&rsquo;t researched doing this with an event from a class. That will probably use the same principle. But let&rsquo;s move on!</p>
+<h4>Element.Events</h4>
+<p>When you add an event to <code>Element.Events</code> , you specify an object with up to 4 properties:</p>
+<ul><li><code>base</code> : A DOM Event that is needed to trigger this. For instance, a doubleclick event would use <code>click</code> as it&rsquo;s base.</li>
+<li><code>condition</code> : a function the returns a boolean for whether the event should fire. Our same example, doubleclick, would time the interval between clicks and return true if the time difference was small enough.</li>
+<li><code>onAdd</code>: a function that gets called whenever you subscribe to the event somewhere else ( <code>someEl.addEvent('doubleclick', ... )</code> ). </li>
+<li><code>onRemove</code> : a function the gets called when you called <code>removeEvent</code> </li>
+</ul><p>With this in mind, we will consolidate the process of keeping track of <strong>one-time events</strong> in our custom event.</p>
+<h4>oneClick</h4>
+<blockquote>
+<p>Attach a listener, determine if the event has already fired, and if so, execute the listener immediately.</p>
+</blockquote>
+<p>I couldn&rsquo;t come up with an excellent custom event, so we&rsquo;ll pretend that I might have an element that can clicked once, and only once, no matter what. Let&rsquo;s implement oneClick.</p>
+<p>Every time I subscribe to <code>oneClick</code> , we&rsquo;ll check a property to see if it&rsquo;s fired before, and if so, execute our new listener then and there. If not, continue as normal. Then, when the event does fire, we will set a property that the event has fired in the condition, and after that, make our condition return false, so that the base event never makes our custom event trigger more than once.</p>
+<pre><code> Element.Events.oneClick = {
+	base: 'click',
+	condition: function(event) {
+		var fire = !this._oneClicked;
+		this._oneClicked = true;
+		return fire;
+	},
+	onAdd: function(fn) {
+		if(this._oneClicked) {
+		fn.call(this);
+	}
+}};</code></pre>
+<p>Now, we can listen on an element for oneClick, and listen for it somewhere else, perhaps later. Who cares.  I can feel assured that this event will happen only once. And all new listeners that might have depended on my element being clicked (like a Start button) will work too!</p>
+<pre><code>$('startButton').addEvent('oneClick', function() {
+	Timer.start();
+});
+// ... else where
+$('startButton').addEvent('oneClick', function() {
+	Toolbar.show();
+});</code></pre>
+<h5>One Limitation</h5>
+<p>So far, the <strong>one limitation</strong> I found, was that you had to not need the actualy Event object in your listener.  As in, you can&rsquo;t check the <code>event.target</code>, or mouse x and y coordinates from the event.  This is because from the onAdd method, we don&rsquo;t have access to a native event, since one hasn&rsquo;t actually fired.  I found this trying to call <code>e.stop()</code> in my testing script.  This doesn&rsquo;t bother me much, but be warned.</p>
+<p>Implementing this for Elements was easier than for Classes, because of MooTools custom element events system that already exists. I have an actual need for the Class events to be one-time, but found this out along the way. <strong>Do you have a use for this?</strong></p>

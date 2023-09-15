@@ -1,0 +1,49 @@
+---
+layout: post
+title: 'This Month in hyper: September 2022'
+date: '2022-10-05T13:30:02-04:00'
+tags:
+- rust
+- rust-lang
+- hyper
+- monthly
+- http
+- http3
+tumblr_url: https://seanmonstar.com/post/697293605419745280/this-month-in-hyper-september-2022
+---
+<p>And I thought <em>last</em> month was hot, this one was a scorcher (on the US West Coast<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>). but just look at all the wonderful contributors making <a href="https://hyper.rs">hyper</a> ever better!</p>
+
+<h3>Releases</h3>
+
+<h4>reqwest v0.11.12</h4>
+
+<p>A new version of <a href="https://github.com/seanmonstar/reqwest/releases/tag/v0.11.12">reqwest, v0.11.12</a>, includes a way to override DNS with multiple addresses (thanks @lpraneis), support for HTTP upgrades such as websockets (thanks @luqmana), and some internal maintenance (thanks @futursolo, @kckeiks, and @vidhanio).</p>
+
+<h3>hyper 1.0</h3>
+
+<p>The march towards the <a href="https://github.com/orgs/hyperium/projects/1/views/6">first release candidate</a> brings ever closer!</p>
+
+<p>@Robert-Cunningham added the <code>hyper::rt::Timer</code> trait and integration, and @oddgrd removed the <code>runtime</code> cargo feature, since everything now uses the <code>Timer</code> trait. @tomkarw replaced hyper&rsquo;s usage of <code>tower::Service</code> with a hyper-specific <code>Service</code> trait. @Michael-J-Ward removed the combined <code>hyper::client::conn::Connection</code> type. hyper will contain version-specific <code>Connection</code> types, and a &ldquo;combined&rdquo; interface will grow in <code>hyper-util</code>.</p>
+
+<p>I streamed on <a href="https://twitch.tv/seanmonstar">twitch.tv/seanmonstar</a> briefly about putting together a launch checklist, since we&rsquo;re so close to the <a href="https://github.com/orgs/hyperium/projects/1/views/6">first release candidate</a>!</p>
+
+<h3>hyper in curl</h3>
+
+<p>I gave a <a href="https://seanmonstar.com/2023/2022-09-21-curl-up-2022-hyper-in-curl/">talk for curl-up 2022</a>.</p>
+
+<p>@weihanglo updated hyper&rsquo;s C API to the now-stable <code>cargo rustc --crate-type cdylib</code>, no longer requiring nightly.</p>
+
+<h3>HTTP/3</h3>
+
+<p>@Ruben2424 got <code>h3spec</code> running in CI, and fixed up things it caught. @eagr signficantly filled out the rest of the <a href="https://hyper.rs/h3/ci/compliance/report.html">spec compliance report</a>, including exceptions and related unit tests. @g2p documented the whole public API, and removed the unused crate dependencies.</p>
+
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+
+<li id="fn:1" role="doc-endnote">
+<p>I&rsquo;m actually moving across the country, which is why this update was delayed. <a href="#fnref:1" class="footnote-backref" role="doc-backlink">↩︎</a></p>
+</li>
+
+</ol>
+</div>

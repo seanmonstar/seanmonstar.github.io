@@ -1,0 +1,14 @@
+---
+layout: post
+title: Get Class of a MooTools Instance
+date: '2009-05-08T14:00:00-04:00'
+tags:
+- javascript
+- mootools
+tumblr_url: https://seanmonstar.com/post/707118236/get-class-of-an-instance
+---
+<p>Have you ever wanted to get the class name of an object, maybe to check what instance it is of, or maybe to use the name for something? I was in need of exactly that, so I set out to do so last night. I started by asking <a target="_blank" href="http://stackoverflow.com/questions/837729/how-to-get-the-name-of-a-mootools-class-from-within">Stack Overflow</a>, and no one gave me an answer, so I pondered about it a bit.</p>
+<p><em>Updated: 6/16/10</em></p>
+<p>I eventually solved it, like the idiot I am. I solved it <strong>wrong</strong>.</p>
+<p>My solution caused an infinite loop in some browsers, and errors in others as it tried to access properties of the window object that are &ldquo;illegal&rdquo;.</p>
+<p>A <a target="_blank" href="http://github.com/seanmonstar/MonstarLab-MVC/blob/master/src/mvc/GetClass.js">version currently exists</a> that can&rsquo;t find anything that isn&rsquo;t a direct property of the window global object. I&rsquo;d eventually like it to be able to find out if the class is called Drag.Move, for instance.</p>

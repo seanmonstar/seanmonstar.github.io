@@ -1,0 +1,60 @@
+---
+layout: post
+title: Overloading Objects in PHP
+date: '2008-12-18T05:00:00-05:00'
+tags:
+- php
+- bestof
+tumblr_url: https://seanmonstar.com/post/708657446/overloading-objects-in-php
+---
+<p>In PHP, objects are all dynamic. If you declare a variable for object after instantiation, it just throws it right in, no questions asked. Much friendlier than, say, Java, where you absolutely must define a variable prior to use or the JVM will smite you. PHP also lets you define extra or different instructions when using a previously unknown variable with magic functions.</p>
+<h4>__get and __set</h4>
+<p>Usually the native implementation of these functions is the desired result. But sometimes, adding some extra features into getting or setting a variable can really make things easier.</p>
+<h5>__get</h5>
+<p>Let&rsquo;s say we have a model called <code>Person</code>:</p>
+<pre><code>class Person {    
+	public function __get($name) {        
+		$this-&gt;$name = Model::query('select * from people_table where name=? limit 1',array($name));        
+		return $this-&gt;$name;    
+	}   
+}</code></pre>
+<p>&hellip;and we try to access a variable that doesn&rsquo;t exist:</p>
+<pre><code>$obj = new Person;
+echo $obj-&gt;Sean['last_name'];</code></pre>
+<p>Since Sean isn&rsquo;t a predefined value in <code>$obj</code>, it queries the database, grabs the row with name Sean, and returns it. And the echo statement proceeds to print my last name to the screen. I&rsquo;ve also stored the result in the variable requested, so concurrent requests will get the stored variable and leave my database alone.</p>
+<h5>__set</h5>
+<p>We could also try to do something in the reverse, by setting an unknown property.</p>
+<pre><code>class Person {    
+	public function __set($name, $value) {        
+		$value []= $name;        
+		$this-&gt;$name = Model::query('insert into Person_table last_name=?, job=?, name=?',$value);    
+	}   
+}</code></pre>
+<p>Now this function doesn&rsquo;t do a bunch of checking, and you&rsquo;ll probably want do some. But since this is a simple example, I&rsquo;m not. I&rsquo;m just assuming that any unknown variable that I try to set on the model should be part of the database:</p>
+<pre><code>$obj = new Person;
+$obj-&gt;Sean = array('last_name' =&gt; 'McArthur', 'job' =&gt; 'Developer');</code></pre>
+<p>There are some actual real good uses for this overloading; the ones I&rsquo;ve shown are simplistic and possible a little too extreme. But now with the understanding of these magic functions, hopefully you can put them to good use.</p>
+<h4>__call (and __callStatic)</h4>
+<p>The <code>__call</code> function helps us when we try to call a function that doesn&rsquo;t belong to an object. Overloading this function is quite often used in API implementations. Let&rsquo;s look at a small example:</p>
+<pre><code>class PersonAPI {    
+	//query function    
+	//...        
+	public function __call($name, $args) {        
+		$this-&gt;query($name,$args);    
+	}   
+}</code></pre>
+<p>Assume we have a query function which makes a connection and tries to make a function call on a foreign API. Imagine <code>$person</code> is an object of our <code>PersonAPI</code>, and the follow two statements would then be identical:</p>
+<pre><code>$person-&gt;query('getLists',array('token'=&gt;'test'));
+$person-&gt;getLists(array('token'=&gt;'test'));</code></pre>
+<p>This is very simple, one line solution. You could, of course, make it much more interesting than that.</p>
+<h5>__callStatic</h5>
+<p>The same can done with static methods, so when we call a static method that doesn&rsquo;t exist, instead of getting the error thrown in our faces, we could try to see if there&rsquo;s something extra to do first.</p>
+<pre><code>class PersonAPI {    
+	//static query function    
+	//...       
+	public function __callStatic($name, $args) {        
+		self::query($name,$args);    
+	}  
+}</code></pre>
+<h4>Get Overloading</h4>
+<p>After knowing this, it&rsquo;s pretty easy to fill in these functions for several classes you have. You could consider throwing common functionality into them, therefore getting a certain procedure on a simple get or set command.</p>

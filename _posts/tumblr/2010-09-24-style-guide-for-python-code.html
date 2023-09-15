@@ -1,0 +1,19 @@
+---
+layout: post
+title: Style Guide for Python Code
+date: '2010-09-24T19:55:00-04:00'
+tags:
+- python
+- planet
+- programming
+tumblr_url: https://seanmonstar.com/post/1181440279/style-guide-for-python-code
+---
+<a href="http://www.python.org/dev/peps/pep-0008/">Style Guide for Python Code</a><br/><p>I love Python; the style guide is a great resource for writing consistent looking code. I particularly enjoyed these:</p>
+
+<ul>
+<li><p>Always use <code>self</code> for the first argument to instance methods.</p></li>
+<li><p><code>_single_leading_underscore</code>: weak &ldquo;internal use&rdquo; indicator. E.g. <code>from M import *</code> does not import objects whose name starts with an underscore.</p></li>
+<li><p><code>single_trailing_underscore_</code>: used by convention to avoid conflicts with Python keyword</p></li>
+<li><p><code>__double_leading_underscore</code>: when naming a class attribute, invokes name mangling (inside class <code>FooBar</code>, <code>__boo</code> becomes <code>_FooBar__boo</code>).</p></li>
+<li><p>Comparisons to singletons like <code>None</code> should always be done with <code>is</code> or <code>is not</code>, never the equality operators.</p></li>
+</ul>

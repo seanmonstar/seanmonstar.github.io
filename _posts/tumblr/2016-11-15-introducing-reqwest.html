@@ -1,0 +1,101 @@
+---
+layout: post
+title: Introducing Reqwest
+date: '2016-11-15T12:26:14-05:00'
+tags:
+- rust
+- rust-lang
+- reqwest
+- mozilla
+- planet
+- programming
+tumblr_url: https://seanmonstar.com/post/153221119046/introducing-reqwest
+---
+<p>In web development, you can find resource after resource, framework after library, all helping you to build a web server. But what if you need to use a client? So many applications need to download something from the web, or to upload some data, and in many instances are left with the standard HTTP library to do it. That works, but it&rsquo;s so much better to be able to reach for a tool that includes the batteries in the packaging. Several languages have something like this. Now Rust does too.</p>
+
+<p>If you need to make HTTP requests in your application, you probably want to reach for <a href="https://github.com/seanmonstar/reqwest">reqwest</a>.<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p>
+
+<h3>Convenience</h3>
+
+<p>There are several parts of HTTP that we usually just want to happen for us automatically. For many of us, these extras are not something we&rsquo;d consider &lsquo;extra&rsquo;, but just business-as-usual. This includes things like following redirects, connection pooling (keep-alive), JSON payloads, cookies, and more.</p>
+
+<p>The 0.1 release includes some of these things already, and the missing parts should come in subsequent releases. To fetch a particular URL, it can be as simple as this:</p>
+
+<pre><code>let res = reqwest::get("https://rust-lang.org")?;
+</code></pre>
+
+<p>From there, maybe you just want to dump the page into the console:</p>
+
+<pre><code>::std::io::copy(&amp;mut res, &amp;mut ::std::io::stdout())?;
+</code></pre>
+
+<p>What about sending bodies in a <code>POST</code> request?</p>
+
+<h4>Bodies</h4>
+
+<p>You could send the raw bytes of anything you want using the <code>body()</code> method of a <code>RequestBuilder</code>. But more likely, there are a couple of formats that are far more common that we just want to taken care of for us. 0.1 provides convenience methods for sending forms (urlencoded) and JSON data.</p>
+
+<pre><code>let client = reqwest::Client::new()?;
+let res = client.post("https://httpbin.org/post")
+    .form(&amp;[ ("foo", "bar"), ("baz", "quux") ])
+    .send()?;
+</code></pre>
+
+<p>Or you could build a <code>HashMap</code> and send that as a form instead. Indeed, the <code>form()</code> and <code>json()</code> methods take any value that implements <a href="http://serde.rs"><code>Serialize</code></a>, so you could even use a custom struct.</p>
+
+<pre><code>#[derive(Serialize)]
+struct User {
+    name: String,
+    id: u64,
+}
+
+let user = User {
+    name: String::from("Sean"),
+    id: 42,
+};
+
+let res = client.post("https://httpbin.org/post")
+    .json(&amp;user)
+    .send()?;
+</code></pre>
+
+<p>Easing the sending of <a href="https://github.com/seanmonstar/reqwest/issues/4">multipart</a> forms is a feature that will hopefully be added shortly in 0.2.</p>
+
+<h3>TLS</h3>
+
+<p>The way the <code>reqwest</code> crate handles TLS is similar to cURL. It uses the awesome new <a href="https://github.com/sfackler/rust-native-tls">native-tls</a> crate to make use of built-in-to-the-OS TLS implementations when they exist, and using the new OpenSSL 1.1 if it does not. For now, that means it will use <code>security-framework</code> on masOS, and <code>schannel</code> on Windows. It&rsquo;s plausible that something like <a href="https://github.com/ctz/rustls">rustls</a> (or ring or something else) would eventually replace the OpenSSL backup in the future.</p>
+
+<p>Blah blah, what does all that mean for you? That on whichever OS you happen to be using <code>reqwest</code>, it will try to provide the easiest experience for you when connecting to HTTPS websites.</p>
+
+<h3>The Future</h3>
+
+<p>Another reason to use <code>reqwest</code> is to ease the upcoming changes to <a href="http://hyper.rs">hyper</a>, which is adopting non-blocking IO. Many applications do not need to make thousands of requests. Many just need to make 1, or a few, and writing code in a blocking style is easier. Without the need to make thousands of requests, the benefits of non-blocking IO are fewer. So, <code>reqwest::Client</code> plans to always provide a blocking API. Even when hyper releases with non-blocking IO, <code>reqwest</code> will upgrade to it and still present the <code>Client</code> with the same API. Your code won&rsquo;t need to change, but it will become more robust underneath.<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup></p>
+
+<p>Others will likely want many of the convenient features of <code>reqwest</code>, but <em>with</em> non-blocking sockets instead. There will likely be a <code>reqwest::AsyncClient</code> or similar added as well.</p>
+
+<p>Besides the eventual upgrade to non-blocking IO, the plan is that <code>reqwest</code> will gain other conveniences as well. Currently proposed ideas include:</p>
+
+<ul>
+<li>Cookie Jar support</li>
+<li>Customizable redirect policies</li>
+<li>Automatic gzip and brotli decoding</li>
+<li>Proxies</li>
+<li>Multipart payloads</li>
+</ul>
+
+<p><a href="https://github.com/seanmonstar/reqwest">Come help make it happen!</a></p>
+
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+
+<li id="fn:1" role="doc-endnote">
+<p>The odd name is an unfortunate consequence of being late to the party. The <code>request</code> crate is effectively abandonware. I&rsquo;ve tried reaching out to the author in various ways, but he seems to have disappeared from the internets. The <code>requests</code> crate (with an &rsquo;s&rsquo;) also exists, but does seem to be actively developed. <a href="#fnref:1" class="footnote-backref" role="doc-backlink">↩︎</a></p>
+</li>
+
+<li id="fn:2" role="doc-endnote">
+<p>Using non-blocking sockets internally is still an improvement for anyone wanting a blocking API. It&rsquo;s not currently possible to make the blocking TCP sockets have a timeout when doing DNS resolution and connecting, but asynchronous versions can use a timeout. It also means it is easier to determine when a socket in the pool has been closed, and can recycle it more reliably. <a href="#fnref:2" class="footnote-backref" role="doc-backlink">↩︎</a></p>
+</li>
+
+</ol>
+</div>

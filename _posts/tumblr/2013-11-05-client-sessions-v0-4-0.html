@@ -1,0 +1,25 @@
+---
+layout: post
+title: client-sessions v0.4.0
+date: '2013-11-05T14:25:36-05:00'
+tags:
+- javascript
+- programming
+- nodejs
+- client-sessions
+- mozilla
+- planet
+tumblr_url: https://seanmonstar.com/post/66111341154/client-sessions-v0-4-0
+---
+<p>We released v0.4.0 of <a href="https://npmjs.org/package/client-sessions">client-sessions</a> today, despite all the npm bumpiness. Here&rsquo;s the <a href="https://github.com/mozilla/node-client-sessions/releases/tag/v0.4.0">changelog</a>:</p>
+
+<ul>
+<li>add activeDuration with default to 5 minutes</li>
+<li>add checking for native Proxy before using node-proxy</li>
+<li>add cookie.ephemeral option, default false</li>
+<li>add constant-time check</li>
+<li>adds self-aware check. wont override req.session if already exists</li>
+<li>fix wrong handled of utf8 replacement character</li>
+<li>fix http expiry of cookie to match duration</li>
+<li>fix updating cookie expiry whenever duration/createdAt changes</li>
+</ul>

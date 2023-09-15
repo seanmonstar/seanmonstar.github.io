@@ -1,0 +1,11 @@
+---
+layout: post
+title: 'Try end() next() time '
+date: '2009-03-02T18:02:00-05:00'
+tags:
+- php
+tumblr_url: https://seanmonstar.com/post/707134387/try-end-next-time
+---
+<p>Here&rsquo;s a short tip today. I&rsquo;ve been finding that when using <code>foreach</code> in PHP to check if there&rsquo;s more in the array, the use of <code>next()</code> has <em>failed me on multiple occasions</em> . I just converted every instance of <code>next()</code> in my code to instead use <a href="http://php.net/end"><code>end()</code></a>.</p>
+<pre>if($cat !== end($categories)) {    echo ", "}</pre>
+<p>This way, I don&rsquo;t need to worry about the internal pointer being pushed around before the loop, or during the loop. I really only care if the value I&rsquo;m abusing is the last value, anyways.</p>

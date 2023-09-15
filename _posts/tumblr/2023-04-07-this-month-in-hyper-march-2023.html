@@ -1,0 +1,60 @@
+---
+layout: post
+title: 'This Month in hyper: March 2023'
+date: '2023-04-07T09:31:29-04:00'
+tags:
+- monthly
+- http3
+- hyper
+- rust
+- rust-lang
+tumblr_url: https://seanmonstar.com/post/713948439199858688/this-month-in-hyper-march-2023
+---
+<p>The days are growing longer up here, and work to make <a href="https://hyper.rs">hyper</a> better and better continues onwards!</p>
+
+<p>There was some particularly exciting releases, and a bunch of conversations had in March 2023.</p>
+
+<h3>hyper 1.0</h3>
+
+<h4>Preparing users for upgrading to 1.0</h4>
+
+<p>One of the important parts of the <a href="https://seanmonstar.com/2023/2022-11-15-hyper-polish-period/">hyper 1.0 polish period</a> is making sure <em>upgrading</em> from 0.14 to 1.0 is as smooth as we can make it. <a href="https://github.com/hyperium/hyper/releases/tag/v0.14.25">hyper v0.14.25</a> is here to help. @kxt and @oddgrd backported the client and server APIs from 1.0, and added opt-in deprecation messages to help you be ready to upgrade. The deprecation warnings are meant to help you, not to annoy you.</p>
+
+<p>You can enable them to see where you can start preparing your code now:</p>
+
+<pre><code class="toml">[dependencies]
+# besides whatever other features you've enabled...
+hyper = { verion = "0.14.25", features = ["backports", "deprecated"] }
+</code></pre>
+
+<h4>RC4 discussions</h4>
+
+<p>We&rsquo;ve been discussing how to wrap up the last couple of changes for 1.0, to put out an RC4 to bake some. We have some decent answers, and can get to work.</p>
+
+<p>hyper&rsquo;s own <a href="https://github.com/hyperium/hyper/issues/3040"><code>Service</code> trait will change from <code>&amp;mut self</code> to <code>&amp;self</code></a>. This better aligns with reality, as most services already need to share state behind some synchronization mechanism, and needing to <code>&amp;mut self</code> in the method call doesn&rsquo;t help.</p>
+
+<p>hyper will <a href="https://github.com/hyperium/hyper/issues/3110">use its own IO traits</a> with forwards-compatibility in mind. We want to be able to support both poll-based and completion-based (think <code>epoll</code> vs <code>io-uring</code>) IO models.</p>
+
+<h3>HTTP/3</h3>
+
+<p>We&rsquo;re working on HTTP/3 in a separate crate, <a href="https://github.com/hyperium/h3">h3</a>, with the goal of fitting it into <a href="https://hyper.rs">hyper</a>.</p>
+
+<h4>reqwest includes experimental HTTP/3 support</h4>
+
+<p>With <a href="https://github.com/seanmonstar/reqwest/releases/tag/v0.11.15">reqwest v0.11.15</a>, you can try out HTTP/3, on the client side, in reqwest <em>right now</em>! It&rsquo;s currently experimental, which means a couple things: it might not work perfectly. Let us know! It also might be disabled in new patches, as we fiddle with it. Lastly, you need to more explicitly opt-in to the instability.</p>
+
+<p>That means that besides enabling the <code>http3</code> feature from your <code>Cargo.toml</code>, you also need to pass <code>RUSTFLAGS="--cfg reqwest_unstable"</code> to the compilation job.</p>
+
+<p>Huge thanks to @kckeiks for integrating <code>h3</code> into <code>reqwest</code>!</p>
+
+<h4>h3-quinn upgraded to Quinn 0.9</h4>
+
+<p>We found a way to upgrade h3-quinn, using <code>stream::unfold</code> and <code>BoxStream</code>.</p>
+
+<p>The <code>h3</code> crate tries to be generic over any QUIC implementation. The <code>h3-quinn</code> crate implements the <code>h3::quic</code> traits for the <a href="https://crates.io/crates/quinn">Quinn crate</a>. The traits currently use poll-based methods (async function in traits isn&rsquo;t stable yet, and they also wouldn&rsquo;t allow polling multiple things at the same time). Newer Quinn embraced using <code>async fn</code> on its types, instead of returning named futures, which is very fair thing to do. But it did make it hard to figure out how to implement poll-based methods over <code>async fn</code>s.</p>
+
+<p>I realized we could do a async-move-dance to solve this. We make an <code>async move</code> block, moving in the type and awaiting the future, which then returns a tuple of the original type and the return value. @Ralith made the suggestion to use <code>stream::unfold</code>, which streamlines that pattern. Then @inflation quickly wrote it up, and we were able to upgrade to Quinn v0.9.</p>
+
+<h3>Contribute</h3>
+
+<p>Want to help us out? Even trying the new releases out and give us feedback is extremely useful. Of course, contributing reviews is a great help too. Come by and <a href="https://discord.gg/kkwpueZ">say hi</a>!</p>

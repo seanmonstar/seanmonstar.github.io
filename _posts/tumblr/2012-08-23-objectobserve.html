@@ -1,0 +1,23 @@
+---
+layout: post
+title: Object.observe
+date: '2012-08-23T21:28:48-04:00'
+tags:
+- javascript
+- programming
+- mvc
+- shipyard
+tumblr_url: https://seanmonstar.com/post/30072647184/objectobserve
+---
+<a href="http://wiki.ecmascript.org/doku.php?id=strawman:observe">Object.observe</a><br/><p>This <a href="http://wiki.ecmascript.org/doku.php?id=strawman:observe">proposed API</a> sounds fantastic. Property observing is a key component of data-binding, used in places like <a href="http://emberjs.com">Ember</a>, <a href="http://seanmonstar.github.com/Shipyard">Shipyard</a>, and <a href="http://www.angularjs.org/">Angular</a>. Unfortunately, it requires using special <code>get</code> and <code>set</code> methods, and only on objects derived from the library; using a regular <code>{}</code> or <code>[]</code> doesn&rsquo;t work.</p>
+
+<p>Object.observe would make it simply part of JavaScript, likely be more performant than any of the libraries, and allow developers to use plain native objects. The proposed usage is this:</p>
+
+<pre><code>Object.observe(foo, function(changes) {
+    changes.forEach(function(c) {
+        // c === { name: 'bar', type: 'new', object: foo }
+    });
+});
+</code></pre>
+
+<p>There&rsquo;s a <a href="https://www.youtube.com/watch?v=VO--VXFJnmE">video</a> and <a href="https://github.com/rafaelw/v8">repo</a> for a working prototype of this stuff too.</p>

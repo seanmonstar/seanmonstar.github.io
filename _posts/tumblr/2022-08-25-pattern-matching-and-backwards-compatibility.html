@@ -1,0 +1,261 @@
+---
+layout: post
+title: Pattern Matching and Backwards Compatibility
+date: '2022-08-25T12:17:10-04:00'
+tags:
+- rust
+- rust-lang
+- best-practices
+- bestof
+- programming
+tumblr_url: https://seanmonstar.com/post/693574545047683072/pattern-matching-and-backwards-compatibility
+---
+<p>Pattern matching in Rust is, the first time it clicks, something magical.</p>
+
+<p>When you define a domain subject with an <code>enum</code>, and then <code>match</code> on the various details, you can express logic in a very natural way, and reduce errors about forgetting to handle all the cases. It&rsquo;s exceptional when the <code>enum</code> definition and the <code>match</code> statements are in the same crates.</p>
+
+<p>It&rsquo;s a bit trickier when a library wants to export variants to allow easy matching for users of that library. There are API compatibility concerns, and while some have elegant solutions, others&hellip; don&rsquo;t.</p>
+
+<p>This write-up shows several instances of this that I&rsquo;ve learned from a library author&rsquo;s point of view.</p>
+
+<ol>
+<li>Non-exhaustive enums</li>
+<li>Translating typical Error inheritance</li>
+<li>Enums with an &ldquo;open-ended&rdquo; variant</li>
+</ol>
+
+<h3>Non-exhaustive</h3>
+
+<p>The various versions of HTTP are well-defined, and are not variant in the same way a library version might be. You don&rsquo;t have a whole bunch of unknown HTTP version identifiers that you need to parse. So representing it as an enum is a pretty natural fit. You might start with something like this:</p>
+
+<pre><code class="rust">enum Version {
+    Http10,
+    Http11,
+    Http2,
+}
+</code></pre>
+
+<p>A user might decide they need to do something different depending on the version of a request received:</p>
+
+<pre><code class="rust">match req.version() {
+    Version::Http10 =&gt; println!("1.0"),
+    Version::Http11 =&gt; println!("1.1"),
+    Version::Http2 =&gt; println!("2"),
+}
+</code></pre>
+
+<p>That feels quite nice! But then as a library, you realize you need to add a new variant to support HTTP/3. By doing that, you&rsquo;ll break compilation for the user, since they are trying to exhaustively match on a pattern which is no longer exhaustive. Rust now has an attribute, <code>#[non_exhaustive]</code>, which you can place on a definition to protect your users from these changes.<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p>
+
+<pre><code class="rust">#[non_exhaustive]
+enum Version {
+    Http10,
+    Http11,
+    Http2,
+}
+</code></pre>
+
+<p>The user is now <em>required</em> to include a catch-all pattern, signaling that more variants may appear in the future.</p>
+
+<pre><code class="rust">match req.version() {
+    Version::Http10 =&gt; println!("1.0"),
+    Version::Http11 =&gt; println!("1.1"),
+    Version::Http2 =&gt; println!("2"),
+    other =&gt; println!("other? {:?}", other),
+}
+</code></pre>
+
+<p>With that in place, adding <code>Version::Http3</code> won&rsquo;t break your user. Compatibility!</p>
+
+<h4>Exhaustively non-exhaustive</h4>
+
+<pre><code class="rust">#[non_exhaustive]
+enum Version {
+    Http10,
+    Http11,
+    Http2,
+}
+</code></pre>
+
+<p>The <code>non_exhaustive</code> attribute means a user must include a catch-all arm, which means we can add new variants and not <em>break</em> their code.</p>
+
+<p>However, what if the user really wants to know if they handled all possible variants, perhaps after an upgrade? The catch-all prevents them from knowing.</p>
+
+<p>There is a currently <a href="https://github.com/rust-lang/rust/issues/89554">unstable lint</a>, that is <code>allow</code> by default, but when developing a user can opt-in to being warned about new variants.</p>
+
+<pre><code class="rust"><br/>match req.version() {
+    Version::Http10 =&gt; println!("1.0"),
+    Version::Http11 =&gt; println!("1.1"),
+    #[warn(non_exhaustive_omitted_patterns)]
+    _ =&gt; unknown(),
+}
+</code></pre>
+
+<p>With the current <code>enum</code>, this will warn the user they didn&rsquo;t match on <code>Version::Http2</code>. And when the library adds a <code>Version::Http3</code> variant, the user will notice a new warning when they upgrade.</p>
+
+<h3>Error types</h3>
+
+<p>It&rsquo;s very common in Rust for errors to be represented by an <code>enum</code>. The perceived benefit is that a consumer can cleanly match on different error cases, and if desired, even ensure you had handled <em>every</em> possible error case. While I&rsquo;m not here to argue the premise of whether you <em>should</em> handle every single case, a problem I&rsquo;ve <a href="https://github.com/hyperium/hyper/issues/1131#issuecomment-362379005">struggled with</a> related to this approach is probably better to explain first with a different programming language.</p>
+
+<p>Let&rsquo;s say we have some client in Python, and we want to specifically retry &ldquo;connect&rdquo; errors. We might write that like so:</p>
+
+<pre><code class="python">try:
+    resp = client.get(url)
+except error.Connect:
+    retry()
+# otherwise, keep raising
+</code></pre>
+
+<p>Later on, the client library decides it wants to allow being more specific about the exact error kind that occured while connecting. The library could do that by declaring some new error types that inherit from the <code>Connect</code> error.</p>
+
+<pre><code class="python">class Resolve(error.Connect):
+    pass
+class Handshake(error.Connect):
+    pass
+</code></pre>
+
+<p>The user&rsquo;s original code will continue to work the same. Backwards compatibility has been kept. But a user can also update their code to be more specific, if they so desire:</p>
+
+<pre><code class="python">try:
+    resp = client.get(url)
+except error.Resolve:
+    raise # don't retry a bad hostname
+except error.Connect:
+    retry()
+# otherwise, keep raising
+</code></pre>
+
+<p>Back in Rust, this is <em>harder</em> to do. The simplest solution is just not to expose an <code>enum</code>, but an opaque struct with methods, like <code>is_connect()</code>, which will continue to be <code>true</code> if you later add <code>is_resolve()</code>. But, we&rsquo;re talking about pattern matching. Could we make this sort of flexibility work?</p>
+
+<p>We <em>could</em>. Probably the better question is <em>should we?</em> But let&rsquo;s peek first, anyways.</p>
+
+<h4>Nested Non-exhaustiveness</h4>
+
+<p>Let&rsquo;s see what the user could try to write first, to see the goal:</p>
+
+<pre><code class="rust">match client.get(url) {
+    Error::Connect(_) =&gt; {
+        // retry
+    },
+    e =&gt; return Err(e),
+}
+</code></pre>
+
+<p>The key here is that the <code>Connect</code> variant must contain a field. That way, if the library adds sub-variants, it doesn&rsquo;t break the code at compile-time or at runtime. It&rsquo;s also important that when there aren&rsquo;t any sub-variants, the pattern should still be non-exhaustive.</p>
+
+<p>The library could provide its variants like this:</p>
+
+<pre><code class="rust">#[non_exhaustive]
+pub enum Error {
+    Connect(Connect),
+    // other top-level errors
+}
+
+#[non_exhaustive]
+pub enum Connect {
+    Resolve(unnameable::Resolve),
+    Handshake(unnameable::Handshake),
+}
+
+mod unnameable {
+    pub struct Resolve(());
+    pub struct Handshake(());
+}
+</code></pre>
+
+<p>The <code>Connect</code> sub-variants contain publicly unnameable typed fields, to prevent the user from being too exhaustive. This prevents a pattern such as <code>Error::Connect(Connect::Resolve(Resolve(_)))</code>, which would break when <code>Resolve</code> became an <code>enum</code>. We can&rsquo;t reach for an empty <code>enum Resolve {}</code>, since then the type would be uninhabitable, and we could never <em>construct</em> such an error value.</p>
+
+<p>An upgrading user doesn&rsquo;t break, but they can also be more specific if they choose:</p>
+
+<pre><code class="rust">match err {
+    e @ Error::Connect(Connect::Resolve(_)) =&gt; {
+        return Err(e); // don't retry
+    }
+    Error::Connect(_) =&gt; {
+        // retry
+    }
+}
+</code></pre>
+
+<p>If later on, we want to add some <code>Resolve</code> variants, we can promote it to an enum without breakage:</p>
+
+<pre><code class="rust">#[non_exhaustive]
+pub enum Resolve {
+    NoRecordsFound(unnameable::NoRecordsFound),
+    Io(unnameable::Io),
+}
+</code></pre>
+
+<p>The question of <em>should we</em> still lingers, though. I can&rsquo;t say what the right answer is. I leave this here hoping someone will explore the idea more thoroughly, and tell us how great or horrid it is.<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup></p>
+
+<h3>Open-ended variants</h3>
+
+<p>Some other domains <em>appear</em> to lend themselves to being represented by an <code>enum</code>, but likely <em>shouldn&rsquo;t</em> be. These are things where there are a set of commonly known types, but with an additional variant that is purposefully open-ended. Sometimes it&rsquo;s setup that way to allow for some official registry of constants, so a specification doesn&rsquo;t need to know all of them at publication time. Others just define the rules of a type, define the most common, and then also include an &ldquo;extension&rdquo; variant.</p>
+
+<p>Defining these publicly as a Rust <code>enum</code> is an API compatibility hazard. Consider the example of HTTP status codes. Say we defined them like this:</p>
+
+<pre><code class="rust">#[non_exhaustive]
+pub enum Status {
+    Ok,
+    NotFound,
+    InternalServerError,
+    Unregistered(u16),
+}
+</code></pre>
+
+<p>We have an <code>Unregistered(u16)</code> variant because the specification allows for new status codes to defined over time, and even unregistered custom codes are valid. But what if a user starts matching on a status to use a newly proposed code:</p>
+
+<pre><code class="rust">match code {
+    Status::Unregistered(103) =&gt; println!("early hints!"),
+    _ =&gt; (),
+}
+</code></pre>
+
+<p>If the library later on decides to add a variant for the new status code, even though the enum was marked as <code>non_exhaustive</code>, it will be a form of breaking change. It won&rsquo;t be a <em>compile-time</em> break. Instead, it will only happen at runtime. The code, as a <code>Status::EarlyHints</code>, will no longer match the <code>Status::Unregistered(103)</code> pattern.</p>
+
+<h4>Opaque types with constants</h4>
+
+<p>We solved this in <a href="https://crates.io/crates/http"><code>http</code></a> by making <code>StatusCode</code> an opaque struct, and defined all the &ldquo;variants&rdquo; as constants.</p>
+
+<pre><code class="rust">pub struct StatusCode(u16);
+
+impl StatusCode {
+    pub const OK: StatusCode = StatusCode(200);
+    pub const NOT_FOUND: StatusCode = StatusCode(404);
+    // etc ...
+}
+</code></pre>
+
+<p>Users can still match on the common &ldquo;variants&rdquo;, but specifically <em>can&rsquo;t</em> match an exposed variant name for unregistered codes. They can only match them with a catch-all pattern:</p>
+
+<pre><code class="rust">match code {
+    StatusCode::OK =&gt; println!("ok!"),
+    other =&gt; {
+        if other == 103 {
+            println!("early hints!");
+        }
+    }
+}
+</code></pre>
+
+<p>Even when a new status code constant is added, that existing code will continue to work. It does make it harder to <em>exhaustively</em> match on all possible status codes, but there are enough of them that the likelihood of anyone wanting to do that is very low.</p>
+
+<p>Turns out, this works well when matching for equality!<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup> <code>http::Method</code> uses this too. This lesson also inspired a lot of changes in the <a href="https://crates.io/crates/headers"><code>headers</code></a> crate.</p>
+
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+
+<li id="fn:1" role="doc-endnote">
+<p>We made the <code>http::Version</code> type before <code>#[non_exhaustive]</code> existed, using a similar technique to <code>StatusCode</code>. We could switch it, but seeing them as constants feels <em>right</em>. <a href="#fnref:1" class="footnote-backref" role="doc-backlink">↩︎</a></p>
+</li>
+
+<li id="fn:2" role="doc-endnote">
+<p>Probably somewhere in the middle, as is the usual when comparing trade-offs. <a href="#fnref:2" class="footnote-backref" role="doc-backlink">↩︎</a></p>
+</li>
+
+<li id="fn:3" role="doc-endnote">
+<p>There&rsquo;s another case regarding open-ended variants, but I think it&rsquo;s big enough to be a separate post. <a href="#fnref:3" class="footnote-backref" role="doc-backlink">↩︎</a></p>
+</li>
+
+</ol>
+</div>

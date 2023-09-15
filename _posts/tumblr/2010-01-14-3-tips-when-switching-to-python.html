@@ -1,0 +1,42 @@
+---
+layout: post
+title: 3 Tips When Switching to Python
+date: '2010-01-14T15:30:00-05:00'
+tags:
+- python
+tumblr_url: https://seanmonstar.com/post/708913184/3-tips-when-switching-to-python
+---
+<p>If you write a lot of Javascript or PHP, there are a couple of habits you might be used to that need to change a bit when you switch over to Python.</p>
+<ol><li>Accessing a property in a dictionary with a variable</li>
+<li>Setting properties on objects with a variable</li>
+<li>Using While with a function call</li>
+</ol><h4>Check in first</h4>
+<p>When looping through a list or dictionary, it&rsquo;s not uncommon to compare the current indexed value to a value in a different list or dictionary. However, doing that will quickly teach you that trying to access a key that doesn&rsquo;t exist will raise a <code>KeyError</code>.</p>
+<p>After my first <code>KeyError</code>, I first tried to wrap the comparison in a <code>try</code> block. But that can start to look unwieldly:</p>
+<pre><code>try:
+	val = params[key]
+except KeyError:
+	val = None
+if val:
+	#...</code></pre>
+<p>Alternatively, Python dictionaries have a <code>get</code> method. Hence we do this, and it&rsquo;s all pretty!</p>
+<pre><code>val = params.get(key, 'defaultVal')</code></pre>
+<h4>You can just setattr</h4>
+<p>A while ago, when doing some <a href="http://seanmonstar.com/2023/2009-11-25-extending-django-models-managers-and-querysets/">initial Django development</a>, I tried to naively handle submission of forms the same way I do in PHP. I loop through each key value pair in the POST dictionary, and assign it to an instance of the model I want to insert. No worries if extra information has been submitting, the model will send data that we have specifically set at fields in the <code>class</code> definition. However, objects in Python don&rsquo;t allow item assignment like PHP or Javascript. Every object does have a personal <code>__dict__</code> that I could access, but then I can get <code>KeyErrors</code> as the above example shows.</p>
+<p><a target="_blank" href="http://stackoverflow.com/questions/1614804/copying-values-from-a-dictionary-into-an-object-in-python">Denis Otkidach showed me</a> Python&rsquo;s <a target="_blank" href="http://docs.python.org/library/functions.html#setattr">setattr function</a>, which lets me do exactly what I wanted.</p>
+<pre><code>for key, value in POST.iteritems():    
+	setattr(my_model, key, value)</code></pre>
+<h4>While True, loop foreverrrrr</h4>
+<p>Often times, when you don&rsquo;t have a predetermined length of something, you&rsquo;ll use <code>while</code> to do your looping. A common occurrence of this is when reading in a file. You call a function, and store its return value, and as long as that value is usable, do your loopity loop stuff. However, in Python you can&rsquo;t do assignment inside a condition for a control structure like <code>while</code>, probably because Guido likes to prevent bad practices from being possible in his language, and that is usually a bad practice unless you know what you&rsquo;re doing.</p>
+<p>There maybe a more elegant way of handling this, but i resorted to making an infinite loop that breaks on a bad condition:</p>
+<pre><code>while True:
+	val = func()
+	if val:
+		pass
+	else:
+		break</code></pre>
+<p>If you write a lot of Javascript or PHP, there are a couple of habits you might be used to that need to change a bit when you switch over to Python.</p>
+<ol><li>Accessing a property in a dictionary with a variable</li>
+<li>Setting properties on objects with a variable</li>
+<li>Using While with a function call</li>
+</ol>

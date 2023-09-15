@@ -1,0 +1,96 @@
+---
+layout: post
+title: A Less-Random Generator
+date: '2010-03-03T16:52:00-05:00'
+tags:
+- bestof
+- python
+- probability
+- randomness
+tumblr_url: https://seanmonstar.com/post/708989796/a-less-random-generator
+---
+<p>In game development, it&rsquo;s very common to want a random number. Maybe you want to determine damage done, if there was a critical, or what slot on the board to insert your piece at. And surprisingly (or perhaps, not), programmers are often looking to make this random number a little less&hellip; <em>random.</em></p>
+
+<h3>Less Random, you say?</h3>
+
+<p>Yea, seriously. We really don&rsquo;t want a real random number, because <strong>random is too random</strong>. Backgammon players rage on about how un-random virtual dice rolls are, and programmers can go to <a target="_blank" href="http://gamesbyemail.com/News/DiceOMatic">extreme circumstances to provide the right kind of random</a>.</p>
+
+<p><figure class="tmblr-full" data-orig-height="333" data-orig-width="500"><img src="https://64.media.tumblr.com/ddeeb48b807ba37040b9976671f80ecc/aaf5b890572ed845-24/s540x810/2aa7f87157f3bf1b850a28b093e15a221fb1a3a7.jpg" data-orig-height="333" data-orig-width="500"/></figure></p>
+
+<p>Role playing games have to overcome this too-random problem as well. In an RPG, you might be getting a random number to determine if the player character hit the monster. And considering the situations you find yourself in when playing an RPG, this dramatic but randomly generated experience can really suck:</p>
+
+<blockquote>
+
+<p>A blade spider is at your throat. It hits and you miss. It hits again and you miss again. And again and again, until there&rsquo;s nothing left of you to hit. You&rsquo;re dead and there&rsquo;s a two-ton arachnid gloating over your corpse. Impossible? No. Improbable? Yes. But given enough players and given enough time, the improbable becomes almost certain. It wasn&rsquo;t that the blade spider was hard, it was just bad luck. How frustrating. It&rsquo;s enough to make a player want to quit.</p>
+
+<p><a href="http://www.gamedev.net/reference/design/features/randomness/">—Randomness without Replacement</a></p>
+
+</blockquote>
+
+<p>It’s really quite interesting how much we really don’t want real randomness. Because real randomness is not biased. Pure randomness doesn’t care if that’s your 20th &ldquo;1&rdquo; in a row. It can lead to frustration, and cause people to blame the game for sucking, when really it was just a bad sequence of random numbers.</p>
+
+<h3>How We Perceive Random</h3>
+
+<p>It turns out, when we say random, as a player, we actually mean controlled random. Compare these images of dots plotted on a grid:</p>
+
+<p><figure class="tmblr-full" data-orig-height="178" data-orig-width="500"><img src="https://64.media.tumblr.com/b69d6d76c83a1f5ced70e225d1270e72/aaf5b890572ed845-14/s540x810/b264c84dbfbc43b6f6dc486151b1b73dccfd1795.png" data-orig-height="178" data-orig-width="500"/></figure></p>
+
+<p>Which picture looks like the random we want? Apparently, the first is too random for humans. What I mean is, it doesn&rsquo;t look random. We quickly identify patterns in the truly random picture. We see groupings and think there must have been numbers that were favored to get that result. We want to believe that randomness will evenly distribute it’s results across the spectrum. No patterns, no missed numbers, no repeats. Even.</p>
+
+<p>The truth behind these 2 images is that the left image is a true random plot. The image on the right was controlled.</p>
+
+<blockquote>
+
+<p>The plot on the right is […] composed of 64 smaller squares, each of which has 4 points placed at random. People don&rsquo;t like the leftmost plot because it has several clumps of points that seem non-random. In fact, true randomness consists of a mixture of clumps and non-clumps. <strong>Randomness is different from homogeneity.</strong></p>
+
+<p><a href="http://norvig.com/experiment-design.html">—Warning Signs in Experimental Design and Interpretation</a></p>
+
+</blockquote>
+
+<h3>A programmers solution</h3>
+
+<p>The way to handle controlled randomness is actually pretty simple. It’s commonly called a <strong>shuffle bag</strong>. The principle is that you take a bunch of tokens and put them in a bag. Then when you need another value, you pull a token out of the bag, and use that. Once the bag is empty, you fill it back up again.</p>
+
+<p>You can control the percentage of a positive or negative result by setting the ratio of tokens you insert into the bag. You can also control what sort of “sprees” you can get from you bag by inserting duplicate values.</p>
+
+<p>For example, with 1 hit value and 1 miss value, you have a 50% (&frac12;) chance of hitting. You also have the possibility of getting 2 misses or hits in a row. If you changed that to contain 5 hits and 5 misses in the bag, you could possibly end up with 10 in a row.</p>
+
+<pre><code>import random
+
+class ShuffleBag(object):
+
+    def __init__(self, values):
+
+        self.values = values
+
+        self.list = None
+
+    def next(self):
+
+        if (self.list is None) or (len(self.list) == 0):
+
+            self.shuffle()
+
+        return self.list.pop()
+
+    def shuffle(self):
+
+        self.list = self.values[:]
+
+        random.shuffle(self.list)</code></pre>
+
+<p>The usage would be pretty simple. If I want a 20% chance of getting a critical hit on a damage roll, I would implement that like so:</p>
+
+<pre><code>bag = ShuffleBag([1, 0, 0, 0, 0])
+
+while attacking:
+
+    is_critical = bag.next()
+
+    if is_critical:
+
+        dmg = MAX_DMG
+
+        doDmg(dmg)</code></pre>
+
+<p>Who’d have thought that you needed to do something special just to get &ldquo;fun&rdquo; random numbers? I think the root of it has to do with how <strong>statistics are all just a lie</strong>.</p>

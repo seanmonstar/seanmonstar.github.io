@@ -1,0 +1,30 @@
+---
+layout: post
+title: 'insist: Better assertions for nodejs'
+date: '2013-12-11T13:01:39-05:00'
+tags:
+- javascript
+- nodejs
+- planet
+- programming
+- insist
+- assert
+tumblr_url: https://seanmonstar.com/post/69703845045/insist-better-assertions-for-nodejs
+---
+<a href="https://npmjs.org/package/insist">insist: Better assertions for nodejs</a><br/><p>There&rsquo;s plenty of <a href="https://npmjs.org/browse/keyword/assert">assertion libraries</a> out there that give you all brand-new APIs with all sorts of assertion testing. I don&rsquo;t need that. I actually like just using the <code>assert</code> module. Except one thing. The standard message for <code>assert(false)</code> is useless.</p>
+
+<p>I saw <code>better-assert</code>, got excited, and then realized it only provided one method. All I wanted was the <code>assert</code> module, with a better message.</p>
+
+<p>So I made <a href="https://npmjs.org/package/insist"><code>insist</code></a>. You can truly just drop it instead of <code>assert</code>, and pretend it&rsquo;s <code>assert</code>. Also, unlike a few libraries who try to do this, <code>insist</code> plays well with multi-line assertions.</p>
+
+<pre><code>var assert = require('insist');
+var someArr = [15, 20, 5, 30];
+assert(someArr.every(function(val) {
+  return val &gt; 10;
+}));
+// output: AssertionError: assert(someArr.every(function(val) {
+//   return val &gt; 10;
+// }));
+</code></pre>
+
+<p>I <a href="https://npmjs.org/package/insist">insist</a>.</p>

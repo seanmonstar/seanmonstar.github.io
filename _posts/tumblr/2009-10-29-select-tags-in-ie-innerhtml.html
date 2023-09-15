@@ -1,0 +1,27 @@
+---
+layout: post
+title: 'Select Tags in IE: innerHTML'
+date: '2009-10-29T12:08:00-04:00'
+tags:
+- javascript
+- bug
+tumblr_url: https://seanmonstar.com/post/708829330/select-tags-in-ie-innerhtml
+---
+<p>I just wanted to document this rather frustrating bug here, so I can look it up later, and hopefully help anyone else who is running into something similar. This bug involves <code>select</code> tags, specifically setting their <code>innerHTML</code>property.</p>
+<p>I had a list of options to give to the user, and a select box would work perfectly. Since DOM methods have <a href="http://seanmonstar.com/2023/2009-04-21-dont-use-the-dom-to-insert-flash/">burned me in the past</a>, I felt <code>innerHTML</code> was the safer route. It appears, that they both have safety curves like a sine and cosine graph.</p>
+<p><figure class="tmblr-full" data-orig-height="222" data-orig-width="322"><img src="https://64.media.tumblr.com/45a7f3c1268e5345b73b1f373f391dc1/a18c2b652749ba34-73/s540x810/9baf9c961b135c0b67c06d77f6edf7b64aefa704.jpg" data-orig-height="222" data-orig-width="322"/></figure></p>
+<h4>The Buggery</h4>
+<p>Here&rsquo;s what I thought would work of stupendously!</p>
+<pre><code>var options = '&lt;option&gt;' + item.options.join('&lt;/option&gt;&lt;option&gt;') + '&lt;/option&gt;';selectEl.innerHTML = options;</code></pre>
+<p>It works in Firefox, Safari, Chrome, etc. <em>Except Internet Explorer</em>. I first noticed in IE7, and so when I went to debug (using <a target="_blank" href="http://twitter.com/seanmonstar/status/3540098404">IE8&rsquo;s sweeter debugger</a>), I noticed it even breaks in IE8.</p>
+<p>It disregards completely the first <code>&lt;option&gt;</code> in the string. Go ahead and try it yourself. Open IE8, press F12, go to Script, and try this super simple task:</p>
+<pre><code>var selectEl = document.createElement('select');
+selectEl.innerHTML = '&lt;option&gt;this one breaks&lt;/option&gt;&lt;option&gt;we dont work because the first one is broken&lt;/option&gt;';
+document.body.appendChild(selectEl);</code></pre>
+<h4>Solution</h4>
+<p>It breaks even that. So I resorted to DOM methods to build my select field.</p>
+<pre><code>for(var i = 0; i &lt; item.options.length; i++) {    
+	var option = document.createElement('option');    
+	option.innerHTML = item.options[i];    
+	select.appendChild(option); 
+}</code></pre>

@@ -1,0 +1,33 @@
+---
+layout: post
+title: Python Closure Gotcha
+date: '2012-09-17T16:57:44-04:00'
+tags:
+- programming
+- python
+- planet
+tumblr_url: https://seanmonstar.com/post/31749159302/python-closure-gotcha
+---
+<p>You know all about <a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Closures">JavaScript closures</a>. They&rsquo;re great. We can do <a href="http://seanmonstar.com/2023/2009-12-10-closures-break-my-for-s/">super cool stuff</a> with them. Python has closures, too! However, the combination of closures and no <code>var</code> keyword leads us to a fun Gotcha.</p>
+
+<p>Example of Gotcha:</p>
+
+<pre><code>def something_awesome():
+    awesome = 1
+    def increase_awesomeness():
+        awesome = 2
+
+    increase_awesomeness()
+    return awesome
+</code></pre>
+
+<p>You&rsquo;d think that this would return 2, but it returns 1. This is due to Python creating a new local variable <code>awesome</code> inside the inner function. You <em>can</em> reach out of the closure when accessing a property. In places like these, since the inner function is used for utility only, I attach a property to it.</p>
+
+<pre><code>def something_awesome():
+    def increase_awesomeness():
+        increase_awesomeness.awesome += 1
+
+    increase_awesomeness.awesome = 1
+    increase_awesomeness()
+    return increase_awesomeness.awesome
+</code></pre>

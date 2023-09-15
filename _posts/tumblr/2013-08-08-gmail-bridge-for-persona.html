@@ -1,0 +1,38 @@
+---
+layout: post
+title: Gmail Bridge for Persona
+date: '2013-08-08T18:22:00-04:00'
+tags:
+- mozilla
+- persona
+- identity
+- gmail
+- planet
+- bestof
+tumblr_url: https://seanmonstar.com/post/57737181854/gmail-bridge-for-persona
+---
+<p>Since <a href="http://seanmonstar.com/2023/2012-07-20-moved-to-identity/">shifting to the Identity team</a> last year, I&rsquo;ve been working hard on making Persona a true solution to the login problem of the web. As I said then:</p>
+
+<blockquote>
+  <p>If we do our job right, eventually when my friends ask me what I do, I can say: I helped make it so you no longer need to use passwords everywhere. I helped make your online identity more secure. I helped make signing into the Internet awesomer.</p>
+</blockquote>
+
+<p>We&rsquo;re getting closer.</p>
+
+<h3>What is the Gmail Bridge?</h3>
+
+<p>Today, we&rsquo;re announcing to the world that our <a href="http://identity.mozilla.com/post/57712756801/persona-makes-signing-in-easy-for-gmail-users">Gmail Identity Bridge is online</a>. Excuse me. What? No, I&rsquo;m fine. It&rsquo;s alright, it&rsquo;s actually quite simple.</p>
+
+<p>The way <a href="http://lloyd.io/how-browserid-works">Persona normally works</a>, after checking to see if your email provider natively supports the protocol, is that Persona will fallback to what we call a secondary provider. This is the point where most users end up creating a password for Persona, and then going to their email to verify to us that they really own their email address. If the email provider <em>did</em> support the protocol, they would get sent over to them to authenticate, and we&rsquo;d step out of the way.</p>
+
+<p>So, we made an <a href="http://identity.mozilla.com/post/56526022621/what-is-an-identity-bridge">Identity Bridge</a> that we host, and uses Google&rsquo;s OpenID endpoint to verify the user. The experience is pretty much exactly what it should feel like if there was native support from Google.</p>
+
+<h3>Why this matters</h3>
+
+<p>With both Gmail and Yahoo bridges online, <em>over half of all users</em> are just a couple clicks away from logging in with Persona.</p>
+
+<p>So how does this affect you? If you have a website that has user accounts, you can switch to using <a href="http://davidwalsh.name/introduction-persona">Persona as your authentication system</a>. In most cases, it should be a <strong>better</strong> experience for your users, and easier for you.</p>
+
+<p>If you don&rsquo;t have a website, you can still help. Find a website you log in to frequently, and ask them to implement Persona. Tell them about this new bridging. Push for the change.</p>
+
+<p>Soon, everyone will notice: <strong>we made signing into the Internet awesomer.</strong></p>

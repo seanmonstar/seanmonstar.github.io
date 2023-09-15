@@ -1,0 +1,80 @@
+---
+layout: post
+title: ArrayAccess Interface in PHP
+date: '2008-10-28T19:59:00-04:00'
+tags:
+- php
+tumblr_url: https://seanmonstar.com/post/707046627/arrayaccess-interface-in-php
+---
+<p>This past week, I was using PHP’s DOMDocument class to work with some XML generation.  It’s pretty similar to Javascript’s DOM manipulation.  The XML I was generating was a bunch of items with key attributes. () Learning how to extend a new class so that it behaves like a PHP Array made me <em>outright excited for PHP</em> !  Let’s delve into the magic.</p>
+<p><figure class="tmblr-full" data-orig-height="150" data-orig-width="400"><img src="https://64.media.tumblr.com/73cab1a3de5eb734293d97486b0ba68f/b05e57841c0421ea-d4/s540x810/70c42b720d725876d77f4c738881e9dff7a0fd20.jpg" data-orig-height="150" data-orig-width="400"/></figure></p>
+<p>I needed to create in XML:</p>
+<pre>&lt;item key="object"&gt;DOMAIN&lt;/item&gt;</pre>
+<p>I needed to create items in this nature for various different properties to communicate to a domain API.  <em>Since this is essentially a hash, or associate array, it’d be awesome if it could work like one.</em> <strong>Well, it can!</strong></p>
+<pre>$dt_assoc['object'] = 'DOMAIN';</pre>
+<p>After writing my class, that’s how I’m able to create XML items.  It all lies in using an object that implements the <code>ArrayAccess</code> interface.  Doing so gives the object functions that are called when you try to access the object like an array.  So by implementing the functions, you can write custom logic that happens, besides just simply holding a value like normal arrays do.</p>
+<p>The above statement calls <a href="http://www.php.net/~helly/php/ext/spl/interfaceArrayAccess.html#_details">ArrayAccess::offsetSet($offset,$value);</a> , so here’s the implementation.</p>
+<pre>public function offsetSet($offset,$value) {
+	$item = $this-&gt;dom-&gt;createElement('item',$value);
+	$attr = $this-&gt;dom-&gt;createAttribute('key');
+	$item-&gt;appendChild($attr);
+	$text = $this-&gt;dom-&gt;createTextNode($offset);
+	$attr-&gt;appendChild($text);
+	$this-&gt;items[$offset] = $item;
+	$this-&gt;el-&gt;appendChild($item);
+}</pre>
+<p>Using DOMDocument to create XML for me, I create an item wrapped around the value, create an attribute called key, and give text of the offset.  So instead of needing to write this process out for every new item, I just need to set a new key and value of an object that implements this interface.</p>
+<p>There are 3 other methods to the interface, as well as one more function I define to export the data of this object into XML.</p>
+<p>The constructor takes a name of an element to wrap all the items in, as well as the instance of the DOMDocument. You need to hold onto the original instance.  This class creates an XML element of <code>&lt;$name&gt;items go here&lt;/$name&gt;</code> .</p>
+<p>The array <code>$data</code> is an associate array in the object to keep track of all the values of every item.  The array items keeps a reference to the item nodes in the DOMDocument, so they can be easily removed with <em>offsetUnset()</em> .</p>
+<p>offsetExists simply checks if there is an item with the key of offset, and offsetGet returns the value of the item with the appropriate key.</p>
+<p>Lastly, toXML() is a new function unrelated to ArrayAccess, but useful to me, which just returns the DOMElement that is holding onto all these items.</p>
+<p>Here’s the full class.  You’ll find <a target="_blank" href="http://php.net/domdocument">DOMDocument </a> and <a target="_blank" href="http://www.php.net/~helly/php/ext/spl/interfaceArrayAccess.html#_details">ArrayAccess</a> useful as well, if you need to do something similar.</p>
+<pre>class SRSData implements ArrayAccess {
+	var $el;
+	var $dom;
+	var $data;
+	var $items;
+	
+	public function __construct($name,$dom) {
+		$this-&gt;el = $this-&gt;dom-&gt;createElement($name);
+	}
+	
+	public function offsetExists($offset) {
+		return isset($this-&gt;items[$offset]);
+	}
+	
+	public function offsetGet($offset) {
+		return $this-&gt;data[$offset];
+	}
+	
+	public function offsetSet($offset,$value) {
+		if($value instanceof SRSData) {
+			$item = $this-&gt;dom-&gt;createElement('item');
+			$item-&gt;appendChild($value-&gt;toXML());
+		} else {
+			if(!empty($value))
+				$item = $this-&gt;dom-&gt;createElement('item',$value);
+			else
+				$item = $this-&gt;dom-&gt;createElement('item');
+		}
+		$this-&gt;data[$offset] = $value;
+		$attr = $this-&gt;dom-&gt;createAttribute('key');
+		$item-&gt;appendChild($attr);
+		$text = $this-&gt;dom-&gt;createTextNode($offset);
+		$attr-&gt;appendChild($text);
+		$this-&gt;items[$offset] = $item;
+		$this-&gt;el-&gt;appendChild($item);
+	}
+	
+	public function offsetUnset($offset) {
+		$this-&gt;el-&gt;removeChild($this-&gt;items[$offset]);
+		unset($this-&gt;data[$offset]);
+		unset($this-&gt;items[$offset]);
+	}
+
+	public function toXML() {
+		return $this-&gt;el;
+	}
+}</pre>
+<p>Learning this was one of those time where I was actually gleeful about programming.  Hopefully, this helps show how powerful PHP really is.</p>

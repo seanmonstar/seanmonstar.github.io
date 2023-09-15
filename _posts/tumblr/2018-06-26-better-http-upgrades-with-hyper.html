@@ -1,0 +1,85 @@
+---
+layout: post
+title: Better HTTP Upgrades with hyper
+date: '2018-06-26T15:39:42-04:00'
+tags:
+- hyper
+- rust
+- rust-lang
+- http
+- websockets
+tumblr_url: https://seanmonstar.com/post/175280388657/better-http-upgrades-with-hyper
+---
+<p>It&rsquo;s been possible to <a href="http://seanmonstar.com/2023/2018-04-02-http-upgrades-with-hyper/">handle HTTP Upgrades</a> (like Websockets) in <a href="https://hyper.rs">hyper</a> if you made use of the low-level APIs in the server and client, but it wasn&rsquo;t especially nice to work with. It also meant to handle upgrades, you couldn&rsquo;t use the nicer things that hyper takes care of for you with <code>Client</code> or <code>Server</code>.</p>
+
+<p>In hyper <a href="https://github.com/hyperium/hyper/releases/tag/v0.12.3">v0.12.3</a><sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>, <strong>handling upgrades is much easier!</strong></p>
+
+<h3>Body::on_upgrade()</h3>
+
+<p>The mechanism for handling upgrades and <code>CONNECT</code> is unified into a <code>Future</code> on the <code>hyper::Body</code> type. The way this works is in either case, <code>Client</code> or <code>Server</code>, you&rsquo;re already receiving a <code>hyper::Body</code> that represents the streamed body from the remote. It also happens to be a great place to store a flag of whether an HTTP Upgrade is possible.</p>
+
+<p>For now, after using a <code>Body</code> to get any data, you can convert it into a <code>Future</code> that yields the &ldquo;upgraded&rdquo; connection on success. With lessons learned from the lower-level upgrade process, the returned <code>Upgraded</code> opts for a default of easier-to-use. It implements <code>Read</code> and <code>Write</code>, and those implementations will check the read buffer for any previously read bytes before the upgrade completed. The easiest thing to do is just to treat the yielded <code>Upgraded</code> type as some <code>impl Read + Write</code>, and use it as such for the next protocol you plan to use.</p>
+
+<p>In order to provide this API, the <code>Upgraded</code> holds the IO type as a boxed trait object internally. If dynamic dispatch is undesirable, there is <code>Upgraded::downcast</code> to try to convert into the original type, along with the remaining read buffer.</p>
+
+<p>Take a look at these simplified examples upgrading to Websockets:</p>
+
+<h3>Client Upgrades</h3>
+
+<pre><code class="rust">let client = Client::new();
+
+let req = Request::builder()
+    .uri("http://example.local/chat")
+    .header("upgrade", "websocket")
+    .header("connection", "upgrade")
+    .body(Body::empty()
+    .unwrap();
+
+// This builds a future that should be spawned on an executor...
+client
+    .request(req)
+    .and_then(|res| {
+        res.into_body().on_upgrade()
+    })
+    .and_then(|upgraded| {
+        // just use this as an IO
+        websocket_lib::client_thing(upgraded)
+    })
+</code></pre>
+
+<h3>Server Upgrades</h3>
+
+<pre><code class="rust">let service = service_fn_ok(|req| {
+    // Just assuming its always an upgrade for this example...
+
+    let upgrade = req
+        .into_body()
+        .on_upgrade()
+        .map(|upgraded| {
+            websocket_lib::server_thing(upgraded);
+        })
+        .map_err(|err| eprintln!("upgrade error: {}", err));
+
+    hyper::rt::spawn(upgrade);
+
+    Response::builder()
+        .status(101)
+        .header("upgrade", "websocket")
+        .header("connection", "upgrade")
+        .body(Body::empty())
+        .unwrap()
+});
+</code></pre>
+
+<p>There&rsquo;s a <a href="https://github.com/hyperium/hyper/blob/master/examples/upgrades.rs">fuller example</a> of a client and server that upgrade in the same program as well.</p>
+
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+
+<li id="fn:1" role="doc-endnote">
+<p>Most support was made available in <a href="https://github.com/hyperium/hyper/releases/tag/v0.12.2">v0.12.2</a>, but <a href="https://github.com/hyperium/hyper/releases/tag/v0.12.3">v0.12.3</a> fixed a couple missing pieces when trying to do <code>CONNECT</code> requests over the <code>Client</code>. Everything else worked in <a href="https://github.com/hyperium/hyper/releases/tag/v0.12.2">v0.12.2</a>. <a href="#fnref:1" class="footnote-backref" role="doc-backlink">↩︎</a></p>
+</li>
+
+</ol>
+</div>

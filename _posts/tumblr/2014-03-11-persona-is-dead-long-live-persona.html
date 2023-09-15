@@ -1,0 +1,37 @@
+---
+layout: post
+title: Persona is dead, long live Persona
+date: '2014-03-11T14:19:57-04:00'
+tags:
+- persona
+- mozilla
+- planet
+- fxa
+tumblr_url: https://seanmonstar.com/post/79278627673/persona-is-dead-long-live-persona
+---
+<p>The <a href="http://identity.mozilla.com/post/78873831485/transitioning-persona-to-community-ownership">transition period</a> was really tough for me. It felt like we were killing Persona. But more like tying a rope around it and dragging it behind us as we road tripped to Firefox OS Land. I first argued against this. Then, eventually I said let&rsquo;s at least be humane, and take off the rope, and put a slug in its head. Like an Angel of Death. That didn&rsquo;t happen either. The end result is one where Persona fights on.</p>
+
+<p>Persona is <a href="https://github.com/mozilla/persona">free open source software</a>, and has built up a community who agree that decentralized authentication is needed o the Internet. I still think Persona is the best answer in that field, and the closest to becoming <strong>the</strong> answer. And it&rsquo;s not going away. We&rsquo;re asking that the Internet <a href="http://identity.mozilla.com/post/78873831485/transitioning-persona-to-community-ownership">help us make the Internet better</a>.</p>
+
+<h3>Firefox Accounts</h3>
+
+<p>In the meantime I&rsquo;ll be working on our <a href="https://wiki.mozilla.org/Identity/Firefox_Accounts">Firefox Accounts</a> system, which understandably could not rely entirely on Persona<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>. We need to keep Firefox competitive, since it&rsquo;s what pays for us to do all the other awesomizing we do. Plus, as the Internet becomes more mobile and more multi-device, we need to make sure there is an alternative that puts users first. A goal of Firefox Accounts is to be pluggable, and to integrate with other services on the Web. Why should your OS demand you use their siloed services? If you want to use Box instead of iCloud, we want you to use it.</p>
+
+<p>How does this affect Persona? We&rsquo;re actually using browserid assertions within our account system, since it&rsquo;s a solved problem that works well. We&rsquo;ll need to work on a way to get all sorts of services working with your FxAccount, and it might include proliferating browserid assertions everywhere<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>. As we learn, and grow the service so that millions of Firefox users have accounts, we can explore easing them into easily and automatically being Persona users. This solves part of the <a href="https://news.ycombinator.com/item?id=7364465">chicken-egg problem</a> of Persona, by having millions of users ready to go.</p>
+
+<p>I&rsquo;d definitely rather this have ended up differently, but I can also think of far worse endings. The upside is, Persona still exists, and could take off more so with the help of Firefox. <strong>Persona is dead, long live Persona!</strong></p>
+
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+
+<li id="fn:1" role="doc-endnote">
+<p>Sync needs a &ldquo;secret&rdquo; to encrypt your data before it&rsquo;s sent to our servers. The easiest solution for users is to provide us a password, and we&rsquo;ll stretch that and make a secret out of it (so, we don&rsquo;t actually know your password). Persona doesn&rsquo;t give us passwords, so we can&rsquo;t use it. <a href="#fnref:1" class="footnote-backref" role="doc-backlink">↩︎</a></p>
+</li>
+
+<li id="fn:2" role="doc-endnote">
+<p>Where &ldquo;browserid&rdquo; assertions are accepted, Persona support can also be found. <a href="#fnref:2" class="footnote-backref" role="doc-backlink">↩︎</a></p>
+</li>
+
+</ol>
+</div>

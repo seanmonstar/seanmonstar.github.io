@@ -1,0 +1,92 @@
+---
+layout: post
+title: hyper v0.11
+date: '2017-06-13T16:27:05-04:00'
+tags:
+- hyper
+- rust
+- rust-lang
+- mozilla
+- planet
+- http
+tumblr_url: https://seanmonstar.com/post/161786147642/hyper-v011
+---
+<p>The async release of hyper is here, <a href="https://github.com/hyperium/hyper/releases/tag/v0.11.0">version 0.11.0</a>. There&rsquo;s an updated <a href="https://hyper.rs">website</a>, and new <a href="https://hyper.rs/guides">guides</a> to try to help you get up to speed with all the changes.</p>
+
+<p><a href="https://hyper.rs">hyper</a> is an HTTP library built in Rust, providing fast and safe client and server implementations.</p>
+
+<h3>v0.11</h3>
+
+<p>This release marks a form of stability for async hyper. This isn&rsquo;t saying hyper&rsquo;s API won&rsquo;t continue to evolve (and break), but that when such a break happens, it will happen in a v0.12, and the changes will be concentrated. It should be possible to start building frameworks and tools using v0.11.</p>
+
+<p>Even before v0.11 was tagged, many were so excited by the prospects of async hyper, they already are using it. Some examples:</p>
+
+<ul>
+<li><a href="https://github.com/mozilla/sccache">sccache</a> has been using hyper&rsquo;s <code>Client</code> to manage resources in S3.</li>
+<li><a href="https://medium.com/npm-inc/npm-weekly-95-npm-helps-pch-npm-rust-bridging-the-spanish-speaking-tech-knowledge-gap-fa2bb3c795fa">npm</a> uses hyper for their Registry <a href="https://github.com/ashleygwilliams/changes-stream-rust">change stream</a></li>
+</ul>
+
+<h3>Async</h3>
+
+<p>The biggest deal here, of course, is the switch to non-blocking (or &ldquo;async&rdquo;) IO. This has been the push for this release for a long time, and the landscape in the Rust community changed a lot while we were working on this. Last year, a framework for building asynchronous network protocols was released, <a href="https://tokio.rs">Tokio</a>. There a lot of great things to say about it, and hyper has embraced it fully.</p>
+
+<p>This means a <strong>big</strong> change in API.</p>
+
+<p>For instance, <code>Request</code> and <code>Response</code> bodies are no longer used via the <code>std::io::{Read, Write}</code> traits. Instead, bodies are <code>Stream</code>s of bytes. <a href="https://tokio.rs/docs/getting-started/streams-and-sinks/">Streams</a> are essentially a <code>Future</code> that can resolve multiple times, which matches how an async connection works: bunches of bytes are received at different times.</p>
+
+<p>By integrating with Tokio, hyper and the community gain a lot. Adding in Transport Layer Security is just combining <code>hyper::server::Http</code> with something like <code>tokio_tls::TlsServer</code>. That same <code>TlsServer</code> can be plugged into any protocol, and <code>Http</code> can be wrapped in any other community piece implementing the right trait. The same can be done with other concepts, like generic timeouts.</p>
+
+<p>Hop over to the <a href="https://hyper.rs/guides">guides</a> if you&rsquo;d like to see how to get working examples.</p>
+
+<h3>Headers</h3>
+
+<p>Being a large breaking change release, an opportunity was taken to refine the headers system in hyper. Some standout changes:</p>
+
+<ul>
+<li>A <code>Raw</code> type was added, and the <code>set_raw</code>, <code>get_raw</code>, etc methods now use it. It allows for a more ergonomic way of adding raw header values, and it&rsquo;s also faster when a <code>Raw</code> in most cases.</li>
+<li>The <code>HeaderFormat</code> trait has been merged into the <code>Header</code> trait. They were previously separate due to trait object safety rules, but now that trait methods can have a <code>where Self: Sized</code> added, there is no need to separate them.</li>
+<li>The semantics of <code>Header::fmt_header</code> were clarified. Most of the time, headers can be written on one line. There is the rare exception (technically only <code>Set-Cookie</code> is specified) where each &ldquo;value&rdquo; must be on a separate line. Now, <code>fmt_header</code> receives a <code>hyper::header::Formatter</code>, with only a <code>fmt_line</code> method. Pretty much every header can just implement <code>std::fmt::Display</code>, and call <code>f.fmt_line(self)</code>, but now <code>Set-Cookie</code> doesn&rsquo;t need to use a hack to format itself.</li>
+</ul>
+
+<h3>Performance</h3>
+
+<p>hyper v0.10 was no slouch. It can churn through requests and pump out responses. However, as it uses blocking IO, it hits a problem when you have tons of connections to your server at the same time. Blocking IO means it needs to use multiple threads, only being able to deal with 1 connection per thread. Threads, when you have a lot, get to be expensive.<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> So, switching to non-blocking IO means that we keep going fast, but each additional connection isn&rsquo;t nearly as expensive.</p>
+
+<p>hyper v0.11 is fast<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>, and handles thousands of connections like a champ.</p>
+
+<h3>Changelog</h3>
+
+<p>The changes are big. There is a <a href="https://github.com/hyperium/hyper/releases/tag/v0.11.0">changelog</a> if you want to see all of them. The changelog tries to only contain changes from v0.10, but it&rsquo;s not exhaustive.</p>
+
+<h3>Thanks</h3>
+
+<p>There are <a href="https://github.com/hyperium/hyper/releases/tag/v0.11.0#user-content-thanks">a lot of people to thank</a> for getting this release out the door. This really is a fantastic community.</p>
+
+<h3>Next</h3>
+
+<p>hyper is now tracking the Futures and Tokio crates. Work is happening in there as well, as we find patterns and problems that aren&rsquo;t unique to hyper, and should be available for any async protocol.</p>
+
+<p>There has been community desire (and on the hyper team too!) to stabilize some sort of <code>http</code> crate. This would contain types for handle statuses, methods, versions, and headers, but without client or server or protocol version implementations. We&rsquo;re trying to find a good design that supports all the possible use cases, and HTTP1 and HTTP2, without sacrificing any performance. Once such a thing exists, hyper would likely replace the types it uses with those.</p>
+
+<p>In doing the above, that may mean that hyper&rsquo;s current headers system won&rsquo;t fit. It might make sense to break that out into its own crate, so that people who want typed headers can have them, while a bare bones server could live without them. This would also help <a href="https://github.com/seanmonstar/reqwest">reqwest</a> in its road to 1.0, since it publicly exports <code>hyper::headers</code>, but hyper likely won&rsquo;t reach v1.0 before it.</p>
+
+<p>And of course, <strong>we always want to go faster</strong>. That will never stop!</p>
+
+<h3>v0.11.0</h3>
+
+<p>Again, <a href="https://crates.io/crates/hyper">go get it</a>! Read the new <a href="https://hyper.rs/guides">guides</a>. Tell us what you think!</p>
+
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+
+<li id="fn:1" role="doc-endnote">
+<p>hyper uses a set number of threads, not growing as more connections are made. It&rsquo;s a different trade off, but not too relevant for explaining why non-blocking IO is better. <a href="#fnref:1" class="footnote-backref" role="doc-backlink">↩︎</a></p>
+</li>
+
+<li id="fn:2" role="doc-endnote">
+<p>hyper doesn&rsquo;t lead the pack in benchmarks (yet), but it&rsquo;s not in the back either. The last benchmark put it at <a href="https://www.techempower.com/benchmarks/#section=data-r14&amp;hw=ph&amp;test=json">58% requests per second</a> of the fastest. Since that benchmark was published, some significant low-hanging improvements were made. A new preview should be available soon. And we&rsquo;ll keep going! <a href="#fnref:2" class="footnote-backref" role="doc-backlink">↩︎</a></p>
+</li>
+
+</ol>
+</div>

@@ -1,0 +1,46 @@
+---
+layout: post
+title: Shipyard 0.1
+date: '2012-03-21T18:30:35-04:00'
+tags:
+- javascript
+- programming
+- shipyard
+- mvc
+- mozilla
+- planet
+tumblr_url: https://seanmonstar.com/post/19698947653/shipyard-0-1
+---
+<p>I&rsquo;ve been working on a JavaScript MVC framework for past several months called Shipyard. It&rsquo;s an incredibly modular framework, with ease of testing, and <a href="http://seanmonstar.com/2023/2012-02-21-shipyard-mindset/">all that other kool-aid</a>. What&rsquo;s important now is that this is the first release point for Shipyard. Here&rsquo;s what it comes packed with:</p>
+
+<ul>
+<li>Models
+
+<ul>
+<li>Syncs to various locations</li>
+<li>Fields to serialize data easily</li>
+</ul></li>
+<li>Views
+
+<ul>
+<li>Automatic updates using Bindings</li>
+<li>Uses EJS templates underneath</li>
+<li>Templates get pre-compiled for production, so templating engine isn&rsquo;t needed in final file.</li>
+</ul></li>
+</ul>
+
+<p>There are plenty of other modules included, but not all have public docs currently as many of them aren&rsquo;t needed specifically by app developers, only by the internals of Models and Views.</p>
+
+<p>It&rsquo;s already powering Mozilla&rsquo;s <a href="https://builder.addons.mozilla.org">Add-on Builder</a>.</p>
+
+<h3>Start Playing</h3>
+
+<p>You can read more about Shipyard at the <a href="http://seanmonstar.github.com/Shipyard/">docs page</a>, play with the <a href="http://seanmonstar.github.com/Shipyard/examples/tasks/">obligatory example to-do app</a>, or the brave can start at <a href="https://github.com/seanmonstar/Shipyard">the source</a>.</p>
+
+<p>Or, you can grab your <code>require</code> and <a href="http://jsfiddle.net/seanmonstar/JrcF4/">try it out in jsFiddle</a> right now.</p>
+
+<p>To use it locally, you could check it out with git, but it&rsquo;s also available on npm, via <code>npm install shipyard</code>.</p>
+
+<h3>What&rsquo;s Next</h3>
+
+<p>With this release, work begins on <a href="https://github.com/seanmonstar/Shipyard/issues?milestone=2">version 0.2</a>, which will bring about Model Relationships, QuerySets, some Controllers, and a configurable logger.</p>

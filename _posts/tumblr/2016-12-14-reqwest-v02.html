@@ -1,0 +1,39 @@
+---
+layout: post
+title: reqwest v0.2
+date: '2016-12-14T13:50:55-05:00'
+tags:
+- planet
+- mozilla
+- rust
+- rust-lang
+- reqwest
+- http
+- programming
+tumblr_url: https://seanmonstar.com/post/154472854277/reqwest-v02
+---
+<a href="https://github.com/seanmonstar/reqwest/releases/tag/v0.2.0">reqwest v0.2</a><br/><p>The latest version of <a href="https://docs.rs/reqwest">reqwest</a> includes a <a href="https://github.com/seanmonstar/reqwest/releases/tag/v0.2.0">bag of goodies</a>, but the highlights are <code>Response.json()</code> and <code>RedirectPolicy</code>.</p>
+
+<p>The first allows you to easily decode a JSON body into some other type. This type only needs to implement <a href="https://serde.rs"><code>Deserialize</code></a>, so you can use customs structs, but as you can see in the example, simple things work straight out of the box, like a <code>HashMap</code>.</p>
+
+<pre><code>let res = reqwest::get("http://httpbin.org/user-agent").unwrap();
+let body: HashMap&lt;String, String&gt; = res.json().unwrap();
+assert_eq!(body["user-agent"], "reqwest/0.2.0");
+</code></pre>
+
+<p>The second highlight, <code>RedirectPolicy</code>, improves on the handling of redirects in the default case, and allows you to create a powerful custom policy easily.</p>
+
+<pre><code>let blocklist = std::env::var("BLOCKLIST").unwrap()
+    .split(",")
+    .collect::&lt;Vec&lt;_&gt;&gt;();
+let mut client = reqwest::Client::new().unwrap();
+client.redirect(reqwest::RedirectPolicy::custom(move |next, previous| {
+    if blocklist.contains(&amp;next.host_str().unwrap()) {
+        Ok(false)
+    } else if previous.len() == 3 {
+        Err(reqwest::Error::TooManyRedirects)
+    } else {
+        Ok(true)
+    }
+})
+</code></pre>

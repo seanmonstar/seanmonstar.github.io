@@ -1,0 +1,55 @@
+---
+layout: post
+title: intel
+date: '2013-09-30T13:08:00-04:00'
+tags:
+- javascript
+- programming
+- planet
+- nodejs
+- intel
+- logging
+- bestof
+tumblr_url: https://seanmonstar.com/post/62727728602/intel
+---
+<p>A couple months ago, I was blagging on about logging libraries in nodejs. After pointing out how annoying it is to use logging libraries with 3rd party modules, I <a href="http://seanmonstar.com/post/56448644049/console-log-all-the-things">declared that all modules should simply use <code>console.log()</code></a>, and let applications hijack the console. Then, I looked around the npms, and couldn&rsquo;t find an excellent example of a logging library that embraced that idea.</p>
+
+<p>So, clearly, that meant I needed to write my own. It&rsquo;s called <a href="http://seanmonstar.github.io/intel">intel</a>. Why another logging library? Well duh, cause this one is better.</p>
+
+<h3>Loggers get names</h3>
+
+<p>Before nodejs, I came from Pythonia. Over yonder, they have an excellent <a href="http://docs.python.org/2/library/logging.html">logging module</a> as part of the standard library. It&rsquo;s glorious. It uses hierarchal named loggers. <a href="https://github.com/flatiron/winston">Winston</a>, the library we currently use in <a href="https://github.com/mozilla/browserid">Persona</a>, while being perfectly awesome, doesn&rsquo;t have support for this. It does allow you to define Containers and Categories, but it&rsquo;s not as powerful as I&rsquo;d like.</p>
+
+<p>Specifically, intel adds 2 noteworthy features to Loggers: <strong>hierarchy</strong> and <strong>humane setup</strong>.</p>
+
+<ol>
+<li><p>Loggers use an <strong>hierarchy</strong> based on their names. Logger <code>foo.bar</code> is a child of <code>foo</code>. So is <code>foo.bar.baz</code>. When a logger receives a log message, after handling itself, it passes the message up to its parents.</p>
+
+<p>For instance, you could decide that all log messages from <code>foo</code> should go to the terminal. However, your <code>foo/bar.js</code> module has some critical code you want to keep tabs on. You could add a handler to the <code>foo.bar</code> logger that sends all messages of <code>WARN</code> and greater to email. After that handler, <code>foo.bar</code> will hand the message to its parent <code>foo</code>, and also send it to the terminal</p></li>
+<li><p>Of the other libraries I could fine that supported multiple named loggers, they all required that you instantiate the loggers with all options ahead of time. This adds more friction having a named logger per module in your app. Instead, intel makes it <strong>super easy</strong> for you get a new named logger.</p>
+
+<pre><code> var logger = intel.getLogger('foo.bar.baz.quux');
+</code></pre>
+
+<p>You don&rsquo;t have to have added any handlers to your newly minted logger. It will just pass the messages right up to it&rsquo;s parents. The messages will still keep the name of the originating logger, though.</p></li>
+</ol>
+
+<h3>Powerful configuration</h3>
+
+<p>Named loggers allow for really powerful yet easy-to-use logging. Combined with a little bit of configuration, and it&rsquo;s all magical. You can setup a couple root loggers, with various levels pumping messages to various handlers (Console, File, Email, Database, etc). You can see <a href="http://seanmonstar.github.io/intel#config">an example</a> in the docs.</p>
+
+<h3>Infiltrating the console</h3>
+
+<p>The motivating reason I started intel was to do exactly this. I want my apps to have the power to configure logging just the way I want, and I want all my dependencies to play along with my logging rules. So, after you setup your loggers and handlers, you can inject intel into the global <code>console</code> object, and watch as any dependencies that use <code>console.log</code> follow your rules, and automatically get assigned the correct names.</p>
+
+<pre><code> intel.console();
+ intel.getLogger('patrol.node_modules.express').setLevel(intel.WARN);
+ // in express.js
+ console.log('new request'); // automatically gets assigned to patrol.node_modules.express logger.
+</code></pre>
+
+<h3>intel</h3>
+
+<p>I&rsquo;m starting by a 0.1 release of <a href="http://seanmonstar.github.io/intel">intel</a>. Any bugs or feature requests can filed in the <a href="https://github.com/seanmonstar/intel/issues">issue tracker</a>. I don&rsquo;t want intel to be one of those libraries that is forever sub-1.0. After some use in the wild, with bugs being fixed and possibly APIs being made better, I&rsquo;d like to get to a 1.0 soon.</p>
+
+<p>So, try swapping out your current logger for intel. Name some loggers. You&rsquo;ll come around.</p>

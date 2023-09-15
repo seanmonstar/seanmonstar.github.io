@@ -1,0 +1,75 @@
+---
+layout: post
+title: 'This Month in hyper: July 2022'
+date: '2022-07-28T12:51:13-04:00'
+tags:
+- rust
+- rust-lang
+- hyper
+- http
+- curl
+- monthly
+- http3
+tumblr_url: https://seanmonstar.com/post/691039972381294592/this-month-in-hyper-july-2022
+---
+<p>I&rsquo;d like to start providing more frequent updates of all the work that&rsquo;s done in <a href="https://hyper.rs">hyper</a>, along with examples, details, and thanks. As a bonus, I included things from June in here as well.</p>
+
+<h3>Release v0.14.20</h3>
+
+<p>While we will release often when there&rsquo;s new bug fixes grouped up, <a href="https://github.com/hyperium/hyper/releases/tag/v0.14.20">this release</a> has a helpful new feature for people who write proxies and gateways.</p>
+
+<h4>hyper::ext::ReasonPhrase</h4>
+
+<p>One of the new features in v0.14.20 is the ability to interact more with the HTTP/1 <a href="https://github.com/hyperium/hyper/pull/2792">reason-phrase</a> of an HTTP response. This is a sort-of deprecated part of HTTP (the reason-phrase does not exist in HTTP/2 or 3), but sometimes important information is still put in them. The <code>http::StatusCode</code> type does not include a <code>String</code> field for the reason-phrase, because of that deprecation, and to decrease the memory size of the type.</p>
+
+<p>Consider this response with a custom reason-phrase:</p>
+
+<pre><code class="txt">HTTP/1.1 200 Stupendous
+</code></pre>
+
+<p>If you <em>do</em> need to access it, now you can! If the client receives a response with a non-standard phrase, it will be saved in the response extensions. So, a client would do so like this:</p>
+
+<pre><code class="rust">use hyper::ext::ReasonPhrase;
+
+let resp = client.get(url).await?;
+if let Some(phrase) = resp.extensions().get::&lt;ReasonPhrase&gt;() {
+    eprintln!("got {} {:?}", resp.status(), phrase);
+}
+</code></pre>
+
+<p>And a server can <em>send</em> a custom phrase by including the extension, like so:</p>
+
+<pre><code class="rust">use hyper::ext::ReasonPhrase;
+
+async fn handle(_req: Request) -&gt; Result&lt;Response, Infallible&gt; {
+    let mut resp = Response::new(Body::empty());
+    // There's also TryFrom impls for non-static values.
+    let phrase = ReasonPhrase::from_static("Stupendous");
+    resp.extensions_mut().insert(phrase);
+    Ok(resp)
+}
+</code></pre>
+
+<p>Thanks a bunch to <a href="https://hyper.rs/blog/2022/04/08/welcome-adam-foltzer/">Adam Foltzer</a> for the work on this feature!</p>
+
+<h3>hyper 1.0 started</h3>
+
+<p>Development work on 1.0 started in June. Progress can be tracked in <a href="https://github.com/orgs/hyperium/projects/1/views/2">the public dashboard</a>. Some major work done so far includes splitting the client connection type per HTTP version, for forwards compatibility, and moving the connection pool implementation and the Tokio <code>connect</code> integration to <code>hyper-util</code>. Thanks to @oddgrd, @tomarkw, @dswij!</p>
+
+<p>There&rsquo;s several more big PRs nearing completion too, looking forward to thanking them next month.</p>
+
+<h3>hyper in curl</h3>
+
+<p>In June, we fixed the way curl would pause and resume request bodies when using hyper, resulting in 4 more of the remaining unit tests to pass. In July, a brand new contributor (thanks @deantvv!) add the FFI function to use hyper&rsquo;s existing obs-folded headers support. A PR just merged aligns how curl expects obs-folded headers and how hyper treats them, which should fix another couple unit tests.</p>
+
+<p>There&rsquo;s a <a href="https://github.com/orgs/hyperium/projects/2/views/1">dashboard</a> if you&rsquo;d like to <a href="https://seanmonstar.com/2023/2022-03-16-help-stabilize-hyper-in-curl/">help this momentous work</a>.</p>
+
+<h3>HTTP/3</h3>
+
+<p>The HTTP/3 specification was published as <a href="https://httpwg.org/specs/rfc9114.html">RFC 9114</a>. I gave <a href="https://twitter.com/seanmonstar/status/1534224846015451136">a small recap</a> of the state of HTTP/3 in hyper.</p>
+
+<p>In the same time period, hyper&rsquo;s <a href="https://github.com/hyperium/h3">HTTP/3 library</a> saw some increased development, from three brand new contributors, two of which have made over 3 contributions each. The work includes making request streams splittable into a send and receive side, and support for &ldquo;GREASE&rdquo; streams and frames. Thank you @Ruben2424, @yu-re-ka, and @inflation!</p>
+
+<p>I&rsquo;ve started some work on a <code>tower-h3</code> crate, which would make it easier to plug HTTP/3 into an existing <a href="https://github.com/tower-rs/tower">Tower</a> codebase. I really do need to push this stuff to GitHub.</p>
+
+<p>I also wrote up an issue to <a href="https://github.com/seanmonstar/reqwest/issues/1558">add experimental support to <code>reqwest</code></a>. Getting it into reqwest would mean users could start trying it out more easily, and we could learn how to adjust the <code>h3</code> crate API before making it part of <code>hyper</code> directly. It would likely be easier to do this if the <code>tower-h3</code> crate were ready, as an intermediate step. <a href="https://discord.gg/q5mVhMD">Volunteers welcome!</a></p>

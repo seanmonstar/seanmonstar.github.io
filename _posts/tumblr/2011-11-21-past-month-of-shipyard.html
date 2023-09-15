@@ -1,0 +1,72 @@
+---
+layout: post
+title: Past Month of Shipyard
+date: '2011-11-21T14:45:32-05:00'
+tags:
+- javascript
+- mvc
+- shipyard
+- planet
+- mozilla
+tumblr_url: https://seanmonstar.com/post/13120286940/past-month-of-shipyard
+---
+<p>Last month I got to start working on <a href="https://github.com/seanmonstar/Shipyard">Shipyard</a> almost full-time, as I need it to make <a href="https://builder.addons.mozilla.org">Add-on Builder</a> work by the end of the quarter. I&rsquo;m not ready to call Shipyard 1.0 until I&rsquo;m confident with the API for Models, Controllers, and Views. Models are largely done, Views need some work, and <a href="https://github.com/seanmonstar/Shipyard/issues/1">Controllers need a start</a>. Besides that, though, what has happened to Shipyard in the past month?</p>
+
+<p>Here follows a changelog-ish list.</p>
+
+<ul>
+<li>Animations
+
+<ul>
+<li>A merge between MooTools&rsquo; Fx.Tween and Fx.Morph classes</li>
+</ul></li>
+<li>Events
+
+<ul>
+<li><code>addListener</code> returns a Listener object with <code>attach</code> and <code>detach</code> methods.</li>
+<li>support for <code>once</code></li>
+<li>legacy API
+
+<ul>
+<li>official API for EventEmitters is <code>addListener</code>, <code>removeListener</code>, and <code>emit</code></li>
+<li>previous methods will soon log a DeprecationWarning, before being removed by 1.0</li>
+</ul></li>
+</ul></li>
+<li>New utils
+
+<ul>
+<li>Logger
+
+<ul>
+<li>Makes the console more familiar for Python users</li>
+<li>Doesn&rsquo;t error if there is no console available</li>
+</ul></li>
+<li>Cookie
+
+<ul>
+<li>Thanks to MooTools</li>
+</ul></li>
+<li>Color
+
+<ul>
+<li>Thanks to MooTools</li>
+</ul></li>
+</ul></li>
+<li>DOMEvent
+
+<ul>
+<li>Thanks to MooTools</li>
+</ul></li>
+<li>Env
+
+<ul>
+<li>provides <code>browser</code> and <code>platform</code></li>
+</ul></li>
+<li>A briefer test runner
+
+<ul>
+<li>Only prints dots for successes, F for failures, and prints errors at the end</li>
+</ul></li>
+</ul>
+
+<p>If commit lists are more your thing, you can <a href="https://github.com/seanmonstar/Shipyard/compare/14ed52f...ab0f4bd7">look to GitHub</a>. The next month should see event delegation, and more work on the <a href="https://github.com/seanmonstar/Shipyard/issues/2">View/template system</a>.</p>

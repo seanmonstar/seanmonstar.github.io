@@ -1,0 +1,76 @@
+---
+layout: post
+title: hyper’s Vision
+date: '2022-03-08T12:56:52-05:00'
+tags:
+- rust
+- rust-lang
+- http
+- hyper
+tumblr_url: https://seanmonstar.com/post/678179333918097408/hypers-vision
+---
+<p>This year is the year we release <a href="https://hyper.rs">hyper</a> 1.0. As pointed out in the <a href="https://seanmonstar.com/2023/2022-02-22-hyper-10-timeline/">timeline</a>, the first thing we need define is the <a href="https://github.com/hyperium/hyper/pull/2772">vision</a>.</p>
+
+<p>The vision is a high-level, abstract view of what hyper <em>is</em>. It&rsquo;s the destination. It defines &ldquo;where we are going&rdquo;, no matter where we are along the journey, or what version we get to along the way.</p>
+
+<h3>Why define a vision?</h3>
+
+<p>hyper has been around for <a href="https://github.com/hyperium/hyper/commit/886551681629de812a87555bb4ecd41515e4dee6">a little under 8 years</a>. We&rsquo;ve done a lot of experimenting, learning, trying this and trying that. It has always had an <em>implicit</em> vision, but it&rsquo;s important to write it out. This makes the vision explicit, clear to everyone. It&rsquo;s no longer just whatever Sean keeps in his head.</p>
+
+<p>Defining a vision is a way to keep us honest. It provides a measuring stick to determine if we&rsquo;re getting closer or farther away. It defines a framework on how to make decisions that affect hyper. It empowers others to make those decisions. It allows the project to survive as maintainers<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> and collaborators come and go.</p>
+
+<h3>A Charter and Tenets</h3>
+
+<p>The <a href="https://github.com/hyperium/hyper/pull/2772">vision</a> begins with a charter and tenets.</p>
+
+<p>A charter is the <em>what</em>. What is it in one sentence? What is hyper?</p>
+
+<blockquote>
+  <p>hyper is a protective and efficient HTTP library for all.</p>
+</blockquote>
+
+<p>The tenets are <em>how we do that</em>. How we make the charter a reality. How we make decisions so that hyper can accomplish its charter. We do so when &ldquo;hyper is &hellip;&rdquo;:</p>
+
+<ol>
+<li>Open</li>
+<li>Correct</li>
+<li>Fast</li>
+<li>HTTP/*</li>
+<li>Flexible</li>
+<li>Understandable</li>
+</ol>
+
+<p>As much as possible, hyper should strive to fulfill all of those feelings.</p>
+
+<p>Some feel that tenets or principles must be unique. Others note that clearly you would never want the opposite. Yes, that&rsquo;s obvious. No one wants a buggy, or slow software. Defining tenets has another purpose, though.</p>
+
+<p>Defining tenets sets the <em>priority</em> amongst the principles. If you have to pick between two of them, how do you decide which wins? In this case, we&rsquo;ll work <em>very</em> hard to make things both correct and fast, but if there&rsquo;s a conflict, we will choose a slower correct option over a faster incorrect option. The vision goes into much more detail about each tenet, and includes real specific examples of how hyper <em>already</em> has made decisions using them.</p>
+
+<p>You may notice some minor mixing of human and engineering principles, such as &ldquo;protective&rdquo; and &ldquo;open&rdquo;. The mixture is purposeful. We remember that we make software for humans. What is engineering without the humans? It&rsquo;s too easy to forget that. hyper&rsquo;s vision makes sure that we consider humans when making engineering decisions. Still, there is room to expand how exactly the humans leading the project <a href="https://github.com/hyperium/hyper/blob/master/docs/CODE_OF_CONDUCT.md">should act</a> with a collaborator guide in the future.</p>
+
+<h3>Use cases of the Library</h3>
+
+<p>The next part of the vision includes hyper&rsquo;s use cases. We collected these at the same time as defining the the tenets, to help make sure that hyper&rsquo;s users actually cared about the same thing hyper does.</p>
+
+<p>This was extremely helpful in realizing the right balance, and recognizing that being flexible was higher priority than being easy for newcomers. There has been a balance in hyper of trying to provide a low-enough level interface, and also providing an easy and powerful higher-level API. Trying to provide both at the same time meant both suffered. By accepting that the higher priority need is to be flexible, we can remove some of the restraints that were imposed because of the higher-level API, and be even more flexible.</p>
+
+<p>That doesn&rsquo;t mean we purposefully make it harder, though. It should still be understandable for newcomers. One of the first things we do for them is to recommend they look at libraries built on top of hyper that are designed to be easy-first. We&rsquo;ll move some of the higher-level building pieces into a <code>hyper-util</code> crate.</p>
+
+<h3>And More</h3>
+
+<p>There&rsquo;s more to hyper&rsquo;s vision that I don&rsquo;t outline here. <a href="https://github.com/hyperium/hyper/pull/2772">The vision is currently a proposal</a>, and accepting feedback. Even after we merge, it&rsquo;s not set in stone. The vision can adapt as we learn new things in the future. But this is the <a href="https://seanmonstar.com/2023/2022-02-22-hyper-10-timeline/">first step in shipping hyper 1.0</a>. We can&rsquo;t get anywhere if we don&rsquo;t know where we are going. Now we do!</p>
+
+<p>After this, we need to map out <em>how we get there</em>. That&rsquo;s the roadmap. That&rsquo;s the next piece that&rsquo;s coming.</p>
+
+<p>Come <a href="https://github.com/hyperium/hyper/pull/2772">join us</a>, let us know what you think, and help us make the protective and efficient HTTP library <strong>for all</strong>!</p>
+
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+
+<li id="fn:1" role="doc-endnote">
+<p>Even me! <a href="#fnref:1" class="footnote-backref" role="doc-backlink">↩︎</a></p>
+</li>
+
+</ol>
+</div>

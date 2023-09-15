@@ -1,0 +1,77 @@
+---
+layout: post
+title: PHP Error Suppression Performance
+date: '2010-08-05T16:22:00-04:00'
+tags:
+- performance
+- php
+- bestof
+tumblr_url: https://seanmonstar.com/post/909029460/php-error-suppression-performance
+---
+<p>Sometimes, a function might cause a warning, like when you&rsquo;re messing around with files. It might be tempting to just prepend an <a href="http://us2.php.net/operators.errorcontrol"><code>@</code></a> to the function, and live on. But being curious, I researched if this does much harm besides being sloppy/lazy. It turns out there are performance costs for doing so as well.</p>
+
+<p>I first built a simple test that would loop a million times accessing a variable with and without the suppression operator prepended. The differences were small, yet noticeable. Using the suppression operator ended up <strong>taking 40% longer to execute</strong>. Interesting, but then an <a href="http://vega.rd.no/articles/php-performance-error-suppression">article by Vegard Andreas Larsen</a> pointed out something I failed to test:</p>
+
+<blockquote>
+  <p>[The] assertion that it is the act of the @ operator that is very slow, is wrong. It is in fact the actual triggering of the error or warning by itself.</p>
+</blockquote>
+
+<p>His tests show that while the suppression operator does add a little overhead, when an actual error<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> occurs, you see a bigger cost. When using the suppression operator, you&rsquo;re writing in a style that let&rsquo;s you cause errors and not care, which decreases performance. The same thing applies to setting <code>error_reporting</code> to ignore notices or warnings. Just because their ignored, doesn&rsquo;t mean PHP doesn&rsquo;t try to throw them first.</p>
+
+<p>A common example is when checking for properties of an object. When ignoring notices, you might do something like this:</p>
+
+<pre><code>if($obj-&gt;prop) { 
+    do_stuff($obj-&gt;prop); 
+}
+</code></pre>
+
+<p>If the property is undefined, a notice will be thrown, and then ignored. Performance penalty. Turns out that <a href="http://us.php.net/isset"><code>isset</code></a> is quite important, after all. Another instance could trying to call <code>file</code> without first calling <code>is_file</code>. I used to think, <em>So what, it&rsquo;s a dynamic language, it&rsquo;ll be just fine.</em> Now, I&rsquo;ll be littering my code with <code>isset</code> everywhere.</p>
+
+<p>Just to be sure, I altered my original test to check the differences between using a conditional test with isset versus just suppressing the notice. The difference was that suppressing the notice (a <strong>notice!</strong>) took <strong>100%</strong> as long as just checking if it existed first. Try it yourself.</p>
+
+<pre><code>&lt;?php
+
+function no_suppress() {
+    $a = 0;
+    $b = new stdClass;
+    $a = (isset($b-&gt;asdf) ? $b-&gt;asdf : null);
+}
+
+function suppress() {
+    $a = 0;
+    $b = new stdClass;
+    $a = @$b-&gt;asdf ? $b-&gt;asdf : null;
+}
+
+function do_test($suppress = false, $loops = 1000000) {
+    if($suppress) {
+        echo "starting suppress...\n";
+        $start = microtime(true);
+        for($i = 0; $i &lt; $loops; $i++) {
+            suppress();
+        }
+        $end = microtime(true);
+    } else {
+        echo "starting no_suppress...\n";
+        $start = microtime(true);
+        for($i = 0; $i &lt; $loops; $i++) {
+            no_suppress(true);
+        }
+        $end = microtime(true);
+    }
+    echo "ended: " . ($end - $start) . "\n";
+}
+</code></pre>
+
+<p>Now, this might not be the biggest thing in the world. But it&rsquo;s enough for me to change my ways, since it affects me once to write it, and my users an infinite amount of times having to execute. Since I believe in optimizing for users instead of developers, that&rsquo;s how it&rsquo;s going to be.</p>
+
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+
+<li id="fn:1" role="doc-endnote">
+<p>I use the term error to mean any message thrown. It includes errors, warnings, notices, etc. <a href="#fnref:1" class="footnote-backref" role="doc-backlink">↩︎</a></p>
+</li>
+
+</ol>
+</div>
