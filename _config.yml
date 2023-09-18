@@ -9,7 +9,7 @@ url: "http://seanmonstar.com" # the base hostname & protocol for your site
 rss: "/feed.xml"
 twitter_username: seanmonstar
 github_username:  seanmonstar
-permalink: /:year/:title/
+permalink: /blog/:title/
 paginate: 5
 
 # Build settings
