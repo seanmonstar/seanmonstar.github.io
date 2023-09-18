@@ -304,6 +304,25 @@ a:visited {
         text-align:right;
         width:3em;
     }
+
+	.archive ul.post-list li { list-style: none; }
+
+	.archive .post-list .date.new {
+		color: black;
+	}
+
+	.archive .post-list .date {
+		float: left;
+		clear: left;
+		width: 3em;
+		padding-right: 0.25em;
+	}
+
+	.archive .post-list .post-title {
+		float: left;
+		font-size: 1em;
+		margin-bottom: 0.5em;
+	}
     
     /* Previous and Next Links */
     #prev-next {

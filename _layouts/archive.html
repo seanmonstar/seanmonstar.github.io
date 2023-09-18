@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<div class="home">
+<div class="home archive">
 
     <ul class="post-list">
     {% for post in site.posts %}
@@ -15,7 +15,7 @@ layout: default
             <span class="date">+</span>
         {% endif %}
 
-            <h2>
+            <h2 class="post-title">
                 <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
             </h2>
         </li>
