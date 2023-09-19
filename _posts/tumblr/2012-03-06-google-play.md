@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Google Play
-date: '2012-03-06T10:34:44-08:00'
+date: '2012-03-06T13:34:44-05:00'
 tags:
 - android
 - google

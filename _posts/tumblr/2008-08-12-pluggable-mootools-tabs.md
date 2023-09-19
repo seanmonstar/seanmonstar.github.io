@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Pluggable Mootools Tabs
-date: '2008-08-12T13:54:00-07:00'
+date: '2008-08-12T16:54:00-04:00'
 tags:
 - javascript
 - mootools
@@ -9,13 +9,13 @@ tumblr_url: https://seanmonstar.com/post/707019146/pluggable-mootools-tabs
 ---
 #### Update (2/18/10)
 
-Theres a [new version of MGFX.Tabs](http://seanmonstar.com/2022/07/28/2010-02-18-mgfx-tabs-1-2-0-show-a-random-tab.html), that includes the ability to easily show a random tab.
+Theres a [new version of MGFX.Tabs](http://seanmonstar.com/blog/2010-02-18-mgfx-tabs-1-2-0-show-a-random-tab/), that includes the ability to easily show a random tab.
 
 * * *
 
 #### Update (11/10/09)
 
-I’ve released a [new version of MGFX.Tabs](http://seanmonstar.com/2022/07/28/2009-11-10-mgfx-tabs-1-1-on-github.html), and wrote a new article explaining the new features, its new location, and so forth.
+I’ve released a [new version of MGFX.Tabs](http://seanmonstar.com/blog/2009-11-10-mgfx-tabs-1-1-on-github/), and wrote a new article explaining the new features, its new location, and so forth.
 
 * * *
 

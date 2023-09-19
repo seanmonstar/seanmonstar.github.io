@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Too Many Social Networks
-date: '2010-07-16T09:10:42-07:00'
+date: '2010-07-16T12:10:42-04:00'
 tags: []
 tumblr_url: https://seanmonstar.com/post/819860954/too-many-social-networks
 ---

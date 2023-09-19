@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Google+ Wants Real Names
-date: '2011-07-27T16:25:06-07:00'
+date: '2011-07-27T19:25:06-04:00'
 tags:
 - google+
 tumblr_url: https://seanmonstar.com/post/8147186636/google-real-names

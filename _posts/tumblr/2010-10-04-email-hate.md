@@ -1,7 +1,7 @@
 ---
 layout: post
 title: If you do this in an email, I hate you
-date: '2010-10-04T15:33:10-07:00'
+date: '2010-10-04T18:33:10-04:00'
 tags:
 - email
 - comic

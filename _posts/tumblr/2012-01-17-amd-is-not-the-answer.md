@@ -1,7 +1,7 @@
 ---
 layout: post
 title: AMD is Not the Answer
-date: '2012-01-17T13:00:05-08:00'
+date: '2012-01-17T16:00:05-05:00'
 tags:
 - javascript
 - programming
@@ -19,5 +19,5 @@ And:
 
 > If build tools are required anyway, a much simpler solution should fit most developers’ needs.
 
-[The end.](http://seanmonstar.com/2022/07/28/2011-10-19-javascript-module-syntaxes.html)
+[The end.](http://seanmonstar.com/blog/2011-10-19-javascript-module-syntaxes/)
 

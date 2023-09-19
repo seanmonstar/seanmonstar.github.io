@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'The two keys: (1) keep it simple, (2) make it something you’d actually use.'
-date: '2010-10-25T16:49:52-07:00'
+date: '2010-10-25T19:49:52-04:00'
 tags:
 - programming
 tumblr_url: https://seanmonstar.com/post/1401973930/advice-to-aimless-excited-programmers

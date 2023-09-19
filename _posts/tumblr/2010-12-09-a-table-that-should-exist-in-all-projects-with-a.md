@@ -1,7 +1,7 @@
 ---
 layout: post
 title: A table that should exist in all projects with a database
-date: '2010-12-09T11:00:00-08:00'
+date: '2010-12-09T14:00:00-05:00'
 tags:
 - sql
 tumblr_url: https://seanmonstar.com/post/2156394463/a-table-that-should-exist-in-all-projects-with-a

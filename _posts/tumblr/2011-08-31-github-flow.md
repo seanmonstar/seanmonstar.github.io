@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Github Flow
-date: '2011-08-31T14:14:08-07:00'
+date: '2011-08-31T17:14:08-04:00'
 tags:
 - github
 - git

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Cross-browser addEvent without Frameworks
-date: '2008-10-01T15:49:00-07:00'
+date: '2008-10-01T18:49:00-04:00'
 tags:
 - javascript
 tumblr_url: https://seanmonstar.com/post/706917892/cross-browser-addevent-without-frameworks

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Lazy Function Definition Pattern
-date: '2010-07-19T07:01:43-07:00'
+date: '2010-07-19T10:01:43-04:00'
 tags:
 - javascript
 tumblr_url: https://seanmonstar.com/post/832086490/lazy-function-definition-pattern

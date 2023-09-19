@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Google and Motorola
-date: '2011-08-15T17:43:00-07:00'
+date: '2011-08-15T20:43:00-04:00'
 tags:
 - google
 - android

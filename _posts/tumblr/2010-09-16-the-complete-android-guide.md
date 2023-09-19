@@ -1,7 +1,7 @@
 ---
 layout: post
 title: The Complete Android Guide
-date: '2010-09-16T16:41:36-07:00'
+date: '2010-09-16T19:41:36-04:00'
 tags:
 - android
 tumblr_url: https://seanmonstar.com/post/1134392128/the-complete-android-guide

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Protected Methods in MooTools Classes
-date: '2009-09-04T08:00:00-07:00'
+date: '2009-09-04T11:00:00-04:00'
 tags:
 - javascript
 - mootools

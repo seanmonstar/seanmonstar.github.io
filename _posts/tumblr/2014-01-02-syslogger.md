@@ -1,7 +1,7 @@
 ---
 layout: post
 title: syslogger
-date: '2014-01-02T16:00:30-08:00'
+date: '2014-01-02T19:00:30-05:00'
 tags:
 - javascript
 - nodejs

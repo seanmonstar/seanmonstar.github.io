@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Why is getElementsByTagName() faster than querySelectorAll()?
-date: '2010-09-30T10:40:00-07:00'
+date: '2010-09-30T13:40:00-04:00'
 tags:
 - javascript
 - performance

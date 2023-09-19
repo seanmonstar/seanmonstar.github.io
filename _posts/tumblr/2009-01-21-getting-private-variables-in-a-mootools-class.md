@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Private Variables in a Mootools Class
-date: '2009-01-21T11:12:00-08:00'
+date: '2009-01-21T14:12:00-05:00'
 tags:
 - javascript
 - mootools
@@ -37,5 +37,5 @@ I doubt I did it the most effectively. After writing it, I tried refactoring it 
 
 #### Update (11/18/09)
 
-This only works prior to MooTools 1.2.3. In 1.2.3, a new implementation of Class.js was introduced, and I don’t think this works the way I hoped in the newest versions. You can, though, now use a [protect decorator](http://seanmonstar.com/2022/07/28/2009-09-04-protected-methods-in-mootools-classes.html) on your functions.
+This only works prior to MooTools 1.2.3. In 1.2.3, a new implementation of Class.js was introduced, and I don’t think this works the way I hoped in the newest versions. You can, though, now use a [protect decorator](http://seanmonstar.com/blog/2009-09-04-protected-methods-in-mootools-classes/) on your functions.
 

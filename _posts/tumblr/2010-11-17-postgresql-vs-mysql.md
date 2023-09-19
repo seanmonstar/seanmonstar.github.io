@@ -1,7 +1,7 @@
 ---
 layout: post
 title: PostgreSQL vs MySQL
-date: '2010-11-17T13:01:00-08:00'
+date: '2010-11-17T16:01:00-05:00'
 tags:
 - blazonco
 - postgresql

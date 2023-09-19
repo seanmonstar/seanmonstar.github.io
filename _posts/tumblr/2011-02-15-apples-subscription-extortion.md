@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Apple’s Subscription Extortion
-date: '2011-02-15T13:04:24-08:00'
+date: '2011-02-15T16:04:24-05:00'
 tags:
 - apple
 - app store

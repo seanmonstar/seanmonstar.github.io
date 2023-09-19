@@ -1,7 +1,7 @@
 ---
 layout: post
 title: MooTools - Setting Up Elements
-date: '2010-06-12T14:56:00-07:00'
+date: '2010-06-12T17:56:00-04:00'
 tags:
 - javascript
 - mootools

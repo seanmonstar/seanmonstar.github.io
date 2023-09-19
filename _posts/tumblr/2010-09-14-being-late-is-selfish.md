@@ -1,7 +1,7 @@
 ---
 layout: post
 title: No, you are not ‘running late’, you are rude and selfish
-date: '2010-09-14T14:13:28-07:00'
+date: '2010-09-14T17:13:28-04:00'
 tags:
 - opinion
 tumblr_url: https://seanmonstar.com/post/1122608567/being-late-is-selfish

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: ParentNode Misbehavior in IE
-date: '2008-11-19T12:51:00-08:00'
+date: '2008-11-19T15:51:00-05:00'
 tags:
 - javascript
 - bug

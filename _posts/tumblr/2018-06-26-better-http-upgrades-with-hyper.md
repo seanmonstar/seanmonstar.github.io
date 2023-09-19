@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Better HTTP Upgrades with hyper
-date: '2018-06-26T12:39:42-07:00'
+date: '2018-06-26T15:39:42-04:00'
 tags:
 - hyper
 - rust
@@ -10,7 +10,7 @@ tags:
 - websockets
 tumblr_url: https://seanmonstar.com/post/175280388657/better-http-upgrades-with-hyper
 ---
-It’s been possible to [handle HTTP Upgrades](http://seanmonstar.com/post/172531530657/http-upgrades-with-hyper) (like Websockets) in [hyper](https://hyper.rs) if you made use of the low-level APIs in the server and client, but it wasn’t especially nice to work with. It also meant to handle upgrades, you couldn’t use the nicer things that hyper takes care of for you with `Client` or `Server`.
+It’s been possible to [handle HTTP Upgrades](http://seanmonstar.com/blog/2018-04-02-http-upgrades-with-hyper/) (like Websockets) in [hyper](https://hyper.rs) if you made use of the low-level APIs in the server and client, but it wasn’t especially nice to work with. It also meant to handle upgrades, you couldn’t use the nicer things that hyper takes care of for you with `Client` or `Server`.
 
 In hyper [v0.12.3](https://github.com/hyperium/hyper/releases/tag/v0.12.3)<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>, **handling upgrades is much easier!**
 

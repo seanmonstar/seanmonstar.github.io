@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'MVC in MooTools: Controllers'
-date: '2010-10-18T23:33:00-07:00'
+date: '2010-10-19T02:33:00-04:00'
 tags:
 - javascript
 - mootools
@@ -9,7 +9,7 @@ tags:
 - monstars.js
 tumblr_url: https://seanmonstar.com/post/1349631987/mvc-in-mootools-controllers
 ---
-<small>This is another installment about how to use my <a href="http://github.com/seanmonstar/monstars.js">MooTools MVC framework</a>. If you’re interested in the previous parts, check out my write-up on using <a href="http://seanmonstar.com/2022/07/28/2010-08-25-mvc-in-mootools-models.html">Models</a> and <a href="http://seanmonstar.com/2022/07/28/2010-09-02-mvc-in-mootools-views.html">Views</a>.</small>
+<small>This is another installment about how to use my <a href="http://github.com/seanmonstar/monstars.js">MooTools MVC framework</a>. If you’re interested in the previous parts, check out my write-up on using <a href="http://seanmonstar.com/blog/2010-08-25-mvc-in-mootools-models/">Models</a> and <a href="http://seanmonstar.com/blog/2010-09-02-mvc-in-mootools-views/">Views</a>.</small>
 
 It’s often explained that Controllers are how you tie Models and Views together. I don’t want to get into _that_ argument. For me and my framework, Controllers handle DOM events. They listen to the views for events, update models, and then render new views. Let’s take a look.
 
@@ -46,7 +46,7 @@ The load event will fire on domready, and eveything else is in the MooTools even
 
 ### this.view
 
-First-class methods on a controller get access to the `view` method. This is a convenience method that will instantiate [views](http://seanmonstar.com/2022/07/28/2010-09-02-mvc-in-mootools-views.html) for you, with a little auto-magic thrown in.
+First-class methods on a controller get access to the `view` method. This is a convenience method that will instantiate [views](http://seanmonstar.com/blog/2010-09-02-mvc-in-mootools-views/) for you, with a little auto-magic thrown in.
 
     var RecipesController = new Class({
         Extends: Controller,

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: World, I’ll pay extra if you will please give me less.
-date: '2010-08-20T14:45:15-07:00'
+date: '2010-08-20T17:45:15-04:00'
 tags: []
 tumblr_url: https://seanmonstar.com/post/984160145/world-ill-pay-extra-if-you-will-please-give-me
 ---

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Add-on Builder 1.0
-date: '2012-02-22T15:32:21-08:00'
+date: '2012-02-22T18:32:21-05:00'
 tags:
 - planet
 - mozilla

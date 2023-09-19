@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Why doubleTwist's Alarm app?
-date: '2012-07-21T11:49:51-07:00'
+date: '2012-07-21T14:49:51-04:00'
 tags:
 - android
 - doubletwist

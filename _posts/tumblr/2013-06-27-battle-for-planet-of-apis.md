@@ -2,7 +2,7 @@
 layout: post
 title: If those services don’t trust me enough to give me an RSS feed, why should
   I trust them with my data?
-date: '2013-06-27T12:00:00-07:00'
+date: '2013-06-27T15:00:00-04:00'
 tags:
 - rss
 - api

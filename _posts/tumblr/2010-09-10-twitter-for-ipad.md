@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Twitter for iPad
-date: '2010-09-10T12:47:39-07:00'
+date: '2010-09-10T15:47:39-04:00'
 tags:
 - ipad
 - twitter

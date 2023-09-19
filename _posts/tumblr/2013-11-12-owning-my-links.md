@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Owning my links
-date: '2013-11-12T17:58:38-08:00'
+date: '2013-11-12T20:58:38-05:00'
 tags:
 - links
 - linkblog

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: The proper way to handle game piracy
-date: '2013-05-02T17:52:01-07:00'
+date: '2013-05-02T20:52:01-04:00'
 tags:
 - gaming
 - piracy

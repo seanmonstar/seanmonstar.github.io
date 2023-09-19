@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Battleheart on Android
-date: '2011-06-30T12:01:06-07:00'
+date: '2011-06-30T15:01:06-04:00'
 tags:
 - android
 - iphone

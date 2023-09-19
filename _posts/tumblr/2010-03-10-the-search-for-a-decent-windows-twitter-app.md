@@ -1,7 +1,7 @@
 ---
 layout: post
 title: The Search for a Decent Windows Twitter App
-date: '2010-03-10T15:19:00-08:00'
+date: '2010-03-10T18:19:00-05:00'
 tags:
 - twitter
 - opinion

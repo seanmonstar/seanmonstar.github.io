@@ -1,7 +1,7 @@
 ---
 layout: post
 title: It's Time To Destroy Selfish Platforms
-date: '2013-06-08T12:00:22-07:00'
+date: '2013-06-08T15:00:22-04:00'
 tags:
 - tent
 - tent.io

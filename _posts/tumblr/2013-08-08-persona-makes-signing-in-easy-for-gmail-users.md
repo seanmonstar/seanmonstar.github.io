@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Persona makes signing in easy for Gmail users
-date: '2013-08-08T12:23:26-07:00'
+date: '2013-08-08T15:23:26-04:00'
 tags:
 - persona
 - identity

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Helpful Errors Messages Are Important
-date: '2010-07-13T14:44:00-07:00'
+date: '2010-07-13T17:44:00-04:00'
 tags:
 - php
 - usability

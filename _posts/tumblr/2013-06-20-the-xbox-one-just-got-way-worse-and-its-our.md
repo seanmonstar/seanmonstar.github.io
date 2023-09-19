@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "'The Xbox One Just Got Way Worse, And It's Our Fault'"
-date: '2013-06-20T17:49:48-07:00'
+date: '2013-06-20T20:49:48-04:00'
 tags:
 - microsoft
 - xbox

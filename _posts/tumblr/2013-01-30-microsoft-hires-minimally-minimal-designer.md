@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Microsoft hires Minimally Minimal designer
-date: '2013-01-30T12:00:09-08:00'
+date: '2013-01-30T15:00:09-05:00'
 tags: []
 tumblr_url: https://seanmonstar.com/post/41882746307/microsoft-hires-minimally-minimal-designer
 ---

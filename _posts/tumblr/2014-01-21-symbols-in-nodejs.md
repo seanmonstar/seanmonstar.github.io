@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Symbols in nodejs
-date: '2014-01-21T19:04:15-08:00'
+date: '2014-01-21T22:04:15-05:00'
 tags:
 - javascript
 - programming

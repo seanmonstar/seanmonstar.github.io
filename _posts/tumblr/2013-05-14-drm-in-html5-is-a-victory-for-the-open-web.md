@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "'DRM in HTML5 is a victory for the open Web'"
-date: '2013-05-14T12:00:28-07:00'
+date: '2013-05-14T15:00:28-04:00'
 tags:
 - standards
 - drm

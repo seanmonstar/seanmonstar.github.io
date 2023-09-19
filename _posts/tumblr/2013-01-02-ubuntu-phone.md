@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Ubuntu Phone
-date: '2013-01-02T11:40:18-08:00'
+date: '2013-01-02T14:40:18-05:00'
 tags:
 - phone
 - ubuntu

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How using hyper in curl can help make the internet safer
-date: '2021-09-16T13:09:21-07:00'
+date: '2021-09-16T16:09:21-04:00'
 tags:
 - rust
 - hyper

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: www.persona.org
-date: '2013-12-04T16:07:35-08:00'
+date: '2013-12-04T19:07:35-05:00'
 tags:
 - mozilla
 - persona

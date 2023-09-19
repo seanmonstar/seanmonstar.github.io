@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Business, Design, and Engineering '
-date: '2011-03-22T11:00:07-07:00'
+date: '2011-03-22T14:00:07-04:00'
 tags:
 - freelancing
 tumblr_url: https://seanmonstar.com/post/4026753746/business-design-and-engineering

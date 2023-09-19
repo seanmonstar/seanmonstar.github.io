@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'This Month in hyper: July 2022'
-date: '2022-07-28T09:51:13-07:00'
+date: '2022-07-28T12:51:13-04:00'
 tags:
 - rust
 - rust-lang
@@ -59,7 +59,7 @@ There’s several more big PRs nearing completion too, looking forward to thanki
 
 In June, we fixed the way curl would pause and resume request bodies when using hyper, resulting in 4 more of the remaining unit tests to pass. In July, a brand new contributor (thanks @deantvv!) add the FFI function to use hyper’s existing obs-folded headers support. A PR just merged aligns how curl expects obs-folded headers and how hyper treats them, which should fix another couple unit tests.
 
-There’s a [dashboard](https://github.com/orgs/hyperium/projects/2/views/1) if you’d like to [help this momentous work](https://seanmonstar.com/2022/07/28/2022-03-16-help-stabilize-hyper-in-curl.html).
+There’s a [dashboard](https://github.com/orgs/hyperium/projects/2/views/1) if you’d like to [help this momentous work](https://seanmonstar.com/blog/2022-03-16-help-stabilize-hyper-in-curl/).
 
 ### HTTP/3
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Friends Don’t Let Friends Curate
-date: '2013-03-26T12:00:20-07:00'
+date: '2013-03-26T15:00:20-04:00'
 tags:
 - facebook
 - twitter

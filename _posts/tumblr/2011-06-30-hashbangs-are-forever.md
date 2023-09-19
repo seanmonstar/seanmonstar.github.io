@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Hashbangs are forever
-date: '2011-06-30T16:01:06-07:00'
+date: '2011-06-30T19:01:06-04:00'
 tags:
 - web
 - html

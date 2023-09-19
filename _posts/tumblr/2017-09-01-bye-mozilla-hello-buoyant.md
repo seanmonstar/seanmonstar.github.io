@@ -1,14 +1,14 @@
 ---
 layout: post
 title: Bye Mozilla, Hello Buoyant
-date: '2017-09-01T12:45:21-07:00'
+date: '2017-09-01T15:45:21-04:00'
 tags:
 - personal
 - life
 - mozilla
 - planet
 - buoyant
-tumblr_url: https://seanmonstar.com/post/164869651177/bye-mozilla-hello-bouyant
+tumblr_url: https://seanmonstar.com/post/164869651177/bye-mozilla-hello-buoyant
 ---
 ### Bye, Mozilla
 

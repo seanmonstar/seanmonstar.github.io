@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Twitter, Reblog, and Email Comments
-date: '2011-01-25T15:42:49-08:00'
+date: '2011-01-25T18:42:49-05:00'
 tags:
 - blogging
 - comments

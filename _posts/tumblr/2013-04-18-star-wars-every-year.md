@@ -1,7 +1,7 @@
 ---
 layout: post
 title: New 'Star Wars' films to be released every summer
-date: '2013-04-17T23:09:23-07:00'
+date: '2013-04-18T02:09:23-04:00'
 tags:
 - star wars
 - disney

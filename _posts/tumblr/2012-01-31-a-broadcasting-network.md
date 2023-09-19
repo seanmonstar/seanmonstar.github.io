@@ -1,7 +1,7 @@
 ---
 layout: post
 title: A Broadcasting Network
-date: '2012-01-31T11:55:47-08:00'
+date: '2012-01-31T14:55:47-05:00'
 tags:
 - twitter
 tumblr_url: https://seanmonstar.com/post/16829961021/a-broadcasting-network

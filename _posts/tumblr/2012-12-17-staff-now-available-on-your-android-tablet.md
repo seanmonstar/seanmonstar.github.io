@@ -1,13 +1,13 @@
 ---
 layout: post
 title: staff now available on your android tablet
-date: '2012-12-17T14:53:18-08:00'
+date: '2012-12-17T17:53:18-05:00'
 tags:
 - tumblr
 - android
 tumblr_url: https://seanmonstar.com/post/38177632448/staff-now-available-on-your-android-tablet
 ---
- ![](/tumblr_files/tumblr_mf6xzjrzUC1qz8q0ho1_r2_1280.png)  
+ ![](https://64.media.tumblr.com/c424ab146d5f652ebb9efdbc347cdacc/tumblr_mf6xzjrzUC1qz8q0ho1_r2_1280.png)  
 
 [staff](http://staff.tumblr.com/post/38175056281/now-available-on-your-android-tablet):
 

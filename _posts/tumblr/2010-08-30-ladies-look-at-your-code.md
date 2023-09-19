@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Ladies. Look at your code. '
-date: '2010-08-30T16:01:34-07:00'
+date: '2010-08-30T19:01:34-04:00'
 tags:
 - java
 - old spice

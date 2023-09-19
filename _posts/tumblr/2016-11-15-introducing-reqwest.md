@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Introducing Reqwest
-date: '2016-11-15T09:26:14-08:00'
+date: '2016-11-15T12:26:14-05:00'
 tags:
 - rust
 - rust-lang

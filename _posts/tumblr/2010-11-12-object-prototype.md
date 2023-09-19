@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Why Object.prototype is not the place for Hash methods
-date: '2010-11-12T09:00:00-08:00'
+date: '2010-11-12T12:00:00-05:00'
 tags:
 - javascript
 - mootools

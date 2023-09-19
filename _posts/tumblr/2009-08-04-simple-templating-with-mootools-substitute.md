@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Simple Templating with MooTools Substitute
-date: '2009-08-04T09:00:00-07:00'
+date: '2009-08-04T12:00:00-04:00'
 tags:
 - javascript
 - mootools

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: What is Dependency Injection?
-date: '2010-11-30T11:52:00-08:00'
+date: '2010-11-30T14:52:00-05:00'
 tags:
 - php
 - programming

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Use CSS Borders for 3D Effects
-date: '2009-04-29T08:55:00-07:00'
+date: '2009-04-29T11:55:00-04:00'
 tags:
 - css
 - design

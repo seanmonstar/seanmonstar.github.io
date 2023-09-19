@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Letter from Apple Regarding iPhone 4
-date: '2010-07-05T15:01:26-07:00'
+date: '2010-07-05T18:01:26-04:00'
 tags:
 - iphone
 tumblr_url: https://seanmonstar.com/post/774218819/apple-regarding-iphone-4

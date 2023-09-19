@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Users Are Not Worried about iOS Restrictions
-date: '2012-02-08T11:49:23-08:00'
+date: '2012-02-08T14:49:23-05:00'
 tags:
 - ios
 - restrictions

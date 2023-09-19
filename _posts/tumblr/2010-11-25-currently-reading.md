@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Currently Reading
-date: '2010-11-25T11:00:07-08:00'
+date: '2010-11-25T14:00:07-05:00'
 tags: []
 tumblr_url: https://seanmonstar.com/post/1682637199/currently-reading
 ---

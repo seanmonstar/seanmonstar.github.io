@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Edge Prototype
-date: '2010-10-26T13:42:54-07:00'
+date: '2010-10-26T16:42:54-04:00'
 tags:
 - html5
 - javascript

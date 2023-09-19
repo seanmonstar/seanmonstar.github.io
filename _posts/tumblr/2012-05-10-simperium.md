@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Simperium
-date: '2012-05-10T12:01:08-07:00'
+date: '2012-05-10T15:01:08-04:00'
 tags:
 - programming
 - sync

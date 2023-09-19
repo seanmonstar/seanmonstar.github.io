@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Who said Android apps can’t look good?
-date: '2011-10-05T14:16:45-07:00'
+date: '2011-10-05T17:16:45-04:00'
 tags:
 - android
 - bump

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: hyper on beta
-date: '2015-04-08T12:33:28-07:00'
+date: '2015-04-08T15:33:28-04:00'
 tags:
 - rust
 - hyper
@@ -11,7 +11,7 @@ tags:
 - rust-lang
 tumblr_url: https://seanmonstar.com/post/115873169212/hyper-on-beta
 ---
-Since I [announced hyper](http://seanmonstar.com/2022/07/28/2014-12-18-hyper.html) in December of last year, it has continued to grow as Rust’s http library.
+Since I [announced hyper](http://seanmonstar.com/blog/2014-12-18-hyper/) in December of last year, it has continued to grow as Rust’s http library.
 
 ### highlights
 

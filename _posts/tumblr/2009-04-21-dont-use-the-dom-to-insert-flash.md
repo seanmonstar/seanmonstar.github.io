@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Don't Use the DOM to Insert Flash
-date: '2009-04-21T07:46:00-07:00'
+date: '2009-04-21T10:46:00-04:00'
 tags:
 - javascript
 - flash

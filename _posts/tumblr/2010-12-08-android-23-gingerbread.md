@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Android 2.3 Gingerbread
-date: '2010-12-08T17:07:06-08:00'
+date: '2010-12-08T20:07:06-05:00'
 tags:
 - android
 - gingerbread

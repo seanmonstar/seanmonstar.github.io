@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How ECMAScript 5 still does not allow to subclass an array
-date: '2010-07-16T06:59:45-07:00'
+date: '2010-07-16T09:59:45-04:00'
 tags:
 - javascript
 tumblr_url: https://seanmonstar.com/post/819507208/subclass-an-array

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: The Care and Feeding of the Android GPU
-date: '2011-01-04T09:17:13-08:00'
+date: '2011-01-04T12:17:13-05:00'
 tags:
 - android
 - ux

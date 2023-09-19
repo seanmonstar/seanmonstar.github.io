@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Android 3.0 Platform Highlights
-date: '2011-01-26T18:04:41-08:00'
+date: '2011-01-26T21:04:41-05:00'
 tags:
 - android
 - honeycomb

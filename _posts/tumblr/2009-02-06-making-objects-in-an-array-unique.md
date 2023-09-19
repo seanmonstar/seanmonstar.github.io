@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Making Objects in an Array Unique
-date: '2009-02-06T06:01:00-08:00'
+date: '2009-02-06T09:01:00-05:00'
 tags:
 - php
 tumblr_url: https://seanmonstar.com/post/707138900/making-objects-in-an-array-unique

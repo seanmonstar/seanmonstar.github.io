@@ -1,7 +1,7 @@
 ---
 layout: post
 title: URL Design
-date: '2011-01-04T16:09:45-08:00'
+date: '2011-01-04T19:09:45-05:00'
 tags:
 - urls
 tumblr_url: https://seanmonstar.com/post/2601706595/url-design

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Exploring Javascript Date Math
-date: '2009-09-22T07:25:00-07:00'
+date: '2009-09-22T10:25:00-04:00'
 tags:
 - javascript
 tumblr_url: https://seanmonstar.com/post/708726028/exploring-javascript-date-math

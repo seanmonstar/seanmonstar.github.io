@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Sundar Pichai to lead Android
-date: '2013-03-13T13:27:44-07:00'
+date: '2013-03-13T16:27:44-04:00'
 tags:
 - google
 - android

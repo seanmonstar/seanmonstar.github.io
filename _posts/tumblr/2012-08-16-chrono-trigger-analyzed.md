@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Chrono Trigger Analyzed
-date: '2012-08-16T18:39:05-07:00'
+date: '2012-08-16T21:39:05-04:00'
 tags:
 - games
 - chrono trigger

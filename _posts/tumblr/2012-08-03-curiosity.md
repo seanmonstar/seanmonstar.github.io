@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Curiosity
-date: '2012-08-03T11:59:00-07:00'
+date: '2012-08-03T14:59:00-04:00'
 tags:
 - space
 - physics

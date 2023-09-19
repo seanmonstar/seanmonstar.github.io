@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Moved to Identity
-date: '2012-07-20T10:31:59-07:00'
+date: '2012-07-20T13:31:59-04:00'
 tags:
 - mozilla
 - planet

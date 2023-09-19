@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Google Chrome Pinned Tabs
-date: '2010-07-28T07:00:00-07:00'
+date: '2010-07-28T10:00:00-04:00'
 tags:
 - chrome
 tumblr_url: https://seanmonstar.com/post/870812923/google-chrome-pinned-tabs

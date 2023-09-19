@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Week Period of a Given Date
-date: '2009-09-17T08:00:00-07:00'
+date: '2009-09-17T11:00:00-04:00'
 tags:
 - php
 tumblr_url: https://seanmonstar.com/post/708814441/week-period-of-a-given-date

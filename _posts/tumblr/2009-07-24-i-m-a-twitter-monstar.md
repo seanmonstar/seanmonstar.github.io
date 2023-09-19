@@ -1,7 +1,7 @@
 ---
 layout: post
 title: I'm a Twitter Monstar
-date: '2009-07-24T08:00:00-07:00'
+date: '2009-07-24T11:00:00-04:00'
 tags:
 - twitter
 tumblr_url: https://seanmonstar.com/post/707030006/i-m-a-twitter-monstar
@@ -20,7 +20,7 @@ Figured, now’s as great a time as any. Here’s a snapshot of what I twit twee
 
 [![Out of Beer tweet](http://mcarthurgfx.com/images/blog/twitOuttaBeer.png)](http://twitter.com/seanmonstar/status/2641020393)
 
-And yes, we do have an [“Out of beer” ticket](http://seanmonstar.com/2022/07/28/2008-10-16-our-most-critical-bug.html).
+And yes, we do have an [“Out of beer” ticket](http://seanmonstar.com/blog/2008-10-16-our-most-critical-bug/).
 
 #### Follow Me
 

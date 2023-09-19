@@ -1,14 +1,14 @@
 ---
 layout: post
 title: Python Closure Gotcha
-date: '2012-09-17T13:57:44-07:00'
+date: '2012-09-17T16:57:44-04:00'
 tags:
 - programming
 - python
 - planet
 tumblr_url: https://seanmonstar.com/post/31749159302/python-closure-gotcha
 ---
-You know all about [JavaScript closures](https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Closures). They’re great. We can do [super cool stuff](http://seanmonstar.com/2022/07/28/2009-12-10-closures-break-my-for-s.html) with them. Python has closures, too! However, the combination of closures and no `var` keyword leads us to a fun Gotcha.
+You know all about [JavaScript closures](https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Closures). They’re great. We can do [super cool stuff](http://seanmonstar.com/blog/2009-12-10-closures-break-my-for-s/) with them. Python has closures, too! However, the combination of closures and no `var` keyword leads us to a fun Gotcha.
 
 Example of Gotcha:
 

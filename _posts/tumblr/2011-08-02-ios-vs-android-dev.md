@@ -1,7 +1,7 @@
 ---
 layout: post
 title: An iOS Developer Takes on Android
-date: '2011-08-02T12:00:05-07:00'
+date: '2011-08-02T15:00:05-04:00'
 tags:
 - android
 - programming

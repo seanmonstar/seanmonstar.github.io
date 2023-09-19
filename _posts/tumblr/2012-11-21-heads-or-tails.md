@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Heads or Tails?
-date: '2012-11-21T12:41:22-08:00'
+date: '2012-11-21T15:41:22-05:00'
 tags:
 - probability
 - randomness

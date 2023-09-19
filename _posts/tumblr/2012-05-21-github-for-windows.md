@@ -1,7 +1,7 @@
 ---
 layout: post
 title: GitHub for Windows
-date: '2012-05-21T11:41:02-07:00'
+date: '2012-05-21T14:41:02-04:00'
 tags:
 - app
 - github

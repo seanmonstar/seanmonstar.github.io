@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Why smartphone openness is a lie
-date: '2010-07-26T11:33:00-07:00'
+date: '2010-07-26T14:33:00-04:00'
 tags:
 - android
 - iphone

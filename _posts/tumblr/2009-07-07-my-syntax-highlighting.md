@@ -1,7 +1,7 @@
 ---
 layout: post
 title: My Syntax Highlighting
-date: '2009-07-07T08:00:00-07:00'
+date: '2009-07-07T11:00:00-04:00'
 tags:
 - opinion
 - bestof

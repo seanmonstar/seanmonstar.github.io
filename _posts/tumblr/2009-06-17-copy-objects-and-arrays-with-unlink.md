@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Copy Objects and Arrays with $unlink
-date: '2009-06-17T10:00:00-07:00'
+date: '2009-06-17T13:00:00-04:00'
 tags:
 - javascript
 - mootools

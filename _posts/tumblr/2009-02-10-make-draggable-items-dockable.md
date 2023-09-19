@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Make Draggable Items Dockable
-date: '2009-02-10T07:05:00-08:00'
+date: '2009-02-10T10:05:00-05:00'
 tags:
 - javascript
 - mootools

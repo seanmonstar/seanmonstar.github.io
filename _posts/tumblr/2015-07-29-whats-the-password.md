@@ -1,14 +1,14 @@
 ---
 layout: post
 title: What’s the password?
-date: '2015-07-29T09:25:29-07:00'
+date: '2015-07-29T12:25:29-04:00'
 tags:
 - persona
 - identity
 - browserid
 - mozilla
 - planet
-tumblr_url: https://seanmonstar.com/post/125352745992/browserid
+tumblr_url: https://seanmonstar.com/post/125352745992/whats-the-password
 ---
 Exploring the wilds of the internets, I stumble upon a brand new site that allows me to turn cat images into ASCII art.
 
@@ -24,7 +24,7 @@ _“Pick a p͏a̵ss–”_arrgghHHHa̵ąz͏z͝ef́w͟qa̛a̸s̕s̡;. **WHAT! NO
 
 * * *
 
-Sorry, I’m fine now. It’s just… you know. It is downright [irresponsible](http://seanmonstar.com/2022/07/28/2014-03-25-your-password-is-insecure.html) at this point to require a user to enter a password to login to your site. It’s pretty easy to properly hash some passwords, but **DON’T DO IT!**. Instead, you should let a secure identity provider provide the user’s credentials.
+Sorry, I’m fine now. It’s just… you know. It is downright [irresponsible](http://seanmonstar.com/blog/2014-03-25-your-password-is-insecure/) at this point to require a user to enter a password to login to your site. It’s pretty easy to properly hash some passwords, but **DON’T DO IT!**. Instead, you should let a secure identity provider provide the user’s credentials.
 
 Good idea! Er, which do you pick? There’s several, and each has its own peculiarities regarding its API. _Sigh_.
 

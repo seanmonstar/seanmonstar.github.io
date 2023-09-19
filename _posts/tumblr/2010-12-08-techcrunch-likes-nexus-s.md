@@ -1,7 +1,7 @@
 ---
 layout: post
 title: TechCrunch Likes Nexus S
-date: '2010-12-08T14:01:06-08:00'
+date: '2010-12-08T17:01:06-05:00'
 tags:
 - google
 - android

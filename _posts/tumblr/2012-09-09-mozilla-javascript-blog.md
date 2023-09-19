@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Mozilla JavaScript Blog
-date: '2012-09-09T18:39:00-07:00'
+date: '2012-09-09T21:39:00-04:00'
 tags:
 - javascript
 - mozilla

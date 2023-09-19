@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 3 Tips When Switching to Python
-date: '2010-01-14T12:30:00-08:00'
+date: '2010-01-14T15:30:00-05:00'
 tags:
 - python
 tumblr_url: https://seanmonstar.com/post/708913184/3-tips-when-switching-to-python
@@ -31,7 +31,7 @@ Alternatively, Python dictionaries have a `get` method. Hence we do this, and it
 
 #### You can just setattr
 
-A while ago, when doing some [initial Django development](http://seanmonstar.com/2022/07/28/2009-11-25-extending-django-models-managers-and-querysets.html), I tried to naively handle submission of forms the same way I do in PHP. I loop through each key value pair in the POST dictionary, and assign it to an instance of the model I want to insert. No worries if extra information has been submitting, the model will send data that we have specifically set at fields in the `class` definition. However, objects in Python don’t allow item assignment like PHP or Javascript. Every object does have a personal ` __dict__ ` that I could access, but then I can get `KeyErrors` as the above example shows.
+A while ago, when doing some [initial Django development](http://seanmonstar.com/blog/2009-11-25-extending-django-models-managers-and-querysets/), I tried to naively handle submission of forms the same way I do in PHP. I loop through each key value pair in the POST dictionary, and assign it to an instance of the model I want to insert. No worries if extra information has been submitting, the model will send data that we have specifically set at fields in the `class` definition. However, objects in Python don’t allow item assignment like PHP or Javascript. Every object does have a personal ` __dict__ ` that I could access, but then I can get `KeyErrors` as the above example shows.
 
 [Denis Otkidach showed me](http://stackoverflow.com/questions/1614804/copying-values-from-a-dictionary-into-an-object-in-python) Python’s [setattr function](http://docs.python.org/library/functions.html#setattr), which lets me do exactly what I wanted.
 

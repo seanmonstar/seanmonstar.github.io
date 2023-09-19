@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Tech sites covering the Boston bombing
-date: '2013-04-19T16:32:09-07:00'
+date: '2013-04-19T19:32:09-04:00'
 tags:
 - opinion
 - boston marathon

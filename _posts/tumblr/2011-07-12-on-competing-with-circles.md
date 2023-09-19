@@ -1,7 +1,7 @@
 ---
 layout: post
 title: On Competing with Circles
-date: '2011-07-12T04:34:28-07:00'
+date: '2011-07-12T07:34:28-04:00'
 tags:
 - google+
 - facebook

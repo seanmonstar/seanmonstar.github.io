@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Samsung Galaxy S II
-date: '2011-04-29T12:26:23-07:00'
+date: '2011-04-29T15:26:23-04:00'
 tags: []
 tumblr_url: https://seanmonstar.com/post/5047378245/samsung-galaxy-s-ii
 ---

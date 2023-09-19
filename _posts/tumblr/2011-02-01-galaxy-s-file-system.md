@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Fixing the Galaxy S File System
-date: '2011-01-31T22:31:14-08:00'
+date: '2011-02-01T01:31:14-05:00'
 tags:
 - android
 - samsung
@@ -9,7 +9,7 @@ tags:
 - lag-fix
 tumblr_url: https://seanmonstar.com/post/3044912970/galaxy-s-file-system
 ---
-My [phone](http://www.amazon.com/gp/product/B003TXSKNE?tag=seanmonstar-20) felt pretty fast when [I got my hands on it](http://seanmonstar.com/2022/07/28/2010-09-29-samsung-galaxy-vibrant-review.html) last summer, but I’d done my fair share of complaining about seemingly super slow apps. I figured the developers of those apps just plain sucked. I was a little surprised that [my brother](http://tractorbeamtuesdays.tumblr.com), owner of a Droid X, didn’t notice the same slow downs. A [Google search later](http://androidforums.com/captivate-support-troubleshooting/215225-wondering-why-facebook-app-really-slow.html), and I found out it was actually Samsung who sucks. Samsung built a rockin’ phone, and included a terrible [Robust FAT File System](http://www.samsung.com/global/business/semiconductor/products/fusionmemory/Products_RFS_Brochure.html)<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>.
+My [phone](http://www.amazon.com/gp/product/B003TXSKNE?tag=seanmonstar-20) felt pretty fast when [I got my hands on it](http://seanmonstar.com/blog/2010-09-29-samsung-galaxy-vibrant-review/) last summer, but I’d done my fair share of complaining about seemingly super slow apps. I figured the developers of those apps just plain sucked. I was a little surprised that [my brother](http://tractorbeamtuesdays.tumblr.com), owner of a Droid X, didn’t notice the same slow downs. A [Google search later](http://androidforums.com/captivate-support-troubleshooting/215225-wondering-why-facebook-app-really-slow.html), and I found out it was actually Samsung who sucks. Samsung built a rockin’ phone, and included a terrible [Robust FAT File System](http://www.samsung.com/global/business/semiconductor/products/fusionmemory/Products_RFS_Brochure.html)<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>.
 
 The fix is to convert to an [Ext4](http://en.wikipedia.org/wiki/Ext4) file system. Theoretically, you just flash a patch that changes your file structure, but I believe I picked a patch that was incompatible with the ROM I originally had installed. My phone would no longer boot, and I cried. If this happens to you, feel free to cry. Then, follow [this guy’s video walkthrough](http://www.youtube.com/watch?v=9nMCBbdAcHU), and your phone is back to factory settings.
 

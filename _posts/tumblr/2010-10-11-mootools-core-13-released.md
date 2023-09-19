@@ -1,7 +1,7 @@
 ---
 layout: post
 title: MooTools Core 1.3 Released
-date: '2010-10-11T16:40:37-07:00'
+date: '2010-10-11T19:40:37-04:00'
 tags:
 - mootools
 - javascript

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Hope for Windows Phone 8
-date: '2012-09-14T16:54:22-07:00'
+date: '2012-09-14T19:54:22-04:00'
 tags:
 - windows phone 8
 - android

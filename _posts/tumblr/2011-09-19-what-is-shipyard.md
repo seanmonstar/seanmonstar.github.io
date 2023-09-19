@@ -1,7 +1,7 @@
 ---
 layout: post
 title: What is Shipyard?
-date: '2011-09-19T10:33:06-07:00'
+date: '2011-09-19T13:33:06-04:00'
 tags:
 - javascript
 - programming

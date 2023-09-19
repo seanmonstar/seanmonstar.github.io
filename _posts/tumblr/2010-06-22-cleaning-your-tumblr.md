@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Cleaning Your Tumblr
-date: '2010-06-22T10:53:55-07:00'
+date: '2010-06-22T13:53:55-04:00'
 tags:
 - javascript
 tumblr_url: https://seanmonstar.com/post/726009563/cleaning-your-tumblr

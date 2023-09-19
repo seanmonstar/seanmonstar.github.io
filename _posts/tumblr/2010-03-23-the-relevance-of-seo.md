@@ -1,7 +1,7 @@
 ---
 layout: post
 title: The Relevance of SEO
-date: '2010-03-23T08:57:00-07:00'
+date: '2010-03-23T11:57:00-04:00'
 tags:
 - opinion
 - seo

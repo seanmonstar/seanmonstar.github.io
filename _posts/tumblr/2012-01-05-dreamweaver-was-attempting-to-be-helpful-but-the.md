@@ -3,7 +3,7 @@ layout: post
 title: Dreamweaver was attempting to be helpful, but the moment it reformatted my
   code, I threw a fit. YOU TOUCHED MY CODE. Dreamweaver never recovered from that
   horrendous first impression.
-date: '2012-01-05T16:20:41-08:00'
+date: '2012-01-05T19:20:41-05:00'
 tags:
 - dreamweaver
 - programming

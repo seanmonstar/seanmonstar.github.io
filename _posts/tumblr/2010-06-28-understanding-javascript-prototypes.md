@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Understanding JavaScript Prototypes
-date: '2010-06-28T16:28:51-07:00'
+date: '2010-06-28T19:28:51-04:00'
 tags:
 - javascript
 tumblr_url: https://seanmonstar.com/post/747330133/understanding-javascript-prototypes

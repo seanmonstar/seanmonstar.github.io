@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Firefox Accounts OAuth Explorations
-date: '2014-06-03T10:30:00-07:00'
+date: '2014-06-03T13:30:00-04:00'
 tags:
 - mozilla
 - planet

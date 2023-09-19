@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Amazon Silk
-date: '2011-09-29T09:12:01-07:00'
+date: '2011-09-29T12:12:01-04:00'
 tags:
 - amazon
 - kindle

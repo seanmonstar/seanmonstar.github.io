@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Microsoft Dives Deep to Surface a Hit
-date: '2012-10-29T14:43:43-07:00'
+date: '2012-10-29T17:43:43-04:00'
 tags:
 - surface
 - microsoft

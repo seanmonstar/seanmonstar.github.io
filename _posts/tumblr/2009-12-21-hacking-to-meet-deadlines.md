@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Hacking To Meet Deadlines
-date: '2009-12-21T07:06:00-08:00'
+date: '2009-12-21T10:06:00-05:00'
 tags:
 - opinion
 - php

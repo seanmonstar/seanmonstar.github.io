@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Windows 8 Preview
-date: '2011-06-02T09:57:34-07:00'
+date: '2011-06-02T12:57:34-04:00'
 tags:
 - windows 8
 tumblr_url: https://seanmonstar.com/post/6110940929/windows-8-preview

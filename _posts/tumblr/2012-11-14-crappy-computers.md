@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Crappy Computers '
-date: '2012-11-14T12:00:15-08:00'
+date: '2012-11-14T15:00:15-05:00'
 tags:
 - computers
 - opinion

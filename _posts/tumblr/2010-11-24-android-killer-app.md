@@ -1,7 +1,7 @@
 ---
 layout: post
 title: The Interwebz is Android's Killer App
-date: '2010-11-24T12:15:00-08:00'
+date: '2010-11-24T15:15:00-05:00'
 tags:
 - google
 - android

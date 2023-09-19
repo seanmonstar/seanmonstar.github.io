@@ -1,7 +1,7 @@
 ---
 layout: post
 title: The iPad Needs Competition
-date: '2011-10-11T13:26:27-07:00'
+date: '2011-10-11T16:26:27-04:00'
 tags:
 - ipad
 - tablets

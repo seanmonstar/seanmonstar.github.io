@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Free Speech on the Internet
-date: '2012-12-04T13:49:23-08:00'
+date: '2012-12-04T16:49:23-05:00'
 tags:
 - internet
 - free speech

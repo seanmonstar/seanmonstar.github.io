@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Chrome for Android
-date: '2012-02-07T15:28:35-08:00'
+date: '2012-02-07T18:28:35-05:00'
 tags:
 - android
 - chrome

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Machete Order
-date: '2012-11-12T18:29:07-08:00'
+date: '2012-11-12T21:29:07-05:00'
 tags:
 - star wars
 tumblr_url: https://seanmonstar.com/post/35610623139/machete-order

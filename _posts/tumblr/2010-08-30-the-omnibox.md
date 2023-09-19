@@ -1,7 +1,7 @@
 ---
 layout: post
 title: The Omnibox
-date: '2010-08-30T11:15:37-07:00'
+date: '2010-08-30T14:15:37-04:00'
 tags:
 - chrome
 tumblr_url: https://seanmonstar.com/post/1037847024/the-omnibox

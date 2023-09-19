@@ -1,7 +1,7 @@
 ---
 layout: post
 title: In Defense Of [Tumblr]
-date: '2010-08-06T13:19:50-07:00'
+date: '2010-08-06T16:19:50-04:00'
 tags:
 - tumblr
 tumblr_url: https://seanmonstar.com/post/914044948/in-defense-of-tumblr

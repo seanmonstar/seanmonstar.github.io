@@ -5,7 +5,7 @@ title: 'What we know for sure is this: monocultures always make more & faster pr
   you get stuck. Companies change, sensibilities change. And then you’ve got all the
   technology, and all talent, and all of the best thinkers, all trapped on one technology
   stack.'
-date: '2013-02-14T13:32:21-08:00'
+date: '2013-02-14T16:32:21-05:00'
 tags:
 - mozilla
 - firefox

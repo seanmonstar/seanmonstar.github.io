@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Introducing Hulu Plus
-date: '2010-06-29T13:43:00-07:00'
+date: '2010-06-29T16:43:00-04:00'
 tags: []
 tumblr_url: https://seanmonstar.com/post/750906177/introducing-hulu-plus
 ---

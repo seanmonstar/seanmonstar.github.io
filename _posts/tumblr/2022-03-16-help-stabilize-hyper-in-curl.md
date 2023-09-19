@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Help stabilize hyper in curl
-date: '2022-03-16T08:44:50-07:00'
+date: '2022-03-16T11:44:50-04:00'
 tags:
 - rust
 - rust-lang
@@ -10,24 +10,7 @@ tags:
 - curl
 tumblr_url: https://seanmonstar.com/post/678895803144830976/help-stabilize-hyper-in-curl
 ---
-We’ve been working for that past year and change to allow [hyper to be an HTTP backend for curl](https://seanmonstar.com/2022/07/28/2021-09-16-how-using-hyper-in-curl-can-help-make-the-internet.html). **We’re so close to having it work!** With hundreds of tests working, there’s only a dozen or so tests left to fix. I’ve inlined the test number and brief description here, but the [actual file](https://github.com/curl/curl/blob/master/tests/data/DISABLED) will be more up-to-date. Of what remains, these listed are ones we don’t know the root cause of yet:
-
-    265 CONNECT + NTLM
-    357 PUT with Expectt: 100 and 417 response
-    358 alt-svc and HTTP/2
-    359 alt-svc and HTTP/2
-    565 POST read-callback chunked transfer + digest
-    579 chunked HTTP POSTs with digest auth. and progress callback
-    580 multiple Location: headers
-    581 multiple Content-Type: headers
-    587 multi-part formpost with aborted read callback
-    670 Request pause from mime read callback: multi
-    671 Request pause from mime read callback: easy
-    672 Request pause from form read callback: multi
-    673 Request pause from form read callback: easy
-    718 HTTP proxy CONNECT (no auth) with proxy returning 407 and closing
-    1021 HTTP proxy CONNECT with any proxyauth and proxy offers NTLM and close
-    1533 CURLOPT_KEEP_SENDING_ON_ERROR and an early error response
+We’ve been working for that past year and change to allow [hyper to be an HTTP backend for curl](https://seanmonstar.com/blog/2021-09-16-how-using-hyper-in-curl-can-help-make-the-internet/). **We’re so close to having it work!** With hundreds of tests working, there’s only a dozen or so tests left to fix. I’ve created a [**dashboard**](https://github.com/orgs/hyperium/projects/2/views/1) based on the [actual file](https://github.com/curl/curl/blob/master/tests/data/DISABLED).
 
 **Want to help us get it over the finish line?** I’ve written up a guide of how to help debug these tests, step-by-step<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>, and then included an example of a test I debugged.
 
@@ -62,7 +45,7 @@ When running `./configure`, you’ll also need to select a TLS option. Since I w
 
 ### Pick a test from the list.
 
-Look at the list of [DISABLED](https://github.com/curl/curl/blob/master/tests/data/DISABLED) tests, specifically the ones marked inside `if hyper`.
+Look at the[dashboard of remaining tests](https://github.com/orgs/hyperium/projects/2/views/1).
 
 ### Debug it!
 
@@ -108,5 +91,5 @@ So, the action items from debugging this are:
 
 1. 
 
-The exact steps could change in the future!&nbsp;[↩︎](#fnref:1)
+The exact steps could change in the future! &nbsp;[↩︎](#fnref:1)
 

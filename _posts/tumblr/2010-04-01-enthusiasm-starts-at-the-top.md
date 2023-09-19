@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Enthusiasm Starts at the Top
-date: '2010-04-01T10:50:00-07:00'
+date: '2010-04-01T13:50:00-04:00'
 tags:
 - opinion
 - bestof

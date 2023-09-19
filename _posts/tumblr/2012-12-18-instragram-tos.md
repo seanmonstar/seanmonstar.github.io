@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "'No, Instagram can't sell your photos'"
-date: '2012-12-18T16:00:12-08:00'
+date: '2012-12-18T19:00:12-05:00'
 tags:
 - instagram
 - tos

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Galaxy Nexus on The Verge
-date: '2011-11-18T09:42:16-08:00'
+date: '2011-11-18T12:42:16-05:00'
 tags:
 - android
 - galaxy nexus

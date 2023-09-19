@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Tables vs CSS? Really?
-date: '2009-04-09T09:22:00-07:00'
+date: '2009-04-09T12:22:00-04:00'
 tags:
 - css
 - standards

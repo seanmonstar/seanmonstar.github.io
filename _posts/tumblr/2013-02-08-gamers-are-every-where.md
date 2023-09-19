@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Gamers are every where
-date: '2013-02-08T11:04:40-08:00'
+date: '2013-02-08T14:04:40-05:00'
 tags:
 - gaming
 - culture

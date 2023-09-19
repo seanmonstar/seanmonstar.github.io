@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Writing Testable JavaScript
-date: '2010-07-12T12:57:46-07:00'
+date: '2010-07-12T15:57:46-04:00'
 tags:
 - javascript
 tumblr_url: https://seanmonstar.com/post/803200989/writing-testable-javascript

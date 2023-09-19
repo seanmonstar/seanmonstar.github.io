@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Make YUI's Editor More Pluggable
-date: '2008-09-03T13:57:00-07:00'
+date: '2008-09-03T16:57:00-04:00'
 tags:
 - javascript
 - yui

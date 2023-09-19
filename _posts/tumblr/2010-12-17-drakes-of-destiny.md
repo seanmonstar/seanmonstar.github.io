@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Fixing Lag: Drakes of Destiny'
-date: '2010-12-17T10:49:59-08:00'
+date: '2010-12-17T13:49:59-05:00'
 tags:
 - programming
 - eve online

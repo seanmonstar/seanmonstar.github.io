@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Social Lock-in
-date: '2012-06-22T09:30:28-07:00'
+date: '2012-06-22T12:30:28-04:00'
 tags:
 - facebook
 - twitter

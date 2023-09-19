@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Google and Verizon in Talks on Selling Internet Priority
-date: '2010-08-04T20:01:27-07:00'
+date: '2010-08-04T23:01:27-04:00'
 tags: []
 tumblr_url: https://seanmonstar.com/post/905772351/google-and-verizon-in-talks-on-selling-internet
 ---

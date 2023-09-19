@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Less.js Will Obsolete CSS
-date: '2010-06-22T12:30:00-07:00'
+date: '2010-06-22T15:30:00-04:00'
 tags:
 - css
 - javascript

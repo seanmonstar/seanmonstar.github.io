@@ -1,7 +1,7 @@
 ---
 layout: post
 title: client-sessions v0.4.0
-date: '2013-11-05T11:25:36-08:00'
+date: '2013-11-05T14:25:36-05:00'
 tags:
 - javascript
 - programming

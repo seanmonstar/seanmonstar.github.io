@@ -3,7 +3,7 @@ layout: post
 title: In the case of the Kindle app, you might be able to argue that its Android
   version now offers a better, easier user experience than its iPhone version. That’s
   not the sort of thing Apple should want people to be hearing.
-date: '2011-07-29T12:01:05-07:00'
+date: '2011-07-29T15:01:05-04:00'
 tags:
 - iphone
 - ios

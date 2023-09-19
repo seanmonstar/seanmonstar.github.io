@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Making an Ajax Single-page Site with MooTools
-date: '2010-05-13T15:27:00-07:00'
+date: '2010-05-13T18:27:00-04:00'
 tags:
 - javascript
 - mootools
@@ -25,7 +25,7 @@ First of all, I started with making every link in the site need to trigger the A
 
 #### Change the Hash to provide History
 
-We change the hash around because in most browsers, this will register another history location, allowing the forward and back buttons to work. It also allows someone to copy and paste a link. [IE6](http://seanmonstar.com/2022/07/28/2009-01-19-it-s-all-your-fault.html) and 7, of course, don’t. For them, we manipulate an `iframe`, which _will_ register history locations.
+We change the hash around because in most browsers, this will register another history location, allowing the forward and back buttons to work. It also allows someone to copy and paste a link. [IE6](http://seanmonstar.com/blog/2009-01-19-it-s-all-your-fault/) and 7, of course, don’t. For them, we manipulate an `iframe`, which _will_ register history locations.
 
 Most browsers provide a [hashchange event](https://developer.mozilla.org/en/dom/window.onhashchange), but again, IE6 and 7 fail to deliver. Thankfully, [Matias Niemelä has added support for the hashchange event into MooTools’ Event system](http://github.com/matsko/Mootools-window.onhashchange), browser compatibility and all. If you’re curious, you can [read up on the different browser issues his effort solves](http://www.yearofmoo.com/onhashchange/).
 

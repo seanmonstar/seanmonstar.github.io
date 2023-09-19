@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Paying The Price On Android
-date: '2012-04-27T12:00:13-07:00'
+date: '2012-04-27T15:00:13-04:00'
 tags:
 - android
 - opinion

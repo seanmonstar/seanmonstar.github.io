@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How I Name Boolean Variables
-date: '2010-07-30T09:04:50-07:00'
+date: '2010-07-30T12:04:50-04:00'
 tags:
 - opinion
 tumblr_url: https://seanmonstar.com/post/880164961/naming-booleans

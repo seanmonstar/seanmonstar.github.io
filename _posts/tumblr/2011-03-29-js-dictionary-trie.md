@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Dictionary Performance, Tries, Oh My
-date: '2011-03-29T13:18:35-07:00'
+date: '2011-03-29T16:18:35-04:00'
 tags:
 - javascript
 - programming

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Read Your Own [Work]
-date: '2010-08-24T13:53:25-07:00'
+date: '2010-08-24T16:53:25-04:00'
 tags:
 - writing
 tumblr_url: https://seanmonstar.com/post/1005081488/read-your-own-work

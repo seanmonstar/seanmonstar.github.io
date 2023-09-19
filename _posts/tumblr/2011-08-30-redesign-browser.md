@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Redesigning the Browser Window
-date: '2011-08-30T18:01:26-07:00'
+date: '2011-08-30T21:01:26-04:00'
 tags:
 - browser
 - firefox

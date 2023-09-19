@@ -1,7 +1,7 @@
 ---
 layout: post
 title: New Tumblr Dashboard
-date: '2013-01-25T23:14:42-08:00'
+date: '2013-01-26T02:14:42-05:00'
 tags:
 - tumblr
 tumblr_url: https://seanmonstar.com/post/41507189570/new-tumblr-dashboard

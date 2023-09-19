@@ -1,7 +1,7 @@
 ---
 layout: post
 title: JavaScript needs macros?
-date: '2010-07-12T09:04:43-07:00'
+date: '2010-07-12T12:04:43-04:00'
 tags:
 - javascript
 tumblr_url: https://seanmonstar.com/post/802451962/javascript-needs-macros

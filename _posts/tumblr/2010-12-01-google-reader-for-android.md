@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Google Reader for Android
-date: '2010-12-01T14:27:34-08:00'
+date: '2010-12-01T17:27:34-05:00'
 tags:
 - google
 - android

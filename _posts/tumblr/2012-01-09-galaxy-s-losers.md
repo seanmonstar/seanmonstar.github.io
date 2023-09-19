@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Samsung Will Not Upgrade Galaxy S Phones
-date: '2012-01-09T14:26:00-08:00'
+date: '2012-01-09T17:26:00-05:00'
 tags:
 - samsung
 - google

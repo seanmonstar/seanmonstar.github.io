@@ -1,7 +1,7 @@
 ---
 layout: post
 title: IE Opacity Ignores Positioned Children
-date: '2010-04-12T06:41:00-07:00'
+date: '2010-04-12T09:41:00-04:00'
 tags:
 - bug
 - javascript

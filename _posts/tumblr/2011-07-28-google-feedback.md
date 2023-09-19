@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Google+ Feedback
-date: '2011-07-27T21:23:49-07:00'
+date: '2011-07-28T00:23:49-04:00'
 tags:
 - google+
 tumblr_url: https://seanmonstar.com/post/8159079906/google-feedback

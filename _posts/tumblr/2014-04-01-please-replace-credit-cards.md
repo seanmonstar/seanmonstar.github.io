@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Please Replace Credit Cards
-date: '2014-04-01T10:00:00-07:00'
+date: '2014-04-01T13:00:00-04:00'
 tags:
 - planet
 - credit cards
@@ -20,7 +20,7 @@ One supposed fix is the [Swipe-and-PIN enhancement](http://www.theverge.com/2014
 
 ### _You_ get a token, and _you_ get a token…
 
-We can try to create rules around how to store credit cards, but just like passwords, it’s really hard to do correctly. Also, [just as with passwords](http://seanmonstar.com/2022/07/28/2014-03-25-your-password-is-insecure.html), merchants should never receive such powerful information in the first place. A solution could be providing the merchant a one time use token authorized for a specific amount for a specific merchant. The merchant charges the token, and it then becomes useless. It’s impossible to charge for more than agreed upon. Stealing the token is useless, because it only works for that merchant, it expires, and a credit account will only accept any token once.
+We can try to create rules around how to store credit cards, but just like passwords, it’s really hard to do correctly. Also, [just as with passwords](http://seanmonstar.com/blog/2014-03-25-your-password-is-insecure/), merchants should never receive such powerful information in the first place. A solution could be providing the merchant a one time use token authorized for a specific amount for a specific merchant. The merchant charges the token, and it then becomes useless. It’s impossible to charge for more than agreed upon. Stealing the token is useless, because it only works for that merchant, it expires, and a credit account will only accept any token once.
 
 If the source card or key which is used to generate tokens is compromised, a user can contact their credit provider, and generate a new private key. No merchants are affected, since they never had your key to begin with.
 

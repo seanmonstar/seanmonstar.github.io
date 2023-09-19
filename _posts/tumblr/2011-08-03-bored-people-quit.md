@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Bored People Quit
-date: '2011-08-03T15:14:00-07:00'
+date: '2011-08-03T18:14:00-04:00'
 tags:
 - employment
 - managing

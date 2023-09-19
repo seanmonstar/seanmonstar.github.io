@@ -1,7 +1,7 @@
 ---
 layout: post
 title: mooBugger Gives Firebug to Internet Explorer
-date: '2009-01-14T15:54:00-08:00'
+date: '2009-01-14T18:54:00-05:00'
 tags:
 - javascript
 - mootools

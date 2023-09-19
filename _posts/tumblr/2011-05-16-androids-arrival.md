@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Android’s Arrival
-date: '2011-05-16T10:02:06-07:00'
+date: '2011-05-16T13:02:06-04:00'
 tags:
 - android
 - ios

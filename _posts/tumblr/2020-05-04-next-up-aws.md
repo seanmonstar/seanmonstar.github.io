@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Next Up: AWS'
-date: '2020-05-04T12:29:39-07:00'
+date: '2020-05-04T15:29:39-04:00'
 tags:
 - hyper
 - rust

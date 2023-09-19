@@ -1,7 +1,7 @@
 ---
 layout: post
 title: A beginners guide to Star Wars books
-date: '2013-11-06T09:24:31-08:00'
+date: '2013-11-06T12:24:31-05:00'
 tags:
 - star wars
 - thrawn trilogy

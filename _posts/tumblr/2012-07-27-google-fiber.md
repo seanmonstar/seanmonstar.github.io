@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Google Fiber
-date: '2012-07-27T12:57:00-07:00'
+date: '2012-07-27T15:57:00-04:00'
 tags:
 - google
 - google fiber

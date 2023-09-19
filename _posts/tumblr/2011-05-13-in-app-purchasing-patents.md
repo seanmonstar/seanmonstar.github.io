@@ -1,7 +1,7 @@
 ---
 layout: post
 title: In-App Purchasing Patents
-date: '2011-05-13T15:29:36-07:00'
+date: '2011-05-13T18:29:36-04:00'
 tags:
 - apple
 - lawsuit

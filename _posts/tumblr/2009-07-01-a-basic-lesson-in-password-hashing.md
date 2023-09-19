@@ -1,7 +1,7 @@
 ---
 layout: post
 title: A Basic Lesson in Password Hashing
-date: '2009-07-01T09:30:00-07:00'
+date: '2009-07-01T12:30:00-04:00'
 tags:
 - security
 - nodejs

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: MGFX.Tabs 1.2.0 - Show a Random Tab
-date: '2010-02-18T10:52:00-08:00'
+date: '2010-02-18T13:52:00-05:00'
 tags:
 - javascript
 - mootools

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Advanced Task Manager Revenue
-date: '2010-08-24T10:27:23-07:00'
+date: '2010-08-24T13:27:23-04:00'
 tags:
 - android
 tumblr_url: https://seanmonstar.com/post/1004252099/advanced-task-manager-revenue

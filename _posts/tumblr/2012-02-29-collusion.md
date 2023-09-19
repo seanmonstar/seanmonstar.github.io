@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Collusion
-date: '2012-02-29T11:24:06-08:00'
+date: '2012-02-29T14:24:06-05:00'
 tags:
 - firefox
 - privacy

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: mocha-text-cov
-date: '2014-06-04T12:10:01-07:00'
+date: '2014-06-04T15:10:01-04:00'
 tags:
 - javascript
 - programming

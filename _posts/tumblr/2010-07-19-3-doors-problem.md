@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 3 Doors Problem
-date: '2010-07-19T12:56:00-07:00'
+date: '2010-07-19T15:56:00-04:00'
 tags:
 - javascript
 - mootools

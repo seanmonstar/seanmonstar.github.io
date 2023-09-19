@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 20 Things I Learned About Browsers and the Web
-date: '2010-11-18T14:24:00-08:00'
+date: '2010-11-18T17:24:00-05:00'
 tags:
 - chrome
 - html5

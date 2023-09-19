@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Persona is dead, long live Persona
-date: '2014-03-11T11:19:57-07:00'
+date: '2014-03-11T14:19:57-04:00'
 tags:
 - persona
 - mozilla

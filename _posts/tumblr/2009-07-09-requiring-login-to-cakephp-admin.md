@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Requiring Login to CakePHP Admin
-date: '2009-07-09T09:29:00-07:00'
+date: '2009-07-09T12:29:00-04:00'
 tags:
 - php
 - cakephp

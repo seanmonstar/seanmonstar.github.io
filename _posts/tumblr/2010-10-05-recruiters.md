@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Why are technical recruiters so clueless?
-date: '2010-10-05T15:43:14-07:00'
+date: '2010-10-05T18:43:14-04:00'
 tags: []
 tumblr_url: https://seanmonstar.com/post/1251615390/recruiters
 ---

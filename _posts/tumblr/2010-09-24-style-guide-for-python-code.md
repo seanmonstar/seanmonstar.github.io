@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Style Guide for Python Code
-date: '2010-09-24T16:55:00-07:00'
+date: '2010-09-24T19:55:00-04:00'
 tags:
 - python
 - planet

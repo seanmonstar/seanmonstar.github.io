@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Web Developers Are Stupid
-date: '2009-08-20T08:00:00-07:00'
+date: '2009-08-20T11:00:00-04:00'
 tags:
 - opinion
 - bestof

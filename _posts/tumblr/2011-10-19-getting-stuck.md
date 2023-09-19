@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Stuck
-date: '2011-10-19T12:00:05-07:00'
+date: '2011-10-19T15:00:05-04:00'
 tags:
 - programming
 tumblr_url: https://seanmonstar.com/post/11660270945/getting-stuck

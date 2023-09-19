@@ -1,7 +1,7 @@
 ---
 layout: post
 title: console.log() all the things!
-date: '2013-07-25T12:55:00-07:00'
+date: '2013-07-25T15:55:00-04:00'
 tags:
 - nodejs
 - programming
@@ -9,7 +9,7 @@ tags:
 - javascript
 - planet
 - bestof
-tumblr_url: https://seanmonstar.com/post/56448644049/console-log-all-the-things
+tumblr_url: https://seanmonstar.com/post/56448644049/consolelog-all-the-things
 ---
 Let’s talk about logging. We like logging things. Logging to console, to files, to syslog, maybe even sending some over email. Formatting our logging is pretty fun. Oh, the colors! Of course, we must colorize our logs. Or not, if your colorist. But there’s a problem with logging. There is? Yup. We can’t agree how everything should log its logs.
 

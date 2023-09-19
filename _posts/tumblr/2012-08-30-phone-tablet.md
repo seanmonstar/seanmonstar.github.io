@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Why doesn’t my smartphone integrate with my tablet?
-date: '2012-08-30T11:56:50-07:00'
+date: '2012-08-30T14:56:50-04:00'
 tags:
 - tablet
 - phone

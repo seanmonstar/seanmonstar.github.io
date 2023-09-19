@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Platform Integration of Persona
-date: '2012-09-07T11:55:23-07:00'
+date: '2012-09-07T14:55:23-04:00'
 tags:
 - django
 - identity

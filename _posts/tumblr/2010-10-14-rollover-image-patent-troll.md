@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Rollover image on your website? That will be $80,000 (please)
-date: '2010-10-14T15:12:51-07:00'
+date: '2010-10-14T18:12:51-04:00'
 tags:
 - patent troll
 tumblr_url: https://seanmonstar.com/post/1315615598/rollover-image-patent-troll

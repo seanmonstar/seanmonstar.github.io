@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Saftey Cap: Slide to Delete'
-date: '2010-03-25T08:40:00-07:00'
+date: '2010-03-25T11:40:00-04:00'
 tags:
 - javascript
 - ui

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Programming on an iPad
-date: '2011-11-08T10:58:17-08:00'
+date: '2011-11-08T13:58:17-05:00'
 tags:
 - programming
 - ipad

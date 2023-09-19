@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Chrome OS for Personal Use
-date: '2010-12-28T11:05:00-08:00'
+date: '2010-12-28T14:05:00-05:00'
 tags:
 - chrome os
 - cr-48

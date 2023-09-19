@@ -1,7 +1,7 @@
 ---
 layout: post
 title: hyper v0.6.8 - Socket Timeouts
-date: '2015-08-03T17:36:25-07:00'
+date: '2015-08-03T20:36:25-04:00'
 tags:
 - rust
 - rust-lang

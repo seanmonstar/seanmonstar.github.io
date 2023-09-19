@@ -1,7 +1,7 @@
 ---
 layout: post
 title: merit badge
-date: '2015-04-16T12:02:26-07:00'
+date: '2015-04-16T15:02:26-04:00'
 tags:
 - rust
 - rust-lang

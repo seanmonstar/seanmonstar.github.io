@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Understanding Your Battery
-date: '2010-12-30T12:13:58-08:00'
+date: '2010-12-30T15:13:58-05:00'
 tags:
 - battery
 - guages

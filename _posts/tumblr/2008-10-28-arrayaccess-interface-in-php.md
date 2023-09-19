@@ -1,7 +1,7 @@
 ---
 layout: post
 title: ArrayAccess Interface in PHP
-date: '2008-10-28T16:59:00-07:00'
+date: '2008-10-28T19:59:00-04:00'
 tags:
 - php
 tumblr_url: https://seanmonstar.com/post/707046627/arrayaccess-interface-in-php

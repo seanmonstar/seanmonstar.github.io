@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Personalizing Search
-date: '2012-01-10T14:40:14-08:00'
+date: '2012-01-10T17:40:14-05:00'
 tags:
 - search
 - google

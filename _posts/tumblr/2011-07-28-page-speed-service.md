@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Page Speed Service
-date: '2011-07-28T14:37:47-07:00'
+date: '2011-07-28T17:37:47-04:00'
 tags:
 - google
 - performance

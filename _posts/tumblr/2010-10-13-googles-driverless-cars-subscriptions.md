@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Google’s Driverless Cars Subscriptions?
-date: '2010-10-13T18:35:24-07:00'
+date: '2010-10-13T21:35:24-04:00'
 tags:
 - google
 - google car

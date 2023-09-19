@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How LucasArts Fell Apart
-date: '2013-10-06T13:09:54-07:00'
+date: '2013-10-06T16:09:54-04:00'
 tags:
 - star wars
 - lucasarts

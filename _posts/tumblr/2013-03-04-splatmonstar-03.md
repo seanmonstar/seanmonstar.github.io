@@ -1,7 +1,7 @@
 ---
 layout: post
 title: splatmonstar 0.3
-date: '2013-03-04T20:55:41-08:00'
+date: '2013-03-04T23:55:41-05:00'
 tags:
 - tent
 - tentmonstar
@@ -10,7 +10,7 @@ tumblr_url: https://seanmonstar.com/post/44599803625/splatmonstar-03
 ---
 [splatmonstar 0.3](https://play.google.com/store/apps/details?id=com.monstarlab.tentmonstar)  
 
-It used to be [tentmonstar](http://seanmonstar.com/2022/07/28/2012-12-10-tentmonstar.html), but for various reasons, I’ve renamed it to splatmonstar. Comes with a new color scheme and icon. And improvements!
+It used to be [tentmonstar](http://seanmonstar.com/blog/2012-12-10-tentmonstar/), but for various reasons, I’ve renamed it to splatmonstar. Comes with a new color scheme and icon. And improvements!
 
 - New name!
 - New icon

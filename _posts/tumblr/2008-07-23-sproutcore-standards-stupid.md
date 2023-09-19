@@ -1,7 +1,7 @@
 ---
 layout: post
 title: SproutCore - Standards Stupid?
-date: '2008-07-23T10:39:00-07:00'
+date: '2008-07-23T13:39:00-04:00'
 tags:
 - javascript
 - standards

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Hey -o-, let’s go!
-date: '2013-02-14T11:03:52-08:00'
+date: '2013-02-14T14:03:52-05:00'
 tags:
 - mozilla
 - opera
@@ -16,5 +16,5 @@ tumblr_url: https://seanmonstar.com/post/43089018936/hey-o-lets-go
 
 > Only one browser engine remains where the dominant contributions come from an independent vendor who don’t have a vested interest in a large native ecosystem.
 
-It’s a much more thorough breakdown of why Opera’s switch to WebKit [isn’t a good thing](http://seanmonstar.com/2022/07/28/2013-02-13-opera-switches-to-webkit.html).
+It’s a much more thorough breakdown of why Opera’s switch to WebKit [isn’t a good thing](http://seanmonstar.com/blog/2013-02-13-opera-switches-to-webkit/).
 

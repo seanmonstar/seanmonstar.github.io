@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Or: Competition is Good'
-date: '2011-12-20T12:00:06-08:00'
+date: '2011-12-20T15:00:06-05:00'
 tags:
 - android
 - ios

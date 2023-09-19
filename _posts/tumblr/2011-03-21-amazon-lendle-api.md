@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Amazon revokes Lendle's API access
-date: '2011-03-21T19:30:58-07:00'
+date: '2011-03-21T22:30:58-04:00'
 tags:
 - amazon
 - kindle

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Why Must LAMP Setup Suck?
-date: '2009-11-17T12:15:00-08:00'
+date: '2009-11-17T15:15:00-05:00'
 tags:
 - lamp
 - opinion

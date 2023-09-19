@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Fixing HTML5 Loaded Via Ajax in IE
-date: '2010-06-30T11:24:18-07:00'
+date: '2010-06-30T14:24:18-04:00'
 tags:
 - html5
 - javascript

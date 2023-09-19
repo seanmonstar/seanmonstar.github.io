@@ -1,7 +1,7 @@
 ---
 layout: post
 title: John Carter
-date: '2012-07-06T15:21:56-07:00'
+date: '2012-07-06T18:21:56-04:00'
 tags:
 - movies
 - review

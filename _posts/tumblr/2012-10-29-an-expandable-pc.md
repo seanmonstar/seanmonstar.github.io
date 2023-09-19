@@ -1,7 +1,7 @@
 ---
 layout: post
 title: An Expandable PC
-date: '2012-10-29T14:46:01-07:00'
+date: '2012-10-29T17:46:01-04:00'
 tags:
 - bestof
 - opinion
@@ -30,7 +30,7 @@ Microsoft’s Surface and Windows 8 feel like a prime candidate for this experim
 
 I realize that many people have been doing that with laptops for years, but I have never been impressed by it. I certainly don’t bring my laptop to the couch to casually use between commercials. And it’s extra space that is needed means I need more space (and a power cord) when I leave the house. Plus it weighs at least double, more like quadruple what a tablet weighs.
 
-The Surface is now out, and while it remains to be seen if it is the right fit for this expandable PC, it certainly looks like the closest product yet. We’re not too far away from a time when [tablets replace everything](http://seanmonstar.com/2022/07/28/2010-01-07-tablets-will-replace-everything.html).
+The Surface is now out, and while it remains to be seen if it is the right fit for this expandable PC, it certainly looks like the closest product yet. We’re not too far away from a time when [tablets replace everything](http://seanmonstar.com/blog/2010-01-07-tablets-will-replace-everything/).
 
 * * *
 

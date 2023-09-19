@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'MVC in MooTools: Models'
-date: '2010-08-25T08:00:00-07:00'
+date: '2010-08-25T11:00:00-04:00'
 tags:
 - javascript
 - mootools

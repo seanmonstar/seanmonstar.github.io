@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Tab In My Pocket
-date: '2010-10-14T13:14:33-07:00'
+date: '2010-10-14T16:14:33-04:00'
 tags:
 - android
 - galaxy tab

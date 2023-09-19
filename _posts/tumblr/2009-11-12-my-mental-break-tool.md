@@ -1,11 +1,11 @@
 ---
 layout: post
 title: my mental break tool
-date: '2009-11-12T09:26:00-08:00'
+date: '2009-11-12T12:26:00-05:00'
 tags: []
 tumblr_url: https://seanmonstar.com/post/708836709/my-mental-break-tool
 ---
- ![](/tumblr_files/tumblr_l46b03yQZJ1qzhan1o1_640.jpg)  
+ ![](https://64.media.tumblr.com/tumblr_l46b03yQZJ1qzhan1o1_640.jpg)  
 
 Sitting in front of a computer all day long can get boring. Sure, I love what I do. But after staring at text for a while, you have to break it up! And many developers have toys on their desk for just this reason. Mine’s a Rubik’s Cube.
 

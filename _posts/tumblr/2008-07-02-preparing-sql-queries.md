@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Preparing SQL Queries
-date: '2008-07-02T10:35:00-07:00'
+date: '2008-07-02T13:35:00-04:00'
 tags:
 - php
 - sql

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Tablets Will Replace Everything
-date: '2010-01-07T16:16:00-08:00'
+date: '2010-01-07T19:16:00-05:00'
 tags:
 - bestof
 - opinion

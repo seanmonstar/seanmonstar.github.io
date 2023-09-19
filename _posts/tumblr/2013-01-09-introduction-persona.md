@@ -1,7 +1,7 @@
 ---
 layout: post
 title: An Introduction to Persona
-date: '2013-01-09T12:49:36-08:00'
+date: '2013-01-09T15:49:36-05:00'
 tags:
 - mozilla
 - planet

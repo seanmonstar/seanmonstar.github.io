@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Import * Considered Harmful
-date: '2010-01-27T08:02:00-08:00'
+date: '2010-01-27T11:02:00-05:00'
 tags:
 - opinion
 - java

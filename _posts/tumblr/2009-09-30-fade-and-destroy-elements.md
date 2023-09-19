@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Fade and Destroy Elements
-date: '2009-09-30T15:30:00-07:00'
+date: '2009-09-30T18:30:00-04:00'
 tags:
 - javascript
 - mootools

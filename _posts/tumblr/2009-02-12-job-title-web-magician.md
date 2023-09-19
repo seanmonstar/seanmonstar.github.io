@@ -1,7 +1,7 @@
 ---
 layout: post
 title: no title
-date: '2009-02-12T07:05:00-08:00'
+date: '2009-02-12T10:05:00-05:00'
 tags: []
 tumblr_url: https://seanmonstar.com/post/706923862/job-title-web-magician
 ---

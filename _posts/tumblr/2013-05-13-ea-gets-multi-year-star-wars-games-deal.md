@@ -1,7 +1,7 @@
 ---
 layout: post
 title: EA gets multi-year Star Wars games deal
-date: '2013-05-13T12:00:20-07:00'
+date: '2013-05-13T15:00:20-04:00'
 tags:
 - star wars
 - ea
@@ -13,5 +13,5 @@ tumblr_url: https://seanmonstar.com/post/50356941156/ea-gets-multi-year-star-war
 
 Uh oh. Considering [EA’s recent reputation](http://nerdreactor.com/2013/04/16/ea-youre-breaking-my-heart/), do we assume we’re doomed?
 
-[1313?](http://seanmonstar.com/2022/07/28/2013-04-03-disney-closes-lucasarts-cancels-star-wars-1313.html)
+[1313?](http://seanmonstar.com/blog/2013-04-03-disney-closes-lucasarts-cancels-star-wars-1313/)
 

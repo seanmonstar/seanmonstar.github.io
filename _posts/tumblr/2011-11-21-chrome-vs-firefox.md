@@ -1,7 +1,7 @@
 ---
 layout: post
 title: The difference between Chrome and Firefox
-date: '2011-11-21T08:10:00-08:00'
+date: '2011-11-21T11:10:00-05:00'
 tags:
 - browsers
 - chrome

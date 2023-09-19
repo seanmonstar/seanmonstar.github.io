@@ -1,7 +1,7 @@
 ---
 layout: post
 title: What we can learn from procrastination
-date: '2010-10-07T19:52:12-07:00'
+date: '2010-10-07T22:52:12-04:00'
 tags:
 - laziness
 tumblr_url: https://seanmonstar.com/post/1270246271/what-we-can-learn-from-procrastination

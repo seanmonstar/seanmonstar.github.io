@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Ads Are Secondary
-date: '2012-05-09T11:51:24-07:00'
+date: '2012-05-09T14:51:24-04:00'
 tags:
 - writing
 - ads

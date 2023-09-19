@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Firefox for Windows on ARM
-date: '2012-05-11T14:52:01-07:00'
+date: '2012-05-11T17:52:01-04:00'
 tags:
 - windows
 - firefox

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Rambling about Verizon
-date: '2010-06-22T13:48:48-07:00'
+date: '2010-06-22T16:48:48-04:00'
 tags:
 - iphone
 - android

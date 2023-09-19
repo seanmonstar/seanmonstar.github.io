@@ -1,13 +1,13 @@
 ---
 layout: post
 title: MGFX.Tabs 1.1 on Github
-date: '2009-11-10T08:13:00-08:00'
+date: '2009-11-10T11:13:00-05:00'
 tags:
 - javascript
 - mootools
 tumblr_url: https://seanmonstar.com/post/709042849/mgfx-tabs-1-1-on-github
 ---
-Quite a while ago, I released a simple-to-use [MooTools tabs class](http://seanmonstar.com/2022/07/28/2008-08-12-pluggable-mootools-tabs.html), and it continues to be one of the most frequented posts on the site. With so many people obviously desiring a MooTools tabs plugin, I’ve added a few new features to the plugin, as well as moved it to Github for inclusion in the future MooTools Forge.
+Quite a while ago, I released a simple-to-use [MooTools tabs class](http://seanmonstar.com/blog/2008-08-12-pluggable-mootools-tabs/), and it continues to be one of the most frequented posts on the site. With so many people obviously desiring a MooTools tabs plugin, I’ve added a few new features to the plugin, as well as moved it to Github for inclusion in the future MooTools Forge.
 
 [<figure class="tmblr-full" data-orig-height="85" data-orig-width="375"><img alt="Pluggable MooTools Tabs" src="https://64.media.tumblr.com/3146a6a25457aa6b4eb1ddf3c1fb0d5e/dd255328748b07bf-30/s540x810/bfe0b779c0b453cabeccf3e4afbacef1c140ac99.jpg" data-orig-height="85" data-orig-width="375"></figure>](http://github.com/seanmonstar/MGFX.Tabs)
 
@@ -23,7 +23,7 @@ There’s [documentation](http://github.com/seanmonstar/MGFX.Tabs/blob/master/Do
 
 #### Version 1.1
 
-On Github, the [newest version as of this writing is 1.1 <ins>1.1.1</ins>](http://github.com/seanmonstar/MGFX.Tabs/tree/1.1.1). [1.0](http://seanmonstar.com/2022/07/28/2008-08-12-pluggable-mootools-tabs.html) was the initial release, and since then people left in the comments some good suggestions to improve the class. I had first simply included the suggestions haphazardly, but soon realized I should do it properly.
+On Github, the [newest version as of this writing is 1.1 <ins>1.1.1</ins>](http://github.com/seanmonstar/MGFX.Tabs/tree/1.1.1). [1.0](http://seanmonstar.com/blog/2008-08-12-pluggable-mootools-tabs/) was the initial release, and since then people left in the comments some good suggestions to improve the class. I had first simply included the suggestions haphazardly, but soon realized I should do it properly.
 
 ##### New Options
 
@@ -59,5 +59,5 @@ Couple bug fixes were made, one with the new hover functionality wrongly restart
 
 #### Update (2/18/10)
 
-MGFX.Tabs is now at [version 1.2.0](http://seanmonstar.com/2022/07/28/2010-02-18-mgfx-tabs-1-2-0-show-a-random-tab.html). There is now a `MGFX.Tabs#random` function that can be used to display a random tab. Ta-da!
+MGFX.Tabs is now at [version 1.2.0](http://seanmonstar.com/blog/2010-02-18-mgfx-tabs-1-2-0-show-a-random-tab/). There is now a `MGFX.Tabs#random` function that can be used to display a random tab. Ta-da!
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Tooltip Image with Mootools
-date: '2008-12-12T09:29:00-08:00'
+date: '2008-12-12T12:29:00-05:00'
 tags:
 - javascript
 - mootools

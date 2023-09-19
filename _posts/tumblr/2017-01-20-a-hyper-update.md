@@ -1,7 +1,7 @@
 ---
 layout: post
 title: A hyper update
-date: '2017-01-20T09:00:03-08:00'
+date: '2017-01-20T12:00:03-05:00'
 tags:
 - programming
 - hyper

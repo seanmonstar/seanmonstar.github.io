@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Try end() next() time '
-date: '2009-03-02T15:02:00-08:00'
+date: '2009-03-02T18:02:00-05:00'
 tags:
 - php
 tumblr_url: https://seanmonstar.com/post/707134387/try-end-next-time

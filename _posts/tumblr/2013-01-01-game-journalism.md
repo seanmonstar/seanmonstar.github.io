@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Game journalism is its own worst enemy
-date: '2013-01-01T12:00:27-08:00'
+date: '2013-01-01T15:00:27-05:00'
 tags:
 - games
 - video games

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Understanding the Git Workflow
-date: '2012-12-13T11:19:02-08:00'
+date: '2012-12-13T14:19:02-05:00'
 tags:
 - git
 - programming

@@ -2,7 +2,7 @@
 layout: post
 title: Few outside the technological field even knew his name, yet his work has impacted
   every person who has ever touched an electronic device. And I mean that quite literally.
-date: '2011-12-28T17:05:41-08:00'
+date: '2011-12-28T20:05:41-05:00'
 tags:
 - unix
 - c

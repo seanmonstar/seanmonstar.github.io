@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Automagic Prefixes for Model Fields
-date: '2009-06-23T09:40:00-07:00'
+date: '2009-06-23T12:40:00-04:00'
 tags:
 - php
 - kohana
@@ -20,7 +20,7 @@ I’d rather ditch the prepended part in all my PHP code.
 
 #### Use Accessors
 
-We can do this by [writing some \_\_get and \_\_set functions](http://seanmonstar.com/2022/07/28/2008-12-18-overloading-objects-in-php.html):
+We can do this by [writing some \_\_get and \_\_set functions](http://seanmonstar.com/blog/2008-12-18-overloading-objects-in-php/):
 
     public function __get($name) {    
     	$prepend = 'player_'.$name;    
@@ -41,7 +41,7 @@ We can do this by [writing some \_\_get and \_\_set functions](http://seanmonsta
     	}
     }
 
-Basically, [stated before](http://seanmonstar.com/2022/07/28/2008-12-18-overloading-objects-in-php.html), these get called when you try to access a property that doesn’t exist on the object. So when we try to access `username`, we check if `player_username` exists, and if so, return that value.
+Basically, [stated before](http://seanmonstar.com/blog/2008-12-18-overloading-objects-in-php/), these get called when you try to access a property that doesn’t exist on the object. So when we try to access `username`, we check if `player_username` exists, and if so, return that value.
 
 #### MY\_Model: Easily extendable
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Get Class of a MooTools Instance
-date: '2009-05-08T11:00:00-07:00'
+date: '2009-05-08T14:00:00-04:00'
 tags:
 - javascript
 - mootools

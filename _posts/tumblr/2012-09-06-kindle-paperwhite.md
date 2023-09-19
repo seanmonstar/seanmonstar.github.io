@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Kindle Paperwhite
-date: '2012-09-06T15:57:56-07:00'
+date: '2012-09-06T18:57:56-04:00'
 tags:
 - amazon
 - kindle

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Cutting That Cord
-date: '2011-04-20T00:18:16-07:00'
+date: '2011-04-20T03:18:16-04:00'
 tags:
 - android
 - iphone

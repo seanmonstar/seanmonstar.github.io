@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Making a Toggle All Checkbox
-date: '2008-09-16T09:00:00-07:00'
+date: '2008-09-16T12:00:00-04:00'
 tags:
 - javascript
 tumblr_url: https://seanmonstar.com/post/707004893/making-a-toggle-all-checkbox

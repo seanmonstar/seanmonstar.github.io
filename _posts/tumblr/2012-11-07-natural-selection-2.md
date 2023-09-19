@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Natural Selection 2
-date: '2012-11-07T14:57:56-08:00'
+date: '2012-11-07T17:57:56-05:00'
 tags:
 - games
 - natural selection 2

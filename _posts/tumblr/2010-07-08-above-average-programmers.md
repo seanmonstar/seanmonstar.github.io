@@ -1,7 +1,7 @@
 ---
 layout: post
 title: The Problem With 'Above Average Programmers'
-date: '2010-07-08T14:09:36-07:00'
+date: '2010-07-08T17:09:36-04:00'
 tags: []
 tumblr_url: https://seanmonstar.com/post/786579368/above-average-programmers
 ---

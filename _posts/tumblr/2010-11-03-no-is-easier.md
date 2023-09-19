@@ -1,7 +1,7 @@
 ---
 layout: post
 title: No is easier to do. Yes is easier to say.
-date: '2010-11-03T13:10:07-07:00'
+date: '2010-11-03T16:10:07-04:00'
 tags:
 - 37signals
 - quote

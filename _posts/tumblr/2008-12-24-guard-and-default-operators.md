@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Guard and Default Operators of JavaScript
-date: '2008-12-24T11:48:00-08:00'
+date: '2008-12-24T14:48:00-05:00'
 tags:
 - javascript
 - bestof

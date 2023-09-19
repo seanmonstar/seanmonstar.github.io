@@ -2,7 +2,7 @@
 layout: post
 title: Language? huh. I have no idea. There’s more than one? I don’t really know what
   he does. I don’t pay attention to that stuff.
-date: '2010-08-13T17:50:06-07:00'
+date: '2010-08-13T20:50:06-04:00'
 tags: []
 tumblr_url: https://seanmonstar.com/post/949799500/language-huh-i-have-no-idea-theres-more-than
 ---

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Past Month of Shipyard
-date: '2011-11-21T11:45:32-08:00'
+date: '2011-11-21T14:45:32-05:00'
 tags:
 - javascript
 - mvc

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: reqwest alpha.await
-date: '2019-10-08T14:05:02-07:00'
+date: '2019-10-08T17:05:02-04:00'
 tags:
 - rust
 - rust-lang

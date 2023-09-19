@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Asynchronous UIs
-date: '2011-11-30T16:11:14-08:00'
+date: '2011-11-30T19:11:14-05:00'
 tags:
 - javascript
 - mvc

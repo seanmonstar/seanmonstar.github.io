@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Palindromic Word: Answer'
-date: '2009-02-19T11:33:00-08:00'
+date: '2009-02-19T14:33:00-05:00'
 tags:
 - javascript
 tumblr_url: https://seanmonstar.com/post/706935356/palindromic-word-answer

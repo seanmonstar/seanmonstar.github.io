@@ -1,7 +1,7 @@
 ---
 layout: post
 title: The Invisible Hand of Super Metroid
-date: '2012-02-02T12:01:05-08:00'
+date: '2012-02-02T15:01:05-05:00'
 tags:
 - game design
 - metroid

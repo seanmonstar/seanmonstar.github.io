@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Antitrust+?
-date: '2012-01-10T16:56:14-08:00'
+date: '2012-01-10T19:56:14-05:00'
 tags:
 - google
 - search

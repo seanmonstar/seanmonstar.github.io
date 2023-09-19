@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Why I pick Python over JavaScript
-date: '2011-06-29T12:01:06-07:00'
+date: '2011-06-29T15:01:06-04:00'
 tags:
 - javascript
 - node

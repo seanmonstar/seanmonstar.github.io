@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Chrome Click to Play
-date: '2010-11-08T15:22:24-08:00'
+date: '2010-11-08T18:22:24-05:00'
 tags:
 - chrome
 - click to play

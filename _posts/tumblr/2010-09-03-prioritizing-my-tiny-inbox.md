@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Prioritizing My Tiny Inbox
-date: '2010-09-03T16:09:00-07:00'
+date: '2010-09-03T19:09:00-04:00'
 tags:
 - gmail
 - priority inbox

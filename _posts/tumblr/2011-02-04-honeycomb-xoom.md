@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Honeycomb Xoom
-date: '2011-02-04T17:43:22-08:00'
+date: '2011-02-04T20:43:22-05:00'
 tags:
 - android
 - google

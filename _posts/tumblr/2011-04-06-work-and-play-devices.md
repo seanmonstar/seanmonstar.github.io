@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Work and Play Devices
-date: '2011-04-06T11:00:07-07:00'
+date: '2011-04-06T14:00:07-04:00'
 tags: []
 tumblr_url: https://seanmonstar.com/post/4393867105/work-and-play-devices
 ---

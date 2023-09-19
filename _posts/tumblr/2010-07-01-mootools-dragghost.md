@@ -1,7 +1,7 @@
 ---
 layout: post
 title: MooTools Drag.Ghost
-date: '2010-07-01T13:58:00-07:00'
+date: '2010-07-01T16:58:00-04:00'
 tags:
 - javascript
 - mootools

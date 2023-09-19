@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Opera Switches to WebKit
-date: '2013-02-13T14:53:08-08:00'
+date: '2013-02-13T17:53:08-05:00'
 tags:
 - mozilla
 - opera

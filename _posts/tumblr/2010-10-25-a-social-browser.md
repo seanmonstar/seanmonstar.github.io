@@ -1,7 +1,7 @@
 ---
 layout: post
 title: A Social Browser
-date: '2010-10-25T09:00:58-07:00'
+date: '2010-10-25T12:00:58-04:00'
 tags:
 - google
 - chrome

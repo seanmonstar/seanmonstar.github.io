@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'insist: Better assertions for nodejs'
-date: '2013-12-11T10:01:39-08:00'
+date: '2013-12-11T13:01:39-05:00'
 tags:
 - javascript
 - nodejs

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Get the Method Caller in MooTools
-date: '2010-01-19T09:48:00-08:00'
+date: '2010-01-19T12:48:00-05:00'
 tags:
 - javascript
 - mootools
@@ -22,7 +22,7 @@ Here’s what I mean:
     	}
     });
 
-Every method in a MooTools Class is wrapped in some decorators, that set the caller on the function object when called. By staring and counting how many methods back I needed to collect, I’ve accomplished my goal. However, **this won’t work if a standard function calls this method**. It might be a good idea to [protect this method](http://seanmonstar.com/2022/07/28/2009-09-04-protected-methods-in-mootools-classes.html), now that I think about it.
+Every method in a MooTools Class is wrapped in some decorators, that set the caller on the function object when called. By staring and counting how many methods back I needed to collect, I’ve accomplished my goal. However, **this won’t work if a standard function calls this method**. It might be a good idea to [protect this method](http://seanmonstar.com/blog/2009-09-04-protected-methods-in-mootools-classes/), now that I think about it.
 
     //inside view function
     view_name = arguments.callee.caller.caller.caller._name;

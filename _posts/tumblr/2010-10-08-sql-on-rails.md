@@ -1,7 +1,7 @@
 ---
 layout: post
 title: SQL on Rails
-date: '2010-10-08T14:01:12-07:00'
+date: '2010-10-08T17:01:12-04:00'
 tags:
 - sql
 - ruby on rails

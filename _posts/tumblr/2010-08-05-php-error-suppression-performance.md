@@ -1,7 +1,7 @@
 ---
 layout: post
 title: PHP Error Suppression Performance
-date: '2010-08-05T13:22:00-07:00'
+date: '2010-08-05T16:22:00-04:00'
 tags:
 - performance
 - php

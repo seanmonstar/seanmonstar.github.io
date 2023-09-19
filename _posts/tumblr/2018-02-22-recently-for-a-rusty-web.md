@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Recently, for a Rusty Web
-date: '2018-02-22T10:51:14-08:00'
+date: '2018-02-22T13:51:14-05:00'
 tags:
 - rust
 - rust-lang
@@ -9,7 +9,7 @@ tags:
 - buoyant
 tumblr_url: https://seanmonstar.com/post/171170905822/recently-for-a-rusty-web
 ---
-It’s been a few months since [I shifted my focus](http://seanmonstar.com/post/164869651177/bye-mozilla-hello-buoyant) full time to Rust, and in that time, we’ve gotten a lot of work done! I wanted to update you here what all that is, since it’s spread around on multiple repositories.
+It’s been a few months since [I shifted my focus](http://seanmonstar.com/blog/2017-09-01-bye-mozilla-hello-buoyant/) full time to Rust, and in that time, we’ve gotten a lot of work done! I wanted to update you here what all that is, since it’s spread around on multiple repositories.
 
 ## The `http` crate
 

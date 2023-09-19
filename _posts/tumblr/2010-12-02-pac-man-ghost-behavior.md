@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Pac-Man Ghost Behavior
-date: '2010-12-02T15:06:57-08:00'
+date: '2010-12-02T18:06:57-05:00'
 tags:
 - programming
 - games

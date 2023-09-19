@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Universal IE6 Stylesheet: A Step Backwards'
-date: '2009-05-26T08:00:00-07:00'
+date: '2009-05-26T11:00:00-04:00'
 tags:
 - standards
 - opinion

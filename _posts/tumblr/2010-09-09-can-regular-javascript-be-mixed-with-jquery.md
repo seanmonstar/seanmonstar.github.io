@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Can regular JavaScript be mixed with jQuery?
-date: '2010-09-09T10:38:27-07:00'
+date: '2010-09-09T13:38:27-04:00'
 tags:
 - javascript
 - jquery

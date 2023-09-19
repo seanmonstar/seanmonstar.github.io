@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Semantic Mark-up
-date: '2008-05-29T10:23:00-07:00'
+date: '2008-05-29T13:23:00-04:00'
 tags:
 - html
 - standards

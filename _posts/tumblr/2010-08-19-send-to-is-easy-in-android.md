@@ -1,7 +1,7 @@
 ---
 layout: post
 title: '"Send To" is Easy in Android'
-date: '2010-08-19T14:46:02-07:00'
+date: '2010-08-19T17:46:02-04:00'
 tags:
 - android
 tumblr_url: https://seanmonstar.com/post/978986938/send-to-is-easy-in-android

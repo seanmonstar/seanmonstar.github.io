@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Object.observe
-date: '2012-08-23T18:28:48-07:00'
+date: '2012-08-23T21:28:48-04:00'
 tags:
 - javascript
 - programming

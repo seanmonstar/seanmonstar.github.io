@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Callbacks vs Events
-date: '2010-07-05T10:00:00-07:00'
+date: '2010-07-05T13:00:00-04:00'
 tags:
 - javascript
 tumblr_url: https://seanmonstar.com/post/773331630/callbacks-vs-events

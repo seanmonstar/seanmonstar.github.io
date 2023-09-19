@@ -6,7 +6,7 @@ title: there’s another way of using time that’s common among people who make
   enough time to get started. When you’re operating on the maker’s schedule, meetings
   are a disaster. A single meeting can blow a whole afternoon, by breaking it into
   two pieces each too small to do anything hard in.
-date: '2012-12-27T11:21:29-08:00'
+date: '2012-12-27T14:21:29-05:00'
 tags: []
 tumblr_url: https://seanmonstar.com/post/38968872141/theres-another-way-of-using-time-thats-common
 ---

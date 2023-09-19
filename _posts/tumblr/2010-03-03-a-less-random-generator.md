@@ -1,7 +1,7 @@
 ---
 layout: post
 title: A Less-Random Generator
-date: '2010-03-03T13:52:00-08:00'
+date: '2010-03-03T16:52:00-05:00'
 tags:
 - bestof
 - python

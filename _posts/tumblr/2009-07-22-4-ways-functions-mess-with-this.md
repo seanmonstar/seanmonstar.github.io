@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 4 Ways Functions Mess With this
-date: '2009-07-22T10:28:00-07:00'
+date: '2009-07-22T13:28:00-04:00'
 tags:
 - javascript
 - bestof

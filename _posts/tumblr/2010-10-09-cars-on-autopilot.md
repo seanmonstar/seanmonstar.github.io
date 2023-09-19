@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Cars on Autopilot
-date: '2010-10-09T13:20:33-07:00'
+date: '2010-10-09T16:20:33-04:00'
 tags:
 - google
 tumblr_url: https://seanmonstar.com/post/1278114769/cars-on-autopilot

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Make the DOM Update Faster
-date: '2010-02-12T08:45:00-08:00'
+date: '2010-02-12T11:45:00-05:00'
 tags:
 - javascript
 - dom

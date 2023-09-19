@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'iOS vs Metro App Design '
-date: '2012-04-03T15:35:50-07:00'
+date: '2012-04-03T18:35:50-04:00'
 tags:
 - metro
 - windows 8

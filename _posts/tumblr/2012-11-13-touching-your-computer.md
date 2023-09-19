@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Touching Your Computer '
-date: '2012-11-13T16:00:27-08:00'
+date: '2012-11-13T19:00:27-05:00'
 tags:
 - microsoft
 - surface

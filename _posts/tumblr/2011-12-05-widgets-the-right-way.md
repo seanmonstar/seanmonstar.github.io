@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Widgets the Right Way
-date: '2011-12-05T18:21:03-08:00'
+date: '2011-12-05T21:21:03-05:00'
 tags:
 - widgets
 - javascript

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Podcast: hyper on the Rustacean Station'
-date: '2021-11-09T12:17:16-08:00'
+date: '2021-11-09T15:17:16-05:00'
 tags:
 - rust
 - rust-lang
@@ -17,7 +17,7 @@ I spoke with Allen Wyma for a little over an hour on the [Rustacean Station podc
 - The history of [hyper.rs](https://hyper.rs)
 - Async vs blocking HTTP
 - hyper’s support for different environments
-- [hyper in curl](https://seanmonstar.com/2022/07/28/2021-09-16-how-using-hyper-in-curl-can-help-make-the-internet.html)
+- [hyper in curl](https://seanmonstar.com/blog/2021-09-16-how-using-hyper-in-curl-can-help-make-the-internet/)
 - Writing Rust code for C consumption
 - HTTP/3
 - hyper’s future

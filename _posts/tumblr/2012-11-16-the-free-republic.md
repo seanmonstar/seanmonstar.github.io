@@ -1,7 +1,7 @@
 ---
 layout: post
 title: The Free Republic
-date: '2012-11-16T11:13:33-08:00'
+date: '2012-11-16T14:13:33-05:00'
 tags:
 - star wars
 - swtor

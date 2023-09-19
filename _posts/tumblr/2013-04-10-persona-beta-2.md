@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Persona Beta 2
-date: '2013-04-10T10:55:50-07:00'
+date: '2013-04-10T13:55:50-04:00'
 tags:
 - mozilla
 - persona

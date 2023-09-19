@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Android vs iOS Video
-date: '2012-05-09T16:01:03-07:00'
+date: '2012-05-09T19:01:03-04:00'
 tags:
 - android
 - ios

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Updated App Store License Agreement
-date: '2010-09-09T10:02:57-07:00'
+date: '2010-09-09T13:02:57-04:00'
 tags:
 - iphone
 tumblr_url: https://seanmonstar.com/post/1092422384/update-app-store-guidlines

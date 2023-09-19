@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Android doesn't need the best UI
-date: '2010-12-21T17:16:41-08:00'
+date: '2010-12-21T20:16:41-05:00'
 tags:
 - android
 - iphone

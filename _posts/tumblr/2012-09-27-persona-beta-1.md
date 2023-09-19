@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Persona Beta 1
-date: '2012-09-27T16:21:39-07:00'
+date: '2012-09-27T19:21:39-04:00'
 tags:
 - mozilla
 - planet
@@ -28,5 +28,5 @@ Yes, we hope to eventually remove ourselves from it all.
 
 1. 
 
-I may be a [little biased](http://seanmonstar.com/2022/07/28/2012-07-20-moved-to-identity.html).&nbsp;[↩︎](#fnref:1)
+I may be a [little biased](http://seanmonstar.com/blog/2012-07-20-moved-to-identity/).&nbsp;[↩︎](#fnref:1)
 

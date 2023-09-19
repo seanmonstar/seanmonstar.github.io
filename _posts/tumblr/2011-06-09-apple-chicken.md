@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Apple's Game of Chicken
-date: '2011-06-09T11:55:13-07:00'
+date: '2011-06-09T14:55:13-04:00'
 tags:
 - apple
 tumblr_url: https://seanmonstar.com/post/6359548618/apple-chicken

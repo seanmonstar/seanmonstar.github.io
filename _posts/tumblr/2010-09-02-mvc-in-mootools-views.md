@@ -1,16 +1,16 @@
 ---
 layout: post
 title: 'MVC in MooTools: Views'
-date: '2010-09-02T09:39:00-07:00'
+date: '2010-09-02T12:39:00-04:00'
 tags:
 - mootools
 - mvc
 - monstars.js
 tumblr_url: https://seanmonstar.com/post/1053909313/mvc-in-mootools-views
 ---
-<small>This is another installment about how my <a href="http://github.com/seanmonstar/monstars.js">MooTools MVC framework</a> rocks. Check it out. If you’re interested in the first part, check out my write-up on using <a href="http://seanmonstar.com/2022/07/28/2010-08-25-mvc-in-mootools-models.html">Models</a>.</small>
+<small>This is another installment about how my <a href="http://github.com/seanmonstar/monstars.js">MooTools MVC framework</a> rocks. Check it out. If you’re interested in the first part, check out my write-up on using <a href="http://seanmonstar.com/blog/2010-08-25-mvc-in-mootools-models/">Models</a>.</small>
 
-After you make the building blocks of your application, using [Models](http://seanmonstar.com/2022/07/28/2010-08-25-mvc-in-mootools-models.html), Views are how you display that information to a user. Having written a lot of JavaScript that adds content to the page, I know just how much it can suck. You typically have two options:
+After you make the building blocks of your application, using [Models](http://seanmonstar.com/blog/2010-08-25-mvc-in-mootools-models/), Views are how you display that information to a user. Having written a lot of JavaScript that adds content to the page, I know just how much it can suck. You typically have two options:
 
 1. Concatenate a huge string of markup with variables, then setting the `innerHTML` of a `div`.
 2. Use a bunch of `document.createElement` and `el.appendChild`, ad infinitum.

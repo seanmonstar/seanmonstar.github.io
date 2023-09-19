@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Node.js on Windows
-date: '2010-11-19T11:39:00-08:00'
+date: '2010-11-19T14:39:00-05:00'
 tags:
 - javascript
 - nodejs

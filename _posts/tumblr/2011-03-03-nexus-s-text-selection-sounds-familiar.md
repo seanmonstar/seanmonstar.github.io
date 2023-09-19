@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Nexus S Text Selection Sounds Familiar
-date: '2011-03-03T11:00:08-08:00'
+date: '2011-03-03T14:00:08-05:00'
 tags:
 - android
 - iphone

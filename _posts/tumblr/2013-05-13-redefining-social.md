@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "'Teens aren’t abandoning “social.” They’re just using the word correctly.'"
-date: '2013-05-13T16:00:10-07:00'
+date: '2013-05-13T19:00:10-04:00'
 tags:
 - social
 - facebook

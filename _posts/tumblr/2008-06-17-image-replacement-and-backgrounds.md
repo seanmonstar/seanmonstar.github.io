@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Image Replacement and Backgrounds
-date: '2008-06-17T10:26:00-07:00'
+date: '2008-06-17T13:26:00-04:00'
 tags:
 - css
 tumblr_url: https://seanmonstar.com/post/706943372/image-replacement-and-backgrounds

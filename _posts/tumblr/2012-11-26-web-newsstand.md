@@ -1,7 +1,7 @@
 ---
 layout: post
 title: A Better Publishing Model
-date: '2012-11-26T20:23:07-08:00'
+date: '2012-11-26T23:23:07-05:00'
 tags:
 - html
 - web

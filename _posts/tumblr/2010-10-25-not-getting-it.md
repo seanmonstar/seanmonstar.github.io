@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Not Getting It [ORLY?]
-date: '2010-10-25T12:53:42-07:00'
+date: '2010-10-25T15:53:42-04:00'
 tags:
 - apple
 tumblr_url: https://seanmonstar.com/post/1400538958/not-getting-it

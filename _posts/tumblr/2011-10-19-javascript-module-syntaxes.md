@@ -1,7 +1,7 @@
 ---
 layout: post
 title: JavaScript Module Syntaxes
-date: '2011-10-19T16:03:00-07:00'
+date: '2011-10-19T19:03:00-04:00'
 tags:
 - javascript
 - programming

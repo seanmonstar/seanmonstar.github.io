@@ -1,7 +1,7 @@
 ---
 layout: post
 title: What Makes a Great Tech Writer
-date: '2011-03-22T14:00:07-07:00'
+date: '2011-03-22T17:00:07-04:00'
 tags:
 - writing
 tumblr_url: https://seanmonstar.com/post/4029850268/what-makes-a-great-tech-writer

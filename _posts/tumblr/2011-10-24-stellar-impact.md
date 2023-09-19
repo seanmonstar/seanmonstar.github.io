@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Stellar Impact
-date: '2011-10-24T08:52:27-07:00'
+date: '2011-10-24T11:52:27-04:00'
 tags:
 - stellar impact
 - dota

@@ -1,14 +1,14 @@
 ---
 layout: post
 title: Extending Django Models, Managers, And QuerySets
-date: '2009-11-25T08:10:00-08:00'
+date: '2009-11-25T11:10:00-05:00'
 tags:
 - python
 - django
 - bestof
 tumblr_url: https://seanmonstar.com/post/708862164/extending-django-models-managers-and-querysets
 ---
-In a recent pet project, I’m exploring Django. As I’m used to in our PHP framework, [I like to extend Models](http://seanmonstar.com/2022/07/28/2009-06-23-automagic-prefixes-for-model-fields.html) with methods that a model should keep contained, and then I can call multiple times elsewhere in the Controller <ins>View in Django (don’t start me on the stupidity of the naming scheme)</ins>. In PHP, it’s a bit more straight forward: You can simply write some new functions inside the class. In Django, it was a little more complicated. I explored several different parts that all affect writing methods that should be contained in the Model area of the application.
+In a recent pet project, I’m exploring Django. As I’m used to in our PHP framework, [I like to extend Models](http://seanmonstar.com/blog/2009-06-23-automagic-prefixes-for-model-fields/) with methods that a model should keep contained, and then I can call multiple times elsewhere in the Controller <ins>View in Django (don’t start me on the stupidity of the naming scheme)</ins>. In PHP, it’s a bit more straight forward: You can simply write some new functions inside the class. In Django, it was a little more complicated. I explored several different parts that all affect writing methods that should be contained in the Model area of the application.
 
 #### Models
 
@@ -71,7 +71,7 @@ Here we go.
 
 The Manager.get\_query\_set is the function that gets called internally whenever it needs to retrieve a query set of the manager’s models. By overwriting it, we can return a different QuerySet, one we extend to have new methods.
 
-Defining \_\_getattr\_\_ is like [defining magic functions in PHP](http://seanmonstar.com/2022/07/28/2008-12-18-overloading-objects-in-php.html): any attribute (read: method or property) that doesn’t exist, will try the \_\_getattr\_\_ method, before raising an AttributeError. This lets us write all the methods on the QuerySet, and then any method we call on the Manager, will try to get the method from the QuerySet instead.
+Defining \_\_getattr\_\_ is like [defining magic functions in PHP](http://seanmonstar.com/blog/2008-12-18-overloading-objects-in-php/): any attribute (read: method or property) that doesn’t exist, will try the \_\_getattr\_\_ method, before raising an AttributeError. This lets us write all the methods on the QuerySet, and then any method we call on the Manager, will try to get the method from the QuerySet instead.
 
 With the QuerySetManager, we can define a QuerySet to use in the Ball model.
 

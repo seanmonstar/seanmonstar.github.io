@@ -1,7 +1,7 @@
 ---
 layout: post
 title: A new direction for web applications
-date: '2012-01-24T12:10:18-08:00'
+date: '2012-01-24T15:10:18-05:00'
 tags:
 - javascript
 - node

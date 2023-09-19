@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Gingerbread Keyboard without Rooting
-date: '2010-12-21T16:38:07-08:00'
+date: '2010-12-21T19:38:07-05:00'
 tags:
 - android
 - gingerbread

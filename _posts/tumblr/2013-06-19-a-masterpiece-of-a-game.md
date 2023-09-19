@@ -1,7 +1,7 @@
 ---
 layout: post
 title: A masterpiece of a game
-date: '2013-06-19T19:56:19-07:00'
+date: '2013-06-19T22:56:19-04:00'
 tags:
 - games
 - gaming

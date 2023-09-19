@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Rich Text Editor in Mootools
-date: '2009-03-13T13:19:00-07:00'
+date: '2009-03-13T16:19:00-04:00'
 tags:
 - javascript
 - mootools
