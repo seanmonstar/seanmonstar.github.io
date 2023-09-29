@@ -10,7 +10,7 @@ tags:
 - curl
 tumblr_url: https://seanmonstar.com/post/678895803144830976/help-stabilize-hyper-in-curl
 ---
-We’ve been working for that past year and change to allow [hyper to be an HTTP backend for curl](https://seanmonstar.com/blog/2021-09-16-how-using-hyper-in-curl-can-help-make-the-internet/). **We’re so close to having it work!** With hundreds of tests working, there’s only a dozen or so tests left to fix. I’ve created a [**dashboard**](https://github.com/orgs/hyperium/projects/2/views/1) based on the [actual file](https://github.com/curl/curl/blob/master/tests/data/DISABLED).
+We’ve been working for that past year and change to allow [hyper to be an HTTP backend for curl](https://seanmonstar.com/blog/how-using-hyper-in-curl-can-help-make-the-internet/). **We’re so close to having it work!** With hundreds of tests working, there’s only a dozen or so tests left to fix. I’ve created a [**dashboard**](https://github.com/orgs/hyperium/projects/2/views/1) based on the [actual file](https://github.com/curl/curl/blob/master/tests/data/DISABLED).
 
 **Want to help us get it over the finish line?** I’ve written up a guide of how to help debug these tests, step-by-step<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>, and then included an example of a test I debugged.
 

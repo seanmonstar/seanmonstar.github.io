@@ -16,7 +16,7 @@ As the leaves change and fall, our wonderful contributors continue to make [hype
 
 #### hyper v1.0.0-rc.1
 
-After so much work through this year, we finally published the first release candidate for hyper 1.0, [hyper v1.0.0-rc.1](https://seanmonstar.com/blog/2022-10-26-hyper-v100-rc1/)!
+After so much work through this year, we finally published the first release candidate for hyper 1.0, [hyper v1.0.0-rc.1](https://seanmonstar.com/blog/hyper-v100-rc1/)!
 
 The community had some [wonderful things](https://www.reddit.com/r/rust/comments/ydzedc/hyper_v100_release_candidate_1/) [to say](https://twitter.com/seanmonstar/status/1585275994235101189):
 
@@ -26,7 +26,7 @@ The community had some [wonderful things](https://www.reddit.com/r/rust/comments
 > 
 > all aboard the hype® train! 🚂
 
-As the [announcement post](https://seanmonstar.com/blog/2022-10-26-hyper-v100-rc1/) said, we’ve got more to do. We’re moving into the **hyper polish period**. I’ll have more to say about that soon! But you can [join us in chat now](https://discord.gg/kkwpueZ) if you want to help out.
+As the [announcement post](https://seanmonstar.com/blog/hyper-v100-rc1/) said, we’ve got more to do. We’re moving into the **hyper polish period**. I’ll have more to say about that soon! But you can [join us in chat now](https://discord.gg/kkwpueZ) if you want to help out.
 
 #### hyper v0.14.21
 
@@ -36,7 +36,7 @@ Part of the 1.0 plan is to backport as much as possible to 0.14, in an effort to
 
 ### hyper 1.0
 
-In order to publish the first release candidate, [hyper v1.0.0-rc.1](https://seanmonstar.com/blog/2022-10-26-hyper-v100-rc1/), there was a bunch of work to finish up.
+In order to publish the first release candidate, [hyper v1.0.0-rc.1](https://seanmonstar.com/blog/hyper-v100-rc1/), there was a bunch of work to finish up.
 
 @Michael-J-Ward created the per-version `Connection` types for the server module. And then I finished up the split by removing the combined `hyper::server::conn::Connection` type. @bossmc then removed an unneeded `Option` wrapping the internals of `hyper::server::conn::http1::Connection`, and dropped the `try_into_parts` method.
 
@@ -46,7 +46,7 @@ In order to publish the first release candidate, [hyper v1.0.0-rc.1](https://sea
 
 @dannasman cleaned up a feature we ended up not needing: the ability to get the raw response bytes. curl ended up preferring using the parsed response fields, keeping the parsing in Rust.
 
-Are you interested in [helping to debug](https://seanmonstar.com/blog/2022-03-16-help-stabilize-hyper-in-curl/) the [last few unit tests](https://github.com/orgs/hyperium/projects/2/views/1) for hyper in curl?
+Are you interested in [helping to debug](https://seanmonstar.com/blog/help-stabilize-hyper-in-curl/) the [last few unit tests](https://github.com/orgs/hyperium/projects/2/views/1) for hyper in curl?
 
 ### HTTP/3
 

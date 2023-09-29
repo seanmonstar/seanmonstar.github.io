@@ -29,7 +29,7 @@ I streamed on [twitch.tv/seanmonstar](https://twitch.tv/seanmonstar) briefly abo
 
 ### hyper in curl
 
-I gave a [talk for curl-up 2022](https://seanmonstar.com/blog/2022-09-21-curl-up-2022-hyper-in-curl/).
+I gave a [talk for curl-up 2022](https://seanmonstar.com/blog/curl-up-2022-hyper-in-curl/).
 
 @weihanglo updated hyper’s C API to the now-stable `cargo rustc --crate-type cdylib`, no longer requiring nightly.
 

@@ -22,7 +22,7 @@ Google has recently started inserting web pages into the search results if that 
 
 ### Trending topics
 
-In order for trending topics to mean anything to me, they would need to be given context, just like search should. Trending topics could be formed around all the activity of people I follow, plus the people they follow, just to get a bit more data for trending topics. For instance, log in to Twitter in the morning, and oh!, look-y there. In trending topics is how [Amazon shot Lendle in the face](http://seanmonstar.com/blog/2011-03-21-amazon-lendle-api/). I would find value in that.
+In order for trending topics to mean anything to me, they would need to be given context, just like search should. Trending topics could be formed around all the activity of people I follow, plus the people they follow, just to get a bit more data for trending topics. For instance, log in to Twitter in the morning, and oh!, look-y there. In trending topics is how [Amazon shot Lendle in the face](http://seanmonstar.com/blog/amazon-lendle-api/). I would find value in that.
 
 As it is, Twitter assumes I care what the the rest of Twitter has to say. I don’t. If I did, I would follow them.
 

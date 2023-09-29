@@ -12,7 +12,7 @@ tags:
 - webdev
 tumblr_url: https://seanmonstar.com/post/18026837126/shipyard-mindset
 ---
-I’ve been working quite a bit on this little [JavaScript MVC framework called Shipyard](http://seanmonstar.com/blog/2011-09-19-what-is-shipyard/). Those who know me may recall that I used to write a lot about MooTools, and may wonder why I’ve moved off it and am writing my own framework instead. I figured I’d take the time to explain why I felt the need existed for Shipyard, and the goals it tries to accomplish:
+I’ve been working quite a bit on this little [JavaScript MVC framework called Shipyard](http://seanmonstar.com/blog/what-is-shipyard/). Those who know me may recall that I used to write a lot about MooTools, and may wonder why I’ve moved off it and am writing my own framework instead. I figured I’d take the time to explain why I felt the need existed for Shipyard, and the goals it tries to accomplish:
 
 - Being truly modular
 - Command line tests run after each save
@@ -41,7 +41,7 @@ You could even put your JavaScript test suite on CI, similar to how Shipyard’s
 
 ### Model Syncs
 
-Getting into the more MVC part of Shipyard, I had explored this [idea of various sync locations with Models before](http://seanmonstar.com/blog/2010-08-25-mvc-in-mootools-models/). The idea is that applications have data, and we structure it with Models. The data comes from somewhere, and while it used to only ever come from the host server, increasingly it is coming from various sources. A common example that would benefit from this is an application with offline mode. You need the data of your models to sync with the server, but if the user is offline, you want the data to save locally, perhaps in `localStorage` or `IndexedDB`, and then be able to send the data to the server at a later point. Perhaps you want to cache the data in `localStorage`, and so when the user comes back to your site, you first look there, and then fall back to asking the server for the data.
+Getting into the more MVC part of Shipyard, I had explored this [idea of various sync locations with Models before](http://seanmonstar.com/blog/mvc-in-mootools-models/). The idea is that applications have data, and we structure it with Models. The data comes from somewhere, and while it used to only ever come from the host server, increasingly it is coming from various sources. A common example that would benefit from this is an application with offline mode. You need the data of your models to sync with the server, but if the user is offline, you want the data to save locally, perhaps in `localStorage` or `IndexedDB`, and then be able to send the data to the server at a later point. Perhaps you want to cache the data in `localStorage`, and so when the user comes back to your site, you first look there, and then fall back to asking the server for the data.
 
 It should be as simple as:
 

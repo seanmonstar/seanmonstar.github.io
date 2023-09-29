@@ -19,5 +19,5 @@ And:
 
 > If build tools are required anyway, a much simpler solution should fit most developers’ needs.
 
-[The end.](http://seanmonstar.com/blog/2011-10-19-javascript-module-syntaxes/)
+[The end.](http://seanmonstar.com/blog/javascript-module-syntaxes/)
 

@@ -9,5 +9,5 @@ tumblr_url: https://seanmonstar.com/post/1429957262/flash-to-html5
 ---
 [Adobe demos Flash-to-HTML5 conversion tool](http://blogs.adobe.com/jnack/2010/10/adobe-demos-flash-to-html5-conversion-tool.html)  
 
-First, the [HTML5 builder tool](http://seanmonstar.com/blog/2010-10-26-edge-prototype/). Now, converting your flash **into** HTML5. At least it’s the right direction (HTML5).
+First, the [HTML5 builder tool](http://seanmonstar.com/blog/edge-prototype/). Now, converting your flash **into** HTML5. At least it’s the right direction (HTML5).
 

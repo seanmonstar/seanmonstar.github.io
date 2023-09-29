@@ -22,7 +22,7 @@ Here’s what I mean:
     	}
     });
 
-Every method in a MooTools Class is wrapped in some decorators, that set the caller on the function object when called. By staring and counting how many methods back I needed to collect, I’ve accomplished my goal. However, **this won’t work if a standard function calls this method**. It might be a good idea to [protect this method](http://seanmonstar.com/blog/2009-09-04-protected-methods-in-mootools-classes/), now that I think about it.
+Every method in a MooTools Class is wrapped in some decorators, that set the caller on the function object when called. By staring and counting how many methods back I needed to collect, I’ve accomplished my goal. However, **this won’t work if a standard function calls this method**. It might be a good idea to [protect this method](http://seanmonstar.com/blog/protected-methods-in-mootools-classes/), now that I think about it.
 
     //inside view function
     view_name = arguments.callee.caller.caller.caller._name;

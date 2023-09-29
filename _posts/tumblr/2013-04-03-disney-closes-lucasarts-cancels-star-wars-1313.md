@@ -11,7 +11,7 @@ tumblr_url: https://seanmonstar.com/post/47059293667/disney-closes-lucasarts-can
 ---
 [Disney closes LucasArts, Cancels Star Wars 1313](http://kotaku.com/disney-shuts-down-lucasarts-468473749)  
 
-That’s it. Like I said, I’ll [lead the #OccupyDisneyland movement](http://seanmonstar.com/blog/2012-10-31-disney-1313/) myself. Who’s with me?
+That’s it. Like I said, I’ll [lead the #OccupyDisneyland movement](http://seanmonstar.com/blog/disney-1313/) myself. Who’s with me?
 
 [Game Informer says there _might_ still be hope](https://www.gameinformer.com/b/news/archive/2013/04/03/lucasarts-rep-says-star-wars-1313-might-be-saved.aspx):
 

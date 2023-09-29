@@ -10,7 +10,7 @@ tumblr_url: https://seanmonstar.com/post/37667307268/tentmonstar
 ---
 [tentmonstar for Android](http://seanmonstar.com/tentmonstar)  
 
-I’ve been [pretty pumped about Tent](http://seanmonstar.com/blog/2012-10-04-tent-io/), so much so that I’ve written an Android client<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>. I actually put it in the Google Play Store 2 weeks ago, but [forgot to link to it](https://seanmonstar.tent.is/posts/y3fcjl).
+I’ve been [pretty pumped about Tent](http://seanmonstar.com/blog/tent-io/), so much so that I’ve written an Android client<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>. I actually put it in the Google Play Store 2 weeks ago, but [forgot to link to it](https://seanmonstar.tent.is/posts/y3fcjl).
 
 - View your feed of statuses and reposts
 - View profiles

@@ -22,7 +22,7 @@ tumblr_url: https://seanmonstar.com/post/708874716/closures-break-my-for-s
         }
     }
 
-A seemingly harmless `for` loop. We’re just looping through all the list items in a list, and [binding click events](http://seanmonstar.com/blog/2008-10-01-cross-browser-addevent-without-frameworks/) to them, so they will highlight when clicked. If you were to create a new `Highlighter` like this, and then click on a list item, you’d get an error. Inspecting the error you would see that, hey! `i` is equal to the `length`. _What the heck!_
+A seemingly harmless `for` loop. We’re just looping through all the list items in a list, and [binding click events](http://seanmonstar.com/blog/cross-browser-addevent-without-frameworks/) to them, so they will highlight when clicked. If you were to create a new `Highlighter` like this, and then click on a list item, you’d get an error. Inspecting the error you would see that, hey! `i` is equal to the `length`. _What the heck!_
 
 Well, when you created all those new functions in the `for` loop, to bind them, you gave them the variable `i`. But `i` wasn’t part of the functions local scope, so it creates a closure. `i` can change. And it does! The `for` loop eventually makes it be equal to the length, which fails the expression check in the `for` loop. In most programming languages, we’d think that’s it for `i`. But no, `i` lives on as long as those functions exist and care about i. ([Read up on closures](https://developer.mozilla.org/en/Core_JavaScript_1.5_Guide/Working_with_Closures))
 

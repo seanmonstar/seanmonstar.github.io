@@ -17,7 +17,7 @@ I spoke with Allen Wyma for a little over an hour on the [Rustacean Station podc
 - The history of [hyper.rs](https://hyper.rs)
 - Async vs blocking HTTP
 - hyper’s support for different environments
-- [hyper in curl](https://seanmonstar.com/blog/2021-09-16-how-using-hyper-in-curl-can-help-make-the-internet/)
+- [hyper in curl](https://seanmonstar.com/blog/how-using-hyper-in-curl-can-help-make-the-internet/)
 - Writing Rust code for C consumption
 - HTTP/3
 - hyper’s future

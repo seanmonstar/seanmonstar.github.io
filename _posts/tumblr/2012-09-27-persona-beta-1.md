@@ -28,5 +28,5 @@ Yes, we hope to eventually remove ourselves from it all.
 
 1. 
 
-I may be a [little biased](http://seanmonstar.com/blog/2012-07-20-moved-to-identity/).&nbsp;[↩︎](#fnref:1)
+I may be a [little biased](http://seanmonstar.com/blog/moved-to-identity/).&nbsp;[↩︎](#fnref:1)
 

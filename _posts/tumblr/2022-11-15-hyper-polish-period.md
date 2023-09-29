@@ -9,7 +9,7 @@ tags:
 - http
 tumblr_url: https://seanmonstar.com/post/701008919383932928/hyper-polish-period
 ---
-A couple weeks ago, we announced the [first release candidate](https://seanmonstar.com/blog/2022-10-26-hyper-v100-rc1/) of hyper 1.0. [hyper](https://hyper.rs) is a protective and efficient HTTP library for all, written in the Rust programming language.
+A couple weeks ago, we announced the [first release candidate](https://seanmonstar.com/blog/hyper-v100-rc1/) of hyper 1.0. [hyper](https://hyper.rs) is a protective and efficient HTTP library for all, written in the Rust programming language.
 
 I’m calling the time period between the first release candidate and the final release the “hyper polish period”.
 

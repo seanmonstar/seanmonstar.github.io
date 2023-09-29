@@ -54,7 +54,7 @@ They also stupidly took away several of the default widgets in favor of their ow
 
 ### Crapware
 
-The phone comes with a lot of Crapware installed by default. Some applications are free trials that want you to buy the full version; some are just free apps that I don’t particularly need. None of them can be deleted. And yet, [it doesn’t bother me that much](http://seanmonstar.com/blog/2010-07-23-bloatware-on-android/) , because I’ve found work arounds, and I hardly pop open the Applications Drawer anyways.
+The phone comes with a lot of Crapware installed by default. Some applications are free trials that want you to buy the full version; some are just free apps that I don’t particularly need. None of them can be deleted. And yet, [it doesn’t bother me that much](http://seanmonstar.com/blog/bloatware-on-android/) , because I’ve found work arounds, and I hardly pop open the Applications Drawer anyways.
 
 ### Ease of Rooting
 

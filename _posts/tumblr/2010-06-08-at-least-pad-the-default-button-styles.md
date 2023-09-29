@@ -8,7 +8,7 @@ tags:
 - ui
 tumblr_url: https://seanmonstar.com/post/709076819/at-least-pad-the-default-button-styles
 ---
-Some people like to [style buttons to their own design](http://seanmonstar.com/blog/2009-04-29-use-css-borders-for-3d-effects/), ensuring they look the same cross browser or enhance the site theme. Others are perfectly fine with a `<button />` being rendered differently depending on browser and operating system combination. I understand both sides. Sometimes a styled button can look really nice. Other times, it just makes sense to leave it at default, because users are used to seeing buttons the way their OS always displays them.
+Some people like to [style buttons to their own design](http://seanmonstar.com/blog/use-css-borders-for-3d-effects/), ensuring they look the same cross browser or enhance the site theme. Others are perfectly fine with a `<button />` being rendered differently depending on browser and operating system combination. I understand both sides. Sometimes a styled button can look really nice. Other times, it just makes sense to leave it at default, because users are used to seeing buttons the way their OS always displays them.
 
 As long as buttons have a consistent look across the site, I’d say both are just as usable. If you’re in the latter camp, leaving button styles to the browser, please, oh please, at least **add some padding to the buttons**. The default button styles leave the border right on top of the text, making it very annoying to read the text of the button.
 

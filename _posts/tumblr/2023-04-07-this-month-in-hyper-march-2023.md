@@ -18,7 +18,7 @@ There was some particularly exciting releases, and a bunch of conversations had 
 
 #### Preparing users for upgrading to 1.0
 
-One of the important parts of the [hyper 1.0 polish period](https://seanmonstar.com/blog/2022-11-15-hyper-polish-period/) is making sure _upgrading_ from 0.14 to 1.0 is as smooth as we can make it. [hyper v0.14.25](https://github.com/hyperium/hyper/releases/tag/v0.14.25) is here to help. @kxt and @oddgrd backported the client and server APIs from 1.0, and added opt-in deprecation messages to help you be ready to upgrade. The deprecation warnings are meant to help you, not to annoy you.
+One of the important parts of the [hyper 1.0 polish period](https://seanmonstar.com/blog/hyper-polish-period/) is making sure _upgrading_ from 0.14 to 1.0 is as smooth as we can make it. [hyper v0.14.25](https://github.com/hyperium/hyper/releases/tag/v0.14.25) is here to help. @kxt and @oddgrd backported the client and server APIs from 1.0, and added opt-in deprecation messages to help you be ready to upgrade. The deprecation warnings are meant to help you, not to annoy you.
 
 You can enable them to see where you can start preparing your code now:
 

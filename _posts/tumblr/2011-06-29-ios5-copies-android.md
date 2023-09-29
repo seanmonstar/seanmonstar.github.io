@@ -12,7 +12,7 @@ tumblr_url: https://seanmonstar.com/post/7060135942/ios5-copies-android
 ---
 [Copy Me, and I'll Sue!](http://smokingapples.com/opinion/my-thoughts-on-the-whole-ios-5-copying-android-situation/)  
 
-Apple has several [lawsuits against](http://allthingsd.com/20110418/apple-files-patent-suit-against-samsung-over-galaxy-line-of-phones-and-tablets/) [manufacturers](http://seanmonstar.com/blog/2010-06-23-apple-sues-htc-again-over-new-sense-ui-features/) of Android phones, essentially saying they copied the iPhone and iOS.
+Apple has several [lawsuits against](http://allthingsd.com/20110418/apple-files-patent-suit-against-samsung-over-galaxy-line-of-phones-and-tablets/) [manufacturers](http://seanmonstar.com/blog/apple-sues-htc-again-over-new-sense-ui-features/) of Android phones, essentially saying they copied the iPhone and iOS.
 
 Then, when Apple does the copying, Apple fanatics argue “well yea, how else would Apple have made notifications?”
 

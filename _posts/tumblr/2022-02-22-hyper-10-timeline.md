@@ -9,7 +9,7 @@ tags:
 - http
 tumblr_url: https://seanmonstar.com/post/676912131372875776/hyper-10-timeline
 ---
-I said [earlier](https://seanmonstar.com/blog/2022-01-04-hyper-ish-2021-in-review/) that this year we will release [hyper](https://hyper.rs) v1.0. hyper is the safe and fast HTTP library written in Rust. These are the steps to get there.
+I said [earlier](https://seanmonstar.com/blog/hyper-ish-2021-in-review/) that this year we will release [hyper](https://hyper.rs) v1.0. hyper is the safe and fast HTTP library written in Rust. These are the steps to get there.
 
 - **Define the vision.** Before anything else, we need to define what hyper even is. This will be an abstract vision showing what the goal and purpose of hyper is, based on what our users need.
 - **Outline the roadmap.** Shortly afterwards, we’ll outline the major changes that are needed for hyper to line up with what was defined in the Vision.

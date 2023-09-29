@@ -9,7 +9,7 @@ tumblr_url: https://seanmonstar.com/post/708829330/select-tags-in-ie-innerhtml
 ---
 I just wanted to document this rather frustrating bug here, so I can look it up later, and hopefully help anyone else who is running into something similar. This bug involves `select` tags, specifically setting their `innerHTML`property.
 
-I had a list of options to give to the user, and a select box would work perfectly. Since DOM methods have [burned me in the past](http://seanmonstar.com/blog/2009-04-21-dont-use-the-dom-to-insert-flash/), I felt `innerHTML` was the safer route. It appears, that they both have safety curves like a sine and cosine graph.
+I had a list of options to give to the user, and a select box would work perfectly. Since DOM methods have [burned me in the past](http://seanmonstar.com/blog/dont-use-the-dom-to-insert-flash/), I felt `innerHTML` was the safer route. It appears, that they both have safety curves like a sine and cosine graph.
 
 <figure class="tmblr-full" data-orig-height="222" data-orig-width="322"><img src="https://64.media.tumblr.com/45a7f3c1268e5345b73b1f373f391dc1/a18c2b652749ba34-73/s540x810/9baf9c961b135c0b67c06d77f6edf7b64aefa704.jpg" data-orig-height="222" data-orig-width="322"></figure>
 

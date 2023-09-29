@@ -16,7 +16,7 @@ Another hot summer month has gone by. Besides many of us convening for RustConf,
 
 ### 10,000 stars!
 
-At the beginning of the month, we celebrated [hyper reaching 10,000 stars](https://seanmonstar.com/blog/2022-08-02-hyper-10000-stars/) on GitHub! ⭐
+At the beginning of the month, we celebrated [hyper reaching 10,000 stars](https://seanmonstar.com/blog/hyper-10000-stars/) on GitHub! ⭐
 
 ### Releases
 
@@ -32,7 +32,7 @@ A new version of the HTTP/1 parser of hyper came out as well. @nox added an opti
 
 We cruised on forward towards the stable hyper 1.0. Part of that is pushing the less stable (higher-level, more opinionated) features to `hyper-util`. So, I removed `hyper::client::service`, `hyper::client::connect`, `hyper::Client`, and `hyper::Server`. @MrGunflame removed the `tcp` feature, and it’s related code `connect` and `accept` code.
 
-The `body` module is also getting some cleaning. @Michael-J-Ward renamed `hyper::Body` to `hyper::body::Recv` temporarily (want to [bikeshed the new name](https://github.com/hyperium/hyper/issues/2971)?), so that @RajivTS could rename `hyper::body::HttpBody` to simpler `hyper::body::Body`. @Xuanwo removed the “full” constructors from `Body`, and @oddgrd made `Body::channel` private, since those are now separate types in `http-body-util`. I wrote a proposal for a [forwards-compatible `Body` trait](https://github.com/hyperium/hyper/issues/2840), and published an article as a preface to the [pattern matching compatibility](https://seanmonstar.com/blog/2022-08-25-pattern-matching-and-backwards-compatibility/) issues being solve in that proposal.
+The `body` module is also getting some cleaning. @Michael-J-Ward renamed `hyper::Body` to `hyper::body::Recv` temporarily (want to [bikeshed the new name](https://github.com/hyperium/hyper/issues/2971)?), so that @RajivTS could rename `hyper::body::HttpBody` to simpler `hyper::body::Body`. @Xuanwo removed the “full” constructors from `Body`, and @oddgrd made `Body::channel` private, since those are now separate types in `http-body-util`. I wrote a proposal for a [forwards-compatible `Body` trait](https://github.com/hyperium/hyper/issues/2840), and published an article as a preface to the [pattern matching compatibility](https://seanmonstar.com/blog/pattern-matching-and-backwards-compatibility/) issues being solve in that proposal.
 
 For additions, I added version-specific `Connection` types for the client, to replace the “either-version” type already there. We also put our [governance](https://github.com/hyperium/hyper/blob/master/docs/GOVERNANCE.md) down in writing.
 

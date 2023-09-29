@@ -10,7 +10,7 @@ tags:
 - http3
 tumblr_url: https://seanmonstar.com/post/710694914534539264/this-month-in-hyper-february-2023
 ---
-After [recapping the 2022 year](https://seanmonstar.com/blog/2023-01-18-hyper-ish-2022-in-review/), here’s what the amazing contributors have been doing to make [hyper](https://hyper.rs) ever better during January and February of 2023.
+After [recapping the 2022 year](https://seanmonstar.com/blog/hyper-ish-2022-in-review/), here’s what the amazing contributors have been doing to make [hyper](https://hyper.rs) ever better during January and February of 2023.
 
 ### Releases
 
@@ -25,7 +25,7 @@ We released [RC3](https://github.com/hyperium/hyper/releases/tag/v1.0.0-rc.3), w
 
 **The higher-level pooling `Client` from 0.14.x has been ported to [hyper-util](https://github.com/hyperium/hyper-util)**. This was the most common blocker preventing people from trying out the release candidates. You can now use the `legacy::Client` with [hyper 1.0.0-rc.3](https://github.com/hyperium/hyper/releases/tag/v1.0.0-rc.3), and have the normal connecting/pooling client experience you’re used to (see the [example](https://github.com/hyperium/hyper-util/blob/master/examples/client.rs)).
 
-We’re still in the [hyper polish period](https://seanmonstar.com/blog/2022-11-15-hyper-polish-period/) 💅. There’s still a little bit of time left to get us your feedback! It’s the _most important_ part of this period. Or join us in one of the four polish areas (or help lead one)! You can also come [chat](https://discord.gg/kkwpueZ) with us about anything.
+We’re still in the [hyper polish period](https://seanmonstar.com/blog/hyper-polish-period/) 💅. There’s still a little bit of time left to get us your feedback! It’s the _most important_ part of this period. Or join us in one of the four polish areas (or help lead one)! You can also come [chat](https://discord.gg/kkwpueZ) with us about anything.
 
 We took some extra time to focus on [RC4](https://github.com/orgs/hyperium/projects/1/views/6), which has the last few breaking changes to go. Likely, hyper will vendor it’s own IO traits, and change `Service::call` to be `&self` instead of `&mut self`. See the related issues if you have feedback.
 

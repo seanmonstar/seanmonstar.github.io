@@ -20,7 +20,7 @@ Figured, now’s as great a time as any. Here’s a snapshot of what I twit twee
 
 [![Out of Beer tweet](http://mcarthurgfx.com/images/blog/twitOuttaBeer.png)](http://twitter.com/seanmonstar/status/2641020393)
 
-And yes, we do have an [“Out of beer” ticket](http://seanmonstar.com/blog/2008-10-16-our-most-critical-bug/).
+And yes, we do have an [“Out of beer” ticket](http://seanmonstar.com/blog/our-most-critical-bug/).
 
 #### Follow Me
 

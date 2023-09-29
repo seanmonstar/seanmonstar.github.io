@@ -35,7 +35,7 @@ As I left school, and headed into the working class, my father mentioned that ri
 
 ### Moving On
 
-After a severe car accident, the combination of the higher bills, my [boredom](http://seanmonstar.com/blog/2011-08-03-bored-people-quit/), and uncertainty of my job security got me looking for a different job. I researched companies that I would love to work at, sent out resumes, customized cover letters, and did plenty of phone interviews. After several months of looking, I started to wonder if I should just stay content with what I had, because it takes a lot of effort to continuously job search.
+After a severe car accident, the combination of the higher bills, my [boredom](http://seanmonstar.com/blog/bored-people-quit/), and uncertainty of my job security got me looking for a different job. I researched companies that I would love to work at, sent out resumes, customized cover letters, and did plenty of phone interviews. After several months of looking, I started to wonder if I should just stay content with what I had, because it takes a lot of effort to continuously job search.
 
 Thankfully, I kept looking and asking, and found a new rockin’ place to work at Mozilla. I started contracting in January 2011, and hired full-time in April. I work on [Add-on Builder](https://builder.addons.mozilla.org), so my desire of making an application that many people use is satisfied. I work with very awesome people, and for a company who wants its products to be the awesomest they can be.
 

@@ -24,7 +24,7 @@ The headline addition is a `ClientBuilder::dns_resolver()`, which now allows use
 
 ### hyper 1.0
 
-With the release of rc1 last month, I wrote about how we’re now in the [hyper polish period](https://seanmonstar.com/blog/2022-11-15-hyper-polish-period/) 💅.
+With the release of rc1 last month, I wrote about how we’re now in the [hyper polish period](https://seanmonstar.com/blog/hyper-polish-period/) 💅.
 
 [@programatik29 volunteered](https://github.com/hyperium/hyper/pull/3059) to co-lead the [util area](https://github.com/orgs/hyperium/projects/1/views/7). After many contributions to get us to rc1, [@oddgrd joined us](https://github.com/hyperium/hyper/pull/3065) to lead the [docs area](https://github.com/orgs/hyperium/projects/1/views/8). @vi noticed that the HTTP/2 client `SendRequest` should implement `Clone`.
 
@@ -32,7 +32,7 @@ We still eagerly welcome you trying out the release candidate and providing us f
 
 ### hyper in curl
 
-I fixed curl’s `c-hyper.c` to [classify headers from CONNECT and 1xx responses as such](https://github.com/curl/curl/pull/9947), making two more [unit tests pass](https://github.com/orgs/hyperium/projects/2/views/1). I streamed the process, in case you’d find it helpful to watch someone who mainly writes Rust flounder around debugging and fixing C. [You can try](https://seanmonstar.com/blog/2022-03-16-help-stabilize-hyper-in-curl/) it too!
+I fixed curl’s `c-hyper.c` to [classify headers from CONNECT and 1xx responses as such](https://github.com/curl/curl/pull/9947), making two more [unit tests pass](https://github.com/orgs/hyperium/projects/2/views/1). I streamed the process, in case you’d find it helpful to watch someone who mainly writes Rust flounder around debugging and fixing C. [You can try](https://seanmonstar.com/blog/help-stabilize-hyper-in-curl/) it too!
 
 ### HTTP/3
 

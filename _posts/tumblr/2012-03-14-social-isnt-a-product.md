@@ -16,5 +16,5 @@ James Whittaker, an ex-Googler:
 
 It’s frustrating that Google+ is actually a better product; the web app has a better design, Hangouts are a cool addition, and the mobile app is far faster and less buggy than Facebook’s turd. Still, being a better product isn’t enough. Facebook wins, not by being the best, but by simply having everyone already on it.
 
-Competition could exist if social networks could [communicate between each other](http://seanmonstar.com/blog/2012-01-23-cross-device-jabbering/), because then it would be all about who could make the _experience_ better. Yet, as much as everyone knows competition is a good thing, no one ever wants competition against their own product.
+Competition could exist if social networks could [communicate between each other](http://seanmonstar.com/blog/cross-device-jabbering/), because then it would be all about who could make the _experience_ better. Yet, as much as everyone knows competition is a good thing, no one ever wants competition against their own product.
 

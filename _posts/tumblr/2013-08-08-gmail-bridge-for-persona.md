@@ -11,7 +11,7 @@ tags:
 - bestof
 tumblr_url: https://seanmonstar.com/post/57737181854/gmail-bridge-for-persona
 ---
-Since [shifting to the Identity team](http://seanmonstar.com/blog/2012-07-20-moved-to-identity/) last year, I’ve been working hard on making Persona a true solution to the login problem of the web. As I said then:
+Since [shifting to the Identity team](http://seanmonstar.com/blog/moved-to-identity/) last year, I’ve been working hard on making Persona a true solution to the login problem of the web. As I said then:
 
 > If we do our job right, eventually when my friends ask me what I do, I can say: I helped make it so you no longer need to use passwords everywhere. I helped make your online identity more secure. I helped make signing into the Internet awesomer.
 

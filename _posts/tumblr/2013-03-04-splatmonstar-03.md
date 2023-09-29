@@ -10,7 +10,7 @@ tumblr_url: https://seanmonstar.com/post/44599803625/splatmonstar-03
 ---
 [splatmonstar 0.3](https://play.google.com/store/apps/details?id=com.monstarlab.tentmonstar)  
 
-It used to be [tentmonstar](http://seanmonstar.com/blog/2012-12-10-tentmonstar/), but for various reasons, I’ve renamed it to splatmonstar. Comes with a new color scheme and icon. And improvements!
+It used to be [tentmonstar](http://seanmonstar.com/blog/tentmonstar/), but for various reasons, I’ve renamed it to splatmonstar. Comes with a new color scheme and icon. And improvements!
 
 - New name!
 - New icon

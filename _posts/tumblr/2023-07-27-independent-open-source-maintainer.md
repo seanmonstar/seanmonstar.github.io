@@ -15,7 +15,7 @@ tumblr_url: https://seanmonstar.com/post/724010297820610560/independent-open-sou
 ---
  **tl;dr** - I’m independent, [sponsor](https://seanmonstar.com/sponsor) me!
 
-I’m doing something new. I’m an independent open source maintainer! In the beginning of June, I left my [position at AWS](https://seanmonstar.com/blog/2020-05-04-next-up-aws/).<sup id="fnref:aws"><a href="#fn:aws" class="footnote-ref" role="doc-noteref">1</a></sup>
+I’m doing something new. I’m an independent open source maintainer! In the beginning of June, I left my [position at AWS](https://seanmonstar.com/blog/next-up-aws/).<sup id="fnref:aws"><a href="#fn:aws" class="footnote-ref" role="doc-noteref">1</a></sup>
 
 I’m still focused on Rust, async, and HTTP stuff. Projects like [hyper](https://hyper.rs), reqwest, h3, tower, and any other new ideas that come along. I just won’t be doing so as an employee.
 

@@ -16,7 +16,7 @@ The communication situation on Android has gotten worse with the introduction of
 
 > Rumors have been swirling that Google is working on a cross-platform messaging service called Babel that will tie together all of its existing communication products, from Google Talk and Hangouts to Voice and Google+ Messenger.
 
-It sounds like it could fall slightly short of everything that I would hope for, though. Android is in a perfect place to make their system even better, for everyone, not only when in Googleland. Android already has an API to allow _any_ app to sync their [contact details](http://developer.android.com/guide/topics/providers/contacts-provider.html) into your People app. What if they made a **communication** API, that any app could tie into, that would allow you to use just the native Android communication app, and be able to [talk to everyone on all platforms](http://seanmonstar.com/blog/2011-04-18-universal-communicator/). It could be SMS, Gtalk, WhatsApp, and Facebook, and I wouldn’t have to care how.
+It sounds like it could fall slightly short of everything that I would hope for, though. Android is in a perfect place to make their system even better, for everyone, not only when in Googleland. Android already has an API to allow _any_ app to sync their [contact details](http://developer.android.com/guide/topics/providers/contacts-provider.html) into your People app. What if they made a **communication** API, that any app could tie into, that would allow you to use just the native Android communication app, and be able to [talk to everyone on all platforms](http://seanmonstar.com/blog/universal-communicator/). It could be SMS, Gtalk, WhatsApp, and Facebook, and I wouldn’t have to care how.
 
 Someone on the Android team, please do it!
 

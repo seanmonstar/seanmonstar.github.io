@@ -12,7 +12,7 @@ tumblr_url: https://seanmonstar.com/post/45871523111/information-obsession
 ---
 _I’m a week late to the “[Google Reader dies](http://googlereader.blogspot.com/2013/03/powering-down-google-reader.html)” news, but I wanted to collect my thoughts and read other people’s knee-jerk reactions first._
 
-I am quite interested in human data consumption. [Obsessed](http://seanmonstar.com/blog/2010-09-03-prioritizing-my-tiny-inbox/), even. Like, I constantly re-analyze my current setup, making sure I’m getting all the information I want, while keep as much junk out as possible. Maybe sometimes also re-analyzing my obsession with information obsession.
+I am quite interested in human data consumption. [Obsessed](http://seanmonstar.com/blog/prioritizing-my-tiny-inbox/), even. Like, I constantly re-analyze my current setup, making sure I’m getting all the information I want, while keep as much junk out as possible. Maybe sometimes also re-analyzing my obsession with information obsession.
 
 ### My Current Digs
 

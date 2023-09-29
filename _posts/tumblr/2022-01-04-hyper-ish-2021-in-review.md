@@ -29,7 +29,7 @@ The very first commit of the year to [hyper](https://hyper.rs) was the [initial 
 
 All those contributors helped with 14 hyper releases. Those releases includes HTTP/2 `CONNECT` support. The client can now understand HTTP/0.9 responses. There were performance improvements adjusting HTTP/2 adaptive window pings, and the memory used with the flatten write buffer strategy.
 
-I spoke on the [Rustacean Station podcast](https://rustacean-station.org/episode/045-sean-arthur/) about the history of hyper, async Rust, Rust in C, the future of hyper, [and more](https://seanmonstar.com/blog/2021-11-09-podcast-hyper-on-the-rustacean-station/).
+I spoke on the [Rustacean Station podcast](https://rustacean-station.org/episode/045-sean-arthur/) about the history of hyper, async Rust, Rust in C, the future of hyper, [and more](https://seanmonstar.com/blog/podcast-hyper-on-the-rustacean-station/).
 
 I’ve been working on a plan and vision for hyper, and that should be finalized in January 2022. **1.0 is coming!**
 
@@ -45,7 +45,7 @@ In curl, the number of test cases left to port keeps shrinking. A couple need so
 
 ### HTTP/3
 
-Also as mentioned [before](https://seanmonstar.com/blog/2020-12-23-hyper-v014/), we’ve been working on an HTTP/3 library in the similar vein as `h2`, which is generic over any QUIC implementation.
+Also as mentioned [before](https://seanmonstar.com/blog/hyper-v014/), we’ve been working on an HTTP/3 library in the similar vein as `h2`, which is generic over any QUIC implementation.
 
 At the end of 2020, we had a working-ish client example. Thanks to the hard work of [Jean-Christophe Begue](https://github.com/stammw), we now have a working server example. The client example fully works. The project updated to Tokio 1.0, and quinn 0.8: working with “final” version of the h3 specification. It gained proper control stream support, and reduced copies when reading from the transport.
 
@@ -59,7 +59,7 @@ Tower is more than just that one trait, however. With that basic abstraction in 
 
 [David Pedersen](https://github.com/davidpdrsn) jumped into the fray to help make Tower so much more. The blog post [“Inventing the Service trait”](https://tokio.rs/blog/2021-05-14-inventing-the-service-trait) helps explain the _why_: why have a `Service` trait, and why does it look the way it does. Afterwards, the [tower-http](https://tokio.rs/blog/2021-05-announcing-tower-http) library, which was just a few HTTP-specific middleware with rough edges, was expanded, polished, and shined to a nice finish.
 
-Then came [Axum](https://tokio.rs/blog/2021-07-announcing-axum). Axum is a Rust server framework designed to extend from Tower and Tower-HTTP. While [warp](https://seanmonstar.com/blog/2018-08-01-warp/) was always able to work with Tower, it’s main `Filter` API was very opinionated, and felt foreign to those less-used to functional programming. Axum lives next to warp, more fully embracing the `Service`, and using a much more common `Router` style.
+Then came [Axum](https://tokio.rs/blog/2021-07-announcing-axum). Axum is a Rust server framework designed to extend from Tower and Tower-HTTP. While [warp](https://seanmonstar.com/blog/warp/) was always able to work with Tower, it’s main `Filter` API was very opinionated, and felt foreign to those less-used to functional programming. Axum lives next to warp, more fully embracing the `Service`, and using a much more common `Router` style.
 
 ### Console
 

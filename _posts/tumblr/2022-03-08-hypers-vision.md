@@ -9,7 +9,7 @@ tags:
 - hyper
 tumblr_url: https://seanmonstar.com/post/678179333918097408/hypers-vision
 ---
-This year is the year we release [hyper](https://hyper.rs) 1.0. As pointed out in the [timeline](https://seanmonstar.com/blog/2022-02-22-hyper-10-timeline/), the first thing we need define is the [vision](https://github.com/hyperium/hyper/pull/2772).
+This year is the year we release [hyper](https://hyper.rs) 1.0. As pointed out in the [timeline](https://seanmonstar.com/blog/hyper-10-timeline/), the first thing we need define is the [vision](https://github.com/hyperium/hyper/pull/2772).
 
 The vision is a high-level, abstract view of what hyper _is_. It’s the destination. It defines “where we are going”, no matter where we are along the journey, or what version we get to along the way.
 
@@ -54,7 +54,7 @@ That doesn’t mean we purposefully make it harder, though. It should still be u
 
 ### And More
 
-There’s more to hyper’s vision that I don’t outline here. [The vision is currently a proposal](https://github.com/hyperium/hyper/pull/2772), and accepting feedback. Even after we merge, it’s not set in stone. The vision can adapt as we learn new things in the future. But this is the [first step in shipping hyper 1.0](https://seanmonstar.com/blog/2022-02-22-hyper-10-timeline/). We can’t get anywhere if we don’t know where we are going. Now we do!
+There’s more to hyper’s vision that I don’t outline here. [The vision is currently a proposal](https://github.com/hyperium/hyper/pull/2772), and accepting feedback. Even after we merge, it’s not set in stone. The vision can adapt as we learn new things in the future. But this is the [first step in shipping hyper 1.0](https://seanmonstar.com/blog/hyper-10-timeline/). We can’t get anywhere if we don’t know where we are going. Now we do!
 
 After this, we need to map out _how we get there_. That’s the roadmap. That’s the next piece that’s coming.
 

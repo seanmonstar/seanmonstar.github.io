@@ -14,7 +14,7 @@ tumblr_url: https://seanmonstar.com/post/53481419717/xbox-one-vs-indies
 
 > You need to pay a tithe to Microsoft Studios or a third-party developer if you want to be on the platform, and it’s likely to cost you more money to avoid Xbox Live exclusivity.
 
-This is disheartening. Some of the best games are from independent developers. My absolute favorite: Natural Selection 2. Also, this is why we can’t have Dust 514 on Xbox. If Microsoft wants their [digital future](http://seanmonstar.com/blog/2013-06-20-the-xbox-one-just-got-way-worse-and-its-our/-fault), this needs to stop.
+This is disheartening. Some of the best games are from independent developers. My absolute favorite: Natural Selection 2. Also, this is why we can’t have Dust 514 on Xbox. If Microsoft wants their [digital future](http://seanmonstar.com/blog/the-xbox-one-just-got-way-worse-and-its-our/-fault), this needs to stop.
 
 This is why we can’t have nice things.
 
