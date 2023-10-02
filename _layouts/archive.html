@@ -6,6 +6,7 @@ layout: default
 
     <ul class="post-list">
     {% for post in site.posts %}
+        {% if !post.hidden %}
         {% assign currentdate = post.date | date: "%Y" %}
         <li>
         {% if currentdate != date %}
@@ -19,6 +20,7 @@ layout: default
                 <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
             </h2>
         </li>
+        {% endif %}
     {% endfor %}
     </ul>
 
