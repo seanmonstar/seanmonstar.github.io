@@ -1,4 +1,5 @@
 ---
+hidden: true
 layout: post
 title: Fett of the Day
 date: '2013-02-11T22:56:28-05:00'

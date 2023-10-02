@@ -1,4 +1,5 @@
 ---
+hidden: true
 layout: post
 title: Updated App Store License Agreement
 date: '2010-09-09T13:02:57-04:00'

@@ -1,4 +1,5 @@
 ---
+hidden: true
 layout: post
 title: World, I’ll pay extra if you will please give me less.
 date: '2010-08-20T17:45:15-04:00'

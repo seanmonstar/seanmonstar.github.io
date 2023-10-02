@@ -1,4 +1,5 @@
 ---
+hidden: true
 layout: post
 title: JavaScript needs modules
 date: '2010-07-12T10:01:43-04:00'

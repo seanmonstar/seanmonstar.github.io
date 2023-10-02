@@ -1,4 +1,5 @@
 ---
+hidden: true
 layout: post
 title: Github Organizations
 date: '2010-06-29T20:02:00-04:00'

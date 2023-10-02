@@ -1,4 +1,5 @@
 ---
+hidden: true
 layout: post
 title: Xbox One vs. indies
 date: '2013-06-20T21:30:30-04:00'

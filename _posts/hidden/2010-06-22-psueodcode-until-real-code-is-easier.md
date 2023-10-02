@@ -1,4 +1,5 @@
 ---
+hidden: true
 layout: post
 title: Keep writing and decomposing the psuedocode until it seems like a waste of
   time to write it instead of the actual code.

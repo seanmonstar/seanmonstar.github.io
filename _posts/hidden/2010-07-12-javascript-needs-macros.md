@@ -1,4 +1,5 @@
 ---
+hidden: true
 layout: post
 title: JavaScript needs macros?
 date: '2010-07-12T12:04:43-04:00'

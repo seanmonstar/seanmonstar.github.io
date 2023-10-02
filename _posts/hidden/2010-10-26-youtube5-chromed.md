@@ -1,4 +1,5 @@
 ---
+hidden: true
 layout: post
 title: YouTube5, Chromed
 date: '2010-10-26T19:51:02-04:00'

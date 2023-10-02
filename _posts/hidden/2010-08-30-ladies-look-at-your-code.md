@@ -1,4 +1,5 @@
 ---
+hidden: true
 layout: post
 title: 'Ladies. Look at your code. '
 date: '2010-08-30T19:01:34-04:00'

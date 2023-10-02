@@ -1,4 +1,5 @@
 ---
+hidden: true
 layout: post
 title: Windows Phone 7 Has Hardware Checklist
 date: '2010-10-11T19:19:49-04:00'

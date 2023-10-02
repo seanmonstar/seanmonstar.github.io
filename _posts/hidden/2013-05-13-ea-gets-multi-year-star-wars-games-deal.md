@@ -1,4 +1,5 @@
 ---
+hidden: true
 layout: post
 title: EA gets multi-year Star Wars games deal
 date: '2013-05-13T15:00:20-04:00'

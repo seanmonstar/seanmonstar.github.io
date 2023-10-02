@@ -1,4 +1,5 @@
 ---
+hidden: true
 layout: post
 title: creative and cheap cord holders
 date: '2010-06-11T13:12:16-04:00'

@@ -1,4 +1,5 @@
 ---
+hidden: true
 layout: post
 title: Microsoft hires Minimally Minimal designer
 date: '2013-01-30T15:00:09-05:00'

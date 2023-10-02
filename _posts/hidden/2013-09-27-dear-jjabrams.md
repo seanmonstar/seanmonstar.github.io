@@ -1,4 +1,5 @@
 ---
+hidden: true
 layout: post
 title: 'Dear JJAbrams '
 date: '2013-09-27T15:09:41-04:00'

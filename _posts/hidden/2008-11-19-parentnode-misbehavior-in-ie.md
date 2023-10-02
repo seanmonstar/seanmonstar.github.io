@@ -1,4 +1,5 @@
 ---
+hidden: true
 layout: post
 title: ParentNode Misbehavior in IE
 date: '2008-11-19T15:51:00-05:00'

@@ -1,4 +1,5 @@
 ---
+hidden: true
 layout: post
 title: under the bus
 date: '2010-07-05T15:57:00-04:00'

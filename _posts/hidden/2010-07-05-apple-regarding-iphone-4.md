@@ -1,4 +1,5 @@
 ---
+hidden: true
 layout: post
 title: Letter from Apple Regarding iPhone 4
 date: '2010-07-05T18:01:26-04:00'

@@ -1,4 +1,5 @@
 ---
+hidden: true
 layout: post
 title: No one is going to steal your idea. In fact, if your company is eventually
   successful, your original idea will only be one tiny contributing factor. And the

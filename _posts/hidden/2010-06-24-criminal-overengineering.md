@@ -1,4 +1,5 @@
 ---
+hidden: true
 layout: post
 title: A few months later you can go back and look at how many of your comments eventually
   turn into more complicated, engineering code. I’ll bet you it’s not very many. That’s

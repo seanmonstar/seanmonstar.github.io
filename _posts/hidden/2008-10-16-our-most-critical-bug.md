@@ -1,4 +1,5 @@
 ---
+hidden: true
 layout: post
 title: our most critical bug
 date: '2008-10-16T19:06:00-04:00'

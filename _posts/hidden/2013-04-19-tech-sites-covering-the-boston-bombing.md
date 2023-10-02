@@ -1,4 +1,5 @@
 ---
+hidden: true
 layout: post
 title: Tech sites covering the Boston bombing
 date: '2013-04-19T19:32:09-04:00'

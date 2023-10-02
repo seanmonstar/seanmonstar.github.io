@@ -1,4 +1,5 @@
 ---
+hidden: true
 layout: post
 title: Natural Selection 2
 date: '2012-11-07T17:57:56-05:00'

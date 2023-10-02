@@ -1,4 +1,5 @@
 ---
+hidden: true
 layout: post
 title: now to convince the wife
 date: '2010-06-01T19:50:59-04:00'

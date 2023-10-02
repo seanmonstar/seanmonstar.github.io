@@ -1,4 +1,5 @@
 ---
+hidden: true
 layout: post
 title: no title
 date: '2009-02-12T10:05:00-05:00'

@@ -1,4 +1,5 @@
 ---
+hidden: true
 layout: post
 title: Battleheart on Android
 date: '2011-06-30T15:01:06-04:00'

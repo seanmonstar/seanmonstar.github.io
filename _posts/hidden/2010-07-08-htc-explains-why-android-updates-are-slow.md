@@ -1,4 +1,5 @@
 ---
+hidden: true
 layout: post
 title: HTC explains why Android updates are slow
 date: '2010-07-08T14:13:33-04:00'

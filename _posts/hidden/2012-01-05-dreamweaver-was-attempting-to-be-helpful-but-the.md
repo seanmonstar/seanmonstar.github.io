@@ -1,4 +1,5 @@
 ---
+hidden: true
 layout: post
 title: Dreamweaver was attempting to be helpful, but the moment it reformatted my
   code, I threw a fit. YOU TOUCHED MY CODE. Dreamweaver never recovered from that

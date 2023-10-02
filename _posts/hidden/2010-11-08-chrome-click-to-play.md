@@ -1,4 +1,5 @@
 ---
+hidden: true
 layout: post
 title: Chrome Click to Play
 date: '2010-11-08T18:22:24-05:00'

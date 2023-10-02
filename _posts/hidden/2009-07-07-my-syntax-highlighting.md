@@ -1,4 +1,5 @@
 ---
+hidden: true
 layout: post
 title: My Syntax Highlighting
 date: '2009-07-07T11:00:00-04:00'

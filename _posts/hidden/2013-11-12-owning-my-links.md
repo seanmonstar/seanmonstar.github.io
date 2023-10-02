@@ -1,4 +1,5 @@
 ---
+hidden: true
 layout: post
 title: Owning my links
 date: '2013-11-12T20:58:38-05:00'

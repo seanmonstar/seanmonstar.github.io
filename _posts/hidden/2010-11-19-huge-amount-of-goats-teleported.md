@@ -1,4 +1,5 @@
 ---
+hidden: true
 layout: post
 title: Huge amount of goats teleported
 date: '2010-11-19T18:09:57-05:00'

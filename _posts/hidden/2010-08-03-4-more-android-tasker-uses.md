@@ -1,4 +1,5 @@
 ---
+hidden: true
 layout: post
 title: 4 More Android Tasker Uses
 date: '2010-08-03T18:22:02-04:00'

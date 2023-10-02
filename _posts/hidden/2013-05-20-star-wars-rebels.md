@@ -1,4 +1,5 @@
 ---
+hidden: true
 layout: post
 title: Star Wars Rebels
 date: '2013-05-20T21:07:48-04:00'

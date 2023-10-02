@@ -1,4 +1,5 @@
 ---
+hidden: true
 layout: post
 title: staff now available on your android tablet
 date: '2012-12-17T17:53:18-05:00'

@@ -1,4 +1,5 @@
 ---
+hidden: true
 layout: post
 title: Advanced Task Manager Revenue
 date: '2010-08-24T13:27:23-04:00'

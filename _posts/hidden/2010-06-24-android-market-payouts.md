@@ -1,4 +1,5 @@
 ---
+hidden: true
 layout: post
 title: Android Market Payouts Total 2% of App Store’s $1B
 date: '2010-06-24T13:22:01-04:00'

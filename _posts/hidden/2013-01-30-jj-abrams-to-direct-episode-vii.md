@@ -1,4 +1,5 @@
 ---
+hidden: true
 layout: post
 title: J.J. Abrams to Direct Episode VII
 date: '2013-01-30T14:19:10-05:00'

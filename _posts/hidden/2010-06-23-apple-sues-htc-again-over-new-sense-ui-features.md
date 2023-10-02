@@ -1,4 +1,5 @@
 ---
+hidden: true
 layout: post
 title: Apple sues HTC again over new Sense UI features
 date: '2010-06-23T14:56:00-04:00'
