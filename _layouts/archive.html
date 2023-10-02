@@ -6,7 +6,7 @@ layout: default
 
     <ul class="post-list">
     {% for post in site.posts %}
-        {% if !post.hidden %}
+        {% if post.hidden != true %}
         {% assign currentdate = post.date | date: "%Y" %}
         <li>
         {% if currentdate != date %}
