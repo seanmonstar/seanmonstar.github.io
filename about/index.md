@@ -1,11 +1,24 @@
 ---
 layout: page
-title: About
+title: About Sean McArthur
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+I’m Sean McArthur, a [software engineer](https://github.com/seanmonstar), wandering the Internets.
 
-You can find the source code for the Jekyll new theme at: [github.com/jglovier/jekyll-new](https://github.com/jglovier/jekyll-new)
+![ohai](https://64.media.tumblr.com/tumblr_lew0l8No7A1qzek7l.jpg)
 
-You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
+An unordered list of the things I’m passionate about:
+
+- **Building tools** or basic building blocks **for other engineers** to go invent things I couldn’t possibly imagine.
+- Using **the Rust programming language**, as it’s currently the least-bad option I have found that offers: safety, speed, and expressiveness.
+- **Networking** and protocols (like **HTTP**, QUIC, etc), since once you get multiple computers working together, you can do anything.
+- Working in and promoting **open source** practices. We can do so much more when we join with a larger community, and can impact people anywhere in the world.
+
+### Projects
+
+- [hyper.rs](http://hyper.rs)
+
+### Contact
+
+You can [email](mailto:sean@seanmonstar.com) me about anything. Cheers!
