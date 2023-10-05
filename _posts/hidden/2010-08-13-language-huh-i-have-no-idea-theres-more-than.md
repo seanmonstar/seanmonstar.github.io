@@ -1,4 +1,5 @@
 ---
+hidden: true
 layout: post
 title: Language? huh. I have no idea. There’s more than one? I don’t really know what
   he does. I don’t pay attention to that stuff.

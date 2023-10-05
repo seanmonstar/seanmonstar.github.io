@@ -1,4 +1,5 @@
 ---
+hidden: true
 layout: post
 title: there’s another way of using time that’s common among people who make things,
   like programmers and writers. They generally prefer to use time in units of half

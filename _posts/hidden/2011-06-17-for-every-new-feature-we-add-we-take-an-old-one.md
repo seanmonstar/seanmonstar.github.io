@@ -1,4 +1,5 @@
 ---
+hidden: true
 layout: post
 title: For every new feature we add, we take an old one out. A lot of big sites don’t
   do that, and it’s a problem. Twitter started as a beautifully simple product, but

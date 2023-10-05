@@ -1,4 +1,5 @@
 ---
+hidden: true
 layout: post
 title: When people have strong opinions about things — when they can talk at length
   about something — it’s a good indication that they’re passionate about it.

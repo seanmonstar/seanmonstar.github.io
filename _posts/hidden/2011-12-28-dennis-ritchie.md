@@ -1,4 +1,5 @@
 ---
+hidden: true
 layout: post
 title: Few outside the technological field even knew his name, yet his work has impacted
   every person who has ever touched an electronic device. And I mean that quite literally.

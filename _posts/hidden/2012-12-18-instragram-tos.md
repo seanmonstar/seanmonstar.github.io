@@ -1,4 +1,5 @@
 ---
+hidden: true
 layout: post
 title: "'No, Instagram can't sell your photos'"
 date: '2012-12-18T19:00:12-05:00'

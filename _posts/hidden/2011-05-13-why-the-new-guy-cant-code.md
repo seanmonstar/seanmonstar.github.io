@@ -1,4 +1,5 @@
 ---
+hidden: true
 layout: post
 title: "…I can guarantee you, without fear of contradiction, that no software engineer
   will ever have to write a binary search after they are hired. It’s like choosing

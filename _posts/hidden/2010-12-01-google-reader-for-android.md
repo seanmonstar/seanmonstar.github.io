@@ -1,4 +1,5 @@
 ---
+hidden: true
 layout: post
 title: Google Reader for Android
 date: '2010-12-01T17:27:34-05:00'

@@ -1,4 +1,5 @@
 ---
+hidden: true
 layout: post
 title: |-
   “And we lucked out with Reader — imagine how much worse it would be if website owners weren’t publishing open RSS feeds for anyone to fetch and process, but were instead posting each item to a proprietary Google API. We’d have almost no chance of building a successful alternative.”

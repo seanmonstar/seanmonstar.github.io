@@ -1,4 +1,5 @@
 ---
+hidden: true
 layout: post
 title: In the case of the Kindle app, you might be able to argue that its Android
   version now offers a better, easier user experience than its iPhone version. That’s

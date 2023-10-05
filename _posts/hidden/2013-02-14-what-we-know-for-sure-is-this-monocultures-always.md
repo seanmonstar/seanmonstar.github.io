@@ -1,4 +1,5 @@
 ---
+hidden: true
 layout: post
 title: 'What we know for sure is this: monocultures always make more & faster progress
   in the near term when they’re stewarded by strong, vibrant leaders. But over time

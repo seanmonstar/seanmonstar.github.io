@@ -1,4 +1,5 @@
 ---
+hidden: true
 layout: post
 title: Google Keep
 date: '2013-03-25T16:03:44-04:00'

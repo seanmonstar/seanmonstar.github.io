@@ -1,4 +1,5 @@
 ---
+hidden: true
 layout: post
 title: A table that should exist in all projects with a database
 date: '2010-12-09T14:00:00-05:00'

@@ -1,4 +1,5 @@
 ---
+hidden: true
 layout: post
 title: Text and email are polite invitations to a conversation. They happen at the
   speed and leisure of both the sender and the receiver. In stark contrast, when you
