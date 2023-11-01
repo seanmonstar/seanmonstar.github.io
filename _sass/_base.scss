@@ -57,22 +57,27 @@ a:visited {
       padding: 0;
     }
     
-    h1 {
+    .site-title {
       font-size: 3em;
       font-family: Georgia, Times, serif;
       line-height: 1;
       margin-bottom: .5em;
     }
     
-    h1 a, h1 a:visited, h1 a:active {
+    .site-title a, .site-title a:visited, .site-title a:active {
       color: #222;
     }
     
-    h1 a:hover {
+    .site-title a:hover {
       color: #f55;
       text-decoration: none;
     }
-    
+
+    .post h1 {
+      font-size: 1.5em;
+      font-weight:500;
+    }
+
     h2 {
       font-size: 1.5em;
       font-weight:500;
