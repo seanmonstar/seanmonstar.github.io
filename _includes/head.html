@@ -6,14 +6,28 @@
   <title>{% if page.title %}{{ page.title }} - {% endif  %}{{ site.title }}</title>
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
+  <meta property="og:site_name" content="seanmonstar" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}"/>
+  <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+
+  <meta name="twitter:site" content="@seanmonstar"/>
+  <meta name="twitter:creator" content="@seanmonstar"/>
+  <meta name="twitter:card" content="summary"/>
+  <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}"/>
+
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
   <link href='//fonts.googleapis.com/css?family=Arvo|Roboto:400,300,300italic' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_light.min.css">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ site.rss | prepend: site.baseurl | prepend: site.url }}" />
+  <link rel="shortcut icon" href="/favicon.jpg" />
   <link rel="me" href="https://masto.ai/@seanmonstar">
   <link rel="openid2.provider" href="https://www.google.com/accounts/o8/ud?source=profiles" >
   <link rel="openid2.local_id" href="https://www.google.com/profiles/sean.monstar" >
+
   <script type="text/javascript">
     var _gaq = _gaq || [];
     _gaq.push(['_setAccount', 'UA-3472634-2']);
