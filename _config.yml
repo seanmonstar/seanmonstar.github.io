@@ -5,7 +5,7 @@ description: > # this means to ignore newlines until "baseurl:"
   My name is Sean McArthur, and here I blabber on about Rust,
   networking, open source, and a better web.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://seanmonstar.com" # the base hostname & protocol for your site
+url: "https://seanmonstar.com" # the base hostname & protocol for your site
 rss: "/rss"
 twitter_username: seanmonstar
 github_username:  seanmonstar
