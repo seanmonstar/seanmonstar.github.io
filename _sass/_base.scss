@@ -311,6 +311,7 @@ a:visited {
         width:3em;
     }
 
+.archive { border-top:2px solid #000; }
 	.archive ul.post-list li { list-style: none; }
 
 	.archive .post-list .date.new {
@@ -426,6 +427,13 @@ a:visited {
       }
       .post .post-footer .tags {
           width: 80%;
+      }
+      .archive .post-list {
+          margin-left: 0;
+          margin-right: 0;
+      }
+      .archive .post-list .post-title {
+          max-width: 80%;
       }
 
     }
