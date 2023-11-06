@@ -388,11 +388,14 @@ a:visited {
       body {
         font-size: 1.25em;
       }
+	  .site-title {
+		  font-size: 2.5em;
+	  }
       #site-nav {
         text-align: left;
       }
       #posts { float:none; width: 100%;}
-      #sidebar { float:none; width: 100%; }
+      #sidebar { clear:both; float:none; width: 100%; }
       .post {
         clear:both;
         padding: 1em 0 2em;
@@ -424,4 +427,5 @@ a:visited {
       .post .post-footer .tags {
           width: 80%;
       }
+
     }
