@@ -1,5 +1,4 @@
 ---
-hidden: true
 layout: post
 title: Was async fn a mistake?
 date: '2023-09-28T09:58-07:00'
@@ -47,7 +46,7 @@ fn call(&self, req: Request) -> Future<Response> = async {
 
 That'd be a nice improvement.
 
-[^reading]: Yea, I know, it's a little more writing. But I am in the [[Optimize for reading]] camp. We read much more than we write. So if I have to write a few more characters at a function definition, but it makes the reading experience more understandable, that's a massive win.
+[^reading]: Yea, I know, it's a little more writing. But I am in the _optimize-for-reading_ camp. We read much more than we write. So if I have to write a few more characters at a function definition, but it makes the reading experience more understandable, that's a massive win.
 
 [^me]: I've been involved in async Rust since the beginning. I know how it used to be, I was part of the group making it better, and I pay close attention to all the new proposals. I still mean what I said: _none_ of the solutions look nice.
 

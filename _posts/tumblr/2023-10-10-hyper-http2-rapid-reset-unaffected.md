@@ -1,5 +1,4 @@
 ---
-hidden: true
 layout: post
 title: 'hyper HTTP/2 Rapid Reset Attack: Unaffected'
 date: '2023-09-28T09:58-07:00'
