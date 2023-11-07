@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'hyper HTTP/2 Rapid Reset Attack: Unaffected'
-date: '2023-09-28T09:58-07:00'
+date: '2023-10-10T08:07-07:00'
 tags:
 - rust
 - hyper
