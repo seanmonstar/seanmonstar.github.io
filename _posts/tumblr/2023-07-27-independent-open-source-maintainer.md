@@ -15,13 +15,13 @@ tumblr_url: https://seanmonstar.com/post/724010297820610560/independent-open-sou
 ---
  **tl;dr** - I’m independent, [sponsor](https://seanmonstar.com/sponsor) me!
 
-I’m doing something new. I’m an independent open source maintainer! In the beginning of June, I left my [position at AWS](https://seanmonstar.com/blog/next-up-aws/).<sup id="fnref:aws"><a href="#fn:aws" class="footnote-ref" role="doc-noteref">1</a></sup>
+I’m doing something new. I’m an independent open source maintainer! In the beginning of June, I left my [position at AWS](https://seanmonstar.com/blog/next-up-aws/).[^aws]
 
 I’m still focused on Rust, async, and HTTP stuff. Projects like [hyper](https://hyper.rs), reqwest, h3, tower, and any other new ideas that come along. I just won’t be doing so as an employee.
 
-So, then how do I get paid? Let me just clear up a couple ways I’m **not**. I’m not making separate licenses. I’m not charging for features.<sup id="fnref:features"><a href="#fn:features" class="footnote-ref" role="doc-noteref">2</a></sup> I’m not selling prioritization on roadmaps. Rather, I plan to make maintenance work my primary focus.
+So, then how do I get paid? Let me just clear up a couple ways I’m **not**. I’m not making separate licenses. I’m not charging for features.[^features] I’m not selling prioritization on roadmaps. Rather, I plan to make maintenance work my primary focus.
 
-Maintenance can feel like riding a squared unicycle while juggling water balloons. Some of those balloons are:<sup id="fnref:maintainer"><a href="#fn:maintainer" class="footnote-ref" role="doc-noteref">3</a></sup>
+Maintenance can feel like riding a squared unicycle while juggling water balloons. Some of those balloons are:[^maintainer]
 
 - Designing proposals, interviewing users, re-writing those proposals.
 - Coding, coding, coding.
@@ -38,17 +38,7 @@ Does your company depend on my work? Become a [sponsor](https://seanmonstar.com/
 
 I am also interested in some deeper relationships with companies that want more. What exactly those relationships will look like will evolve. It would likely be things that look like office hours, support or private advice. If you want to explore that with me, reach out at [sean@seanmonstar.com](mailto:sean@seanmonstar.com?subject=Sponsorship).
 
-* * *
-
-1. 
-
-I learned a lot from my 3 years at AWS. Many lessons, some anti-lessons. Overall, I’m very grateful for my time there. But I had been planning this change for a while. And it was quite refreshing taking off a few weeks before jumping back into it all.&nbsp;[↩︎](#fnref:aws)
-
-2. 
-
-A win about being independent is that no single company is deciding what features should be added.&nbsp;[↩︎](#fnref:features)
-
-3. 
-
-This would be a good subject for another article. There’s a lot more to it, and it’d probably be surprising to people how many hats are needed to maintain popular open source libraries, besides “just being a programmer”. At least, if you want to do it well.&nbsp;[↩︎](#fnref:maintainer)
+[^aws]: I learned a lot from my 3 years at AWS. Many lessons, some anti-lessons. Overall, I'm very grateful for my time there. But I had been planning this change for a while. And it was quite refreshing taking off a few weeks before jumping back into it all.
+[^features]: A win about being independent is that no single company is deciding what features should be added. 
+[^maintainer]: This would be a good subject for another article. There's a lot more to it, and it'd probably be surprising to people how many hats are needed to maintain popular open source libraries, besides "just being a programmer". At least, if you want to do it well.
 
