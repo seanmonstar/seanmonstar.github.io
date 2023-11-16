@@ -19,6 +19,10 @@ An unordered list of the things I’m passionate about:
 
 - [hyper.rs](http://hyper.rs)
 
+### Talks
+
+I've given some [talks](/talks).
+
 ### Contact
 
 You can [email](mailto:sean@seanmonstar.com) me about anything. Cheers!
