@@ -4,7 +4,7 @@ title: About Sean McArthur
 permalink: /about/
 ---
 
-I’m Sean McArthur, a [software engineer](https://github.com/seanmonstar), wandering the Internets.
+I’m Sean McArthur, a [software engineer](https://github.com/seanmonstar), wandering the Internets. See what I'm up to [now](/now), or read on.
 
 ![ohai](https://64.media.tumblr.com/tumblr_lew0l8No7A1qzek7l.jpg)
 
