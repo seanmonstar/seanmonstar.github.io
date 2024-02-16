@@ -2,8 +2,8 @@
 layout: page
 title: Sponsor
 permalink: /sponsor/
+excerpt: I’m an independent OSS maintainer, so sponsors, support, and advising allow me to provide features, bug fixes, security reports, triage, and mentoring.
 ---
-
 I’m an independent maintainer, so sponsors enable me to continue to provide features, bug fixes, **security** reports, triage, mentoring, and answering of questions.
 
 If your business depends on the open source software that I maintain, consider sponsoring my work. A simple mental exercise is to consider how difficult or expensive it would be if I had to stop maintaining them, and you had to replace them or write your own. Then use that to determine how much to sponsor my work. Consider it a business risk mitigation.
