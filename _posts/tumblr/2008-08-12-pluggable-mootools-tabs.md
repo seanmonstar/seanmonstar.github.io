@@ -11,13 +11,11 @@ tumblr_url: https://seanmonstar.com/post/707019146/pluggable-mootools-tabs
 
 Theres a [new version of MGFX.Tabs](http://seanmonstar.com/blog/mgfx-tabs-1-2-0-show-a-random-tab/), that includes the ability to easily show a random tab.
 
-* * *
-
 #### Update (11/10/09)
 
 I’ve released a [new version of MGFX.Tabs](http://seanmonstar.com/blog/mgfx-tabs-1-1-on-github/), and wrote a new article explaining the new features, its new location, and so forth.
 
-* * *
+---
 
 <figure class="tmblr-full" data-orig-height="85" data-orig-width="375"><img src="https://64.media.tumblr.com/3146a6a25457aa6b4eb1ddf3c1fb0d5e/58f2924e13d99964-c4/s540x810/30ab7de8ac4daf8c2c2dc8a8f2af5bad16918ec2.jpg" data-orig-height="85" data-orig-width="375"></figure>
 
