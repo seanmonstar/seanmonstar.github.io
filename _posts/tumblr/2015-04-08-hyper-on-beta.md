@@ -15,7 +15,7 @@ Since I [announced hyper](http://seanmonstar.com/blog/hyper/) in December of las
 
 ### highlights
 
-- A [changelog](https://github.com/hyperium/hyper/blob/master/CHANGELOG.md) was added!<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>
+- A [changelog](https://github.com/hyperium/hyper/blob/master/CHANGELOG.md) was added![^1]
 - Many more of the common headers have been implemented.
 - [Pyfisch has been slaving away](https://github.com/hyperium/hyper/commits/master?author=pyfisch) at cleaning up the headers modules.
 - A switch to using [httparse](https://github.com/hyperium/hyper/commit/b87bb20f0c25891c30ef2399da2721596fbc1fcf) for HTTP/1.x parsing with wonderful speed gains.
@@ -37,9 +37,7 @@ I could imagine aiming for a 1.0 of hyper once we have asynchronous IO.
 
 Again, all of this is [thanks to you guys](https://github.com/hyperium/hyper/graphs/contributors), the amazing community. And if you want to get involved, please join in. Perhaps try tackling one of the [easy](https://github.com/hyperium/hyper/labels/easy) issues first.
 
-* * *
 
-1. 
 
-Or you can check the [Releases](https://github.com/hyperium/hyper/releases). I try to keep them in sync.&nbsp;[↩︎](#fnref:1)
+[^1]: Or you can check the [Releases](https://github.com/hyperium/hyper/releases). I try to keep them in sync.
 

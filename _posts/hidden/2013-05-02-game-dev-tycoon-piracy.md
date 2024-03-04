@@ -16,11 +16,9 @@ The makers of [Game Dev Tycoon](http://www.greenheartgames.com/app/game-dev-tyco
 
 > Boss, it seems that while many players play our new game, they steal it by downloading a cracked version rather than buying it legally. If players don’t buy the games they like, we will sooner or later go bankrupt.
 
-DRM done right.<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>
+DRM done right.[^1]
 
-* * *
 
-1. 
 
-It’s worth buying just for this alone.&nbsp;[↩︎](#fnref:1)
+[^1]: It’s worth buying just for this alone.
 

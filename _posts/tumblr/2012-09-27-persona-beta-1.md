@@ -15,7 +15,7 @@ tumblr_url: https://seanmonstar.com/post/32421665425/persona-beta-1
 
 > For the past year Mozilla has been working on an experimental login system that completely eliminates passwords on websites while being safe, secure, and easy to use. Today we’re casting off the “experimental” label and announcing the first “beta” release of Persona.
 
-This super exciting<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>, and only the beginning. This step is letting website owners know that they can start using it reliably on their websites. We won’t change the API.
+This super exciting[^1], and only the beginning. This step is letting website owners know that they can start using it reliably on their websites. We won’t change the API.
 
 Next steps include:
 
@@ -24,9 +24,7 @@ Next steps include:
 
 Yes, we hope to eventually remove ourselves from it all.
 
-* * *
 
-1. 
 
-I may be a [little biased](http://seanmonstar.com/blog/moved-to-identity/).&nbsp;[↩︎](#fnref:1)
+[^1]: I may be a [little biased](http://seanmonstar.com/blog/moved-to-identity/).
 

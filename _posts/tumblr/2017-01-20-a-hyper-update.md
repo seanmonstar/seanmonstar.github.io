@@ -22,21 +22,17 @@ This should be the last feature release of hyper using **blocking IO**. You can 
 
 The work to make hyper use **non-blocking IO** has been a long road. In recent months, it has been with the help of the tokio library, which just [recently released a version](https://tokio.rs/blog/tokio-0-1/). We just merged the tokio branch into master this week!
 
-> `wrk -t 10 -d 10s -c 20`: 225759.00 requests per second<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>
+> `wrk -t 10 -d 10s -c 20`: 225759.00 requests per second[^1]
 
-The full pipeline works great, and it’s fast!<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup> Using futures feels very natural when programming with the asynchronicity of HTTP messages. Instead of including inline code examples here that may grow stale, I’ll just point to the [examples in the hyper repository](https://github.com/hyperium/hyper/tree/master/examples). And yes, full guides will be coming soon, as part of the 0.11 release.
+The full pipeline works great, and it’s fast![^2] Using futures feels very natural when programming with the asynchronicity of HTTP messages. Instead of including inline code examples here that may grow stale, I’ll just point to the [examples in the hyper repository](https://github.com/hyperium/hyper/tree/master/examples). And yes, full guides will be coming soon, as part of the 0.11 release.
 
 There’s still things to touch up. We’re still trying to find the best ways to a) setup an HTTP server or client for easy use, b) plug in an HTTP server or client into a the wider tokio ecosystem. There’s still internal performance things we could do to get even faster. But there’s a light at the end of this tunnel. It’s growing. If you’d like, [join in!](https://github.com/hyperium/hyper/milestone/3) Or try to port your framework to use it, and provide feedback.
 
 Soon, we’ll have a much better answer for [are we web yet?](http://arewewebyet.org)
 
-* * *
 
-1. 
 
-The benchmarks are hand-wavey at the moment. I surprisingly don’t have an environment available to me to benchmark a bunch of different settings and against other HTTP libraries. If you’d like to help record some benchmarks, I’d greatly appreciate it.&nbsp;[↩︎](#fnref:1)
+[^1]: The benchmarks are hand-wavey at the moment. I surprisingly don’t have an environment available to me to benchmark a bunch of different settings and against other HTTP libraries. If you’d like to help record some benchmarks, I’d greatly appreciate it.
 
-2. 
-
-Of course, the biggest benefit of non-blocking IO is that it is the best way to scale when you have other IO to do in order to serve a request (files, databases, other networking, etc), or when the payloads are bigger than the the network packet size, and you want to serve thousands of those requests at the same time.&nbsp;[↩︎](#fnref:2)
+[^2]: Of course, the biggest benefit of non-blocking IO is that it is the best way to scale when you have other IO to do in order to serve a request (files, databases, other networking, etc), or when the payloads are bigger than the the network packet size, and you want to serve thousands of those requests at the same time.&nbsp;[↩︎](#fnref:2)
 

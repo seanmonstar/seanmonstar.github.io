@@ -16,7 +16,7 @@ I’ve had my Galaxy S (the [T-Mobile Vibrant](http://www.amazon.com/gp/product/
 
 The screen is gorgeous. Granted, it’s not as bright as the iPhone 4, but I, personally, don’t really notice the difference in the Retina Display that the 4 carries. It’s Super AMOLED screen beautifully renders Avatar that comes on the phone, and the pretty wallpapers that come on the device. Contrary to my wife’s myTouch, I can operate with the brightness at the lowest setting most of the time. I only ever turn it up when I’m outside, and have my sunglasses on. The good thing is, turning the brightness to the max makes it very easy to see everything on the screen while boldly confronting the elements.
 
-It’s also a fantastic 4 inches. Which is, again, great for viewing movies, but also great at viewing websites, or just plain reading. Reading is quite the pleasure on this phone. I’ve picked up a nightly habit of reading from my Instapaper account<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> before falling asleep.
+It’s also a fantastic 4 inches. Which is, again, great for viewing movies, but also great at viewing websites, or just plain reading. Reading is quite the pleasure on this phone. I’ve picked up a nightly habit of reading from my Instapaper account[^1] before falling asleep.
 
 I’m one of those people who doesn’t break his stuff: none of my previous phones broke, and I only have a small handful of scratches from dropping my Sidekick once or twice. So, therefore, I don’t have a screen protector. The screen still has no scratches at all. Nothing. According to more abusive readers, it seems to stand up to a lot of punishment.
 
@@ -44,13 +44,13 @@ The Galaxy weighes a mere 4.16 ounces. According to Apple, the iPhone 4 is only 
 
 TouchWiz is what Samsung is calling their custom UI. While I don’t understand why hardware companies are trying to write software better than a software company, this one isn’t _too_ terrible. They have a cool gesture in the Contacts list to swipe left on a contact to call and swipe right to text. The way the application drawer works is pretty neat as well, where it has multiple pages of apps instead of one giant scrollable view.
 
-That’s all the positive words I can muster. I said it wasn’t _terrible_, but I almost immediately switched to a different home launcher.<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>
+That’s all the positive words I can muster. I said it wasn’t _terrible_, but I almost immediately switched to a different home launcher.[^2]
 
 I’m not the biggest fan of the entire UI being given a blue theme, but I don’t hate it that much either. That’s mostly just minor aesthetic taste. Yet, with their questionable surgery, they’ve ruined some of the core Android applications. Contacts no longer has a Favorites tab. Instead, they have an Updates tab. They also ruined the Calendar app. I mean, it’s not horrible, but the way they show full day events is hard to notice, and in the stock calendar, you could tap on an event in the week to reveal a small tooltip of the title. Samsung decided you should skip that tooltip.
 
 Speaking of the Updates tab, it seems that most manufacturers feel the need to make the Android UI integrate more with social media. It makes me die a little with each new “custom UI”. Maybe less nerdy people than myself will just setup the Feeds & Updates widget to pull in Facebook and Twitter, but I find it ugly and irrelevant. I don’t need my social media bleeding through every orifice of my phone. When I want Twitter, I’ll launch the Twitter app.
 
-They also stupidly took away several of the default widgets in favor of their own concoctions. They suck hard. Most importantly, I miss having the stock calendar widget, which shows you in an attractive way the next event on your calendar. In its place is the abbysmal Daily Briefing, where, alongside your recent calendar events, it also pulls in weather from AccuWeather, stocks from whatever, mobile news from Yahoo, and looks terrible to boot. Crazier still, these widgets are only available from the TwLauncher<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup>. Having switched to ADWLauncher, I still don’t get the stock Android widgets, nor Samsung’s crappy replacements. I had to download a simple calendar widget, and I honestly couldn’t find one that looked similar to the stock calendar widget.
+They also stupidly took away several of the default widgets in favor of their own concoctions. They suck hard. Most importantly, I miss having the stock calendar widget, which shows you in an attractive way the next event on your calendar. In its place is the abbysmal Daily Briefing, where, alongside your recent calendar events, it also pulls in weather from AccuWeather, stocks from whatever, mobile news from Yahoo, and looks terrible to boot. Crazier still, these widgets are only available from the TwLauncher[^3]. Having switched to ADWLauncher, I still don’t get the stock Android widgets, nor Samsung’s crappy replacements. I had to download a simple calendar widget, and I honestly couldn’t find one that looked similar to the stock calendar widget.
 
 ### Crapware
 
@@ -84,7 +84,7 @@ I actually love how the Android OS allows applications to be used by the user. H
 
 - **Notifications** : Everyone always mentions Android notifications in a good light, and that’s because they work great. They’re out of the way, only in the top status bar, and can be accessed from inside applications by just pulling down from the top of the phone. While I like the red pills in iOS, the notifications in Android let you peek at the title of the notification and clear them out if they turn out to be not as important. In iOS, you have no such liberty.
 
-- **The Activity Stack and Back** : In iOS, it’s up to the application developer to add a Back button to any given screen. And usually, it doesn’t truly mean “Back”, but more like “Up One Folder”. Worse still, is that if an application opens another, like Safari or Mail, there is no “Back” to the previous application<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup>. On Android, the Back button goes to previous applications and Activities. This is because in Android, every action is an `Activity`. Activities can start new ones, and they get added on top of the Activity stack, until an Activity has finished. Pressing Back will finish the current Activity and head to the previously active one.
+- **The Activity Stack and Back** : In iOS, it’s up to the application developer to add a Back button to any given screen. And usually, it doesn’t truly mean “Back”, but more like “Up One Folder”. Worse still, is that if an application opens another, like Safari or Mail, there is no “Back” to the previous application[^4]. On Android, the Back button goes to previous applications and Activities. This is because in Android, every action is an `Activity`. Activities can start new ones, and they get added on top of the Activity stack, until an Activity has finished. Pressing Back will finish the current Activity and head to the previously active one.
 
 - **Apps can communicate with Intents** : Providing a generic way for applications to send messages to each other via `Intents` means that no matter what RSS Reader application you use, and whether you use Instapaper or ReadItLater, they can talk to each other on your phone. So if you use something a little less popular, you aren’t doomed to never having other applications support it.
 
@@ -92,21 +92,13 @@ I actually love how the Android OS allows applications to be used by the user. H
 
 I love the [Galaxy](http://www.amazon.com/gp/product/B003TXSKNE?tag=seanmonstar-20).
 
-* * *
 
-1. 
 
-I currently access my articles through the [Hard Copy app](http://www.appbrain.com/app/hard-copy-pro-(ad-free)/com.tonycosentini.hardcopypro), from [Tony Cosentini](http://endlesswhileloop.com/).&nbsp;[↩︎](#fnref:1)
+[^1]: I currently access my articles through the [Hard Copy app](http://www.appbrain.com/app/hard-copy-pro-(ad-free)/com.tonycosentini.hardcopypro), from [Tony Cosentini](http://endlesswhileloop.com/).
 
-2. 
+[^2]: I don’t need 7 home screens, so I dropped down to 3, but the programmers determine the middle as screen 4, no matter what. Did no one ever teach them how to find the middle of something?&nbsp;[↩︎](#fnref:2)
 
-I don’t need 7 home screens, so I dropped down to 3, but the programmers determine the middle as screen 4, no matter what. Did no one ever teach them how to find the middle of something?&nbsp;[↩︎](#fnref:2)
+[^3]: TouchWiz default launcher.&nbsp;[↩︎](#fnref:3)
 
-3. 
-
-TouchWiz default launcher.&nbsp;[↩︎](#fnref:3)
-
-4. 
-
-In iOS 4, if the application has been re-compiled to use fast-app switching, you _can_ switch back to an app now.&nbsp;[↩︎](#fnref:4)
+[^4]: In iOS 4, if the application has been re-compiled to use fast-app switching, you _can_ switch back to an app now.&nbsp;[↩︎](#fnref:4)
 

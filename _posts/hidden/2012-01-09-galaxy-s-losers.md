@@ -19,13 +19,11 @@ Samsung, regarding upgrading the Galaxy S software to Android 4:
 
 This, as the Nexus S (which is the same internal hardware) is running Android 4 right now.
 
-If an OEM were to release less phones a year, but provide excellent support for them for more than a year<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>, I could strongly recommend to my friends to only buy from them. But I can’t recommend Samsung, since they don’t.
+If an OEM were to release less phones a year, but provide excellent support for them for more than a year[^1], I could strongly recommend to my friends to only buy from them. But I can’t recommend Samsung, since they don’t.
 
 I can only recommend [Google’s Nexus](http://google.com/nexus) brand, now.
 
-* * *
 
-1. 
 
-Heck, most OEMs hardly support their devices for more than a month.&nbsp;[↩︎](#fnref:1)
+[^1]: Heck, most OEMs hardly support their devices for more than a month.
 

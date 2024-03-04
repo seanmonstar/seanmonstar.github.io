@@ -11,7 +11,7 @@ tags:
 - employment
 tumblr_url: https://seanmonstar.com/post/8475492438/good-things-come-to-those-who-ask
 ---
-Maybe you’ve heard the saying “good things come to those who wait.” That’s all well and good, but I’d like to take some time point out that good things also come to those who look for them. I changed jobs at the beginning of this year, and several people I know were curious as to how I managed it. It’s because I asked. I sought. For months.<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>
+Maybe you’ve heard the saying “good things come to those who wait.” That’s all well and good, but I’d like to take some time point out that good things also come to those who look for them. I changed jobs at the beginning of this year, and several people I know were curious as to how I managed it. It’s because I asked. I sought. For months.[^1]
 
 ### In and Out
 
@@ -41,15 +41,11 @@ Thankfully, I kept looking and asking, and found a new rockin’ place to work a
 
 ### Don’t be afraid to ask
 
-I don’t say all of this to brag, or say “look at me”. I want to give an example of how it _is_ possible to get what you want. People who get what they want, get it because they aren’t quiet about wanting it. Don’t be afraid to ask about what you need to do to get to the position you want. Ask your manager what you could improve on _to get a promotion_. Or ask that company you’ve been eyeing to [hire you](http://www.mozilla.com/en-US/about/careers.html). You have to assume you are a good fit for the job, and then _ask_ for it<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>.
+I don’t say all of this to brag, or say “look at me”. I want to give an example of how it _is_ possible to get what you want. People who get what they want, get it because they aren’t quiet about wanting it. Don’t be afraid to ask about what you need to do to get to the position you want. Ask your manager what you could improve on _to get a promotion_. Or ask that company you’ve been eyeing to [hire you](http://www.mozilla.com/en-US/about/careers.html). You have to assume you are a good fit for the job, and then _ask_ for it[^2].
 
-* * *
 
-1. 
 
-What follows is a bit of life story, including only the bits where I asked and asked for something better.&nbsp;[↩︎](#fnref:1)
+[^1]: What follows is a bit of life story, including only the bits where I asked and asked for something better.
 
-2. 
-
-It should go without saying, but I must say it anyways: you must also be hard working and decent at what you do.&nbsp;[↩︎](#fnref:2)
+[^2]: It should go without saying, but I must say it anyways: you must also be hard working and decent at what you do.&nbsp;[↩︎](#fnref:2)
 

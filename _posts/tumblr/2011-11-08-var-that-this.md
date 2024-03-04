@@ -28,11 +28,9 @@ Instead, I think the variable should be named after the Class that you are curre
     
     });
 
-The reason is because once you start delving a couple nested functions deep<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>, I find myself sometimes wondering if I bound `that` to the value I wanted. This way leaves little to wonder about. And since you read code far more than you write it, best to write the most readable code you can.
+The reason is because once you start delving a couple nested functions deep[^1], I find myself sometimes wondering if I bound `that` to the value I wanted. This way leaves little to wonder about. And since you read code far more than you write it, best to write the most readable code you can.
 
-* * *
 
-1. 
 
-I know, some of that can be solved by moving the functions to named methods on other objects, but you’d be lying if you said you never happened to have a function for a `.forEach` loop, and then another inside for an `.addEvent`, or something similar.&nbsp;[↩︎](#fnref:1)
+[^1]: I know, some of that can be solved by moving the functions to named methods on other objects, but you’d be lying if you said you never happened to have a function for a `.forEach` loop, and then another inside for an `.addEvent`, or something similar.
 

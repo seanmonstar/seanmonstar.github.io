@@ -7,7 +7,7 @@ tags:
 - mootools
 tumblr_url: https://seanmonstar.com/post/709072388/making-an-ajax-single-page-site-with-mootools
 ---
-The past couple weeks I’ve been working on a website that, with JavaScript enabled, will never refresh the page<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>. With MooTools, I just needed to manipulate the URL hash and use `Request`, making it fairly easy to get an Ajax site that works like Facebook. Granted, this has nothing about handling CSS or JavaScript assets for each page. I’m currently handling that myself, and perhaps I’ll share my findings for that another time.
+The past couple weeks I’ve been working on a website that, with JavaScript enabled, will never refresh the page[^1]. With MooTools, I just needed to manipulate the URL hash and use `Request`, making it fairly easy to get an Ajax site that works like Facebook. Granted, this has nothing about handling CSS or JavaScript assets for each page. I’m currently handling that myself, and perhaps I’ll share my findings for that another time.
 
 #### Use Event Delegation
 
@@ -81,9 +81,7 @@ To get you started, the `load` and `insert` methods of the `Page` class are show
 
 I’ve also declared methods like `remove` and `unload`, which my `PageManager` calls. I’ll be experimenting with what kind of optimizations I get by removing the content into a `documentFragment` instead of disposing of the content rebuilding if the user clicks back. But that should help give a start to trying to do this yourself.
 
-* * *
 
-1. 
 
-As a precursor, its very simple to make a website like this work without the Ajax, so that its still accessible and searchable. In your server side code, most JavaScript frameworks will send an extra header, `X-Requested-With`, with the value of `XMLHttpRequest`. You can check if that header has been sent, and if so, send only the content html, and if not, send the entire page instead.&nbsp;[↩︎](#fnref:1)
+[^1]: As a precursor, its very simple to make a website like this work without the Ajax, so that its still accessible and searchable. In your server side code, most JavaScript frameworks will send an extra header, `X-Requested-With`, with the value of `XMLHttpRequest`. You can check if that header has been sent, and if so, send only the content html, and if not, send the entire page instead.
 

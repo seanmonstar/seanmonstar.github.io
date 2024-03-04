@@ -12,9 +12,9 @@ tags:
 - tower
 tumblr_url: https://seanmonstar.com/post/706802392260362240/hyper-ish-2022-in-review
 ---
-Quite the eventful year! With 2022 over<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>, I want to take some time highlight what’s happened in [hyper](https://hyper.rs) and the immediately surrounding landscape.
+Quite the eventful year! With 2022 over[^1], I want to take some time highlight what’s happened in [hyper](https://hyper.rs) and the immediately surrounding landscape.
 
-A quick personal note, I wrote much more this year!<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup> Yay!
+A quick personal note, I wrote much more this year![^2] Yay!
 
 ### hyper
 
@@ -88,13 +88,9 @@ These are are all things that many people have asked for, and I’d like to see 
 
 I’ll likely be focused at the top of that list, but would welcome anyone interested jumping into an issue (or discussing on [Discord](https://discord.gg/kkwpueZ) if you prefer). Really, the biggest success would be [empowering others](https://github.com/hyperium/hyper/blob/master/docs/GOVERNANCE.md) to be the leaders and owners on these things. Do you want to be one of them?
 
-* * *
 
-1. 
 
-Sorry for the delay, illness struck right at the beginning of the year.&nbsp;[↩︎](#fnref:1)
+[^1]: Sorry for the delay, illness struck right at the beginning of the year.
 
-2. 
-
-I wrote barely anything in 2021, 2020… actually for quite a few years. I used to blog multiple times a month back in 2013, but kind of teetered off the following year. Anyways, I’m really liking it (again), so here’s to more!&nbsp;[↩︎](#fnref:2)
+[^2]: I wrote barely anything in 2021, 2020… actually for quite a few years. I used to blog multiple times a month back in 2013, but kind of teetered off the following year. Anyways, I’m really liking it (again), so here’s to more!&nbsp;[↩︎](#fnref:2)
 

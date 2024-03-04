@@ -19,7 +19,7 @@ Both are equally unappetizing. Wouldn’t it be so much nicer to write your view
 
 ### Templating
 
-Here’s a nice mix of HTML and JavaScript. No tricky string concatenation<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>. You just have to put your JavaScript inside tags like you would in PHP.
+Here’s a nice mix of HTML and JavaScript. No tricky string concatenation[^1]. You just have to put your JavaScript inside tags like you would in PHP.
 
     <ul id="Tasks">
     <% tasks.forEach(function(task) { %>
@@ -56,17 +56,13 @@ The `View` Class is what converts templates into views for your application. You
     myEl.grab(myView);
     myOtherEl.set('html', myView);
 
-Views have both a [`toElement`](http://mootools.net/blog/2010/03/19/a-better-way-to-use-elements/) and `toString` function defined to return the processed mark-up in the proper format. This means you can simply pass the view as a parameter to most MooTools Element methods, and it just works<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>.
+Views have both a [`toElement`](http://mootools.net/blog/2010/03/19/a-better-way-to-use-elements/) and `toString` function defined to return the processed mark-up in the proper format. This means you can simply pass the view as a parameter to most MooTools Element methods, and it just works[^2].
 
 Good news, though: Controllers have a convenience method called `view` that really makes this a joy to use. I’ll have more to say about Controllers in my next report.
 
-* * *
 
-1. 
 
-The string concatenation is done internally. Everything in the template is turned into a string using [John Resig’s micro-templating](http://ejohn.org/blog/javascript-micro-templating/) suggestion.&nbsp;[↩︎](#fnref:1)
+[^1]: The string concatenation is done internally. Everything in the template is turned into a string using [John Resig’s micro-templating](http://ejohn.org/blog/javascript-micro-templating/) suggestion.
 
-2. 
-
-Regular DOM methods might not though. `appendChild` expects an Element, and since it’s not part of MooTools, it’s not rigged up to called `toElement`. Also, because of the way `toString` works with Classes in Internet Explorer, this feature doesn’t work in those browsers. MooTools 1.3 repairs that problem.&nbsp;[↩︎](#fnref:2)
+[^2]: Regular DOM methods might not though. `appendChild` expects an Element, and since it’s not part of MooTools, it’s not rigged up to called `toElement`. Also, because of the way `toString` works with Classes in Internet Explorer, this feature doesn’t work in those browsers. MooTools 1.3 repairs that problem.&nbsp;[↩︎](#fnref:2)
 

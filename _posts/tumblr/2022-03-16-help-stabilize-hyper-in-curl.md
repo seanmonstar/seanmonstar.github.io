@@ -12,7 +12,7 @@ tumblr_url: https://seanmonstar.com/post/678895803144830976/help-stabilize-hyper
 ---
 We’ve been working for that past year and change to allow [hyper to be an HTTP backend for curl](https://seanmonstar.com/blog/how-using-hyper-in-curl-can-help-make-the-internet/). **We’re so close to having it work!** With hundreds of tests working, there’s only a dozen or so tests left to fix. I’ve created a [**dashboard**](https://github.com/orgs/hyperium/projects/2/views/1) based on the [actual file](https://github.com/curl/curl/blob/master/tests/data/DISABLED).
 
-**Want to help us get it over the finish line?** I’ve written up a guide of how to help debug these tests, step-by-step<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>, and then included an example of a test I debugged.
+**Want to help us get it over the finish line?** I’ve written up a guide of how to help debug these tests, step-by-step[^1], and then included an example of a test I debugged.
 
 ### Build hyper’s C API
 
@@ -87,9 +87,7 @@ So, the action items from debugging this are:
 - [File an issue with curl](https://github.com/curl/curl/issues) about the need to adjust how bodies are paused.
 - **Bonus** : fix the code and send a pull request. But if you’re not familiar with C, even just the issues identifying the underlying problem help immensely!
 
-* * *
 
-1. 
 
-The exact steps could change in the future! &nbsp;[↩︎](#fnref:1)
+[^1]: The exact steps could change in the future! 
 

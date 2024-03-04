@@ -12,7 +12,7 @@ tags:
 - bestof
 tumblr_url: https://seanmonstar.com/post/81400378235/please-replace-credit-cards
 ---
-Technology has greatly improved things this past decade. It’s peculiar that messaging nonsense has seen so much work, but something that quite literally costs people money continues to be so flawed. I’m talking about credit cards. It’s worth pointing out that I’m not a security researcher, just a concerned citizen.<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>
+Technology has greatly improved things this past decade. It’s peculiar that messaging nonsense has seen so much work, but something that quite literally costs people money continues to be so flawed. I’m talking about credit cards. It’s worth pointing out that I’m not a security researcher, just a concerned citizen.[^1]
 
 The flaw is a fundamental part of the design: for every charge, we must give the entire card number to the seller. That card number is **everything**. It gives all the information and power to charge as much money as the recipient wants. Holy carps. The sellers don’t charge as much as they want, because that would be illegal, and they’d lose their merchant account. Still, employees could keep the number and sell it. Or, more likely, as sellers keep a record of the number, hackers can steal them, and get all the moneys. Until you notice, report fraud, and the banks just swallow it.
 
@@ -26,7 +26,7 @@ If the source card or key which is used to generate tokens is compromised, a use
 
 Recurring charges would be trickier. It’d require more cooperation among banks, standardizing some sort of unique account ID. Tokens could include the account ID, and merchants could safely hold onto that. When they need to make a new charge, they could request a new token for a certain amount. The user can approve the charge which sends a new token, or perhaps mark that a certain amount from a specific merchant every so often is auto-approved. I’m sure plenty of things could be done here to make the user experience easy. And there’s incentives for as easy as possible: Easier means users will spend more.
 
-Credit accounts could provide apps to their users to make sending and approving tokens easy from our phones. Additionally, the app could also optionally prompt for approval when a merchant charges a token, to ensure there was no mistake or the token wasn’t somehow hijacked<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>.
+Credit accounts could provide apps to their users to make sending and approving tokens easy from our phones. Additionally, the app could also optionally prompt for approval when a merchant charges a token, to ensure there was no mistake or the token wasn’t somehow hijacked[^2].
 
 ### Stand back, I don’t know crypto
 
@@ -42,13 +42,9 @@ I’m certain smarter people than myself could make a really secure design, but 
 
 It would take a lot of work to move the world over to this system, but the end result should be much more secure. It should mean much less fraud, and much fewer stories like [what recently happened with Target](http://pressroom.target.com/news/target-confirms-unauthorized-access-to-payment-card-data-in-u-s-stores). Can we please do this?
 
-* * *
 
-1. 
 
-Or, I have no idea what I’m talking about.&nbsp;[↩︎](#fnref:1)
+[^1]: Or, I have no idea what I’m talking about.
 
-2. 
-
-The design reduces the risk of a stolen token, since it’s generated for a specific merchant. However, it could be that a hacker gets control of a merchant account, or their private key, and can claim to be the merchant.&nbsp;[↩︎](#fnref:2)
+[^2]: The design reduces the risk of a stolen token, since it’s generated for a specific merchant. However, it could be that a hacker gets control of a merchant account, or their private key, and can claim to be the merchant.&nbsp;[↩︎](#fnref:2)
 

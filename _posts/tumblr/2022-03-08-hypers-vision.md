@@ -17,7 +17,7 @@ The vision is a high-level, abstract view of what hyper _is_. It’s the destina
 
 hyper has been around for [a little under 8 years](https://github.com/hyperium/hyper/commit/886551681629de812a87555bb4ecd41515e4dee6). We’ve done a lot of experimenting, learning, trying this and trying that. It has always had an _implicit_ vision, but it’s important to write it out. This makes the vision explicit, clear to everyone. It’s no longer just whatever Sean keeps in his head.
 
-Defining a vision is a way to keep us honest. It provides a measuring stick to determine if we’re getting closer or farther away. It defines a framework on how to make decisions that affect hyper. It empowers others to make those decisions. It allows the project to survive as maintainers<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> and collaborators come and go.
+Defining a vision is a way to keep us honest. It provides a measuring stick to determine if we’re getting closer or farther away. It defines a framework on how to make decisions that affect hyper. It empowers others to make those decisions. It allows the project to survive as maintainers[^1] and collaborators come and go.
 
 ### A Charter and Tenets
 
@@ -60,9 +60,7 @@ After this, we need to map out _how we get there_. That’s the roadmap. That’
 
 Come [join us](https://github.com/hyperium/hyper/pull/2772), let us know what you think, and help us make the protective and efficient HTTP library **for all**!
 
-* * *
 
-1. 
 
-Even me!&nbsp;[↩︎](#fnref:1)
+[^1]: Even me!
 

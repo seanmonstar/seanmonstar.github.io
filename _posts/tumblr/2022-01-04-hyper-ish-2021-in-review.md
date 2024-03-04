@@ -15,7 +15,7 @@ tags:
 - reinvent
 tumblr_url: https://seanmonstar.com/post/672473147126300672/hyper-ish-2021-in-review
 ---
-2021 is done. Finally. I thought it’d be fun to look back and highlight some of things that have happened that are related to [hyper](https://hyper.rs).<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>
+2021 is done. Finally. I thought it’d be fun to look back and highlight some of things that have happened that are related to [hyper](https://hyper.rs).[^1]
 
 ### re:Invent
 
@@ -69,9 +69,7 @@ In the second half of 2021, several of us worked a lot on a really exciting tool
 
 It should be especially useful for service developers, such as those using hyper for their server, as it will provide insight into how the async tasks and resources (mutexes, semaphores, channels, sockets, etc) are behaving. It can help find tasks that are stuck, or slow, or inefficient.
 
-* * *
 
-1. 
 
-hyper-ish, if you will.&nbsp;[↩︎](#fnref:1)
+[^1]: hyper-ish, if you will.
 

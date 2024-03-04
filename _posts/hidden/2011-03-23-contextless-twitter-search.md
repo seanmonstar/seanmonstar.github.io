@@ -15,7 +15,7 @@ tumblr_url: https://seanmonstar.com/post/4054494468/contextless-twitter-search
 
 The issue with Twitter search is that it is currently a real-time global shotgun of tweets; something I have never found useful. Most tweets are useless garbage, even tweets that I allow into my timeline. The reason I read them is for their context: I have similar interests to the people I follow, and so their short 140-character jabs make sense and sometimes even connect with _me_, my being. I have educated myself on many of these people, and therefore have come to enjoy seeing their tweets. When I search on Twitter, I never know any of the people whose tweets I’m barraged with, at a real time pace that no human could possibly keep up with.
 
-Twitter search would be useful if it searched using the context of who I follow<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>. Only search the tweets of those “trusted” sources, and perhaps the tweets that they’ve retweeted, replied to, or maybe even favorited. These are tweets that I would care about, because if it’s information I’m after, I trust those sources to have spoken about the topic in the context of my interests. If it’s an opinion I’m after, I only want opinions of people whom I understand and can appreciate.
+Twitter search would be useful if it searched using the context of who I follow[^1]. Only search the tweets of those “trusted” sources, and perhaps the tweets that they’ve retweeted, replied to, or maybe even favorited. These are tweets that I would care about, because if it’s information I’m after, I trust those sources to have spoken about the topic in the context of my interests. If it’s an opinion I’m after, I only want opinions of people whom I understand and can appreciate.
 
 Google’s first attempt at using the social network’s data was with a super up-to-date widget of tweets that contained the same keywords as what you had searched Google for. Needless to say, they were a net negative, since all it served to do was frustrate and take up space in Google’s SERPs.
 
@@ -27,9 +27,7 @@ In order for trending topics to mean anything to me, they would need to be given
 
 As it is, Twitter assumes I care what the the rest of Twitter has to say. I don’t. If I did, I would follow them.
 
-* * *
 
-1. 
 
-Twitter can keep its global search functionality under its Advanced search. I can see some uses, like when companies want to keep tabs on what anyone on Twitter is saying about them. It shouldn’t be the default, though.&nbsp;[↩︎](#fnref:1)
+[^1]: Twitter can keep its global search functionality under its Advanced search. I can see some uses, like when companies want to keep tabs on what anyone on Twitter is saying about them. It shouldn’t be the default, though.
 

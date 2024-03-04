@@ -15,19 +15,15 @@ Persona is [free open source software](https://github.com/mozilla/persona), and 
 
 ### Firefox Accounts
 
-In the meantime I’ll be working on our [Firefox Accounts](https://wiki.mozilla.org/Identity/Firefox_Accounts) system, which understandably could not rely entirely on Persona<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>. We need to keep Firefox competitive, since it’s what pays for us to do all the other awesomizing we do. Plus, as the Internet becomes more mobile and more multi-device, we need to make sure there is an alternative that puts users first. A goal of Firefox Accounts is to be pluggable, and to integrate with other services on the Web. Why should your OS demand you use their siloed services? If you want to use Box instead of iCloud, we want you to use it.
+In the meantime I’ll be working on our [Firefox Accounts](https://wiki.mozilla.org/Identity/Firefox_Accounts) system, which understandably could not rely entirely on Persona[^1]. We need to keep Firefox competitive, since it’s what pays for us to do all the other awesomizing we do. Plus, as the Internet becomes more mobile and more multi-device, we need to make sure there is an alternative that puts users first. A goal of Firefox Accounts is to be pluggable, and to integrate with other services on the Web. Why should your OS demand you use their siloed services? If you want to use Box instead of iCloud, we want you to use it.
 
-How does this affect Persona? We’re actually using browserid assertions within our account system, since it’s a solved problem that works well. We’ll need to work on a way to get all sorts of services working with your FxAccount, and it might include proliferating browserid assertions everywhere<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>. As we learn, and grow the service so that millions of Firefox users have accounts, we can explore easing them into easily and automatically being Persona users. This solves part of the [chicken-egg problem](https://news.ycombinator.com/item?id=7364465) of Persona, by having millions of users ready to go.
+How does this affect Persona? We’re actually using browserid assertions within our account system, since it’s a solved problem that works well. We’ll need to work on a way to get all sorts of services working with your FxAccount, and it might include proliferating browserid assertions everywhere[^2]. As we learn, and grow the service so that millions of Firefox users have accounts, we can explore easing them into easily and automatically being Persona users. This solves part of the [chicken-egg problem](https://news.ycombinator.com/item?id=7364465) of Persona, by having millions of users ready to go.
 
 I’d definitely rather this have ended up differently, but I can also think of far worse endings. The upside is, Persona still exists, and could take off more so with the help of Firefox. **Persona is dead, long live Persona!**
 
-* * *
 
-1. 
 
-Sync needs a “secret” to encrypt your data before it’s sent to our servers. The easiest solution for users is to provide us a password, and we’ll stretch that and make a secret out of it (so, we don’t actually know your password). Persona doesn’t give us passwords, so we can’t use it.&nbsp;[↩︎](#fnref:1)
+[^1]: Sync needs a “secret” to encrypt your data before it’s sent to our servers. The easiest solution for users is to provide us a password, and we’ll stretch that and make a secret out of it (so, we don’t actually know your password). Persona doesn’t give us passwords, so we can’t use it.
 
-2. 
-
-Where “browserid” assertions are accepted, Persona support can also be found.&nbsp;[↩︎](#fnref:2)
+[^2]: Where “browserid” assertions are accepted, Persona support can also be found.&nbsp;[↩︎](#fnref:2)
 

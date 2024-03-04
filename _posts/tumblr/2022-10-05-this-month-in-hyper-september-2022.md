@@ -11,7 +11,7 @@ tags:
 - http3
 tumblr_url: https://seanmonstar.com/post/697293605419745280/this-month-in-hyper-september-2022
 ---
-And I thought _last_ month was hot, this one was a scorcher (on the US West Coast<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>). but just look at all the wonderful contributors making [hyper](https://hyper.rs) ever better!
+And I thought _last_ month was hot, this one was a scorcher (on the US West Coast[^1]). but just look at all the wonderful contributors making [hyper](https://hyper.rs) ever better!
 
 ### Releases
 
@@ -37,9 +37,7 @@ I gave a [talk for curl-up 2022](https://seanmonstar.com/blog/curl-up-2022-hyper
 
 @Ruben2424 got `h3spec` running in CI, and fixed up things it caught. @eagr signficantly filled out the rest of the [spec compliance report](https://hyper.rs/h3/ci/compliance/report.html), including exceptions and related unit tests. @g2p documented the whole public API, and removed the unused crate dependencies.
 
-* * *
 
-1. 
 
-I’m actually moving across the country, which is why this update was delayed.&nbsp;[↩︎](#fnref:1)
+[^1]: I’m actually moving across the country, which is why this update was delayed.
 

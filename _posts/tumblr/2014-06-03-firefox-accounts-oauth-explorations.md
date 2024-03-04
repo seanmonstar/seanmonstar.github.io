@@ -31,13 +31,13 @@ So far, standard OAuth2. The `client_secret`, `code`, and `token` are 32-byte ra
 
 That means that they ask our OAuth server for a token with scopes ‘profile:email’ and 'foxcoin’. With the token in hand, they ask the Profile server for the user’s email, providing said token as proof that they can receive profile information, and they receive it. **But!** The profile server just received a token that it can use to access the user’s FoxCoin information, acting as Cuddly Foxes. Yikes!
 
-Of course, we can assume the Profile server wouldn’t do anything so nefarious, but having that power is still dangerous. And imagine as we add in more 3rd-party attached services, which inherently are less trustworthy. Additionally, with the [recent discovery in OpenSSL](http://heartbleed.com/), we don’t want to trust TLS alone to protect against sniffing the data as it passes. So, passing around a Bearer token in plain text is unacceptable.<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>
+Of course, we can assume the Profile server wouldn’t do anything so nefarious, but having that power is still dangerous. And imagine as we add in more 3rd-party attached services, which inherently are less trustworthy. Additionally, with the [recent discovery in OpenSSL](http://heartbleed.com/), we don’t want to trust TLS alone to protect against sniffing the data as it passes. So, passing around a Bearer token in plain text is unacceptable.[^1]
 
 ### OAuth2 HMAC
 
 The next step was to consider using a secret token to sign a request, so that the original token is never revealed. This has been excellently explored already by the [Hawk scheme](https://github.com/hueniverse/hawk). The short of it is that 2 parties who share a secret can sign the request with an [HMAC](http://en.wikipedia.org/wiki/Hmac), proving that the request and it’s payload came from one of them. The receiver just computes the same HMAC, and compares signatures. The original secret is never leaked to anyone. Many cookies were had by all.
 
-Adapting that to our OAuth flow, we would return a random token like before, and Cuddly Foxes would use it to generate a Hawk authorization header, and send it to our Profile server. The Profile server, not knowing the secret token, would tediously need to send the various bits of the request making up the signature, plus the authorization header, to our OAuth server. The OAuth server would look up the secret token, compute the HMAC, and return whether it was valid.<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>
+Adapting that to our OAuth flow, we would return a random token like before, and Cuddly Foxes would use it to generate a Hawk authorization header, and send it to our Profile server. The Profile server, not knowing the secret token, would tediously need to send the various bits of the request making up the signature, plus the authorization header, to our OAuth server. The OAuth server would look up the secret token, compute the HMAC, and return whether it was valid.[^2]
 
 This is an improvement, since the secret token is never visible on the wire, nor does the Profile server receive it. However, a downside is that for this to work, the OAuth server needs to keep the original secret token in plain text. Before, we were keeping a hashed copy of it, which meant that a snapshot of our database would not reveal everyone’s secret tokens. We didn’t like this disadvantage, and so continued to explore.
 
@@ -72,15 +72,11 @@ The authorization scheme in the example above is “Gryphon”. It was partly in
 
 [Gryphon isn’t complete](https://github.com/seanmonstar/gryphon). It’s currently in a proof-of-concept stage. There’s a [working branch of our oauth server](https://github.com/mozilla/fxa-oauth-server/pull/29) using it. However, we’d like to get more eyeballs on it before feeling confident about shipping. Are there missing pain points, or use cases not covered? Send me a [comment](mailto:comments@seanmonstar.com), or write up some analysis and [send me the link](https://twitter.com/seanmonstar), or come chat in [#fxa](https://wiki.mozilla.org/IRC), or anything, really.
 
-* * *
 
-1. 
 
-This issue doesn’t appear in all OAuth models. The issue comes from us having multiple mutually-distrusting services, being gated by our OAuth server. We plan to allow clients, such as your website, request data from a service provider, run by your digital neighbor, about a user.
+[^1]: This issue doesn’t appear in all OAuth models. The issue comes from us having multiple mutually-distrusting services, being gated by our OAuth server. We plan to allow clients, such as your website, request data from a service provider, run by your digital neighbor, about a user.
 
-In most cases, all the data comes from the same entity that runs the OAuth server, and so there’s no worry that it will mishandle the power it gives itself.&nbsp;[↩︎](#fnref:1)
+In most cases, all the data comes from the same entity that runs the OAuth server, and so there’s no worry that it will mishandle the power it gives itself.
 
-2. 
-
-A downside here is that this means the OAuth server is doing all hashing for all requests, which puts a requirement on our OAuth server using more resources.&nbsp;[↩︎](#fnref:2)
+[^2]: A downside here is that this means the OAuth server is doing all hashing for all requests, which puts a requirement on our OAuth server using more resources.&nbsp;[↩︎](#fnref:2)
 

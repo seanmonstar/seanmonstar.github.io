@@ -20,7 +20,7 @@ The bigger concern is the way the CVE was filed bypassing the existing security 
 
 ### The impact
 
-The RustSec<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> advisory explains the issue this way:
+The RustSec[^1] advisory explains the issue this way:
 
 > If an attacker is able to flood the network with pairs of `HEADERS`/`RST_STREAM` frames, such that the `h2` application is not able to accept them faster than the bytes are received, the pending accept queue can grow in memory usage. Being able to do this consistently can result in excessive memory use, and eventually trigger Out Of Memory.
 
@@ -32,7 +32,7 @@ But the bigger impact was not this particular issue, but rather that a CVE cause
 
 The original [issue](https://github.com/hyperium/hyper/issues/2877) was filed on May 27, 2022. Trying to better understand, I asked some poorly worded follow-up questions. Another contributor filed a pull request trying to fix the underlying issue. Several collaborators reviewed that PR, but didn’t fully grasp what it was trying to fix. It then fell into the void.
 
-On April 11, 2023, someone decided to file a public CVE for the described issue, without following the security policy. I commented on the issue that while the motivation for doing so was likely good-intentioned, it was the wrong way to go about it. GitHub imported the report, which started triggering dependabot warnings.<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup> This surprised us, and at least four people dropped everything to handle the fire alarm.<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup>
+On April 11, 2023, someone decided to file a public CVE for the described issue, without following the security policy. I commented on the issue that while the motivation for doing so was likely good-intentioned, it was the wrong way to go about it. GitHub imported the report, which started triggering dependabot warnings.[^2] This surprised us, and at least four people dropped everything to handle the fire alarm.[^3]
 
 The first step was trying to determine a reproducible example. We didn’t notice at the time it was filed, but the original issue did not include full reproducible instructions. We tried to create some unit tests to mimic the behavior described, but couldn’t trigger the issue.
 
@@ -44,11 +44,11 @@ We finally found a way to grow the accept queue even when continuously accepting
 
 After 14 hours, we had a fix written and reviewed. We determined that the issue was low severity, as the likelihood of being able to consistently attack was extremely low. And since we were adding a new limit, there was a possiblity of causing a new bug. So, better to not push something right before going to sleep.
 
-The following morning we published the fix, as `h2` v0.3.17. Surprising everyone who has rushed out new code, a new bug in it was indeed found. We then published v0.3.18.<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup>
+The following morning we published the fix, as `h2` v0.3.17. Surprising everyone who has rushed out new code, a new bug in it was indeed found. We then published v0.3.18.[^4]
 
-### Five whys<sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup>
+### Five whys[^5]
 
-- **Why did someone file a CVE suddenly?** We don’t know for sure, but we can guess.<sup id="fnref:6"><a href="#fn:6" class="footnote-ref" role="doc-noteref">6</a></sup> A related issue had been open for a year, not fixed, so perhaps the reporter thought this was the only way to move forward.
+- **Why did someone file a CVE suddenly?** We don’t know for sure, but we can guess.[^6] A related issue had been open for a year, not fixed, so perhaps the reporter thought this was the only way to move forward.
 - **Why wasn’t the issue acted upon a year ago?** When it was initially opened, the maintainers didn’t fully understand what the problem was. Follow-up questions were asked, but even our questions weren’t that clear. Eventually, we forgot about it.
 - **Why was it forgotten?** We didn’t have any recurring reason to check back and try to understand what the issue was. If it had been reported privately to the security address, it would have stayed high priority until it was solved or determined incorrect.
 - **Why wasn’t the initial issue reported privately?** Perhaps the original reporter didn’t know about the policy.
@@ -62,29 +62,17 @@ We can’t completely control someone randomly filing a new CVE and causing anot
 - **Setup a bug report checklist.** There is a [triage guide](https://hyper.rs/contrib/issues/#triaging) for bug reports, which is a good thing. But that doesn’t mean everyone (me included!) always remembers all the steps. Checklists are famous in aviation and medicine for their effectiveness in saving lives. They can also help us make sure all issues are treated properly.
 - **Update the issue templates to use forms instead.** We do have an issue template in place, to try to get people to fill in more information initially. But it’s pretty easy to skip it. It’s possible using GitHub’s new forms instead of just a text template could guide people more often.
 
-* * *
 
-1. 
 
-RustSec and the CVE database are different. RustSec was much more helpful, coordinating with us by waiting until the emergency panic was over, and then discussing the best way to describe the advisory.&nbsp;[↩︎](#fnref:1)
+[^1]: RustSec and the CVE database are different. RustSec was much more helpful, coordinating with us by waiting until the emergency panic was over, and then discussing the best way to describe the advisory.
 
-2. 
+[^2]: I updated the advisory on GitHub’s end to only indicate `h2`, not `hyper`. I also indicated my disappointment in GitHub’s amplifying of the alarm and making the day much more stressful. Their reply: “We do that sometimes XD”. Cool.&nbsp;[↩︎](#fnref:2)
 
-I updated the advisory on GitHub’s end to only indicate `h2`, not `hyper`. I also indicated my disappointment in GitHub’s amplifying of the alarm and making the day much more stressful. Their reply: “We do that sometimes XD”. Cool.&nbsp;[↩︎](#fnref:2)
+[^3]: Meanwhile, a reddit thread took off, watching the action, commenting, and mostly criticizing the actions of all involved. Thankfully, I didn’t read comments like “I don’t have any sympathy for the maintainers” until after the fix was completed.&nbsp;[↩︎](#fnref:3)
 
-3. 
+[^4]: “At least this made you fix it, right?” No. This attitude is toxic. Doing it this way burns out everyone around who could fix it. There is a reporting process for a reason. It helps the most amount of people. Please use it.&nbsp;[↩︎](#fnref:4)
 
-Meanwhile, a reddit thread took off, watching the action, commenting, and mostly criticizing the actions of all involved. Thankfully, I didn’t read comments like “I don’t have any sympathy for the maintainers” until after the fix was completed.&nbsp;[↩︎](#fnref:3)
+[^5]: Not literally five questions, but an [exercise to try to find the root cause](https://en.wikipedia.org/wiki/Five_whys), and to note any extra things that could be fixed along the way.&nbsp;[↩︎](#fnref:5)
 
-4. 
-
-“At least this made you fix it, right?” No. This attitude is toxic. Doing it this way burns out everyone around who could fix it. There is a reporting process for a reason. It helps the most amount of people. Please use it.&nbsp;[↩︎](#fnref:4)
-
-5. 
-
-Not literally five questions, but an [exercise to try to find the root cause](https://en.wikipedia.org/wiki/Five_whys), and to note any extra things that could be fixed along the way.&nbsp;[↩︎](#fnref:5)
-
-6. 
-
-Some people tried to infer bad motives, such as for clout or “another notch on a security researchers belt”. I see no reason to assume that with no evidence.&nbsp;[↩︎](#fnref:6)
+[^6]: Some people tried to infer bad motives, such as for clout or “another notch on a security researchers belt”. I see no reason to assume that with no evidence.&nbsp;[↩︎](#fnref:6)
 

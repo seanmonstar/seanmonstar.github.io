@@ -15,13 +15,11 @@ Dave Winer’s take:
 > 
 > Simply put, a real name is worth more than a fake one.
 
-I don’t see the conspiracy theory others seem to see. I see a decision made by people involved in a project who wanted the project work a certain way.<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> I’d rather see people’s real names. I prefer real names on Twitter, also.
+I don’t see the conspiracy theory others seem to see. I see a decision made by people involved in a project who wanted the project work a certain way.[^1] I’d rather see people’s real names. I prefer real names on Twitter, also.
 
 Then again, I’ve disagreed with much of what Dave suggests recently.
 
-* * *
 
-1. 
 
-I might be naive. Where I’ve worked, we just kick around ideas about how to make the product the best.&nbsp;[↩︎](#fnref:1)
+[^1]: I might be naive. Where I’ve worked, we just kick around ideas about how to make the product the best.
 

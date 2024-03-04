@@ -17,7 +17,7 @@ I’m calling the time period between the first release candidate and the final 
 
 The main thrust is to polish the edges, and make the final release of hyper 1.0 as smooth as possible for all. It’s still quite a lot to do, and several of the areas will actively benefit from a mixture of experience helping out. It seems there’s four main areas of work to do, so we need a few things from the community:
 
-- Folks to volunteer to “lead” an area.<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>
+- Folks to volunteer to “lead” an area.[^1]
 - Anyone to pick a task from an area and work on it.
 - Try to _use_ the release candidates, and give us feedback.
 
@@ -37,13 +37,13 @@ While [guides](https://hyper.rs/guides) are technically part of the website, I v
 
 Many of the less stable, higher level parts of hyper 0.14.x have been removed, with the promise of most showing back up in [`hyper-util`](https://github.com/hyperium/hyper-util). Some of these are very simple ports. Others will be made more generic or configurable, encouraging users to plug and play on top of it all.
 
-For example, consider the previous `hyper::Client` . It combined many concepts together for the convenience of users: a mechanism to establish new connections, a pool to store idle connections for a period of time, and a way for the connector to signal to the pool if HTTP/2 was negotiated via ALPN. You could only customize those pieces if specific options were part of the client `Builder`. As part of the move to `hyper-util`, the way those pieces plug together can be made public.<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup> That does likely mean more work on our part though.
+For example, consider the previous `hyper::Client` . It combined many concepts together for the convenience of users: a mechanism to establish new connections, a pool to store idle connections for a period of time, and a way for the connector to signal to the pool if HTTP/2 was negotiated via ALPN. You could only customize those pieces if specific options were part of the client `Builder`. As part of the move to `hyper-util`, the way those pieces plug together can be made public.[^2] That does likely mean more work on our part though.
 
 #### Area: Upgrading
 
 We want as smooth of an _upgrade_ as possible.
 
-The smoothest would be if there were _only_ types or methods being removed. Then we could just add deprecations in 0.14.x, and the compiler would help people prepare early. But, when an upgrade involves _changes_ to methods, or behavior, it’s more complicated.<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup> Still, the more we can do to make things easier, the better!
+The smoothest would be if there were _only_ types or methods being removed. Then we could just add deprecations in 0.14.x, and the compiler would help people prepare early. But, when an upgrade involves _changes_ to methods, or behavior, it’s more complicated.[^3] Still, the more we can do to make things easier, the better!
 
 As described in the [upgrade meta issue](https://github.com/hyperium/hyper/issues/3052), we can backport some of the new additions, and we can use `#[deprecated]` to guide people to start using better stuff earlier.
 
@@ -79,17 +79,11 @@ Check out the boards, implement [something cool](https://github.com/orgs/hyperiu
 
 1.0, here we come!
 
-* * *
 
-1. 
 
-Volunteering to lead an area doesn’t mean you’ll be the sole person responsible. Multiple can do so.&nbsp;[↩︎](#fnref:1)
+[^1]: Volunteering to lead an area doesn’t mean you’ll be the sole person responsible. Multiple can do so.
 
-2. 
+[^2]: Since the client pieces are not part of the stable `hyper` core, we don’t have to be quite as careful about not exposing some internals. It’s less of an issue to release breaking changes of utilities.&nbsp;[↩︎](#fnref:2)
 
-Since the client pieces are not part of the stable `hyper` core, we don’t have to be quite as careful about not exposing some internals. It’s less of an issue to release breaking changes of utilities.&nbsp;[↩︎](#fnref:2)
-
-3. 
-
-I suppose it is doable by stretching those kinds of changes out over 2 major releases. You could add a stop-gap method and deprecation on the original the current version, then in the next make the breaking change and add a deprecation to the stop-gap method, and then remove it in the second release. hyper isn’t at that level of stability just yet, but something we could consider after 1.0.&nbsp;[↩︎](#fnref:3)
+[^3]: I suppose it is doable by stretching those kinds of changes out over 2 major releases. You could add a stop-gap method and deprecation on the original the current version, then in the next make the breaking change and add a deprecation to the stop-gap method, and then remove it in the second release. hyper isn’t at that level of stability just yet, but something we could consider after 1.0.&nbsp;[↩︎](#fnref:3)
 

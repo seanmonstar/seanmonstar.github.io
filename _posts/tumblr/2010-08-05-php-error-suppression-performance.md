@@ -14,7 +14,7 @@ I first built a simple test that would loop a million times accessing a variable
 
 > [The] assertion that it is the act of the @ operator that is very slow, is wrong. It is in fact the actual triggering of the error or warning by itself.
 
-His tests show that while the suppression operator does add a little overhead, when an actual error<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> occurs, you see a bigger cost. When using the suppression operator, you’re writing in a style that let’s you cause errors and not care, which decreases performance. The same thing applies to setting `error_reporting` to ignore notices or warnings. Just because their ignored, doesn’t mean PHP doesn’t try to throw them first.
+His tests show that while the suppression operator does add a little overhead, when an actual error[^1] occurs, you see a bigger cost. When using the suppression operator, you’re writing in a style that let’s you cause errors and not care, which decreases performance. The same thing applies to setting `error_reporting` to ignore notices or warnings. Just because their ignored, doesn’t mean PHP doesn’t try to throw them first.
 
 A common example is when checking for properties of an object. When ignoring notices, you might do something like this:
 
@@ -61,9 +61,7 @@ Just to be sure, I altered my original test to check the differences between usi
 
 Now, this might not be the biggest thing in the world. But it’s enough for me to change my ways, since it affects me once to write it, and my users an infinite amount of times having to execute. Since I believe in optimizing for users instead of developers, that’s how it’s going to be.
 
-* * *
 
-1. 
 
-I use the term error to mean any message thrown. It includes errors, warnings, notices, etc.&nbsp;[↩︎](#fnref:1)
+[^1]: I use the term error to mean any message thrown. It includes errors, warnings, notices, etc.
 

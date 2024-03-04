@@ -40,7 +40,7 @@ A user might decide they need to do something different depending on the version
         Version::Http2 => println!("2"),
     }
 
-That feels quite nice! But then as a library, you realize you need to add a new variant to support HTTP/3. By doing that, you’ll break compilation for the user, since they are trying to exhaustively match on a pattern which is no longer exhaustive. Rust now has an attribute, `#[non_exhaustive]`, which you can place on a definition to protect your users from these changes.<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>
+That feels quite nice! But then as a library, you realize you need to add a new variant to support HTTP/3. By doing that, you’ll break compilation for the user, since they are trying to exhaustively match on a pattern which is no longer exhaustive. Rust now has an attribute, `#[non_exhaustive]`, which you can place on a definition to protect your users from these changes.[^1]
 
     #[non_exhaustive]
     enum Version {
@@ -170,7 +170,7 @@ If later on, we want to add some `Resolve` variants, we can promote it to an enu
         Io(unnameable::Io),
     }
 
-The question of _should we_ still lingers, though. I can’t say what the right answer is. I leave this here hoping someone will explore the idea more thoroughly, and tell us how great or horrid it is.<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>
+The question of _should we_ still lingers, though. I can’t say what the right answer is. I leave this here hoping someone will explore the idea more thoroughly, and tell us how great or horrid it is.[^2]
 
 ### Open-ended variants
 
@@ -220,19 +220,13 @@ Users can still match on the common “variants”, but specifically _can’t_ m
 
 Even when a new status code constant is added, that existing code will continue to work. It does make it harder to _exhaustively_ match on all possible status codes, but there are enough of them that the likelihood of anyone wanting to do that is very low.
 
-Turns out, this works well when matching for equality!<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup> `http::Method` uses this too. This lesson also inspired a lot of changes in the [`headers`](https://crates.io/crates/headers) crate.
+Turns out, this works well when matching for equality![^3] `http::Method` uses this too. This lesson also inspired a lot of changes in the [`headers`](https://crates.io/crates/headers) crate.
 
-* * *
 
-1. 
 
-We made the `http::Version` type before `#[non_exhaustive]` existed, using a similar technique to `StatusCode`. We could switch it, but seeing them as constants feels _right_.&nbsp;[↩︎](#fnref:1)
+[^1]: We made the `http::Version` type before `#[non_exhaustive]` existed, using a similar technique to `StatusCode`. We could switch it, but seeing them as constants feels _right_.
 
-2. 
+[^2]: Probably somewhere in the middle, as is the usual when comparing trade-offs.&nbsp;[↩︎](#fnref:2)
 
-Probably somewhere in the middle, as is the usual when comparing trade-offs.&nbsp;[↩︎](#fnref:2)
-
-3. 
-
-There’s another case regarding open-ended variants, but I think it’s big enough to be a separate post.&nbsp;[↩︎](#fnref:3)
+[^3]: There’s another case regarding open-ended variants, but I think it’s big enough to be a separate post.&nbsp;[↩︎](#fnref:3)
 

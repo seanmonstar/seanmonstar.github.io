@@ -10,7 +10,7 @@ tumblr_url: https://seanmonstar.com/post/754502783/fixing-html5-loaded-via-ajax-
 ---
 Internet Explorer doesn’t support HTML5 elements. You must provide a [shim](http://www.google.com/search?q=ie+html5+shim). But this only helps fix any markup that is in the original document. If you receive more markup via an ajax request, and want to insert it into the document, IE has a hissy fit. You can’t stick HTML like that into some elements `innerHTML` property and hope it parses correctly.
 
-What I did instead, was before inserting the HTML, I’d find all HTML5 elements<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>, convert them to spans with an extra attribute `htmlfix` with the value set to the tag name it should be. Then after inserting into an `innerHTML`, I’d find all the spans with an `htmlfix` attribute, create the proper element, transfer all its `attributes`, set its `innerHTML`, and `replaceNode`.<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>
+What I did instead, was before inserting the HTML, I’d find all HTML5 elements[^1], convert them to spans with an extra attribute `htmlfix` with the value set to the tag name it should be. Then after inserting into an `innerHTML`, I’d find all the spans with an `htmlfix` attribute, create the proper element, transfer all its `attributes`, set its `innerHTML`, and `replaceNode`.[^2]
 
     function processAjax(content) {
         var spanned = content,
@@ -45,13 +45,9 @@ What I did instead, was before inserting the HTML, I’d find all HTML5 elements
         return el;
     }
 
-* * *
 
-1. 
 
-Yes, I used [Regex to parse HTML](http://stackoverflow.com/questions/1732348/regex-match-open-tags-except-xhtml-self-contained-tags/1732454#1732454). No, it didn’t create a rift in space. [I knew what I was doing](http://www.codinghorror.com/blog/2009/11/parsing-html-the-cthulhu-way.html).&nbsp;[↩︎](#fnref:1)
+[^1]: Yes, I used [Regex to parse HTML](http://stackoverflow.com/questions/1732348/regex-match-open-tags-except-xhtml-self-contained-tags/1732454#1732454). No, it didn’t create a rift in space. [I knew what I was doing](http://www.codinghorror.com/blog/2009/11/parsing-html-the-cthulhu-way.html).
 
-2. 
-
-This uses [MooTools](http://www.mootools.net), because it’s awesome. I wasn’t feeling very masochistic this time around, so I didn’t create a vanilla JS version.&nbsp;[↩︎](#fnref:2)
+[^2]: This uses [MooTools](http://www.mootools.net), because it’s awesome. I wasn’t feeling very masochistic this time around, so I didn’t create a vanilla JS version.&nbsp;[↩︎](#fnref:2)
 

@@ -16,11 +16,9 @@ It would be similar to saying that no one should compete with Porsches, because 
 
 Back to tablets, if the only quality, general-purpose tablet is the iPad, then anyone who wants something different needs to buy a tablet built for reading and games (Kindle Fire) to try to fill his desires of using a tablet to replace his notebook.
 
-In any other market, the notion that there should be only one without competition is non-sense. Why do technology enthusiasts think differently?<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>
+In any other market, the notion that there should be only one without competition is non-sense. Why do technology enthusiasts think differently?[^1]
 
-* * *
 
-1. 
 
-Both sides are guilty of this. Apple fans think only the iPad matters. Fandroids think that Apple devices should die. I personally think both are great, and appeal to different audiences.&nbsp;[↩︎](#fnref:1)
+[^1]: Both sides are guilty of this. Apple fans think only the iPad matters. Fandroids think that Apple devices should die. I personally think both are great, and appeal to different audiences.
 

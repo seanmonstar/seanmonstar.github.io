@@ -13,7 +13,7 @@ tumblr_url: https://seanmonstar.com/post/153221119046/introducing-reqwest
 ---
 In web development, you can find resource after resource, framework after library, all helping you to build a web server. But what if you need to use a client? So many applications need to download something from the web, or to upload some data, and in many instances are left with the standard HTTP library to do it. That works, but it’s so much better to be able to reach for a tool that includes the batteries in the packaging. Several languages have something like this. Now Rust does too.
 
-If you need to make HTTP requests in your application, you probably want to reach for [reqwest](https://github.com/seanmonstar/reqwest).<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>
+If you need to make HTTP requests in your application, you probably want to reach for [reqwest](https://github.com/seanmonstar/reqwest).[^1]
 
 ### Convenience
 
@@ -65,7 +65,7 @@ Blah blah, what does all that mean for you? That on whichever OS you happen to b
 
 ### The Future
 
-Another reason to use `reqwest` is to ease the upcoming changes to [hyper](http://hyper.rs), which is adopting non-blocking IO. Many applications do not need to make thousands of requests. Many just need to make 1, or a few, and writing code in a blocking style is easier. Without the need to make thousands of requests, the benefits of non-blocking IO are fewer. So, `reqwest::Client` plans to always provide a blocking API. Even when hyper releases with non-blocking IO, `reqwest` will upgrade to it and still present the `Client` with the same API. Your code won’t need to change, but it will become more robust underneath.<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>
+Another reason to use `reqwest` is to ease the upcoming changes to [hyper](http://hyper.rs), which is adopting non-blocking IO. Many applications do not need to make thousands of requests. Many just need to make 1, or a few, and writing code in a blocking style is easier. Without the need to make thousands of requests, the benefits of non-blocking IO are fewer. So, `reqwest::Client` plans to always provide a blocking API. Even when hyper releases with non-blocking IO, `reqwest` will upgrade to it and still present the `Client` with the same API. Your code won’t need to change, but it will become more robust underneath.[^2]
 
 Others will likely want many of the convenient features of `reqwest`, but _with_ non-blocking sockets instead. There will likely be a `reqwest::AsyncClient` or similar added as well.
 
@@ -79,13 +79,9 @@ Besides the eventual upgrade to non-blocking IO, the plan is that `reqwest` will
 
 [Come help make it happen!](https://github.com/seanmonstar/reqwest)
 
-* * *
 
-1. 
 
-The odd name is an unfortunate consequence of being late to the party. The `request` crate is effectively abandonware. I’ve tried reaching out to the author in various ways, but he seems to have disappeared from the internets. The `requests` crate (with an ’s’) also exists, but does seem to be actively developed.&nbsp;[↩︎](#fnref:1)
+[^1]: The odd name is an unfortunate consequence of being late to the party. The `request` crate is effectively abandonware. I’ve tried reaching out to the author in various ways, but he seems to have disappeared from the internets. The `requests` crate (with an ’s’) also exists, but does seem to be actively developed.
 
-2. 
-
-Using non-blocking sockets internally is still an improvement for anyone wanting a blocking API. It’s not currently possible to make the blocking TCP sockets have a timeout when doing DNS resolution and connecting, but asynchronous versions can use a timeout. It also means it is easier to determine when a socket in the pool has been closed, and can recycle it more reliably.&nbsp;[↩︎](#fnref:2)
+[^2]: Using non-blocking sockets internally is still an improvement for anyone wanting a blocking API. It’s not currently possible to make the blocking TCP sockets have a timeout when doing DNS resolution and connecting, but asynchronous versions can use a timeout. It also means it is easier to determine when a socket in the pool has been closed, and can recycle it more reliably.&nbsp;[↩︎](#fnref:2)
 

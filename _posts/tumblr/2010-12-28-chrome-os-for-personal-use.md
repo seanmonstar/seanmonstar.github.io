@@ -9,7 +9,7 @@ tags:
 - planet
 tumblr_url: https://seanmonstar.com/post/2500505715/chrome-os-for-personal-use
 ---
-First off, [Engadget’s observations](http://www.engadget.com/2010/12/09/google-cr-48-chrome-laptop-preview/) are very much in line with my own. Reading that should give you a good overview of the device. However, I want to explore the effectiveness of Chrome OS for my own personal uses<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>.
+First off, [Engadget’s observations](http://www.engadget.com/2010/12/09/google-cr-48-chrome-laptop-preview/) are very much in line with my own. Reading that should give you a good overview of the device. However, I want to explore the effectiveness of Chrome OS for my own personal uses[^1].
 
 Non-work related things I use the computer for:
 
@@ -33,7 +33,7 @@ Tumblr also works. When it’s up.
 
 I usually do all my writing in SimpleNote, and then bother to post it into Tumblr when it’s been editted and fine tuned. In fact, I’m currently writing this on the Cr-48, in the SimpleNote web app. Seamless.
 
-All the video I watch is online. Netflix, Hulu, Youtube. For the most part. it sucks. Especially Flash video. The tiny little processor in this netbook just can’t render all that video on it’s CPU. This makes watching Hulu quite unbareable.<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup> However, using the Youtube5 extension to watch videos in HTML 5, Youtube is passable. It’s still a little choppy on videos needing a really high framerate.
+All the video I watch is online. Netflix, Hulu, Youtube. For the most part. it sucks. Especially Flash video. The tiny little processor in this netbook just can’t render all that video on it’s CPU. This makes watching Hulu quite unbareable.[^2] However, using the Youtube5 extension to watch videos in HTML 5, Youtube is passable. It’s still a little choppy on videos needing a really high framerate.
 
 I actually use Chat much more for work, but I do chat with my brother rather often. And Google Talk feels really good here. The persitent chat windows feel really swell. You can minimize them, too, and that makes them be little tiny slivers at the bottom of the screen, tucked out of the way.
 
@@ -47,13 +47,9 @@ I absolutely **love** the instant-on of this notebook, though. From off, it seem
 
 Thanks, Google.
 
-* * *
 
-1. 
 
-I’ll explore what it’s like trying to develop software on this after I explore more options on this thing.&nbsp;[↩︎](#fnref:1)
+[^1]: I’ll explore what it’s like trying to develop software on this after I explore more options on this thing.
 
-2. 
-
-C'mon Hulu, hurry up and provide HTML5 video support already.&nbsp;[↩︎](#fnref:2)
+[^2]: C'mon Hulu, hurry up and provide HTML5 video support already.&nbsp;[↩︎](#fnref:2)
 

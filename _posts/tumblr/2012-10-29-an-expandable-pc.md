@@ -24,7 +24,7 @@ So when I see other people mention the same ideas bouncing around in my head, I�
 
 > I can drop my Series 7 tablet into a dock, add a Bluetooth mouse and keyboard, and connect a monitor — poof, I’ve got a full-fledged dual-monitor setup going. When I want to go somewhere, I just pick the device up out of the dock, and walk out the door tablet in hand.
 
-This is exactly what I want. I _love_ my smartphone, because it’s always with me. And I love my desktop because it’s so much easier to type on a full keyboard, have decent speakers, and use multiple big monitors. I don’t necessarily need the giant Tower part in the middle<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>. What if my phone or my tablet was the computer at my desktop, with all the useful peripherals plugged into it?
+This is exactly what I want. I _love_ my smartphone, because it’s always with me. And I love my desktop because it’s so much easier to type on a full keyboard, have decent speakers, and use multiple big monitors. I don’t necessarily need the giant Tower part in the middle[^1]. What if my phone or my tablet was the computer at my desktop, with all the useful peripherals plugged into it?
 
 Microsoft’s Surface and Windows 8 feel like a prime candidate for this experiment. It’s still got Windows, so I can still do my usual work of testing in browsers, writing code, playing with git, and the like. There would be no obstacles to productivity even, since I’ll be using my laptop and monitors. And then, when I’m done, and want to go into the living room, or hang out in Starbucks to get my people dose for the week, I can just pick it up and go.
 
@@ -32,9 +32,7 @@ I realize that many people have been doing that with laptops for years, but I ha
 
 The Surface is now out, and while it remains to be seen if it is the right fit for this expandable PC, it certainly looks like the closest product yet. We’re not too far away from a time when [tablets replace everything](http://seanmonstar.com/blog/tablets-will-replace-everything/).
 
-* * *
 
-1. 
 
-I do, actually, since I compile code, and run massive test suites, and I don’t want those going any slower than they do. Plus, gaming.&nbsp;[↩︎](#fnref:1)
+[^1]: I do, actually, since I compile code, and run massive test suites, and I don’t want those going any slower than they do. Plus, gaming.
 

@@ -28,7 +28,7 @@ Disregarding how ugly the error looks, the Windows team could have at least inte
 
 ### In Blazonco
 
-A while ago, I went through and documented many of the errors that errors that might bubble up in Blazonco. We’ve created a help page for each error, which depends on its unique error code number. I also tried to make sure that all errors are in a language the user understands. Error codes mean nothing to most people, so we don’t display them. They’re only in the link that the user can click to learn more about<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>. They don’t need to see that I tried to reference a property of a null object, or that file system threw an error about permissions. Instead, I tried to catch all those, and throw a much _prettier_ error.
+A while ago, I went through and documented many of the errors that errors that might bubble up in Blazonco. We’ve created a help page for each error, which depends on its unique error code number. I also tried to make sure that all errors are in a language the user understands. Error codes mean nothing to most people, so we don’t display them. They’re only in the link that the user can click to learn more about[^1]. They don’t need to see that I tried to reference a property of a null object, or that file system threw an error about permissions. Instead, I tried to catch all those, and throw a much _prettier_ error.
 
 ![cryptic SQL error](https://64.media.tumblr.com/tumblr_l5imtxrjna1qzek7l.jpg) ![user friendly error](https://64.media.tumblr.com/tumblr_l5imu51ykn1qzek7l.jpg)
 
@@ -46,9 +46,7 @@ We basically have a `try/catch` at the top most function of our application, whi
 
 We still throw an exception, because an error did exist, but we can show much more meaning knowing that it’s a `BlogPostException`, and the message is much more meaningful to the user than what the SQLSTATE would have said.
 
-* * *
 
-1. 
 
-We also [log](http://www.codinghorror.com/blog/2009/04/exception-driven-development.html) all errors that occur. That way, each morning, I can open up our Superadmin and see if a user has ran into an unexpected internal error, or if a lot of users are receiving an “excepted” error too often, suggesting a flaw in the UI.&nbsp;[↩︎](#fnref:1)
+[^1]: We also [log](http://www.codinghorror.com/blog/2009/04/exception-driven-development.html) all errors that occur. That way, each morning, I can open up our Superadmin and see if a user has ran into an unexpected internal error, or if a lot of users are receiving an “excepted” error too often, suggesting a flaw in the UI.
 

@@ -12,7 +12,7 @@ tumblr_url: https://seanmonstar.com/post/175280388657/better-http-upgrades-with-
 ---
 It’s been possible to [handle HTTP Upgrades](http://seanmonstar.com/blog/http-upgrades-with-hyper/) (like Websockets) in [hyper](https://hyper.rs) if you made use of the low-level APIs in the server and client, but it wasn’t especially nice to work with. It also meant to handle upgrades, you couldn’t use the nicer things that hyper takes care of for you with `Client` or `Server`.
 
-In hyper [v0.12.3](https://github.com/hyperium/hyper/releases/tag/v0.12.3)<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>, **handling upgrades is much easier!**
+In hyper [v0.12.3](https://github.com/hyperium/hyper/releases/tag/v0.12.3)[^1], **handling upgrades is much easier!**
 
 ### Body::on\_upgrade()
 
@@ -71,9 +71,7 @@ Take a look at these simplified examples upgrading to Websockets:
 
 There’s a [fuller example](https://github.com/hyperium/hyper/blob/master/examples/upgrades.rs) of a client and server that upgrade in the same program as well.
 
-* * *
 
-1. 
 
-Most support was made available in [v0.12.2](https://github.com/hyperium/hyper/releases/tag/v0.12.2), but [v0.12.3](https://github.com/hyperium/hyper/releases/tag/v0.12.3) fixed a couple missing pieces when trying to do `CONNECT` requests over the `Client`. Everything else worked in [v0.12.2](https://github.com/hyperium/hyper/releases/tag/v0.12.2).&nbsp;[↩︎](#fnref:1)
+[^1]: Most support was made available in [v0.12.2](https://github.com/hyperium/hyper/releases/tag/v0.12.2), but [v0.12.3](https://github.com/hyperium/hyper/releases/tag/v0.12.3) fixed a couple missing pieces when trying to do `CONNECT` requests over the `Client`. Everything else worked in [v0.12.2](https://github.com/hyperium/hyper/releases/tag/v0.12.2).
 

@@ -9,7 +9,7 @@ tags:
 - lag-fix
 tumblr_url: https://seanmonstar.com/post/3044912970/galaxy-s-file-system
 ---
-My [phone](http://www.amazon.com/gp/product/B003TXSKNE?tag=seanmonstar-20) felt pretty fast when [I got my hands on it](http://seanmonstar.com/blog/samsung-galaxy-vibrant-review/) last summer, but I’d done my fair share of complaining about seemingly super slow apps. I figured the developers of those apps just plain sucked. I was a little surprised that [my brother](http://tractorbeamtuesdays.tumblr.com), owner of a Droid X, didn’t notice the same slow downs. A [Google search later](http://androidforums.com/captivate-support-troubleshooting/215225-wondering-why-facebook-app-really-slow.html), and I found out it was actually Samsung who sucks. Samsung built a rockin’ phone, and included a terrible [Robust FAT File System](http://www.samsung.com/global/business/semiconductor/products/fusionmemory/Products_RFS_Brochure.html)<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>.
+My [phone](http://www.amazon.com/gp/product/B003TXSKNE?tag=seanmonstar-20) felt pretty fast when [I got my hands on it](http://seanmonstar.com/blog/samsung-galaxy-vibrant-review/) last summer, but I’d done my fair share of complaining about seemingly super slow apps. I figured the developers of those apps just plain sucked. I was a little surprised that [my brother](http://tractorbeamtuesdays.tumblr.com), owner of a Droid X, didn’t notice the same slow downs. A [Google search later](http://androidforums.com/captivate-support-troubleshooting/215225-wondering-why-facebook-app-really-slow.html), and I found out it was actually Samsung who sucks. Samsung built a rockin’ phone, and included a terrible [Robust FAT File System](http://www.samsung.com/global/business/semiconductor/products/fusionmemory/Products_RFS_Brochure.html)[^1].
 
 The fix is to convert to an [Ext4](http://en.wikipedia.org/wiki/Ext4) file system. Theoretically, you just flash a patch that changes your file structure, but I believe I picked a patch that was incompatible with the ROM I originally had installed. My phone would no longer boot, and I cried. If this happens to you, feel free to cry. Then, follow [this guy’s video walkthrough](http://www.youtube.com/watch?v=9nMCBbdAcHU), and your phone is back to factory settings.
 
@@ -27,9 +27,7 @@ To do this sort of thing quickly, follow these steps.
 
 It seems complicated at first, but once you start the flashing, you’ll be surprised at how much of it does itself. While you’re at it, if you want any other goodies, or perhaps a different ROM, checkout the [Vibrant bible](http://forum.xda-developers.com/showthread.php?t=771111) over on XDA.
 
-* * *
 
-1. 
 
-If you’ve noticed things like “lag-fix”, or “voodoo” fix, those are all about how to fix Samsung’s screw up.&nbsp;[↩︎](#fnref:1)
+[^1]: If you’ve noticed things like “lag-fix”, or “voodoo” fix, those are all about how to fix Samsung’s screw up.
 
