@@ -47,5 +47,5 @@ I don’t say all of this to brag, or say “look at me”. I want to give an ex
 
 [^1]: What follows is a bit of life story, including only the bits where I asked and asked for something better.
 
-[^2]: It should go without saying, but I must say it anyways: you must also be hard working and decent at what you do.&nbsp;[↩︎](#fnref:2)
+[^2]: It should go without saying, but I must say it anyways: you must also be hard working and decent at what you do.
 

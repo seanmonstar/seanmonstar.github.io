@@ -96,9 +96,9 @@ I love the [Galaxy](http://www.amazon.com/gp/product/B003TXSKNE?tag=seanmonstar-
 
 [^1]: I currently access my articles through the [Hard Copy app](http://www.appbrain.com/app/hard-copy-pro-(ad-free)/com.tonycosentini.hardcopypro), from [Tony Cosentini](http://endlesswhileloop.com/).
 
-[^2]: I don’t need 7 home screens, so I dropped down to 3, but the programmers determine the middle as screen 4, no matter what. Did no one ever teach them how to find the middle of something?&nbsp;[↩︎](#fnref:2)
+[^2]: I don’t need 7 home screens, so I dropped down to 3, but the programmers determine the middle as screen 4, no matter what. Did no one ever teach them how to find the middle of something?
 
-[^3]: TouchWiz default launcher.&nbsp;[↩︎](#fnref:3)
+[^3]: TouchWiz default launcher.
 
-[^4]: In iOS 4, if the application has been re-compiled to use fast-app switching, you _can_ switch back to an app now.&nbsp;[↩︎](#fnref:4)
+[^4]: In iOS 4, if the application has been re-compiled to use fast-app switching, you _can_ switch back to an app now.
 

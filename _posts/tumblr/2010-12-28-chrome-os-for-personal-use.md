@@ -51,5 +51,5 @@ Thanks, Google.
 
 [^1]: I’ll explore what it’s like trying to develop software on this after I explore more options on this thing.
 
-[^2]: C'mon Hulu, hurry up and provide HTML5 video support already.&nbsp;[↩︎](#fnref:2)
+[^2]: C'mon Hulu, hurry up and provide HTML5 video support already.
 

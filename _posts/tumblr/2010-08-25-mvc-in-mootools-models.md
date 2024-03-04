@@ -59,7 +59,7 @@ The point of using Models in this framework is to have a single location that is
 
 [^1]: From here on out, my use of a JavaScript application is one where a large amount of it is written in JavaScript. Sure, your requests still need to interact with a server-side technology, but on the client side, most of the application functions without page refreshes.
 
-[^2]: The assumption is made that you know what MVC is. If not, [read up](http://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller).&nbsp;[↩︎](#fnref:2)
+[^2]: The assumption is made that you know what MVC is. If not, [read up](http://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller).
 
-[^3]: Whether the Model or the Controller should do the ajax requests has been [argued](http://www.alistapart.com/articles/javascript-mvc/) both ways when used in a JavaScript MVC framework, . Since the primary reason for a Model is to abstract the data storage system, it makes sense to me that only the Model should know if it needs to access a web server via ajax, or use localStorage, or use SQLite.&nbsp;[↩︎](#fnref:3)
+[^3]: Whether the Model or the Controller should do the ajax requests has been [argued](http://www.alistapart.com/articles/javascript-mvc/) both ways when used in a JavaScript MVC framework, . Since the primary reason for a Model is to abstract the data storage system, it makes sense to me that only the Model should know if it needs to access a web server via ajax, or use localStorage, or use SQLite.
 

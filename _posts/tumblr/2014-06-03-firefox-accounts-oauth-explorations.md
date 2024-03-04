@@ -78,5 +78,5 @@ The authorization scheme in the example above is “Gryphon”. It was partly in
 
 In most cases, all the data comes from the same entity that runs the OAuth server, and so there’s no worry that it will mishandle the power it gives itself.
 
-[^2]: A downside here is that this means the OAuth server is doing all hashing for all requests, which puts a requirement on our OAuth server using more resources.&nbsp;[↩︎](#fnref:2)
+[^2]: A downside here is that this means the OAuth server is doing all hashing for all requests, which puts a requirement on our OAuth server using more resources.
 

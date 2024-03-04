@@ -49,5 +49,5 @@ What I did instead, was before inserting the HTML, I’d find all HTML5 elements
 
 [^1]: Yes, I used [Regex to parse HTML](http://stackoverflow.com/questions/1732348/regex-match-open-tags-except-xhtml-self-contained-tags/1732454#1732454). No, it didn’t create a rift in space. [I knew what I was doing](http://www.codinghorror.com/blog/2009/11/parsing-html-the-cthulhu-way.html).
 
-[^2]: This uses [MooTools](http://www.mootools.net), because it’s awesome. I wasn’t feeling very masochistic this time around, so I didn’t create a vanilla JS version.&nbsp;[↩︎](#fnref:2)
+[^2]: This uses [MooTools](http://www.mootools.net), because it’s awesome. I wasn’t feeling very masochistic this time around, so I didn’t create a vanilla JS version.
 

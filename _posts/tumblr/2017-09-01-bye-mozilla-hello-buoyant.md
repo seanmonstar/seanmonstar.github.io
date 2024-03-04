@@ -42,7 +42,7 @@ This is a really sad day for me, but I’m also super excited for next week![^3]
 
 [^1]: I’ve been at Mozilla for over 6 years! It’s like I’m leaving part of my family, part of how I identify myself in the world. Not many places really grip you personally like Mozilla does.
 
-[^2]: I really tried to get into the nodejs community a few years ago, but eventually ran into enough cases of elitism that I gave up. Thankfully, the Rust community is fantastic any way I can measure.&nbsp;[↩︎](#fnref:2)
+[^2]: I really tried to get into the nodejs community a few years ago, but eventually ran into enough cases of elitism that I gave up. Thankfully, the Rust community is fantastic any way I can measure.
 
-[^3]: Worst. Roller coaster. Ever.&nbsp;[↩︎](#fnref:3)
+[^3]: Worst. Roller coaster. Ever.
 

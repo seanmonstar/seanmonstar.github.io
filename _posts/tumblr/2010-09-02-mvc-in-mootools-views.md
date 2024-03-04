@@ -64,5 +64,5 @@ Good news, though: Controllers have a convenience method called `view` that real
 
 [^1]: The string concatenation is done internally. Everything in the template is turned into a string using [John Resig’s micro-templating](http://ejohn.org/blog/javascript-micro-templating/) suggestion.
 
-[^2]: Regular DOM methods might not though. `appendChild` expects an Element, and since it’s not part of MooTools, it’s not rigged up to called `toElement`. Also, because of the way `toString` works with Classes in Internet Explorer, this feature doesn’t work in those browsers. MooTools 1.3 repairs that problem.&nbsp;[↩︎](#fnref:2)
+[^2]: Regular DOM methods might not though. `appendChild` expects an Element, and since it’s not part of MooTools, it’s not rigged up to called `toElement`. Also, because of the way `toString` works with Classes in Internet Explorer, this feature doesn’t work in those browsers. MooTools 1.3 repairs that problem.
 

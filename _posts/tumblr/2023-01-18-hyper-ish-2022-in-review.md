@@ -92,5 +92,5 @@ I’ll likely be focused at the top of that list, but would welcome anyone inter
 
 [^1]: Sorry for the delay, illness struck right at the beginning of the year.
 
-[^2]: I wrote barely anything in 2021, 2020… actually for quite a few years. I used to blog multiple times a month back in 2013, but kind of teetered off the following year. Anyways, I’m really liking it (again), so here’s to more!&nbsp;[↩︎](#fnref:2)
+[^2]: I wrote barely anything in 2021, 2020… actually for quite a few years. I used to blog multiple times a month back in 2013, but kind of teetered off the following year. Anyways, I’m really liking it (again), so here’s to more!
 

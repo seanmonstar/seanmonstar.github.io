@@ -22,5 +22,5 @@ Some [related reading](http://eaves.ca/2011/07/22/why-im-struggling-with-google/
 
 [^1]: The Twitter approach is to follow people that interest me, and everything I post is Public. The Facebook approach is putting people into appropriate Circles, and communicating heavily through Circles.
 
-[^2]: I also think that this wishlist will grow out-of-date very quickly, since the product team seems to be adding useful bits each week.&nbsp;[↩︎](#fnref:2)
+[^2]: I also think that this wishlist will grow out-of-date very quickly, since the product team seems to be adding useful bits each week.
 

@@ -66,13 +66,13 @@ We can’t completely control someone randomly filing a new CVE and causing anot
 
 [^1]: RustSec and the CVE database are different. RustSec was much more helpful, coordinating with us by waiting until the emergency panic was over, and then discussing the best way to describe the advisory.
 
-[^2]: I updated the advisory on GitHub’s end to only indicate `h2`, not `hyper`. I also indicated my disappointment in GitHub’s amplifying of the alarm and making the day much more stressful. Their reply: “We do that sometimes XD”. Cool.&nbsp;[↩︎](#fnref:2)
+[^2]: I updated the advisory on GitHub’s end to only indicate `h2`, not `hyper`. I also indicated my disappointment in GitHub’s amplifying of the alarm and making the day much more stressful. Their reply: “We do that sometimes XD”. Cool.
 
-[^3]: Meanwhile, a reddit thread took off, watching the action, commenting, and mostly criticizing the actions of all involved. Thankfully, I didn’t read comments like “I don’t have any sympathy for the maintainers” until after the fix was completed.&nbsp;[↩︎](#fnref:3)
+[^3]: Meanwhile, a reddit thread took off, watching the action, commenting, and mostly criticizing the actions of all involved. Thankfully, I didn’t read comments like “I don’t have any sympathy for the maintainers” until after the fix was completed.
 
-[^4]: “At least this made you fix it, right?” No. This attitude is toxic. Doing it this way burns out everyone around who could fix it. There is a reporting process for a reason. It helps the most amount of people. Please use it.&nbsp;[↩︎](#fnref:4)
+[^4]: “At least this made you fix it, right?” No. This attitude is toxic. Doing it this way burns out everyone around who could fix it. There is a reporting process for a reason. It helps the most amount of people. Please use it.
 
-[^5]: Not literally five questions, but an [exercise to try to find the root cause](https://en.wikipedia.org/wiki/Five_whys), and to note any extra things that could be fixed along the way.&nbsp;[↩︎](#fnref:5)
+[^5]: Not literally five questions, but an [exercise to try to find the root cause](https://en.wikipedia.org/wiki/Five_whys), and to note any extra things that could be fixed along the way.
 
-[^6]: Some people tried to infer bad motives, such as for clout or “another notch on a security researchers belt”. I see no reason to assume that with no evidence.&nbsp;[↩︎](#fnref:6)
+[^6]: Some people tried to infer bad motives, such as for clout or “another notch on a security researchers belt”. I see no reason to assume that with no evidence.
 

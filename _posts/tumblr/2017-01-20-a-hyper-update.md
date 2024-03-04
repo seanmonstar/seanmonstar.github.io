@@ -34,5 +34,5 @@ Soon, we’ll have a much better answer for [are we web yet?](http://arewewebyet
 
 [^1]: The benchmarks are hand-wavey at the moment. I surprisingly don’t have an environment available to me to benchmark a bunch of different settings and against other HTTP libraries. If you’d like to help record some benchmarks, I’d greatly appreciate it.
 
-[^2]: Of course, the biggest benefit of non-blocking IO is that it is the best way to scale when you have other IO to do in order to serve a request (files, databases, other networking, etc), or when the payloads are bigger than the the network packet size, and you want to serve thousands of those requests at the same time.&nbsp;[↩︎](#fnref:2)
+[^2]: Of course, the biggest benefit of non-blocking IO is that it is the best way to scale when you have other IO to do in order to serve a request (files, databases, other networking, etc), or when the payloads are bigger than the the network packet size, and you want to serve thousands of those requests at the same time.
 

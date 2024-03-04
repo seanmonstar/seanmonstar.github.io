@@ -226,7 +226,7 @@ Turns out, this works well when matching for equality![^3] `http::Method` uses t
 
 [^1]: We made the `http::Version` type before `#[non_exhaustive]` existed, using a similar technique to `StatusCode`. We could switch it, but seeing them as constants feels _right_.
 
-[^2]: Probably somewhere in the middle, as is the usual when comparing trade-offs.&nbsp;[↩︎](#fnref:2)
+[^2]: Probably somewhere in the middle, as is the usual when comparing trade-offs.
 
-[^3]: There’s another case regarding open-ended variants, but I think it’s big enough to be a separate post.&nbsp;[↩︎](#fnref:3)
+[^3]: There’s another case regarding open-ended variants, but I think it’s big enough to be a separate post.
 

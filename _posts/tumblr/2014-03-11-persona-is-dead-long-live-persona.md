@@ -25,5 +25,5 @@ I’d definitely rather this have ended up differently, but I can also think of 
 
 [^1]: Sync needs a “secret” to encrypt your data before it’s sent to our servers. The easiest solution for users is to provide us a password, and we’ll stretch that and make a secret out of it (so, we don’t actually know your password). Persona doesn’t give us passwords, so we can’t use it.
 
-[^2]: Where “browserid” assertions are accepted, Persona support can also be found.&nbsp;[↩︎](#fnref:2)
+[^2]: Where “browserid” assertions are accepted, Persona support can also be found.
 

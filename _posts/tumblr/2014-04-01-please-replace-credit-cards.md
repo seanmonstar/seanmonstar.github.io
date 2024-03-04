@@ -46,5 +46,5 @@ It would take a lot of work to move the world over to this system, but the end r
 
 [^1]: Or, I have no idea what I’m talking about.
 
-[^2]: The design reduces the risk of a stolen token, since it’s generated for a specific merchant. However, it could be that a hacker gets control of a merchant account, or their private key, and can claim to be the merchant.&nbsp;[↩︎](#fnref:2)
+[^2]: The design reduces the risk of a stolen token, since it’s generated for a specific merchant. However, it could be that a hacker gets control of a merchant account, or their private key, and can claim to be the merchant.
 

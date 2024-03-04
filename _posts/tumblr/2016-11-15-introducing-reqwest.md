@@ -83,5 +83,5 @@ Besides the eventual upgrade to non-blocking IO, the plan is that `reqwest` will
 
 [^1]: The odd name is an unfortunate consequence of being late to the party. The `request` crate is effectively abandonware. I’ve tried reaching out to the author in various ways, but he seems to have disappeared from the internets. The `requests` crate (with an ’s’) also exists, but does seem to be actively developed.
 
-[^2]: Using non-blocking sockets internally is still an improvement for anyone wanting a blocking API. It’s not currently possible to make the blocking TCP sockets have a timeout when doing DNS resolution and connecting, but asynchronous versions can use a timeout. It also means it is easier to determine when a socket in the pool has been closed, and can recycle it more reliably.&nbsp;[↩︎](#fnref:2)
+[^2]: Using non-blocking sockets internally is still an improvement for anyone wanting a blocking API. It’s not currently possible to make the blocking TCP sockets have a timeout when doing DNS resolution and connecting, but asynchronous versions can use a timeout. It also means it is easier to determine when a socket in the pool has been closed, and can recycle it more reliably.
 

@@ -83,7 +83,7 @@ Check out the boards, implement [something cool](https://github.com/orgs/hyperiu
 
 [^1]: Volunteering to lead an area doesn’t mean you’ll be the sole person responsible. Multiple can do so.
 
-[^2]: Since the client pieces are not part of the stable `hyper` core, we don’t have to be quite as careful about not exposing some internals. It’s less of an issue to release breaking changes of utilities.&nbsp;[↩︎](#fnref:2)
+[^2]: Since the client pieces are not part of the stable `hyper` core, we don’t have to be quite as careful about not exposing some internals. It’s less of an issue to release breaking changes of utilities.
 
-[^3]: I suppose it is doable by stretching those kinds of changes out over 2 major releases. You could add a stop-gap method and deprecation on the original the current version, then in the next make the breaking change and add a deprecation to the stop-gap method, and then remove it in the second release. hyper isn’t at that level of stability just yet, but something we could consider after 1.0.&nbsp;[↩︎](#fnref:3)
+[^3]: I suppose it is doable by stretching those kinds of changes out over 2 major releases. You could add a stop-gap method and deprecation on the original the current version, then in the next make the breaking change and add a deprecation to the stop-gap method, and then remove it in the second release. hyper isn’t at that level of stability just yet, but something we could consider after 1.0.
 

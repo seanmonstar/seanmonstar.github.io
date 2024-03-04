@@ -25,5 +25,5 @@ Ideally, this would be available on PC/Mac, as well as iOS/Android. I don’t ha
 
 [^1]: The current explosion seems to be group chatting. Yay, yet _another_ silo.
 
-[^2]: [Threadsy](http://threadsy.com) is sort of on the right track, actually.&nbsp;[↩︎](#fnref:2)
+[^2]: [Threadsy](http://threadsy.com) is sort of on the right track, actually.
 
