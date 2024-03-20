@@ -1,4 +1,5 @@
 ---
+hidden: true
 layout: post
 title: 'Gauges are Dirty Liars '
 date: '2010-11-10T13:35:42-05:00'

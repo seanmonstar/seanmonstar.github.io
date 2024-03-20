@@ -1,4 +1,5 @@
 ---
+hidden: true
 layout: post
 title: A masterpiece of a game
 date: '2013-06-19T22:56:19-04:00'

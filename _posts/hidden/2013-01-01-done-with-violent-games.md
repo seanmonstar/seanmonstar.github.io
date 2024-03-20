@@ -1,4 +1,5 @@
 ---
+hidden: true
 layout: post
 title: '"After Sandy Hook And Virginia Tech, I’m Done With Violent Video Games"'
 date: '2013-01-01T19:00:26-05:00'

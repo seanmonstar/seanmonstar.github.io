@@ -1,4 +1,5 @@
 ---
+hidden: true
 layout: post
 title: Friends Don’t Let Friends Curate
 date: '2013-03-26T15:00:20-04:00'

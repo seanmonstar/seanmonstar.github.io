@@ -1,4 +1,5 @@
 ---
+hidden: true
 layout: post
 title: The Real Firefox OS Mission
 date: '2013-03-28T15:00:20-04:00'

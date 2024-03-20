@@ -1,4 +1,5 @@
 ---
+hidden: true
 layout: post
 title: Are Pre-Purchase Rewards Ruining the Game Industry?
 date: '2013-04-01T19:00:16-04:00'

@@ -1,4 +1,5 @@
 ---
+hidden: true
 layout: post
 title: "'Teens aren’t abandoning “social.” They’re just using the word correctly.'"
 date: '2013-05-13T19:00:10-04:00'

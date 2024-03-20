@@ -1,4 +1,5 @@
 ---
+hidden: true
 layout: post
 title: Google+ Sign-In
 date: '2013-02-27T15:00:22-05:00'

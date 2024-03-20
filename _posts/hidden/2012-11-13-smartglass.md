@@ -1,4 +1,5 @@
 ---
+hidden: true
 layout: post
 title: SmartGlass
 date: '2012-11-13T15:00:30-05:00'

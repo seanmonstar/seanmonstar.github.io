@@ -1,4 +1,5 @@
 ---
+hidden: true
 layout: post
 title: An Expandable PC
 date: '2012-10-29T17:46:01-04:00'

@@ -1,4 +1,5 @@
 ---
+hidden: true
 layout: post
 title: Starbucks + Teavana
 date: '2012-12-14T19:19:00-05:00'

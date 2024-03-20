@@ -1,4 +1,5 @@
 ---
+hidden: true
 layout: post
 title: "'Hangouts... doesn't really unify anything'"
 date: '2013-05-17T15:00:18-04:00'

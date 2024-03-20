@@ -1,4 +1,5 @@
 ---
+hidden: true
 layout: post
 title: On Competing with Circles
 date: '2011-07-12T07:34:28-04:00'

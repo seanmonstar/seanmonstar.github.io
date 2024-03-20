@@ -1,4 +1,5 @@
 ---
+hidden: true
 layout: post
 title: Future of Xbox
 date: '2012-06-22T14:00:00-04:00'

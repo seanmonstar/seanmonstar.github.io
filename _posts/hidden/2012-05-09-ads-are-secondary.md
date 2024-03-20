@@ -1,4 +1,5 @@
 ---
+hidden: true
 layout: post
 title: Ads Are Secondary
 date: '2012-05-09T14:51:24-04:00'

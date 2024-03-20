@@ -1,4 +1,5 @@
 ---
+hidden: true
 layout: post
 title: '"It’s healthy, and important, to discuss our culture of video game violence
   after a tragedy"'

@@ -1,4 +1,5 @@
 ---
+hidden: true
 layout: post
 title: Chrono Trigger Analyzed
 date: '2012-08-16T21:39:05-04:00'

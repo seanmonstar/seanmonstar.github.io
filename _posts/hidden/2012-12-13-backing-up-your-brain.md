@@ -1,4 +1,5 @@
 ---
+hidden: true
 layout: post
 title: Backing up your brain
 date: '2012-12-13T15:00:45-05:00'

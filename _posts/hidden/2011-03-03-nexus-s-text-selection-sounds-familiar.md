@@ -1,4 +1,5 @@
 ---
+hidden: true
 layout: post
 title: Nexus S Text Selection Sounds Familiar
 date: '2011-03-03T14:00:08-05:00'

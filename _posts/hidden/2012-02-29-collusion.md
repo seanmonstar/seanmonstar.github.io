@@ -1,4 +1,5 @@
 ---
+hidden: true
 layout: post
 title: Collusion
 date: '2012-02-29T14:24:06-05:00'

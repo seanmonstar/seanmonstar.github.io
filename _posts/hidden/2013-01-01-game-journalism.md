@@ -1,4 +1,5 @@
 ---
+hidden: true
 layout: post
 title: Game journalism is its own worst enemy
 date: '2013-01-01T15:00:27-05:00'

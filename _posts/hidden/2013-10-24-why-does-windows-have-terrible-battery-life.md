@@ -1,4 +1,5 @@
 ---
+hidden: true
 layout: post
 title: Why Does Windows Have Terrible Battery Life?
 date: '2013-10-24T21:02:06-04:00'
