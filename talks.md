@@ -11,6 +11,7 @@ permalink: /talks/
 
 ## Podcasts
 
+- [2024 Rustacean Station](/blog/podcast-rustacean-station-2): hyper 1.0, independent open source maintainership, client middleware, HTTP/3
 - [2021 Rustacean Station](https://rustacean-station.org/episode/045-sean-arthur/): history of hyper, async, hyper in curl, HTTP/3
 
 ## Invite
