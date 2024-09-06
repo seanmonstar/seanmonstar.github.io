@@ -1,27 +1,33 @@
 ---
-layout: default
+layout: base
 ---
 
-<div class="home">
-{% for post in site.posts limit:5 %}
-  <article class="post article">
+<div id="home">
+  <section id="hero">
+     <h1><em>Empowering</em> engineers, communities, companies, and corners of the Internet.</h1>
+  </section>
 
-  <header>
-    <div class="date">
-        <span class="month">{{ post.date | date: "%b" }}</span>
-        <span class="day">{{ post.date | date: "%d" }}</span>
-        <span class="year">{{ post.date | date: "%Y" }}</span>
-    </div>
-    <a href="{{ post.url | prepend: site.baseurl }}" title="Permalink" class="permalink">#</a>
-  </header>
+  <section>
+    <h2>Consulting</h2>
+    <p>I <em>unblock</em> people. I advise companies on topics I am an expert in after 15 years of experience. Topics include Rust, HTTP, async, community building, open source, architecture, leadership, and more.</p>
+    <p><a href="/sponsor">Reach out</a> and we can work together!</p>
+  </section>
 
-  <div class="regular post-body">
-    <h2 class="post-title">{{ post.title }}</h2>
-    {{ post.content }}
-  </div>
+  <section>
+    <h2>Open Sourcing</h2>
+    <p>I have been an open source leader for over a decade. I presently maintain <a href="https://hyper.rs">hyper</a> and several other foundational Rust libraries which handle billions of requests a day.</p>
+    <p>See a larger list <a href="/sponsor">here</a>.</p>
+  </section>
 
-  <footer class="post-footer">
-  </footer>
-  </article>
-{% endfor %}
+  <section>
+    <h2>Blogging</h2>
+    <p>I write articles about Rust, open source, programming, networking, and being an internet human.</p>
+    <p><strong>Latest:</strong>
+      {% for post in site.posts limit:1 %}
+      <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      {% endfor %}
+    </p>
+    <p>See all in the <a href="/blog">archive</a>.</p>
+  </section>
+
 </div>
