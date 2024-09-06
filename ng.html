@@ -1,0 +1,32 @@
+---
+layout: base
+---
+
+<div id="home">
+  <section id="hero">
+    <h1>Empowering engineers, communities, companies, and corners of the Internet.</h1>
+  </section>
+
+  <section>
+    <h2>Consulting</h2>
+    <p>I unblock people. I consult with companies on topics I've become an expert in after over 15 years of experience. Topics include Rust, HTTP, async, community building, open source, engineering leadership, and more.</p>
+    <p><a href="/sponsor">Reach out</a> and we can work together!</p>
+  </section>
+
+  <section>
+    <h2>Open Sourcing</h2>
+    <p>I have been an open source leader for over a decade. I presently maintain <a href="https://hyper.rs">hyper</a> and several other foundation Rust libraries. See a larger list <a href="/sponsor">here</a>.</p>
+  </section>
+
+  <section>
+    <h2>Blogging</h2>
+    <p>I write articles about Rust, open source, programming, networking, and being an internet human.</p>
+    <p>Latest:
+      {% for post in site.posts limit:1 %}
+      <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      {% endfor %}
+    </p>
+    <p>See all in the <a href="/blog">archive</a>.</p>
+  </section>
+
+</div>
