@@ -9,7 +9,7 @@ layout: base
 
   <section>
     <h2>Consulting</h2>
-    <p>I unblock people. I consult with companies on topics I am expert in after over 15 years of experience. Topics include Rust, HTTP, async, community building, open source, engineering leadership, and more.</p>
+    <p>I unblock people. I advise companies on topics I am an expert in after 15 years of experience. Topics include Rust, HTTP, async, community building, open source, engineering leadership, and more.</p>
     <p><a href="/sponsor">Reach out</a> and we can work together!</p>
   </section>
 
@@ -21,7 +21,7 @@ layout: base
   <section>
     <h2>Blogging</h2>
     <p>I write articles about Rust, open source, programming, networking, and being an internet human.</p>
-    <p>Latest:
+    <p><strong>Latest:</strong>
       {% for post in site.posts limit:1 %}
       <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
       {% endfor %}
