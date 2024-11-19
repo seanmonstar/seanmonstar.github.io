@@ -18,15 +18,8 @@
         //serve random sponsor
         (function(){
             var sponsors = [
-                /*
                 {
-                    'link': 'https://www.amazon.com/Rust-Rustaceans-Programming-Experienced-Developers-ebook/dp/B0957SWKBS?tag=seanmonstar-20',
-                    'img': 'https://images-na.ssl-images-amazon.com/images/I/51s3gbiU20S._SX376_BO1,204,203,200_.jpg',
-                    'text': 'Rust for Rustaceans: Idiomatic Programming for Experienced Developers'
-                },
-                */
-                {
-                    'link': '/sponsor',
+                    'link': '/sponsor?ref=sidebar',
                     'img': 'https://www.gravatar.com/avatar/dfb248d98bc7c238fccd5aad53624eab.png',
                     'text': 'Sponsor my OSS work'
                 },
@@ -34,6 +27,11 @@
                     'link': 'https://masto.ai/@seanmonstar',
                     'img': 'https://www.gravatar.com/avatar/dfb248d98bc7c238fccd5aad53624eab.png',
                     'text': 'Follow @seanmonstar@masto.ai'
+                },
+                {
+                    'link': 'https://bsky.app/profile/seanmonstar.com',
+                    'img': 'https://www.gravatar.com/avatar/dfb248d98bc7c238fccd5aad53624eab.png',
+                    'text': '@seanmonstar.com on Bluesky'
                 }
             ];
             var randIndex = Math.floor(Math.random() * sponsors.length);

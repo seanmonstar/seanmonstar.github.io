@@ -8,6 +8,8 @@ I’m Sean McArthur, a [software engineer](https://github.com/seanmonstar) and 
 
 ![ohai](https://64.media.tumblr.com/tumblr_lew0l8No7A1qzek7l.jpg)
 
+### Values
+
 An unordered list of the things I’m passionate about:
 
 - **Building tools** or basic building blocks **for other engineers** to go invent things I couldn’t possibly imagine.
@@ -26,3 +28,11 @@ I've given some [talks](/talks).
 ### Contact
 
 You can [email](mailto:sean@seanmonstar.com) me about anything. Cheers!
+
+### Elsewhere
+
+- GitHub: [@seanmonstar](https://github.com/seanmonstar)
+- Bluesky: [@seanmonstar.com](https://bsky.app/profile/seanmonstar.com)
+- Mastodon: [@seanmonstar@masto.ai](https://masto.ai/@seanmonstar)
+- RSS: [seanmonstar.com/rss](https://seanmonstar.com/rss)
+
