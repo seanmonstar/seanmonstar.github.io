@@ -42,7 +42,7 @@ We got it nearly complete. Adventurous tinkerers were able to build and use it o
 
 I gave [a talk for curl up 2022](https://seanmonstar.com/blog/curl-up-2022-hyper-in-curl/) about the progress.[^since]
 
-We're ready to finished, technically.
+We're ready to finish, technically.
 
 ### Over the finish line
 
