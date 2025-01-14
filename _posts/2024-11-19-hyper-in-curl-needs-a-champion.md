@@ -13,6 +13,8 @@ tags:
 
 It needs a champion, a backing vendor or distro. Will that be you?
 
+**UPDATE 2024-12-21**: [curl has dropped hyper][bye].
+
 ### Why would you put a hyper in a curl?
 
 Why would you? Memory safety.
@@ -62,6 +64,8 @@ There's [more incentive](https://thenewstack.io/feds-critical-software-must-drop
 
 [Reach out to me][contact] if you want this to happen. Sooner rather than later. Let's make the _internet_ safer!
 
+**UPDATE 2024-12-21**: [curl has dropped hyper][bye].
+
 [^since]: Recently, a few more things have been improved on hyper's side. For instance, @nnethercote and @jsha [significantly improved](https://github.com/hyperium/hyper/pull/3296) [the C docs](https://github.com/hyperium/hyper/pull/3424), and  @hjr3 [added HTTP/1.1 trailers support](https://github.com/hyperium/hyper/pull/3637) that curl needed.
 
 [^want]: People _always_ end up doing exactly what they want. There's a loud rewrite-it-in-Rust sub-community. Here's an opportunity. Actions show what people actually want.
@@ -69,4 +73,5 @@ There's [more incentive](https://thenewstack.io/feds-critical-software-must-drop
 [hyper]: https://hyper.rs
 [curl]: https://curl.se
 [contact]: https://seanmonstar.com/about#contact
+[bye]: https://daniel.haxx.se/blog/2024/12/21/dropping-hyper/
 
