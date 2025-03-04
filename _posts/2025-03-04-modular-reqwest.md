@@ -67,3 +67,4 @@ All of it helps! To making HTTP requests better!
 [^defaults]: This could also be applied to other features too. I think there's an argument to be made for switching the default DNS resolver to use hickory-dns instead `getaddrinfo`.
 
 [tower-http]: https://tokio.rs/blog/2021-05-announcing-tower-http
+[sponsor]: https://seanmonstar.com/sponsor
