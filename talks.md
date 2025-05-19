@@ -3,6 +3,7 @@ layout: page
 title: Talks
 permalink: /talks/
 ---
+- [2025 Rust for Lunch: Lessons after 10 years of Rust](https://www.youtube.com/watch?v=1PpdNu0Weas)
 - [2022 curl-up: hyper in curl update](/blog/curl-up-2022-hyper-in-curl/)
 - [2021 hyper in curl](https://www.youtube.com/watch?v=okGUxW_i9yk)
 - [2021 re:Invent: Next Gen networking infrastructure with Rust and Tokio](https://youtu.be/MZyleK8elPk)
