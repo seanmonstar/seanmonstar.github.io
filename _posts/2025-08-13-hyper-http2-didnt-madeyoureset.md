@@ -67,10 +67,11 @@ Besides funding that important work, I'm also happy to provide pre-disclosure an
 
 [^react]: This difference from Rapid Reset is also important. In Rapid Reset, the resets were not observable by user code, so they could not react to the wasting of resources. With MadeYouReset, however, users can if they need to.
 [^ghsa]: I just realized today that I cannot publish the GHSA as an informational, since it does not include a severity or CVE. GitHub, please?
-[^researchers]: The original reporters were Gal Bar Nahum, Anat Bremler-Barr, and Yaniv Harel of Tel Aviv University. I primarily interacted with Gal, which was a 5/5 experience, would repeat.
+[^researchers]: The original reporters were [Gal Bar Nahum][Gal], Anat Bremler-Barr, and Yaniv Harel of Tel Aviv University. I primarily interacted with Gal, which was a 5/5 experience, would repeat.
 [^psirt]: On top of what has been outlined here, there's a lot of coordination work involved, dealing with [VINCE][] and other vendors.
 
 [hyper]: https://hyper.rs
 [Rapid Reset]: https://seanmonstar.com/blog/hyper-http2-rapid-reset-unaffected/
 [retainer]: https://seanmonstar.com/sponsor
 [VINCE]: https://www.kb.cert.org/vuls/id/767506
+[Gal]: https://galbarnahum.com/made-you-reset
