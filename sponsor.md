@@ -15,11 +15,13 @@ Here are a few ways to do so:
 
 ### Retainers
 
-A retainer with me could provide your company with even more value, such as:
+A [retainer][] with me could provide your company with even more value, such as:
 
 - Private office hours
 - Private reviews
 - Expert advice
 - **Security support**
 
-If you are interested in a deeper relationship, send me an email at [sean@seanmonstar.com](mailto:sean@seanmonstar.com).
+Ask me about a [retainer][].
+
+[retainer]: /retainer
