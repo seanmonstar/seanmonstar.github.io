@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "hyper-util Composable Pools"
+excerpt: "Announcing connection pool layers allowing advanced composition in Rust."
 date: '2025-12-03T08:48:00'
 tags:
 - rust
