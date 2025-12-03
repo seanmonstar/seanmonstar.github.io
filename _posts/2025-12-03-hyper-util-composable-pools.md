@@ -18,7 +18,7 @@ Building a purpose‑specific pool is now straightforward. Add the features you 
 
 Read on to see what exactly we solved, how, and what comes next. If you just want to use them, [here's the docs][docs]. Everyone else, let's dive in.
 
-## We started with the users
+### We started with the users
 
 We started with the users, looking back over past issues filed, common questions in chat, and private conversations explaining what they needed to do. Boiled down, that got us to these requirements:
 
@@ -37,7 +37,7 @@ To answer that, we took the requirements and considered the developer experience
 I then sketched out several of these layers to make sure they could actually work. Once most of it was working, the [proposal][] was ready.
 
 
-## The initial 4 working pools
+### The initial 4 working pools
 
 No plan survives contact with the enemy. We originally proposed five pool types, but launch with just the following four: singleton, cache, negotiate, map.
 
@@ -49,7 +49,7 @@ The `negotiate` pool allows for a service that can decide between two service ty
 
 The `map` pool isn't a typical service like the other pools, but rather is a stand-alone type that maps requests to keys and connectors. As a kind of router, it cannot determine which inner service to check for backpressure until the request is made. The map implementation allows customization of extracting a key, and how to construct a connector for that key.
 
-## Ineffably unstable
+### Ineffably unstable
 
 I knew this work would land in `hyper-util` first, because it's not stable yet. Being so freshly designed, changes are expected after some more real-world usage. Still, I wanted to shield earlier adopters from breaking changes. At the same time, valuing performance and flexibility, I wanted to push as much as reasonably possible into the type system.
 
@@ -59,7 +59,7 @@ The various threads were all coming together.
 
 With each pool concept a `tower` service, once composed, a user shouldn't care what it is beyond being some `impl Service`. I tested this out in `reqwest`, and yea, I don't need to name the types. While I did need _a_ type, I was able to store a `dyn Service`, and inference handled the rest.
 
-## Real world usage: in reqwest
+### Real world usage: in reqwest
 
 Once those main pieces seemed ready, I needed a real example to test drive them. Tool-makers that don't use their tools make bad tools, after all.
 
@@ -134,7 +134,7 @@ tokio::spawn(async move {
  
 The ease of adding it helped solidify to me that this was definitely the right design. I was able to slot in a `meta` layer tracking idle time, and then use that to `retain` services. I placed that layer in right next to some of the other HTTP/1-specific layers. Easy!
 
-## Being modular opens up customization
+### Being modular opens up customization
 
 With the ability to build a stack for your pool, consider an example of how we can start to solve other requirements listed earlier.
 
@@ -152,7 +152,7 @@ It also allows adding in layers we don't currently have, such as per-host connec
 
 I can't wait to see what else is done with the design!
 
-## Pools ready
+### Pools ready
 
 The `hyper_util::client::pool` module is now available in [v0.1.19][release]. Go check the [docs][], and try to build cool things. Please file issues if parts are missing, we'll keep iterating.
 
