@@ -171,4 +171,4 @@ Thanks to my [sponsors][], retainers, and grants for making this all possible!
 [poisoning]: https://docs.rs/hyper-util/0.1.x/hyper_util/client/legacy/connect/struct.Connected.html#method.poison
 [release]: https://github.com/hyperium/hyper-util/releases/tag/v0.1.19
 [docs]: https://docs.rs/hyper-util/0.1.x/hyper_util/client/pool/
-[sponsors]: https://seanmonstar.com/sponsors
+[sponsors]: https://seanmonstar.com/sponsor
