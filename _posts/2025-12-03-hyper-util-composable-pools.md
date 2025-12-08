@@ -10,6 +10,7 @@ tags:
 - tower
 - open-source
 - programming
+- bestof
 ---
 I'm so excited to announce [hyper][]'s new composable pool layers![^excited]
 
