@@ -14,7 +14,7 @@ tags:
 ---
 I'm so excited to announce [hyper][]'s new composable pool layers![^excited]
 
-As part of [making reqwest more modular](https://seanmonstar.com/blog/modular-reqwest/), we've designed a new connection pool, and made the pieces available in `hyper_util::client::pool`. But this is more than just a "hey, we have a Pool, it moved other there." We've literally pulled apart the pool, in a way I haven't found elsewhere.
+As part of [making reqwest more modular](https://seanmonstar.com/blog/modular-reqwest/), we've designed a new connection pool, and made the pieces available in `hyper_util::client::pool`. But this is more than just a "hey, we have a Pool, it moved over there." We've literally pulled apart the pool, in a way I haven't found elsewhere.
 
 Building a purpose‑specific pool is now straightforward. Add the features you want, even custom ones, and skip the bloat, no forks required.
 
