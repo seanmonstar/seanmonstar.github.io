@@ -8,7 +8,7 @@ tags:
 - survey
 - open-source
 ---
-I'm excited to announce the inaugural [hyper user survey][survey]!
+I'm excited to announce the inaugural hyper user survey! (_Update: it ended._)
 
 Part of being user-driven is [knowing what our users want][gov], what they're trying to do, and then we can figure out how best to help.
 
@@ -16,8 +16,7 @@ This survey should only take about 5 minutes, no questions are required, and res
 
 Thanks for taking the time to help make [hyper][] better!
 
-[Take the hyper user survey for 2025][survey].
+~~[Take the hyper user survey for 2025.~~
 
-[survey]: https://www.surveyhero.com/c/vvnhc7j7
 [gov]: https://hyper.rs/contrib/governance/#making-decisions
 [hyper]: https://hyper.rs
