@@ -13,6 +13,8 @@ To end out the year, here comes a new major release of [reqwest][], the opiniona
 
 We don't really need major breaking versions to keep providing value. Improvements keep coming all the time. But we did need one to make one particular big adjustment, and we've taken the opportunity to clean up other things too. At the same time, we strove make it disrupt as little as possible, especially if you stick to the defaults.
 
+reqwest [v0.13.0][] is out now! Read on for why.
+
 ### rustls is now the default TLS backend
 
 The biggest deal is that reqwest now sets its default TLS feature to use [rustls][], instead of native-tls.
