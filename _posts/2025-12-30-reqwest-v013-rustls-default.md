@@ -19,7 +19,7 @@ reqwest [v0.13.0][] is out now! Read on for why.
 
 The biggest deal is that reqwest now sets its default TLS feature to use [rustls][], instead of native-tls.
 
-Granted, native-tls has it's place. It provides a unified library that uses the "native" TLS implementation on each target. SecureTransport on macOS, schannel on Windows, and OpenSSL on Linux (as the most likely already installed). It was the right choice several years, while rustls was young. But rustls is now safer and faster than most choices.[^windows-i686-gnu] Seems like an obvious [improvement][]. But would people want the better choice?
+Granted, native-tls has it's place. It provides a unified library that uses the "native" TLS implementation on each target. SecureTransport on macOS, schannel on Windows, and OpenSSL on Linux (as the most likely already installed). It was the right choice several years, while rustls was young. But rustls is now [safer][] and [faster][] than most choices.[^windows-i686-gnu] Seems like an obvious [improvement][]. But would people want the better choice?
 
 A recent hyper user survey found that 93% of respondants already use rustls. 30% said they also use native-tls at times, so we will continue to provide that option. And while a survey is already biased, it's also most certainly true that the vast majority of users just allow the default options, and it works for them. That will continue to be true for most everyone.
 
@@ -60,6 +60,8 @@ Thanks to all who contribute, use, [sponsor][], fix, complain, and help reqwest 
 
 [reqwest]: https://crates.io/crates/reqwest
 [rustls]: https://rustls.dev/
+[safer]: https://docs.rs/rustls/latest/rustls/manual/_01_impl_vulnerabilities/index.html
+[faster]: https://rustls.dev/perf/
 [improvement]: https://github.com/seanmonstar/reqwest/issues/2025#issuecomment-2913873836
 [sponsor]: https://seanmonstar.com/sponsor
 [v0.13.0]: https://github.com/seanmonstar/reqwest/releases/tag/v0.13.0
