@@ -15,3 +15,8 @@ paginate: 5
 # Build settings
 markdown: kramdown
 highlighter: pygments
+
+collections:
+  micro:
+    output: true
+    permalink: /micro/:year/:month/:title/

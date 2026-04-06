@@ -23,6 +23,16 @@ layout: default
         <li>#{{ tag }}</li>
     {% endfor %}
     </ul>
+    {% if page.mastodon_url or page.bsky_url %}
+    <ul class="syndication">
+    {% if page.mastodon_url %}
+        <li><a href="{{ page.mastodon_url }}">Mastodon</a></li>
+    {% endif %}
+    {% if page.bsky_url %}
+        <li><a href="{{ page.bsky_url }}">Bluesky</a></li>
+    {% endif %}
+    </ul>
+    {% endif %}
   </footer>
 
 </article>

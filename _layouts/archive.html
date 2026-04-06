@@ -5,7 +5,8 @@ layout: default
 <div class="home archive">
 
     <ul class="post-list">
-    {% for post in site.posts %}
+    {% assign posts = site[page.collection] | sort: 'date' | reverse %}
+    {% for post in posts %}
         {% if post.hidden != true %}
         {% assign currentdate = post.date | date: "%Y" %}
         <li>
