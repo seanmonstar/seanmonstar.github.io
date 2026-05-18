@@ -16,7 +16,7 @@ This survey should only take about 5 minutes, no questions are required, and res
 
 Thanks for taking the time to help make [hyper][] better!
 
-~~[Take the hyper user survey for 2025.~~
+~~Take the hyper user survey for 2025.~~
 
 [gov]: https://hyper.rs/contrib/governance/#making-decisions
 [hyper]: https://hyper.rs
