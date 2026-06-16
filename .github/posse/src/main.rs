@@ -186,20 +186,10 @@ async fn bsky_post(
             "createdAt": jiff::Timestamp::now().to_string(),
         });
 
-        /*
-        // Hardcoded facet logic for paragraph three just to demonstrate link mechanics
-        if paragraph.contains("https://google.com") {
-            record["facets"] = json!([
-                {
-                    "index": { "byteStart": 47, "byteEnd": 65 },
-                    "features": [{
-                        "$type": "app.bsky.richtext.facet#link",
-                        "uri": "https://google.com"
-                    }]
-                }
-            ]);
+        let facets = bsky_link_facets(&paragraph);
+        if !facets.is_empty() {
+            record["facets"] = json!(facets);
         }
-        */
 
         // If this isn't the first post, attach the threading architecture
         if let (Some(root), Some(parent)) = (&root_ref, &parent_ref) {
@@ -233,6 +223,78 @@ async fn bsky_post(
     }
 
     first_url.ok_or_else(|| errors::new("empty bsky post").into())
+}
+
+fn bsky_link_facets(text: &str) -> Vec<serde_json::Value> {
+    let mut facets = Vec::new();
+    let mut cursor = 0;
+
+    while cursor < text.len() {
+        let haystack = &text[cursor..];
+        let Some(relative_start) = earliest_url_start(haystack) else {
+            break;
+        };
+        let start = cursor + relative_start;
+        let mut end = text[start..]
+            .find(char::is_whitespace)
+            .map(|relative_end| start + relative_end)
+            .unwrap_or(text.len());
+
+        end = trim_url_end(&text[start..end], start);
+        if end > start {
+            let uri = &text[start..end];
+            facets.push(json!({
+                "index": {
+                    "byteStart": start,
+                    "byteEnd": end,
+                },
+                "features": [{
+                    "$type": "app.bsky.richtext.facet#link",
+                    "uri": uri,
+                }],
+            }));
+        }
+
+        cursor = end.max(start + 1);
+    }
+
+    facets
+}
+
+fn earliest_url_start(text: &str) -> Option<usize> {
+    match (text.find("https://"), text.find("http://")) {
+        (Some(https), Some(http)) => Some(https.min(http)),
+        (Some(https), None) => Some(https),
+        (None, Some(http)) => Some(http),
+        (None, None) => None,
+    }
+}
+
+fn trim_url_end(candidate: &str, start: usize) -> usize {
+    let mut end = candidate.len();
+
+    while end > 0 {
+        let trimmed = &candidate[..end];
+        let Some(ch) = trimmed.chars().next_back() else {
+            break;
+        };
+
+        let should_trim = match ch {
+            '.' | ',' | ';' | ':' | '!' | '?' => true,
+            ')' => trimmed.matches(')').count() > trimmed.matches('(').count(),
+            ']' => trimmed.matches(']').count() > trimmed.matches('[').count(),
+            '}' => trimmed.matches('}').count() > trimmed.matches('{').count(),
+            _ => false,
+        };
+
+        if !should_trim {
+            break;
+        }
+
+        end -= ch.len_utf8();
+    }
+
+    start + end
 }
 
 // pass in post details as argument, return masto post url
@@ -730,4 +792,48 @@ fn parse_markdown_file(content: &str) -> (HashMap<String, String>, String) {
 
     body = body_lines.join("\n");
     (frontmatter, body)
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn bsky_link_facets_finds_multiple_links() {
+        let text = "One https://example.com/a and http://example.net/b";
+
+        let facets = bsky_link_facets(text);
+
+        assert_eq!(facets.len(), 2);
+        assert_eq!(facets[0]["index"]["byteStart"], 4);
+        assert_eq!(facets[0]["index"]["byteEnd"], 25);
+        assert_eq!(facets[0]["features"][0]["uri"], "https://example.com/a");
+        assert_eq!(facets[1]["index"]["byteStart"], 30);
+        assert_eq!(facets[1]["index"]["byteEnd"], 50);
+        assert_eq!(facets[1]["features"][0]["uri"], "http://example.net/b");
+    }
+
+    #[test]
+    fn bsky_link_facets_trims_wrapping_punctuation() {
+        let text = "A link (https://example.com/a), and more.";
+
+        let facets = bsky_link_facets(text);
+
+        assert_eq!(facets.len(), 1);
+        assert_eq!(facets[0]["index"]["byteStart"], 8);
+        assert_eq!(facets[0]["index"]["byteEnd"], 29);
+        assert_eq!(facets[0]["features"][0]["uri"], "https://example.com/a");
+    }
+
+    #[test]
+    fn bsky_link_facets_uses_utf8_byte_offsets() {
+        let text = "✨ https://example.com";
+
+        let facets = bsky_link_facets(text);
+
+        assert_eq!(facets.len(), 1);
+        assert_eq!(facets[0]["index"]["byteStart"], 4);
+        assert_eq!(facets[0]["index"]["byteEnd"], 23);
+        assert_eq!(facets[0]["features"][0]["uri"], "https://example.com");
+    }
 }
