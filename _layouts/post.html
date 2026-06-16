@@ -25,6 +25,7 @@ layout: default
     </ul>
     {% if page.mastodon_url or page.bsky_url %}
     <ul class="syndication">
+        <li>micropost syndicated to:</li>
     {% if page.mastodon_url %}
         <li><a href="{{ page.mastodon_url }}">Mastodon</a></li>
     {% endif %}

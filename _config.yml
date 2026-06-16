@@ -19,4 +19,4 @@ highlighter: pygments
 collections:
   micro:
     output: true
-    permalink: /micro/:year/:month/:title/
+    permalink: /micro/:year:month:day-:title/
