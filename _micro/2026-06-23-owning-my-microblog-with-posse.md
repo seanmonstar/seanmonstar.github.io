@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Owning my microblog with POSSE
+bsky_url: https://bsky.app/profile/did:plc:ax5sh6hthwrelunhn2bfmrsb/post/3moxoziz7bt2a
+mastodon_url: https://masto.ai/@seanmonstar/116800081222670012
 ---
 [POSSE](https://indieweb.org/POSSE) is the practice of publishing on your own site first, and pushing that out to other services. To get the content where people are, while linking back to the original owned post.
 
