@@ -444,7 +444,7 @@ fn micro_permalink(path: &Path, site_url: &str) -> Result<String, Error> {
         .ok_or_else(|| errors::new("micro post filename missing slug"))?;
 
     Ok(format!(
-        "{}/micro/{year}/{month}/{day}/{slug}/",
+        "{}/micro/{year}{month}{day}-{slug}/",
         site_url.trim_end_matches('/')
     ))
 }
@@ -835,5 +835,17 @@ mod tests {
         assert_eq!(facets[0]["index"]["byteStart"], 4);
         assert_eq!(facets[0]["index"]["byteEnd"], 23);
         assert_eq!(facets[0]["features"][0]["uri"], "https://example.com");
+    }
+
+    #[test]
+    fn micro_permalink_matches_jekyll_collection_permalink() {
+        let path = Path::new("../../_micro/2026-06-23-owning-my-microblog-with-posse.md");
+
+        let permalink = micro_permalink(path, "https://seanmonstar.com/").unwrap();
+
+        assert_eq!(
+            permalink,
+            "https://seanmonstar.com/micro/20260623-owning-my-microblog-with-posse/"
+        );
     }
 }
