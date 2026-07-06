@@ -29,7 +29,7 @@ The rest of the conversation was really fun to talk about:
 - _31:31_: HTTP/3 in hyper and reqwest
 - _39:40_: hyper in 5 years, contributors, ownership
 
-[podcast]: https://netstack.fm/#episode-2
+[podcast]: https://netstack.fm/episodes/hyper-with-sean-mcarthur-ep-2-remastered
 [hyper]: https://hyper.rs
 [warp]: /blog/warp-v04
 [reqwest]: /blog/modular-reqwest
