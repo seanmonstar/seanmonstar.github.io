@@ -10,4 +10,4 @@ The common reason to want this is for testing purposes. People want to assert an
 
 A public, exhaustive, flat `enum` could choose differently. But those look more like a `kind()`. If you have private error details, I don't think they make sense for comparing.
 
-Some interesting discussion a few years ago: https://www.reddit.com/r/rust/comments/n12uf9/is_there_a_good_reason_not_to_impl_eqpartialeq/
+Some interesting discussion a [few years ago](https://www.reddit.com/r/rust/comments/n12uf9/is_there_a_good_reason_not_to_impl_eqpartialeq/).
