@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Rust Errors generally shouldn't be PartialEq
+bsky_url: https://bsky.app/profile/did:plc:ax5sh6hthwrelunhn2bfmrsb/post/3mqkczwc5pi2e
+mastodon_url: https://masto.ai/@seanmonstar/116914079479624311
 ---
 Errors might have internal details that don't make sense to compare. Like positional data, or a source chain. Even if you don't have those details yet, committing to a public API of `PartialEq` can restrict you from internal refactoring.
 
