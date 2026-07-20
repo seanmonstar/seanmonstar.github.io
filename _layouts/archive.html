@@ -3,7 +3,11 @@ layout: default
 ---
 
 <div class="home archive">
-
+    {% if content != empty %}
+    <div class="archive-description">
+        {{ content }}
+    </div>
+    {% endif %}
     <ul class="post-list">
     {% assign posts = site[page.collection] | sort: 'date' | reverse %}
     {% for post in posts %}

@@ -356,6 +356,9 @@ a:visited {
     }
 
 .archive { border-top:2px solid #000; }
+    .archive .archive-description {
+      margin: 1em 7em;
+    }
 	.archive ul.post-list li { list-style: none; }
 
 	.archive .post-list .date.new {
@@ -365,7 +368,7 @@ a:visited {
 	.archive .post-list .date {
 		float: left;
 		clear: left;
-		width: 3em;
+		width: 4.75em;
 		padding-right: 0.25em;
 		text-align: right;
 	}
@@ -471,6 +474,9 @@ a:visited {
       }
       .post .post-footer .tags {
           width: 80%;
+      }
+      .archive .archive-description {
+          margin-left: 0;
       }
       .archive .post-list {
           margin-left: 0;
