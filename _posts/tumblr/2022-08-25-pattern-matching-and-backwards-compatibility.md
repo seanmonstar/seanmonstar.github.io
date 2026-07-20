@@ -4,8 +4,6 @@ title: Pattern Matching and Backwards Compatibility
 date: '2022-08-25T12:17:10-04:00'
 tags:
 - rust
-- rust-lang
-- best-practices
 - bestof
 - programming
 tumblr_url: https://seanmonstar.com/post/693574545047683072/pattern-matching-and-backwards-compatibility

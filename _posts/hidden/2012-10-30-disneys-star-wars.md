@@ -3,9 +3,6 @@ hidden: true
 layout: post
 title: Disney's Star Wars
 date: '2012-10-30T18:41:21-04:00'
-tags:
-- disney
-- star wars
 tumblr_url: https://seanmonstar.com/post/34662061548/disneys-star-wars
 ---
 [Disney's Star Wars](http://thewaltdisneycompany.com/disney-news/press-releases/2012/10/disney-acquire-lucasfilm-ltd)  

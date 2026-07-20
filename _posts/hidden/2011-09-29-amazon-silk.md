@@ -3,12 +3,6 @@ hidden: true
 layout: post
 title: Amazon Silk
 date: '2011-09-29T12:12:01-04:00'
-tags:
-- amazon
-- kindle
-- kindle fire
-- amazon silk
-- privacy
 tumblr_url: https://seanmonstar.com/post/10809121165/amazon-silk
 ---
 [Amazon Silk](http://cdespinosa.posterous.com/fire)  

@@ -4,7 +4,6 @@ title: Make YUI's Editor More Pluggable
 date: '2008-09-03T16:57:00-04:00'
 tags:
 - javascript
-- yui
 tumblr_url: https://seanmonstar.com/post/706983762/make-yui-s-editor-more-pluggable
 ---
 I got to play around a little bit with YUI’s (I pronounce it _yoo-ey_) [Rich Text Editor](http://developer.yahoo.com/yui/editor/ "YUI Editor") as I implemented a low-level CMS for one of my current projects. I’ve used TinyMCE a-plenty, and wanted to check out YUI’s implementation because theoretically _YUI is far easier to extend._ One thing that tripped me up was the styling, which in retrospect I should have noticed, but it irked me, so I solved it in my lazy efficient programmer fashion.

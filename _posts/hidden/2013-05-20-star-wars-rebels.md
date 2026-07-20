@@ -3,11 +3,6 @@ hidden: true
 layout: post
 title: Star Wars Rebels
 date: '2013-05-20T21:07:48-04:00'
-tags:
-- star wars
-- rebels
-- rebellion
-- star wars rebels
 tumblr_url: https://seanmonstar.com/post/50951937596/star-wars-rebels
 ---
 [Star Wars Rebels](http://starwars.com/news/new-animated-series-star-wars-rebels-coming-fall-2014.html)  

@@ -4,10 +4,8 @@ title: Introducing Reqwest
 date: '2016-11-15T12:26:14-05:00'
 tags:
 - rust
-- rust-lang
 - reqwest
 - mozilla
-- planet
 - programming
 tumblr_url: https://seanmonstar.com/post/153221119046/introducing-reqwest
 ---

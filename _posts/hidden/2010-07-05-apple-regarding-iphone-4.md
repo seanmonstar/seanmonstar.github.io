@@ -3,8 +3,6 @@ hidden: true
 layout: post
 title: Letter from Apple Regarding iPhone 4
 date: '2010-07-05T18:01:26-04:00'
-tags:
-- iphone
 tumblr_url: https://seanmonstar.com/post/774218819/apple-regarding-iphone-4
 ---
 [Letter from Apple Regarding iPhone 4](http://latimesblogs.latimes.com/technology/2010/07/iphone-bars.html)  

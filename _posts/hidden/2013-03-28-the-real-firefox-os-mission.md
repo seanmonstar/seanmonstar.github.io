@@ -3,12 +3,6 @@ hidden: true
 layout: post
 title: The Real Firefox OS Mission
 date: '2013-03-28T15:00:20-04:00'
-tags:
-- mozilla
-- firefox os
-- planet
-- standards
-- web apps
 tumblr_url: https://seanmonstar.com/post/46523219016/the-real-firefox-os-mission
 ---
 [The Real Firefox OS Mission](http://arstechnica.com/gadgets/2013/03/firefox-os-hands-on-mozillas-plan-to-build-on-top-of-the-web/)  

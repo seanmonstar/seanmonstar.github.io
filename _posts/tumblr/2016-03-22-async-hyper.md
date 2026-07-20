@@ -4,9 +4,7 @@ title: async hyper
 date: '2016-03-22T13:10:55-04:00'
 tags:
 - rust
-- rust-lang
 - mozilla
-- planet
 - hyper
 - http
 - programming

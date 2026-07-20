@@ -4,7 +4,6 @@ title: hyper v0.6.8 - Socket Timeouts
 date: '2015-08-03T20:36:25-04:00'
 tags:
 - rust
-- rust-lang
 - hyper
 tumblr_url: https://seanmonstar.com/post/125800688202/hyper-v068-socket-timeouts
 ---

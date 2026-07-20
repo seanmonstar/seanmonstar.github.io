@@ -3,10 +3,6 @@ hidden: true
 layout: post
 title: The Free Republic
 date: '2012-11-16T14:13:33-05:00'
-tags:
-- star wars
-- swtor
-- game
 tumblr_url: https://seanmonstar.com/post/35853418585/the-free-republic
 ---
 [The Free Republic](http://www.swtor.com/info/news/press-release/20121115)  

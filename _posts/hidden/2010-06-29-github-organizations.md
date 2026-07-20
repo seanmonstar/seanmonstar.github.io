@@ -3,8 +3,6 @@ hidden: true
 layout: post
 title: Github Organizations
 date: '2010-06-29T20:02:00-04:00'
-tags:
-- mootools
 tumblr_url: https://seanmonstar.com/post/751511863/github-organizations
 ---
 [Github Organizations](http://github.com/blog/674-introducing-organizations)  

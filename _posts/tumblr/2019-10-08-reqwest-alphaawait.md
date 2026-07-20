@@ -4,7 +4,6 @@ title: reqwest alpha.await
 date: '2019-10-08T17:05:02-04:00'
 tags:
 - rust
-- rust-lang
 - http
 - reqwest
 tumblr_url: https://seanmonstar.com/post/188220739932/reqwest-alphaawait

@@ -3,12 +3,6 @@ hidden: true
 layout: post
 title: Curiosity
 date: '2012-08-03T14:59:00-04:00'
-tags:
-- space
-- physics
-- tie fighter
-- mars
-- curiosity
 tumblr_url: https://seanmonstar.com/post/28642453047/curiosity
 ---
 [Curiosity](https://www.youtube.com/watch?v=Ki_Af_o9Q9s)  

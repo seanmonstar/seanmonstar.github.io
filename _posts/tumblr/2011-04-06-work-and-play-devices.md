@@ -2,7 +2,6 @@
 layout: post
 title: Work and Play Devices
 date: '2011-04-06T14:00:07-04:00'
-tags: []
 tumblr_url: https://seanmonstar.com/post/4393867105/work-and-play-devices
 ---
 [Work and Play Devices](http://sethgodin.typepad.com/seths_blog/2011/03/are-you-making-something.html)  

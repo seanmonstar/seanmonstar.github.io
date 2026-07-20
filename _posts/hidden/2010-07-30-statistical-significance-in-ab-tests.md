@@ -3,7 +3,6 @@ hidden: true
 layout: post
 title: Statistical Significance & Other A/B Test Pitfalls
 date: '2010-07-30T10:02:47-04:00'
-tags: []
 tumblr_url: https://seanmonstar.com/post/879789956/statistical-significance-in-ab-tests
 ---
 [Statistical Significance & Other A/B Test Pitfalls](http://www.cennydd.co.uk/2009/statistical-significance-other-ab-test-pitfalls/)  

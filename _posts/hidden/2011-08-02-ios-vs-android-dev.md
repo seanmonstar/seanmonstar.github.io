@@ -3,10 +3,6 @@ hidden: true
 layout: post
 title: An iOS Developer Takes on Android
 date: '2011-08-02T15:00:05-04:00'
-tags:
-- android
-- programming
-- ios
 tumblr_url: https://seanmonstar.com/post/8392991361/ios-vs-android-dev
 ---
 [An iOS Developer Takes on Android](http://nfarina.com/post/8239634061/ios-to-android)  

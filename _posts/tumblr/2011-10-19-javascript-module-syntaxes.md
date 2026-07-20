@@ -7,7 +7,6 @@ tags:
 - programming
 - shipyard
 - mozilla
-- planet
 tumblr_url: https://seanmonstar.com/post/11670322838/javascript-module-syntaxes
 ---
 [JavaScript Module Syntaxes](http://blog.calyptus.eu/seb/2011/10/choosing-a-javascript-module-syntax/)  

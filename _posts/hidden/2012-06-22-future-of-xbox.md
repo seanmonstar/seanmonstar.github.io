@@ -3,10 +3,6 @@ hidden: true
 layout: post
 title: Future of Xbox
 date: '2012-06-22T14:00:00-04:00'
-tags:
-- xbox
-- microsoft
-- smart glass
 tumblr_url: https://seanmonstar.com/post/25657295106/future-of-xbox
 ---
 [Future of Xbox](http://www.youtube.com/watch?v=ZtFjCGg1N68)  

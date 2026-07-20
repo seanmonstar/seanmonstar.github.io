@@ -3,9 +3,6 @@ hidden: true
 layout: post
 title: Personalizing Search
 date: '2012-01-10T17:40:14-05:00'
-tags:
-- search
-- google
 tumblr_url: https://seanmonstar.com/post/15637589516/personalizing-search
 ---
 [Personalizing Search](http://googleblog.blogspot.com/2012/01/search-plus-your-world.html)  

@@ -3,11 +3,6 @@ hidden: true
 layout: post
 title: New 'Star Wars' films to be released every summer
 date: '2013-04-18T02:09:23-04:00'
-tags:
-- star wars
-- disney
-- episode 7
-- movies
 tumblr_url: https://seanmonstar.com/post/48262748827/star-wars-every-year
 ---
 [New 'Star Wars' films to be released every summer](http://www.theverge.com/2013/4/17/4235696/new-star-wars-films-to-be-released-every-summer-beginning-with)  

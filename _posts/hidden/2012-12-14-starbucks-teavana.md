@@ -3,10 +3,6 @@ hidden: true
 layout: post
 title: Starbucks + Teavana
 date: '2012-12-14T19:19:00-05:00'
-tags:
-- tea
-- teavana
-- starbucks
 tumblr_url: https://seanmonstar.com/post/37942223459/starbucks-teavana
 ---
 [Starbucks + Teavana](http://www.themorningnews.org/article/a-spot-for-tea)  

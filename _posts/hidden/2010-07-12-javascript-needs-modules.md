@@ -3,8 +3,6 @@ hidden: true
 layout: post
 title: JavaScript needs modules
 date: '2010-07-12T10:01:43-04:00'
-tags:
-- javascript
 tumblr_url: https://seanmonstar.com/post/802108175/javascript-needs-modules
 ---
 [JavaScript needs modules](http://blog.mozilla.com/dherman/2010/07/08/javascript-needs-modules/)  

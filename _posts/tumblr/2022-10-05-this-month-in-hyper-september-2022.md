@@ -4,7 +4,6 @@ title: 'This Month in hyper: September 2022'
 date: '2022-10-05T13:30:02-04:00'
 tags:
 - rust
-- rust-lang
 - hyper
 - monthly
 - http

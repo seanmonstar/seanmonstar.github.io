@@ -4,7 +4,6 @@ title: Requiring Login to CakePHP Admin
 date: '2009-07-09T12:29:00-04:00'
 tags:
 - php
-- cakephp
 - bestof
 tumblr_url: https://seanmonstar.com/post/707166936/requiring-login-to-cakephp-admin
 ---

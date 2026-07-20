@@ -2,7 +2,6 @@
 layout: post
 title: Web Standards in Layman's Terms
 date: '2008-02-20T19:53:00-05:00'
-tags: []
 tumblr_url: https://seanmonstar.com/post/706895479/web-standards-in-layman-s-terms
 ---
 > **You:** “My sites comply with current web standards.”  

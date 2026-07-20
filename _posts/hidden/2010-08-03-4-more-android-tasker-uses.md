@@ -3,8 +3,6 @@ hidden: true
 layout: post
 title: 4 More Android Tasker Uses
 date: '2010-08-03T18:22:02-04:00'
-tags:
-- android
 tumblr_url: https://seanmonstar.com/post/899901489/4-more-android-tasker-uses
 ---
 [4 More Android Tasker Uses](http://lifehacker.com/5601133/push-your-automated-android-to-awesome-heights-with-these-tasker-setups)  

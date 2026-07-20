@@ -3,9 +3,6 @@ hidden: true
 layout: post
 title: Android’s Arrival
 date: '2011-05-16T13:02:06-04:00'
-tags:
-- android
-- ios
 tumblr_url: https://seanmonstar.com/post/5547696219/androids-arrival
 ---
 [Android’s Arrival](http://carpeaqua.com/2011/05/12/androids-arrival/)  

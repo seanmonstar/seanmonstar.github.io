@@ -3,8 +3,6 @@ hidden: true
 layout: post
 title: Google+ Feedback
 date: '2011-07-28T00:23:49-04:00'
-tags:
-- google+
 tumblr_url: https://seanmonstar.com/post/8159079906/google-feedback
 ---
 I’ve been enjoying [Google+](http://seanmonstar.com/+), for the most part. I would love to just drop Twitter and Facebook, since it feels like the proper merging of the two. Besides that most of my friends aren’t using it, given some time, I’m sure more will. In the meantime, I’m using it more along the Twitter approach than the Facebook approach[^1].

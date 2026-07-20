@@ -3,9 +3,6 @@ hidden: true
 layout: post
 title: Tab In My Pocket
 date: '2010-10-14T16:14:33-04:00'
-tags:
-- android
-- galaxy tab
 tumblr_url: https://seanmonstar.com/post/1314864726/tab-in-my-pocket
 ---
 [Tab In My Pocket](http://www.tbray.org/ongoing/When/201x/2010/09/10/Galaxy-Tab-in-my-Pocket)  

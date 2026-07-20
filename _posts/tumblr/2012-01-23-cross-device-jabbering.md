@@ -5,9 +5,6 @@ date: '2012-01-23T15:17:42-05:00'
 tags:
 - android
 - ios
-- jabber
-- chat
-- im
 - communication
 tumblr_url: https://seanmonstar.com/post/16361991702/cross-device-jabbering
 ---

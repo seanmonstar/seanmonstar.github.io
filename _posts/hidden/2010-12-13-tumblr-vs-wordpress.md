@@ -3,10 +3,6 @@ hidden: true
 layout: post
 title: tumblr vs wordpress
 date: '2010-12-13T19:48:56-05:00'
-tags:
-- tumblr
-- blogging
-- wordpress
 tumblr_url: https://seanmonstar.com/post/2306245486/tumblr-vs-wordpress
 ---
  ![](https://64.media.tumblr.com/tumblr_lde60himRj1qzhan1o1_1280.jpg)  

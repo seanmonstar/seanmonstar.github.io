@@ -3,9 +3,6 @@ hidden: true
 layout: post
 title: Google’s Driverless Cars Subscriptions?
 date: '2010-10-13T21:35:24-04:00'
-tags:
-- google
-- google car
 tumblr_url: https://seanmonstar.com/post/1309842650/googles-driverless-cars-subscriptions
 ---
 [Google’s Driverless Cars Subscriptions?](http://tech.fortune.cnn.com/2010/10/12/when-can-consumers-buy-a-google-driverless-car-and-why-would-they/)  

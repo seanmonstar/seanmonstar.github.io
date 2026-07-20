@@ -3,8 +3,6 @@ hidden: true
 layout: post
 title: 'HTML5: Changing the browser-URL without refreshing page'
 date: '2010-07-20T20:18:03-04:00'
-tags:
-- javascript
 tumblr_url: https://seanmonstar.com/post/838416615/new-history-pushstate
 ---
 [HTML5: Changing the browser-URL without refreshing page](http://www.spoiledmilk.dk/blog/?p=1922)  

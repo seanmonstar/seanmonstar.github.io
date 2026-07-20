@@ -3,8 +3,7 @@ layout: post
 title: Twitter, Reblog, and Email Comments
 date: '2011-01-25T18:42:49-05:00'
 tags:
-- blogging
-- comments
+- writing
 tumblr_url: https://seanmonstar.com/post/2931458228/twitter-reblog-and-email-comments
 ---
 [Twitter, Reblog, and Email Comments (archived)](https://web.archive.org/web/20110208190627/http://ianhin.es/wrote-about/twitter-reblog-and-email-comments/)

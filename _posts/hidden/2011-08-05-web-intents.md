@@ -3,11 +3,6 @@ hidden: true
 layout: post
 title: Web Intents
 date: '2011-08-05T19:26:07-04:00'
-tags:
-- web intents
-- intents
-- chrome
-- mozilla
 tumblr_url: https://seanmonstar.com/post/8532867501/web-intents
 ---
 [Web Intents](http://blog.chromium.org/2011/08/connecting-web-apps-with-web-intents.html)  

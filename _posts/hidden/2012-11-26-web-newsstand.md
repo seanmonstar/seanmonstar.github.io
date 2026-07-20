@@ -3,13 +3,6 @@ hidden: true
 layout: post
 title: A Better Publishing Model
 date: '2012-11-26T23:23:07-05:00'
-tags:
-- html
-- web
-- publishing
-- ios
-- android
-- newsstand
 tumblr_url: https://seanmonstar.com/post/36645389127/web-newsstand
 ---
 [A Better Publishing Model](http://www.usabilitypost.com/2012/11/26/the-gleam-of-a-better-publishing-model/)  

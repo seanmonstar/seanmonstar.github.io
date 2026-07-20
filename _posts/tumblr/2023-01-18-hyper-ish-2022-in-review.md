@@ -8,7 +8,6 @@ tags:
 - http3
 - curl
 - rust
-- rust-lang
 - tower
 tumblr_url: https://seanmonstar.com/post/706802392260362240/hyper-ish-2022-in-review
 ---

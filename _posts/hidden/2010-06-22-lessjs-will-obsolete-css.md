@@ -3,9 +3,6 @@ hidden: true
 layout: post
 title: Less.js Will Obsolete CSS
 date: '2010-06-22T15:30:00-04:00'
-tags:
-- css
-- javascript
 tumblr_url: https://seanmonstar.com/post/726287616/lessjs-will-obsolete-css
 ---
 [Less.js Will Obsolete CSS](http://fadeyev.net/2010/06/19/lessjs-will-obsolete-css/)  

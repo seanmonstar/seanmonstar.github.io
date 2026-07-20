@@ -3,7 +3,6 @@ hidden: true
 layout: post
 title: It's All Your Fault
 date: '2009-01-19T11:05:00-05:00'
-tags: []
 tumblr_url: https://seanmonstar.com/post/707131922/it-s-all-your-fault
 ---
 Yes, everything. All the fights, all the ugly words, all the bruises, all the broken keyboards, all the late nights. They were your fault, IE6. It feels rather liberating to be free of you. At least, personally. (Sometimes my boss makes me work with you, but its purely professional at those times.)

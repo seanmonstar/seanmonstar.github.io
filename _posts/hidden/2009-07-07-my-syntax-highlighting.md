@@ -3,9 +3,6 @@ hidden: true
 layout: post
 title: My Syntax Highlighting
 date: '2009-07-07T11:00:00-04:00'
-tags:
-- opinion
-- bestof
 tumblr_url: https://seanmonstar.com/post/707172696/my-syntax-highlighting
 ---
 One of the most obvious benefits to [code editors](http://www.ultraedit.com/) and [IDEs](http://mcarthurgfx.com/blog/article/php-designer-2008) is being able to customize all the pretty colors that we must stare at for hours on end. It’s our decoration. **It’s our wardrobe**. So let me show off my own code outfitting.

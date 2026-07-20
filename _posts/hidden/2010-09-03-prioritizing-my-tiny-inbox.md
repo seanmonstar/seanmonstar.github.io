@@ -3,11 +3,6 @@ hidden: true
 layout: post
 title: Prioritizing My Tiny Inbox
 date: '2010-09-03T19:09:00-04:00'
-tags:
-- gmail
-- priority inbox
-- google
-- email
 tumblr_url: https://seanmonstar.com/post/1060701091/prioritizing-my-tiny-inbox
 ---
 The intertubes all have [Gmail’s Priority Inbox](http://mail.google.com/mail/help/priority-inbox.html) in mind. I find people’s reactions to be quite surprising. I don’t get the tidal waves of email as some people do. In fact, I get very little email. Yet, I was excited at the idea of trying to make email better.

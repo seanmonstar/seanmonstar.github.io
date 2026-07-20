@@ -5,7 +5,6 @@ date: '2009-04-09T12:22:00-04:00'
 tags:
 - css
 - standards
-- opinion
 - bestof
 tumblr_url: https://seanmonstar.com/post/707104407/tables-vs-css-really
 ---

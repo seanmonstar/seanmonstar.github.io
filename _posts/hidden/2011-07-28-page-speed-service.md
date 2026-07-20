@@ -3,10 +3,6 @@ hidden: true
 layout: post
 title: Page Speed Service
 date: '2011-07-28T17:37:47-04:00'
-tags:
-- google
-- performance
-- websites
 tumblr_url: https://seanmonstar.com/post/8186329999/page-speed-service
 ---
 [Page Speed Service](http://code.google.com/speed/pss/index.html)  

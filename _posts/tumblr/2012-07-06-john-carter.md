@@ -3,10 +3,7 @@ layout: post
 title: John Carter
 date: '2012-07-06T18:21:56-04:00'
 tags:
-- movies
 - review
-- john carter
-- marketing
 tumblr_url: https://seanmonstar.com/post/26655793168/john-carter
 ---
 I rented the movie [John Carter](http://en.wikipedia.org/wiki/John_Carter_%28film%29) last night. I now wish I had supported it by going to the movie theater. It was an honest movie. My feelings regarding it:

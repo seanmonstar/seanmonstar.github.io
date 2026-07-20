@@ -3,12 +3,6 @@ hidden: true
 layout: post
 title: Xbox One vs. indies
 date: '2013-06-20T21:30:30-04:00'
-tags:
-- microsoft
-- xbox one
-- gaming
-- digital
-- indie games
 tumblr_url: https://seanmonstar.com/post/53481419717/xbox-one-vs-indies
 ---
 [Xbox One vs. indies](http://penny-arcade.com/report/article/xbox-one-vs.-indies-microsoft-bullies-developers-into-signing-with-publishe)  

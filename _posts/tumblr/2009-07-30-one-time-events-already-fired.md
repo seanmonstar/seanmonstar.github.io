@@ -2,7 +2,6 @@
 layout: post
 title: 'One Time Events: Already Fired?'
 date: '2009-07-30T13:18:00-04:00'
-tags: []
 tumblr_url: https://seanmonstar.com/post/707073408/one-time-events-already-fired
 ---
 [Batch programming](http://en.wikipedia.org/wiki/Batch_programming) is certainly very easy to understand and write. You order a todo list and give it to the compiler/interpreter. It’s what’s usually taught first when you learn to program, and even in some server-side languages, you batch program (PHP doesn’t have events at all, for instance). However, persitance applications that live on the desktop (and perhaps Ajax applications with minimal page refreshes) rely on [event-driven programming](http://en.wikipedia.org/wiki/Event-driven_programming). You set up a user interface, and then wait for the user to do something to that interface, and then respond to the event.

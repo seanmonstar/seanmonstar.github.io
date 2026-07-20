@@ -3,11 +3,6 @@ hidden: true
 layout: post
 title: Battleheart on Android
 date: '2011-06-30T15:01:06-04:00'
-tags:
-- android
-- iphone
-- battleheart
-- app
 tumblr_url: https://seanmonstar.com/post/7089665718/battleheart-on-android
 ---
 [Battleheart on Android](http://mikamobile.blogspot.com/2011/06/android.html)  

@@ -7,7 +7,6 @@ tags:
 - programming
 - nodejs
 - client-sessions
-- planet
 tumblr_url: https://seanmonstar.com/post/70209872571/client-sessions-v05
 ---
 [client-sessions v0.5](https://github.com/mozilla/node-client-sessions/releases/tag/v0.5.0)  

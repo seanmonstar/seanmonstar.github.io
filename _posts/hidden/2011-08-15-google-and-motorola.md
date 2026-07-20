@@ -3,10 +3,6 @@ hidden: true
 layout: post
 title: Google and Motorola
 date: '2011-08-15T20:43:00-04:00'
-tags:
-- google
-- android
-- motorola
 tumblr_url: https://seanmonstar.com/post/8974922335/google-and-motorola
 ---
 [Google and Motorola](http://googleblog.blogspot.com/2011/08/supercharging-android-google-to-acquire.html)  

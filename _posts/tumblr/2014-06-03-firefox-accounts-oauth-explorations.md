@@ -4,12 +4,8 @@ title: Firefox Accounts OAuth Explorations
 date: '2014-06-03T13:30:00-04:00'
 tags:
 - mozilla
-- planet
 - firefox accounts
 - identity
-- oauth
-- gryphon
-- fxa
 - bestof
 tumblr_url: https://seanmonstar.com/post/87709828215/firefox-accounts-oauth-explorations
 ---

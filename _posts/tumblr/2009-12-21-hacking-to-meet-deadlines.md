@@ -3,7 +3,6 @@ layout: post
 title: Hacking To Meet Deadlines
 date: '2009-12-21T10:06:00-05:00'
 tags:
-- opinion
 - php
 - bestof
 tumblr_url: https://seanmonstar.com/post/708885956/hacking-to-meet-deadlines

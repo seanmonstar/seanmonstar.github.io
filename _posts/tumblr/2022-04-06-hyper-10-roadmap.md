@@ -6,7 +6,6 @@ tags:
 - hyper
 - http
 - rust
-- rust-lang
 tumblr_url: https://seanmonstar.com/post/680802159018803200/hyper-10-roadmap
 ---
 > hyper is a protective and efficient HTTP library for all.

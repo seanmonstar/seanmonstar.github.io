@@ -3,8 +3,6 @@ hidden: true
 layout: post
 title: Apple's Game of Chicken
 date: '2011-06-09T14:55:13-04:00'
-tags:
-- apple
 tumblr_url: https://seanmonstar.com/post/6359548618/apple-chicken
 ---
 [Apple's Game of Chicken](http://www.macrumors.com/2011/06/09/apple-reverses-course-on-in-app-subscriptions/)  

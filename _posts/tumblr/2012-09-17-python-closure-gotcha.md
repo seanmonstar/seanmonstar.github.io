@@ -5,7 +5,6 @@ date: '2012-09-17T16:57:44-04:00'
 tags:
 - programming
 - python
-- planet
 tumblr_url: https://seanmonstar.com/post/31749159302/python-closure-gotcha
 ---
 You know all about [JavaScript closures](https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Closures). They’re great. We can do [super cool stuff](http://seanmonstar.com/blog/closures-break-my-for-s/) with them. Python has closures, too! However, the combination of closures and no `var` keyword leads us to a fun Gotcha.

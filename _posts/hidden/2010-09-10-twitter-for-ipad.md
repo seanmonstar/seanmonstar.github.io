@@ -3,9 +3,6 @@ hidden: true
 layout: post
 title: Twitter for iPad
 date: '2010-09-10T15:47:39-04:00'
-tags:
-- ipad
-- twitter
 tumblr_url: https://seanmonstar.com/post/1098384876/twitter-for-ipad
 ---
 [Twitter for iPad](http://brooksreview.net/2010/09/twitter-ipad-2/)  

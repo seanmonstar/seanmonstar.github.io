@@ -3,11 +3,6 @@ hidden: true
 layout: post
 title: A new direction for web applications
 date: '2012-01-24T15:10:18-05:00'
-tags:
-- javascript
-- node
-- programming
-- planet
 tumblr_url: https://seanmonstar.com/post/16419650738/a-new-direction-for-web-applications
 ---
 [A new direction for web applications](http://www.mikealrogers.com/posts/a-new-direction-for-web-applications-.html)  

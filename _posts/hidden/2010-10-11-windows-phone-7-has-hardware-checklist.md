@@ -3,10 +3,6 @@ hidden: true
 layout: post
 title: Windows Phone 7 Has Hardware Checklist
 date: '2010-10-11T19:19:49-04:00'
-tags:
-- android
-- google
-- windows phone 7
 tumblr_url: https://seanmonstar.com/post/1294552215/windows-phone-7-has-hardware-checklist
 ---
 [Windows Phone 7 Has Hardware Checklist](http://www.wired.com/gadgetlab/2010/10/windows-phone-7-4)  

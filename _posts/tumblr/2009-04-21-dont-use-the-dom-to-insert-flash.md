@@ -4,7 +4,6 @@ title: Don't Use the DOM to Insert Flash
 date: '2009-04-21T10:46:00-04:00'
 tags:
 - javascript
-- flash
 - bug
 tumblr_url: https://seanmonstar.com/post/707145908/dont-use-the-dom-to-insert-flash
 ---

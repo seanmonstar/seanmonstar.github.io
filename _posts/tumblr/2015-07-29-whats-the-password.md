@@ -5,9 +5,7 @@ date: '2015-07-29T12:25:29-04:00'
 tags:
 - persona
 - identity
-- browserid
 - mozilla
-- planet
 tumblr_url: https://seanmonstar.com/post/125352745992/whats-the-password
 ---
 Exploring the wilds of the internets, I stumble upon a brand new site that allows me to turn cat images into ASCII art.

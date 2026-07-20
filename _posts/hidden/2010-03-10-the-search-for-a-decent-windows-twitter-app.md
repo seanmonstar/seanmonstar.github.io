@@ -3,9 +3,6 @@ hidden: true
 layout: post
 title: The Search for a Decent Windows Twitter App
 date: '2010-03-10T18:19:00-05:00'
-tags:
-- twitter
-- opinion
 tumblr_url: https://seanmonstar.com/post/709000980/the-search-for-a-decent-windows-twitter-app
 ---
 I kinda like [Twitter](http://twitter.com/seanmonstar). It’s a fun place to leave [occasional comments](http://mcarthurgfx.com/blog/article/i-m-a-twitter-monstar). It’s also a great way to find links to interesting information I would normally miss from my feeds. But being a Windows user, I have yet to find **that** Twitter application that is a joy to use.

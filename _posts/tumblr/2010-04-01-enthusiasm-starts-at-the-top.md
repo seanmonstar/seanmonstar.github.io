@@ -3,7 +3,6 @@ layout: post
 title: Enthusiasm Starts at the Top
 date: '2010-04-01T13:50:00-04:00'
 tags:
-- opinion
 - bestof
 tumblr_url: https://seanmonstar.com/post/709023720/enthusiasm-starts-at-the-top
 ---

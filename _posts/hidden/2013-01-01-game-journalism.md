@@ -3,11 +3,6 @@ hidden: true
 layout: post
 title: Game journalism is its own worst enemy
 date: '2013-01-01T15:00:27-05:00'
-tags:
-- games
-- video games
-- writing
-- news
 tumblr_url: https://seanmonstar.com/post/39401703517/game-journalism
 ---
 [Game journalism is its own worst enemy](http://penny-arcade.com/report/editorial-article/bad-linking-plagiarism-and-re-writes-how-game-journalism-is-its-own-worst-e)  

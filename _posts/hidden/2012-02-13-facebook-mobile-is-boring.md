@@ -3,12 +3,6 @@ hidden: true
 layout: post
 title: Facebook Mobile is Boring
 date: '2012-02-13T19:00:05-05:00'
-tags:
-- facebook
-- mobile
-- iphone
-- android
-- app
 tumblr_url: https://seanmonstar.com/post/17577230065/facebook-mobile-is-boring
 ---
 [Facebook Mobile is Boring](http://www.splatf.com/2012/02/facebook-mobile/)  

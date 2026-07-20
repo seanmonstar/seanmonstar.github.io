@@ -6,7 +6,6 @@ tags:
 - android
 - iphone
 - ipad
-- cloud
 tumblr_url: https://seanmonstar.com/post/4771334793/cutting-that-cord
 ---
 [Cutting That Cord](http://daringfireball.net/2011/04/cutting_that_cord)  

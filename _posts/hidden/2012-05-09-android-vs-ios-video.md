@@ -3,10 +3,6 @@ hidden: true
 layout: post
 title: Android vs iOS Video
 date: '2012-05-09T19:01:03-04:00'
-tags:
-- android
-- ios
-- video
 tumblr_url: https://seanmonstar.com/post/22742073768/android-vs-ios-video
 ---
 [Android vs iOS Video](http://www.youtube.com/watch?feature=player_embedded&v=NMiY1kSTHZw)  

@@ -4,7 +4,6 @@ title: 'This Month in hyper: August 2022'
 date: '2022-08-31T13:34:34-04:00'
 tags:
 - rust
-- rust-lang
 - hyper
 - tower
 - monthly

@@ -3,10 +3,6 @@ hidden: true
 layout: post
 title: Contextless Twitter Search
 date: '2011-03-23T21:35:12-04:00'
-tags:
-- twitter
-- search
-- opinion
 tumblr_url: https://seanmonstar.com/post/4054494468/contextless-twitter-search
 ---
 [Marco outlines what’s so terrible about the Quick Bar](http://www.marco.org/3991237704) in the Twitter for iPhone app, but it sounds more like a fair assessment of Twitter’s trending topics feature in general. The trending topics are simply words that Twitter has noticed are having an increased appearance in a short time period. Once in a good long while, when control of my wandering eyes is slacking, I see something that catches my attention in the trending topics. I click on it, curious about what all the ruckus is about. Since this ships me off to a global twitter search of the topic, I immediately scold myself and my wandering eyes. You failed me!

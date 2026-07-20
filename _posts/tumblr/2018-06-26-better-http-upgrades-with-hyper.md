@@ -5,9 +5,7 @@ date: '2018-06-26T15:39:42-04:00'
 tags:
 - hyper
 - rust
-- rust-lang
 - http
-- websockets
 tumblr_url: https://seanmonstar.com/post/175280388657/better-http-upgrades-with-hyper
 ---
 It’s been possible to [handle HTTP Upgrades](http://seanmonstar.com/blog/http-upgrades-with-hyper/) (like Websockets) in [hyper](https://hyper.rs) if you made use of the low-level APIs in the server and client, but it wasn’t especially nice to work with. It also meant to handle upgrades, you couldn’t use the nicer things that hyper takes care of for you with `Client` or `Server`.

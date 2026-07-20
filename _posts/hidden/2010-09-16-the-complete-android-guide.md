@@ -3,8 +3,6 @@ hidden: true
 layout: post
 title: The Complete Android Guide
 date: '2010-09-16T19:41:36-04:00'
-tags:
-- android
 tumblr_url: https://seanmonstar.com/post/1134392128/the-complete-android-guide
 ---
 [The Complete Android Guide](http://www.completeguides.net/01_The_Complete_Android_Guide)  

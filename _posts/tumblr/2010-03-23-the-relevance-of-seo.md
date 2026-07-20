@@ -3,8 +3,6 @@ layout: post
 title: The Relevance of SEO
 date: '2010-03-23T11:57:00-04:00'
 tags:
-- opinion
-- seo
 - bestof
 tumblr_url: https://seanmonstar.com/post/709004275/the-relevance-of-seo
 ---

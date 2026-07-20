@@ -3,9 +3,6 @@ hidden: true
 layout: post
 title: Android 3.0 Platform Highlights
 date: '2011-01-26T21:04:41-05:00'
-tags:
-- android
-- honeycomb
 tumblr_url: https://seanmonstar.com/post/2950421756/honeycomb
 ---
 [Android 3.0 Platform Highlights](http://developer.android.com/sdk/android-3.0-highlights.html)  

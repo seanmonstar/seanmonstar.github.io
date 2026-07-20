@@ -2,8 +2,6 @@
 layout: post
 title: PuTTY Connection Manager
 date: '2008-12-16T08:00:00-05:00'
-tags:
-- putty
 tumblr_url: https://seanmonstar.com/post/707084079/putty-connection-manager
 ---
 [PuTTY Connection Manager](http://puttycm.free.fr/)  

@@ -5,7 +5,6 @@ date: '2022-02-22T13:15:14-05:00'
 tags:
 - hyper
 - rust
-- rust-lang
 - http
 tumblr_url: https://seanmonstar.com/post/676912131372875776/hyper-10-timeline
 ---

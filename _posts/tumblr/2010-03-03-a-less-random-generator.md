@@ -5,8 +5,6 @@ date: '2010-03-03T16:52:00-05:00'
 tags:
 - bestof
 - python
-- probability
-- randomness
 tumblr_url: https://seanmonstar.com/post/708989796/a-less-random-generator
 ---
 In game development, it’s very common to want a random number. Maybe you want to determine damage done, if there was a critical, or what slot on the board to insert your piece at. And surprisingly (or perhaps, not), programmers are often looking to make this random number a little less… _random._

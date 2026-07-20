@@ -3,8 +3,6 @@ hidden: true
 layout: post
 title: Backing up your brain
 date: '2012-12-13T15:00:45-05:00'
-tags:
-- evernote
 tumblr_url: https://seanmonstar.com/post/37849389107/backing-up-your-brain
 ---
 [Backing up your brain](http://www.theverge.com/2012/12/10/3743350/verge-at-work-backing-up-your-brain-evernote)  

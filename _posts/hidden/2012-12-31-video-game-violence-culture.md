@@ -4,10 +4,6 @@ layout: post
 title: '"It’s healthy, and important, to discuss our culture of video game violence
   after a tragedy"'
 date: '2012-12-31T19:50:30-05:00'
-tags:
-- games
-- video games
-- violence
 tumblr_url: https://seanmonstar.com/post/39345983825/video-game-violence-culture
 ---
 ["It’s healthy, and important, to discuss our culture of video game violence after a tragedy"](http://penny-arcade.com/report/editorial-article/after-tragedy-its-healthy-to-talk-about-our-culture-of-violence)  

@@ -3,11 +3,6 @@ hidden: true
 layout: post
 title: Widgets the Right Way
 date: '2011-12-05T21:21:03-05:00'
-tags:
-- widgets
-- javascript
-- html
-- social buttons
 tumblr_url: https://seanmonstar.com/post/13807757815/widgets-the-right-way
 ---
 [Widgets the Right Way](http://24ways.org/2011/defending-the-perimeter-against-web-widgets)  

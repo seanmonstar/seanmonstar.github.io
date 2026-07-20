@@ -4,7 +4,6 @@ title: Recently, for a Rusty Web
 date: '2018-02-22T13:51:14-05:00'
 tags:
 - rust
-- rust-lang
 - hyper
 - buoyant
 tumblr_url: https://seanmonstar.com/post/171170905822/recently-for-a-rusty-web

@@ -3,11 +3,6 @@ hidden: true
 layout: post
 title: Google Keep
 date: '2013-03-25T16:03:44-04:00'
-tags:
-- keep
-- google
-- android
-- evernote
 tumblr_url: https://seanmonstar.com/post/46272778461/google-keep
 ---
 [Google Keep](http://googleblog.blogspot.com/2013/03/google-keepsave-whats-on-your-mind.html)  

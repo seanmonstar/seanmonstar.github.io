@@ -3,10 +3,6 @@ hidden: true
 layout: post
 title: Galaxy Nexus on The Verge
 date: '2011-11-18T12:42:16-05:00'
-tags:
-- android
-- galaxy nexus
-- ice cream sandwich
 tumblr_url: https://seanmonstar.com/post/12972652815/galaxy-nexus-on-the-verge
 ---
 [Galaxy Nexus on The Verge](http://www.theverge.com/2011/11/17/2568348/galaxy-nexus-review)  

@@ -2,10 +2,6 @@
 layout: post
 title: 'Crappy Computers '
 date: '2012-11-14T15:00:15-05:00'
-tags:
-- computers
-- opinion
-- planet
 tumblr_url: https://seanmonstar.com/post/35719267866/crappy-computers
 ---
 [Crappy Computers](http://ignorethecode.net/blog/2012/11/04/crappy_computers/)  

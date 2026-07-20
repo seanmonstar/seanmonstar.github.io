@@ -3,8 +3,6 @@ hidden: true
 layout: post
 title: Google Chrome Pinned Tabs
 date: '2010-07-28T10:00:00-04:00'
-tags:
-- chrome
 tumblr_url: https://seanmonstar.com/post/870812923/google-chrome-pinned-tabs
 ---
 [Google Chrome Pinned Tabs](http://www.howtogeek.com/howto/7264/make-google-chrome-open-with-pinned-tabs/)  

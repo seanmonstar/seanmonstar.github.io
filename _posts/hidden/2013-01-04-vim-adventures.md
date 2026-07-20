@@ -3,8 +3,6 @@ hidden: true
 layout: post
 title: VIM Adventures
 date: '2013-01-04T19:54:11-05:00'
-tags:
-- vim
 tumblr_url: https://seanmonstar.com/post/39700444118/vim-adventures
 ---
 [VIM Adventures](http://vim-adventures.com/)  

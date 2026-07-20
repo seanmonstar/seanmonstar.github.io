@@ -6,8 +6,6 @@ tags:
 - programming
 - java
 - python
-- booleans
-- code style
 tumblr_url: https://seanmonstar.com/post/4810862963/boolean-arguments
 ---
 I find that boolean arguments don’t read that well when revisiting the code a little later.

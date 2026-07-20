@@ -3,9 +3,6 @@ hidden: true
 layout: post
 title: Rambling about Verizon
 date: '2010-06-22T16:48:48-04:00'
-tags:
-- iphone
-- android
 tumblr_url: https://seanmonstar.com/post/726518666/rambling-about-verizon
 ---
 [Rambling about Verizon](http://www.marco.org/725288444)  

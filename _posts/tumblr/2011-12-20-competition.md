@@ -6,7 +6,6 @@ tags:
 - android
 - ios
 - iphone
-- tech
 - competition
 tumblr_url: https://seanmonstar.com/post/14521626446/competition
 ---

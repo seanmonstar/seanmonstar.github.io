@@ -3,12 +3,6 @@ hidden: true
 layout: post
 title: Copy Me, and I'll Sue!
 date: '2011-06-29T19:01:06-04:00'
-tags:
-- apple
-- android
-- iphone
-- ios
-- copycat
 tumblr_url: https://seanmonstar.com/post/7060135942/ios5-copies-android
 ---
 [Copy Me, and I'll Sue!](http://smokingapples.com/opinion/my-thoughts-on-the-whole-ios-5-copying-android-situation/)  

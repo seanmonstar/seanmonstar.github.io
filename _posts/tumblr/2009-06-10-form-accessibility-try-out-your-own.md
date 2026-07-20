@@ -5,7 +5,6 @@ date: '2009-06-10T12:30:00-04:00'
 tags:
 - standards
 - html
-- accessibility
 - usability
 tumblr_url: https://seanmonstar.com/post/707151022/form-accessibility-try-out-your-own
 ---

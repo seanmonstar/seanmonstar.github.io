@@ -3,9 +3,6 @@ hidden: true
 layout: post
 title: The Invisible Hand of Super Metroid
 date: '2012-02-02T15:01:05-05:00'
-tags:
-- game design
-- metroid
 tumblr_url: https://seanmonstar.com/post/16931476207/the-invisible-hand-of-super-metroid
 ---
 [The Invisible Hand of Super Metroid](http://www.gamasutra.com/blogs/HugoBille/20120114/9236/The_Invisible_Hand_of_Super_Metroid.php)  

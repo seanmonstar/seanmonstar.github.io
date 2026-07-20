@@ -3,12 +3,6 @@ hidden: true
 layout: post
 title: Facebook Search
 date: '2013-01-20T15:00:24-05:00'
-tags:
-- facebook
-- aol
-- yahoo
-- the internet
-- facebook search
 tumblr_url: https://seanmonstar.com/post/41034628142/facebook-search
 ---
 [Facebook Search](http://www.theverge.com/2013/1/15/3879520/facebook-tackles-google-linkedin-yelp-graph-search)  

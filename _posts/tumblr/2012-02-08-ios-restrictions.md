@@ -4,9 +4,6 @@ title: Users Are Not Worried about iOS Restrictions
 date: '2012-02-08T14:49:23-05:00'
 tags:
 - ios
-- restrictions
-- opinion
-- tech
 tumblr_url: https://seanmonstar.com/post/17274465268/ios-restrictions
 ---
 [Users Are Not Worried about iOS Restrictions](http://zerodistraction.com/blog/2012/2/7/users-are-not-worried-about-ios-restrictions.html)  

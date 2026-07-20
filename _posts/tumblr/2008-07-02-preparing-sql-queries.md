@@ -4,7 +4,6 @@ title: Preparing SQL Queries
 date: '2008-07-02T13:35:00-04:00'
 tags:
 - php
-- sql
 tumblr_url: https://seanmonstar.com/post/706950211/preparing-sql-queries
 ---
 With web applications becoming more prevalent, and new developers showing up to fill the demand, security for web applications is increasingly important. Some applications have very special, very private data that should be only accessible to the specific user. Other, less “important” applications that don’t collect a lot of personal data, still have a need for security. With simple _SQL Injection_, your up and coming social media application could have it’s whole database wiped, just for kicks.

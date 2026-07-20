@@ -4,8 +4,6 @@ title: Was async fn a mistake?
 date: '2023-09-28T09:58-07:00'
 tags:
 - rust
-- opinion
-- async
 tumblr_url: https://seanmonstar.com/post/66832922686/was-async-fn-a-mistake
 ---
 This [stabilization PR for `async fn` in traits][stabilization] made me think: was `async fn` in Rust a mistake?

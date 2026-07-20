@@ -3,12 +3,6 @@ hidden: true
 layout: post
 title: Asynchronous UIs
 date: '2011-11-30T19:11:14-05:00'
-tags:
-- javascript
-- mvc
-- ui
-- ajax
-- programming
 tumblr_url: https://seanmonstar.com/post/13564996626/asynchronous-uis
 ---
 [Asynchronous UIs](http://alexmaccaw.co.uk/posts/async_ui)  

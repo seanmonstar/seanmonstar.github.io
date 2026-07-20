@@ -5,7 +5,6 @@ date: '2019-09-04T14:53:52-04:00'
 tags:
 - hyper
 - rust
-- rust-lang
 - http
 - tower
 tumblr_url: https://seanmonstar.com/post/187493499882/hyper-alpha-supports-asyncawait

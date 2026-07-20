@@ -3,11 +3,6 @@ hidden: true
 layout: post
 title: Tech sites covering the Boston bombing
 date: '2013-04-19T19:32:09-04:00'
-tags:
-- opinion
-- boston marathon
-- bombing
-- the verge
 tumblr_url: https://seanmonstar.com/post/48391865898/tech-sites-covering-the-boston-bombing
 ---
 The Boston Marathon news is certainly a tragic thing, but to read about it on The Verge felt shockingly out of place. I wasn’t alone. MG Siegler on the [coverage of the Boston bombings on tech sites](https://medium.com/writers-on-writing/94111dde5ca9):

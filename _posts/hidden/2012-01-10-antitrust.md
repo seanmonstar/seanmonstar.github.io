@@ -3,9 +3,6 @@ hidden: true
 layout: post
 title: Antitrust+?
 date: '2012-01-10T19:56:14-05:00'
-tags:
-- google
-- search
 tumblr_url: https://seanmonstar.com/post/15645202427/antitrust
 ---
 [Antitrust+?](http://parislemon.com/post/15627530949/antitrust)  

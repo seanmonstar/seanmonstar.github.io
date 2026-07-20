@@ -3,12 +3,6 @@ hidden: true
 layout: post
 title: 'Chrome for Android: Update'
 date: '2012-02-28T15:17:00-05:00'
-tags:
-- android
-- chrome
-- firefox
-- planet
-- mozilla
 tumblr_url: https://seanmonstar.com/post/18449321749/chrome-for-android-update
 ---
 [Chrome for Android: Update](http://seanmonstar.com/blog/chrome-for-android/)  

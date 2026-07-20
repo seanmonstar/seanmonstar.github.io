@@ -2,7 +2,6 @@
 layout: post
 title: Too Many Social Networks
 date: '2010-07-16T12:10:42-04:00'
-tags: []
 tumblr_url: https://seanmonstar.com/post/819860954/too-many-social-networks
 ---
 I can’t help but feel like I’m getting overloaded with the number of social networks I’m involved in. Granted, I know I’m not even in as many as I could be (and some people _like_ being in _more_). I put this list together more to explain to myself why I should bother using any of these services.

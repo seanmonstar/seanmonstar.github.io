@@ -3,12 +3,6 @@ hidden: true
 layout: post
 title: An Expandable PC
 date: '2012-10-29T17:46:01-04:00'
-tags:
-- bestof
-- opinion
-- windows 8
-- surface
-- tablets
 tumblr_url: https://seanmonstar.com/post/34591275112/an-expandable-pc
 ---
 Recently, there’s been this idea that we’re in a “post-PC” era. That the PC is no longer relevant, it’s all mobile now. I’d argue that the most “PC” PC I’ve ever had is my phone: it’s a computer I have on my person at all times. And while I agree that our PCs are now these hand-held devices, I’ve always loved having my monster desktop ready to crunch all computing challenges I could throw at it.

@@ -3,10 +3,6 @@ hidden: true
 layout: post
 title: Amazon revokes Lendle's API access
 date: '2011-03-21T22:30:58-04:00'
-tags:
-- amazon
-- kindle
-- lendle.
 tumblr_url: https://seanmonstar.com/post/4015727130/amazon-lendle-api
 ---
 [Amazon revokes Lendle's API access](http://lendle.me/amazon-api-revocation/)  

@@ -3,9 +3,6 @@ hidden: true
 layout: post
 title: 'Fixing Lag: Drakes of Destiny'
 date: '2010-12-17T13:49:59-05:00'
-tags:
-- programming
-- eve online
 tumblr_url: https://seanmonstar.com/post/2350296074/drakes-of-destiny
 ---
 [Fixing Lag: Drakes of Destiny](http://www.eveonline.com/devblog.asp?a=blog&bid=828)  

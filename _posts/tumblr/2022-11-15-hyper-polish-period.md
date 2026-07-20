@@ -4,7 +4,6 @@ title: hyper Polish Period
 date: '2022-11-15T12:43:21-05:00'
 tags:
 - rust
-- rustlang
 - hyper
 - http
 tumblr_url: https://seanmonstar.com/post/701008919383932928/hyper-polish-period

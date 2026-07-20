@@ -3,10 +3,6 @@ hidden: true
 layout: post
 title: Why Mailbox Won't Fix Your E-Mail
 date: '2013-02-12T15:00:03-05:00'
-tags:
-- mailbox
-- email
-- gmail
 tumblr_url: https://seanmonstar.com/post/42941300891/mailbox-zero
 ---
 [Why Mailbox Won't Fix Your E-Mail](http://www.wired.com/gadgetlab/2013/02/mailbox-wont-fix-email/)  

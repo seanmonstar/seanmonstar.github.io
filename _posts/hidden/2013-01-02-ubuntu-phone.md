@@ -3,10 +3,6 @@ hidden: true
 layout: post
 title: Ubuntu Phone
 date: '2013-01-02T14:40:18-05:00'
-tags:
-- phone
-- ubuntu
-- open source
 tumblr_url: https://seanmonstar.com/post/39492540177/ubuntu-phone
 ---
 [Ubuntu Phone](http://www.ubuntu.com/devices/phone)  

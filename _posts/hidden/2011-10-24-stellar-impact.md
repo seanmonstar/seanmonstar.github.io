@@ -3,11 +3,6 @@ hidden: true
 layout: post
 title: Stellar Impact
 date: '2011-10-24T11:52:27-04:00'
-tags:
-- stellar impact
-- dota
-- video games
-- game
 tumblr_url: https://seanmonstar.com/post/11866636735/stellar-impact
 ---
 [Stellar Impact](http://stellar-impact.com)  

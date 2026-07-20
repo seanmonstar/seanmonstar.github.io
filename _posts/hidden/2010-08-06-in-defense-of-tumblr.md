@@ -3,8 +3,6 @@ hidden: true
 layout: post
 title: In Defense Of [Tumblr]
 date: '2010-08-06T16:19:50-04:00'
-tags:
-- tumblr
 tumblr_url: https://seanmonstar.com/post/914044948/in-defense-of-tumblr
 ---
 [In Defense Of [Tumblr]](http://log.chrisbowler.com/post/909434670/in-defense-of)  

@@ -2,7 +2,6 @@
 layout: post
 title: 'Corporate Blogs: Front Page Structure'
 date: '2010-08-12T14:10:33-04:00'
-tags: []
 tumblr_url: https://seanmonstar.com/post/943115975/corporate-blogs-front-page-structure
 ---
 [Corporate Blogs: Front Page Structure](http://www.useit.com/alertbox/blog-front-pages.html)  

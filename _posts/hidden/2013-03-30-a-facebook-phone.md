@@ -3,10 +3,6 @@ hidden: true
 layout: post
 title: A Facebook Phone?
 date: '2013-03-30T01:01:17-04:00'
-tags:
-- facebook
-- android
-- facebook phone
 tumblr_url: https://seanmonstar.com/post/46648718551/a-facebook-phone
 ---
 [A Facebook Phone?](http://www.johnsherrod.net/post/46575611898/a-facebook-phone)  

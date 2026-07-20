@@ -4,7 +4,6 @@ title: Chromebook
 date: '2011-05-14T17:01:00-04:00'
 tags:
 - chrome os
-- chromebook
 - chrome
 - google
 tumblr_url: https://seanmonstar.com/post/5491265296/chromebook

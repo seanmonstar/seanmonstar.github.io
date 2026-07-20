@@ -3,9 +3,6 @@ hidden: true
 layout: post
 title: Paying The Price On Android
 date: '2012-04-27T15:00:13-04:00'
-tags:
-- android
-- opinion
 tumblr_url: https://seanmonstar.com/post/21923745362/paying-the-price-on-android
 ---
 [Paying The Price On Android](http://mykehurley.net/2012/04/paying-the-price-on-android/)  

@@ -3,11 +3,6 @@ hidden: true
 layout: post
 title: AMD is Not the Answer
 date: '2012-01-17T16:00:05-05:00'
-tags:
-- javascript
-- programming
-- amd
-- planet
 tumblr_url: https://seanmonstar.com/post/16021199912/amd-is-not-the-answer
 ---
 [AMD is Not the Answer](http://tomdale.net/2012/01/amd-is-not-the-answer/)  

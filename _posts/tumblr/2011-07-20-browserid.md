@@ -3,7 +3,7 @@ layout: post
 title: BrowserID
 date: '2011-07-20T12:26:10-04:00'
 tags:
-- browserid
+- persona
 - identity
 - openid
 - mozilla

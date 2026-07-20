@@ -3,11 +3,6 @@ hidden: true
 layout: post
 title: Honeycomb Xoom
 date: '2011-02-04T20:43:22-05:00'
-tags:
-- android
-- google
-- honeycomb
-- xoom
 tumblr_url: https://seanmonstar.com/post/3114404672/honeycomb-xoom
 ---
 [Honeycomb Xoom](http://techcrunch.com/2011/02/02/android-honeycomb-ipad/)  

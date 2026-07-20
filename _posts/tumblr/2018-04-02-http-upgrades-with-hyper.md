@@ -5,7 +5,6 @@ date: '2018-04-02T17:34:53-04:00'
 tags:
 - hyper
 - rust
-- rust-lang
 tumblr_url: https://seanmonstar.com/post/172531530657/http-upgrades-with-hyper
 ---
 The [newest release](https://github.com/hyperium/hyper/releases/tag/v0.11.23) of [hyper](https://hyper.rs) includes some **lower-level connection APIs** for both the [server](server::conn) and [client](client::conn).

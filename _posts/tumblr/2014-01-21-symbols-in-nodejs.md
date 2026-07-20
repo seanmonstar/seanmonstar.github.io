@@ -6,9 +6,6 @@ tags:
 - javascript
 - programming
 - nodejs
-- symbol
-- es6
-- planet
 tumblr_url: https://seanmonstar.com/post/74130530265/symbols-in-nodejs
 ---
 [Symbols in nodejs](https://npmjs.org/package/symbol)  

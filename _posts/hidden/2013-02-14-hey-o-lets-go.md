@@ -3,12 +3,6 @@ hidden: true
 layout: post
 title: Hey -o-, let’s go!
 date: '2013-02-14T14:03:52-05:00'
-tags:
-- mozilla
-- opera
-- webkit
-- standards
-- planet
 tumblr_url: https://seanmonstar.com/post/43089018936/hey-o-lets-go
 ---
 [Hey -o-, let’s go!](http://generatedcontent.org/post/43036827576/hey-o-lets-go)  

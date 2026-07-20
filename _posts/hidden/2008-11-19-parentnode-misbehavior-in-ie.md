@@ -3,9 +3,6 @@ hidden: true
 layout: post
 title: ParentNode Misbehavior in IE
 date: '2008-11-19T15:51:00-05:00'
-tags:
-- javascript
-- bug
 tumblr_url: https://seanmonstar.com/post/707125202/parentnode-misbehavior-in-ie
 ---
 I wrote a simple script to pop-up a modal-like element when clicking on an “Add” button on the page. I wanted to insert the element into the DOM on first click, and on subsequent clicks, simply reset the form. A bug popped up in IE7 (surprise) that prevented me from checking if I had inserted the element already.

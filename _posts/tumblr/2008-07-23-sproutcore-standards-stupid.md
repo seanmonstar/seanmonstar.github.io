@@ -5,7 +5,6 @@ date: '2008-07-23T13:39:00-04:00'
 tags:
 - javascript
 - standards
-- opinion
 tumblr_url: https://seanmonstar.com/post/707010197/sproutcore-standards-stupid
 ---
 Steve Webster recently wrote an article about how [horribly standards-stupid](http://dynamicflash.com/2008/07/the-problem-with-sproutcore/) SproutCore ([the Javascript framework](http://sproutcore.com/) Apple used to make [MobileMe](http://me.com/)) is. He _kind of_ has the right mind-set, in that _Javascript should be a progressive enhancement to web-sites_, and they should still function properly without it.

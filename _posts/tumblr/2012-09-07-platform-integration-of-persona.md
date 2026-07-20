@@ -9,7 +9,6 @@ tags:
 - nodejs
 - persona
 - programming
-- rails
 tumblr_url: https://seanmonstar.com/post/31067974034/platform-integration-of-persona
 ---
 [Platform Integration of Persona](http://identity.mozilla.com/post/31008721633/application-and-platform-integration-of-persona)  

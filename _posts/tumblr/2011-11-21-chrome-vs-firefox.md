@@ -8,8 +8,6 @@ tags:
 - firefox
 - google
 - mozilla
-- planet
-- tech
 tumblr_url: https://seanmonstar.com/post/13113614765/chrome-vs-firefox
 ---
 [The difference between Chrome and Firefox](http://adblockplus.org/blog/google-chrome-and-pre-installed-web-apps)  

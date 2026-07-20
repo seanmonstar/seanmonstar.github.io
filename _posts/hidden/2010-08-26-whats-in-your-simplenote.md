@@ -3,8 +3,6 @@ hidden: true
 layout: post
 title: What's in your Simplenote?
 date: '2010-08-26T21:30:01-04:00'
-tags:
-- simplenote
 tumblr_url: https://seanmonstar.com/post/1017198784/whats-in-your-simplenote
 ---
 [What's in your Simplenote?](http://minimalmac.com/post/1014631828/whats-in-your-simplenote)  

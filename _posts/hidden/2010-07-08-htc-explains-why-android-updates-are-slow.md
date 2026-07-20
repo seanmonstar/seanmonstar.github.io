@@ -3,8 +3,6 @@ hidden: true
 layout: post
 title: HTC explains why Android updates are slow
 date: '2010-07-08T14:13:33-04:00'
-tags:
-- android
 tumblr_url: https://seanmonstar.com/post/786009262/htc-explains-why-android-updates-are-slow
 ---
 [HTC explains why Android updates are slow](http://androidandme.com/2010/07/news/htc-explains-why-android-updates-are-slow-custom-uis/)  

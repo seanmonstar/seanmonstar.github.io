@@ -7,9 +7,7 @@ tags:
 - javascript
 - programming
 - shipyard
-- planet
 - mozilla
-- webdev
 tumblr_url: https://seanmonstar.com/post/18026837126/shipyard-mindset
 ---
 I’ve been working quite a bit on this little [JavaScript MVC framework called Shipyard](http://seanmonstar.com/blog/what-is-shipyard/). Those who know me may recall that I used to write a lot about MooTools, and may wonder why I’ve moved off it and am writing my own framework instead. I figured I’d take the time to explain why I felt the need existed for Shipyard, and the goals it tries to accomplish:

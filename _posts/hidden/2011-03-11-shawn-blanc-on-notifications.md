@@ -3,9 +3,6 @@ hidden: true
 layout: post
 title: Shawn Blanc on Notifications
 date: '2011-03-11T19:47:05-05:00'
-tags:
-- iphone
-- android
 tumblr_url: https://seanmonstar.com/post/3794876449/shawn-blanc-on-notifications
 ---
 [Shawn Blanc on Notifications](http://shawnblanc.net/2011/03/ben-brooks-ios-notifications/)  

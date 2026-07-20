@@ -3,11 +3,6 @@ hidden: true
 layout: post
 title: Disney closes LucasArts, Cancels Star Wars 1313
 date: '2013-04-03T19:16:53-04:00'
-tags:
-- star wars
-- disney
-- lucasarts
-- '1313'
 tumblr_url: https://seanmonstar.com/post/47059293667/disney-closes-lucasarts-cancels-star-wars-1313
 ---
 [Disney closes LucasArts, Cancels Star Wars 1313](http://kotaku.com/disney-shuts-down-lucasarts-468473749)  

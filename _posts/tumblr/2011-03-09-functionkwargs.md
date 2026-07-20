@@ -6,7 +6,6 @@ tags:
 - javascript
 - mootools
 - python
-- planet
 tumblr_url: https://seanmonstar.com/post/3746460491/functionkwargs
 ---
 [Function.kwargs](http://jsfiddle.net/seanmonstar/WfWhN/)  

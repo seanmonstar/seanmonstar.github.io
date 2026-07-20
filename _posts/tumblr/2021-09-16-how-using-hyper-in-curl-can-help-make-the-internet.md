@@ -6,7 +6,6 @@ tags:
 - rust
 - hyper
 - http
-- rust-lang
 - aws
 - curl
 - memory-safety

@@ -3,12 +3,6 @@ hidden: true
 layout: post
 title: Opera Switches to WebKit
 date: '2013-02-13T17:53:08-05:00'
-tags:
-- mozilla
-- opera
-- webkit
-- planet
-- standards
 tumblr_url: https://seanmonstar.com/post/43031350906/opera-switches-to-webkit
 ---
 [Opera Switches to WebKit](http://www.opera.com/press/releases/2013/02/13/)  

@@ -3,10 +3,6 @@ hidden: true
 layout: post
 title: A Social Browser
 date: '2010-10-25T12:00:58-04:00'
-tags:
-- google
-- chrome
-- facebook
 tumblr_url: https://seanmonstar.com/post/1399502461/a-social-browser
 ---
 [A Social Browser](http://techcrunch.com/2010/10/19/facebook-browser-chrome-social/)  

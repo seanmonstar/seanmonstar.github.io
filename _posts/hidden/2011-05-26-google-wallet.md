@@ -3,11 +3,6 @@ hidden: true
 layout: post
 title: Google Wallet
 date: '2011-05-26T14:30:51-04:00'
-tags:
-- google
-- android
-- google wallet
-- tech
 tumblr_url: https://seanmonstar.com/post/5870778757/google-wallet
 ---
 [Google Wallet](http://www.google.com/wallet/)  

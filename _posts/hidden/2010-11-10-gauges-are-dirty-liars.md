@@ -3,8 +3,6 @@ hidden: true
 layout: post
 title: 'Gauges are Dirty Liars '
 date: '2010-11-10T13:35:42-05:00'
-tags:
-- gauges
 tumblr_url: https://seanmonstar.com/post/1535533178/gauges-are-dirty-liars
 ---
 I have several objects that show some sort of resource guage, and I find all too often that they lie as much as a doormat.

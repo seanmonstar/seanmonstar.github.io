@@ -3,8 +3,6 @@ hidden: true
 layout: post
 title: How to Turn Your Android Phone into a Fully-Automated Superphone
 date: '2010-07-29T14:34:05-04:00'
-tags:
-- android
 tumblr_url: https://seanmonstar.com/post/876086824/how-to-turn-your-android-phone-into-a
 ---
 [How to Turn Your Android Phone into a Fully-Automated Superphone](http://lifehacker.com/5599116/how-to-turn-your-android-phone-into-a-fully+automated-superphone)  

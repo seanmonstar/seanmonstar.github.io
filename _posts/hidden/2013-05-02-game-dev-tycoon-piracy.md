@@ -3,11 +3,6 @@ hidden: true
 layout: post
 title: The proper way to handle game piracy
 date: '2013-05-02T20:52:01-04:00'
-tags:
-- gaming
-- piracy
-- game dev tycoon
-- drm
 tumblr_url: https://seanmonstar.com/post/49476423777/game-dev-tycoon-piracy
 ---
 [The proper way to handle game piracy](http://www.greenheartgames.com/2013/04/29/what-happens-when-pirates-play-a-game-development-simulator-and-then-go-bankrupt-because-of-piracy/)  

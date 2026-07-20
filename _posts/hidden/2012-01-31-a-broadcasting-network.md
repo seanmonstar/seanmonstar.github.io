@@ -3,8 +3,6 @@ hidden: true
 layout: post
 title: A Broadcasting Network
 date: '2012-01-31T14:55:47-05:00'
-tags:
-- twitter
 tumblr_url: https://seanmonstar.com/post/16829961021/a-broadcasting-network
 ---
 [A Broadcasting Network](http://www.theverge.com/2012/1/31/2760338/twitter-ceo-dick-costolo-broadcasting-social-network?utm_source=dlvr.it&utm_medium=twitter)  

@@ -5,7 +5,6 @@ date: '2023-03-02T10:38:06-05:00'
 tags:
 - hyper
 - rust
-- rust-lang
 - monthly
 - http3
 tumblr_url: https://seanmonstar.com/post/710694914534539264/this-month-in-hyper-february-2023

@@ -6,7 +6,6 @@ tags:
 - rust
 - hyper
 - curl
-- rust-lang
 - memory-safety
 - http
 tumblr_url: https://seanmonstar.com/post/696034388861960192/curl-up-2022-hyper-in-curl

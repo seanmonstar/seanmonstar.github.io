@@ -3,7 +3,6 @@ hidden: true
 layout: post
 title: A New Version Of Google Chrome Now Due Every Six Weeks
 date: '2010-07-22T20:06:29-04:00'
-tags: []
 tumblr_url: https://seanmonstar.com/post/847173875/google-chrome-versions
 ---
 [A New Version Of Google Chrome Now Due Every Six Weeks](http://techcrunch.com/2010/07/22/google-chrome-versions/)  

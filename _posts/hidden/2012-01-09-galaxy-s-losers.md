@@ -3,12 +3,6 @@ hidden: true
 layout: post
 title: Samsung Will Not Upgrade Galaxy S Phones
 date: '2012-01-09T17:26:00-05:00'
-tags:
-- samsung
-- google
-- android
-- galaxy s
-- tech
 tumblr_url: https://seanmonstar.com/post/15584706088/galaxy-s-losers
 ---
 [Samsung Will Not Upgrade Galaxy S Phones](http://www.businessinsider.com/samsung-will-not-upgrade-galaxy-s-phones-2012-1)  

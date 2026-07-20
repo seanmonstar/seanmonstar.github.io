@@ -3,9 +3,6 @@ hidden: true
 layout: post
 title: Huge amount of goats teleported
 date: '2010-11-19T18:09:57-05:00'
-tags:
-- chrome
-- easter egg
 tumblr_url: https://seanmonstar.com/post/1621744289/huge-amount-of-goats-teleported
 ---
 [Huge amount of goats teleported](http://code.google.com/p/chromium/issues/detail?id=31482)  

@@ -3,9 +3,6 @@ hidden: true
 layout: post
 title: A Motive For Bad Design
 date: '2010-09-23T06:01:00-04:00'
-tags:
-- usability
-- ads
 tumblr_url: https://seanmonstar.com/post/1172987542/a-motive-for-bad-design
 ---
 [A Motive For Bad Design](http://usabilitypost.com/2010/09/22/a-motive-for-bad-design/)  

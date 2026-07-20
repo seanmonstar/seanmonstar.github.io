@@ -2,7 +2,6 @@
 layout: post
 title: Samsung Galaxy S on T-Mobile
 date: '2010-06-15T20:07:00-04:00'
-tags: []
 tumblr_url: https://seanmonstar.com/post/702602653/samsung-galaxy-s-on-t-mobile
 ---
 [Samsung Galaxy S on T-Mobile](http://androidandme.com/2010/06/news/samsung-galaxy-s-tipped-for-july-21st-launch-on-t-mobile/)  

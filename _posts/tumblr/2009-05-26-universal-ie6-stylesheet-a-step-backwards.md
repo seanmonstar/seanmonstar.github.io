@@ -4,7 +4,6 @@ title: 'Universal IE6 Stylesheet: A Step Backwards'
 date: '2009-05-26T11:00:00-04:00'
 tags:
 - standards
-- opinion
 tumblr_url: https://seanmonstar.com/post/707121522/universal-ie6-stylesheet-a-step-backwards
 ---
 As many have noted, there’s many opinions on how to handle the Internet Explorer 6 monster. [For a beautiful web](http://forabeautifulweb.com/) just suggested his solution: [one stylesheet to rule them all](http://forabeautifulweb.com/blog/about/universal_internet_explorer_6_css/) . It’s completely ridiculous, and I’m suprised to see other professionals agreeing.

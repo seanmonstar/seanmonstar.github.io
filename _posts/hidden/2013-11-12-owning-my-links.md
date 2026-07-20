@@ -3,10 +3,6 @@ hidden: true
 layout: post
 title: Owning my links
 date: '2013-11-12T20:58:38-05:00'
-tags:
-- links
-- linkblog
-- planet
 tumblr_url: https://seanmonstar.com/post/66832922686/owning-my-links
 ---
 I’ve always just blasted links I find interesting onto [Twitter](http://twitter.com/seanmonstar), or increasingly via [Tent](http://seanmonstar.com/tent), and I started to realize that I didn’t really own these links. I had no collection, no way to easily make them appear elsewhere. Especially after I read this [piece by Dave Winer about owning your links](http://scripting.com/stories/2011/07/11/hookingGoogleplusToMyLinkb.html), and seeing his [linkblog](http://links.scripting.com), I was inspired.

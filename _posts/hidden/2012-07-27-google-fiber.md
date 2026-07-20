@@ -3,9 +3,6 @@ hidden: true
 layout: post
 title: Google Fiber
 date: '2012-07-27T15:57:00-04:00'
-tags:
-- google
-- google fiber
 tumblr_url: https://seanmonstar.com/post/28144356865/google-fiber
 ---
 [Google Fiber](http://googleblog.blogspot.com/2012/07/super-fast-fiber-for-kansas-city.html)  

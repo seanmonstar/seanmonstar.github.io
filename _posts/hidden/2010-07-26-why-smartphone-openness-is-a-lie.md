@@ -3,9 +3,6 @@ hidden: true
 layout: post
 title: Why smartphone openness is a lie
 date: '2010-07-26T14:33:00-04:00'
-tags:
-- android
-- iphone
 tumblr_url: https://seanmonstar.com/post/862268435/why-smartphone-openness-is-a-lie
 ---
 [Why smartphone openness is a lie](http://www.tipb.com/2010/07/23/iphone-android-smartphone-openness-lie/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+TheIphoneBlog+%28TiPb%3A+iPhone%2C+iPad%2C+iPod%29)  

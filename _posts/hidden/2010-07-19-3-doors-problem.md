@@ -3,11 +3,6 @@ hidden: true
 layout: post
 title: 3 Doors Problem
 date: '2010-07-19T15:56:00-04:00'
-tags:
-- javascript
-- mootools
-- statistics
-- jsfiddle
 tumblr_url: https://seanmonstar.com/post/833176982/3-doors-problem
 ---
 [3 Doors Problem](http://mootools.net/shell/kyFBA/2/)  

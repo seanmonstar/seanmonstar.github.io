@@ -3,9 +3,6 @@ hidden: true
 layout: post
 title: The Interwebz is Android's Killer App
 date: '2010-11-24T15:15:00-05:00'
-tags:
-- google
-- android
 tumblr_url: https://seanmonstar.com/post/1672129772/android-killer-app
 ---
 [The Interwebz is Android's Killer App](http://daringfireball.net/2010/11/where_are_the_android_killer_apps)  

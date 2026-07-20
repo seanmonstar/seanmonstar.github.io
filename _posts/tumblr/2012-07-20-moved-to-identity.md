@@ -4,7 +4,6 @@ title: Moved to Identity
 date: '2012-07-20T13:31:59-04:00'
 tags:
 - mozilla
-- planet
 - identity
 - persona
 tumblr_url: https://seanmonstar.com/post/27636319508/moved-to-identity

@@ -3,9 +3,7 @@ layout: post
 title: WorkFlowy
 date: '2011-09-14T21:19:40-04:00'
 tags:
-- workflowy
-- todos
-- app
+- apps
 tumblr_url: https://seanmonstar.com/post/10224148967/workflowy
 ---
 [WorkFlowy](https://workflowy.com/)  

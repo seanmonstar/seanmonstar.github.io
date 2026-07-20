@@ -3,12 +3,6 @@ hidden: true
 layout: post
 title: Fett of the Day
 date: '2013-02-11T22:56:28-05:00'
-tags:
-- star wars
-- boba fett
-- disney
-- boba fett movie
-- fett of the day
 tumblr_url: https://seanmonstar.com/post/42899512412/fett-movie-poster-concept
 ---
 [Fett of the Day](http://fettoftheday.tumblr.com/post/42891626975/fett-movie-poster-concept)  

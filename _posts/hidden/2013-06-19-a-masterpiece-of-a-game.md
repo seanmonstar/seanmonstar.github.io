@@ -3,11 +3,6 @@ hidden: true
 layout: post
 title: A masterpiece of a game
 date: '2013-06-19T22:56:19-04:00'
-tags:
-- games
-- gaming
-- replayability
-- masterpiece
 tumblr_url: https://seanmonstar.com/post/53408795662/a-masterpiece-of-a-game
 ---
 [A masterpiece of a game](http://www.edge-online.com/features/most-games-are-too-short-and-thats-why-they-get-traded-in-says-avalanche-boss/)  

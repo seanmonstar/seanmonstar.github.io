@@ -3,9 +3,6 @@ hidden: true
 layout: post
 title: Ads Are Secondary
 date: '2012-05-09T14:51:24-04:00'
-tags:
-- writing
-- ads
 tumblr_url: https://seanmonstar.com/post/22726521305/ads-are-secondary
 ---
 [Ads Are Secondary](http://brooksreview.net/2012/05/greed-free-and-change/)  

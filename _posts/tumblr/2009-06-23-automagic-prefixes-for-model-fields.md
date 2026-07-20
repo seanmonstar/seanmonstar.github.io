@@ -4,7 +4,6 @@ title: Automagic Prefixes for Model Fields
 date: '2009-06-23T12:40:00-04:00'
 tags:
 - php
-- kohana
 tumblr_url: https://seanmonstar.com/post/708669460/automagic-prefixes-for-model-fields
 ---
 Say we have a player model, and every field in `players`table is prepended with _player\__. For example, `player_username`, `player_email`, etc.

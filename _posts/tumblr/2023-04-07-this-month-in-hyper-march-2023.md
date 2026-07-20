@@ -7,7 +7,6 @@ tags:
 - http3
 - hyper
 - rust
-- rust-lang
 tumblr_url: https://seanmonstar.com/post/713948439199858688/this-month-in-hyper-march-2023
 ---
 The days are growing longer up here, and work to make [hyper](https://hyper.rs) better and better continues onwards!

@@ -3,8 +3,6 @@ hidden: true
 layout: post
 title: Lazy Function Definition Pattern
 date: '2010-07-19T10:01:43-04:00'
-tags:
-- javascript
 tumblr_url: https://seanmonstar.com/post/832086490/lazy-function-definition-pattern
 ---
 [Lazy Function Definition Pattern](http://peter.michaux.ca/articles/lazy-function-definition-pattern)  

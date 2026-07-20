@@ -3,9 +3,6 @@ hidden: true
 layout: post
 title: Security through Obesity
 date: '2012-10-04T16:03:40-04:00'
-tags:
-- security
-- passwords
 tumblr_url: https://seanmonstar.com/post/32887710004/security-through-obesity
 ---
 [Security through Obesity](http://www.opine.me/a-better-way-to-store-password-hashes/)  

@@ -8,7 +8,6 @@ tags:
 - nodejs
 - client-sessions
 - mozilla
-- planet
 tumblr_url: https://seanmonstar.com/post/66111341154/client-sessions-v0-4-0
 ---
 We released v0.4.0 of [client-sessions](https://npmjs.org/package/client-sessions) today, despite all the npm bumpiness. Here’s the [changelog](https://github.com/mozilla/node-client-sessions/releases/tag/v0.4.0):

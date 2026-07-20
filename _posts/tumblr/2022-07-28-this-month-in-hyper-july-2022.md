@@ -4,7 +4,6 @@ title: 'This Month in hyper: July 2022'
 date: '2022-07-28T12:51:13-04:00'
 tags:
 - rust
-- rust-lang
 - hyper
 - http
 - curl

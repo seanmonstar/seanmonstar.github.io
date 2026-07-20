@@ -3,10 +3,6 @@ hidden: true
 layout: post
 title: J.J. Abrams to Direct Episode VII
 date: '2013-01-30T14:19:10-05:00'
-tags:
-- star wars
-- disney
-- episode 7
 tumblr_url: https://seanmonstar.com/post/41880150791/jj-abrams-to-direct-episode-vii
 ---
 [J.J. Abrams to Direct Episode VII](http://starwars.com/news/star-wars-is-being-kick-started-with-dynamite-jj-abrams-to-direct-star-wars-episode-vii.html)  

@@ -3,9 +3,6 @@ hidden: true
 layout: post
 title: Why Does Windows Have Terrible Battery Life?
 date: '2013-10-24T21:02:06-04:00'
-tags:
-- windows
-- battery
 tumblr_url: https://seanmonstar.com/post/65003512642/why-does-windows-have-terrible-battery-life
 ---
 [Why Does Windows Have Terrible Battery Life?](http://www.codinghorror.com/blog/2013/10/why-does-windows-have-terrible-battery-life.html)  

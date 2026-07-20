@@ -3,7 +3,6 @@ layout: post
 title: You Don't Always Need Identity Operators
 date: '2009-09-10T11:00:00-04:00'
 tags:
-- opinion
 - javascript
 - php
 tumblr_url: https://seanmonstar.com/post/708732601/you-dont-always-need-identity-operators

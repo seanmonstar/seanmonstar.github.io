@@ -2,7 +2,6 @@
 layout: post
 title: Samsung Galaxy S II
 date: '2011-04-29T15:26:23-04:00'
-tags: []
 tumblr_url: https://seanmonstar.com/post/5047378245/samsung-galaxy-s-ii
 ---
 [Samsung Galaxy S II](http://www.engadget.com/2011/04/28/samsung-galaxy-s-ii-review/)  

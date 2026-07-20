@@ -3,11 +3,6 @@ hidden: true
 layout: post
 title: If Facebook Bought WebOS
 date: '2011-08-20T01:20:28-04:00'
-tags:
-- facebook
-- hp
-- tech
-- webos
 tumblr_url: https://seanmonstar.com/post/9155129121/facebook-webos
 ---
 I wanted to weigh in on HP giving up on webOS. First, when HP bought Palm webOS, it’s plan to be able to make it’s very own, unique set of products (phones, tablets, and desktops) all running the same OS, it sounded really appealing. Not that I think it’s necessarily [the wrong move](http://www.splatf.com/2011/08/hp-apple/), but it is too bad they are giving up.

@@ -3,11 +3,6 @@ hidden: true
 layout: post
 title: Github Flow
 date: '2011-08-31T17:14:08-04:00'
-tags:
-- github
-- git
-- programming
-- mozilla
 tumblr_url: https://seanmonstar.com/post/9638858793/github-flow
 ---
 [Github Flow](http://scottchacon.com/2011/08/31/github-flow.html)  

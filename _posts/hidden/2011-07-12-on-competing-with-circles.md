@@ -3,9 +3,6 @@ hidden: true
 layout: post
 title: On Competing with Circles
 date: '2011-07-12T07:34:28-04:00'
-tags:
-- google+
-- facebook
 tumblr_url: https://seanmonstar.com/post/7530246913/on-competing-with-circles
 ---
 [On Competing with Circles](http://rethrick.com/#google-plus)  

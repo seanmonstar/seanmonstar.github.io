@@ -3,12 +3,9 @@ layout: post
 title: Please Replace Credit Cards
 date: '2014-04-01T13:00:00-04:00'
 tags:
-- planet
-- credit cards
 - security
 - passwords
 - persona
-- jwt
 - bestof
 tumblr_url: https://seanmonstar.com/post/81400378235/please-replace-credit-cards
 ---

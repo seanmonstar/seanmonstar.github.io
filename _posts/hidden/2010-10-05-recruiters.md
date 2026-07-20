@@ -3,7 +3,6 @@ hidden: true
 layout: post
 title: Why are technical recruiters so clueless?
 date: '2010-10-05T18:43:14-04:00'
-tags: []
 tumblr_url: https://seanmonstar.com/post/1251615390/recruiters
 ---
 [Why are technical recruiters so clueless?](http://37signals.com/svn/posts/2598-why-are-technical-recruiters-so-clueless)  

@@ -4,7 +4,6 @@ title: hyper’s Vision
 date: '2022-03-08T12:56:52-05:00'
 tags:
 - rust
-- rust-lang
 - http
 - hyper
 tumblr_url: https://seanmonstar.com/post/678179333918097408/hypers-vision

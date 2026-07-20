@@ -3,9 +3,6 @@ hidden: true
 layout: post
 title: MooTools Core 1.3 Released
 date: '2010-10-11T19:40:37-04:00'
-tags:
-- mootools
-- javascript
 tumblr_url: https://seanmonstar.com/post/1294696341/mootools-core-13-released
 ---
 [MooTools Core 1.3 Released](http://mootools.net/blog/2010/10/11/mootools-core-1-3-stable-and-mootools-more-1-3rc/)  

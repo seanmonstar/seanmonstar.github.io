@@ -6,9 +6,7 @@ tags:
 - rust
 - hyper
 - mozilla
-- planet
 - http
-- rust-lang
 tumblr_url: https://seanmonstar.com/post/115873169212/hyper-on-beta
 ---
 Since I [announced hyper](http://seanmonstar.com/blog/hyper/) in December of last year, it has continued to grow as Rust’s http library.

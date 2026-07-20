@@ -5,8 +5,7 @@ date: '2014-03-11T14:19:57-04:00'
 tags:
 - persona
 - mozilla
-- planet
-- fxa
+- firefox accounts
 tumblr_url: https://seanmonstar.com/post/79278627673/persona-is-dead-long-live-persona
 ---
 The [transition period](http://identity.mozilla.com/post/78873831485/transitioning-persona-to-community-ownership) was really tough for me. It felt like we were killing Persona. But more like tying a rope around it and dragging it behind us as we road tripped to Firefox OS Land. I first argued against this. Then, eventually I said let’s at least be humane, and take off the rope, and put a slug in its head. Like an Angel of Death. That didn’t happen either. The end result is one where Persona fights on.

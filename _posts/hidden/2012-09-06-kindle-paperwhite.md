@@ -3,9 +3,6 @@ hidden: true
 layout: post
 title: Kindle Paperwhite
 date: '2012-09-06T18:57:56-04:00'
-tags:
-- amazon
-- kindle
 tumblr_url: https://seanmonstar.com/post/31019907859/kindle-paperwhite
 ---
 [Kindle Paperwhite](http://www.amazon.com/gp/product/B007OZNZG0/?tag=seanmonstar-20)  

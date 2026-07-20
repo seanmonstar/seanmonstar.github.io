@@ -3,8 +3,6 @@ hidden: true
 layout: post
 title: Callbacks vs Events
 date: '2010-07-05T13:00:00-04:00'
-tags:
-- javascript
 tumblr_url: https://seanmonstar.com/post/773331630/callbacks-vs-events
 ---
 [Callbacks vs Events](http://dean.edwards.name/weblog/2009/03/callbacks-vs-events/)  

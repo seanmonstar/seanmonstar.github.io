@@ -3,11 +3,6 @@ hidden: true
 layout: post
 title: Who said Android apps can’t look good?
 date: '2011-10-05T17:16:45-04:00'
-tags:
-- android
-- bump
-- ios
-- apps
 tumblr_url: https://seanmonstar.com/post/11072556297/android-apps-can-look-good
 ---
 [Who said Android apps can’t look good?](http://devblog.bu.mp/who-said-android-apps-cant-look-good)  

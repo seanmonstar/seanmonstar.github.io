@@ -7,7 +7,6 @@ tags:
 - programming
 - logging
 - javascript
-- planet
 - bestof
 tumblr_url: https://seanmonstar.com/post/56448644049/consolelog-all-the-things
 ---

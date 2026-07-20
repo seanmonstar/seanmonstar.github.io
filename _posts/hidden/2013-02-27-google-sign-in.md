@@ -3,12 +3,6 @@ hidden: true
 layout: post
 title: Google+ Sign-In
 date: '2013-02-27T15:00:22-05:00'
-tags:
-- google
-- google+
-- facebook
-- persona
-- sign-in
 tumblr_url: https://seanmonstar.com/post/44157277598/google-sign-in
 ---
 [Google+ Sign-In](https://developers.google.com/+/)  

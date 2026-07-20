@@ -7,8 +7,6 @@ tags:
 - nodejs
 - programming
 - logging
-- syslog
-- planet
 tumblr_url: https://seanmonstar.com/post/72018297115/syslogger
 ---
 When recently writing an [intel-syslog](https://npmjs.org/package/intel-syslog) library, I noticed that somehow, npm was lacking a sane syslog library. The popular one, [node-syslog](https://npmjs.org/package/node-syslog), is a giant singleton, meaning it’s impossible to have more than one instance available. That felt wrong. Plus, it’s a native module, and for something so simple, I’d rather not have to compile anything.

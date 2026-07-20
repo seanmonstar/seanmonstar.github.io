@@ -7,9 +7,7 @@ tags:
 - hyper
 - http
 - rust
-- rust-lang
 - mozilla
-- planet
 tumblr_url: https://seanmonstar.com/post/156128815358/a-hyper-update
 ---
 ## hyper 0.10

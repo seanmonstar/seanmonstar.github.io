@@ -3,11 +3,6 @@ hidden: true
 layout: post
 title: PostgreSQL vs MySQL
 date: '2010-11-17T16:01:00-05:00'
-tags:
-- blazonco
-- postgresql
-- mysql
-- sql
 tumblr_url: https://seanmonstar.com/post/1602625455/postgresql-vs-mysql
 ---
 [PostgreSQL vs MySQL](http://wiki.postgresql.org/wiki/Why_PostgreSQL_Instead_of_MySQL_2009)  

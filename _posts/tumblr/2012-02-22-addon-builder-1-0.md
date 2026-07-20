@@ -3,10 +3,7 @@ layout: post
 title: Add-on Builder 1.0
 date: '2012-02-22T18:32:21-05:00'
 tags:
-- planet
 - mozilla
-- addon-builder
-- flightdeck
 tumblr_url: https://seanmonstar.com/post/18095786484/addon-builder-1-0
 ---
 [Add-on Builder 1.0](http://blog.mozilla.com/addons/2012/02/22/add-on-builder-1-0-is-ready-for-liftoff/)  

@@ -4,7 +4,6 @@ title: 'Podcast: hyper on the Rustacean Station'
 date: '2021-11-09T15:17:16-05:00'
 tags:
 - rust
-- rust-lang
 - hyper
 - curl
 - podcast

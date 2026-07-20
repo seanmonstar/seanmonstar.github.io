@@ -2,8 +2,6 @@
 layout: post
 title: 'Business, Design, and Engineering '
 date: '2011-03-22T14:00:07-04:00'
-tags:
-- freelancing
 tumblr_url: https://seanmonstar.com/post/4026753746/business-design-and-engineering
 ---
 [Business, Design, and Engineering](http://releasecandidateone.com/240:business_design_and_engineering)  

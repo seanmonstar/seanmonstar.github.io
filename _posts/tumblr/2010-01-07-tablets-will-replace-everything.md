@@ -4,7 +4,6 @@ title: Tablets Will Replace Everything
 date: '2010-01-07T19:16:00-05:00'
 tags:
 - bestof
-- opinion
 - tablets
 - ipad
 tumblr_url: https://seanmonstar.com/post/708790454/tablets-will-replace-everything

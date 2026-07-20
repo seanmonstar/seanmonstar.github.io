@@ -3,8 +3,6 @@ hidden: true
 layout: post
 title: Not Getting It [ORLY?]
 date: '2010-10-25T15:53:42-04:00'
-tags:
-- apple
 tumblr_url: https://seanmonstar.com/post/1400538958/not-getting-it
 ---
 [Not Getting It [ORLY?]](http://daringfireball.net/linked/2010/10/21/beltzner)  

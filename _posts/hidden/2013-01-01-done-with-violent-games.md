@@ -3,11 +3,6 @@ hidden: true
 layout: post
 title: '"After Sandy Hook And Virginia Tech, I’m Done With Violent Video Games"'
 date: '2013-01-01T19:00:26-05:00'
-tags:
-- games
-- video games
-- violence
-- sandy hook
 tumblr_url: https://seanmonstar.com/post/39422180105/done-with-violent-games
 ---
 ["After Sandy Hook And Virginia Tech, I’m Done With Violent Video Games"](http://kotaku.com/5970039/after-sandy-hook-and-virginia-tech-im-done-with-violent-video-games)  

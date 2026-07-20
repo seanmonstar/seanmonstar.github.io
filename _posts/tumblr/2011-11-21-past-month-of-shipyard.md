@@ -6,7 +6,6 @@ tags:
 - javascript
 - mvc
 - shipyard
-- planet
 - mozilla
 tumblr_url: https://seanmonstar.com/post/13120286940/past-month-of-shipyard
 ---

@@ -3,9 +3,6 @@ hidden: true
 layout: post
 title: Why Must LAMP Setup Suck?
 date: '2009-11-17T15:15:00-05:00'
-tags:
-- lamp
-- opinion
 tumblr_url: https://seanmonstar.com/post/708843270/why-must-lamp-setup-suck
 ---
 LAMP is common lingo for web developers. It’s an incredibly popular software stack to run dynamic websites. Many hosting companies include the stack for you, already configured and ready to go. But before we get there? That wonderful point where we trust our code to the production server, and then watch something blow up beautifully in a fire-y mess of status codes, fatal errors, and SQLStates. We developers like to test thing before then.

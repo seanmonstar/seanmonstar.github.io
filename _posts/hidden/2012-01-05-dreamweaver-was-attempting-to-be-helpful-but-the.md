@@ -5,9 +5,6 @@ title: Dreamweaver was attempting to be helpful, but the moment it reformatted m
   code, I threw a fit. YOU TOUCHED MY CODE. Dreamweaver never recovered from that
   horrendous first impression.
 date: '2012-01-05T19:20:41-05:00'
-tags:
-- dreamweaver
-- programming
 tumblr_url: https://seanmonstar.com/post/15370067116/dreamweaver-was-attempting-to-be-helpful-but-the
 ---
 > Dreamweaver was attempting to be helpful, but the moment it reformatted my code, I threw a fit. YOU TOUCHED MY CODE. Dreamweaver never recovered from that horrendous first impression.

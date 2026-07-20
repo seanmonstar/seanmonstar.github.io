@@ -2,10 +2,6 @@
 layout: post
 title: 'Touching Your Computer '
 date: '2012-11-13T19:00:27-05:00'
-tags:
-- microsoft
-- surface
-- windows 8
 tumblr_url: https://seanmonstar.com/post/35667154565/touching-your-computer
 ---
 [Touching Your Computer](http://www.codinghorror.com/blog/2012/11/do-you-wanna-touch.html)  

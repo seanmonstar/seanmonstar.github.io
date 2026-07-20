@@ -4,15 +4,11 @@ title: hyper-ish 2021 in review
 date: '2022-01-04T13:19:28-05:00'
 tags:
 - rust
-- rust-lang
 - hyper
 - http
 - curl
 - tower
-- tokio
-- console
 - aws
-- reinvent
 tumblr_url: https://seanmonstar.com/post/672473147126300672/hyper-ish-2021-in-review
 ---
 2021 is done. Finally. I thought it’d be fun to look back and highlight some of things that have happened that are related to [hyper](https://hyper.rs).[^1]

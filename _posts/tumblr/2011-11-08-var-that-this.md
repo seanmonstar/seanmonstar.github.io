@@ -5,9 +5,6 @@ date: '2011-11-08T15:00:05-05:00'
 tags:
 - javascript
 - programming
-- opinion
-- planet
-- closures
 tumblr_url: https://seanmonstar.com/post/12521817761/var-that-this
 ---
 I used to think say you should use `that` in the question “What variable should I name `this` for closures?” This was because `self` is already a variable that points to `window`. However, I’ve since [revised my opinion](https://plus.google.com/117864091849261637847/posts/eB94v35EtEy) on what is a good variable name in this case.

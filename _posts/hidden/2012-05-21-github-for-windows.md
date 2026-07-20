@@ -3,11 +3,6 @@ hidden: true
 layout: post
 title: GitHub for Windows
 date: '2012-05-21T14:41:02-04:00'
-tags:
-- app
-- github
-- windows
-- git
 tumblr_url: https://seanmonstar.com/post/23490614997/github-for-windows
 ---
 [GitHub for Windows](http://windows.github.com/)  

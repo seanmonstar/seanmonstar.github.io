@@ -3,9 +3,6 @@ hidden: true
 layout: post
 title: The Potential of MobileMe
 date: '2010-10-05T14:44:00-04:00'
-tags:
-- android
-- iphone
 tumblr_url: https://seanmonstar.com/post/1250210395/the-potential-of-mobileme
 ---
 [The Potential of MobileMe](http://shawnblanc.net/2010/10/mobileme-potential/)  

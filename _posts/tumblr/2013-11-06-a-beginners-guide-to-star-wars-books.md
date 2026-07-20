@@ -4,9 +4,6 @@ title: A beginners guide to Star Wars books
 date: '2013-11-06T12:24:31-05:00'
 tags:
 - star wars
-- thrawn trilogy
-- heir to the empire
-- books
 tumblr_url: https://seanmonstar.com/post/66196314621/a-beginners-guide-to-star-wars-books
 ---
 [A beginners guide to Star Wars books](http://dunc.wordpress.com/2013/09/17/a-no-bullshit-beginners-guide-to-star-wars-books/)  

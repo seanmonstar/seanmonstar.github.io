@@ -5,8 +5,6 @@ date: '2009-07-01T12:30:00-04:00'
 tags:
 - security
 - nodejs
-- bcrypt
-- scrypt
 tumblr_url: https://seanmonstar.com/post/707158385/a-basic-lesson-in-password-hashing
 ---
 Update: May 11, 2014.

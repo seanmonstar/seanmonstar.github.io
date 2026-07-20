@@ -4,7 +4,6 @@ title: The Galaxy in Review
 date: '2010-09-29T16:18:00-04:00'
 tags:
 - android
-- galaxy
 - review
 - galaxy s
 - bestof

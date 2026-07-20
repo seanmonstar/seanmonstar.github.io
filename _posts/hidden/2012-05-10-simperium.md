@@ -3,11 +3,6 @@ hidden: true
 layout: post
 title: Simperium
 date: '2012-05-10T15:01:08-04:00'
-tags:
-- programming
-- sync
-- simperium
-- simplenote
 tumblr_url: https://seanmonstar.com/post/22789989791/simperium
 ---
 [Simperium](https://simperium.com/)  

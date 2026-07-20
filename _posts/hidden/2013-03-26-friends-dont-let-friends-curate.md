@@ -3,12 +3,6 @@ hidden: true
 layout: post
 title: Friends Don’t Let Friends Curate
 date: '2013-03-26T15:00:20-04:00'
-tags:
-- facebook
-- twitter
-- curation
-- content
-- culture
 tumblr_url: https://seanmonstar.com/post/46352900766/friends-dont-let-friends-curate
 ---
 [Friends Don’t Let Friends Curate](https://medium.com/future-tech-future-market/6d22522ebe7f?source=email)  

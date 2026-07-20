@@ -5,9 +5,7 @@ date: '2020-05-04T15:29:39-04:00'
 tags:
 - hyper
 - rust
-- rust-lang
 - aws
-- amazon
 tumblr_url: https://seanmonstar.com/post/617213413024759808/next-up-aws
 ---
 Today I start something new. This is my first day at [AWS](https://aws.amazon.com/).

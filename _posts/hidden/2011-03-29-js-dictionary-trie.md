@@ -3,10 +3,6 @@ hidden: true
 layout: post
 title: Dictionary Performance, Tries, Oh My
 date: '2011-03-29T16:18:35-04:00'
-tags:
-- javascript
-- programming
-- data structures
 tumblr_url: https://seanmonstar.com/post/4190389669/js-dictionary-trie
 ---
 [Dictionary Performance, Tries, Oh My](http://ejohn.org/blog/revised-javascript-dictionary-search/)  

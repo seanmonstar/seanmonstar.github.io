@@ -3,9 +3,6 @@ hidden: true
 layout: post
 title: Gamers are every where
 date: '2013-02-08T14:04:40-05:00'
-tags:
-- gaming
-- culture
 tumblr_url: https://seanmonstar.com/post/42596635776/gamers-are-every-where
 ---
 [Gamers are every where](http://penny-arcade.com/report/editorial-article/what-the-mainstream-press-wont-report-gamers-are-everywhere-and-were-doing-)  

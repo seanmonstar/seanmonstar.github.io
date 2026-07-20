@@ -3,11 +3,6 @@ hidden: true
 layout: post
 title: Edge Prototype
 date: '2010-10-26T16:42:54-04:00'
-tags:
-- html5
-- javascript
-- adobe
-- adobe edge
 tumblr_url: https://seanmonstar.com/post/1409040080/edge-prototype
 ---
 [Edge Prototype](http://tv.adobe.com/watch/adc-presents/preview-of-the-edge-prototype-tool-for-html5-/)  

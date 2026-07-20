@@ -3,8 +3,6 @@ hidden: true
 layout: post
 title: Android Orphans
 date: '2011-10-27T16:58:01-04:00'
-tags:
-- android
 tumblr_url: https://seanmonstar.com/post/12002649719/android-orphans
 ---
 [Android Orphans](http://theunderstatement.com/post/11982112928/android-orphans-visualizing-a-sad-history-of-support)  

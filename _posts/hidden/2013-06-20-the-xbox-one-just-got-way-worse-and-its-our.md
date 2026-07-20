@@ -3,12 +3,6 @@ hidden: true
 layout: post
 title: "'The Xbox One Just Got Way Worse, And It's Our Fault'"
 date: '2013-06-20T20:49:48-04:00'
-tags:
-- microsoft
-- xbox
-- xbox one
-- used games
-- gaming
 tumblr_url: https://seanmonstar.com/post/53478754175/the-xbox-one-just-got-way-worse-and-its-our
 ---
 ['The Xbox One Just Got Way Worse, And It's Our Fault'](http://gizmodo.com/the-xbox-one-just-got-way-worse-and-its-our-fault-514411905)  

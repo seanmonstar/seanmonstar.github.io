@@ -3,10 +3,6 @@ hidden: true
 layout: post
 title: Android doesn't need the best UI
 date: '2010-12-21T20:16:41-05:00'
-tags:
-- android
-- iphone
-- opinion
 tumblr_url: https://seanmonstar.com/post/2409220229/android-doesnt-need-the-best-ui
 ---
 [Android doesn't need the best UI](http://www.marco.org/2402097858)  

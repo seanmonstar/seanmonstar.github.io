@@ -5,9 +5,6 @@ date: '2011-08-04T13:01:05-04:00'
 tags:
 - bestof
 - mozilla
-- opinion
-- planet
-- jobs
 - employment
 tumblr_url: https://seanmonstar.com/post/8475492438/good-things-come-to-those-who-ask
 ---

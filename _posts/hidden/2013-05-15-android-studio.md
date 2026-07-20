@@ -3,13 +3,6 @@ hidden: true
 layout: post
 title: 'Android Studio: An IDE built for Android'
 date: '2013-05-15T20:38:49-04:00'
-tags:
-- android
-- android studio
-- eclipse
-- ide
-- programming
-- google
 tumblr_url: https://seanmonstar.com/post/50538755343/android-studio
 ---
 [Android Studio: An IDE built for Android](http://android-developers.blogspot.com/2013/05/android-studio-ide-built-for-android.html#__sid=0)  

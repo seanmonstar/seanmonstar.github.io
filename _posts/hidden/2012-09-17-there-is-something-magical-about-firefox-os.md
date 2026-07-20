@@ -3,10 +3,6 @@ hidden: true
 layout: post
 title: There is something magical about Firefox OS
 date: '2012-09-17T12:58:55-04:00'
-tags:
-- mozilla
-- firefox os
-- mobile
 tumblr_url: https://seanmonstar.com/post/31735793124/there-is-something-magical-about-firefox-os
 ---
 [There is something magical about Firefox OS](http://rawkes.com/articles/there-is-something-magical-about-firefox-os)  

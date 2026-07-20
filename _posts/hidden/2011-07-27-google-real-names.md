@@ -3,8 +3,6 @@ hidden: true
 layout: post
 title: Google+ Wants Real Names
 date: '2011-07-27T19:25:06-04:00'
-tags:
-- google+
 tumblr_url: https://seanmonstar.com/post/8147186636/google-real-names
 ---
 [Google+ Wants Real Names](http://scripting.com/stories/2011/07/25/whyGoogleCaresIfYouUseYour.html)  

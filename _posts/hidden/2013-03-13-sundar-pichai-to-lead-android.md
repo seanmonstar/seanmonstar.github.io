@@ -3,10 +3,6 @@ hidden: true
 layout: post
 title: Sundar Pichai to lead Android
 date: '2013-03-13T16:27:44-04:00'
-tags:
-- google
-- android
-- chrome
 tumblr_url: https://seanmonstar.com/post/45287361460/sundar-pichai-to-lead-android
 ---
 [Sundar Pichai to lead Android](http://googleblog.blogspot.ca/2013/03/update-from-ceo.html)  

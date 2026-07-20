@@ -5,7 +5,6 @@ date: '2010-07-13T17:44:00-04:00'
 tags:
 - php
 - usability
-- error driven development
 tumblr_url: https://seanmonstar.com/post/808058987/error-driven-development
 ---
 If you write software, you write bugs. And after those bugs, there’s still errors that will happen in code you didn’t get to touch. Errors happen. That’s not new. And users know that things can go wrong sometimes. What pains me, is that we know&nbsp;exactly what went wrong, and we don’t translate that for the user.

@@ -3,13 +3,6 @@ hidden: true
 layout: post
 title: "'Feed reading is an open web problem'"
 date: '2013-04-24T21:32:39-04:00'
-tags:
-- rss
-- firefox
-- chrome
-- browsers
-- feeds
-- open web
 tumblr_url: https://seanmonstar.com/post/48819204458/rss-open-web
 ---
 ['Feed reading is an open web problem'](http://tieguy.org/blog/2013/04/21/why-feed-reading-is-an-open-web-problem-and-what-browsers-could-do-about-it/)  

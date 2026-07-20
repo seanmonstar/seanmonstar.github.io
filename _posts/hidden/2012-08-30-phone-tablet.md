@@ -3,10 +3,6 @@ hidden: true
 layout: post
 title: Why doesn’t my smartphone integrate with my tablet?
 date: '2012-08-30T14:56:50-04:00'
-tags:
-- tablet
-- phone
-- pc
 tumblr_url: https://seanmonstar.com/post/30532811898/phone-tablet
 ---
 [Why doesn’t my smartphone integrate with my tablet?](http://owened.co.nz/why-dont-devices-integrate-with-tablets)  

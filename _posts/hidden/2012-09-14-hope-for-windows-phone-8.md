@@ -3,11 +3,6 @@ hidden: true
 layout: post
 title: Hope for Windows Phone 8
 date: '2012-09-14T19:54:22-04:00'
-tags:
-- windows phone 8
-- android
-- mobile
-- iphone
 tumblr_url: https://seanmonstar.com/post/31551412059/hope-for-windows-phone-8
 ---
 [Hope for Windows Phone 8](http://owened.co.nz/why-i-wont-be-buying-an-iphone-5-6)  

@@ -7,7 +7,6 @@ tags:
 - http
 - reqwest
 - tower
-- retries
 - open-source
 - programming
 ---

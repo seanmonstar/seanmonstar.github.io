@@ -3,8 +3,6 @@ hidden: true
 layout: post
 title: Cleaning Your Tumblr
 date: '2010-06-22T13:53:55-04:00'
-tags:
-- javascript
 tumblr_url: https://seanmonstar.com/post/726009563/cleaning-your-tumblr
 ---
 I originally setup my Tumblr unsure of what to use it for, so I just added a bunch of feeds to it, like my Twitter, my blog feed, my delicious links, and my github activity. But when I decided to actually use my Tumblr as a real blog, I decided I didn’t want all that junk in here.

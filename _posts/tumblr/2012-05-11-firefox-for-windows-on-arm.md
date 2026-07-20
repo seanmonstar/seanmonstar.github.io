@@ -3,11 +3,9 @@ layout: post
 title: Firefox for Windows on ARM
 date: '2012-05-11T17:52:01-04:00'
 tags:
-- windows
 - firefox
 - mozilla
 - ios
-- planet
 tumblr_url: https://seanmonstar.com/post/22860664771/firefox-for-windows-on-arm
 ---
 [Firefox for Windows on ARM](http://weblogs.mozillazine.org/asa/archives/2012/05/firefox-on-windows-o.html)  

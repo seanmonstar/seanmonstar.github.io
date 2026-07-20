@@ -3,10 +3,6 @@ hidden: true
 layout: post
 title: SmartGlass
 date: '2012-11-13T15:00:30-05:00'
-tags:
-- xbox
-- smart glass
-- microsoft
 tumblr_url: https://seanmonstar.com/post/35649774150/smartglass
 ---
 [SmartGlass](http://penny-arcade.com/report/editorial-article/not-all-apps-are-created-equal-the-sometimes-brilliant-use-of-xbox-smartgla)  

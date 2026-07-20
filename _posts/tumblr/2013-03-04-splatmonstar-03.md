@@ -5,7 +5,6 @@ date: '2013-03-04T23:55:41-05:00'
 tags:
 - tent
 - tentmonstar
-- splatmonstar
 tumblr_url: https://seanmonstar.com/post/44599803625/splatmonstar-03
 ---
 [splatmonstar 0.3](https://play.google.com/store/apps/details?id=com.monstarlab.tentmonstar)  

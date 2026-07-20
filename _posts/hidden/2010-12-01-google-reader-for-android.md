@@ -3,9 +3,6 @@ hidden: true
 layout: post
 title: Google Reader for Android
 date: '2010-12-01T17:27:34-05:00'
-tags:
-- google
-- android
 tumblr_url: https://seanmonstar.com/post/2063551998/google-reader-for-android
 ---
 [Google Reader for Android](http://androidandme.com/2010/12/applications/native-google-reader-app-finally-comes-to-android/)  

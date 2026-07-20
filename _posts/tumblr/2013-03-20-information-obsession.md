@@ -4,10 +4,6 @@ title: Information Obsession
 date: '2013-03-20T19:41:00-04:00'
 tags:
 - rss
-- google reader
-- feedmonstar
-- information obsession
-- planet
 tumblr_url: https://seanmonstar.com/post/45871523111/information-obsession
 ---
 _I’m a week late to the “[Google Reader dies](http://googlereader.blogspot.com/2013/03/powering-down-google-reader.html)” news, but I wanted to collect my thoughts and read other people’s knee-jerk reactions first._

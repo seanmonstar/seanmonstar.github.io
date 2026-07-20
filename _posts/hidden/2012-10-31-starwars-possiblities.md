@@ -3,9 +3,6 @@ hidden: true
 layout: post
 title: '"When Lucas lets other people play in his sandbox, wonderful things can happen."'
 date: '2012-10-31T15:30:38-04:00'
-tags:
-- disney
-- star wars
 tumblr_url: https://seanmonstar.com/post/34714363306/starwars-possiblities
 ---
 ["When Lucas lets other people play in his sandbox, wonderful things can happen."](http://penny-arcade.com/report/editorial-article/disney-purchasing-lucasfilm-is-the-best-thing-to-happen-to-star-wars-in-a-d)  

@@ -5,7 +5,6 @@ date: '2009-03-27T09:01:00-04:00'
 tags:
 - css
 - standards
-- opinion
 tumblr_url: https://seanmonstar.com/post/707141572/when-are-css-frameworks-good
 ---
 There are loads of CSS frameworks out there, and plenty more of articles telling you that _they are the devil and don’t use them_. I agree with these articles as a whole. So what am I trying to say? Frameworks can be good? It depends.

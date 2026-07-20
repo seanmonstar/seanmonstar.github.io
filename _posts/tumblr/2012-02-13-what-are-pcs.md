@@ -5,8 +5,6 @@ date: '2012-02-13T18:38:03-05:00'
 tags:
 - tablets
 - ipad
-- pc
-- tech
 tumblr_url: https://seanmonstar.com/post/17575788223/what-are-pcs
 ---
 [What Are PCs?](http://shawnblanc.net/2012/02/ipad-pc/)  

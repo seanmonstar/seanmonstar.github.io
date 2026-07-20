@@ -3,7 +3,6 @@ hidden: true
 layout: post
 title: Hypothetical Tumblr Pro
 date: '2011-01-20T18:21:53-05:00'
-tags: []
 tumblr_url: https://seanmonstar.com/post/2848053401/hypothetical-tumblr-pro
 ---
 [Hypothetical Tumblr Pro](http://modernerd.com/post/2812040784/doing-it-for-a-living)  

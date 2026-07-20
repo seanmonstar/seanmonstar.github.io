@@ -5,7 +5,6 @@ date: '2013-04-10T13:55:50-04:00'
 tags:
 - mozilla
 - persona
-- planet
 - identity
 tumblr_url: https://seanmonstar.com/post/47631645119/persona-beta-2
 ---

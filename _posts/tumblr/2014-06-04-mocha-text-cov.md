@@ -6,8 +6,6 @@ tags:
 - javascript
 - programming
 - nodejs
-- mocha
-- planet
 tumblr_url: https://seanmonstar.com/post/87817275237/mocha-text-cov
 ---
 [mocha-text-cov](https://www.npmjs.org/package/mocha-text-cov)  

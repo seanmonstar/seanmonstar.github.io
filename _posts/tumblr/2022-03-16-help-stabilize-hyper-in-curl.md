@@ -4,7 +4,6 @@ title: Help stabilize hyper in curl
 date: '2022-03-16T11:44:50-04:00'
 tags:
 - rust
-- rust-lang
 - hyper
 - http
 - curl

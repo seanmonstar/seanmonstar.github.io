@@ -3,7 +3,6 @@ hidden: true
 layout: post
 title: So Long, Carbonmade
 date: '2010-10-22T16:18:25-04:00'
-tags: []
 tumblr_url: https://seanmonstar.com/post/1375308373/so-long-carbonmade
 ---
 [So Long, Carbonmade](http://spencerfry.com/so-long-carbonmade)  

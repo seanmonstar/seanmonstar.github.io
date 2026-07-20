@@ -2,9 +2,6 @@
 layout: post
 title: Levels of boiling
 date: '2012-12-26T20:59:12-05:00'
-tags:
-- tea
-- brewing
 tumblr_url: https://seanmonstar.com/post/38915072908/levels-of-boiling
 ---
 As you brew tea, you notice that different types demand different temperatures. I don’t use a fancy kettle, simply a pot filled with water. I also don’t have a thermometer, but I was sure there had to be a way to tell the temperature using my eyes. [Wikipedia](http://en.wikipedia.org/wiki/Boiling#Levels_of_boiling) came to the rescue:

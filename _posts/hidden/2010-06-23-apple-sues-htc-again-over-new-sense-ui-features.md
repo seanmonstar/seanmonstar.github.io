@@ -3,10 +3,6 @@ hidden: true
 layout: post
 title: Apple sues HTC again over new Sense UI features
 date: '2010-06-23T14:56:00-04:00'
-tags:
-- apple
-- htc
-- android
 tumblr_url: https://seanmonstar.com/post/729412642/apple-sues-htc-again-over-new-sense-ui-features
 ---
 [Apple sues HTC again over new Sense UI features](http://androidandme.com/2010/06/news/apple-sues-htc-again-over-new-sense-ui-features/)  

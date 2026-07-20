@@ -3,7 +3,6 @@ hidden: true
 layout: post
 title: no title
 date: '2009-02-12T10:05:00-05:00'
-tags: []
 tumblr_url: https://seanmonstar.com/post/706923862/job-title-web-magician
 ---
 <object type="application/x-shockwave-flash" data="http://www.collegehumor.com/moogaloop/moogaloop.swf?clip_id=1891074&amp;fullscreen=1" width="400" height="300"><param name="allowfullscreen" value="true">

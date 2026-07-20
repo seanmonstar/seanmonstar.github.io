@@ -3,10 +3,6 @@ hidden: true
 layout: post
 title: Apple’s Subscription Extortion
 date: '2011-02-15T16:04:24-05:00'
-tags:
-- apple
-- app store
-- iphone
 tumblr_url: https://seanmonstar.com/post/3313922968/apples-subscription-extortion
 ---
 [Apple’s Subscription Extortion](http://thinkvitamin.com/web-industry/why-you-should-fight-apples-subscription-extortion/)  

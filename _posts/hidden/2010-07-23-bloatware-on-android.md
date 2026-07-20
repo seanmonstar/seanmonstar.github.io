@@ -3,8 +3,6 @@ hidden: true
 layout: post
 title: Bloatware creeps into Android phones
 date: '2010-07-23T15:51:35-04:00'
-tags:
-- android
 tumblr_url: https://seanmonstar.com/post/850738087/bloatware-on-android
 ---
 [Bloatware creeps into Android phones](http://arstechnica.com/gadgets/news/2010/07/bloatware-creeps-into-android-phones.ars)  

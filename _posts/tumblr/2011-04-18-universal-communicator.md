@@ -3,10 +3,7 @@ layout: post
 title: Universal Communicator
 date: '2011-04-18T17:00:04-04:00'
 tags:
-- idea
-- pidgin
 - communication
-- universal communicator
 tumblr_url: https://seanmonstar.com/post/4726891078/universal-communicator
 ---
 As the web moves towards more and more social, there are plenty of new channels to communicate with your friends[^1]. In some ways that’s awesome, but the silos it creates are less so. I’m finding it more and more frustrating to recall what service I should use to contact a certain individual. To contact my wife, I use GTalk, my brother, SMS, my in-laws, a phone call, a fellow MooTools developer, Twitter, and business-y people, with email. Yeck. Please, where’s my Universal Communicator?

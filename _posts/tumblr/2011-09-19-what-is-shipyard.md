@@ -8,7 +8,6 @@ tags:
 - shipyard
 - mvc
 - mozilla
-- planet
 tumblr_url: https://seanmonstar.com/post/10407228296/what-is-shipyard
 ---
 [What is Shipyard?](https://github.com/seanmonstar/Shipyard)  

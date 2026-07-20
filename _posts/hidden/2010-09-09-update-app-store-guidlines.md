@@ -3,8 +3,6 @@ hidden: true
 layout: post
 title: Updated App Store License Agreement
 date: '2010-09-09T13:02:57-04:00'
-tags:
-- iphone
 tumblr_url: https://seanmonstar.com/post/1092422384/update-app-store-guidlines
 ---
 [Updated App Store License Agreement](http://daringfireball.net/2010/09/app_store_guidelines)  

@@ -3,10 +3,6 @@ hidden: true
 layout: post
 title: 'iOS vs Metro App Design '
 date: '2012-04-03T18:35:50-04:00'
-tags:
-- metro
-- windows 8
-- design
 tumblr_url: https://seanmonstar.com/post/20430703339/ios-vs-metro-app-design
 ---
 [iOS vs Metro App Design](http://msdn.microsoft.com/en-us/library/windows/apps/hh868262.aspx)  

@@ -3,10 +3,6 @@ hidden: true
 layout: post
 title: In-App Purchasing Patents
 date: '2011-05-13T18:29:36-04:00'
-tags:
-- apple
-- lawsuit
-- patents
 tumblr_url: https://seanmonstar.com/post/5461223494/in-app-purchasing-patents
 ---
 [In-App Purchasing Patents](http://gigaom.com/apple/indie-devs-get-hit-with-lawsuit-threats-over-in-app-purchases/)  

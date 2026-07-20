@@ -3,7 +3,6 @@ layout: post
 title: Web Developers Are Stupid
 date: '2009-08-20T11:00:00-04:00'
 tags:
-- opinion
 - bestof
 tumblr_url: https://seanmonstar.com/post/707192604/web-developers-are-stupid
 ---

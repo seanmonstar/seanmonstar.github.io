@@ -5,7 +5,6 @@ date: '2022-11-01T14:47:12-04:00'
 tags:
 - hyper
 - rust
-- rust-lang
 - http3
 - monthly
 tumblr_url: https://seanmonstar.com/post/699744578823127040/this-month-in-hyper-october-2022

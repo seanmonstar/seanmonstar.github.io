@@ -3,14 +3,6 @@ hidden: true
 layout: post
 title: Android Babel API?
 date: '2013-04-26T14:31:19-04:00'
-tags:
-- android
-- communication
-- api
-- chatheads
-- babel
-- key lime pie
-- planet
 tumblr_url: https://seanmonstar.com/post/48942353384/android-babel-api
 ---
 The communication situation on Android has gotten worse with the introduction of Google+. We used to have just Messaging (SMS), and Gtalk, and then they added Messenger. And they did this after Apple introduced iMessage, which simplified messaging. It seemed so counter-productive. So when I [read things like this](http://www.theverge.com/2013/4/10/4207894/google-babel-cross-platform-messaging-platform-rumors), I jump for joy:

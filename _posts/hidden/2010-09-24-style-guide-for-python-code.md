@@ -3,10 +3,6 @@ hidden: true
 layout: post
 title: Style Guide for Python Code
 date: '2010-09-24T19:55:00-04:00'
-tags:
-- python
-- planet
-- programming
 tumblr_url: https://seanmonstar.com/post/1181440279/style-guide-for-python-code
 ---
 [Style Guide for Python Code](http://www.python.org/dev/peps/pep-0008/)  

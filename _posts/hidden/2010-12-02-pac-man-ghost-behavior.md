@@ -3,10 +3,6 @@ hidden: true
 layout: post
 title: Pac-Man Ghost Behavior
 date: '2010-12-02T18:06:57-05:00'
-tags:
-- programming
-- games
-- pacman
 tumblr_url: https://seanmonstar.com/post/2075102447/pac-man-ghost-behavior
 ---
 [Pac-Man Ghost Behavior](http://gameinternals.com/post/2072558330/understanding-pac-man-ghost-behavior)  

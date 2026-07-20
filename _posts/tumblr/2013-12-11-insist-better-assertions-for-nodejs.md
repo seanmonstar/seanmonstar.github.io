@@ -5,10 +5,7 @@ date: '2013-12-11T13:01:39-05:00'
 tags:
 - javascript
 - nodejs
-- planet
 - programming
-- insist
-- assert
 tumblr_url: https://seanmonstar.com/post/69703845045/insist-better-assertions-for-nodejs
 ---
 [insist: Better assertions for nodejs](https://npmjs.org/package/insist)  
