@@ -191,6 +191,12 @@ async fn bsky_post(
             record["facets"] = json!(facets);
         }
 
+        // Bluesky does not fetch Open Graph metadata for posts created through
+        // the API, so include a text-only website card on the thread root.
+        if root_ref.is_none() {
+            record["embed"] = bsky_external_embed(post, site_url)?;
+        }
+
         // If this isn't the first post, attach the threading architecture
         if let (Some(root), Some(parent)) = (&root_ref, &parent_ref) {
             record["reply"] = json!({
@@ -223,6 +229,31 @@ async fn bsky_post(
     }
 
     first_url.ok_or_else(|| errors::new("empty bsky post").into())
+}
+
+fn bsky_external_embed(post: &Post, site_url: &str) -> Result<serde_json::Value, Error> {
+    let uri = micro_permalink(&post.path, site_url)?;
+    let title = post
+        .title
+        .as_deref()
+        .map(str::trim)
+        .filter(|title| !title.is_empty())
+        .unwrap_or("seanmonstar");
+    let description = markdown_to_social_text(&post.body, Some(site_url))
+        .split("\n\n")
+        .next()
+        .unwrap_or("")
+        .trim()
+        .to_string();
+
+    Ok(json!({
+        "$type": "app.bsky.embed.external",
+        "external": {
+            "uri": uri,
+            "title": title,
+            "description": description,
+        }
+    }))
 }
 
 fn bsky_link_facets(text: &str) -> Vec<serde_json::Value> {
@@ -847,5 +878,27 @@ mod tests {
             permalink,
             "https://seanmonstar.com/micro/20260623-owning-my-microblog-with-posse/"
         );
+    }
+
+    #[test]
+    fn bsky_external_embed_is_a_text_only_card() {
+        let post = Post {
+            path: PathBuf::from("../../_micro/2026-06-23-posse.md"),
+            body: "A short **description**.\n\nA second paragraph.".to_string(),
+            title: Some("Owning my microblog".to_string()),
+            mastodon_url: None,
+            bsky_url: None,
+        };
+
+        let embed = bsky_external_embed(&post, "https://seanmonstar.com/").unwrap();
+
+        assert_eq!(embed["$type"], "app.bsky.embed.external");
+        assert_eq!(
+            embed["external"]["uri"],
+            "https://seanmonstar.com/micro/20260623-posse/"
+        );
+        assert_eq!(embed["external"]["title"], "Owning my microblog");
+        assert_eq!(embed["external"]["description"], "A short **description**.");
+        assert!(embed["external"].get("thumb").is_none());
     }
 }
