@@ -22,7 +22,7 @@ This write-up shows several instances of this that I’ve learned from a library
 2. Translating typical Error inheritance
 3. Enums with an “open-ended” variant
 
-### Non-exhaustive
+## Non-exhaustive
 
 The various versions of HTTP are well-defined, and are not variant in the same way a library version might be. You don’t have a whole bunch of unknown HTTP version identifiers that you need to parse. So representing it as an enum is a pretty natural fit. You might start with something like this:
 
@@ -60,7 +60,7 @@ The user is now _required_ to include a catch-all pattern, signaling that more v
 
 With that in place, adding `Version::Http3` won’t break your user. Compatibility!
 
-#### Exhaustively non-exhaustive
+### Exhaustively non-exhaustive
 
     #[non_exhaustive]
     enum Version {
@@ -84,7 +84,7 @@ There is a currently [unstable lint](https://github.com/rust-lang/rust/issues/89
 
 With the current `enum`, this will warn the user they didn’t match on `Version::Http2`. And when the library adds a `Version::Http3` variant, the user will notice a new warning when they upgrade.
 
-### Error types
+## Error types
 
 It’s very common in Rust for errors to be represented by an `enum`. The perceived benefit is that a consumer can cleanly match on different error cases, and if desired, even ensure you had handled _every_ possible error case. While I’m not here to argue the premise of whether you _should_ handle every single case, a problem I’ve [struggled with](https://github.com/hyperium/hyper/issues/1131#issuecomment-362379005) related to this approach is probably better to explain first with a different programming language.
 
@@ -117,7 +117,7 @@ Back in Rust, this is _harder_ to do. The simplest solution is just not to expos
 
 We _could_. Probably the better question is _should we?_ But let’s peek first, anyways.
 
-#### Nested Non-exhaustiveness
+### Nested Non-exhaustiveness
 
 Let’s see what the user could try to write first, to see the goal:
 
@@ -172,7 +172,7 @@ If later on, we want to add some `Resolve` variants, we can promote it to an enu
 
 The question of _should we_ still lingers, though. I can’t say what the right answer is. I leave this here hoping someone will explore the idea more thoroughly, and tell us how great or horrid it is.[^2]
 
-### Open-ended variants
+## Open-ended variants
 
 Some other domains _appear_ to lend themselves to being represented by an `enum`, but likely _shouldn’t_ be. These are things where there are a set of commonly known types, but with an additional variant that is purposefully open-ended. Sometimes it’s setup that way to allow for some official registry of constants, so a specification doesn’t need to know all of them at publication time. Others just define the rules of a type, define the most common, and then also include an “extension” variant.
 
@@ -195,7 +195,7 @@ We have an `Unregistered(u16)` variant because the specification allows for new 
 
 If the library later on decides to add a variant for the new status code, even though the enum was marked as `non_exhaustive`, it will be a form of breaking change. It won’t be a _compile-time_ break. Instead, it will only happen at runtime. The code, as a `Status::EarlyHints`, will no longer match the `Status::Unregistered(103)` pattern.
 
-#### Opaque types with constants
+### Opaque types with constants
 
 We solved this in [`http`](https://crates.io/crates/http) by making `StatusCode` an opaque struct, and defined all the “variants” as constants.
 

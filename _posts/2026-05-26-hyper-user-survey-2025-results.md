@@ -11,7 +11,7 @@ tags:
 ---
 [hyper][] is the widely-used HTTP library for Rust. We ran the first [user survey for hyper in November 2025][survey-2025]. Here's the results and some analysis.[^burnout]
 
-### Why did we do a survey?
+## Why did we do a survey?
 
 We ran a survey to make sure we focus on the right things. It's part of being user-driven, working backwards.
 
@@ -21,11 +21,11 @@ I keep [high-touch, high-context relationships][retainers] with some users that 
 
 Sure, surveys have their own biases to deal with, such as self-selection. And voting in a survey costs very little, so each individual answer has less weight. But it helps quantify things we supposedly know from just a few users. Does this problem only show up in weird circumstances, or do most people run into it? Are there things that many people want, but generally don't get a chance to tell me?
 
-### The results
+## The results
 
 We had a total of 206 unique respondents. I've broken up the results by theme and question below.
 
-#### Current usage
+### Current usage
 
 Many of the questions were about current usage patterns. To get more context on answers, to see what works, and also to see what people _don't_ mention using.
 
@@ -47,7 +47,7 @@ Many of the questions were about current usage patterns. To get more context on 
 
 It's just so humbling to think this code is helping in so many different places.
 
-#### Future work
+### Future work
 
 Another set of questions were related to work we _could_ do in the future. This helps inform prioritization, and things we may not have thought of.
 
@@ -68,7 +68,7 @@ One write-in suggestion wasn't really about a new feature, but keeps popping bac
 
 **Topic ideas**: we asked for suggestions for topics for future blog posts and talks. This certainly doesn't need to be only from me, so if you see something interesting, fill the need! But after grouping the topics, they are: hyper internals, best practices, testimonials and success stories, security, tower usage, retries.
 
-#### Contributing
+### Contributing
 
 We also asked about some general contribution questions, to look at the contributor health of the project.
 
@@ -76,7 +76,7 @@ The standout here was: **what would help you to contribute more?**
 
 The top response, a little over half of all respondents, said an improved contributing guide. Just a few percent under that want an updated roadmap. 20% said more responsive triage and reviews. And 15% said they could use increased mentoring.
 
-### The insights
+## The insights
 
 Looking it all over, this was awesome. I definitely to take some specific things with me. Well, sure, there's goodies all throughout the above results. But, at a high level, here's some thoughts, especially after combining it with other conversations I've had.[^not-everthing]
 

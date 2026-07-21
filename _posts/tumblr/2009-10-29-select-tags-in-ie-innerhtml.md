@@ -13,7 +13,7 @@ I had a list of options to give to the user, and a select box would work perfect
 
 <figure class="tmblr-full" data-orig-height="222" data-orig-width="322"><img src="https://64.media.tumblr.com/45a7f3c1268e5345b73b1f373f391dc1/a18c2b652749ba34-73/s540x810/9baf9c961b135c0b67c06d77f6edf7b64aefa704.jpg" data-orig-height="222" data-orig-width="322"></figure>
 
-#### The Buggery
+### The Buggery
 
 Here’s what I thought would work of stupendously!
 
@@ -27,7 +27,7 @@ It disregards completely the first `<option>` in the string. Go ahead and try it
     selectEl.innerHTML = '<option>this one breaks</option><option>we dont work because the first one is broken</option>';
     document.body.appendChild(selectEl);
 
-#### Solution
+### Solution
 
 It breaks even that. So I resorted to DOM methods to build my select field.
 

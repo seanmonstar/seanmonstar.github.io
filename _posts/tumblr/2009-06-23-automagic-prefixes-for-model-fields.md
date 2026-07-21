@@ -18,7 +18,7 @@ I’d rather ditch the prepended part in all my PHP code.
 
     echo $p->username;
 
-#### Use Accessors
+### Use Accessors
 
 We can do this by [writing some \_\_get and \_\_set functions](http://seanmonstar.com/blog/overloading-objects-in-php/):
 
@@ -43,7 +43,7 @@ We can do this by [writing some \_\_get and \_\_set functions](http://seanmonsta
 
 Basically, [stated before](http://seanmonstar.com/blog/overloading-objects-in-php/), these get called when you try to access a property that doesn’t exist on the object. So when we try to access `username`, we check if `player_username` exists, and if so, return that value.
 
-#### MY\_Model: Easily extendable
+### MY\_Model: Easily extendable
 
 You could work this into a MY\_Model class that extends Model, and then make all your models extend MY\_Model. If you wanted to do this, I’d say make a property of MY\_Model called ‘prefix’, and use prefix in the accesors. Then, in each sub-class, all you need to do is define the prefix.
 

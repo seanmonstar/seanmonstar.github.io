@@ -13,7 +13,7 @@ Here are a few ways to do so:
 - [GitHub Sponsors](https://github.com/sponsors/seanmonstar)
 - [Patreon](https://patreon.com/seanmonstar)
 
-### Retainers
+## Retainers
 
 A [retainer][] with me could provide your company with even more value, such as:
 

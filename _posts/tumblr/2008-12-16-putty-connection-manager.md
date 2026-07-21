@@ -12,7 +12,7 @@ tumblr_url: https://seanmonstar.com/post/707084079/putty-connection-manager
 
 PuTTY already lets you set up saved connection options, which lets you save a name for the window as well, alleviating the naming problem. But it still leaves you with gillions of windows in your taskbar of the same program. PuTTY Connection Manager (CM) retrieves all your saved sessions, and lists them in a nice tree on the right. But the reason to use it: all PuTTY connections are now contained in one program!
 
-##### Tabs All Around
+#### Tabs All Around
 
 All your connections show up inside this shell, and all have tabs easily readible without clicking that _PuTTY (6)_ task in your taskbar. The developers put time into this tabbed interface, ‘cause it’s powerful! They can plain tabs like in Firefox, or you can break up the window into columns or rows, in any fanciful arrangement.
 

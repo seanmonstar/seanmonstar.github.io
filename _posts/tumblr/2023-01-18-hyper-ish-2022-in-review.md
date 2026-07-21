@@ -16,7 +16,7 @@ Quite the eventful year! With 2022 over[^1], I want to take some time highlight 
 
 A quick personal note, I wrote much more this year![^2] Yay!
 
-### hyper
+## hyper
 
 Let’s start with some general things about [hyper](https://hyper.rs).
 
@@ -26,7 +26,7 @@ In an effort to share the lovely work those humans do, I started writing [monthl
 
 And we celebrated [10 thousand stars](https://seanmonstar.com/blog/hyper-10000-stars/) this year! ⭐
 
-### hyper 1.0
+## hyper 1.0
 
 As I mentioned in [last year’s review](https://seanmonstar.com/blog/hyper-ish-2021-in-review/), 2022 was the year we began to prepare to release a stable 1.0 of [hyper](https://hyper.rs).
 
@@ -38,7 +38,7 @@ On the other side, late last year, we published [v1.0.0-rc.1](https://seanmonsta
 
 You can follow along on the [project board](https://github.com/orgs/hyperium/projects/1/views/1), and specifically the [1.0 meta issue](https://github.com/hyperium/hyper/issues/3088) ties together non-issue related details.
 
-### hyper in curl
+## hyper in curl
 
 The work to make [hyper an HTTP backend in curl](https://seanmonstar.com/blog/how-using-hyper-in-curl-can-help-make-the-internet/) from last year continued throughout this year. There’s just a few remaining tests in curl’s large HTTP suite that didn’t work when hyper is enabled. Several wonderful people showed up to dig in and find out exactly _why_.
 
@@ -46,7 +46,7 @@ To try to empower others to do, I wrote up a [help-us-finish guide](https://sean
 
 I also joined Daniel Stenberg virtually by presenting about [hyper in curl at curl-up 2022](https://seanmonstar.com/blog/curl-up-2022-hyper-in-curl/).
 
-### h3
+## h3
 
 We’ve been working on the [h3 crate](https://github.com/hyperium/h3), providing HTTP/3 that is generic over any QUIC implementation, with the goal of integrating into hyper directly. The repository has had a working server and client which already interoperates with other implementations.
 
@@ -61,7 +61,7 @@ I’ve written about it in the [monthly](https://seanmonstar.com/tagged/monthly)
 
 While there’s still specific work that can be done on the `h3` crate itself, it’s time to consider next steps to get it into user hands. To that end, there’s even a [pull request for reqwest to use `h3`](https://github.com/seanmonstar/reqwest/pull/1599)! There’s just some [details to work out](https://github.com/hyperium/h3/issues/125) around publishing unstable versions so reqwest can depend on it. We hope this experimental support will help us iron out any usage annoyances, so we can start landing it in hyper proper.
 
-### tower
+## tower
 
 While [tower](https://crates.io/crates/tower) isn’t tied to hyper, we’ve always meant for people to easily combine the two libraries to make powerful, opinionated HTTP stacks.
 
@@ -73,7 +73,7 @@ The `tower-http` repository continued to see additions. Mostly middleware that a
 
 I’ve also kicked around the idea loosely about cracking open the [reqwest](https://crates.io/crates/reqwest) crate, and turning its various features into tower middleware. Then, reqwest is just a single opinionated way to build up a client stack. The community would be more empowered to customize the order of layers, adding or removing or swapping, and still have the power that they come to expect from using reqwest.
 
-### What are some possiblities in 2023?
+## What are some possiblities in 2023?
 
 Besides launch hyper 1.0, of course.
 

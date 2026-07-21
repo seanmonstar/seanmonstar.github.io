@@ -18,7 +18,7 @@ The flaw is a fundamental part of the design: for every charge, we must give the
 
 One supposed fix is the [Swipe-and-PIN enhancement](http://www.theverge.com/2014/2/12/5405024/chip-and-pin-vs-chip-and-signature). This helps prevent copying of a card at a Point-of-Sale terminal. However, advances in magic (the Internet) have greatly _increased_ the amount of online shopping. Want a new spiked collar for Fluffles? Just open your browser, and **type in your credit card number**. Nothing to worry about, I’m sure they won’t record it. Oh what’s that? An email from Exotic Collars that their database was hacked, and they actually did have your credit card. Time to call the bank, and fix up all your auto-billing subscriptions.
 
-### _You_ get a token, and _you_ get a token…
+## _You_ get a token, and _you_ get a token…
 
 We can try to create rules around how to store credit cards, but just like passwords, it’s really hard to do correctly. Also, [just as with passwords](http://seanmonstar.com/blog/your-password-is-insecure/), merchants should never receive such powerful information in the first place. A solution could be providing the merchant a one time use token authorized for a specific amount for a specific merchant. The merchant charges the token, and it then becomes useless. It’s impossible to charge for more than agreed upon. Stealing the token is useless, because it only works for that merchant, it expires, and a credit account will only accept any token once.
 
@@ -28,7 +28,7 @@ Recurring charges would be trickier. It’d require more cooperation among banks
 
 Credit accounts could provide apps to their users to make sending and approving tokens easy from our phones. Additionally, the app could also optionally prompt for approval when a merchant charges a token, to ensure there was no mistake or the token wasn’t somehow hijacked[^2].
 
-### Stand back, I don’t know crypto
+## Stand back, I don’t know crypto
 
 I’m certain smarter people than myself could make a really secure design, but I’ll entertain you by stumbling around with mine. The implementation could look something like [Persona](https://developer.mozilla.org/en-US/Persona/Crypto). The tokens passed around could be JWTs. It could follow something like these steps:
 

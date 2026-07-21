@@ -19,7 +19,7 @@ If you follow The Node Way, then you make and use focused packages or libraries 
 
 The modules are no good without plugging them together to make an app. Many apps are web apps, but they could be anything, like flying nodecopters or some such. So you have a bunch of app specific code tying together libraries, and you want to log all over the place. You want to know response codes, response times, when errors occur, when people attack your app, and when unicorns invade.
 
-### So what’s the problem?
+## So what’s the problem?
 
 At the end of the day, you want to ship an app. We all ship apps. And while you were devving away on your machine, logging to console was perfectly fine. But once you start shipping, you can’t just watch the console blast by on hundreds of production machines like The Matrix. This is typically when you decide that you need a configurable logging library, so you can rotate log files, send some to syslog, email exception logs, and fill them full of colors.
 
@@ -44,13 +44,13 @@ This works for a while in your own app, but you’ll notice that you can’t mak
 
 We’re never going to agree on a library that all apps and libs should use, and we shouldn’t! Competition, blah blah, etc. I’ll walk through probably the most obvious solution, show why it’s not good enough, and then propose the real solution.
 
-### Log, log, pass?
+## Log, log, pass?
 
 Libraries could accept a logger option. This works fine when the library provides a constructor. It’s terrible when the library simply provides a handful of static utility functions. Those that do have constructors could allow a `logger` option, but default to `console`, and still benefit from the real solution below.
 
 I propose, instead, that all libraries just use `console.log` and logging libraries overload `console.log`. Well, clearly, overload all of `console`. Craziness? Maybe, but then we already get paid to write JavaScript.
 
-### console.log()
+## console.log()
 
 In node.js, the `console` object comes with `debug`, `log`, `info`, `warn`, and `error` methods already. So a library can depend on this universal global, and log things at the correct levels. The application, at the main module, can create a fancy pants logger, and overload `console` with it. Now, all library code is pumping its logs through your fancy pants, and is none the wiser. How fancy.
 

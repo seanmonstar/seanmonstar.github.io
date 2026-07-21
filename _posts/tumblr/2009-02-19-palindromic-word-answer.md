@@ -10,7 +10,7 @@ Earlier this week I posed a simple programming question on how to determine if a
 
 Disclaimer: This interview was for a Mobile Java development position, so when I was asked the question, I was told to use basic constructs, cause everything is expensive on a piece-of-crap phone.
 
-#### The Thought Process
+### The Thought Process
 
 A palindrome is when a word or sentence is the same spelt backwards, so I first thought I should reverse the string and compare the results. But not only does this take the time to reverse the string, it also allocates memory for 2 string objects, which I really don’t need.
 
@@ -18,7 +18,7 @@ So then I decided to do a character by character comparison, comparing the first
 
 There’s an extra step in this function in the beginning, since I felt it’d be nice to compare sentences as well. Originally I didn’t have to, and didn’t need to process a regular expression.
 
-#### isPalindromic: in Javascript
+### isPalindromic: in Javascript
 
     function isPalindromic(string) {    
     	var trimmed = string.replace(/[^\\w]/g,'').toLowerCase();
@@ -30,7 +30,7 @@ There’s an extra step in this function in the beginning, since I felt it’d b
     	return true;
     }
 
-#### Who cares?
+### Who cares?
 
 The developer doing the interview gets to watch you write on a whiteboard, and see you plan out your function. So in my case, he sees that I’ve got the concept down first: comparing the result backwards, and then that I realize it can down without two strings. And he also gets to notice whether or not I know that I only need the first half, or if I’ll leave slightly un-optimized.
 

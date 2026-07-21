@@ -17,7 +17,7 @@ After you make the building blocks of your application, using [Models](http://se
 
 Both are equally unappetizing. Wouldn’t it be so much nicer to write your views like we do in other languages?
 
-### Templating
+## Templating
 
 Here’s a nice mix of HTML and JavaScript. No tricky string concatenation[^1]. You just have to put your JavaScript inside tags like you would in PHP.
 
@@ -35,11 +35,11 @@ Here’s a nice mix of HTML and JavaScript. No tricky string concatenation[^1]. 
     <% }); %>
     </ul>
 
-### View.Helpers
+## View.Helpers
 
 Besides `print`, which does exactly what you think it does, there are a bunch of other functions that are sort of “globally” accessible from a View. And these are functions defined on `View.Helpers`. The most basic version of the helpers only includes a `view` function, which let’s you nest views inside each other, like I used above. If you include the `View.Helpers` file, you get more functions, such as `excerpt` (truncates to a certain length) and `date` (allows date formating similar to PHP’s [date](http://php.net/date) method). As I find more basic functions that you would want in a templating system, I’ll add more, such as possibly something like `escape`.
 
-### The File
+## The File
 
 These are saved as `.html` files. You don’t need to manually include them like Models or Controllers; the View class will first check to see if they’ve been included, and if not, go and fetch them over the wire. And they go in you app’s `views` folder. The example above would have a structure like so:
 
@@ -48,7 +48,7 @@ These are saved as `.html` files. You don’t need to manually include them like
             tasks/
                 list.html
 
-### The View Class
+## The View Class
 
 The `View` Class is what converts templates into views for your application. You can instantiate a View, and then pass it data and ask for it to process itself using the passed data.
 

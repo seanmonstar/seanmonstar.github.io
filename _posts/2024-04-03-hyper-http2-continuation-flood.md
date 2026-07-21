@@ -13,13 +13,13 @@ Patches are available for [`h2`][h2], v0.4.4 and v0.3.26, to harden against a ne
 
 If you're curious about more, read on.
 
-### What is the attack?
+## What is the attack?
 
 In HTTP/2, there are a bunch of frame types. Some of those frames are related to sending headers (or fields). Since there is a maximum frame size, in order to send more headers than fit, a peer can send `CONTINUATION` frames that indicate more headers for the message.
 
 That mechanism is the source of a new attack, trying to send an infinite number of `CONTINUATION` frames to starve or kill a server. This was a coordinated release, with various implementations involved. [VU#421664][VU] has details about the others.
 
-### hyper's `h2` is somewhat affected
+## hyper's `h2` is somewhat affected
 
 The HTTP/2 specification doesn't state a default value for `SETTING_MAX_HEADER_LIST_SIZE`. You should set that to something reasonable for your use case. But even if you don't, `h2` picks an emergency default, which is fairly high so to as to not reject requests for users who need big requests.
 
@@ -31,7 +31,7 @@ However, if deployed on Tokio (or some other runtime with a similar feature), th
 
 A degradation of service.[^cve]
 
-### What we did
+## What we did
 
 Besides testing and determining the above, we also worked on a fix.[^who]
 
@@ -45,7 +45,7 @@ We settled on calculating how many `CONTINUATION` frames would be needed for a l
 
 The patch has been tried out on some production servers, and found no false positives.
 
-### What you can do
+## What you can do
 
 - If you don't use HTTP/2 on a server, then don't worry.
     - If you do, but are not exposed to untrusted L7 traffic, also don't worry.

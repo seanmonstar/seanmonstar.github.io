@@ -8,7 +8,7 @@ tumblr_url: https://seanmonstar.com/post/708874716/closures-break-my-for-s
 ---
  **I love closures**. They are an excellent tool any Javascript programmer should have in his tool set. They let you do fantastic things, and are the way things like the [Module Pattern](http://yuiblog.com/blog/2007/06/12/module-pattern/) are possible. But they can also be tricky. I’ll show you a couple ways they’ve managed to fool me, so that you can be aware of them when you use them in your programs.
 
-### When Doing a Simple `for` Loop
+## When Doing a Simple `for` Loop
 
 `for` loops are nothing special to programmers. And they’re nothing special in Javascript. So why would you need a closure in a simple `for` loop? Whenever you’re binding functions to things inside that `for` loop, you likely need a closure.
 
@@ -42,7 +42,7 @@ So we can use a closure to make sure every function we create gets it’s own, p
 
 Now, every pass of `i`, we create and execute a function that accepts an argument that we call index. Since it executes immediately, it passed the value of `i` at that moment.
 
-### Let’s take it one step further
+## Let’s take it one step further
 
 In my `for` loop, I’m also relying on another variable outside my bound event function: `subjects`. Theoretically, I could write something later that would affect `subjects`. Or someone else could. Perhaps if I wrote some more in my constructor function, and altered the array. More likely, since that is a `NodeList`, it can change if the DOM ever changes, such as adding more list items, or removing them. If that happens, then we’ll have issues besides just our variable being different.
 
@@ -62,11 +62,11 @@ Nonetheless, we could make our closure less reliant on that and other variables,
 
 We no longer access the variable from outside the function. We’re passing a value at the function executing. Again, if later that array changes, our function is still safe (disregarding `that.highlight(index)` will likely have the wrong index).
 
-### Frameworks Help Remove This Problem
+## Frameworks Help Remove This Problem
 
 This issue comes up commonly in `for` loops. That is why in frameworks, using a `forEach` method tends to protect us from all of these. `forEach` lets us create a function that will already have the value from the array passed as an argument, so we don’t have to worry about the index value changing.
 
-#### In MooTools
+### In MooTools
 
     function Highlighter(ul) {
         var that = this;

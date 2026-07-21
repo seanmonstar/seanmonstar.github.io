@@ -22,7 +22,7 @@ My favorite example in that article is about a game where in a certain level, so
     	HideObject();
     }
 
-#### I’m guilty of that
+### I’m guilty of that
 
 We know that happens far too often in our industry. Just the other night, I was guilty of doing exactly that.
 
@@ -44,7 +44,7 @@ I just tied in where we were calculating the totals of all CartItems, and if one
 
 One can’t help but feel dirty doing this. Just hodge-podging rules into place, that magically make everything all better.
 
-#### Is it really that bad?
+### Is it really that bad?
 
 Some may be wondering, what’s the big deal? It works, doesn’t it? Why, yes! It works! And depending on your situation, that may be all that’s really necessary. After all, the point of software is to ship it. And it’s got to work. In the end, _how_it works on the inside has little value to the end user. That’s the same in my case. In the end, what really matters is that users can add products to a shopping cart and then checkout.
 

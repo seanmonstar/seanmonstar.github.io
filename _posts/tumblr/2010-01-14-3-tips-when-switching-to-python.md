@@ -12,7 +12,7 @@ If you write a lot of Javascript or PHP, there are a couple of habits you might 
 2. Setting properties on objects with a variable
 3. Using While with a function call
 
-#### Check in first
+### Check in first
 
 When looping through a list or dictionary, it’s not uncommon to compare the current indexed value to a value in a different list or dictionary. However, doing that will quickly teach you that trying to access a key that doesn’t exist will raise a `KeyError`.
 
@@ -29,7 +29,7 @@ Alternatively, Python dictionaries have a `get` method. Hence we do this, and it
 
     val = params.get(key, 'defaultVal')
 
-#### You can just setattr
+### You can just setattr
 
 A while ago, when doing some [initial Django development](http://seanmonstar.com/blog/extending-django-models-managers-and-querysets/), I tried to naively handle submission of forms the same way I do in PHP. I loop through each key value pair in the POST dictionary, and assign it to an instance of the model I want to insert. No worries if extra information has been submitting, the model will send data that we have specifically set at fields in the `class` definition. However, objects in Python don’t allow item assignment like PHP or Javascript. Every object does have a personal ` __dict__ ` that I could access, but then I can get `KeyErrors` as the above example shows.
 
@@ -38,7 +38,7 @@ A while ago, when doing some [initial Django development](http://seanmonstar.com
     for key, value in POST.iteritems():    
     	setattr(my_model, key, value)
 
-#### While True, loop foreverrrrr
+### While True, loop foreverrrrr
 
 Often times, when you don’t have a predetermined length of something, you’ll use `while` to do your looping. A common occurrence of this is when reading in a file. You call a function, and store its return value, and as long as that value is usable, do your loopity loop stuff. However, in Python you can’t do assignment inside a condition for a control structure like `while`, probably because Guido likes to prevent bad practices from being possible in his language, and that is usually a bad practice unless you know what you’re doing.
 

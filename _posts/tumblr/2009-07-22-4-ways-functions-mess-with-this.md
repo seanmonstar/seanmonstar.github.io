@@ -14,7 +14,7 @@ In JavaScript, the `this` keyword can be a tricky thing. It’s trickiness comes
 3. Constructor Invocation
 4. Apply Invocation
 
-### Method Invocation
+## Method Invocation
 
 The first patten of using functions will look the most familiar. When you come from classical programming languages (C#, Java), you’re likely used to classes being the only building blocks of a program. Nothing can exist without a class. You only have a function that is a method of a class. And it’s super simple what `this` relates to.
 
@@ -31,7 +31,7 @@ Well, that is the same way method invocation works in Javascript. If you define 
 
 Anytime we call `changeSomething` of `Obj`, like above, we know `this` will be `Obj`, so we don’t have to repeat the name of the object constantly. This is also the same if we were to clone the object. `this` would reference the object that owns the method.
 
-### Function Invocation
+## Function Invocation
 
 The second pattern, might look a little stranger, and seem to behave strange also, but once you realize a few things about JavaScript, you’ll see there is logic behind it (_yes, really!_). The next pattern is commonly called the Function invocation, and this is basically where we define a function all by its lonesome self. This is possible because in JavaScript, functions are first-class objects. So they can be passed around, stored, all the good stuff. But let’s assume we know all this.
 
@@ -84,7 +84,7 @@ The work-arounds for this problem aren’t all the difficult. Most involve simpl
     };
     Thing.woops(); //sets Thing.name = 'I was owned by Thing, and still am. Woot!'
 
-### Constructor Invocation
+## Constructor Invocation
 
 The third way, using a function as a constructor, breaks all the rules of the past 2 patterns. When you use the `new` operator with a function, while that function is executing, `this` is bound to a brand new object. That object gets assigned the prototype of the function as the prototype of the object. And any uses of `this` inside that constructor function will modify your new object during creation.
 
@@ -131,7 +131,7 @@ If you habitually do this and clobber objects you’re not supposed to, you can 
     };
     var notADog = Dog('Bart');// throws an Error at you
 
-### Apply Invocation
+## Apply Invocation
 
 Lastly, there is a pattern to specifically control what `this` should be in a function, no matter what it would be by default. Like I said earlier, functions are objects, which means they can have methods. All functions have a method called `apply`, which when used will invoke the owning object (the function) with a specific object bound as `this`.
 
@@ -151,7 +151,7 @@ There’s another way to do almost the same thing, using the `call` method. The 
 
 You can use these methods on any function. **Any**. For instance, on methods or prototypes. You might find someone use `apply` of an `Array` method on an `arguments` array, or element collection, since they aren’t actual arrays, they don’t have the methods on their `prototype`. But by using `apply`, you can use those methods on them anyways.
 
-### That’s a Wrap
+## That’s a Wrap
 
 Functions in JavaScript are a lot of fun. But before you’ve used JavaScript too much, these things can really get you. Or even if you have been using JavaScript before, you might not have really known why some things happen the way they do. Knowing these has certainly helped me to design better JavaScript.
 

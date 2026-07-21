@@ -10,7 +10,7 @@ tumblr_url: https://seanmonstar.com/post/707125202/parentnode-misbehavior-in-ie
 ---
 I wrote a simple script to pop-up a modal-like element when clicking on an “Add” button on the page. I wanted to insert the element into the DOM on first click, and on subsequent clicks, simply reset the form. A bug popped up in IE7 (surprise) that prevented me from checking if I had inserted the element already.
 
-#### What I tried to do
+### What I tried to do
 
 I performed the case check by simply checking the parentNode of the element, which obviously shouldn’t exist until it’s inserted into the DOM.
 
@@ -18,7 +18,7 @@ I performed the case check by simply checking the parentNode of the element, whi
 
 As I expected, worked perfectly. _Until I popped open IE7_.
 
-##### IE Ignores Specs
+#### IE Ignores Specs
 
 Apparently, IE7 assigns a parentNode to nodes upon creation, before it has been inserted into the DOM. Well that’s silly, because the specifications say nothing about setting the parentNode. In fact, they state the opposite:
 
@@ -26,7 +26,7 @@ Apparently, IE7 assigns a parentNode to nodes upon creation, before it has been 
 
 That’s fine. Doing some debugging, I find there is indeed a parentNode. And that parentNode has a nodeType of 9, or DOCUMENT\_NODE. So it makes a new, off-screen document to hold onto created Elements. Whatever.
 
-##### Excusing IE
+#### Excusing IE
 
 A simple modification to my if statement fixed everything, once I finally knew IE gives it a parentNode. The good part (_there’s good here?_ ), is that it assigns the new Element a parent that only the HTML node should have, a document. So here it is modified:
 

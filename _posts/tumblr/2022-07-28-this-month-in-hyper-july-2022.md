@@ -14,11 +14,11 @@ tumblr_url: https://seanmonstar.com/post/691039972381294592/this-month-in-hyper-
 ---
 I’d like to start providing more frequent updates of all the work that’s done in [hyper](https://hyper.rs), along with examples, details, and thanks. As a bonus, I included things from June in here as well.
 
-### Release v0.14.20
+## Release v0.14.20
 
 While we will release often when there’s new bug fixes grouped up, [this release](https://github.com/hyperium/hyper/releases/tag/v0.14.20) has a helpful new feature for people who write proxies and gateways.
 
-#### hyper::ext::ReasonPhrase
+### hyper::ext::ReasonPhrase
 
 One of the new features in v0.14.20 is the ability to interact more with the HTTP/1 [reason-phrase](https://github.com/hyperium/hyper/pull/2792) of an HTTP response. This is a sort-of deprecated part of HTTP (the reason-phrase does not exist in HTTP/2 or 3), but sometimes important information is still put in them. The `http::StatusCode` type does not include a `String` field for the reason-phrase, because of that deprecation, and to decrease the memory size of the type.
 
@@ -49,19 +49,19 @@ And a server can _send_ a custom phrase by including the extension, like so:
 
 Thanks a bunch to [Adam Foltzer](https://hyper.rs/blog/2022/04/08/welcome-adam-foltzer/) for the work on this feature!
 
-### hyper 1.0 started
+## hyper 1.0 started
 
 Development work on 1.0 started in June. Progress can be tracked in [the public dashboard](https://github.com/orgs/hyperium/projects/1/views/2). Some major work done so far includes splitting the client connection type per HTTP version, for forwards compatibility, and moving the connection pool implementation and the Tokio `connect` integration to `hyper-util`. Thanks to @oddgrd, @tomarkw, @dswij!
 
 There’s several more big PRs nearing completion too, looking forward to thanking them next month.
 
-### hyper in curl
+## hyper in curl
 
 In June, we fixed the way curl would pause and resume request bodies when using hyper, resulting in 4 more of the remaining unit tests to pass. In July, a brand new contributor (thanks @deantvv!) add the FFI function to use hyper’s existing obs-folded headers support. A PR just merged aligns how curl expects obs-folded headers and how hyper treats them, which should fix another couple unit tests.
 
 There’s a [dashboard](https://github.com/orgs/hyperium/projects/2/views/1) if you’d like to [help this momentous work](https://seanmonstar.com/blog/help-stabilize-hyper-in-curl/).
 
-### HTTP/3
+## HTTP/3
 
 The HTTP/3 specification was published as [RFC 9114](https://httpwg.org/specs/rfc9114.html). I gave [a small recap](https://twitter.com/seanmonstar/status/1534224846015451136) of the state of HTTP/3 in hyper.
 

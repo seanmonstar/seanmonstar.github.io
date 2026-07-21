@@ -15,7 +15,7 @@ tumblr_url: https://seanmonstar.com/post/87709828215/firefox-accounts-oauth-expl
 ---
 As we build [Firefox Accounts](https://wiki.mozilla.org/Identity/Firefox_Accounts), a key part to the whole experience is allowing a user to divvy out information to apps. We’ll be doing so with an OAuthish experience.
 
-### OAuth2
+## OAuth2
 
 The first obvious place to look was the [OAuth2 spec](http://tools.ietf.org/html/rfc6749). We’ve based most of our experience on this model. Using the spec, a flow for an imaginary website Cuddly Foxes would like this:
 
@@ -33,7 +33,7 @@ That means that they ask our OAuth server for a token with scopes ‘profile:ema
 
 Of course, we can assume the Profile server wouldn’t do anything so nefarious, but having that power is still dangerous. And imagine as we add in more 3rd-party attached services, which inherently are less trustworthy. Additionally, with the [recent discovery in OpenSSL](http://heartbleed.com/), we don’t want to trust TLS alone to protect against sniffing the data as it passes. So, passing around a Bearer token in plain text is unacceptable.[^1]
 
-### OAuth2 HMAC
+## OAuth2 HMAC
 
 The next step was to consider using a secret token to sign a request, so that the original token is never revealed. This has been excellently explored already by the [Hawk scheme](https://github.com/hueniverse/hawk). The short of it is that 2 parties who share a secret can sign the request with an [HMAC](http://en.wikipedia.org/wiki/Hmac), proving that the request and it’s payload came from one of them. The receiver just computes the same HMAC, and compares signatures. The original secret is never leaked to anyone. Many cookies were had by all.
 
@@ -41,7 +41,7 @@ Adapting that to our OAuth flow, we would return a random token like before, and
 
 This is an improvement, since the secret token is never visible on the wire, nor does the Profile server receive it. However, a downside is that for this to work, the OAuth server needs to keep the original secret token in plain text. Before, we were keeping a hashed copy of it, which meant that a snapshot of our database would not reveal everyone’s secret tokens. We didn’t like this disadvantage, and so continued to explore.
 
-### OAuth with Public Key Signing
+## OAuth with Public Key Signing
 
 We wanted to keep the request signature, since that doesn’t leak the secret to anyone else, while not having to retain the original secret ourselves. It turns out, there is a technology that does exactly this: asymmetric public key cryptography. However, using RSA or DSA keys has its problems: signing and verifying is slow, generating new keys is slow, and sending public keys with each request is a lot of bytes. That’s when my colleague [Brian Warner](http://www.lothar.com/blog/) brought up the newest hotness: elliptic curve public keys. Particularly, [Ed25519](http://ed25519.cr.yp.to/). It’s super fast to create keys, signing and verifying are fast, and public keys are 32-byte strings. The secret keys are likewise 32 bytes, and completely random, so brute force guessing takes longer than any human could ever wait.
 
@@ -66,7 +66,7 @@ Here’s an example request:
 
 The signature proves that the request originated from the owner of the pubkey, and the payload hasn’t been modified.
 
-### There be Gryphons
+## There be Gryphons
 
 The authorization scheme in the example above is “Gryphon”. It was partly influenced by Hawk, but felt like a more powerful version. Mozilla has a habit of naming projects after mythological creatures. Most importantly, [gryphons](http://en.wikipedia.org/wiki/Griffin) “are known for guarding treasures or priceless possessions.” Certainly, user data is a priceless possession.
 

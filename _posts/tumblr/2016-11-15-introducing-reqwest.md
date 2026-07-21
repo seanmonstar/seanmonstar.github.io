@@ -15,7 +15,7 @@ In web development, you can find resource after resource, framework after librar
 
 If you need to make HTTP requests in your application, you probably want to reach for [reqwest](https://github.com/seanmonstar/reqwest).[^1]
 
-### Convenience
+## Convenience
 
 There are several parts of HTTP that we usually just want to happen for us automatically. For many of us, these extras are not something we’d consider ‘extra’, but just business-as-usual. This includes things like following redirects, connection pooling (keep-alive), JSON payloads, cookies, and more.
 
@@ -29,7 +29,7 @@ From there, maybe you just want to dump the page into the console:
 
 What about sending bodies in a `POST` request?
 
-#### Bodies
+### Bodies
 
 You could send the raw bytes of anything you want using the `body()` method of a `RequestBuilder`. But more likely, there are a couple of formats that are far more common that we just want to taken care of for us. 0.1 provides convenience methods for sending forms (urlencoded) and JSON data.
 
@@ -57,13 +57,13 @@ Or you could build a `HashMap` and send that as a form instead. Indeed, the `for
 
 Easing the sending of [multipart](https://github.com/seanmonstar/reqwest/issues/4) forms is a feature that will hopefully be added shortly in 0.2.
 
-### TLS
+## TLS
 
 The way the `reqwest` crate handles TLS is similar to cURL. It uses the awesome new [native-tls](https://github.com/sfackler/rust-native-tls) crate to make use of built-in-to-the-OS TLS implementations when they exist, and using the new OpenSSL 1.1 if it does not. For now, that means it will use `security-framework` on masOS, and `schannel` on Windows. It’s plausible that something like [rustls](https://github.com/ctz/rustls) (or ring or something else) would eventually replace the OpenSSL backup in the future.
 
 Blah blah, what does all that mean for you? That on whichever OS you happen to be using `reqwest`, it will try to provide the easiest experience for you when connecting to HTTPS websites.
 
-### The Future
+## The Future
 
 Another reason to use `reqwest` is to ease the upcoming changes to [hyper](http://hyper.rs), which is adopting non-blocking IO. Many applications do not need to make thousands of requests. Many just need to make 1, or a few, and writing code in a blocking style is easier. Without the need to make thousands of requests, the benefits of non-blocking IO are fewer. So, `reqwest::Client` plans to always provide a blocking API. Even when hyper releases with non-blocking IO, `reqwest` will upgrade to it and still present the `Client` with the same API. Your code won’t need to change, but it will become more robust underneath.[^2]
 

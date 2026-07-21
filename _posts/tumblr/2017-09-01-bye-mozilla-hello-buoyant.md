@@ -10,7 +10,7 @@ tags:
 - buoyant
 tumblr_url: https://seanmonstar.com/post/164869651177/bye-mozilla-hello-buoyant
 ---
-### Bye, Mozilla
+## Bye, Mozilla
 
 Today is my last day as a [Mozilla](https://mozilla.org) employee.
 
@@ -26,7 +26,7 @@ The superb humans really are superb. Yes, they’re intelligent. But that’s th
 
 And yet, it’s time for me start the next step in my journey. I still wish Mozilla the very best. You should definitely be using [Firefox](https://firefox.com). And I hope I’ll bump into my friends plenty of times more in the future.
 
-### Hello, Buoyant
+## Hello, Buoyant
 
 Starting Monday, I’ll be working for [Buoyant](https://buoyant.io).
 

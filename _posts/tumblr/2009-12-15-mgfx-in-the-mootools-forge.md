@@ -11,7 +11,7 @@ Last week saw the [release](http://mootools.net/blog/2009/12/10/the-official-moo
 
 > For people trying to find plugins, we wanted a simple interface with visual focus on what’s available. Going through lists of plugins whose names are not always that intuitive or descriptive is both boring and inefficient. You might find yourself opening dozens of tabs just to see what the plugin can potentially offer. We want to try and put all the information you need to make a choice right in one place.
 
-#### I’m up in the Forge
+### I’m up in the Forge
 
 As I’ve [written about before](http://seanmonstar.com/blog/mgfx-tabs-1-1-on-github/), I’ve started hosting some of my projects on Github. I prepared specifically for this release, and now have [MGFX.Tabs](http://mootools.net/forge/p/mgfx_tabs) and [Drag.Dock](http://mootools.net/forge/p/drag_dock) featured in the Forge. As it says in the respective pages, all issues can be reported to Github issues for those projects.
 

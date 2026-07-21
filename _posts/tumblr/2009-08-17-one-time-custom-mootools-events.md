@@ -13,7 +13,7 @@ Some practical uses can be found, such as the domready event that the document f
 
 This is only useful for Element Events. I haven’t researched doing this with an event from a class. That will probably use the same principle. But let’s move on!
 
-#### Element.Events
+### Element.Events
 
 When you add an event to `Element.Events` , you specify an object with up to 4 properties:
 
@@ -24,7 +24,7 @@ When you add an event to `Element.Events` , you specify an object with up to 4 p
 
 With this in mind, we will consolidate the process of keeping track of **one-time events** in our custom event.
 
-#### oneClick
+### oneClick
 
 > Attach a listener, determine if the event has already fired, and if so, execute the listener immediately.
 
@@ -55,7 +55,7 @@ Now, we can listen on an element for oneClick, and listen for it somewhere else,
     	Toolbar.show();
     });
 
-##### One Limitation
+#### One Limitation
 
 So far, the **one limitation** I found, was that you had to not need the actualy Event object in your listener. As in, you can’t check the `event.target`, or mouse x and y coordinates from the event. This is because from the onAdd method, we don’t have access to a native event, since one hasn’t actually fired. I found this trying to call `e.stop()` in my testing script. This doesn’t bother me much, but be warned.
 

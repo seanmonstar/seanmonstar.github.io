@@ -12,13 +12,13 @@ Steve Webster recently wrote an article about how [horribly standards-stupid](ht
 
 I agree completely. I feel all AJAX commands that you include in your web-site should do the proper PHP call if Javascript is disabled. Tabs should only contain non-essential information, and the most important should be on the first one, in case it’s not possible to switch between them. But are there _exceptions to the rule_?
 
-##### Web Applications - Exceptions?
+#### Web Applications - Exceptions?
 
 Now, granted, not all web applications are exceptions. If your application is to be used by the commons, and you’re concerned about people you could leave off, then certainly, make your application standards-smart. Google is a perfect example of this. But must everyone?
 
-#### SproutCore
+### SproutCore
 
-##### Javascript Scarcity?
+#### Javascript Scarcity?
 
 SproutCore applications are rich desktop-like programs with lots of functionality in them. The majority of the application is written in Javascript. So of course, people without Javascript aren’t going to be able to use it. But how many people is that? All computer browsers come with Javascript. Mobile browsers suck, but would you expect someone to use a rich application from their crappy mobile device? Excepting the iPhone, which does have Javascript in its broswer.
 
@@ -26,7 +26,7 @@ SproutCore applications are rich desktop-like programs with lots of functionalit
 
 **There’s a problem with this statement of statistics**. Firstly, 2% is not a significant number. But worse, while there is a percentage of people browsing the Internet with Javascript disabled, _they all have the easy method of going into options and re-enabling it_. And that shouldn’t be too hard, since they had to know enough to disable it the first time. But all those people without Flash have no easy option. You must provide a link to download the proper Flash player, which can be a mess who isn’t so computer-savvy (they exist, and I’m the one the come asking to fix things).
 
-##### An Enhancement?
+#### An Enhancement?
 
 Here’s why _SproutCore tends to be an exception_: The application is written with Javascript in mind. It’s written to use Javascript. It’s saying to the users: **Hey, you want to use Application Awesome? Cool. It runs in Javascript, so just enable that baby and awe your mind.**
 

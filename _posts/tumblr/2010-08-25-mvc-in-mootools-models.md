@@ -15,7 +15,7 @@ Granted, that’s why I was attracted to MooTools in the first place: the idea o
 
 A year ago, I got fed up with it. I was also interested in Adobe AIR at the time, and liked the idea of being able to copy over as much of my code as possible to make an AIR version of an application. Hopefully, the only changes would be the way data was stored and received. I feel pretty good when using the MVC paradigm on the server-side, and I felt it made sense in the browser as well. So I started a [MooTools MVC framework](http://github.com/seanmonstar/monstars.js).
 
-### Models
+## Models
 
 I started with making various sub-classes of Model[^2] that interacted with specific data storage concepts. In Adobe AIR, a SQLite database would likely be used. In the browser, you’d likely have you’re data stored on the server, and need to access it via ajax. I wanted to be able to have the same model class, and just change its subclass based on need. Certainly, the `Model.SQL` could be used in newer browsers, as well, if you wished.
 

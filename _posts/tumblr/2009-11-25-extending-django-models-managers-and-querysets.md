@@ -10,7 +10,7 @@ tumblr_url: https://seanmonstar.com/post/708862164/extending-django-models-manag
 ---
 In a recent pet project, I’m exploring Django. As I’m used to in our PHP framework, [I like to extend Models](http://seanmonstar.com/blog/automagic-prefixes-for-model-fields/) with methods that a model should keep contained, and then I can call multiple times elsewhere in the Controller <ins>View in Django (don’t start me on the stupidity of the naming scheme)</ins>. In PHP, it’s a bit more straight forward: You can simply write some new functions inside the class. In Django, it was a little more complicated. I explored several different parts that all affect writing methods that should be contained in the Model area of the application.
 
-#### Models
+### Models
 
 First, Models. You can simply write some methods in the Model class definition, the same way you’d like to in PHP. A difference though, in Python we don’t get function decorators like we do in PHP. In PHP, I would write instance methods that manipulate an object, or instance, of the Model. Such as `$ball->explode()`. I would write static function that manipulate the table of models, such as `Ball::get_exploded()`.
 
@@ -27,7 +27,7 @@ We would use this elsewhere to make sure that when the Ball explodes, we also re
     ball.explode()
     ball.save()
 
-#### Manager
+### Manager
 
 The Manager is how we access the table. It’s largely like the static methods we might use in PHP. The default property to access the manager is `objects`.
 
@@ -49,7 +49,7 @@ This is supremely more useful when you start making complicated queries, in seve
 
 This insures that if I find my query to be slightly buggy, or if I want to pad it an extra day, I only have to change my method. The benefits should be obvious enough. Manager methods usually return QuerySets, so let’s see why extending the QuerySet is also useful.
 
-#### QuerySet
+### QuerySet
 
 By adding our method to the manager, you can call it from the Manager property, but we might want to use our methods later on in a query. Currently, the method is only available from `Ball.objects.get_exploded()`.
 
@@ -57,7 +57,7 @@ By adding the methods to the `QuerySet` for `Ball`, we can use `get_exploded()` 
 
 However, adding a method to the `Manager` and also the `QuerySet` the `Manager` uses would mean writing the method twice.
 
-#### QuerySetManager
+### QuerySetManager
 
 Doing some searching, I found the [QuerySetManager](http://www.djangosnippets.org/snippets/734/), a snippet someone had put together that allows us to add methods to both the QuerySet and Manager at the same time. We define the QuerySetManager, and then tell the model use that for its Manager. Then, we can define a QuerySet inside the Model declaration, since Python classes allow you define inner classes.
 

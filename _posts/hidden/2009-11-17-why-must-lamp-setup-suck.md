@@ -18,7 +18,7 @@ There are competent, [1-button install programs](http://www.apachefriends.org/en
 
 I recognize anyone needing a Linux server mostly knows how to set one up. But at the same time, the people wanting Linux servers are programmers. Isn’t our job _obsession_ all about automating tasks that can be automated, and forever trying to make every task in that category? Certainly, it must be a common setup to have a Debian (or Ubuntu, or RedHat, etc) Virtual Machine using Apache, SQL, and PHP. Even desiring Python to be installed, with mod\_python or mod\_wsgi. Or how about coming with Ruby set up for you. These would all be excellent downloadable Virtual Machines that programmers would use regularly.
 
-#### Only One Solution So Far
+### Only One Solution So Far
 
 I’ve seen one installer for a Linux virtual machine, though not in the flavor I regularly use: [SUSE Studio](http://susestudio.com/).
 
@@ -30,7 +30,7 @@ The concept is brilliant. If you want a SUSE virtual machine, you just login, se
 
 If I were the technical director at a company, and we were going to be using a new development area for a new project, I could easily customize a box (with clicking, not with tedious command line memorization), and after it’s built, give it out to all the developers. That’d be huge! It certainly is a pain point to make sure all us developers have a virtual machine with the same settings.
 
-#### The Way Forward
+### The Way Forward
 
 SUSE Studio has the right idea, for all things that should be installed. Anything that requires a specific set of instructions that you’re requiring humans to do, every single time, should likely be programmed instead. Hopefully we’ll see other versions showing up, so the PHP developer wanting to check out Ruby, for example, can just download a virtual machine with it already set up, and get to the important stuff: **writing code and solve problems**.
 

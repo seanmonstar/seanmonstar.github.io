@@ -12,14 +12,14 @@ tumblr_url: https://seanmonstar.com/post/710694914534539264/this-month-in-hyper-
 ---
 After [recapping the 2022 year](https://seanmonstar.com/blog/hyper-ish-2022-in-review/), here’s what the amazing contributors have been doing to make [hyper](https://hyper.rs) ever better during January and February of 2023.
 
-### Releases
+## Releases
 
 - [hyper v0.14.24](https://github.com/hyperium/hyper/releases/tag/v0.14.24): fixes some expect-continue behavior, and reduces the internal max allocation in `to_bytes`.
 - [h2 v0.3.16](https://github.com/hyperium/h2/releases/tag/v0.3.16): adds a missing piece for Extended CONNECT, and several bug fixes (memory reduction, panics)
 - [reqwest v0.11.14](https://github.com/seanmonstar/reqwest/releases/tag/v0.11.14): adds `Proxy::no_proxy(url)` that works like the `NO_PROXY` environment variable, and several internal optimizations reducing copies and memory allocations.
 - [tower-http v0.4.0](https://github.com/tower-rs/tower-http/releases/tag/tower-http-0.4.0): a new decompression layer for Requests, `ServeDir` and `ServeFile` now translates IO errors into Responses, and adds a more flexible `ValidateRequest` layer.
 
-### hyper 1.0
+## hyper 1.0
 
 We released [RC3](https://github.com/hyperium/hyper/releases/tag/v1.0.0-rc.3), which fixed up some missing pieces in the API. Places needing an `Executor` now ask for one, and we added `hyper::rt::bounds` to publicly expose [nameable but future-proof Executor trait “aliases”](https://github.com/hyperium/hyper/issues/3097), so libraries building on top of hyper can use them as bounds. We also added a few state getters for `SendRequest` which were needed for the next exciting part.
 
@@ -31,7 +31,7 @@ We took some extra time to focus on [RC4](https://github.com/orgs/hyperium/proje
 
 The extra time will also allow us to investigate having a security review done for 1.0, to prevent any gotchas.
 
-### HTTP/3
+## HTTP/3
 
 We’re working on HTTP/3 in a separate crate, [h3](https://github.com/hyperium/h3), with the goal of fitting it into [hyper](https://hyper.rs).
 

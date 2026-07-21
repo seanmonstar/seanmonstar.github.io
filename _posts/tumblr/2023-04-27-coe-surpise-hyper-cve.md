@@ -6,11 +6,11 @@ tags:
 - hyper
 tumblr_url: https://seanmonstar.com/post/715784167270596608/coe-surpise-hyper-cve
 ---
-### Meta
+## Meta
 
 This document is meant to help publicize the learnings from a recent emergency in hyper. Documents like these are common within various organizations. Some call them “postmortems”, others say “incident reports”. I quite like what Amazon calls them, since it aptly describes the purpose: **Correction of Error**. There was an error that caused an emergency, and we want to correct that error.
 
-### Summary
+## Summary
 
 A surprise [CVE](https://en.wikipedia.org/wiki/Common_Vulnerabilities_and_Exposures) publicly filed for [hyper](https://hyper.rs) on April 11, 2023 caused an emergency situation for several collaborators, and sent out dependabot warnings with no actionable advice. By day’s end, we identified a best-guess at what the cause of the low-severity vulnerability was. By the next morning, a fix was available.
 
@@ -18,7 +18,7 @@ That the issue should have been a CVE is uncertain.
 
 The bigger concern is the way the CVE was filed bypassing the existing security policy. That is similar to finding a lighter in a school, and pulling the fire alarm. This COE discusses both why it may have happened, and how we can try to reduce future occurrences.
 
-### The impact
+## The impact
 
 The RustSec[^1] advisory explains the issue this way:
 
@@ -28,7 +28,7 @@ In reality, being able to consistently accomplish those conditions would be very
 
 But the bigger impact was not this particular issue, but rather that a CVE caused a sudden panic for the maintainers and for users as dependabot alerted people with nothing that they could do.
 
-### The story
+## The story
 
 The original [issue](https://github.com/hyperium/hyper/issues/2877) was filed on May 27, 2022. Trying to better understand, I asked some poorly worded follow-up questions. Another contributor filed a pull request trying to fix the underlying issue. Several collaborators reviewed that PR, but didn’t fully grasp what it was trying to fix. It then fell into the void.
 
@@ -46,14 +46,14 @@ After 14 hours, we had a fix written and reviewed. We determined that the issue 
 
 The following morning we published the fix, as `h2` v0.3.17. Surprising everyone who has rushed out new code, a new bug in it was indeed found. We then published v0.3.18.[^4]
 
-### Five whys[^5]
+## Five whys[^5]
 
 - **Why did someone file a CVE suddenly?** We don’t know for sure, but we can guess.[^6] A related issue had been open for a year, not fixed, so perhaps the reporter thought this was the only way to move forward.
 - **Why wasn’t the issue acted upon a year ago?** When it was initially opened, the maintainers didn’t fully understand what the problem was. Follow-up questions were asked, but even our questions weren’t that clear. Eventually, we forgot about it.
 - **Why was it forgotten?** We didn’t have any recurring reason to check back and try to understand what the issue was. If it had been reported privately to the security address, it would have stayed high priority until it was solved or determined incorrect.
 - **Why wasn’t the initial issue reported privately?** Perhaps the original reporter didn’t know about the policy.
 
-### What we’re doing to prevent a next time
+## What we’re doing to prevent a next time
 
 We can’t completely control someone randomly filing a new CVE and causing another fire drill. But there are other things we can improve at to _reduce_ the likelihood of one.
 

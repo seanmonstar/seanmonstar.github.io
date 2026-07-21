@@ -13,7 +13,7 @@ tumblr_url: https://seanmonstar.com/post/115873169212/hyper-on-beta
 ---
 Since I [announced hyper](http://seanmonstar.com/blog/hyper/) in December of last year, it has continued to grow as Rust’s http library.
 
-### highlights
+## highlights
 
 - A [changelog](https://github.com/hyperium/hyper/blob/master/CHANGELOG.md) was added![^1]
 - Many more of the common headers have been implemented.
@@ -24,7 +24,7 @@ Since I [announced hyper](http://seanmonstar.com/blog/hyper/) in December of las
 
 Of course, a lot of the effort this past few months has been keeping up with all the changes to Rust and the standard library. A million thanks to [all those who helped](https://github.com/hyperium/hyper/graphs/contributors) with these upgrades. I can’t overstate the joy it is to wake up in the morning, read that there are breaking changes in the latest nightly, and then see in my inbox that a pull request has already been filed fixing hyper.
 
-### up next
+## up next
 
 Now that the breaking changes are behind us, developement can focus entirely on making hyper do things better-er. Specifically, here’s things that are either in progress, or highly desired (hint hint).
 

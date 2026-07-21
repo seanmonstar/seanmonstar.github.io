@@ -65,6 +65,7 @@ a:visited {
     .site-title {
       font-size: 3em;
       font-family: Georgia, Times, serif;
+      font-weight: bold;
       line-height: 1;
       margin-bottom: .5em;
     }
@@ -78,7 +79,7 @@ a:visited {
       text-decoration: none;
     }
 
-    .post h1 {
+    .post-title {
       font-size: 1.5em;
       font-weight:500;
     }
@@ -88,16 +89,16 @@ a:visited {
       font-weight:500;
     }
     
-    h3 {
+    .post-body h2:not(.post-title) {
       font-size: 1em;
-      font-family:Roboto, Verdana, sans-serif; 
-      font-weight:400; 
-      text-transform:uppercase; 
-      margin:3.5em 0 1em; 
+      font-family:Roboto, Verdana, sans-serif;
+      font-weight:400;
+      text-transform:uppercase;
+      margin:3.5em 0 1em;
       letter-spacing:0.2em;
     }
 
-    h4 {
+    .post-body h3 {
       color: #777;
       font-size: 0.9em;
       font-family:Roboto, Verdana, sans-serif; 

@@ -7,11 +7,11 @@ tags:
 - mootools
 tumblr_url: https://seanmonstar.com/post/707019146/pluggable-mootools-tabs
 ---
-#### Update (2/18/10)
+### Update (2/18/10)
 
 Theres a [new version of MGFX.Tabs](http://seanmonstar.com/blog/mgfx-tabs-1-2-0-show-a-random-tab/), that includes the ability to easily show a random tab.
 
-#### Update (11/10/09)
+### Update (11/10/09)
 
 I’ve released a [new version of MGFX.Tabs](http://seanmonstar.com/blog/mgfx-tabs-1-1-on-github/), and wrote a new article explaining the new features, its new location, and so forth.
 
@@ -21,7 +21,7 @@ I’ve released a [new version of MGFX.Tabs](http://seanmonstar.com/blog/mgfx-ta
 
 Last week, I released a pluggable Slideshow type Mootools class. I had written that class a while back, and since then had extended its functionality to allow me easily make tabs on any page. I wanted my tabs to have the ability to auto-switch if I wanted, so extending my Rotater class made perfect sense.
 
-#### MGFX.Tabs
+### MGFX.Tabs
 
 I also wanted this to be a solution that _didn’t require going into the source_ and tweeking it to make it work. That’s the point of every class, really.
 
@@ -29,7 +29,7 @@ Also, people (even myself, on varying projects) use different mark-up to make ta
 
 This does require the Fx.Elements add-on on top of the regular Mootools framework, so be sure to grab the extra class from [Mootools More](http://mootools.net/more) .
 
-##### The Constructor
+#### The Constructor
 
 The _constructor_ is pretty simple, and since it extends Rotater, it includes the same transitionDuration and slideInterval options.
 

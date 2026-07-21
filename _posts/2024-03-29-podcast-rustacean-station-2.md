@@ -13,7 +13,7 @@ I was recently a [guest on the Rustacean Station podcast][podcast]. It was nice 
 
 I thought I'd grab a few fun and interesting quotes, with their timestamps:
 
-### Sponsoring is not the Mafia (11:48)
+## Sponsoring is not the Mafia (11:48)
 
 > The lowest engagement is [sponsorship][sponsor] where it's like, what am I getting from your sponsorship? If you turn it around and think about, well, a lot of times open source is like this common good that everyone kind of benefits from and I don't want to pay for it because someone else is going to pay for it, right? It's kind of like this Russian roulette of like, well, if no one pays for it, then eventually that thing is going to go away.
 >
@@ -25,7 +25,7 @@ I thought I'd grab a few fun and interesting quotes, with their timestamps:
 
 > (laughs) Yeah, it's not like an insurance racket.
 
-### Access to the maintainer / advising (12:50)
+## Access to the maintainer / advising (12:50)
 
 > There's [more things that I can offer][sponsor] and I do offer. Another one is people want to be able to ask, hey, we're using your stuff and we want to know are we using it correctly or, hey, we've been trying to use it and we have this problem and we don't understand why. Could you take a look?
 >
@@ -33,7 +33,7 @@ I thought I'd grab a few fun and interesting quotes, with their timestamps:
 >
 > It's like getting an [advisor][sponsor], a reviewer, and then I can then take that knowledge and go back and be like, okay, so I now have knowledge that like company so-and-so is using this in a way that I didn't expect. How can I make it better for them? So like, both sides benefit, but it's only possible if I set up contracts and everyone's legally happy.
 
-### Breaking people, not kneecaps (30:55)
+## Breaking people, not kneecaps (30:55)
 
 > If something would be a breaking change, then we label it with a breaking change. And it's not something we can do right now. We can close it or postpone it or something. And then, you know, maybe three years from now, go and take a look at all the issues that are labeled that and say like, yeah, you know what, this would be worth breaking for. But at the same time, I'd love to not have to break people, even though, you know, the promise is only for three years. I'd love to not have to.
 
@@ -41,7 +41,7 @@ I thought I'd grab a few fun and interesting quotes, with their timestamps:
 
 > Exactly. Yeah. No breaking kneecaps.
 
-### Client middleware (32:12)
+## Client middleware (32:12)
 
 > The other major thing is improving middleware. There's all this stuff in [tower][], and it's great. Like there's [Axum][]. You can use it to make really powerful servers. But the point of this middleware was actually that you could use it both ways. You could use it for servers, but you could also use it for clients. And that doesn't work as well.
 >
@@ -53,7 +53,7 @@ I thought I'd grab a few fun and interesting quotes, with their timestamps:
 >
 >  But that's my other thing to work on. Make reqwest and like Tower's client middleware merge together a whole lot nicer so you can have [much better stacked clients][reqwest-next].
 
-### Retry storms and budgets (33:50)
+## Retry storms and budgets (33:50)
 
 > Since there wasn't a really easy plug-in, then people implement retries themselves. And that includes making themselves vulnerable to retry storms and just not doing it in a safe way. And the thing is that we have this middleware and things that would protect you from that, but they're just complicated enough that people are like, ah, I can just retry in a loop.
 >
@@ -65,7 +65,7 @@ I thought I'd grab a few fun and interesting quotes, with their timestamps:
 >
 > The [linkerd blog](https://linkerd.io/2019/02/22/how-we-designed-retries-in-linkerd-2-2/#using-retry-budgets) had a good post on how you can fix that using Tower middleware. But I'd prefer it if people didn't have to read that to use it.
 
-### And plenty of other topics
+## And plenty of other topics
 
 Go [have a listen][podcast], I hope you find it informative!
 

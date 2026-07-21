@@ -18,7 +18,7 @@ I'm specifically talking about the `async fn` sugar. What if we didn't have it, 
 
 The current `async fn` is really nice, if you fit the expected usage. If none of the differences with `impl Future` ever cause you problems, then great! But I do run into them. Other people seem to also.
 
-### What's so bad?
+## What's so bad?
 
 Some of these differences cause problems that don't have decent solutions. ([Do you know the differences?][play])[^me] If you have to deal with one of them, suddenly you need to use different syntax.
 
@@ -28,7 +28,7 @@ It's the only place that has **a magic return type**. It makes lifetimes weird. 
 
 So was it mistake? I think it may have been. Don't worry, I don't want to take it away from you, if you disagree![^for]
 
-### What if the alternative was nicer?
+## What if the alternative was nicer?
 
 But I did wonder about this. What if we had the following features ready:
 

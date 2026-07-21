@@ -11,7 +11,7 @@ With web applications becoming more prevalent, and new developers showing up to 
 
 Thankfully, there’s a rather simple procedure to prevent the majority of malicious code injections by _preparing your SQL queries_ before sending them into your database. Let’s take a look at how to do so with _CodeIgniter_, but before that, how to do so using only the _PHP’s native PDO interface_.
 
-##### SQL Injections
+#### SQL Injections
 
 What is an SQL Injection? It’s helpful to know what this is so we can better understand what we’re defending against. One example is retrieving all user information:
 
@@ -31,9 +31,9 @@ With a little guessing that the table might be called users, we just set a 3-par
 
 Yikes! Just a little guess work, and our literally composed query can be easily manipulated to destroy an application or leak information. Here’s a [walkthrough case study of an anonomized injection](http://www.unixwiz.net/techtips/sql-injection.html) to see how a hacker might compromise your application. Now on to protecting ourselves from malicious injection.
 
-#### Native PDO Interface
+### Native PDO Interface
 
-##### The Model
+#### The Model
 
 Let’s make a very basic Model class that will interact with our database. Note, this doesn’t include connecting to the database. I assume you know how to do so.
 
@@ -45,7 +45,7 @@ Cool beans. Now we can structure a query in our controller, and remembering to i
 
 What we did here was contructed the query, but left out the values and substituted in question marks. We then passed the values as a seperate parameter. So what happens?
 
-##### PDO::prepare() and PDO::bindValue()
+#### PDO::prepare() and PDO::bindValue()
 
 First, your query is prepared using the prepare() function extended from PDO. This prepares your statement to have the values passed into it wherever there were question marks.
 
@@ -53,7 +53,7 @@ Next, for each value, the data type is checked, and then bindValue() from PDO is
 
 Finally, PDO::execute() sends the bound query, and PDO::fetchAll() returns the rows of data from the query. You can read up more about the [PDO interface at php.net](http://php.net/).
 
-#### Soul Binding with CodeIgniter
+### Soul Binding with CodeIgniter
 
 I personally prefer to [develop](http://../contact) using CodeIgniter, and the above functionality is already written for me. Let’s see how to very simply accomplish the same in this [wonderful framework](http://codeigniter.com/).
 
@@ -61,7 +61,7 @@ I personally prefer to [develop](http://../contact) using CodeIgniter, and the a
 
 Ah, so very simple. Well, just as simple as above. But this is the CodeIgniter way.
 
-##### Other Tips
+#### Other Tips
 
 A few other things that will _help prevent guesswork on your database_:
 

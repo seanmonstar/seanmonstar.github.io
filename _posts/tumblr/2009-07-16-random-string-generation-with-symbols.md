@@ -16,7 +16,7 @@ It didn’t take long after I had commited that code before I started thinking i
 
 The above line will provide a random string, but it’s weak in a few ways. First, it’s only 8 characters long. We should be aiming in the high ‘teens. But that’s easily fixed by changing the `substr` length. However, its bigger weakness is that it’s text coming from a hexidecimal output. Each character only has 16 possibilities, which is **way smaller** than 62, or more.
 
-#### I Like “Or More”
+### I Like “Or More”
 
 The amount of possible combinations is dependent on the number of characters, and the number of characters available. In math terms it would look something like this:
 
@@ -28,7 +28,7 @@ If we increase the character set to include all letters, upper and lower case, p
 
 Like a computer really wants to brute force **that**.
 
-#### How I Got “More”
+### How I Got “More”
 
 I didn’t want to simply create a huge list of possible characters, and then use a loop and a random number generator to eventually build the string. I wanted to try to keep it as much as possible in native functions. I recognize that using a loop might provide more randomness, as there would be no possible pattern, but I feel this is sufficient.
 

@@ -11,7 +11,7 @@ tumblr_url: https://seanmonstar.com/post/4054494468/contextless-twitter-search
 ---
 [Marco outlines what’s so terrible about the Quick Bar](http://www.marco.org/3991237704) in the Twitter for iPhone app, but it sounds more like a fair assessment of Twitter’s trending topics feature in general. The trending topics are simply words that Twitter has noticed are having an increased appearance in a short time period. Once in a good long while, when control of my wandering eyes is slacking, I see something that catches my attention in the trending topics. I click on it, curious about what all the ruckus is about. Since this ships me off to a global twitter search of the topic, I immediately scold myself and my wandering eyes. You failed me!
 
-### Twitter Search
+## Twitter Search
 
 The issue with Twitter search is that it is currently a real-time global shotgun of tweets; something I have never found useful. Most tweets are useless garbage, even tweets that I allow into my timeline. The reason I read them is for their context: I have similar interests to the people I follow, and so their short 140-character jabs make sense and sometimes even connect with _me_, my being. I have educated myself on many of these people, and therefore have come to enjoy seeing their tweets. When I search on Twitter, I never know any of the people whose tweets I’m barraged with, at a real time pace that no human could possibly keep up with.
 
@@ -21,7 +21,7 @@ Google’s first attempt at using the social network’s data was with a super u
 
 Google has recently started inserting web pages into the search results if that page has been tweeted by someone I follow. That is putting the context of people I vaguely know and trust, into my search results. That is something I can’t praise enough. @twitter: see @google.
 
-### Trending topics
+## Trending topics
 
 In order for trending topics to mean anything to me, they would need to be given context, just like search should. Trending topics could be formed around all the activity of people I follow, plus the people they follow, just to get a bit more data for trending topics. For instance, log in to Twitter in the morning, and oh!, look-y there. In trending topics is how [Amazon shot Lendle in the face](http://seanmonstar.com/blog/amazon-lendle-api/). I would find value in that.
 

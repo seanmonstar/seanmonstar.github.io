@@ -12,13 +12,13 @@ You’ve seen them on other sites. When you have a long list of checkboxes, and 
 
 I recently had to make a permissions page for a CMS, allowing users to set the permissions of new users for various features. Adding a way to toggle all options would be nice, because there’s a lot of options! Here it is with _Mootools goodness_, thought for the CMS I wrote it with Prototype:
 
-#### Mootools
+### Mootools
 
     $('toggler').addEvent('click',function (e) { var toggle = $('toggler').checked; $$('#formId input[type=checkbox]').each(function(check) { check.checked = toggle; }); });
 
 I’ve added an event listener to the checkbox with id “toggler”, listening for a `click`. When clicked, I store its `checked` state (true if checked, false if unchecked), and then set every other checkbox to the same state. This way of doing it, as opposed to just using `check.checked = !check.checked` (using NOT to pick the opposite state), prevents double toggling the Toggler checkbox. Here it is originally in _Prototype:_
 
-#### Prototype
+### Prototype
 
     $('toggler').observe('click',function (e) { var toggle = $('toggler').checked; $$('#formId input[type=checkbox]').each(function(check) { check.checked = toggle; }); });
 
@@ -26,7 +26,7 @@ The only difference between Mootools and Prototype is the `attachEventListener` 
 
 And like I said in the beginning, if this is your only need of Javascript (unlikely), I recommend not bogging down the page with a framework, and _use native Javascript_. It’s really not hard. Here it is:
 
-#### Native
+### Native
 
     var toggleFunction = function() { var toggle = document.getElementById('toggler').checked; var inputs = document.getElementsByTagName('input'); for(var i = 0; i \< inputs.length \< i++) { if(inputs[i].type == 'checkbox') { inputs[i].checked = toggle; } } } //If Good Browser if(window.addEventListener) { document.getElementById('toggler').addEventListener('click',toggleFunction(),false); // If IE } else if (window.attachEvent) { document.getElementById('toggler').attachEvent('onclick',toggleFunction()); }
 

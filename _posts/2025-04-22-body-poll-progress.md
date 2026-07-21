@@ -11,7 +11,7 @@ tags:
 ---
 This describes a proposal for a cancelation problem with hyper's request and response bodies. [hyper][] is an HTTP library for the Rust language.
 
-### Background: what is the `Body` trait?
+## Background: what is the `Body` trait?
 
 The `Body` trait used by [hyper][] is meant to represent a potentially streaming (asynchronous) body of a request or response. It sorta looks like `Stream` or `AsyncIterator`.
 
@@ -21,7 +21,7 @@ Its similarity to `Stream`/`AsyncIterator` means we run into a problem with forw
 
 First though, piping woes.
 
-### Problem: backpressured cancelation
+## Problem: backpressured cancelation
  
 Piping stream-like things into sink-like destinations feels natural, and looks quite simple. Elegant even. They can be piped together, and backpressure occurs naturally. However, they lack a mechanism to completely propagate cancelation. More specifically, cancelation while backpressure is currently applied.
 
@@ -38,7 +38,7 @@ This simple loop is piping a `Body` into some sort of sink. The way most streams
 
 However, it has a flaw. Those familiar with writing proxies may notice it immediately. The destination might not have space, and so we'll wait for it to get more. But the body could give up during that time. Since the task is only waiting on when the `dst` is ready, it could wait a significant amount of time and never notice that the body (source) has canceled.
 
-#### Why not just timeouts?
+### Why not just timeouts?
 
 One initial question was "why not just timeouts". Like, why not just add `body_write_timeout()` or something to hyper's connection builders. Fair. That would work in some cases, for sure.
 
@@ -48,7 +48,7 @@ For example, a transparent proxy may not want to force timeouts where they didn'
 
 Additionally, a chain of potential timeouts means that cancelation propagation can be delayed longer and longer, as each hop in the chain has to wait its own timeout.
 
-#### More generally, yet not
+### More generally, yet not
 
 This issue can also exist for `Stream`/`AsyncIterator`. A [`poll_progress` idea was outlined by withoutboats](https://without.boats/blog/poll-progress/), though it was solving a different problem.
 
@@ -58,7 +58,7 @@ I'm not talking about a concept that some `for await` syntax could magically car
 
 Also, and this is a biggie: `Body` will need to solve this problem quicker.
 
-### Solution: `Body::poll_progress()`
+## Solution: `Body::poll_progress()`
 
 We [propose][pr] to add a method to the `Body` trait:
 
@@ -109,7 +109,7 @@ loop {
 }
 ```
 
-#### Alternatives: not `poll_closed`
+### Alternatives: not `poll_closed`
 
 An alternative we considered was making this method be a `poll_closed`. It had the welcome effect of meaning we could await `body.closed()`, and that is fairly self-documenting. However, it ran into several problems.
 
@@ -117,7 +117,7 @@ Being an addition to an existing trait, it needs a default implementation. But a
 
 The return value also felt confusing however we put it. Does `closed` return a `Result`? Both `Ok` and `Err` would still mean the body had closed.
 
-### Request for Comments
+## Request for Comments
 
 I wrote this up because it felt like a big enough change to a fundamental mechanism in the ecosystem that it'd could benefit from more eyes and comments. It kinda-sorta looks like `AsyncIterator::poll_progress`, but it's also not. Still, are there things we should prepare for? Would wg-async have thoughts? Others who are using hyper deeply?
 

@@ -15,7 +15,7 @@ We don't really need major breaking versions to keep providing value. Improvemen
 
 reqwest [v0.13.0][] is out now! Read on for why.
 
-### rustls is now the default TLS backend
+## rustls is now the default TLS backend
 
 The biggest deal is that reqwest now sets its default TLS feature to use [rustls][], instead of native-tls.
 
@@ -25,7 +25,7 @@ A recent hyper user survey found that 93% of respondants already use rustls. 30%
 
 So, if you use the default options, things just got better for you.
 
-### Certificate verification features are consolidated
+## Certificate verification features are consolidated
 
 Previously, reqwest had many crate features to enable various ways to load sources of root certificates. Too many. It's a bit of a mess.
 
@@ -37,7 +37,7 @@ We consolidate the options into just a few simple choices:
 
 These basic options should allow for any use case, while reducing complexity within reqwest. For instance, if an application really needs to use the webpki-roots, they can be configured with `tls_certs_only(your_roots)`.
 
-### Soft-deprecation to improve option naming
+## Soft-deprecation to improve option naming
 
 While in there, most `ClientBuilder` methods were given better names. The previous methods have been soft-deprecated. That means that you can keep using the old names, without warnings, but they are documented as deprecated, and they will eventually be removed in a later breaking change.
 
@@ -45,13 +45,13 @@ But in most cases, the improved name is mostly to help with understanding. It do
 
 The upside is that all the methods now start with `tls_`. They are grouped together in the docs, but it will also help exploration with autocomplete.
 
-### Other crate feature adjustments
+## Other crate feature adjustments
 
 As this is a breaking change version, we did include one making the `RequestBuilder::query()` and `form()` methods optional features, disabled by default. With these as optional, it is now possible to build reqwest without serde.
 
 We also made `native-tls` imply ALPN automatically. This will mean most people who don't think about it will now get HTTP/2 upgrades. The reason it was opt-in previously is because older native libraries might not have the symbols required. They are quite old at this point. If you still need the previous behavior, there is now `native-tls-no-alpn`.
 
-### Thanks!
+## Thanks!
 
 Thanks to all who contribute, use, [sponsor][], fix, complain, and help reqwest be what it is! Here's [v0.13.0][].
 

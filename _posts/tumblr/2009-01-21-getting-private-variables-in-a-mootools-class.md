@@ -9,7 +9,7 @@ tumblr_url: https://seanmonstar.com/post/708687601/getting-private-variables-in-
 ---
 After a good read though [Javascript: The Good Parts](http://www.amazon.com/gp/product/0596517742?tag=mcgf-20), and the start of a rather large class that I’ll be writing in my spare time, I thought of how I could setup private variables in a Mootools class. [YUI’s Module pattern](http://yuiblog.com/blog/2007/06/12/module-pattern/) is an easy way to make some private variables, but it needed to fit into the Mootools Class pattern. So I merged the two ideas, and created a Class Mutator, that lets you define a Privates object, and you get private variables!
 
-#### Class.Mutators.Privates
+### Class.Mutators.Privates
 
 I had found a Privates mutator already written by Nathan White, but my testing revealed some shortcomings. You don’t need to understand anything of what I’ve done to use it, but I’ll show it for those who care:
 
@@ -19,7 +19,7 @@ I delete the Privates object out of the class, and redefine that initialize func
 
 I make a copy of the class object, just as initialize does in the Native class, and pass that into the class’ original initialize function. I then take that object and search for any properties that are supposed to be private, and update the private variables, and pass all other variables (meaning any new variables are public) to the public object. I also redefine every function of the class at initialize, and created `var` ’s of the private object, and since everything is defined in the same function, the scope is never lost. After execution of any function, all properties that are private are copied into the private object. Each function is called with the object that contains `this` merged with the private object, so all the private variables are accessible as this.secret in the functions, like you’d expect in any other programming language.
 
-#### An Example: Secret
+### An Example: Secret
 
 Here’s the class I wrote to do all my testing, and shows how everything works:
 
@@ -31,11 +31,11 @@ Here’s the class I wrote to do all my testing, and shows how everything works:
 
 Trying to set `test.secret = 'a new secret'` will set the secret property temporarily, but it doesn’t override the private one, and when accessed in a function, the private one will instead write over the public one, since I check if the property is supposed to be private, and strip it from the public object.
 
-#### Notes
+### Notes
 
 I doubt I did it the most effectively. After writing it, I tried refactoring it some by declaring a helper function that strips the private variables out of the public object, since I do that for loop twice. But doing so caused problems, and I wasn’t up to the task of learning what the new problems were. By all means, if you see optimizations, I’d love to know them, I’ll make an update, and I’ll learn as well.
 
-#### Update (11/18/09)
+### Update (11/18/09)
 
 This only works prior to MooTools 1.2.3. In 1.2.3, a new implementation of Class.js was introduced, and I don’t think this works the way I hoped in the newest versions. You can, though, now use a [protect decorator](http://seanmonstar.com/blog/protected-methods-in-mootools-classes/) on your functions.
 

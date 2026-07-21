@@ -14,7 +14,7 @@ It’s been possible to [handle HTTP Upgrades](http://seanmonstar.com/blog/http-
 
 In hyper [v0.12.3](https://github.com/hyperium/hyper/releases/tag/v0.12.3)[^1], **handling upgrades is much easier!**
 
-### Body::on\_upgrade()
+## Body::on\_upgrade()
 
 The mechanism for handling upgrades and `CONNECT` is unified into a `Future` on the `hyper::Body` type. The way this works is in either case, `Client` or `Server`, you’re already receiving a `hyper::Body` that represents the streamed body from the remote. It also happens to be a great place to store a flag of whether an HTTP Upgrade is possible.
 
@@ -24,7 +24,7 @@ In order to provide this API, the `Upgraded` holds the IO type as a boxed trait 
 
 Take a look at these simplified examples upgrading to Websockets:
 
-### Client Upgrades
+## Client Upgrades
 
     let client = Client::new();
     
@@ -46,7 +46,7 @@ Take a look at these simplified examples upgrading to Websockets:
             websocket_lib::client_thing(upgraded)
         })
 
-### Server Upgrades
+## Server Upgrades
 
     let service = service_fn_ok(|req| {
         // Just assuming its always an upgrade for this example...

@@ -14,7 +14,7 @@ Something a Java programmer learns first is that there is this big, amazing libr
 
 I’m guilty of it too. You don’t really know what you’re doing is all that bad. You know what you want from Swing. You only need the `JOptionPane`. And sure, the compiler shouldn’t be stupid enough to pack the rest of the Swing package into your jar file. In Java, at least, it won’t. There’s talk about whether certain bulk imports in Python will cause things to be included multiple times.
 
-#### Collisions, or which List did you want?
+### Collisions, or which List did you want?
 
 However, in Java, you _can_get namespace collisions. [coobird on Stack Overflow gives an excellent example](http://stackoverflow.com/questions/1983435/eclipse-java-is-it-harmful-to-import-java-namespace/1983539#1983539):
 
@@ -34,7 +34,7 @@ Your code doesn’t have this problem? You’re only importing from one package,
 
 This leads to another frustrating reason not to use import star.
 
-#### It screws Discoverability
+### It screws Discoverability
 
 Specifically, I was unsure which `ErrorReporter` was needed for the `JavaScriptCompressor`. The import statements at the top list 3 packages it could come from, and the only way for me to find out it to search each package.
 

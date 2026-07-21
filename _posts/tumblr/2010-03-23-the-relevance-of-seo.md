@@ -10,7 +10,7 @@ tumblr_url: https://seanmonstar.com/post/709004275/the-relevance-of-seo
 ---
 A [few](http://randomarrows.tumblr.com/post/466384379/stop-bitching-about-seo-and-make-better-websites) [people](http://boagworld.com/marketing/i-dont-get-seo) in the web world have started an argument about whether websites need to invest in SEO. I understand why website owners would be confused about the topic, but it should be pretty straightforward for web designers. This article was a long time coming, they just provoked me to sit down long enough to fill up a page of my [opinion](http://seanmonstar.com/tagged/opinion). Actually, I think these people are trying to say what I’ll be saying: **make a good website, and the rest will come**.
 
-### The SEO That Doesn’t Matter
+## The SEO That Doesn’t Matter
 
 Many people think they get their website built, and then spend time and money on getting it search engine optimized by stuffing keywords anywhere they can. And they watch their rank go up a space or two, and then try to stuff relevant keywords anywhere else they can. Sometimes, there might be an analysis of keywords in regards to competitors’ sites, and then trying to pick better and more keywords than they do.
 
@@ -18,11 +18,11 @@ Many people think they get their website built, and then spend time and money on
 
 I’m not saying this kind of stuff does nothing. If you fit in relevant keywords where they should go (read: don’t stuff everywhere), and make sure you use keywords that customers are searching for, you can see a bump in ranking. But **it’s miniscule compared to what really matters**. And the amount of money you’ll spend getting such a tiny bump makes this matter even less.
 
-### What Really Improves Your Site Traffic
+## What Really Improves Your Site Traffic
 
 The things that really matter are the easiest things to do right. In short, **be awesome, and get others to agree with you**. Being awesome includes having web pages that describe what you do and how you do it so well. Then, spread the word, and having them “agree with you” by telling the web they should visit your web pages.
 
-#### Be Awesome. Oh, and some content, too.
+### Be Awesome. Oh, and some content, too.
 
 First of all, if you’re not awesome, then no one wants to read about you versus the people that are awesome. The whole point of Google Search is for Google to try to provide searchers with the most relevant and best information for their query. So whatever it is you’re awesome at, you need to make a couple pages explaining about said awesome topic.
 
@@ -38,7 +38,7 @@ Something that I’m always suggesting to any website owner that asks me about i
 
 For instance, since I’ve started blogging, I get traffic I wouldn’t otherwise get for topics like “[basic password hashing](http://www.google.com/search?hl=en&q=basic+password+hashing)”, “[mootools tabs](http://www.google.com/search?hl=en&q=mootools+tabs)”, “[css 3d effect](http://www.google.com/search?hl=en&q=css+3d+effect)”, and “[javascript date math](http://www.google.com/search?hl=en&q=javascript+date+math)”.
 
-#### Links, or Getting Others to Agree
+### Links, or Getting Others to Agree
 
 After you’ve written your amazing content, and made so super useful to visitors, you need to get other people to agree with you. Google openly states that one of the biggest factors in whether they will link to you is if other websites link to you. Those other links are proving to Google “I felt this is page relevant and useful for the topic it is about”. Google is essentially trusting the web community to promote the good content above the mediocre.
 

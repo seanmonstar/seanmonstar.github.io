@@ -13,7 +13,7 @@ Certainly, as [Michael Braude](http://michaelbraude.blogspot.com/2009/05/why-ill
 
 Instead, much of the work is on the user interface. The problems we solve is usually how to do make it simpler. It **must** work for general internet users. They must be able to use it easily. Our research and thinking must be more on human psychology and people’s attempts to use our software. We don’t have the luxury of assuming our software will be used by another nerdy programmer willing to bang away on a command line all night long.
 
-### Not Smart Enough
+## Not Smart Enough
 
 I don’t mean to single Michael out (his post does have a bit of sense to it), but it’s the most recent statement I’ve seen of this large view people seem to have towards web developers:
 
@@ -23,7 +23,7 @@ So, can _“not smart web programmers”_ understand this archaic desktop vocabu
 
 The fact is, most of us professional web programmers came from desktop programming. We’ve worked for desktops, now we’re targeting the web. And we’ll likely continue to go back and forth, until most[everything has moved to the web](http://www.codinghorror.com/blog/archives/001296.html).
 
-#### Why The Hating
+### Why The Hating
 
 I’ve already said web-sites can be easily made. HTML is easy! So, sure, people will get involved who don’t know any better. But that’s not unique to the web. The same problem was around before web applications existed. Back then, you’d get people who take a look at BASIC, learn how to store variables, print to the screen, accept input, and write GOTOs. And their programs sucked, too.
 

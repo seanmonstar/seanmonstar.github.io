@@ -11,13 +11,13 @@ tumblr_url: https://seanmonstar.com/post/708790454/tablets-will-replace-everythi
 ---
 Recently, there has been a bit of talk about upcoming tablets like the [CrunchPad](http://www.techcrunch.com/2009/06/03/crunchpad-the-launch-prototype/) and the [iSlate](http://gizmodo.com/5335942/an-insider-on-the-apple-tablet), and whether we need them, how useful they’ll be, or if [they’re only use](http://daringfireball.net/2009/12/the_tablet) is [browsing the web on the toilet](http://xkcd.com/646/). Many people are of the opinion that we don’t need one. Or that only gadget enthusiasts would buy it for couch web browsing. Well, I’ll go out and say it: Tablets will replace _everything_.
 
-### Crazy people think we don’t need tablets
+## Crazy people think we don’t need tablets
 
 > I can imagine something like the iPhone with a much bigger screen being a gorgeous device with great capacity, but I don’t know where I would fit that into my life. […] Another former Apple executive who was there at the time said the tablets kept getting shelved at Apple because Mr. Jobs, whose incisive critiques are often memorable, asked, in essence, what they were good for besides surfing the Web in the bathroom.
 
 [—Just a Touch Away, the Elusive Tablet PC](http://www.nytimes.com/2009/10/05/technology/05tablet.html?_r=1)
 
-### The Eventuality
+## The Eventuality
 
 ![A tablet prototype](https://64.media.tumblr.com/tumblr_l46aaizgjm1qzek7l.jpg)
 

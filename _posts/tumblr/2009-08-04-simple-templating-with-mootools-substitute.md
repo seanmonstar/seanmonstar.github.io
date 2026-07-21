@@ -11,7 +11,7 @@ As I continue to flesh out my MooTools MVC framework, I found a neat way to impl
 
 MooTools gives this power directly to every String!
 
-#### String.prototype.substitute
+### String.prototype.substitute
 
 [Substitute](http://mootools.net/docs/core/Native/String#String:substitute) lets you write a string, declaring delimiters where you would like variables to belong. So we can write:
 
@@ -28,7 +28,7 @@ Now, all we have to do is use an object with those properties set, and call the 
 
 Now, I said we can use this awesome power for a simple template usage. See where this is going?
 
-#### A Simple Template View
+### A Simple Template View
 
 My view has more going on than this, but I’ll remove the rest so you can see simply the templating part that is going on. It’s very easy to use, indeed!
 

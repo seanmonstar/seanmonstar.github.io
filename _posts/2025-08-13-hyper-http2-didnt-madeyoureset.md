@@ -14,7 +14,7 @@ This sort of work is supported **exclusively** through [retainers][retainer], ge
 
 Follow along for the background information, if you're curious!
 
-### What is the attack
+## What is the attack
 
 The attack is quite similar to the previous [Rapid Reset][] attack from a couple years ago. That is, it starts new requests up to the limit imposed by the server. And then instead of _sending_ explicit `RST_FRAMES`, it sends malformed frames that force the _server_ to reset the stream.
 
@@ -22,7 +22,7 @@ So far, the described behavior is normal HTTP/2 flow. The problem occurs in some
 
 As the attack describes, in some implementations it allows for more stream concurrency than might have been configured. See more in [VU#767506][VINCE].
 
-### What hyper does
+## What hyper does
 
 A couple years ago, we added a defense mechanism to `h2` that keeps count of how many times a frame from the remote causes a local reset, and once a configurable limit is reached, the connection is abruptly closed. This mechanism caught nearly all variants of the attack.
 
@@ -36,7 +36,7 @@ So, not much. When a simple hello world server example was tested against the at
 
 All of this before any additional patch. 
 
-### What we did
+## What we did
 
 We received a report[^ghsa] about the attack from security researchers[^researchers] on May 23, 2025. The attack includes many variants, so we set out trying to determine if hyper was vulnerable. We knew that hyper already added a defense mechanism for this exact sort of abuse. Only one of the variants did not get cut off, but saw increased CPU usage, so we dug in. It turns out the original feature forgot to check the limit when WINDOW_UPDATE frames were bad.
 
@@ -52,7 +52,7 @@ The researchers came back a little afterwards showing that in some cases, server
 
 We decided to stick with our original determination.
 
-### What you can do
+## What you can do
 
 After reading all that, what more can you do? Again, you're likely fine! But here's some good ideas, regardless:
 

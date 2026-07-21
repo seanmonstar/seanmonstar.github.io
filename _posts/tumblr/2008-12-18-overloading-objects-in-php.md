@@ -9,11 +9,11 @@ tumblr_url: https://seanmonstar.com/post/708657446/overloading-objects-in-php
 ---
 In PHP, objects are all dynamic. If you declare a variable for object after instantiation, it just throws it right in, no questions asked. Much friendlier than, say, Java, where you absolutely must define a variable prior to use or the JVM will smite you. PHP also lets you define extra or different instructions when using a previously unknown variable with magic functions.
 
-#### \_\_get and \_\_set
+### \_\_get and \_\_set
 
 Usually the native implementation of these functions is the desired result. But sometimes, adding some extra features into getting or setting a variable can really make things easier.
 
-##### \_\_get
+#### \_\_get
 
 Let’s say we have a model called `Person`:
 
@@ -31,7 +31,7 @@ Let’s say we have a model called `Person`:
 
 Since Sean isn’t a predefined value in `$obj`, it queries the database, grabs the row with name Sean, and returns it. And the echo statement proceeds to print my last name to the screen. I’ve also stored the result in the variable requested, so concurrent requests will get the stored variable and leave my database alone.
 
-##### \_\_set
+#### \_\_set
 
 We could also try to do something in the reverse, by setting an unknown property.
 
@@ -49,7 +49,7 @@ Now this function doesn’t do a bunch of checking, and you’ll probably want d
 
 There are some actual real good uses for this overloading; the ones I’ve shown are simplistic and possible a little too extreme. But now with the understanding of these magic functions, hopefully you can put them to good use.
 
-#### \_\_call (and \_\_callStatic)
+### \_\_call (and \_\_callStatic)
 
 The `__call` function helps us when we try to call a function that doesn’t belong to an object. Overloading this function is quite often used in API implementations. Let’s look at a small example:
 
@@ -68,7 +68,7 @@ Assume we have a query function which makes a connection and tries to make a fun
 
 This is very simple, one line solution. You could, of course, make it much more interesting than that.
 
-##### \_\_callStatic
+#### \_\_callStatic
 
 The same can done with static methods, so when we call a static method that doesn’t exist, instead of getting the error thrown in our faces, we could try to see if there’s something extra to do first.
 
@@ -80,7 +80,7 @@ The same can done with static methods, so when we call a static method that does
     	}  
     }
 
-#### Get Overloading
+### Get Overloading
 
 After knowing this, it’s pretty easy to fill in these functions for several classes you have. You could consider throwing common functionality into them, therefore getting a certain procedure on a simple get or set command.
 

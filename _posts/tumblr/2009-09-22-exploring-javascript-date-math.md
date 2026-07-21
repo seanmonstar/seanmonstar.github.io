@@ -12,7 +12,7 @@ In our heads, it’s quite easy to do Date math. Moving forward a week requires 
 
 Though to be fair, it seems I could blame it on Javascript’s decision to make the addition operator and concatenation operator the same symbol. I only did some quick, sloppy tests in Firefox 3.5 and Chrome 3.
 
-#### Adding to Dates
+### Adding to Dates
 
 I first wanted to move a date forward a week, so I thought that perhaps I could add 7 days worth of milliseconds to the date to get next week. Go ahead and try it:
 
@@ -20,7 +20,7 @@ I first wanted to move a date forward a week, so I thought that perhaps I could 
 
 The value is a string: “Fri Sep 18 2009 16:37:01 GMT-0700 (Pacific Daylight Time)604800000”. Yup, there it is! Our week’s worth of milliseconds, attached on the end of a Date string. It would seem that Javascript decides that the Date should be evaluated as a string instead of a number at that point.
 
-##### How To Add
+#### How To Add
 
 In order to add to Dates, I had to create a new Date, using the value returned from [getTime](https://developer.mozilla.org/en/Core_JavaScript_1.5_Reference/Objects/Date/getTime)&nbsp;and adding milliseconds to it, and using that new (humongous) number in the constructor.
 
@@ -32,7 +32,7 @@ This is because the Date’s toString method is being evaluated instead of it’
 
 Also to keep in mind here, is that unlike in, say, PHP where you provide seconds to the [date](http://php.net/date) function, in Javascript, you must provide _milliseconds_, hence the extra 1000 in there.
 
-#### Subtracting from Dates
+### Subtracting from Dates
 
 Now, until I remembered that + means to different operations in Javascript, I was rather shocked that I could easily subtract from Dates, but not add.
 

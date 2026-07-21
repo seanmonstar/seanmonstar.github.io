@@ -13,7 +13,7 @@ The [transition period](http://identity.mozilla.com/post/78873831485/transitioni
 
 Persona is [free open source software](https://github.com/mozilla/persona), and has built up a community who agree that decentralized authentication is needed o the Internet. I still think Persona is the best answer in that field, and the closest to becoming **the** answer. And it’s not going away. We’re asking that the Internet [help us make the Internet better](http://identity.mozilla.com/post/78873831485/transitioning-persona-to-community-ownership).
 
-### Firefox Accounts
+## Firefox Accounts
 
 In the meantime I’ll be working on our [Firefox Accounts](https://wiki.mozilla.org/Identity/Firefox_Accounts) system, which understandably could not rely entirely on Persona[^1]. We need to keep Firefox competitive, since it’s what pays for us to do all the other awesomizing we do. Plus, as the Internet becomes more mobile and more multi-device, we need to make sure there is an alternative that puts users first. A goal of Firefox Accounts is to be pluggable, and to integrate with other services on the Web. Why should your OS demand you use their siloed services? If you want to use Box instead of iCloud, we want you to use it.
 

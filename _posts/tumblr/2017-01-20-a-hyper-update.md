@@ -12,13 +12,13 @@ tags:
 - planet
 tumblr_url: https://seanmonstar.com/post/156128815358/a-hyper-update
 ---
-### hyper 0.10
+## hyper 0.10
 
 A new version of [hyper](https://hyper.rs) was released last week, [v0.10.0](https://github.com/hyperium/hyper/releases/tag/v0.10.0), to fix a lot of dependency-related problems that the 0.9 versions were having. The biggest problem was version incompatibilities with OpenSSL. You can read [all about the problem and solution in the issue tracker](https://github.com/hyperium/hyper/issues/985), but the **tl;dr** is that hyper 0.10 no longer depends on OpenSSL, or any TLS implementation really. TLS is a big part of HTTP, but there are also several different implementations, and they all release on their own schedules. Even just an optional dependency on OpenSSL could cause unrecoverable dependency conflicts.
 
 This should be the last feature release of hyper using **blocking IO**. You can sort of think of it as an LTS version. If there are serious bugs or security fixes, a point release will be made. But all development is completely focused on the new release that will be using tokio. Speaking of…
 
-### hyper and tokio
+## hyper and tokio
 
 The work to make hyper use **non-blocking IO** has been a long road. In recent months, it has been with the help of the tokio library, which just [recently released a version](https://tokio.rs/blog/tokio-0-1/). We just merged the tokio branch into master this week!
 

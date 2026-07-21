@@ -13,7 +13,7 @@ Alright, taking a look at the Mootools docs, and playing around, I’ve quickly 
 
 **A little background:** the tooltip is built from the title and rel (or href if rel is empty) attributes of the element.
 
-#### Putting \<img\> in the rel property
+### Putting \<img\> in the rel property
 
     window.addEvent('domready',function() { var t = new Tips('.tip'); });
 
@@ -21,7 +21,7 @@ Alright, taking a look at the Mootools docs, and playing around, I’ve quickly 
 
 This was my original, dirty way. It should still work. Make sure to escape the left and right brackets inside the rel property, or you’ve got invalid XHTML. So if that looks like your bag of goodies, take it. For those who like feeling good inside, here’s a newer, cleaner way of doing things.
 
-#### Using Element.store to store an image
+### Using Element.store to store an image
 
 The Mootools Tips class use [Element.store](http://mootools.net/docs/Element/Element/#Element:store) and [Element.retrieve](http://mootools.net/docs/Element/Element/#Element:retrieve) for the tool-tips title and text, so that means we can override the defaults. It just requires a little more scripting, but I think that’s perfectly fine.
 

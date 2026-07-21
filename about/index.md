@@ -8,7 +8,7 @@ I’m Sean McArthur, a [software engineer](https://github.com/seanmonstar) and 
 
 ![ohai](https://64.media.tumblr.com/tumblr_lew0l8No7A1qzek7l.jpg)
 
-### Values
+## Values
 
 An unordered list of the things I’m passionate about:
 
@@ -17,19 +17,19 @@ An unordered list of the things I’m passionate about:
 - **Networking** and protocols (like **HTTP**, QUIC, etc), since once you get multiple computers working together, you can do anything.
 - Working in and promoting **open source** practices. We can do so much more when we join with a larger community, and can impact people anywhere in the world.
 
-### Projects
+## Projects
 
 - [hyper.rs](http://hyper.rs)
 
-### Talks
+## Talks
 
 I've given some [talks](/talks).
 
-### Contact
+## Contact
 
 You can [email](mailto:sean@seanmonstar.com) me about anything. Cheers!
 
-### Elsewhere
+## Elsewhere
 
 - GitHub: [@seanmonstar](https://github.com/seanmonstar)
 - Bluesky: [@seanmonstar.com](https://bsky.app/profile/seanmonstar.com)

@@ -6,13 +6,13 @@ excerpt: A retainer funds your critical Rust dependencies, and gains direct acce
 ---
 A retainer with me helps your team build better software.
 
-### I unblock engineers, teams, and products.
+## I unblock engineers, teams, and products.
 
 With 2 decades of programming and open source experience, I have been working with Rust since before 1.0. My journey with open source includes deploying cloud services at Mozilla[^fxa], building out the Rust networking ecosystem at Buoyant, and advising internally AWS as part of their Rust Platform team.[^aws]
 
 Always unblocking people.
 
-### By maintaining
+## By maintaining
 
 
 I'm the creator, maintainer, or core contributor to open source libraries you **critically** depend on:
@@ -27,11 +27,11 @@ I'm the creator, maintainer, or core contributor to open source libraries you **
 - [tonic][], gRPC for Rust
 
 
-### By advising
+## By advising
 
 I want to help you make your team build better software. Through mentoring, code audits, design doc reviews as well as any other high-touch, direct access relationship you are looking for. Think of it like having a principal engineer on your team, at a fraction of the cost.
 
-### Get a retainer
+## Get a retainer
 
 A retainer ensures the critical libraries you depend on are funded, and gains you direct access to me for advise.
 

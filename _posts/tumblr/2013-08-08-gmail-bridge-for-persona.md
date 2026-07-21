@@ -17,7 +17,7 @@ Since [shifting to the Identity team](http://seanmonstar.com/blog/moved-to-ident
 
 We’re getting closer.
 
-### What is the Gmail Bridge?
+## What is the Gmail Bridge?
 
 Today, we’re announcing to the world that our [Gmail Identity Bridge is online](http://identity.mozilla.com/post/57712756801/persona-makes-signing-in-easy-for-gmail-users). Excuse me. What? No, I’m fine. It’s alright, it’s actually quite simple.
 
@@ -25,7 +25,7 @@ The way [Persona normally works](http://lloyd.io/how-browserid-works), after che
 
 So, we made an [Identity Bridge](http://identity.mozilla.com/post/56526022621/what-is-an-identity-bridge) that we host, and uses Google’s OpenID endpoint to verify the user. The experience is pretty much exactly what it should feel like if there was native support from Google.
 
-### Why this matters
+## Why this matters
 
 With both Gmail and Yahoo bridges online, _over half of all users_ are just a couple clicks away from logging in with Persona.
 

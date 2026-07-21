@@ -14,7 +14,7 @@ _I’m a week late to the “[Google Reader dies](http://googlereader.blogspot.c
 
 I am quite interested in human data consumption. [Obsessed](http://seanmonstar.com/blog/prioritizing-my-tiny-inbox/), even. Like, I constantly re-analyze my current setup, making sure I’m getting all the information I want, while keep as much junk out as possible. Maybe sometimes also re-analyzing my obsession with information obsession.
 
-### My Current Digs
+## My Current Digs
 
 1. I subscribe to high signal-to-noise blogs where I want to read just about every article using **RSS**. These are typically opinion blogs where I enjoy reading what the author has to say. Pretty much nothing in here talks about the latest news. Of all the available choice, I’ve always used Google Reader, since… eh, who’s kidding who, there was no other proper choice. It had the added benefit of being syncable with Flipboard, Feedly, and any other mobile feed reader I tried.
 
@@ -28,7 +28,7 @@ I’ve put a lot of thought into this obsession, and have 2 key objectives when 
 
 To that end, a couple years ago, I started working on my own idea of a feed reader, that would try to solve these issues, and not just be a simple interface on “dumb pipes”.
 
-### feedmonstar
+## feedmonstar
 
 ![feedmonstar screenshot](https://lh4.googleusercontent.com/-rOZZHV3CSPk/TkQWjE8L0yI/AAAAAAAAANs/9daDF17aWVs/s910/feedmonstar.jpg)
 

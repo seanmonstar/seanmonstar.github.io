@@ -20,13 +20,13 @@ People also wish they could better customize it. They want to add in custom logi
 
 First, what is the goal?
 
-### Easy and modular
+## Easy and modular
 
 Top priority is that reqwest remain **easy** to use. It should be the best default for most people. If you don't know what customizations you want, you shouldn't have to care.
 
 It should also be _possible_ to customize. To tinker. To grab just a single piece. To re-order the pieces. To add in completely new pieces.
 
-### Some concrete work
+## Some concrete work
 
 So, how do we get there? Well, here's a start.
 
@@ -40,7 +40,7 @@ We can add _easy_ request retries. reqwest doesn't really have retries, other th
 
 We can use decompression from `tower-http`. reqwest has automatic response body decompression. Eventually, it was added as middleware in `tower-http`. Instead of having the feature essentially duplicated, we can just depend on the modular version, and the test suite will keep the quality up. Doing it this way improves the middleware for everyone. For instance, when one user swapped from reqwest's decompression to using tower-http, performance got worse. Eventually, a reused allocation was backported, bringing it back in line.
 
-### Better default TLS
+## Better default TLS
 
 Initially, reqwest made use of `native-tls` for HTTPS support. Eventually, we added optional support for `rustls`. But we've kept `native-tls` as the default. The reason was because it worked for more users, and more sites. However, I think it's time to change the defaults.
 
@@ -54,7 +54,7 @@ The `default-tls` feature theoretically was designed to allow for such a change,
 
 But it will be better for most people.
 
-### Getting to work
+## Getting to work
 
 That's the work. Keeping reqwest easy. Allowing more customization. Even letting people use fewer parts of it. While having strong opinions. Making it better for most people.
 

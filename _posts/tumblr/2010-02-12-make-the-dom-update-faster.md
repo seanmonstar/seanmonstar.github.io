@@ -12,7 +12,7 @@ We’ve already learned that to make our Javascript load faster, we should be li
 
 We use a proprietary text replacement program instead of sIFR or Cufon or anything else out there. We call it Typostream. On one of my recent projects, we had several features of the web-site requiring extra Javascript functionality, along with a good portion of text being replaced. Originally, I had all of this Javascript being executed on DOM ready event, as best practices recommend. However, viewing the site in Internet Explorer revealed some amazingly laggy results.
 
-#### Doing a lot at domready can suck
+### Doing a lot at domready can suck
 
 In IE (even IE8), the time it took to execute all the Javascript was way too long, in the realm of a several seconds too long. Now, the ultimate cuplrit was that we had over 100 elements on the page that needed to be swapped out for images of the same text. Eventually, we wear able to alter the design to require only a couple parts of the page to be replaced. But I discovered a more immediate fix for such a big flicker of content.
 
@@ -46,7 +46,7 @@ Now, many things we do in Javascript are setting up event listeners and timers, 
 
 **The DOM was only able to update itself after that Javascript had executed**. So even the smaller part at the start, like collapsing an accordion, wasn’t happening until several seconds later. The solution was to remove how much Javascript was happening on the DOM ready event. I wanted to break it up, giving the DOM the ability to do all the changes for the accordion and modal boxes, _before trying to do the heavy lifting of running up and down the DOM tree a hundred times_.
 
-#### Well, then move out of current execution
+### Well, then move out of current execution
 
 Along comes `setTimeout`. By wrapping the typographical replacement into a timeout call, I gave the browser an opportunity to run other browser stuff. It does its thing (like fixing most of the page immediately), and then calls my big function afterwards. Sure, that big function will still take a couple seconds to execute, making the text flicker, but at least its not as glaring as the section navigation collapsing 5 seconds in. And like I said above, we were able to drastically reduce the number of elements to change, thus fixing the problem even more.
 

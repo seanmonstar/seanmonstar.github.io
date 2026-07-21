@@ -18,7 +18,7 @@ I’ve tried out a couple applications, and found each one lacking:
 
 There might be a decent application out there that I haven’t found, but these are the most popular ones available to Windows. It almost feels like people only want to make cool stuff for Macs.
 
-#### Tweetdeck
+### Tweetdeck
 
 Although it’s hugely popular by many, I can’t help but get annoyed at parts of Tweetdeck. To be fair, it’s the closest I have found that meets my needs, but that’s not good enough for me. It can easily handle auto-completing of replies, inserting photos and shortening links. It’s built with the idea of lists in mind, which I particularly like. I’ve currently got a list about MooTools and a list about games. Unfortunately, I have no option of telling the main list to ignore tweets from anyone in a separate list. I don’t want my main list filled with tweets about stuff I’ve already put into it’s own list. I just want a list of “everyone else”, but without having to create such a list and add every new person I follow to it.
 
@@ -30,7 +30,7 @@ The notifications system is buggy. Sometimes it hides the summary behind a windo
 
 And it’s an AIR application. Now, granted, AIR is pretty cool. It lets front-end developers create apps for the desktop. But given a choice, why would I want to run something in a Flash player all the time? **It chews on my memory like a puppy that is teething**. It lacks plenty of things that I’m used to having in a Windows app. And it’s integration is buggy (see above about notifications). Next.
 
-#### DestroyTwitter
+### DestroyTwitter
 
 While it’s also an AIR app, which means I have similar complaints in that regard, it’s actually less buggy than Tweetdeck. Notifications don’t stick. I still miss my normal Windows feel though.
 
@@ -40,7 +40,7 @@ It has a much nicer way of handling Mark as Read: just check the option in setti
 
 However, it doesn’t support lists at all. None. Just a single stream of tweets. No thanks.
 
-#### Seesmic
+### Seesmic
 
 A native Windows client, and it doesn’t have the Windows XP look either. It generally looks sweet, feels rather Windows-y. I like that it has useful context menus when I right click on things. It’s design is decent excellent. But **it’s severally lacking in features**. Severely.
 
@@ -56,13 +56,13 @@ While it supports lists, it has the same issues as Tweetdeck in that regard. But
 
 **And it’s bugtastic**. Maximizing the window hides away the normal minimize/close buttons. You have to just click in the area and hope you guessed correctly. Even with notifications turned on, I have yet to see a single notification. It regularly errors when trying to get more tweets, and leaves me without updates for long periods of time.
 
-#### web
+### web
 
 Ultimately, at home, it’s just easier to use the web client. None of the clients I have found are good enough to do light browsing with. I do most of my reading at work, so when I bother to log on at home, I just want the latest part that I haven’t read yet. **None of the applications I’ve tried seemed to have syncing**. Loading one up at home would just dump the whole days worth of tweets into my timeline, and that’s useless to me.
 
 Since the web application defaults to showing me the latest tweets, that’s usually all the ones I want to see anyways. Replying and retweeting are easy enough, although it would be great if it automatically shortened URLs for me.
 
-#### “That” Twitter App
+### “That” Twitter App
 
 The application I’m looking for is a native client to Windows, doesn’t look like it came from the year 2000 in terms of UI, and has many of the features you’d hope to have in a Twitter client: _URL shortening, image loading, notifications, and lists_. I’d love the option to remove all listed people from my main timeline, but whatever. **If it has those features, looks pretty (and is intuitive), and isn’t the buggiest piece of code in the world, I’d like to use it**. But it really seems like so many developers only like making things for Macs now. There’s got to be developers who still work on Windows… or maybe I should just break out the C#-fu.
 

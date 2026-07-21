@@ -22,7 +22,7 @@ Figured, now’s as great a time as any. Here’s a snapshot of what I twit twee
 
 And yes, we do have an [“Out of beer” ticket](http://seanmonstar.com/blog/our-most-critical-bug/).
 
-#### Follow Me
+### Follow Me
 
 So, I mention mostly php or Javascript things, sometimes some XSL or video game mention slips. So what are you waiting for? [Follow me](http://twitter.com/seanmonstar) on Twitter!
 

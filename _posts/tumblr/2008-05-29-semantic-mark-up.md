@@ -9,7 +9,7 @@ tumblr_url: https://seanmonstar.com/post/706940006/semantic-mark-up
 ---
 We see valid code popping up all over the place. And that’s great! Web standards should be followed by everyone. But, is it possible to make your code pass W3C’s validator without actually meeting the standards?
 
-#### Valid vs Semantic
+### Valid vs Semantic
 
 Standards were set for xHTML, and the validator can read through and make sure that every textarea tag has the properties for cols. But what if you use tags improperly? You could very easily make a heading, without using a h2 tag. Or you could italicize text, without using the em tag. What does that hurt?
 
@@ -17,11 +17,11 @@ You’ve lost the strength of web standards in relation to better SEO, because s
 
 It can’t!
 
-#### Examples of Semantic Mark-up
+### Examples of Semantic Mark-up
 
 Here’s some examples of non-semantic versus semantic mark-up, as well as some tips to doing so.
 
-##### The Logo
+#### The Logo
 
 You could make the logo appear by styling a div to contain the logo.
 
@@ -33,7 +33,7 @@ But think about it in a semantic perspective. What does the logo mean? Is it the
 
 Make sure to use a good title as well, and also spell out the company name inside the h1 tag. Since the readers and spiders couldn’t care less about your logo, you need to tell them what is important in text format.
 
-##### Paragraphs
+#### Paragraphs
 
 I’ve seen code like this before:
 
@@ -43,7 +43,7 @@ Obviously, this is standard text on a web-site, and should be inside a paragraph
 
 Like I’ve said, outside the p tag, text readers aren’t going to know what proper emphasis to put on the text. Bad for SEO. Bad for accessibility.
 
-##### Emphasis
+#### Emphasis
 
 Take the header quote of my web-site. It has text in there, possibly “I live a web-standard world.” And I’ve changed the color of web-standard to a reddish. Now here’s two ways you could do this, the second being the better way.
 
@@ -55,13 +55,13 @@ And the semantic way:
 
 You can use ths span tag to differentiate text in the same in-line paragraph, but what is the purpose? Is it merely for design purposes? In my case, I wanted to emphasis the “web-standards” phrase. I mean, I’m really wanting it to have the same power as italics, but I want it red instead. So when read, it should still have the emphasis of the em tag.
 
-##### Navigation
+#### Navigation
 
 You could make your navigation simply a set of divs that each contain their own anchor and background image. And that would validate. But, you have to think about what the navigation is in terms of structure. Your site navigation is really a _list_ of links.
 
     \<ul id="nav"\> \<li\>\<a href="/"\>Home\</a\>\</li\> \<li\>\<a href="/contact/"\>Contact\</a\>\</li\>\</ul\>
 
-#### Additional Tips
+### Additional Tips
 
 1. **Subscripts or fine print:** Use the \<small\> tag.
 2. **Describing form elements:** Use that \<label\> tag. It let’s readers know it’s labeling a form element.

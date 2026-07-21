@@ -12,17 +12,17 @@ tumblr_url: https://seanmonstar.com/post/702541983003148288/this-month-in-hyper-
 ---
 The northern hemisphere starts to cool, the trees shed their leaves to conserve energy, cultured fans watch the quadrennial football tournament, and some magnificient contributors stay warm by continuing to make [hyper](https://hyper.rs) ever better!
 
-### Releases
+## Releases
 
-#### hyper v0.14.23
+### hyper v0.14.23
 
 @jfourie1 found and fixed a nasty bug in hyper’s HTTP/2 client dispatcher, which could result in a stalled connection under high concurrency.
 
-#### reqwest v0.11.13
+### reqwest v0.11.13
 
 The headline addition is a `ClientBuilder::dns_resolver()`, which now allows users to implement completely custom DNS resolvers for reqwest to use.
 
-### hyper 1.0
+## hyper 1.0
 
 With the release of rc1 last month, I wrote about how we’re now in the [hyper polish period](https://seanmonstar.com/blog/hyper-polish-period/) 💅.
 
@@ -30,11 +30,11 @@ With the release of rc1 last month, I wrote about how we’re now in the [hyper 
 
 We still eagerly welcome you trying out the release candidate and providing us feedback. It’s the _most important_ part of this period. Or join us in one of the four polish areas (or help lead one)! You can also come [chat](https://discord.gg/kkwpueZ) with us about anything.
 
-### hyper in curl
+## hyper in curl
 
 I fixed curl’s `c-hyper.c` to [classify headers from CONNECT and 1xx responses as such](https://github.com/curl/curl/pull/9947), making two more [unit tests pass](https://github.com/orgs/hyperium/projects/2/views/1). I streamed the process, in case you’d find it helpful to watch someone who mainly writes Rust flounder around debugging and fixing C. [You can try](https://seanmonstar.com/blog/help-stabilize-hyper-in-curl/) it too!
 
-### HTTP/3
+## HTTP/3
 
 We’re working on HTTP/3 in a separate crate, [h3](https://github.com/hyperium/h3), with the goal of fitting it into [hyper](https://hyper.rs).
 
@@ -42,7 +42,7 @@ We’re working on HTTP/3 in a separate crate, [h3](https://github.com/hyperium/
 
 @g2p and @Ruben2424 joined as `h3` collaborators, thanks to their excellent and continued work!
 
-### Tower
+## Tower
 
 [Tower](https://github.com/tower-rs/tower) (and `tower-http`) are a protocol-agnostic RPC framework with middleware, and they combine nicely with hyper.
 

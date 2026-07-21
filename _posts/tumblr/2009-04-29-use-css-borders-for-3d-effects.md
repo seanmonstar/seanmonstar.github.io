@@ -10,7 +10,7 @@ tumblr_url: https://seanmonstar.com/post/707101490/use-css-borders-for-3d-effect
 ---
 Recently, I’ve been more in favor of using the browsers rendering instead of background images to achieve looks, since that **reduces bandwidth and loading times** , and also **increases maintainability**. I used to slice images that would give something a shadow or button type of a look, but have moved more towards just making the browser do it. I wanted to share some examples of effects and how easy it is to do so.
 
-#### 3D Buttons
+### 3D Buttons
 
 As a smaller example, I’ll show the buttons I put together for the Blazonco admin post index page. Rather simple, but I wanted to achieve that effect you’ve seen in older buttons. You know, where the top part is light than the bottom, so it looks slightly raised out of the application. And then on hover, I swap the border colors, giving the look of being pushed in.
 
@@ -44,7 +44,7 @@ I threw a darker color on the bottom and right sides. The above picture shows no
 
 _Having it in CSS allowed me to easily test out the results_ , and tweak the color slightly as I decided one side was too dark or too light. And I also was able to easily experiment with how round I wanted the button. When using images for all this, you’d have to make the changes in Photoshop, and save it and upload it again. So a major gain is in **how easy it is to maintain**.
 
-#### Shadows
+### Shadows
 
 I had the joy of turning a comp with mutliple rounded corner boxes and shadows and the like into a working web-site not long ago. I originally thought that these boxes would also need to be expandable, and I wondered how to achieve this in a feasible way. I settled on using various CSS3 techniques instead of image slices with [sliding door](http://www.alistapart.com/articles/slidingdoors/) techniques.
 
@@ -76,7 +76,7 @@ By making the border bigger and darker on the bottom, and lighter and thinner on
 
 Since it was using CSS3 techniques, it was squared in Internet Explorer, but continued to look good. This is an important factor of [progressive enchancement](http://www.alistapart.com/articles/progressiveenhancementwithcss) , since I made sure to use CSS that looked nice in older browsers.
 
-##### CSS Feature Detection?
+#### CSS Feature Detection?
 
 One last rule I would have liked to add but never did was using Safari’s drop shadow property. That would have achieved an even nicer looking shadow in Safari. The reason holding me back, was that I’d already used border’s to accomplish this effect, and didn’t want to try to remove them for Safari. This would have required some Safari CSS hacks, since I currently don’t know of a way to do CSS feature detection.
 

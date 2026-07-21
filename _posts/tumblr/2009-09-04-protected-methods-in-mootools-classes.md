@@ -9,11 +9,11 @@ tumblr_url: https://seanmonstar.com/post/708692497/protected-methods-in-mootools
 ---
 In Javascript, elements don’t have a native way to hide properties. So we have to come up with creative ways like using [closures](http://snook.ca/archives/javascript/no-love-for-module-pattern/). In MooTools 1.2.3, we have a way to protect class methods.
 
-#### Private vs Protected
+### Private vs Protected
 
 The difference between private and protected variables in most languages is that private can **only** be used in the same class. Protected is similar, but it can also be used from a class that extends the base class. Private properties are off limits to children.
 
-### Engines must Start before Running
+## Engines must Start before Running
 
 When writing your classes, you can specify methods that should be protected by building the function in a similar way you bind functions:
 

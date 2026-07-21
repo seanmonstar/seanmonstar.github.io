@@ -20,7 +20,7 @@ I said [earlier](https://seanmonstar.com/blog/hyper-ish-2021-in-review/) that th
 - **Gather feedback.** We want to hear how the release candidate is working out. Everyone trying it is encouraged to open new issues, but we’ll also reach out to various users to make sure we get the feedback we need. This period will likely be about three months, so people can migrate their code, give feedback, and allow us enough time to act on that feedback.
 - **Ship it.** The launch. 1.0. All the confetti and excitement. But we won’t be done, there’s always things to do! This should happen in the middle of Q4 of 2022.
 
-### How can I help?
+## How can I help?
 
 It’s an exciting time! There’s a lot to do, and many different skills will be needed. If you want to be part of the effort, there’s [several ways to help](https://github.com/hyperium/hyper/blob/master/CONTRIBUTING.md)!
 

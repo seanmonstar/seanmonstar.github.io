@@ -17,7 +17,7 @@ These allow finer-grained control of exactly what is happening during an HTTP re
 - When to shutdown the connection (or to pool them).
 - Take over the underlying IO transport again.
 
-### A Websocket Upgrade
+## A Websocket Upgrade
 
 Notably, this allows using hyper send and receive **HTTP upgrade requests**. The most popular of these is Websockets. Here’s an example of how you could get Websockets working with hyper, broken up into 3 parts:
 

@@ -21,7 +21,7 @@ Non-work related things I use the computer for:
 - Starcraft 2
 - The super rare document or spreadsheet
 
-### Successes (and not) on the Cr-48:
+## Successes (and not) on the Cr-48:
 
 Gmail is a no duh. I’ve always preferred Gmail’s interface to any desktop email client.
 

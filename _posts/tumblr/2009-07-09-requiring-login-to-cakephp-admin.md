@@ -24,7 +24,7 @@ Since we’re logging in Users, we build a `User` model and `UsersController`. I
 
 You can add any additional validation rules in here, and you might want to use a [better hashing use than simpy straight md5](http://mcarthurgfx.com/blog/article/a-basic-lesson-in-password-hashing). Anyhow, this function will be called from the `UsersController`. So let’s dive into there.
 
-#### UsersController
+### UsersController
 
 Throw together a simple login function. I’ll let your imagination put together the view, that’s just some simple html form stuff. Check for post data, validate with the above function, write the User object to the session and redirect to the admin area.
 
@@ -43,7 +43,7 @@ So, in the UsersController, we want to make sure that a user can’t do anything
     	}
     }
 
-#### Admin Requires Login
+### Admin Requires Login
 
 The last step is ensuring that any time a user wants to access the admin part of our app, they must be a logged in user, or they the boot. This involves using the same event as above, but in the `AppController`. The `AppController` lets us write something that should happen in every controller, because by default we should be extending `AppController`.
 
@@ -62,7 +62,7 @@ With our admin routing turned on, any time the Router wants to invoke a method b
         } 
     }
 
-#### Admin Galore
+### Admin Galore
 
 Now, any page we want to setup as requiring admin access, like in my CMS, allowing admins to edit pages, we create functions prepended with value in your config for `Routing.admin`. By default, that’s `admin`.
 

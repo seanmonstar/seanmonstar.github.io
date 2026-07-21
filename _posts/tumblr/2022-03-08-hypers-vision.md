@@ -13,13 +13,13 @@ This year is the year we release [hyper](https://hyper.rs) 1.0. As pointed out i
 
 The vision is a high-level, abstract view of what hyper _is_. It’s the destination. It defines “where we are going”, no matter where we are along the journey, or what version we get to along the way.
 
-### Why define a vision?
+## Why define a vision?
 
 hyper has been around for [a little under 8 years](https://github.com/hyperium/hyper/commit/886551681629de812a87555bb4ecd41515e4dee6). We’ve done a lot of experimenting, learning, trying this and trying that. It has always had an _implicit_ vision, but it’s important to write it out. This makes the vision explicit, clear to everyone. It’s no longer just whatever Sean keeps in his head.
 
 Defining a vision is a way to keep us honest. It provides a measuring stick to determine if we’re getting closer or farther away. It defines a framework on how to make decisions that affect hyper. It empowers others to make those decisions. It allows the project to survive as maintainers[^1] and collaborators come and go.
 
-### A Charter and Tenets
+## A Charter and Tenets
 
 The [vision](https://github.com/hyperium/hyper/pull/2772) begins with a charter and tenets.
 
@@ -44,7 +44,7 @@ Defining tenets sets the _priority_ amongst the principles. If you have to pick 
 
 You may notice some minor mixing of human and engineering principles, such as “protective” and “open”. The mixture is purposeful. We remember that we make software for humans. What is engineering without the humans? It’s too easy to forget that. hyper’s vision makes sure that we consider humans when making engineering decisions. Still, there is room to expand how exactly the humans leading the project [should act](https://github.com/hyperium/hyper/blob/master/docs/CODE_OF_CONDUCT.md) with a collaborator guide in the future.
 
-### Use cases of the Library
+## Use cases of the Library
 
 The next part of the vision includes hyper’s use cases. We collected these at the same time as defining the the tenets, to help make sure that hyper’s users actually cared about the same thing hyper does.
 
@@ -52,7 +52,7 @@ This was extremely helpful in realizing the right balance, and recognizing that 
 
 That doesn’t mean we purposefully make it harder, though. It should still be understandable for newcomers. One of the first things we do for them is to recommend they look at libraries built on top of hyper that are designed to be easy-first. We’ll move some of the higher-level building pieces into a `hyper-util` crate.
 
-### And More
+## And More
 
 There’s more to hyper’s vision that I don’t outline here. [The vision is currently a proposal](https://github.com/hyperium/hyper/pull/2772), and accepting feedback. Even after we merge, it’s not set in stone. The vision can adapt as we learn new things in the future. But this is the [first step in shipping hyper 1.0](https://seanmonstar.com/blog/hyper-10-timeline/). We can’t get anywhere if we don’t know where we are going. Now we do!
 

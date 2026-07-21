@@ -9,7 +9,7 @@ tumblr_url: https://seanmonstar.com/post/709072388/making-an-ajax-single-page-si
 ---
 The past couple weeks I’ve been working on a website that, with JavaScript enabled, will never refresh the page[^1]. With MooTools, I just needed to manipulate the URL hash and use `Request`, making it fairly easy to get an Ajax site that works like Facebook. Granted, this has nothing about handling CSS or JavaScript assets for each page. I’m currently handling that myself, and perhaps I’ll share my findings for that another time.
 
-#### Use Event Delegation
+### Use Event Delegation
 
 First of all, I started with making every link in the site need to trigger the Ajax loading. MooTools More has an excellent [Event Delegation package](http://mootools.net/docs/more/Element/Element.Delegation). Using that, I’ll list for every click on a link on the page, check if it’s to the same domain, and load those pages asynchronously, otherwise just let the browser travel to the external page.
 
@@ -23,7 +23,7 @@ First of all, I started with making every link in the site need to trigger the A
         }
     });
 
-#### Change the Hash to provide History
+### Change the Hash to provide History
 
 We change the hash around because in most browsers, this will register another history location, allowing the forward and back buttons to work. It also allows someone to copy and paste a link. [IE6](http://seanmonstar.com/blog/it-s-all-your-fault/) and 7, of course, don’t. For them, we manipulate an `iframe`, which _will_ register history locations.
 
@@ -34,7 +34,7 @@ Once I got that added to the page, and setup a listener, the listening function 
     window.addEvent('hashchange', function(hash) {
     new Page(hash).load();});
 
-#### Make the Request and insert the Page
+### Make the Request and insert the Page
 
 I actually use a `PageManager` arbiter to handle `Page` loading, inserting, removing, and caching, but that isn’t necessary (though I recommend it).
 

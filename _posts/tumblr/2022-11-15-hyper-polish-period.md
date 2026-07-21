@@ -13,7 +13,7 @@ A couple weeks ago, we announced the [first release candidate](https://seanmonst
 
 I’m calling the time period between the first release candidate and the final release the “hyper polish period”.
 
-### Areas of Polish
+## Areas of Polish
 
 The main thrust is to polish the edges, and make the final release of hyper 1.0 as smooth as possible for all. It’s still quite a lot to do, and several of the areas will actively benefit from a mixture of experience helping out. It seems there’s four main areas of work to do, so we need a few things from the community:
 
@@ -23,7 +23,7 @@ The main thrust is to polish the edges, and make the final release of hyper 1.0 
 
 How about some more details about each area.
 
-#### Area: Docs
+### Area: Docs
 
 hyper should have stellar documentation, all around. We should be an example for all Rust crates on how to have top-notch documentation. Caring about the documentation is caring about the developer experience. They are _our_ users. They should be delighted whenever trying to do something new with hyper. Certainly, there will always be ways to improve them. But that doesn’t mean we can’t try to make them awesome for the 1.0 launch.
 
@@ -33,13 +33,13 @@ The website, [hyper.rs](https://hyper.rs), can be improved to better accomplish 
 
 While [guides](https://hyper.rs/guides) are technically part of the website, I view them to be sufficiently big enough to consider separately. We could use a more in-depth guide using more of hyper, perhaps slowly building on pieces from previous guides. WIth so many useful pieces now in `hyper-util`, guides should help show how to include and use them. We can also add a Tower section, showing the power of adding Tower middleware to your server of client.
 
-#### Area: Utils
+### Area: Utils
 
 Many of the less stable, higher level parts of hyper 0.14.x have been removed, with the promise of most showing back up in [`hyper-util`](https://github.com/hyperium/hyper-util). Some of these are very simple ports. Others will be made more generic or configurable, encouraging users to plug and play on top of it all.
 
 For example, consider the previous `hyper::Client` . It combined many concepts together for the convenience of users: a mechanism to establish new connections, a pool to store idle connections for a period of time, and a way for the connector to signal to the pool if HTTP/2 was negotiated via ALPN. You could only customize those pieces if specific options were part of the client `Builder`. As part of the move to `hyper-util`, the way those pieces plug together can be made public.[^2] That does likely mean more work on our part though.
 
-#### Area: Upgrading
+### Area: Upgrading
 
 We want as smooth of an _upgrade_ as possible.
 
@@ -57,7 +57,7 @@ There are other parts of that are removed completely, without a replacement in c
 
 I don’t expect everyone to upgrade to 1.0 as soon as it comes out, so having the compiler help people to be more ready and make their eventual upgrade smoother has significant value. It helps earn the trust of our users, hopefully reducing upgrade fear for future releases.
 
-#### Area: Integration Feedback
+### Area: Integration Feedback
 
 The release candidate period is principally to allow for gathering of feedback about any further breaking changes that should be considered before stabilizing.
 
@@ -71,7 +71,7 @@ If you’re able to help _give_ the feedback, we recognize the time and effort t
 
 This may also reveal changes that would be good to make in `hyper-util`. But releases there are easy. The most urgent part of this area is to make sure we take care of all necessary breaking changes in `hyper` core, before calling it 1.0.
 
-### Join us!
+## Join us!
 
 We expect this polish period to last a couple of months. There’s a lot to do, and a lot of places for people of all sorts to join in and make this release awesome.
 

@@ -16,7 +16,7 @@ It’s been a steady if somewhat slow march toward asynchronous IO in [hyper](ht
 
 **The good news: it’s nearly complete!** Of course, there’s bugs. And the API likely has rough edges. But hopefully framework developers can [start working with it now](https://github.com/hyperium/hyper/tree/mio), and help us have an excellent proper release real soon.
 
-### State Machines
+## State Machines
 
 Here’s how it all works. A state machine type should be created, and should implement the `Handler` trait, altering its internal state as events from the socket occur, and responding to hyper with what it should do next.
 
@@ -31,11 +31,11 @@ There is a similar trait for the `Client`, but with the names and types adjusted
 
 The HTTP state is managed internally by hyper. The type that implements `Handler` should keep track of its business-related state, such as the request route, related headers, if data should be read, and when and if data should be written. The `Handler` conveys its desired intent by making use of the `Next` type that is returned after acting on events.
 
-### Next
+## Next
 
 The `Next` type is used to declare what should be done with the current socket. The `Next` type has variants for `read()`, `write()`, `end()`, and less used forms.
 
-#### Timeouts
+### Timeouts
 
 The `Handler` can declare how long the server should wait for an event before triggering a timeout error. This would be asynchronously waiting, not actual blocking on IO.
 
@@ -59,7 +59,7 @@ The server would wait for a readable event on the socket for up to 30 seconds. I
         }
     }
 
-#### Waiting
+### Waiting
 
 So far, the described API works well when the server can respond immediately to each event on a socket. But eventually a server starts adding other parts of the puzzle that aren’t available right away. There could be database connections, reading or writing to a file, proxying to another URL, or any other thing that would block the thread and put our event loop in stasis. In these cases, a `Handler` can receive events from the server, trigger other asynchronous actions, and notify the server when it is ready to finally do something. This is done using `Next::wait()` and the `Control` that is passed to every `Handler` upon construction.
 
@@ -78,7 +78,7 @@ So far, the described API works well when the server can respond immediately to 
 
 In this example, after parsing a route such as `/user/33`, the `Handler` tells the server to wait (indefinitely) while we ask the database to look up the the user by ID. Once the database returns, the `Control` is alerted that the `Handler` is ready to write, and the server will continue processing the request.
 
-### Breaking Everything
+## Breaking Everything
 
 Due to the fundamental shift that exists when using non-blocking IO instead of blocking, there are several breaking changes. The most obvious is the change to the `Handler` trait, and having to deal with `io::ErrorKind::WouldBlock` errors when reading and writing.
 
@@ -88,7 +88,7 @@ Besides those biggies, several other parts of the API have been cleaned up for t
 - The `Request` now has private fields, with only immutable accessors. This prevents mistakes since mutating the `Request` head would otherwise have no effect.
 - The `HeaderFormat` trait has been merged back into the `Header` trait, with the help of `where Self: Sized`.
 
-### hypersync
+## hypersync
 
 Everyone hates breaking changes. As necessary as they are, they will still inhibit some people from upgrading. To reduce some of the pain, I’ve worked on a “synchronous API” that is built on top of the new async hyper.
 

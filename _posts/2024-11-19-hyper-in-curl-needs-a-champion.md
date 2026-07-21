@@ -15,7 +15,7 @@ It needs a champion, a backing vendor or distro. Will that be you?
 
 **UPDATE 2024-12-21**: [curl has dropped hyper][bye].
 
-### Why would you put a hyper in a curl?
+## Why would you put a hyper in a curl?
 
 Why would you? Memory safety.
 
@@ -34,7 +34,7 @@ As I said when [when we told the world about it](https://aws.amazon.com/blogs/op
 So, why do this? Oh, right. Ahem. **Memory safety**.
 
 
-### Most of the work is done
+## Most of the work is done
 
 Let me back up a little.
 
@@ -46,7 +46,7 @@ I gave [a talk for curl up 2022](https://seanmonstar.com/blog/curl-up-2022-hyper
 
 We're ready to finish, technically.
 
-### Over the finish line
+## Over the finish line
 
 [Funding for an engineer](https://www.memorysafety.org/blog/memory-safe-curl/) to complete the work is available.
 
@@ -54,7 +54,7 @@ But the upkeep of the feature isn't free, in both the curl and hyper repositorie
 
 So, what exactly could change that? What is needed?
 
-### Champion required
+## Champion required
 
 A champion, if you want it.[^want]
 

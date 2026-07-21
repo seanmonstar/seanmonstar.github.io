@@ -28,7 +28,7 @@ Sorry, I’m fine now. It’s just… you know. It is downright [irresponsible](
 
 Good idea! Er, which do you pick? There’s several, and each has its own peculiarities regarding its API. _Sigh_.
 
-### Persona?
+## Persona?
 
 I had hoped [Persona](https://persona.org) would move us away from these dark ages, but it struggled to gain support. The user experience was disruptive.
 
@@ -38,13 +38,13 @@ Additionally, they would need to go through email verification, which while it h
 
 The popup would confuse users. We’ve been teaching users forever to distrust popups, but saying this one was okay.
 
-### ++
+## ++
 
 At this point, most browsers have user account information already. Chrome has a Google account, Firefox has a [Firefox account](https://accounts.firefox.com), Safari has iCloud, and Edge has a Microsoft account. How about we just move websites to asking the User Agent for credentials, instead of the User directly?
 
 This was what I originally assumed BrowserID would work, when I first heard about it. A user can sign into a browser, using whichever way that browser supports. The website (and thus web developer) isn’t required to care what account system the user wants to use. They just want to know “who are you” and “how can I be sure?”[^2] **The problem this solves now is passing and storing passwords.**
 
-### `navigator.auth.get()`
+## `navigator.auth.get()`
 
 A website could ask for credentials from the navigator, and the browser can show its own trusted UI asking the user if and which ID to share to the website. The API could return a `Promise<JWT>`, with the JWT being signed by the browser. There’s already standards in place for [verifying a signed JWT](https://tools.ietf.org/html/rfc7515), so the web developer can be confident that the user owns the data include in the token. An example usage:
 
@@ -61,7 +61,7 @@ Additionally, an HTML element could be used for sites that wish to support NoScr
 
 This could render like a `<div>`, and a website could style it to their spleen’s content. Another [pain point](https://groups.google.com/d/topic/mozilla.dev.identity/12PW2Z-YPps/discussion) of Persona solved.
 
-### We can do this!
+## We can do this!
 
 The Identity team at Mozilla is interested in exploring this, and being that the scope is low, working towards consensus and a standard is the goal, as opposed to Persona’s hope of adoption before standardization. **To a less-passwords web!**
 

@@ -14,7 +14,7 @@ We’ve been working for that past year and change to allow [hyper to be an HTTP
 
 **Want to help us get it over the finish line?** I’ve written up a guide of how to help debug these tests, step-by-step[^1], and then included an example of a test I debugged.
 
-### Build hyper’s C API
+## Build hyper’s C API
 
 First, we’ll build `libhyper`. Start by checking out hyper with git:
 
@@ -25,7 +25,7 @@ Next, we build the C library specifically, following the [instructions](https://
 
     $ RUSTFLAGS="--cfg hyper_unstable_ffi" cargo +nightly rustc --features client,http1,http2,ffi -Z unstable-options --crate-type cdylib
 
-### Build curl with hyper
+## Build curl with hyper
 
 Now to use that to build curl. Get back to your normal code directory, and checkout curl:
 
@@ -43,11 +43,11 @@ Then, follow the [in-repo instructions](https://github.com/curl/curl/blob/master
 
 When running `./configure`, you’ll also need to select a TLS option. Since I was on Linux, I added on `--with-openssl`. For ease, you can pick `--with-secure-transport` on macOS, `--with-schannel` on Windows, or pick any of the other options if you know better. I wanted to be able to try the built curl on the regular web, but if you don’t care about that, you can also just use `--without-ssl` to skip the TLS decision entirely.
 
-### Pick a test from the list.
+## Pick a test from the list.
 
 Look at the[dashboard of remaining tests](https://github.com/orgs/hyperium/projects/2/views/1).
 
-### Debug it!
+## Debug it!
 
 Once you have the test number picked, you can run it specifically:
 
@@ -67,7 +67,7 @@ When prompted, enter `run` (or just `r`). Pay attention to output to give hints 
 
 It’s a cycle of paying attention to the output, looking in the source code, checking the documentation, setting or adjusting breakpoints, and running again. Eventually, you can figure out what went wrong.
 
-### An Example
+## An Example
 
 I randomly picked unit test 670 and ran it in the debugger. I saw this interesting line of output:
 
