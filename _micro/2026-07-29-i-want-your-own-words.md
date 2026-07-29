@@ -3,6 +3,8 @@ layout: post
 title: I want your own words
 tags:
 - llms
+bsky_url: https://bsky.app/profile/did:plc:ax5sh6hthwrelunhn2bfmrsb/post/3mrrzeh7ojl2m
+mastodon_url: https://masto.ai/@seanmonstar/117003470909498364
 ---
 If you choose to communicate with me, all I ask is that you use your own words. Bug reports and issues. Pull request descriptions and especially review comments. This isn't new, but I wanted a link of my own.
 
