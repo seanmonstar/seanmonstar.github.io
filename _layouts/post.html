@@ -13,6 +13,11 @@ layout: default
 
   <div class="regular post-body">
     <h1 class="post-title">{{ page.title }}</h1>
+    {% if page.hidden %}
+    <aside class="archived-post-notice">
+      This is an archived post. It’s no longer listed on this site and may be removed in the future.
+    </aside>
+    {% endif %}
     {{ content }}
   </div>
 
