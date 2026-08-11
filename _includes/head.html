@@ -5,6 +5,7 @@
 
   <title>{% if page.title %}{{ page.title }} - {% endif  %}{{ site.title }}</title>
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  {% if page.hidden %}<meta name="robots" content="noindex">{% endif %}
 
   <meta property="og:site_name" content="seanmonstar" />
   <meta property="og:locale" content="en_US" />
