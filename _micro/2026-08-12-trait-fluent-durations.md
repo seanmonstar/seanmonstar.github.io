@@ -3,6 +3,8 @@ layout: post
 title: A trait for fluent Durations
 tags:
 - rust
+bsky_url: https://bsky.app/profile/did:plc:ax5sh6hthwrelunhn2bfmrsb/post/3msvew6rwcw2d
+mastodon_url: https://masto.ai/@seanmonstar/117083096961219861
 ---
 I dislike the pattern in some languages to create durations by multiplying constants. It feels like a concession when it cannot be expressed more nicely. There's a [tracking issue](https://triagebot.infra.rust-lang.org/gh-comments/rust-lang/rust/issues/57391) to add such constants in libstd.
 
