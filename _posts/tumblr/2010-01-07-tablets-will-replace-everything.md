@@ -5,7 +5,6 @@ date: '2010-01-07T19:16:00-05:00'
 tags:
 - bestof
 - tablets
-- ipad
 tumblr_url: https://seanmonstar.com/post/708790454/tablets-will-replace-everything
 ---
 Recently, there has been a bit of talk about upcoming tablets like the [CrunchPad](http://www.techcrunch.com/2009/06/03/crunchpad-the-launch-prototype/) and the [iSlate](http://gizmodo.com/5335942/an-insider-on-the-apple-tablet), and whether we need them, how useful they’ll be, or if [they’re only use](http://daringfireball.net/2009/12/the_tablet) is [browsing the web on the toilet](http://xkcd.com/646/). Many people are of the opinion that we don’t need one. Or that only gadget enthusiasts would buy it for couch web browsing. Well, I’ll go out and say it: Tablets will replace _everything_.

@@ -3,9 +3,7 @@ layout: post
 title: The iPad Needs Competition
 date: '2011-10-11T16:26:27-04:00'
 tags:
-- ipad
 - tablets
-- android
 tumblr_url: https://seanmonstar.com/post/11326945456/tablet-competition
 ---
 Apple fans unanimously believe that tablet makers should stop trying to compete with the iPad. They think that instead, tablets should try to fill other purposes, like the Kindle Fire does.

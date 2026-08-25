@@ -3,7 +3,6 @@ layout: post
 title: Import * Considered Harmful
 date: '2010-01-27T11:02:00-05:00'
 tags:
-- java
 - python
 tumblr_url: https://seanmonstar.com/post/708954358/import-star-considered-harmful
 ---

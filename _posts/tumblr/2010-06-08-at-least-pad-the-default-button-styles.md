@@ -4,8 +4,6 @@ title: At Least Pad the Default Button Styles
 date: '2010-06-08T13:12:00-04:00'
 tags:
 - css
-- usability
-- ui
 tumblr_url: https://seanmonstar.com/post/709076819/at-least-pad-the-default-button-styles
 ---
 Some people like to [style buttons to their own design](http://seanmonstar.com/blog/use-css-borders-for-3d-effects/), ensuring they look the same cross browser or enhance the site theme. Others are perfectly fine with a `<button />` being rendered differently depending on browser and operating system combination. I understand both sides. Sometimes a styled button can look really nice. Other times, it just makes sense to leave it at default, because users are used to seeing buttons the way their OS always displays them.

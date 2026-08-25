@@ -6,7 +6,6 @@ tags:
 - javascript
 - programming
 - nodejs
-- client-sessions
 - mozilla
 tumblr_url: https://seanmonstar.com/post/66111341154/client-sessions-v0-4-0
 ---

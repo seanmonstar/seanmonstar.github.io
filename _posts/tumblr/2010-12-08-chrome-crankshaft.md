@@ -3,8 +3,6 @@ layout: post
 title: Chrome Crankshaft
 date: '2010-12-08T14:00:07-05:00'
 tags:
-- google
-- chrome
 - javascript
 tumblr_url: https://seanmonstar.com/post/2145192257/chrome-crankshaft
 ---

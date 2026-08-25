@@ -3,7 +3,6 @@ layout: post
 title: IE Opacity Ignores Positioned Children
 date: '2010-04-12T09:41:00-04:00'
 tags:
-- bug
 - javascript
 - css
 tumblr_url: https://seanmonstar.com/post/709013028/ie-opacity-ignores-positioned-children

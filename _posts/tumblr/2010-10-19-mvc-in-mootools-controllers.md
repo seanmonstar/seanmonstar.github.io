@@ -5,8 +5,6 @@ date: '2010-10-19T02:33:00-04:00'
 tags:
 - javascript
 - mootools
-- mvc
-- monstars.js
 tumblr_url: https://seanmonstar.com/post/1349631987/mvc-in-mootools-controllers
 ---
 <small>This is another installment about how to use my <a href="http://github.com/seanmonstar/monstars.js">MooTools MVC framework</a>. If you’re interested in the previous parts, check out my write-up on using <a href="http://seanmonstar.com/blog/mvc-in-mootools-models/">Models</a> and <a href="http://seanmonstar.com/blog/mvc-in-mootools-views/">Views</a>.</small>

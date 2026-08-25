@@ -4,8 +4,6 @@ title: Form Accessibility - Try Out Your Own
 date: '2009-06-10T12:30:00-04:00'
 tags:
 - standards
-- html
-- usability
 tumblr_url: https://seanmonstar.com/post/707151022/form-accessibility-try-out-your-own
 ---
 With web standards being all the rage, and accessibility being a major driving factor in people adopting standards, you might be surprised to actually check out the accessibility of web-sites. After watching [a video of a blind user using Jaws](http://www.youtube.com/watch?v=AmUPhEVWu_E), I figured to give using a [screen reader](http://www.nvda-project.org/) a try just to see if I could understand it any better. I ran into a couple problematic areas; what caught my attention first was the use of **forms**.

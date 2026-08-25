@@ -4,7 +4,6 @@ title: 'Saftey Cap: Slide to Delete'
 date: '2010-03-25T11:40:00-04:00'
 tags:
 - javascript
-- ui
 tumblr_url: https://seanmonstar.com/post/709020436/saftey-cap-slide-to-delete
 ---
 Yesterday [Jeff Atwood wrote](http://www.codinghorror.com/blog/2010/03/the-opposite-of-fitts-law.html) about [Fitts’ law](http://en.wikipedia.org/wiki/Fitts'_law) and the contrapositive in regards to _big, bad eject buttons_. The point of his piece was that you shouldn’t have buttons with irreversibledestructiveresults be right next to buttons with more frequent use.

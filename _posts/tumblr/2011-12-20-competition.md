@@ -3,9 +3,6 @@ layout: post
 title: 'Or: Competition is Good'
 date: '2011-12-20T15:00:06-05:00'
 tags:
-- android
-- ios
-- iphone
 - competition
 tumblr_url: https://seanmonstar.com/post/14521626446/competition
 ---

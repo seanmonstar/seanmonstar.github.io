@@ -3,9 +3,7 @@ layout: post
 title: Social Lock-in
 date: '2012-06-22T12:30:28-04:00'
 tags:
-- facebook
 - twitter
-- google+
 tumblr_url: https://seanmonstar.com/post/25612227261/social-lock-in
 ---
 Imagine that you want to get a cell phone. Your friends and family are on Sprint, but T-Mobile is offering you a far better package. The phone they offer you has a more intuitive interface, their prices are more affordable, and they even have better signal in your area. Still imagining, Sprint and T-Mobile don’t allow cross-network communication. Sprint users can only call and text message other Sprint users. Same with T-Mobile. Unbelievable, right?

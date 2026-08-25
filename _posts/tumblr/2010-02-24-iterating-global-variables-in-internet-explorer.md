@@ -4,7 +4,6 @@ title: Iterating Global Variables in Internet Explorer
 date: '2010-02-24T11:02:00-05:00'
 tags:
 - javascript
-- bug
 tumblr_url: https://seanmonstar.com/post/708979238/iterating-global-variables-in-internet-explorer
 ---
 There’s a couple ways you can define globally accessible variables in Javascript. And it turns out that in JScript, they actually mean different things (as opposed to all other implementations, where they’re the same). This meant my [GetClass implementation](http://seanmonstar.com/blog/get-class-of-an-instance/) just plain wouldn’t work for Internet Explorer. Well, that’s no good, since that’s a basic building block of my [MooTools MVC framework](http://github.com/seanmonstar/MonstarLab-MVC). Now, I could require all classes be created explicitly, like `window.Task`, but that makes for a very inflexible pattern. And there’s no reasonable way to explain to users why I’m requiring that.

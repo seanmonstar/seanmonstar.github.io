@@ -3,7 +3,6 @@ layout: post
 title: Fixing HTML5 Loaded Via Ajax in IE
 date: '2010-06-30T14:24:18-04:00'
 tags:
-- html
 - javascript
 - mootools
 tumblr_url: https://seanmonstar.com/post/754502783/fixing-html5-loaded-via-ajax-in-ie

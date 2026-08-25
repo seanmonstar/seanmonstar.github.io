@@ -3,10 +3,7 @@ layout: post
 title: The difference between Chrome and Firefox
 date: '2011-11-21T11:10:00-05:00'
 tags:
-- browsers
-- chrome
 - firefox
-- google
 - mozilla
 tumblr_url: https://seanmonstar.com/post/13113614765/chrome-vs-firefox
 ---

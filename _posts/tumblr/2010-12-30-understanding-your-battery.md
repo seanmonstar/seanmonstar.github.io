@@ -3,7 +3,6 @@ layout: post
 title: Understanding Your Battery
 date: '2010-12-30T15:13:58-05:00'
 tags:
-- android
 tumblr_url: https://seanmonstar.com/post/2531014115/understanding-your-battery
 ---
 [Understanding Your Battery](http://forum.xda-developers.com/showthread.php?t=871051%20)  

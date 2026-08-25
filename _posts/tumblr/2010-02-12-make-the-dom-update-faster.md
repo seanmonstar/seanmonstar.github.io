@@ -4,7 +4,6 @@ title: Make the DOM Update Faster
 date: '2010-02-12T11:45:00-05:00'
 tags:
 - javascript
-- dom
 - bestof
 tumblr_url: https://seanmonstar.com/post/708943208/make-the-dom-update-faster
 ---

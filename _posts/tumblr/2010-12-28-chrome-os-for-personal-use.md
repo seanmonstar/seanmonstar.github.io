@@ -3,8 +3,6 @@ layout: post
 title: Chrome OS for Personal Use
 date: '2010-12-28T14:05:00-05:00'
 tags:
-- chrome os
-- google
 tumblr_url: https://seanmonstar.com/post/2500505715/chrome-os-for-personal-use
 ---
 First off, [Engadget’s observations](http://www.engadget.com/2010/12/09/google-cr-48-chrome-laptop-preview/) are very much in line with my own. Reading that should give you a good overview of the device. However, I want to explore the effectiveness of Chrome OS for my own personal uses[^1].

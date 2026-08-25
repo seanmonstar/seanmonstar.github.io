@@ -3,7 +3,6 @@ layout: post
 title: PHP Error Suppression Performance
 date: '2010-08-05T16:22:00-04:00'
 tags:
-- performance
 - php
 - bestof
 tumblr_url: https://seanmonstar.com/post/909029460/php-error-suppression-performance

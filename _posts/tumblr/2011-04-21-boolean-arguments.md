@@ -4,7 +4,6 @@ title: Boolean Arguments
 date: '2011-04-21T14:00:05-04:00'
 tags:
 - programming
-- java
 - python
 tumblr_url: https://seanmonstar.com/post/4810862963/boolean-arguments
 ---

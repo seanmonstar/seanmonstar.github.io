@@ -4,7 +4,6 @@ title: Use CSS Borders for 3D Effects
 date: '2009-04-29T11:55:00-04:00'
 tags:
 - css
-- design
 - bestof
 tumblr_url: https://seanmonstar.com/post/707101490/use-css-borders-for-3d-effects
 ---

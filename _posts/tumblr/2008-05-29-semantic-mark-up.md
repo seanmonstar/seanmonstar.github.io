@@ -3,7 +3,6 @@ layout: post
 title: Semantic Mark-up
 date: '2008-05-29T13:23:00-04:00'
 tags:
-- html
 - standards
 tumblr_url: https://seanmonstar.com/post/706940006/semantic-mark-up
 ---

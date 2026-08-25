@@ -4,8 +4,6 @@ title: Why is getElementsByTagName() faster than querySelectorAll()?
 date: '2010-09-30T13:40:00-04:00'
 tags:
 - javascript
-- performance
-- dom
 tumblr_url: https://seanmonstar.com/post/1216429592/why-is-getelementsbytagname-faster-than
 ---
 [Why is getElementsByTagName() faster than querySelectorAll()?](http://www.nczonline.net/blog/2010/09/28/why-is-getelementsbytagname-faster-that-queryselectorall/)  

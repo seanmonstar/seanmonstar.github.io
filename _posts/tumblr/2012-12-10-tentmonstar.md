@@ -4,8 +4,6 @@ title: tentmonstar for Android
 date: '2012-12-10T17:59:40-05:00'
 tags:
 - tent
-- tentmonstar
-- android
 tumblr_url: https://seanmonstar.com/post/37667307268/tentmonstar
 ---
 [tentmonstar for Android](http://seanmonstar.com/tentmonstar)  

@@ -4,7 +4,6 @@ title: 'Select Tags in IE: innerHTML'
 date: '2009-10-29T12:08:00-04:00'
 tags:
 - javascript
-- bug
 tumblr_url: https://seanmonstar.com/post/708829330/select-tags-in-ie-innerhtml
 ---
 I just wanted to document this rather frustrating bug here, so I can look it up later, and hopefully help anyone else who is running into something similar. This bug involves `select` tags, specifically setting their `innerHTML`property.

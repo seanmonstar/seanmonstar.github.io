@@ -4,7 +4,6 @@ title: Don't Use the DOM to Insert Flash
 date: '2009-04-21T10:46:00-04:00'
 tags:
 - javascript
-- bug
 tumblr_url: https://seanmonstar.com/post/707145908/dont-use-the-dom-to-insert-flash
 ---
 I didn’t have the priviledge of using SWFObject or the likes. I just needed to create a movie in a modal-like window that depended on the page you were on. So, taking a list of properties and params, I proceed to use the DOM methods to build my Object and Param tags. Well, [Prototype](http://prototypejs.org) ’s Element methods, actually. It worked in Firefox, and partially in Safari / Chrome, and none at all in Internet Explorer 7.

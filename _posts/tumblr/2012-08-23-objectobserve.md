@@ -5,7 +5,6 @@ date: '2012-08-23T21:28:48-04:00'
 tags:
 - javascript
 - programming
-- mvc
 - shipyard
 tumblr_url: https://seanmonstar.com/post/30072647184/objectobserve
 ---

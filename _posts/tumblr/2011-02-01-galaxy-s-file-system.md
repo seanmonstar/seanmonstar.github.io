@@ -3,8 +3,6 @@ layout: post
 title: Fixing the Galaxy S File System
 date: '2011-02-01T01:31:14-05:00'
 tags:
-- android
-- galaxy s
 tumblr_url: https://seanmonstar.com/post/3044912970/galaxy-s-file-system
 ---
 My [phone](http://www.amazon.com/gp/product/B003TXSKNE?tag=seanmonstar-20) felt pretty fast when [I got my hands on it](http://seanmonstar.com/blog/samsung-galaxy-vibrant-review/) last summer, but I’d done my fair share of complaining about seemingly super slow apps. I figured the developers of those apps just plain sucked. I was a little surprised that [my brother](http://tractorbeamtuesdays.tumblr.com), owner of a Droid X, didn’t notice the same slow downs. A [Google search later](http://androidforums.com/captivate-support-troubleshooting/215225-wondering-why-facebook-app-really-slow.html), and I found out it was actually Samsung who sucks. Samsung built a rockin’ phone, and included a terrible [Robust FAT File System](http://www.samsung.com/global/business/semiconductor/products/fusionmemory/Products_RFS_Brochure.html)[^1].

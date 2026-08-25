@@ -3,9 +3,7 @@ layout: post
 title: Hashbangs are forever
 date: '2011-06-30T19:01:06-04:00'
 tags:
-- html
 - javascript
-- urls
 - twitter
 tumblr_url: https://seanmonstar.com/post/7097976524/hashbangs-are-forever
 ---

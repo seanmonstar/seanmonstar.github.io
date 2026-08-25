@@ -4,7 +4,6 @@ title: Extending Django Models, Managers, And QuerySets
 date: '2009-11-25T11:10:00-05:00'
 tags:
 - python
-- django
 - bestof
 tumblr_url: https://seanmonstar.com/post/708862164/extending-django-models-managers-and-querysets
 ---

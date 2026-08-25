@@ -6,7 +6,6 @@ tags:
 - mozilla
 - persona
 - identity
-- gmail
 - bestof
 tumblr_url: https://seanmonstar.com/post/57737181854/gmail-bridge-for-persona
 ---

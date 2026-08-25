@@ -6,7 +6,6 @@ tags:
 - javascript
 - programming
 - shipyard
-- mvc
 - mozilla
 tumblr_url: https://seanmonstar.com/post/10407228296/what-is-shipyard
 ---

@@ -3,9 +3,6 @@ layout: post
 title: The Galaxy in Review
 date: '2010-09-29T16:18:00-04:00'
 tags:
-- android
-- review
-- galaxy s
 - bestof
 tumblr_url: https://seanmonstar.com/post/1211866598/samsung-galaxy-vibrant-review
 ---

@@ -3,7 +3,6 @@ layout: post
 title: Platform Integration of Persona
 date: '2012-09-07T14:55:23-04:00'
 tags:
-- django
 - identity
 - mozilla
 - nodejs

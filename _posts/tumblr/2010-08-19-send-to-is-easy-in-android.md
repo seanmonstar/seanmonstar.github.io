@@ -3,7 +3,6 @@ layout: post
 title: '"Send To" is Easy in Android'
 date: '2010-08-19T17:46:02-04:00'
 tags:
-- android
 tumblr_url: https://seanmonstar.com/post/978986938/send-to-is-easy-in-android
 ---
 Yesterday, I read a couple articles in my reader that, while unrelated, both touched on how irritating it is that applications in iOS can’t talk to each other.

@@ -5,7 +5,6 @@ date: '2011-07-20T12:26:10-04:00'
 tags:
 - persona
 - identity
-- openid
 - mozilla
 tumblr_url: https://seanmonstar.com/post/7847128384/browserid
 ---

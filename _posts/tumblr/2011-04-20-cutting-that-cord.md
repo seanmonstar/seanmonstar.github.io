@@ -3,9 +3,6 @@ layout: post
 title: Cutting That Cord
 date: '2011-04-20T03:18:16-04:00'
 tags:
-- android
-- iphone
-- ipad
 tumblr_url: https://seanmonstar.com/post/4771334793/cutting-that-cord
 ---
 [Cutting That Cord](http://daringfireball.net/2011/04/cutting_that_cord)  

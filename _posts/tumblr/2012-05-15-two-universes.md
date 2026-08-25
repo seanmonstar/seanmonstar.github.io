@@ -3,8 +3,6 @@ layout: post
 title: Two Universes
 date: '2012-05-15T19:01:11-04:00'
 tags:
-- design
-- apps
 tumblr_url: https://seanmonstar.com/post/23129016060/two-universes
 ---
 [Two Universes](http://www.randsinrepose.com/archives/2012/05/09/two_universes.html)  

@@ -3,9 +3,6 @@ layout: post
 title: Social isn't a Product
 date: '2012-03-14T14:22:08-04:00'
 tags:
-- google+
-- google
-- facebook
 tumblr_url: https://seanmonstar.com/post/19297751747/social-isnt-a-product
 ---
 [Social isn't a Product](http://blogs.msdn.com/b/jw_on_tech/archive/2012/03/13/why-i-left-google.aspx)  
