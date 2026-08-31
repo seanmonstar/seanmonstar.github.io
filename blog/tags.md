@@ -4,7 +4,10 @@ title: Blog tags
 permalink: /blog/tags/
 ---
 
-# Blog tags
+<article class="post article">
+<div class="regular post-body">
+
+<h1 class="post-title">Blog tags</h1>
 
 {% assign sorted_tags = site.tags | sort %}
 <ul class="tags">
@@ -30,3 +33,6 @@ permalink: /blog/tags/
   {% endfor %}
 </ul>
 {% endfor %}
+
+</div>
+</article>
