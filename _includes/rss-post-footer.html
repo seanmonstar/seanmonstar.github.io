@@ -1,0 +1,13 @@
+{% assign post_url = include.post.url | prepend: site.baseurl | prepend: site.url %}
+{% assign email_subject = include.post.title | prepend: 'Re: ' | url_encode | replace: '+', '%20' %}
+{% assign email_body = post_url | url_encode | replace: '+', '%20' %}
+<hr>
+<p>
+  <a href="mailto:{{ site.email | escape }}?subject={{ email_subject }}&amp;body={{ email_body }}">Reply via Email</a>
+  {% if include.post.bsky_url %}
+  · <a href="{{ include.post.bsky_url | escape }}">Reply on Bluesky</a>
+  {% endif %}
+  {% if include.post.mastodon_url %}
+  · <a href="{{ include.post.mastodon_url | escape }}">Reply on Mastodon</a>
+  {% endif %}
+</p>
