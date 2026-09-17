@@ -4,6 +4,8 @@ title: Reading LLM text makes us worse writers
 tags:
 - llms
 - writing
+bsky_url: https://bsky.app/profile/did:plc:ax5sh6hthwrelunhn2bfmrsb/post/3mvq2t66c3q2t
+mastodon_url: https://masto.ai/@seanmonstar/117287300418166985
 ---
 The top advice given to anyone wanting to get better at writing, besides just writing, is to _read_ more. Especially good writing. Because we imitate that which we experience more of.
 
