@@ -3,11 +3,12 @@
 {% assign email_body = post_url | url_encode | replace: '+', '%20' %}
 <hr>
 <p>
-  <a href="mailto:{{ site.email | escape }}?subject={{ email_subject }}&amp;body={{ email_body }}">Reply via Email</a>
+  Reply via: 
+  <a href="mailto:{{ site.email | escape }}?subject={{ email_subject }}&amp;body={{ email_body }}">Email</a>
   {% if include.post.bsky_url %}
-  · <a href="{{ include.post.bsky_url | escape }}">Reply on Bluesky</a>
+  · <a href="{{ include.post.bsky_url | escape }}">Bluesky</a>
   {% endif %}
   {% if include.post.mastodon_url %}
-  · <a href="{{ include.post.mastodon_url | escape }}">Reply on Mastodon</a>
+  · <a href="{{ include.post.mastodon_url | escape }}">Mastodon</a>
   {% endif %}
 </p>
