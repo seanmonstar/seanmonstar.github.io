@@ -4,7 +4,6 @@ title: Copy Objects and Arrays with $unlink
 date: '2009-06-17T13:00:00-04:00'
 tags:
 - javascript
-- mootools
 tumblr_url: https://seanmonstar.com/post/708644598/copy-objects-and-arrays-with-unlink
 ---
 Basically, if you don’t know what happens when you have multiple variables pointing to the same Object or Array, then check out this [quick and dirty article](http://james.padolsey.com/javascript/deep-copying-of-objects-and-arrays/) and read the first half or so. Or if you don’t want to bother, I’ll give you a snippet to paste into Firebug.

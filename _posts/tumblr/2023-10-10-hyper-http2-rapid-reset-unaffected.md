@@ -5,7 +5,7 @@ date: '2023-10-10T08:07-07:00'
 tags:
 - rust
 - hyper
-- http2
+- http
 - security
 tumblr_url: https://seanmonstar.com/post/730794151136935936/hyper-http2-rapid-reset-unaffected
 ---

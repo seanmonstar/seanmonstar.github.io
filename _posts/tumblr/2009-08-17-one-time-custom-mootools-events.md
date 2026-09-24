@@ -4,7 +4,6 @@ title: One-Time Custom MooTools Events
 date: '2009-08-17T11:19:00-04:00'
 tags:
 - javascript
-- mootools
 tumblr_url: https://seanmonstar.com/post/707187636/one-time-custom-mootools-events
 ---
 MooTools lets you listen to events from 2 mediums: Elements and Classes. From classes, you can fire any event you want, and listen for it elsewhere. But with Elements, events are usually tied towards native DOM events. MooTools gives you the ability to define custom events for elements, by adding an entry to `Element.Events` .

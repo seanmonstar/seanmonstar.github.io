@@ -5,7 +5,7 @@ date: '2025-08-13T08:25:00'
 tags:
 - rust
 - hyper
-- http2
+- http
 - security
 ---
 A new HTTP/2 attack vector was disclosed today called MadeYouReset. [hyper][]'s `h2` is negligably affected, weathering the attack well. But, we have provided patches just in case. We published patches weeks ago, so if you've been keeping up-to-date, you're fine! If not, you're most likely fine, but you can upgrade now. No CVE or security advisory is included with this.

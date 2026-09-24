@@ -8,7 +8,6 @@ tags:
 - http
 - curl
 - monthly
-- http3
 tumblr_url: https://seanmonstar.com/post/691039972381294592/this-month-in-hyper-july-2022
 ---
 I’d like to start providing more frequent updates of all the work that’s done in [hyper](https://hyper.rs), along with examples, details, and thanks. As a bonus, I included things from June in here as well.

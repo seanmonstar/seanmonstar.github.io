@@ -4,7 +4,7 @@ title: 'This Month in hyper: March 2023'
 date: '2023-04-07T09:31:29-04:00'
 tags:
 - monthly
-- http3
+- http
 - hyper
 - rust
 tumblr_url: https://seanmonstar.com/post/713948439199858688/this-month-in-hyper-march-2023

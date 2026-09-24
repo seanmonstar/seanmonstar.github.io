@@ -4,8 +4,7 @@ title: Moved to Identity
 date: '2012-07-20T13:31:59-04:00'
 tags:
 - mozilla
-- identity
-- persona
+- career
 tumblr_url: https://seanmonstar.com/post/27636319508/moved-to-identity
 ---
 I’ve been working at Mozilla on the same project for a year and a half now, and it’s time for some change.

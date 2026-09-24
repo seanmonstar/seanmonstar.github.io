@@ -4,7 +4,6 @@ title: Fixing HTML5 Loaded Via Ajax in IE
 date: '2010-06-30T14:24:18-04:00'
 tags:
 - javascript
-- mootools
 tumblr_url: https://seanmonstar.com/post/754502783/fixing-html5-loaded-via-ajax-in-ie
 ---
 Internet Explorer doesn’t support HTML5 elements. You must provide a [shim](http://www.google.com/search?q=ie+html5+shim). But this only helps fix any markup that is in the original document. If you receive more markup via an ajax request, and want to insert it into the document, IE has a hissy fit. You can’t stick HTML like that into some elements `innerHTML` property and hope it parses correctly.

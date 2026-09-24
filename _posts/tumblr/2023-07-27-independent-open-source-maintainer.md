@@ -7,6 +7,7 @@ tags:
 - rust
 - hyper
 - bestof
+- career
 tumblr_url: https://seanmonstar.com/post/724010297820610560/independent-open-source-maintainer
 ---
  **tl;dr** - I’m independent, [sponsor](https://seanmonstar.com/sponsor) me!

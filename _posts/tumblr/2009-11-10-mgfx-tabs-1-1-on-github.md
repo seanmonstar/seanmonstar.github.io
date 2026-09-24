@@ -4,7 +4,6 @@ title: MGFX.Tabs 1.1 on Github
 date: '2009-11-10T11:13:00-05:00'
 tags:
 - javascript
-- mootools
 tumblr_url: https://seanmonstar.com/post/709042849/mgfx-tabs-1-1-on-github
 ---
 Quite a while ago, I released a simple-to-use [MooTools tabs class](http://seanmonstar.com/blog/pluggable-mootools-tabs/), and it continues to be one of the most frequented posts on the site. With so many people obviously desiring a MooTools tabs plugin, I’ve added a few new features to the plugin, as well as moved it to Github for inclusion in the future MooTools Forge.

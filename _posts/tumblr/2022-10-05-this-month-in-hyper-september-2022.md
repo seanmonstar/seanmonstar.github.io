@@ -7,7 +7,6 @@ tags:
 - hyper
 - monthly
 - http
-- http3
 tumblr_url: https://seanmonstar.com/post/697293605419745280/this-month-in-hyper-september-2022
 ---
 And I thought _last_ month was hot, this one was a scorcher (on the US West Coast[^1]). but just look at all the wonderful contributors making [hyper](https://hyper.rs) ever better!

@@ -3,9 +3,8 @@ layout: post
 title: console.log() all the things!
 date: '2013-07-25T15:55:00-04:00'
 tags:
-- nodejs
-- programming
 - javascript
+- programming
 - bestof
 tumblr_url: https://seanmonstar.com/post/56448644049/consolelog-all-the-things
 ---

@@ -4,7 +4,6 @@ title: MGFX in the MooTools Forge
 date: '2009-12-15T11:10:00-05:00'
 tags:
 - javascript
-- mootools
 tumblr_url: https://seanmonstar.com/post/709050230/mgfx-in-the-mootools-forge
 ---
 Last week saw the [release](http://mootools.net/blog/2009/12/10/the-official-mootools-plugins-repository-is-here/) of the [MooTools Forge](http://mootools.net/forge/). And that’s fantastic news for the MooTools community. If there was ever one thing MooTools lacked compared to jQuery, it was an easy way to find other MooTools code.

@@ -5,7 +5,7 @@ date: '2023-01-18T11:28:08-05:00'
 tags:
 - yearly
 - hyper
-- http3
+- http
 - curl
 - rust
 - tower

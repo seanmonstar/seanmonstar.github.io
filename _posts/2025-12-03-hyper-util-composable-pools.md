@@ -6,7 +6,6 @@ date: '2025-12-03T08:48:00'
 tags:
 - rust
 - hyper
-- hyper-util
 - tower
 - open-source
 - programming

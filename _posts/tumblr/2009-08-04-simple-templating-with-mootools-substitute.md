@@ -4,7 +4,6 @@ title: Simple Templating with MooTools Substitute
 date: '2009-08-04T12:00:00-04:00'
 tags:
 - javascript
-- mootools
 tumblr_url: https://seanmonstar.com/post/707177494/simple-templating-with-mootools-substitute
 ---
 As I continue to flesh out my MooTools MVC framework, I found a neat way to implement a **templating system** , using only what MooTools gives me. The goal of templating systems is to allow you to write in your target format (usually HTML), and denote where variables should be tied in.

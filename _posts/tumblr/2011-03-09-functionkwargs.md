@@ -4,7 +4,6 @@ title: Function.kwargs
 date: '2011-03-09T14:00:00-05:00'
 tags:
 - javascript
-- mootools
 - python
 tumblr_url: https://seanmonstar.com/post/3746460491/functionkwargs
 ---

@@ -5,7 +5,6 @@ date: '2013-12-16T14:11:30-05:00'
 tags:
 - javascript
 - programming
-- nodejs
 tumblr_url: https://seanmonstar.com/post/70209872571/client-sessions-v05
 ---
 [client-sessions v0.5](https://github.com/mozilla/node-client-sessions/releases/tag/v0.5.0)  

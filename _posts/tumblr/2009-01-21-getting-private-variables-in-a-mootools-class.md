@@ -4,7 +4,6 @@ title: Getting Private Variables in a Mootools Class
 date: '2009-01-21T14:12:00-05:00'
 tags:
 - javascript
-- mootools
 tumblr_url: https://seanmonstar.com/post/708687601/getting-private-variables-in-a-mootools-class
 ---
 After a good read though [Javascript: The Good Parts](http://www.amazon.com/gp/product/0596517742?tag=mcgf-20), and the start of a rather large class that I’ll be writing in my spare time, I thought of how I could setup private variables in a Mootools class. [YUI’s Module pattern](http://yuiblog.com/blog/2007/06/12/module-pattern/) is an easy way to make some private variables, but it needed to fit into the Mootools Class pattern. So I merged the two ideas, and created a Class Mutator, that lets you define a Privates object, and you get private variables!

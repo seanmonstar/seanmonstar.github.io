@@ -4,8 +4,6 @@ title: Gmail Bridge for Persona
 date: '2013-08-08T18:22:00-04:00'
 tags:
 - mozilla
-- persona
-- identity
 - bestof
 tumblr_url: https://seanmonstar.com/post/57737181854/gmail-bridge-for-persona
 ---

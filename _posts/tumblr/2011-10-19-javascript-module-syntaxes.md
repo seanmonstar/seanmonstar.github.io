@@ -5,7 +5,6 @@ date: '2011-10-19T19:03:00-04:00'
 tags:
 - javascript
 - programming
-- shipyard
 - mozilla
 tumblr_url: https://seanmonstar.com/post/11670322838/javascript-module-syntaxes
 ---

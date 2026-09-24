@@ -4,7 +4,6 @@ title: Make Draggable Items Dockable
 date: '2009-02-10T10:05:00-05:00'
 tags:
 - javascript
-- mootools
 tumblr_url: https://seanmonstar.com/post/707093656/make-draggable-items-dockable
 ---
 I’ve been working on a RTE using Mootools, and I wanted the toolbar to draggable. I always like it when I can drag something to the edge and it will dock itself. So, I extended [Drag.Move](http://mootools.net/more) to allow docking: Drag.Dock. With this class, which requires Drag and Drag.Move from the Mootools More, the draggable elements can now be docked to any side of the window.

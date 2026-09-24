@@ -3,7 +3,6 @@ layout: post
 title: Firefox for Windows on ARM
 date: '2012-05-11T17:52:01-04:00'
 tags:
-- firefox
 - mozilla
 tumblr_url: https://seanmonstar.com/post/22860664771/firefox-for-windows-on-arm
 ---

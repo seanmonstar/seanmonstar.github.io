@@ -4,7 +4,6 @@ title: 'MVC in MooTools: Models'
 date: '2010-08-25T11:00:00-04:00'
 tags:
 - javascript
-- mootools
 tumblr_url: https://seanmonstar.com/post/1009142033/mvc-in-mootools-models
 ---
 It’s really bugged me when writing large JavaScript applications, organization of code never really seems to be considered. We use frameworks for all the server-side stuff we do, but everyone seems content writing JavaScript in [one big mess](http://jquery.com).

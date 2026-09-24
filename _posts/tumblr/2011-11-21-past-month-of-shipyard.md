@@ -4,7 +4,6 @@ title: Past Month of Shipyard
 date: '2011-11-21T14:45:32-05:00'
 tags:
 - javascript
-- shipyard
 - mozilla
 tumblr_url: https://seanmonstar.com/post/13120286940/past-month-of-shipyard
 ---

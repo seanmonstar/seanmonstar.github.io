@@ -4,7 +4,6 @@ title: syslogger
 date: '2014-01-02T19:00:30-05:00'
 tags:
 - javascript
-- nodejs
 - programming
 tumblr_url: https://seanmonstar.com/post/72018297115/syslogger
 ---

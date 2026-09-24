@@ -4,7 +4,6 @@ title: Get the Method Caller in MooTools
 date: '2010-01-19T12:48:00-05:00'
 tags:
 - javascript
-- mootools
 tumblr_url: https://seanmonstar.com/post/708933763/get-the-method-caller-in-mootools
 ---
 As I continue to work on my MVC implementation in MooTools, I continue to find new hidden features in MooTools. This weekend, I was adding a view method to the controller, as a shortcut to creating a new View and rendering it. One of the arguments is the view file name, but I also wanted some automagic like CakePHP. It’d be great if the view function could determine the file name based on the function that called it.

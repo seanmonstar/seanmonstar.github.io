@@ -8,7 +8,6 @@ tags:
 - tower
 - monthly
 - http
-- http3
 tumblr_url: https://seanmonstar.com/post/694122996505493504/this-month-in-hyper-august-2022
 ---
 Another hot summer month has gone by. Besides many of us convening for RustConf, a lot of wonderful contributors made great progress around [hyper](https://hyper.rs).

@@ -3,8 +3,6 @@ layout: post
 title: What’s the password?
 date: '2015-07-29T12:25:29-04:00'
 tags:
-- persona
-- identity
 - mozilla
 tumblr_url: https://seanmonstar.com/post/125352745992/whats-the-password
 ---

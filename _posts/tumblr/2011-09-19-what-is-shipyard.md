@@ -5,7 +5,6 @@ date: '2011-09-19T13:33:06-04:00'
 tags:
 - javascript
 - programming
-- shipyard
 - mozilla
 tumblr_url: https://seanmonstar.com/post/10407228296/what-is-shipyard
 ---

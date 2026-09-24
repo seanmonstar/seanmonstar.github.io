@@ -6,7 +6,7 @@ tags:
 - hyper
 - rust
 - monthly
-- http3
+- http
 tumblr_url: https://seanmonstar.com/post/702541983003148288/this-month-in-hyper-november-2022
 ---
 The northern hemisphere starts to cool, the trees shed their leaves to conserve energy, cultured fans watch the quadrennial football tournament, and some magnificient contributors stay warm by continuing to make [hyper](https://hyper.rs) ever better!

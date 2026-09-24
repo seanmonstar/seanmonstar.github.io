@@ -5,7 +5,6 @@ date: '2018-02-22T13:51:14-05:00'
 tags:
 - rust
 - hyper
-- buoyant
 tumblr_url: https://seanmonstar.com/post/171170905822/recently-for-a-rusty-web
 ---
 It’s been a few months since [I shifted my focus](http://seanmonstar.com/blog/bye-mozilla-hello-buoyant/) full time to Rust, and in that time, we’ve gotten a lot of work done! I wanted to update you here what all that is, since it’s spread around on multiple repositories.

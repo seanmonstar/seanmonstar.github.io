@@ -4,8 +4,6 @@ title: An Introduction to Persona
 date: '2013-01-09T15:49:36-05:00'
 tags:
 - mozilla
-- identity
-- persona
 - programming
 - javascript
 tumblr_url: https://seanmonstar.com/post/40114483304/introduction-persona

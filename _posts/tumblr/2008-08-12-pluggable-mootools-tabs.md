@@ -4,7 +4,6 @@ title: Pluggable Mootools Tabs
 date: '2008-08-12T16:54:00-04:00'
 tags:
 - javascript
-- mootools
 tumblr_url: https://seanmonstar.com/post/707019146/pluggable-mootools-tabs
 ---
 ### Update (2/18/10)

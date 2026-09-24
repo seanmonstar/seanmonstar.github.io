@@ -4,8 +4,6 @@ title: Persona Beta 1
 date: '2012-09-27T19:21:39-04:00'
 tags:
 - mozilla
-- persona
-- identity
 tumblr_url: https://seanmonstar.com/post/32421665425/persona-beta-1
 ---
 [Persona Beta 1](http://identity.mozilla.com/post/32395255498/announcing-the-first-beta-release-of-persona)  

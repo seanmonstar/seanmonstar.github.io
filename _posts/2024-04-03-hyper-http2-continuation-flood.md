@@ -5,7 +5,7 @@ date: '2024-04-03T14:11:00'
 tags:
 - rust
 - hyper
-- http2
+- http
 - security
 ---
 

@@ -5,7 +5,6 @@ date: '2014-06-04T15:10:01-04:00'
 tags:
 - javascript
 - programming
-- nodejs
 tumblr_url: https://seanmonstar.com/post/87817275237/mocha-text-cov
 ---
 [mocha-text-cov](https://www.npmjs.org/package/mocha-text-cov)  

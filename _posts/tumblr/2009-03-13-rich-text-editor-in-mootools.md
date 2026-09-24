@@ -4,7 +4,6 @@ title: Rich Text Editor in Mootools
 date: '2009-03-13T16:19:00-04:00'
 tags:
 - javascript
-- mootools
 tumblr_url: https://seanmonstar.com/post/706995594/rich-text-editor-in-mootools
 ---
 With the release of Firefox 3, we find all major browsers now support a single interface (mostly) for allowing the Browser to do all of our Rich Text editting needs. This allows us to set a single property, contentEditable, and then that element accepts rich text processing. No more loading in an iframe, having document.domain issues, and having little control over the style of the iframe. This, however, does mean Firefox 2 and below are excluded from the party.

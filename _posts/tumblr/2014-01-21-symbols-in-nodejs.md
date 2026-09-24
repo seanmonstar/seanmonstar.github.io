@@ -5,7 +5,6 @@ date: '2014-01-21T22:04:15-05:00'
 tags:
 - javascript
 - programming
-- nodejs
 tumblr_url: https://seanmonstar.com/post/74130530265/symbols-in-nodejs
 ---
 [Symbols in nodejs](https://npmjs.org/package/symbol)  

@@ -4,7 +4,6 @@ title: Tooltip Image with Mootools
 date: '2008-12-12T12:29:00-05:00'
 tags:
 - javascript
-- mootools
 tumblr_url: https://seanmonstar.com/post/708849612/tooltip-image-with-mootools
 ---
 <figure class="tmblr-full" data-orig-height="200" data-orig-width="300"><img src="https://64.media.tumblr.com/daf6f7bba9c26831b96a052c1ab5a0ed/36550a15c6504406-4c/s540x810/937e7bbdf6ce6f1a2e9bddb4afe58178dc55779c.jpg" data-orig-height="200" data-orig-width="300"></figure>

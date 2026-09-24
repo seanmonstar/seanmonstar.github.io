@@ -4,8 +4,6 @@ title: Persona Beta 2
 date: '2013-04-10T13:55:50-04:00'
 tags:
 - mozilla
-- persona
-- identity
 tumblr_url: https://seanmonstar.com/post/47631645119/persona-beta-2
 ---
 [Persona Beta 2](http://identity.mozilla.com/post/47541633049/persona-beta-2)  

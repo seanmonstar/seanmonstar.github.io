@@ -5,7 +5,7 @@ date: '2011-08-04T13:01:05-04:00'
 tags:
 - bestof
 - mozilla
-- employment
+- career
 tumblr_url: https://seanmonstar.com/post/8475492438/good-things-come-to-those-who-ask
 ---
 Maybe you’ve heard the saying “good things come to those who wait.” That’s all well and good, but I’d like to take some time point out that good things also come to those who look for them. I changed jobs at the beginning of this year, and several people I know were curious as to how I managed it. It’s because I asked. I sought. For months.[^1]

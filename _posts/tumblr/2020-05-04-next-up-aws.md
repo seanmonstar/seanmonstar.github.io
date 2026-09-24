@@ -6,6 +6,7 @@ tags:
 - hyper
 - rust
 - aws
+- career
 tumblr_url: https://seanmonstar.com/post/617213413024759808/next-up-aws
 ---
 Today I start something new. This is my first day at [AWS](https://aws.amazon.com/).

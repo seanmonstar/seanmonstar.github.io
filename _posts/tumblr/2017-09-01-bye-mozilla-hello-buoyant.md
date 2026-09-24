@@ -4,7 +4,7 @@ title: Bye Mozilla, Hello Buoyant
 date: '2017-09-01T15:45:21-04:00'
 tags:
 - mozilla
-- buoyant
+- career
 tumblr_url: https://seanmonstar.com/post/164869651177/bye-mozilla-hello-buoyant
 ---
 ## Bye, Mozilla

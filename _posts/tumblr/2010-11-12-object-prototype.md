@@ -4,7 +4,6 @@ title: Why Object.prototype is not the place for Hash methods
 date: '2010-11-12T12:00:00-05:00'
 tags:
 - javascript
-- mootools
 tumblr_url: https://seanmonstar.com/post/1554012583/object-prototype
 ---
 You might have heard that extending the Object.protoype is [verboten](http://erik.eae.net/archives/2005/06/06/22.13.54/). But you might realize that one of the most famous issues with extending Object can be solved with the handy `obj.hasOwnProperty(key)` line. Besides, developers who like picking MooTools likely do so (at least partly) because it’s much more elegant to call methods on objects than pass objects into functions. I’ve been asked why MooTools choses to keep a separate Hash class instead of putting those methods directly on the Object prototype. Here’s my reasoning for why.

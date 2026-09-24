@@ -3,7 +3,7 @@ layout: post
 title: 'MVC in MooTools: Views'
 date: '2010-09-02T12:39:00-04:00'
 tags:
-- mootools
+- javascript
 tumblr_url: https://seanmonstar.com/post/1053909313/mvc-in-mootools-views
 ---
 <small>This is another installment about how my <a href="http://github.com/seanmonstar/monstars.js">MooTools MVC framework</a> rocks. Check it out. If you’re interested in the first part, check out my write-up on using <a href="http://seanmonstar.com/blog/mvc-in-mootools-models/">Models</a>.</small>

@@ -4,7 +4,6 @@ title: Making an Ajax Single-page Site with MooTools
 date: '2010-05-13T18:27:00-04:00'
 tags:
 - javascript
-- mootools
 tumblr_url: https://seanmonstar.com/post/709072388/making-an-ajax-single-page-site-with-mootools
 ---
 The past couple weeks I’ve been working on a website that, with JavaScript enabled, will never refresh the page[^1]. With MooTools, I just needed to manipulate the URL hash and use `Request`, making it fairly easy to get an Ajax site that works like Facebook. Granted, this has nothing about handling CSS or JavaScript assets for each page. I’m currently handling that myself, and perhaps I’ll share my findings for that another time.

@@ -3,9 +3,7 @@ layout: post
 title: Your Password is Insecure
 date: '2014-03-25T15:45:00-04:00'
 tags:
-- passwords
-- persona
-- identity
+- security
 - bestof
 tumblr_url: https://seanmonstar.com/post/80700801955/your-password-is-insecure
 ---

@@ -4,7 +4,6 @@ title: 'insist: Better assertions for nodejs'
 date: '2013-12-11T13:01:39-05:00'
 tags:
 - javascript
-- nodejs
 - programming
 tumblr_url: https://seanmonstar.com/post/69703845045/insist-better-assertions-for-nodejs
 ---

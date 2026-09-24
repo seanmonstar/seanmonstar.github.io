@@ -6,7 +6,6 @@ tags:
 - bestof
 - javascript
 - programming
-- shipyard
 - mozilla
 tumblr_url: https://seanmonstar.com/post/18026837126/shipyard-mindset
 ---

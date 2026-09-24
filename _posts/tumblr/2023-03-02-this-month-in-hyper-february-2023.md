@@ -6,7 +6,7 @@ tags:
 - hyper
 - rust
 - monthly
-- http3
+- http
 tumblr_url: https://seanmonstar.com/post/710694914534539264/this-month-in-hyper-february-2023
 ---
 After [recapping the 2022 year](https://seanmonstar.com/blog/hyper-ish-2022-in-review/), here’s what the amazing contributors have been doing to make [hyper](https://hyper.rs) ever better during January and February of 2023.
