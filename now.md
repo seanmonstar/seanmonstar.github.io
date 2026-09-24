@@ -3,11 +3,12 @@ layout: page
 title: What I'm doing now
 permalink: /now/
 ---
-Updated June 16, 2026. In spirit of [/now](https://nownownow.com/about).
+Updated September 24, 2026. In spirit of [/now](https://nownownow.com/about).
 
 - Growing sustainable [personnel](/blog/hyper-user-survey-2025-results/#:~:text=sustainable%20personnel%20of%20hyper) for hyper
-  - Writing a collaborator guide
-  - Creating an RFC system for all the outstanding proposals
+  - Creating an [RFC system](https://seanmonstar.com/micro/20260902-hips/) for all the outstanding proposals
+  - Writing a [collaborator guide](https://hyper.rs/contrib/collaborators/)
+  - Identifying new collaborators
 - Driving code and [technical](/blog/hyper-user-survey-2025-results/#:~:text=the%20technical%20things) designs in hyper for 2026
   - Optimizing `h2`
   - Some sort of `impl BufProvider`
