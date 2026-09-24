@@ -1,10 +1,8 @@
 ---
+hidden: true
 layout: post
 title: www.persona.org
 date: '2013-12-04T19:07:35-05:00'
-tags:
-- mozilla
-- persona
 tumblr_url: https://seanmonstar.com/post/69022526583/wwwpersonaorg
 ---
 [www.persona.org](https://www.persona.org)  

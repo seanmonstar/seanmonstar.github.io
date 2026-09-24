@@ -1,8 +1,8 @@
 ---
+hidden: true
 layout: post
 title: Chromebook
 date: '2011-05-14T17:01:00-04:00'
-tags:
 tumblr_url: https://seanmonstar.com/post/5491265296/chromebook
 ---
 [Chromebook](http://www.google.com/chromebook/#chromebooks)  

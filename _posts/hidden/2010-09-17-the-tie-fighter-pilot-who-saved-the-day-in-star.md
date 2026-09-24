@@ -1,9 +1,8 @@
 ---
+hidden: true
 layout: post
 title: The TIE Fighter Pilot Who Saved The Day in 'Star Wars'
 date: '2010-09-17T13:08:49-04:00'
-tags:
-- star wars
 tumblr_url: https://seanmonstar.com/post/1138205740/the-tie-fighter-pilot-who-saved-the-day-in-star
 ---
 [The TIE Fighter Pilot Who Saved The Day in 'Star Wars'](http://www.cracked.com/article_18719_the-tie-fighter-pilot-who-saved-day-in-star-wars.html)  

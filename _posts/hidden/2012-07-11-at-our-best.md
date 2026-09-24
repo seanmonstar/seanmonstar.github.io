@@ -1,10 +1,8 @@
 ---
+hidden: true
 layout: post
 title: At Our Best
 date: '2012-07-11T16:09:14-04:00'
-tags:
-- mozilla
-- firefox
 tumblr_url: https://seanmonstar.com/post/26996764923/at-our-best
 ---
 [At Our Best](http://blog.johnath.com/2012/07/11/at-our-most-excellent/)  

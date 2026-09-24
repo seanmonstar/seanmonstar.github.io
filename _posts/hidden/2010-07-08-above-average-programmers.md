@@ -1,4 +1,5 @@
 ---
+hidden: true
 layout: post
 title: The Problem With 'Above Average Programmers'
 date: '2010-07-08T17:09:36-04:00'

@@ -1,13 +1,8 @@
 ---
+hidden: true
 layout: post
 title: Platform Integration of Persona
 date: '2012-09-07T14:55:23-04:00'
-tags:
-- identity
-- mozilla
-- nodejs
-- persona
-- programming
 tumblr_url: https://seanmonstar.com/post/31067974034/platform-integration-of-persona
 ---
 [Platform Integration of Persona](http://identity.mozilla.com/post/31008721633/application-and-platform-integration-of-persona)  

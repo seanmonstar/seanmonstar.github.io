@@ -1,4 +1,5 @@
 ---
+hidden: true
 layout: post
 title: What we can learn from procrastination
 date: '2010-10-07T22:52:12-04:00'

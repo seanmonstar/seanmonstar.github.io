@@ -1,4 +1,5 @@
 ---
+hidden: true
 layout: post
 title: 'Corporate Blogs: Front Page Structure'
 date: '2010-08-12T14:10:33-04:00'

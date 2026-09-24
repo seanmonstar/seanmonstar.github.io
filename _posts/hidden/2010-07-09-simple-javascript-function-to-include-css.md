@@ -1,9 +1,8 @@
 ---
+hidden: true
 layout: post
 title: Simple JavaScript Function To Include CSS
 date: '2010-07-09T11:00:00-04:00'
-tags:
-- javascript
 tumblr_url: https://seanmonstar.com/post/789712455/simple-javascript-function-to-include-css
 ---
 [Simple JavaScript Function To Include CSS](http://mattsnider.com/javascript/simple-javascript-function-to-include-css/)  

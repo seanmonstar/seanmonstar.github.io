@@ -1,4 +1,5 @@
 ---
+hidden: true
 layout: post
 title: Samsung Galaxy S II
 date: '2011-04-29T15:26:23-04:00'

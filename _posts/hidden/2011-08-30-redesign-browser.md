@@ -1,9 +1,8 @@
 ---
+hidden: true
 layout: post
 title: Redesigning the Browser Window
 date: '2011-08-30T21:01:26-04:00'
-tags:
-- firefox
 tumblr_url: https://seanmonstar.com/post/9608620597/redesign-browser
 ---
 [Redesigning the Browser Window](http://blogg.antrop.se/interaktionsdesign/redesigning-the-browser-window/)  

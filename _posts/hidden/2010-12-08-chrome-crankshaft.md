@@ -1,9 +1,8 @@
 ---
+hidden: true
 layout: post
 title: Chrome Crankshaft
 date: '2010-12-08T14:00:07-05:00'
-tags:
-- javascript
 tumblr_url: https://seanmonstar.com/post/2145192257/chrome-crankshaft
 ---
 [Chrome Crankshaft](http://blog.chromium.org/2010/12/new-crankshaft-for-v8.html)  

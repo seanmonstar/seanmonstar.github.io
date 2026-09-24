@@ -1,10 +1,8 @@
 ---
+hidden: true
 layout: post
 title: MooTools Drag.Ghost
 date: '2010-07-01T16:58:00-04:00'
-tags:
-- javascript
-- mootools
 tumblr_url: https://seanmonstar.com/post/758880222/mootools-dragghost
 ---
 [MooTools Drag.Ghost](http://www.monkeyphysics.com/mootools/script/1/dragghost)  

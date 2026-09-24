@@ -1,11 +1,8 @@
 ---
+hidden: true
 layout: post
 title: Persona makes signing in easy for Gmail users
 date: '2013-08-08T15:23:26-04:00'
-tags:
-- persona
-- identity
-- mozilla
 tumblr_url: https://seanmonstar.com/post/57723143593/persona-makes-signing-in-easy-for-gmail-users
 ---
 [Persona makes signing in easy for Gmail users](http://identity.mozilla.com/post/57712756801/persona-makes-signing-in-easy-for-gmail-users)  

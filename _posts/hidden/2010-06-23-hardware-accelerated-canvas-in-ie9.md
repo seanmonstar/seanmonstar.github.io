@@ -1,4 +1,5 @@
 ---
+hidden: true
 layout: post
 title: Hardware Accelerated Canvas on IE9
 date: '2010-06-23T20:36:00-04:00'

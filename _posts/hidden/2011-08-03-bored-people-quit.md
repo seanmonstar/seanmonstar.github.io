@@ -1,9 +1,8 @@
 ---
+hidden: true
 layout: post
 title: Bored People Quit
 date: '2011-08-03T18:14:00-04:00'
-tags:
-- employment
 tumblr_url: https://seanmonstar.com/post/8444212539/bored-people-quit
 ---
 [Bored People Quit](http://www.randsinrepose.com/archives/2011/07/12/bored_people_quit.html)  

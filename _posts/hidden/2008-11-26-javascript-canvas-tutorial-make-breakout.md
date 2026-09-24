@@ -1,9 +1,8 @@
 ---
+hidden: true
 layout: post
 title: 'Javascript Canvas Tutorial: Make Breakout'
 date: '2008-11-26T18:04:00-05:00'
-tags:
-- javascript
 tumblr_url: https://seanmonstar.com/post/707024833/javascript-canvas-tutorial-make-breakout
 ---
 [Javascript Canvas Tutorial: Make Breakout](http://billmill.org/static/canvastutorial/index.html)  

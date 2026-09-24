@@ -1,10 +1,8 @@
 ---
+hidden: true
 layout: post
 title: Programming on an iPad
 date: '2011-11-08T13:58:17-05:00'
-tags:
-- programming
-- tablets
 tumblr_url: https://seanmonstar.com/post/12519744739/tablet-programming
 ---
 [Programming on an iPad](http://yieldthought.com/post/12239282034/swapped-my-macbook-for-an-ipad)  
