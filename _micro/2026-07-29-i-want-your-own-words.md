@@ -10,4 +10,8 @@ If you choose to communicate with me, all I ask is that you use your own words. 
 
 LLMs write way _way_ too much. I don't know if you understood it enough for me to ask questions back. They don't use reasoning, so is it real? If you didn't care enough to write it, do I care to read it?
 
+---
+
 I'm torn when I receive LLMed reports. Initially, I really don't want to read all that. But at the same time, my mind nags me; something's broken and I should fix it for everyone. If it makes it easier for someone to report a bug, that's a pro, I guess.
+
+At the same time, that's not an excuse for expecting me to like LLM-generated English. [Reading LLM words makes us worse writers](https://seanmonstar.com/micro/20260917-reading-llms-worsens-writing/). So, be kind and respectful.
