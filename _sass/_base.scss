@@ -98,6 +98,22 @@ a:visited {
       letter-spacing:0.2em;
     }
 
+    .post-body hr {
+      border: 0;
+      margin: 3em 0;
+      overflow: visible;
+      color: #999;
+      text-align: left;
+    }
+
+    .post-body hr::before {
+      content: "---";
+      font-family: monospace;
+      font-size: 1em;
+      line-height: 1;
+      letter-spacing: 0.2em;
+    }
+
     .post-body h3 {
       color: #777;
       font-size: 0.9em;
