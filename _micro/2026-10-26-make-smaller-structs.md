@@ -3,6 +3,8 @@ layout: post
 title: Make smaller structs
 tags:
 - rustlang
+bsky_url: https://bsky.app/profile/did:plc:ax5sh6hthwrelunhn2bfmrsb/post/3myrsxkeeri2b
+mastodon_url: https://masto.ai/@seanmonstar/117507423485903760
 ---
 I've seen the hype about [view types](https://goals.rust-lang.org/2026/view-types-experiment.html) being added to Rust. I worry it exceeds the [strangeness budget](https://steveklabnik.com/writing/the-language-strangeness-budget/). And there's a solution already available. Make your structs smaller.
 
